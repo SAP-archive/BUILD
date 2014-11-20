@@ -18,7 +18,7 @@ var app = express();
 var server = require('http').createServer(app);
 
 // Require optional modules
-require('./requires');
+require('./requires.js')(app);
 
 if (config.env === 'production') {
     // app.use(favicon(path.join(config.root, 'public', 'favicon.ico')));

@@ -15,17 +15,15 @@ angular.module = function (name, dep) {
     return aModule(name, dep);
 };
 
-require('angular');
 require('angular-bootstrap');
 require('angular-cookies');
 require('angular-resource');
 require('angular-sanitize');
 require('angular-socket-io');
 require('angular-ui-router');
-require('jquery');
 
 // Require optional modules
-require('./requires');
+require('./requires.js');
 
 angular.module('normanGeneratorTestsApp', modules)
     .config(function ($urlRouterProvider, $locationProvider) {
