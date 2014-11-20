@@ -1,0 +1,15 @@
+{
+  "name": "norman-server",
+  "description": "Norman Client",
+  "dependencies": {
+    "express": "^4.10.2",
+    "morgan": "^1.5.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "start": "node server/app.js",
+    "update-webdriver": "node node_modules/grunt-protractor-runner/node_modules/protractor/bin/webdriver-manager update"
+  }
+}
