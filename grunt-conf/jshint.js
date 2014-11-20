@@ -12,5 +12,9 @@ module.exports = {
     tests: [
         '{client,server}/**/*.{spec,mock}.js',
         '!{client,server}/node_modules/**/*.js'
+    ],
+    modules: [
+        'node_modules/norman*/**/*.js',
+        '!node_modules/norman*/node_modules/**/*.js',
     ]
 };
