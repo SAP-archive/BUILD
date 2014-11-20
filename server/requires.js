@@ -3,4 +3,4 @@
 
 module.exports = function(app) {
   // require('../node_modules/norman-*-server')(app);
-}
+};
