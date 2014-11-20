@@ -15,13 +15,6 @@ angular.module = function (name, dep) {
     return aModule(name, dep);
 };
 
-
-// "require" all client-side modules from the client package.json
-// var dependencies = require('./package.json').dependencies, dep;
-// for (dep in dependencies) {
-//     require(dep);
-// }
-
 require('angular');
 require('angular-bootstrap');
 require('angular-cookies');
@@ -31,10 +24,8 @@ require('angular-socket-io');
 require('angular-ui-router');
 require('jquery');
 
-
-// Require client-side norman modules here:
-require('../node_modules/norman-auth-client');
-
+// Require optional modules
+require('./requires');
 
 angular.module('normanGeneratorTestsApp', modules)
     .config(function ($urlRouterProvider, $locationProvider) {
