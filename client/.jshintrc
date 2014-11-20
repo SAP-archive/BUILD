@@ -26,14 +26,18 @@
     "$": true,
     "_": true,
     "moment": true,
-    "describe": true,
-    "beforeEach": true,
     "module": true,
     "inject": true,
-    "it": true,
-    "expect": true,
     "browser": true,
     "element": true,
+
+    "describe": true,
+    "before": true,
+    "beforeEach": true,
+    "after": true,
+    "afterEach": true,
+    "expect": true,
+    "it": true,
     "by": true
   }
 }
