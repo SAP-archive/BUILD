@@ -5,18 +5,12 @@ module.exports = {
         reporter: require('jshint-stylish')
     },
     dev: [
-        'client/**/*.js',
-        '!client/**/*.{spec,mock}.js',
-        '!client/node_modules/**/*.js',
-
-        'node_modules/norman*/**/*.js',
-        '!node_modules/norman*/**/*.{spec,mock}.js',
-        '!node_modules/norman-*/node_modules/*.js'
+        '{client,server}/**/*.js',
+        '!{client,server}/**/*.{spec,mock}.js',
+        '!{client,server}/node_modules/**/*.js'
     ],
     tests: [
-        'client/**/*.{spec,mock}.js',
-        '!client/node_modules/**/*.js',
-        'node_modules/norman-*/**/*.{spec,mock}.js',
-        '!node_modules/norman-*/node_modules/*.js'
+        '{client,server}/**/*.{spec,mock}.js',
+        '!{client,server}/node_modules/**/*.js'
     ]
 };

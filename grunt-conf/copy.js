@@ -14,14 +14,14 @@ module.exports = {
                 ]
             },
 
-            {
-                expand: true,
-                dest: 'dev',
-                src: [
-                    'server/**/*.js',
-                    '!server/node_modules'
-                ]
-            }
+            // {
+            //     expand: true,
+            //     dest: 'dev',
+            //     src: [
+            //         'server/**/*.js',
+            //         '!server/node_modules'
+            //     ]
+            // }
 
         ]
     },
@@ -34,6 +34,14 @@ module.exports = {
                 cwd: 'dev',
                 dest: 'dist',
                 src: '**/*'
+            },
+            {
+                expand: true,
+                cwd: 'server',
+                dest: 'dist',
+                src: [
+                    '**/*.js'
+                ]
             }
 
         ]

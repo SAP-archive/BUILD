@@ -60,7 +60,7 @@ module.exports = function (grunt) {
 
         /*** SERVER *******************************************************************************/
         env: {
-            test: { NODE_ENV: 'test' },
+            dev: { NODE_ENV: 'development' },
             prod: { NODE_ENV: 'production' }
         },
 
@@ -87,10 +87,10 @@ module.exports = function (grunt) {
 
     grunt.registerTask('serve', function (target) {
         var tasks = {
-            debug : [ 'env:test', 'nodemon', 'nodeinspector' ],
-            dflt  : [ 'env:prod', 'express:prod', 'express-keepalive' ]
+            debug : [ 'env:dev', 'nodemon', 'nodeinspector' ],
+            dev  : [ 'env:dev', 'express:dev', 'express-keepalive' ]
         };
-        return grunt.task.run(tasks[target || 'dflt']);
+        return grunt.task.run(tasks[target || 'dev']);
     });
 
 
@@ -123,7 +123,6 @@ module.exports = function (grunt) {
         'copy:dist'
     ]);
 
-        // 'ngtemplates',
 
     grunt.registerTask('default', [ 'test' ]);
 
