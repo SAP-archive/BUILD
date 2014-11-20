@@ -4,3 +4,5 @@ public
 .idea
 dev
 dist
+client/requires.js
+server/requires.js
