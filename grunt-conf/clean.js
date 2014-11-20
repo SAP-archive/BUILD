@@ -1,13 +1,14 @@
 'use strict';
 module.exports = {
     dev: [
-        'dev/*',
-        '!dev/.git*'
+        'dev/**/*',
+        'dev/**/.*',
+        '!dev/**/.git*'
     ],
 
     dist: [
-        'dist/*',
-        'dist/.*',
-        '!dist/.git*'
+        'dist/**/*',
+        'dist/**/.*',
+        '!dist/**/.git*'
     ]
 };

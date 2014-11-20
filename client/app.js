@@ -33,7 +33,7 @@ require('jquery');
 
 
 // Require client-side norman modules here:
-require('../node_modules/norman-shell-client');
+// require('../node_modules/norman-shell-client');
 
 
 angular.module('normanGeneratorTestsApp', modules)

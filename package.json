@@ -6,10 +6,7 @@
     "type:": "git",
     "url": ""
   },
-  "dependencies": {
-    "norman-shell-client": "~1.0.0",
-    "norman-shell-server": "~1.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-angular-templates": "^0.5.7",
@@ -23,7 +20,9 @@
     "grunt-contrib-less": "^0.12.0",
     "grunt-contrib-uglify": "^0.6.0",
     "grunt-contrib-watch": "^0.6.1",
+    "grunt-env": "^0.4.2",
     "grunt-karma": "^0.9.0",
+    "grunt-mocha-test": "^0.12.3",
     "grunt-newer": "^0.8.0",
     "grunt-ng-annotate": "^0.7.0",
     "jasmine-core": "^2.1.2",
@@ -33,6 +32,7 @@
     "karma-jasmine": "^0.3.0",
     "karma-phantomjs-launcher": "^0.1.4",
     "karma-script-launcher": "^0.1.0",
+    "mocha": "^2.0.1",
     "time-grunt": "^1.0.0"
   },
   "scripts": {
