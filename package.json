@@ -37,7 +37,7 @@
     "time-grunt": "^1.0.0"
   },
   "scripts": {
-    "postinstall": "cd client && npm i & cd ../server && npm i",
+    "postinstall": "cd client && npm i && cd ../server && npm i",
     "start": "node server/app.js",
     "test": "grunt test"
   },
