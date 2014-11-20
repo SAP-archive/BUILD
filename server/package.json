@@ -3,7 +3,8 @@
   "description": "Norman Client",
   "dependencies": {
     "express": "^4.10.2",
-    "morgan": "^1.5.0"
+    "morgan": "^1.5.0",
+    "errorhandler": "~1.0.0",
   },
   "engines": {
     "node": ">=0.10.0"
