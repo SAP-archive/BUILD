@@ -17,17 +17,8 @@ var errorHandler = require('composable-middleware');
 var app = express();
 var server = require('http').createServer(app);
 
-
-// // "require" all server-side modules from the root package.json in the right order (by "priority")
-// var dependencies = require('../package.json').dependencies, dep, name, requireArray = [];
-// for (dep in dependencies) {
-//     var name = '../node_modules/' + dep + '/server';
-//     requireArray.push({ name: name, priority: require(name + '/package.json').priority });
-// }
-// requireArray.sort(function (a, b) { return a.priority - b.priority; });
-// requireArray.forEach(function (item) { require(item.name)(app); });
-
-require('../node_modules/norman-auth-server')(app);
+// Require optional modules
+require('./requires');
 
 if (config.env === 'production') {
     // app.use(favicon(path.join(config.root, 'public', 'favicon.ico')));
