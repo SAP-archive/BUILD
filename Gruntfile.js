@@ -83,13 +83,25 @@ module.exports = function (grunt) {
         open: { server: { url: 'http://localhost:<%= express.options.port %>' }}
     });
 
+
     grunt.registerTask('express-keepalive', 'Keep grunt running', function () { this.async(); });
 
     grunt.registerTask('serve', function (target) {
         var tasks = {
-            debug : [ 'env:dev', 'nodemon', 'nodeinspector' ],
-            dev  : [ 'env:dev', 'express:dev', 'express-keepalive' ]
+            debug : [
+                'env:dev',
+                'nodemon',
+                'nodeinspector'
+            ],
+
+            dev : [
+                'env:dev',
+                'express:dev',
+                'express-keepalive',
+                // 'open'
+            ]
         };
+
         return grunt.task.run(tasks[target || 'dev']);
     });
 
