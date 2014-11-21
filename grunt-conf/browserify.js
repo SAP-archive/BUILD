@@ -4,8 +4,9 @@ module.exports = {
     dev: {
         options: {
             browserifyOptions: {
-                debug: false // true to create map file
+                debug: true,                    // true to create map file
             },
+
             // watch: true //invoke watchify instead of browserify
         },
         files: {
