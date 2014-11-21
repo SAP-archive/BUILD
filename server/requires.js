@@ -1,2 +1,6 @@
+'use strict';
 // Inser all the requires for optional modules here:
-// require('../node_modules/norman-*-server')(app);
+
+module.exports = function(app) {
+  // require('../node_modules/norman-*-server')(app);
+};
