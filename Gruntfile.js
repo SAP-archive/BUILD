@@ -98,8 +98,8 @@ module.exports = function (grunt) {
                 'build',
                 'env:dev',
                 'express:dev',
-                'express-keepalive',
-                // 'watch',
+                // 'express-keepalive',
+                'watch',
                 // 'open'
             ]
         };
