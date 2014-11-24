@@ -8,7 +8,7 @@ var aModule = angular.module, modules = [], dependencies = [];
 angular.module = function (name, dep) {
     if (dep) {
         if (dependencies.indexOf(name) === -1) {
-            modules.push(name);
+            if (name !== 'normanGeneratorTestsApp') modules.push(name);
         }
         dependencies = dependencies.concat(dep);
     }
@@ -30,3 +30,4 @@ angular.module('normanGeneratorTestsApp', modules)
         $urlRouterProvider.otherwise('/');
         $locationProvider.html5Mode(true);
     });
+

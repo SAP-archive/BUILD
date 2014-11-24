@@ -1,3 +1,4 @@
 'use strict';
 // Inser all the requires for optional modules here:
-// require('../node_modules/norman-*-client');
+require('norman-shell-client');
+// require('../node_modules/norman-auth-client');

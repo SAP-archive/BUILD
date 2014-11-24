@@ -8,6 +8,7 @@ module.exports = {
             },
 
             // watch: true //invoke watchify instead of browserify
+            // transform: [ 'stringify' ]
         },
         files: {
             'dev/assets/bundle.js': [ 'client/app.js' ]
@@ -15,5 +16,3 @@ module.exports = {
     }
 
 };
-
-

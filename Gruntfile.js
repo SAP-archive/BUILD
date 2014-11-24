@@ -95,9 +95,11 @@ module.exports = function (grunt) {
             ],
 
             dev : [
+                'build',
                 'env:dev',
                 'express:dev',
                 'express-keepalive',
+                // 'watch',
                 // 'open'
             ]
         };
@@ -117,13 +119,17 @@ module.exports = function (grunt) {
     });
 
 
-    grunt.registerTask('dev', [
-        'jshint',
+    grunt.registerTask('build', [
         'clean:dev',
         'less',
         'copy:dev',
         'browserify',
-        'ngAnnotate',
+        'ngAnnotate'
+    ]);
+
+    grunt.registerTask('dev', [
+        'jshint',
+        'build',
         'karma'
     ]);
 
