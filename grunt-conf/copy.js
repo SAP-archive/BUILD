@@ -13,21 +13,18 @@ module.exports = {
                     '.htaccess'
                 ]
             },
+            // vendor (i.e. bootstrap) css
+            {
+                expand: true,
+                flatten: true,
+                dest: 'dev/assets',
+                src: [ 'node_modules/bootstrap/dist/css/bootstrap.css' ]
+            },
             {
                 expand: true,
                 dest: 'dev',
-                src: [ 'node_modules/norman*/**/*.html' ]
-            },
-
-            // {
-            //     expand: true,
-            //     dest: 'dev',
-            //     src: [
-            //         'server/**/*.js',
-            //         '!server/node_modules'
-            //     ]
-            // }
-
+                src: [ 'node_modules/norman*/**/*.{html,png,gif,jpg,svg}' ]
+            }
         ]
     },
 

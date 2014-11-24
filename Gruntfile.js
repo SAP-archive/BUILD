@@ -39,12 +39,6 @@ module.exports = function (grunt) {
         // minsafe compatible so Uglify does not destroy the ng references
         ngAnnotate: require('./grunt-conf/ngannotate.js'),
 
-        // Package all the html partials into a single javascript payload
-        ngtemplates: require('./grunt-conf/ngtemplates.js'),
-
-        // Concatenates js files
-        concat: require('./grunt-conf/concat.js'),
-
         // Copies remaining files to places other tasks can use
         copy: require('./grunt-conf/copy.js'),
 
