@@ -1,5 +1,5 @@
 {
-  "name": "norman-shell-client",
+  "name": "norman-client",
   "version": "1.0.0",
   "description": "Norman Client",
   "dependencies": {

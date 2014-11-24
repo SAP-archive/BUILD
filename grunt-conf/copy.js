@@ -13,6 +13,11 @@ module.exports = {
                     '.htaccess'
                 ]
             },
+            {
+                expand: true,
+                dest: 'dev',
+                src: [ 'node_modules/norman*/**/*.html' ]
+            },
 
             // {
             //     expand: true,
