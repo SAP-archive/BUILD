@@ -4,10 +4,7 @@ module.exports = {
     js: {
         files: [
             'client/*.js',
-
-            'client/node_modules/norman*/**/*.js',
-            '!client/node_modules/norman*/node_modules/*.js',
-            '!client/**/*.{spec,mock}js',
+            '!client/**/*.{spec,mock}/js',
 
             'node_modules/norman*/**/*.js',
             '!node_modules/norman*/node_modules/*',
@@ -22,8 +19,6 @@ module.exports = {
     less: {
         files: [
             'client/*.less',
-            'client/node_modules/norman*/**/*.less',
-            '!client/node_modules/norman*/node_modules/*.less',
 
             'node_modules/norman*/**/*.less',
             '!node_modules/norman*/node_modules/*.less'
