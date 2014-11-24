@@ -18,7 +18,7 @@ module.exports = {
                 expand: true,
                 flatten: true,
                 dest: 'dev/assets',
-                src: [ 'node_modules/bootstrap/dist/css/bootstrap.css' ]
+                src: [ 'node_modules/bootstrap/dist/css/bootstrap.css*' ]
             },
             {
                 expand: true,
