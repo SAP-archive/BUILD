@@ -20,6 +20,11 @@ var server = require('http').createServer(app);
 // Require optional modules
 require('./requires.js')(app);
 
+
+
+
+
+
 if (config.env === 'production') {
     // app.use(favicon(path.join(config.root, 'public', 'favicon.ico')));
     app.use(express.static(path.join(config.root, 'public')));
@@ -36,6 +41,15 @@ if (config.env === 'development' || config.env === 'test') {
 	app.use(errorHandler()); // Error handler - has to be last
 }
 
+// All undefined asset or api routes should return a 404
+/*app.route('/:url(api|auth|components|app|bower_components|assets)/*')
+.get(errors[404]);*/
+
+// All other routes should redirect to the index.html
+app.route('/*')
+.get(function(req, res) {
+  res.sendfile(app.get('appPath') + '/index.html');
+});
 
 // Start server
 server.listen(config.port, config.ip, function () {
