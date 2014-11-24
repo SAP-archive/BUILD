@@ -8,7 +8,7 @@ var aModule = angular.module, modules = [], dependencies = [];
 angular.module = function (name, dep) {
     if (dep) {
         if (dependencies.indexOf(name) === -1) {
-            if (name !== 'normanGeneratorTestsApp') modules.push(name);
+            if (name !== 'norman') modules.push(name);
         }
         dependencies = dependencies.concat(dep);
     }
@@ -25,7 +25,7 @@ require('angular-ui-router');
 // Require optional modules
 require('./requires.js');
 
-angular.module('normanGeneratorTestsApp', modules)
+angular.module('norman', modules)
     .config(function ($urlRouterProvider, $locationProvider) {
         $urlRouterProvider.otherwise('/');
         $locationProvider.html5Mode(true);
