@@ -4,7 +4,23 @@
 
 Project Norman is a free, open-sourced, cloud-based and social platform that enables even non-technical users to easily create useful enterprise-ready applications and deliver them to end-users without writing a line of code.
 It contains the following projects:
-
+[https://github.wdf.sap.corp/Norman/Logon](Log-on) 
+[https://github.wdf.sap.corp/Norman/DataComposer](Data Composer)
+[https://github.wdf.sap.corp/Norman/DataModelEditor](Data Model Editor)
+[https://github.wdf.sap.corp/Norman/FlowComposer](Flow Composer)
+[https://github.wdf.sap.corp/Norman/SampleDataServer](Sample Data Server)
+[https://github.wdf.sap.corp/Norman/UXRuleEngine](UX Rule Engine)
+[https://github.wdf.sap.corp/Norman/UICanvas](UI Canvas)
+[https://github.wdf.sap.corp/Norman/UIComposer](UI Composer)
+[https://github.wdf.sap.corp/Norman/SharedWorkspace](Shared Workspace)
+[https://github.wdf.sap.corp/Norman/UICatalogManager](UI Catalog Manager)
+[https://github.wdf.sap.corp/Norman/Previewer](Previewer)
+[https://github.wdf.sap.corp/Norman/UserResearch](User Research)
+[https://github.wdf.sap.corp/Norman/Collaboration](Collaboration)
+[https://github.wdf.sap.corp/Norman/Shell](Shell)
+[https://github.wdf.sap.corp/Norman/Analytics](Analytics)
+[https://github.wdf.sap.corp/Norman/Common](Common)
+[https://github.wdf.sap.corp/Norman/Projects](Projects  - aka Project Management)
 
 
 norman-norman
