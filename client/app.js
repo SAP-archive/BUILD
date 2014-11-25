@@ -7,8 +7,8 @@ require('angular');
 var aModule = angular.module, modules = [], dependencies = [];
 angular.module = function (name, dep) {
     if (dep) {
-        if (dependencies.indexOf(name) === -1) {
-            if (name !== 'norman') modules.push(name);
+        if (name !== 'norman' && dependencies.indexOf(name) === -1) {
+            modules.push(name);
         }
         dependencies = dependencies.concat(dep);
     }

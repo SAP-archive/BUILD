@@ -92,7 +92,6 @@ module.exports = function (grunt) {
                 'build',
                 'env:dev',
                 'express:dev',
-                // 'express-keepalive',
                 'watch',
                 // 'open'
             ]
@@ -136,6 +135,6 @@ module.exports = function (grunt) {
     ]);
 
 
-    grunt.registerTask('default', [ 'test' ]);
+    grunt.registerTask('default', [ 'build' ]);
 
 };

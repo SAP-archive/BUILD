@@ -1,6 +1,12 @@
 'use strict';
 module.exports = {
 
+    html: {
+        files: [
+            'client/**/*.html'
+        ],
+        tasks: ['copy:dev']
+    },
     js: {
         files: [
             'client/*.js',
@@ -18,7 +24,7 @@ module.exports = {
 
     less: {
         files: [
-            'client/*.less',
+            'client/**/*.less',
 
             'node_modules/norman*/**/*.less',
             '!node_modules/norman*/node_modules/*.less'
