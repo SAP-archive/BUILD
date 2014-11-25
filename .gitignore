@@ -4,7 +4,7 @@ public
 .idea
 dev
 dist
-
+client/requires.js
 server/requires.js
 .DS_Store
 npm-debug.log
