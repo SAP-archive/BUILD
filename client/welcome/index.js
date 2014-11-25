@@ -8,4 +8,5 @@ module.exports = angular.module('landing', [])
                 url: '/',
                 templateUrl: 'welcome/welcome.html'
             });
-    });
+    })
+    .controller('WelcomeNavbarCtrl', require('./navbar.controller.js'));

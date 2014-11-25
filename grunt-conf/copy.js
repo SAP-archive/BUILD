@@ -8,7 +8,7 @@ module.exports = {
                 dest: 'dev',
                 src: [
                     'index.html',
-                    'welcome/welcome.html',
+                    'welcome/*.html',
                     'assets/**/*',
                     '*.{ico,txt}',
                     '.htaccess'
