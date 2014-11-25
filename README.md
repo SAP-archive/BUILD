@@ -28,7 +28,7 @@ This is a bare-bones norman application. Use this to build norman modules on top
 
 ## Adding Modules
 
-To include a Norman module to the client side e.g. the Shell module:
+#### To include a Norman module to the client side e.g. the Shell module:
 
 1. `npm install norman-shell-client` 
 
@@ -40,7 +40,7 @@ To include a Norman module to the client side e.g. the Shell module:
 3. Build and Run
 
 
-To include another Norman module on the Server e.g. the Login module:
+#### To include another Norman module on the Server e.g. the Login module:
 
 1. `npm install norman-auth-server` 
 
