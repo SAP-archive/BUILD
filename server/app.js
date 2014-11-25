@@ -12,17 +12,22 @@ var express = require('express');
 var morgan = require('morgan');
 var errorHandler = require('errorhandler');
 var errorHandler = require('composable-middleware');
+var bodyParser = require('body-parser');
+var methodOverride = require('method-override');
+var cookieParser = require('cookie-parser');
+
 
 // Setup server
 var app = express();
+
+app.use(bodyParser.json());
+app.use(methodOverride());
+app.use(cookieParser());
+
 var server = require('http').createServer(app);
 
 // Require optional modules
 require('./requires.js')(app);
-
-
-
-
 
 
 if (config.env === 'production') {
