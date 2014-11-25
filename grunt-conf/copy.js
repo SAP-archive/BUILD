@@ -14,7 +14,14 @@ module.exports = {
                     '.htaccess'
                 ]
             },
-            // vendor (i.e. bootstrap) css
+            {
+                expand: true,
+                dest: 'dev',
+                src: [ 'node_modules/norman*/**/*.{html,png,gif,jpg,svg}' ]
+            },
+
+
+            // bootstrap css
             {
                 expand: true,
                 flatten: true,
@@ -24,11 +31,23 @@ module.exports = {
                 // bootstrap css should not be changed only overwritten
                 // src: [ 'node_modules/bootstrap/dist/css/bootstrap.css*' ]
             },
+
+
+            // font-awesome
             {
                 expand: true,
-                dest: 'dev',
-                src: [ 'node_modules/norman*/**/*.{html,png,gif,jpg,svg}' ]
+                flatten: true,
+                dest: 'dev/fonts',
+                src: [ 'node_modules/font-awesome/fonts/*.*' ]
+            },
+            {
+                expand: true,
+                flatten: true,
+                dest: 'dev/assets',
+                src: [ 'node_modules/font-awesome/css/font-awesome.css' ]
             }
+
+
         ]
     },
 
