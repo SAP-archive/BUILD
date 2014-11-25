@@ -13,7 +13,9 @@ module.exports = {
         },
         files: {
             'dev/assets/style.css': [
+                'client/assets/*.less',
                 'client/*.less',
+                'client/welcome/*.less',
                 'node_modules/norman-*/**/*.less',
                 '!node_modules/norman-*/node_modules/*.less'
             ]
