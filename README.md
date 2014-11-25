@@ -31,8 +31,8 @@ This is a bare-bones norman application. Use this to build norman modules on top
 3. Build and run:
     ```sh
     grunt dev       // just build in development mode
-        grunt serve     // build dev + start express server + watch js & less for changes
-        grunt dist      // build for production
+    grunt serve     // build dev + start express server + watch js & less for changes
+    grunt dist      // build for production
     ```
 
 ## Adding Modules
