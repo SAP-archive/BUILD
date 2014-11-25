@@ -151,6 +151,8 @@ Very straight forward description, with links to GitHub repository. Highlight is
 
 
 ###<a name="What are the Project Norman Development Guidelines?"></a>What are the Project Norman Development Guidelines?
+Integrate this with the above (i.e. what are the things that need to be provide for 1. a bug fix; 2. a new feature) - in a sense, what to do before (see above), and then the adherence to guidelines are two sepearate processes.
+
 Abstract definition of the languages, styles, quality issues (they can impact whether the contribution is adopted and integrated - this should also be stressed in earlier section, along with the warning that not all pull requests are accepted). Include links to specific wiki pages, where this information is stored.
 
 ###<a name="How Do I Submit A Pull Request?"></a>How Do I Submit A Pull Request?
