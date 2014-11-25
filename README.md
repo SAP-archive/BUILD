@@ -1,3 +1,12 @@
+
+##Welcome to Project Norman
+
+
+Project Norman is a free, open-sourced, cloud-based and social platform that enables even non-technical users to easily create useful enterprise-ready applications and deliver them to end-users without writing a line of code.
+It contains the following projects:
+
+
+
 norman-norman
 ===============
 This is a bare-bones norman application. Use this to build norman modules on top of that.

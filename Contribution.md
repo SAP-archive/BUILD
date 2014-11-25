@@ -99,8 +99,6 @@ Check current open issues in Issue Tracker in this repository for issues you are
 ###<a name="Report Issues"></a>Report Issues
 You can contribute by simply reporting issues you encountered using Project Norman. Before you report a bug, please check in the Issues Tracker first whether it has already been reported by another user. 
 
-##<a name="How Do I Contribute Code?"></a>How Do I Contribute Code? section
-
 
 ###<a name="Fix Issues"></a>Fix Issues
 
@@ -110,7 +108,7 @@ Consider issues that are currently being fixed aswell if they interest you, beca
 
 ###<a name="Propose and Build New Features"></a>Propose and Build New Features
 
-
+<place holder>
 
 ##<a name="How Do I Report Issues?"></a>How Do I Report Issues?
 
