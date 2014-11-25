@@ -4,7 +4,7 @@ module.exports = {
     dev: {
         options: {
             browserifyOptions: {
-                debug: true,                    // true to create map file
+                debug: true                    // true to create map file
             }
         },
         files: {
