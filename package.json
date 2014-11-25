@@ -1,5 +1,5 @@
 {
-  "name": "<%= _.slugify(_.humanize(appname)) %>",
+  "name": "norman-norman",
   "version": "0.0.0",
   "description": "Norman Template",
   "repository": {
