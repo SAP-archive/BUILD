@@ -1,6 +1,6 @@
 {
-  "name": "norman-norman",
-  "version": "1.0.0",
+  "name": "<%= _.slugify(_.humanize(appname)) %>",
+  "version": "0.0.0",
   "description": "Norman Template",
   "repository": {
     "type:": "git",
@@ -9,6 +9,7 @@
   "engines": {
     "node": ">=0.10.0"
   },
+  "main": "server/app.js",
   "dependencies": {
     "angular": "^1.3.3",
     "angular-bootstrap": "^0.11.0",
@@ -36,7 +37,6 @@
     "angular-scenario": "^1.3.3",
     "connect-livereload": "^0.5.0",
     "grunt": "^0.4.5",
-    "grunt-angular-templates": "^0.5.7",
     "grunt-browserify": "^3.2.0",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-concat": "^0.5.0",
