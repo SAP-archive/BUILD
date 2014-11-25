@@ -6,3 +6,5 @@ dev
 dist
 .DS_Store
 npm-debug.log
+client/requires.js
+server/requires.js
