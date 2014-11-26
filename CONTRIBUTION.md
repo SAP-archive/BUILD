@@ -54,10 +54,12 @@ For guidelines on contributing a fix, please refer to <a href="#How Do I Contrib
 
 We welcome your innovations to Project Norman. If you don't know exactly what you'd like to contribution, why not see if there is something on the project roadmap you find interesting. If you see something, why not give it a go? Contact one of our core developers first though, to make sure nobody else has started it. Even if they have, you might still be able to contribute. In any case, contacting the developer and agreeing on the basic parameters of your proposal is an important if you don't want to risk your contribution being refused. Furthermore, the developer might have some valuable hints and tips that save you a lot of time of and effort. 
 
-For guidelines on contributing an enhancment, please refer to <a href="#How Do I Contribute Code?">    How Do I Contribute Code?</a> section.
+For guidelines on contributing an enhancement, please refer to <a href="#How Do I Contribute Code?">    How Do I Contribute Code?</a> section.
 
 ##<a name="How Do I Report Issues?"></a> How Do I Report Issues?
 
+
+To report and issue, you simple open the Issue Tracker in the project, and click the <b>New Issue</b> button. 
 
 Describe the process for reporting issues / How to use issues in Git Hub; how labels are used; how issues are named etc.
 
