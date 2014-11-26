@@ -87,7 +87,7 @@ You submt changes to Project Norman projects, such as bug fixes and new or impro
 
 + Base all your work off of the devel branch. The devel branch is where active development happens. We do not merge patches directly into master.
 
-+     Name your branch to match the new feature of bug fix that you are submitting.
+<li>Name your branch to match the new feature of bug fix that you are submitting.
 
 
 +     Limit yourself to one feature or bug fix per pull request.
