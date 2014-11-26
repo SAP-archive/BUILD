@@ -69,10 +69,6 @@ To report and issue, you simple open the Issue Tracker in the project, and click
 
 You submt changes to Project Norman projects, such as bug fixes and new or improved features, using pull requests. However, prior to making changes to your branched version of the project, you should ensure that you are spending your time wisely. We do not accept all pull requests, and those we accept have to meet specific standards. Therefore, prior to creating new code, you should always disuss new features with our core developers using our mailing list. The same applies for significant bug fixes. Contacting the developer and agreeing on the basic parameters of your proposal is an important if you don't want to risk your contribution being refused. Furthermore, the developer might have some valuable hints and tips that save you a lot of time of and effort.  Once this discussion yields a shared consensus, you can confidentaly proceed and create the code.
 
-Contact our development team for a quick chat. While we deeply appreciate your efforts, we do not accept and support all new features or bug fixes submitted by contributors.  Use the DL for the project,  or the project blog, to contact a member of the core development team and describe your idea before you start. The developer may agree to support your new feature, in which case he can probably provide you with some valuable advice, or recommendations for modifications. In cases where the developer does not support your new feature, she can provide you with an explanation, and perhaps recommend an alternative.
-
-**       We do not accept proposal for new features through the Issue Tracker. They will be removed.**
-
 To create code for your enhancment of bug fix, do the following:
 
 1. Download the GiTHub Repository for the project. (link to instructions on how to)
