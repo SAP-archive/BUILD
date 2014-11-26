@@ -7,19 +7,13 @@
 + ###Browser/version: (+device/version)
 
 
-+ ###Any other tested browsers/devices:  
-
-++(OK/FAIL)
++ ###Any other tested browsers/devices:  (OK/FAIL)
 
 
-+ ###URL:   
-
-++(minimal example if possible)
++ ###URL:   (minimal example if possible)
 
 
-+ ###User/password:    
-
-++(if required and possible - do not post any confidential information here)
++ ###User/password:    (if required and possible - do not post any confidential information here)
 
 
 + ###Steps to reproduce the problem:
@@ -38,6 +32,4 @@
 + ###What happens instead?
 
 
-+ ###Any other information? 
-
-(attach screenshot if possible)
++ ###Any other information? (attach screenshot if possible)
