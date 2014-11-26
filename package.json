@@ -1,6 +1,6 @@
 {
   "name": "norman-norman",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Norman Template",
   "repository": {
     "type:": "git",
@@ -16,7 +16,6 @@
     "angular-cookies": "^1.3.3",
     "angular-resource": "^1.3.3",
     "angular-sanitize": "^1.3.3",
-    "angular-socket-io": "^0.6.1",
     "angular-ui-router": "^0.2.11",
     "body-parser": "~1.5.0",
     "bootstrap": "^3.3.1",
