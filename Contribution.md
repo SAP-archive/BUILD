@@ -37,8 +37,6 @@ You can contribute valuably to Project Norman by helping others users who need s
 ###<a name="Analyse Existing Issues"></a>Analyze Existing Issues
 Check the Issue Tracker in the project repository for issues in an area you are interested in contributing to. You might might be able to provide further information, or a hint that helps other contributors understand the issue. This is a great way to get acquainted with the project. You might want to fix an issue. For more information, see <a href="#Fix Issues">    Fix Issues</a>.
 
-Perhaps there is a new feature being developed that you can contribute to? In this case, simply contact the contributor responsible for the issue using the communication thread for the issue, and make a suggestion or ask if you can help out. Generally contributors are interested to hear what you have to say. Check our Communication Guidelines (link) if you have a moment, so you will know what to expect! 
-
 
 ###<a name="Report Issues"></a>Report Issues
 You can contribute by simply reporting issues you encountered when using Project Norman. Before you report a bug, please check in the Issues Tracker first whether it has already been reported by another user.
