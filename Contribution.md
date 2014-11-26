@@ -65,7 +65,7 @@ We appreciate all efforts to notify us if something goes wrong. However, we have
 Once you have acquainted yourself with the guidelines, you can go to project Issue Tracker to report the issue.
 To report and issue, you simple open the Issue Tracker in the project, and click the <b>New Issue</b> button. 
 
-##<a name="How Do I Submit a Bug Fix?"></a>How Do I Contribute Code?
+##<a name="How Do I Submit a Bug Fix?"></a>How Do I Submit a Bug Fix?
 ###Steps Before Fixing:
 Before you implement a fix do the following:
 
@@ -74,7 +74,7 @@ To submit a bug fix to a Project Norman project, please do the following
 
 
 
-##<a name="How Do I Submit a New Feature or Enhancments?"></a>How Do I Contribute Code?
+##<a name="How Do I Submit a New Feature or Enhancments?"></a>How Do I Submit a New Feature or Enhancments?
 
 ###Steps Before Fixing:
 Before you create a new feature or an enhancment to an existing feature, do the following:
