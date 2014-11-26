@@ -54,7 +54,7 @@ For guidelines on contributing a fix, please refer to <a href="#How Do I Contrib
 
 ###<a name="Propose and Build New Features"></a>Propose and Build New Features
 
-We welcome your innovations to Project Norman. If you don't know exactly what you'd like to contribution, why not see if there is something on the project roadmap you find interesting. If you see something, why not give it a go? Contact one of our core developers first though, to make sure nobody else has started it. Even if they have, you might still be able to contribute. In any case, contacting the developer and agreeing on the basic parameters of your proposal is an important if you don't want to risk your contribution being refused. Furthermore, the developer might have some valuable hints and tips that save you a lot of time of and effort. 
+We welcome your innovations to Project Norman. If you don't know exactly what you'd like to contribution, why not see if there is something on the project roadmap you find interesting. If you see something, why not give it a go? However, to ensure you are not wasting your valuable time, contact one of our core developers through the mailing list and discuss the proposed enhacement with them.
 
 For guidelines on contributing an enhancement, please refer to <a href="#How Do I Contribute Code?">    How Do I Contribute Code?</a> section.
 
@@ -65,45 +65,38 @@ We appreciate all efforts to notify us if something goes wrong. However, we have
 Once you have acquainted yourself with the guidelines, you can go to project Issue Tracker to report the issue.
 To report and issue, you simple open the Issue Tracker in the project, and click the <b>New Issue</b> button. 
 
-##<a name="How Do I Submit a Bug Fix?"></a>How Do I Submit a Bug Fix?
-###Steps Before Fixing:
-Before you implement a fix do the following:
+##<a name="Making Changes to Project Norman"></a>Making Changes to Project Norman
 
-###Steps After Fixing:
-To submit a bug fix to a Project Norman project, please do the following 
+You submt changes to Project Norman projects, such as bug fixes and new or improved features, using pull requests. However, prior to making changes to your branched version of the project, you should ensure that you are spending your time wisely. We do not accept all pull requests, and those we accept have to meet specific standards. Therefore, prior to creating new code, you should always disuss new features with our core developers using our mailing list. The same applies for significant bug fixes. Contacting the developer and agreeing on the basic parameters of your proposal is an important if you don't want to risk your contribution being refused. Furthermore, the developer might have some valuable hints and tips that save you a lot of time of and effort.  Once this discussion yields a shared consensus, you can confidentaly proceed and create the code.
 
+Contact our development team for a quick chat. While we deeply appreciate your efforts, we do not accept and support all new features or bug fixes submitted by contributors.  Use the DL for the project,  or the project blog, to contact a member of the core development team and describe your idea before you start. The developer may agree to support your new feature, in which case he can probably provide you with some valuable advice, or recommendations for modifications. In cases where the developer does not support your new feature, she can provide you with an explanation, and perhaps recommend an alternative.
 
-
-##<a name="How Do I Submit a New Feature or Enhancments?"></a>How Do I Submit a New Feature or Enhancments?
-
-###Steps Before Fixing:
-Before you create a new feature or an enhancment to an existing feature, do the following:
-
-
-###Steps After Fixing:
-To submit a new feature or an enhancment to an existing feature, do the following:
-
-
-
-1. Search the issue tracker to make sure the bug has not yet been reported, or that your proposed enhancement hasn't already been started by somebody else. 
- 
-2. Contact our development team for a quick chat. While we deeply appreciate your efforts, we do not accept and support all new features or bug fixes submitted by contributors.  Use the DL for the project,  or the project blog, to contact a member of the core development team and describe your idea before you start. The developer may agree to support your new feature, in which case he can probably provide you with some valuable advice, or recommendations for modifications. In cases where the developer does not support your new feature, she can provide you with an explanation, and perhaps recommend an alternative.
- 
 **       We do not accept proposal for new features through the Issue Tracker. They will be removed.**
 
-3. Review the [Apache License] (https://github.wdf.sap.corp/Norman/Drive/blob/master/License.txt) (which describes contributions) which outlines both your and the Project Norman Open Source Community's legal rights regarding your contribution.
+To create code for your enhancment of bug fix, do the following:
 
-4. Download, read, sign, and send us our [Individual Contribution License Agreement] (https://github.wdf.sap.corp/Norman/Drive/blob/master/docs/SAP%20Individual%20Contributor%20License%20Agreement.pdf) if you want to submit code as an individual. Alternatively, if you want to submit code on behalf of your employer, a company representative authorized to do so needs to download, fill, and print the [Corporate Contributor License Agreement] (https://github.wdf.sap.corp/Norman/Drive/blob/master/docs/SAP%20Corporate%20Contributor%20License%20Agreement.pdf) form.  
+1. Download the GiTHub Repository for the project. (link to instructions on how to)
 
-5. Download the GiTHub Repository for the project. (link to instructions on how to)
-
-6. Install the required tools. (link to suitable documents in wiki)
+2. Install the required tools. (link to suitable documents in wiki)
  
-7. Implement your new feature or bug fix on your branch. For consistency, and to enhance the chances that your contribution will be passed for review without corrections required, please review our coding guidelines to ensure that your code conforms to our current approach. (link to coding guidelines)
+3. Implement your new feature or bug fix on your branch. For consistency, and to enhance the chances that your contribution will be passed for review without corrections required, please review our coding guidelines to ensure that your code conforms to our current approach. (link to coding guidelines)
 
-8. Perform the requisite pre-pull request testing procedures (link to description of these in the wiki - overlap with guidelines)
+4. Perform the requisite pre-pull request testing procedures (link to description of these in the wiki - overlap with guidelines)
 
-9. Make a pull request, and wait for a response from the project team reviewer or committer for the area to which your bug fix or enhancment applies. (link to how to make a pull request) + (link to our specific committe message procedure - probably on our guidelines)
+Before you submit your completed code, do the following. 
+
+4. Review the [Apache License] (https://github.wdf.sap.corp/Norman/Drive/blob/master/License.txt) (which describes contributions) which outlines both your and the Project Norman Open Source Community's legal rights regarding your contribution.
+
+5. Download, read, sign, and send us our [Individual Contribution License Agreement] (https://github.wdf.sap.corp/Norman/Drive/blob/master/docs/SAP%20Individual%20Contributor%20License%20Agreement.pdf) if you want to submit code as an individual. Alternatively, if you want to submit code on behalf of your employer, a company representative authorized to do so needs to download, fill, and print the [Corporate Contributor License Agreement] (https://github.wdf.sap.corp/Norman/Drive/blob/master/docs/SAP%20Corporate%20Contributor%20License%20Agreement.pdf) form.  
+
+
+To submit your completed code, do the following:
+
+6. Make a pull request, and wait for a response from the project team reviewer or committer for the area to which your bug fix or enhancment applies. (link to how to make a pull request) + (link to our specific committe message procedure - probably on our guidelines)
+
+After you have submitter your completed code, do the following:
+
+7. Wait for a reviewer to review and approve your code. When you have submitted a pull request, a qualified review on the project team reviews your contribution to evaluate whether it can be committed to the master copy of the project, whether further discussion and development for further consideration, or whether it is not accepted as a contribution. It is generally expected that some communication is required with contributors after they have submitted a pull request, and quite rare that a contribution is accepted without qualification on the first attempt.
 
 
 ###<a name="What are the Project Norman Development Guidelines?"></a>What are the Project Norman Development Guidelines?
@@ -174,13 +167,9 @@ Reviewers are generally experts in the environment to which the contribution app
 
 Outline terms of how these decisions are made, how contributions are recognized/rewarded, how conflicts are resolved, how a lazy consensus is a useful tool, how features that have been agreed upon earlier, and that conform to coding guidelines, have a dramatically improved chance of being accepted straight away. 
 
-
-
-
 ###<a name="Committers"></a>Committers
 
 Committers are responsible for commiting changes submitted by pull request and passed by a reviewer.
-
 
 Established contributors in a project can be enabled as reviewers for that project if they receive the support of the project steering committee. It can be useful to be a committer. For example, providing support for Project Norman to a customer, being a committer could be a big selling poin of their skills for the customer.  
 
