@@ -63,13 +63,6 @@ We appreciate all efforts to notify us if something goes wrong. However, we have
 Once you have acquainted yourself with the guidelines, you can go to project Issue Tracker to report the issue.
 To report and issue, you simple open the Issue Tracker in the project, and click the <b>New Issue</b> button. 
 
-Describe the process for reporting issues / How to use issues in Git Hub; how labels are used; how issues are named etc.
-
-Search the [Project Norman GitHub Issue Tracker] (https://github.wdf.sap.corp/Norman/Drive/issues) to make sure the bug has not yet been reported, or that your proposed enhancement hasn't already been started. Once you're certain nobody else is working on your proposed change or fix, you can contact our development team for a quick chat, and maybe we can give you some pointers before you start. You can get their contact details [here](https://github.wdf.sap.corp/Norman/Drive/blob/master/Contributors.md).
-
-Committ messages (describe)_
-
-
 ## Report an Issue
 
 We appreciate all efforts to notify us if something goes wrong. However, we have limite capacity, and only support real bugs that are reported according to the guidelines below.
