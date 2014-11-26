@@ -96,6 +96,14 @@ Please conform you bug report to the following:
    * generally give as much additional information as possible. (But find the right balance: don not invest hours for a very obvious and easy to solve issue. When in doubt, give more information.)
  7. Minimal example: it is highly encouraged to provide a minimal example to reproduce in e.g. jsbin: isolate the application code which triggers the issue and strip it down as much as possible as long as the issue still occurs. If several files are required, you can create a gist. This may not always be possible and sometimes be overkill, but it always helps analyzing a bug.
  8. Only one bug per report: open different tickets for different issues
+
+
+You are encouraged to use [this template](http://openui5.org/bugreport_template.txt).
+
+Please report bugs in English, so all users can understand them.
+
+If the bug appears to be a regression introduced in a new version of UI5, try to find the closest versions between which it was introduced and take special care to make sure the issue is not caused by your application's usage of any internal method which changed its behavior.
+
  
 ### Quick Checklist for Bug Reports
 
@@ -107,12 +115,6 @@ Please conform you bug report to the following:
  * Well-documented
  * Minimal example
  * Use the [template](http://openui5.org/bugreport_template.txt)
-
-You are encouraged to use [this template](http://openui5.org/bugreport_template.txt).
-
-Please report bugs in English, so all users can understand them.
-
-If the bug appears to be a regression introduced in a new version of UI5, try to find the closest versions between which it was introduced and take special care to make sure the issue is not caused by your application's usage of any internal method which changed its behavior.
 
 
 ### Issue handling process
