@@ -5,7 +5,7 @@
 
 
 + ###Browser/version:
-                (+device/version)
+                +device/version
 
 
 + ###Any other tested browsers/devices:  '(OK/FAIL)'
