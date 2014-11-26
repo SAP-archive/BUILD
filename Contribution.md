@@ -157,15 +157,12 @@ Reviewers are responsible for reviewing all code and documentation submissions t
 
 The number of reviewers per project varies with the size of the project and the number of contribution.
 
+Reviewers are generally experts in the environment to which the contribution applies, and are also Committers.
+
 Established contributors in a project can be enabled as reviewers for that project if they receive the support of the project steering committee. It can be useful to be a committer. 
 
 You can find out more about our current reviewers and contributors on the [Contributors] (https://github.wdf.sap.corp/Norman/Drive/blob/master/Contributors.md)  page.
 
-When you have submitted a pull request, a qualified review on the project team reviews your contribution to evaluate whether it can be committed to the master copy of the project, whether further discussion and development for further consideration, or whether it is not accepted as a contribution. It is generally expected that some communication is required with contributors after they have submitted a pull request, and quite rare that a contribution is accepted without qualification on the first attempt.
-
-Reviewers are generally experts in the environment to which the contribution applies, and are also Committers.
-
-Outline terms of how these decisions are made, how contributions are recognized/rewarded, how conflicts are resolved, how a lazy consensus is a useful tool, how features that have been agreed upon earlier, and that conform to coding guidelines, have a dramatically improved chance of being accepted straight away. 
 
 ###<a name="Committers"></a>Committers
 
