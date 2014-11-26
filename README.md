@@ -65,7 +65,7 @@ This is a bare-bones norman application. Use this to build norman modules on top
 3. Build and Run
 
 
-#### To include another Norman module on the Server e.g. the Login module:
+#### To include another Norman module on the Server e.g. the Auth module:
 
 1. `npm install norman-auth-server` 
 
