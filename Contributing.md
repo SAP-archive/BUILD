@@ -28,7 +28,7 @@ Please conform you bug report to the following:
  8. Only one bug per report: open different tickets for different issues
 
 
-You are encouraged to use [this template](https://github.wdf.sap.corp/Norman/Norman/blob/fa84c24a6c4ee67b4adf9a4a225ca8a0196ebfa2/bugreport_template.txt).
+You are encouraged to use [this template](https://github.wdf.sap.corp/Norman/Norman/blob/master/bug_report_template.md).
 
 Please report bugs in English, so all users can understand them.
 
@@ -44,7 +44,7 @@ If the bug appears to be a regression introduced in a new version of UI5, try to
  * Good summary
  * Well-documented
  * Minimal example
- * Use the [template](https://github.wdf.sap.corp/Norman/Norman/blob/fa84c24a6c4ee67b4adf9a4a225ca8a0196ebfa2/bugreport_template.txt)
+ * Use the [template](https://github.wdf.sap.corp/Norman/Norman/blob/master/bug_report_template.md)
 
 
 ### Issue handling process
