@@ -1,15 +1,31 @@
-**Project Norman Version**:
-**Project**:
+**###Project Norman Version**:
 
-**Browser/version**:  (+device/version)
 
-**Any other tested browsers/devices**:  (OK/FAIL)
+**###Project**:
 
-**URL**:   (minimal example if possible)
 
-**User/password**:    (if required and possible - do not post any confidential information here)
+**###Browser/version**:
 
-**Steps to reproduce the problem**:
+(+device/version)
+
+
+**###Any other tested browsers/devices**:  
+
+(OK/FAIL)
+
+
+**###URL**:   
+
+(minimal example if possible)
+
+
+**###User/password**:    
+
+(if required and possible - do not post any confidential information here)
+
+
+**###Steps to reproduce the problem**:
+
 
 **1**.
 
@@ -18,10 +34,12 @@
 **3**.
 
 
-**What is the expected result?**
+**###What is the expected result?**
 
  
-**What happens instead?**
+**###What happens instead?**
 
 
-**Any other information?** (attach screenshot if possible)
+**###Any other information?** 
+
+(attach screenshot if possible)
