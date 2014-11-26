@@ -19,7 +19,6 @@ require('angular-bootstrap');
 require('angular-cookies');
 require('angular-resource');
 require('angular-sanitize');
-require('angular-socket-io');
 require('angular-ui-router');
 
 // Require optional modules
