@@ -10,7 +10,7 @@ To make the best use of your valuable time we recommend you take a few minutes t
 
 + <a href="#How Do I Submit a Bug Fix?">   How Do I Submit a Bug Fix?</a>
 
-+ <a href="#How Do I Submit a New Features or Enhancments?"> How Do I Submit a New Features or Enhancments?</a>
++ <a href="#How Do I Make Changes to Product Norman?"> How Do I Make Changes to Product Norman?</a>
 
 + <a href="#Who Contributes to Project Norman Projects?">   Who Contributes to Project Norman Projects?</a>
 
@@ -73,7 +73,7 @@ For more comprehensive guidelines on reporting issues, please refer to <a href="
 Once you have acquainted yourself with the guidelines, you can go to project Issue Tracker to report the issue.
 To report and issue, you simple open the Issue Tracker in the project, and click the <b>New Issue</b> button. 
 
-##<a name="Making Changes to Project Norman"></a>Making Changes to Project Norman
+##<a name="How Do I Make Changes to Product Norman?"></a>How Do I Make Changes to Product Norman?
 
 You submt changes to Project Norman projects, such as bug fixes and new or improved features, using pull requests. However, prior to making changes to your branched version of the project, you should ensure that you are spending your time wisely. We do not accept all pull requests, and those we accept have to meet specific standards. Therefore, prior to creating new code, you should always disuss new features with our core developers using our mailing list. The same applies for significant bug fixes. Contacting the developer and agreeing on the basic parameters of your proposal is an important if you don't want to risk your contribution being refused. Furthermore, the developer might have some valuable hints and tips that save you a lot of time of and effort.  Once this discussion yields a shared consensus, you can confidentaly proceed and create the code.
 
