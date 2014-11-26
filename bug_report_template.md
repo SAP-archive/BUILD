@@ -4,9 +4,7 @@
 + ###Project:
 
 
-+ ###Browser/version
-
-                    device/version
++ ###Browser/version <p>device/version</p> 
 
 
 + ###Any other tested browsers/devices:  
