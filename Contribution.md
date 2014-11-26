@@ -66,6 +66,8 @@ Describe the process for reporting issues / How to use issues in Git Hub; how la
 
 Search the [Project Norman GitHub Issue Tracker] (https://github.wdf.sap.corp/Norman/Drive/issues) to make sure the bug has not yet been reported, or that your proposed enhancement hasn't already been started. Once you're certain nobody else is working on your proposed change or fix, you can contact our development team for a quick chat, and maybe we can give you some pointers before you start. You can get their contact details [here](https://github.wdf.sap.corp/Norman/Drive/blob/master/Contributors.md).
 
+Committ messages (describe)_
+
 
 ##<a name="How Do I Contribute Code?"></a>How Do I Contribute Code?
 
@@ -90,7 +92,7 @@ Most likely, you want to contribute code to fix an existing bug, enhancement an 
 
 8. Perform the requisite pre-pull request testing procedures (link to description of these in the wiki - overlap with guidelines)
 
-9. Make a pull request, and wait for a response from the project team reviewer or committer for the area to which your bug fix or enhancment applies. 
+9. Make a pull request, and wait for a response from the project team reviewer or committer for the area to which your bug fix or enhancment applies. (link to how to make a pull request) + (link to our specific committe message procedure - probably on our guidelines)
 
 
 ###<a name="What are the Project Norman Development Guidelines?"></a>What are the Project Norman Development Guidelines?
