@@ -83,10 +83,10 @@ You submt changes to Project Norman projects, such as bug fixes and new or impro
 
 **2**   Install the required tools. (link to suitable documents in wiki)
  
-**3**   Implement your new feature or bug fix on your branch. 
+**3**   Implement your new feature or bug fix on your branch, taking the following into consideration:
 
-+ Base all your work off of the devel branch. The devel branch is where active development happens. We do not merge patches directly into master.
 <ul>
+<li>Base all your work off of the devel branch. The devel branch is where active development happens. We do not merge patches directly into master.</li>
 <li>Name your branch to match the new feature of bug fix that you are submitting.</li>
 <li>Limit yourself to one feature or bug fix per pull request.</li>
 <li>Include tests that prove your code works.</li>
