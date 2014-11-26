@@ -21,11 +21,11 @@ Please use the template below when reporting issues on Project Norman projects:
 + ###Steps to reproduce the problem:
 
 
-**1**.
+      **1**.
 
-**2**.
+      **2**.
 
-**3**.
+      **3**.
 
 
 + ###What is the expected result?
