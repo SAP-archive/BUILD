@@ -4,10 +4,10 @@
 + ###Project:
 
 
-+ ###Browser/version: (+device/version)
++ ###Browser/version: '(+device/version)'
 
 
-+ ###Any other tested browsers/devices:  (OK/FAIL)
++ ###Any other tested browsers/devices:  '(OK/FAIL)'
 
 
 + ###URL:   (minimal example if possible)
