@@ -43,8 +43,18 @@ Perhaps there is a new feature being developed that you can contribute to? In th
 ###<a name="Report Issues"></a>Report Issues
 You can contribute by simply reporting issues you encountered when using Project Norman. Before you report a bug, please check in the Issues Tracker first whether it has already been reported by another user.
 
-For guidelines on reporting issues, please refer to <a href="#How Do I Report Issues?">    How Do I Report Issues?</a> section.
+<b>Quick Checklist for Bug Reports</b>
 
+ * Issue report checklist:
+ * Real, current bug
+ * No duplicate
+ * Reproducible
+ * Good summary
+ * Well-documented
+ * Minimal example
+ * Use the [template](https://github.wdf.sap.corp/Norman/Norman/blob/master/bug_report_template.md)
+
+For more comprehensive guidelines on reporting issues, please refer to <a href="#How Do I Report Issues?">    How Do I Report Issues?</a> section.
 
 ###<a name="Fix Issues"></a>Fix Issues
 
