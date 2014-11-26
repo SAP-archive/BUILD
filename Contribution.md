@@ -57,7 +57,7 @@ We welcome your innovations to Project Norman. If you don't know exactly what yo
 
 For guidelines on contributing an enhancment, please refer to <a href="#How Do I Contribute Code?">    How Do I Contribute Code?</a> section.
 
-##<a name="How Do I Report Issues?"></a>How Do I Report Issues?
+##<a name="How Do I Report Issues?"></a> How Do I Report Issues?
 
 Describe the process for reporting issues / How to use issues in Git Hub; how labels are used; how issues are named etc.
 
