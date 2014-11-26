@@ -41,6 +41,7 @@ Check the Issue Tracker in the project repository for issues in an area you are 
 ###<a name="Report Issues"></a>Report Issues
 You can contribute by simply reporting issues you encountered when using Project Norman. Before you report a bug, please check in the Issues Tracker first whether it has already been reported by another user.
 
+For more comprehensive guidelines on reporting issues, please refer to <a href="#How Do I Report Issues?">    How Do I Report Issues?</a> section.
 
 ###<a name="Fix Issues"></a>Fix Issues
 
@@ -65,8 +66,6 @@ We appreciate all efforts to notify us if something goes wrong. However, we have
  * It must be well-documented
  * It must contains a minimal example
  * It must conform to this [template](https://github.wdf.sap.corp/Norman/Norman/blob/master/bug_report_template.md)
-
-For more comprehensive guidelines on reporting issues, please refer to <a href="#How Do I Report Issues?">    How Do I Report Issues?</a> section.
 
 Once you have acquainted yourself with the guidelines, you can go to project Issue Tracker to report the issue.
 To report and issue, you simple open the Issue Tracker in the project, and click the <b>New Issue</b> button. 
