@@ -11,7 +11,7 @@
 
 + ###Any other tested browsers/devices:  
 
-                      (OK/FAIL)
+__________(OK/FAIL)
 
 
 + ###URL:   (minimal example if possible)
