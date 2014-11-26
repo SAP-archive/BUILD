@@ -89,6 +89,7 @@ You submt changes to Project Norman projects, such as bug fixes and new or impro
 
 +     Name your branch to match the new feature of bug fix that you are submitting.
 
+
 +     Limit yourself to one feature or bug fix per pull request.
 
 +     Include tests that prove your code works.
