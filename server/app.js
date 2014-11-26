@@ -10,7 +10,6 @@ var config = {
 var path = require('path');
 var express = require('express');
 var morgan = require('morgan');
-var errorHandler = require('errorhandler');
 var errorHandler = require('composable-middleware');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
