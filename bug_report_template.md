@@ -1,21 +1,23 @@
-Project Norman Version:
-Project:
+**Project Norman Version**:
+**Project**:
 
-Browser/version (+device/version):
+**Browser/version** (+device/version):
 
-Any other tested browsers/devices(OK/FAIL):
+**Any other tested browsers/devices)**(OK/FAIL):
 
-URL (minimal example if possible):
+**URL** (minimal example if possible):
 
-User/password (if required and possible - do not post any confidential information here): 
+**User/password** (if required and possible - do not post any confidential information here): 
 
-Steps to reproduce the problem:
-1.
-2.
-3.
+**Steps to reproduce the problem**:
+**1.**
+**2**.
+**3**.
 
-What is the expected result?
+**What is the expected result?**
+
  
-What happens instead?
+**What happens instead?**
 
-Any other information? (attach screenshot if possible)
+
+**Any other information?** (attach screenshot if possible)
