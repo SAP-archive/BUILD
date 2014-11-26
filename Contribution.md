@@ -77,7 +77,7 @@ To report and issue, you simple open the Issue Tracker in the project, and click
 
 You submt changes to Project Norman projects, such as bug fixes and new or improved features, using pull requests. However, prior to making changes to your branched version of the project, you should ensure that you are spending your time wisely. We do not accept all pull requests, and those we accept have to meet specific standards. Therefore, prior to creating new code, you should always disuss new features with our core developers using our mailing list. The same applies for significant bug fixes. Contacting the developer and agreeing on the basic parameters of your proposal is an important if you don't want to risk your contribution being refused. Furthermore, the developer might have some valuable hints and tips that save you a lot of time of and effort.  Once this discussion yields a shared consensus, you can confidentaly proceed and create the code.
 
-To create code for your enhancment of bug fix, do the following:
+**To create code for your enhancment of bug fix, do the following**:
 
 **1**   Download the GiTHub Repository for the project. (link to instructions on how to)
 
@@ -87,18 +87,18 @@ To create code for your enhancment of bug fix, do the following:
 
 **4**   Perform the requisite pre-pull request testing procedures (link to description of these in the wiki - overlap with guidelines)
 
-Before you submit your completed code, do the following. 
+**Before you submit your completed code, do the following**: 
 
 **5**   Review the [Apache License] (https://github.wdf.sap.corp/Norman/Drive/blob/master/License.txt) (which describes contributions) which outlines both your and the Project Norman Open Source Community's legal rights regarding your contribution.
 
 **6**  Download, read, sign, and send us our [Individual Contribution License Agreement] (https://github.wdf.sap.corp/Norman/Drive/blob/master/docs/SAP%20Individual%20Contributor%20License%20Agreement.pdf) if you want to submit code as an individual. Alternatively, if you want to submit code on behalf of your employer, a company representative authorized to do so needs to download, fill, and print the [Corporate Contributor License Agreement] (https://github.wdf.sap.corp/Norman/Drive/blob/master/docs/SAP%20Corporate%20Contributor%20License%20Agreement.pdf) form.  
 
 
-To submit your completed code, do the following:
+**To submit your completed code, do the following**:
 
 **7**   Make a pull request, and wait for a response from the project team reviewer or committer for the area to which your bug fix or enhancment applies. (link to how to make a pull request) + (link to our specific committe message procedure - probably on our guidelines)
 
-After you have submitter your completed code, do the following:
+**After you have submitter your completed code, do the following**:
 
 **8**   Wait for a reviewer to review and approve your code. When you have submitted a pull request, a qualified review on the project team reviews your contribution to evaluate whether it can be committed to the master copy of the project, whether further discussion and development for further consideration, or whether it is not accepted as a contribution. It is generally expected that some communication is required with contributors after they have submitted a pull request, and quite rare that a contribution is accepted without qualification on the first attempt.
 
