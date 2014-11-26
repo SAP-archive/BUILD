@@ -39,26 +39,32 @@ Check current open issues in Issue Tracker in this repository for issues you are
 
 
 ###<a name="Report Issues"></a>Report Issues
-You can contribute by simply reporting issues you encountered using Project Norman. Before you report a bug, please check in the Issues Tracker first whether it has already been reported by another user. 
+You can contribute by simply reporting issues you encountered using Project Norman. Before you report a bug, please check in the Issues Tracker first whether it has already been reported by another user.
+
+For guidelines on reporting issues, please refer to <a href="#How Do I Report Issues?">    How Do I Report Issues?</a> section.
+
 
 
 ###<a name="Fix Issues"></a>Fix Issues
 
-Check for open issues in the Issue Tracker in this repository to identify a defect to fix.  In order to submit a bug fix, please refer to the  instructions in the <a href="#How Do I Contribute Code?"> section.  
+Check for open issues in the Issue Tracker in this repository to identify a defect to fix.  
 
-Consider issues that are currently being fixed aswell if they interest you, because the contributor responsible might appreciate the offer of assistance. Simply contact them using the communication thread for the issue, and ask if you can help out. Check our Communication Guidelines (link) if you have a moment. issues - refer to and from the 'How do I contribute Code section.
+Consider issues that are currently being fixed aswell if they interest you, because the contributor responsible might appreciate the offer of assistance. Simply contact them using the communication thread for the issue, and ask if you can help out. Check our Communication Guidelines (link) if you have a moment.
+
+For guidelines on reporting issues, please refer to <a href="#How Do I Contribute Code?">    How Do I Contribute Code?</a> section.
 
 ###<a name="Propose and Build New Features"></a>Propose and Build New Features
 
 We welcome your innovations to Project Norman. If you don't know exactly what you'd like to contribution, why not see if there is something on the project roadmap you find interesting. If you see something, why not give it a go? Contact one of our core developers first though, to make sure nobody else has started it. Even if they have, you might still be able to contribute. In any case, contacting the developer and agreeing on the basic parameters of your proposal is an important if you don't want to risk your contribution being refused. Furthermore, the developer might have some valuable hints and tips that save you a lot of time of and effort. 
 
-For more information on contribution code, see <a href="#How Do I Contribute Code?">    How Do I Contribute Code?</a>
+For guidelines on reporting issues, please refer to <a href="#How Do I Contribute Code?">    How Do I Contribute Code?</a> section.
+
 
 ##<a name="How Do I Report Issues?"></a>How Do I Report Issues?
 
 Describe the process for reporting issues / How to use issues in Git Hub; how labels are used; how issues are named etc.
 
-+ Search the [Project Norman GitHub Issue Tracker] (https://github.wdf.sap.corp/Norman/Drive/issues) to make sure the bug has not yet been reported, or that your proposed enhancement hasn't already been started. Once you're certain nobody else is working on your proposed change or fix, you can contact our development team for a quick chat, and maybe we can give you some pointers before you start. You can get their contact details [here](https://github.wdf.sap.corp/Norman/Drive/blob/master/Contributors.md).
+Search the [Project Norman GitHub Issue Tracker] (https://github.wdf.sap.corp/Norman/Drive/issues) to make sure the bug has not yet been reported, or that your proposed enhancement hasn't already been started. Once you're certain nobody else is working on your proposed change or fix, you can contact our development team for a quick chat, and maybe we can give you some pointers before you start. You can get their contact details [here](https://github.wdf.sap.corp/Norman/Drive/blob/master/Contributors.md).
 
 
 ##<a name="How Do I Contribute Code?"></a>How Do I Contribute Code?
@@ -68,7 +74,7 @@ Most likely, you want to contribute code to fix an existing bug, enhancement an 
 
 1. Search the issue tracker to make sure the bug has not yet been reported, or that your proposed enhancement hasn't already been started by somebody else. 
  
-2. Contact our development team for a quick chat. While we deeply appreciate your efforts, we do not accept and support all new features or bug fixes submitted by contributors. Therefore, in order to optimize the chances of your change being accepted,  contact a member of the core development team, using the DL for the project or the project blog, and describe your idea before you start. The developer may agree to support your new feature, in which case he can probably provide you with some valuable advice, or recommendations for modifications. In cases where the developer does not support your new feature, she can provide you with an explanation, and perhaps recommend an alternative.
+2. Contact our development team for a quick chat. While we deeply appreciate your efforts, we do not accept and support all new features or bug fixes submitted by contributors.  Use the DL for the project,  or the project blog, to contact a member of the core development team and describe your idea before you start. The developer may agree to support your new feature, in which case he can probably provide you with some valuable advice, or recommendations for modifications. In cases where the developer does not support your new feature, she can provide you with an explanation, and perhaps recommend an alternative.
  
 **       We do not accept proposal for new features through the Issue Tracker. They will be removed.**
 
@@ -76,16 +82,15 @@ Most likely, you want to contribute code to fix an existing bug, enhancement an 
 
 4. Download, read, sign, and send us our [Individual Contribution License Agreement] (https://github.wdf.sap.corp/Norman/Drive/blob/master/docs/SAP%20Individual%20Contributor%20License%20Agreement.pdf) if you want to submit code as an individual. Alternatively, if you want to submit code on behalf of your employer, a company representative authorized to do so needs to download, fill, and print the [Corporate Contributor License Agreement] (https://github.wdf.sap.corp/Norman/Drive/blob/master/docs/SAP%20Corporate%20Contributor%20License%20Agreement.pdf) form.  
 
-5. Download the GiTHub Repository. (link to instructions on how to)
+5. Download the GiTHub Repository for the project. (link to instructions on how to)
 
 6. Install the required tools. (link to suitable documents in wiki)
  
-7. Implement your new feature or bug fix on your branch. (For consistency, and to enhance the chances that your contribution will be passed for review without corrections required, pleasereview our coding guidelines to ensure that your code conforms to our current approach. link to guidelines)
+7. Implement your new feature or bug fix on your branch. For consistency, and to enhance the chances that your contribution will be passed for review without corrections required, please review our coding guidelines to ensure that your code conforms to our current approach. (link to coding guidelines)
 
-8. Perform the requisite pre-pull request testing procedures (link to description of these in the wiki)
+8. Perform the requisite pre-pull request testing procedures (link to description of these in the wiki - overlap with guidelines)
 
 9. Make a pull request, and wait for a response from the project team reviewer or committer for the area to which your bug fix or enhancment applies. 
-
 
 
 ###<a name="What are the Project Norman Development Guidelines?"></a>What are the Project Norman Development Guidelines?
