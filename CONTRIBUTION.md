@@ -58,7 +58,7 @@ For guidelines on contributing an enhancement, please refer to <a href="#How Do 
 
 ##<a name="How Do I Report Issues?"></a> How Do I Report Issues?
 
-We appreciate all efforts to notify us if something goes wrong. However, we have limited capacity, and only support real bugs that are reported according to the describe [here]().
+We appreciate all efforts to notify us if something goes wrong. However, we have limited capacity, and only support real bugs that are reported according to the describe [here](https://github.wdf.sap.corp/Norman/Norman/blob/master/Contributing.md).
 
 Once you have acquainted yourself with the guidelines, you can go to project Issue Tracker to report the issue.
 To report and issue, you simple open the Issue Tracker in the project, and click the <b>New Issue</b> button. 
