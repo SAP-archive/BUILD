@@ -86,18 +86,13 @@ You submt changes to Project Norman projects, such as bug fixes and new or impro
 **3**   Implement your new feature or bug fix on your branch. 
 
 + Base all your work off of the devel branch. The devel branch is where active development happens. We do not merge patches directly into master.
-
-<li>Name your branch to match the new feature of bug fix that you are submitting.
-
-
-+     Limit yourself to one feature or bug fix per pull request.
-
-+     Include tests that prove your code works.
-
-+     For consistency, and to enhance the chances that your contribution will be passed for review without corrections required, please review our coding guidelines to ensure that your code conforms to our current approach. (link to coding guidelines).
-
-+    Be sure your author field in git is properly filled out with your full name and email address so we can credit you.
-
+<ul>
+<li>Name your branch to match the new feature of bug fix that you are submitting.</li>
+<li>Limit yourself to one feature or bug fix per pull request.</li>
+<li>Include tests that prove your code works.</li>
+<li>For consistency, and to enhance the chances that your contribution will be passed for review without corrections required, please review our coding guidelines to ensure that your code conforms to our current approach. (link to coding guidelines).</li>
+<li>Be sure your author field in git is properly filled out with your full name and email address so we can credit you.</li>
+</ul>
 **4**   Perform the requisite pre-pull request testing procedures (link to description of these in the wiki - overlap with guidelines)
 
 **Before you submit your completed code, do the following**: 
