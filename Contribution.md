@@ -8,7 +8,9 @@ To make the best use of your valuable time we recommend you take a few minutes t
 
 + <a href="#How Do I Report Issues?">   How Do I Report Issues?</a>
 
-+ <a href="#How Do I Contribute Code?">   How Do I Contribute Code?</a>
++ <a href="#How Do I Submit a Bug Fix?">   How Do I Submit a Bug Fix?</a>
+
++ <a href="#How Do I Submit a New Features or Enhancments?"> How Do I Submit a New Features or Enhancments?</a>
 
 + <a href="#Who Contributes to Project Norman Projects?">   Who Contributes to Project Norman Projects?</a>
 
@@ -63,10 +65,24 @@ We appreciate all efforts to notify us if something goes wrong. However, we have
 Once you have acquainted yourself with the guidelines, you can go to project Issue Tracker to report the issue.
 To report and issue, you simple open the Issue Tracker in the project, and click the <b>New Issue</b> button. 
 
+##<a name="How Do I Submit a Bug Fix?"></a>How Do I Contribute Code?
+###Steps Before Fixing:
+Before you implement a fix do the following:
 
-##<a name="How Do I Contribute Code?"></a>How Do I Contribute Code?
+###Steps After Fixing:
+To submit a bug fix to a Project Norman project, please do the following 
 
-Most likely, you want to contribute code to fix an existing bug, enhancement an existing feature, or add a new feature. This section describes how to do the following: (This list should be cross-applicable for both fixes and enhancements (with special mention to ensure that they have reviewed the earlier sections referring to making sure they've checked whether its been done, are familiar with guidelines etc.)
+
+
+##<a name="How Do I Submit a New Feature or Enhancments?"></a>How Do I Contribute Code?
+
+###Steps Before Fixing:
+Before you create a new feature or an enhancment to an existing feature, do the following:
+
+
+###Steps After Fixing:
+To submit a new feature or an enhancment to an existing feature, do the following:
+
 
 
 1. Search the issue tracker to make sure the bug has not yet been reported, or that your proposed enhancement hasn't already been started by somebody else. 
