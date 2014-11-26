@@ -4,7 +4,7 @@
 
 Project Norman is a free, open-sourced, cloud-based and social platform that enables even non-technical users to easily create useful enterprise-ready applications and deliver them to end-users without writing a line of code.
 It contains the following projects:
-+ [Log-on] (https://github.wdf.sap.corp/Norman/Logon) 
++ [Auth] (https://github.wdf.sap.corp/Norman/Auth) 
 + [Data Composer] (https://github.wdf.sap.corp/Norman/DataComposer)
 + [Data Model Editor] (https://github.wdf.sap.corp/Norman/DataModelEditor)
 + [Flow Composer] (https://github.wdf.sap.corp/Norman/FlowComposer)
