@@ -16,7 +16,7 @@ To make the best use of your valuable time we recommend you take a few minutes t
 
 ##<a name="What Can I Contribute?"></a>What Can I Contribute?
 
-You might already know exactly what you do, but if not, you might consider contributing in one or all of the following ways: following:
+You might already know exactly what you do, but if not, you might consider contributing in one or all of the following ways: 
 
 + <a href="#Help Other Drive.SAP Users and Contributors">    Help Other Drive.SAP Users and Contributors</a>
 
@@ -30,13 +30,13 @@ You might already know exactly what you do, but if not, you might consider contr
 
 ###<a name="Help Other Drive.SAP Users and Contributors"></a>Help Other Drive.SAP Users and Contributors
 
-You can contribute valuably to Project Norman by helping others users who need support. You will find them e.g. on StackOverflow or in the SAP Community Network forum.
+You can contribute valuably to Project Norman by helping others users who need support. You will find them, for example, on StackOverflow, or in the SAP Community Network forum.
 
-Check current open issues in Issue Tracker in this repository and see if you can identify an area you are interested in contributing to. Perhaps there is a new feature being developed, or a bug being fixed, that you can contribute to. Simply contact the contributor responsible for the issue via the communication thread for the issue, and ask if you can help out. Generally contributors are interested to hear what you have to say. Chekc our Communication Guidelines (link) if you have a moment, so you will know what to expect! 
 
 ###<a name="Analyse Existing Issues"></a>Analyze Existing Issues
 Check current open issues in Issue Tracker in this repository for issues you are interested in responding to. It might be a reported defect you want to fix, an approved new feature if you can identify an area you are interested in contributing to. Perhaps there is a new feature being developed, or a bug being fixed, that you can contribute to. Simply contact the contributor responsible for the issue via the communication thread for the issue, and ask if you can help out. Generally contributors are interested to hear what you have to say. Chekc our Communication Guidelines (link) if you have a moment, so you will know what to expect! 
 
+Check current open issues in Issue Tracker in this repository and see if you can identify an area you are interested in contributing to. Perhaps there is a new feature being developed, or a bug being fixed, that you can contribute to. Simply contact the contributor responsible for the issue via the communication thread for the issue, and ask if you can help out. Generally contributors are interested to hear what you have to say. Check our Communication Guidelines (link) if you have a moment, so you will know what to expect! 
 
 ###<a name="Report Issues"></a>Report Issues
 You can contribute by simply reporting issues you encountered using Project Norman. Before you report a bug, please check in the Issues Tracker first whether it has already been reported by another user.
