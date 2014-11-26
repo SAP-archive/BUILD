@@ -59,6 +59,7 @@ For guidelines on contributing an enhancment, please refer to <a href="#How Do I
 
 ##<a name="How Do I Report Issues?"></a> How Do I Report Issues?
 
+
 Describe the process for reporting issues / How to use issues in Git Hub; how labels are used; how issues are named etc.
 
 Search the [Project Norman GitHub Issue Tracker] (https://github.wdf.sap.corp/Norman/Drive/issues) to make sure the bug has not yet been reported, or that your proposed enhancement hasn't already been started. Once you're certain nobody else is working on your proposed change or fix, you can contact our development team for a quick chat, and maybe we can give you some pointers before you start. You can get their contact details [here](https://github.wdf.sap.corp/Norman/Drive/blob/master/Contributors.md).
