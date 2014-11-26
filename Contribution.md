@@ -34,31 +34,28 @@ You can contribute valuably to Project Norman by helping others users who need s
 
 
 ###<a name="Analyse Existing Issues"></a>Analyze Existing Issues
-Check current open issues in Issue Tracker in this repository for issues you are interested in responding to. It might be a reported defect you want to fix, an approved new feature if you can identify an area you are interested in contributing to. Perhaps there is a new feature being developed, or a bug being fixed, that you can contribute to. Simply contact the contributor responsible for the issue via the communication thread for the issue, and ask if you can help out. Generally contributors are interested to hear what you have to say. Chekc our Communication Guidelines (link) if you have a moment, so you will know what to expect! 
+Check the Issue Tracker in the project repository for issues in an area you are interested in contributing to. You might might be able to provide further information, or a hint that helps other contributors understand the issue. This is a great way to get acquainted with the project. You might want to fix an issue. For more information, see <a href="#Fix Issues">    Fix Issues</a>.
 
-Check current open issues in Issue Tracker in this repository and see if you can identify an area you are interested in contributing to. Perhaps there is a new feature being developed, or a bug being fixed, that you can contribute to. Simply contact the contributor responsible for the issue via the communication thread for the issue, and ask if you can help out. Generally contributors are interested to hear what you have to say. Check our Communication Guidelines (link) if you have a moment, so you will know what to expect! 
+Perhaps there is a new feature being developed that you can contribute to? In this case, simply contact the contributor responsible for the issue using the communication thread for the issue, and make a suggestion or ask if you can help out. Generally contributors are interested to hear what you have to say. Check our Communication Guidelines (link) if you have a moment, so you will know what to expect! 
+
 
 ###<a name="Report Issues"></a>Report Issues
-You can contribute by simply reporting issues you encountered using Project Norman. Before you report a bug, please check in the Issues Tracker first whether it has already been reported by another user.
+You can contribute by simply reporting issues you encountered when using Project Norman. Before you report a bug, please check in the Issues Tracker first whether it has already been reported by another user.
 
 For guidelines on reporting issues, please refer to <a href="#How Do I Report Issues?">    How Do I Report Issues?</a> section.
 
 
-
 ###<a name="Fix Issues"></a>Fix Issues
 
-Check for open issues in the Issue Tracker in this repository to identify a defect to fix.  
+Check the Issue Tracker in the project repository for issues in an area you are interested in fixing. Consider issues that are currently being fixed aswell if they interest you, because the contributor responsible might appreciate the offer of assistance. 
 
-Consider issues that are currently being fixed aswell if they interest you, because the contributor responsible might appreciate the offer of assistance. Simply contact them using the communication thread for the issue, and ask if you can help out. Check our Communication Guidelines (link) if you have a moment.
-
-For guidelines on reporting issues, please refer to <a href="#How Do I Contribute Code?">    How Do I Contribute Code?</a> section.
+For guidelines on contributing a fix, please refer to <a href="#How Do I Contribute Code?">    How Do I Contribute Code?</a> section.
 
 ###<a name="Propose and Build New Features"></a>Propose and Build New Features
 
 We welcome your innovations to Project Norman. If you don't know exactly what you'd like to contribution, why not see if there is something on the project roadmap you find interesting. If you see something, why not give it a go? Contact one of our core developers first though, to make sure nobody else has started it. Even if they have, you might still be able to contribute. In any case, contacting the developer and agreeing on the basic parameters of your proposal is an important if you don't want to risk your contribution being refused. Furthermore, the developer might have some valuable hints and tips that save you a lot of time of and effort. 
 
-For guidelines on reporting issues, please refer to <a href="#How Do I Contribute Code?">    How Do I Contribute Code?</a> section.
-
+For guidelines on contributing an enhancment, please refer to <a href="#How Do I Contribute Code?">    How Do I Contribute Code?</a> section.
 
 ##<a name="How Do I Report Issues?"></a>How Do I Report Issues?
 
@@ -67,6 +64,102 @@ Describe the process for reporting issues / How to use issues in Git Hub; how la
 Search the [Project Norman GitHub Issue Tracker] (https://github.wdf.sap.corp/Norman/Drive/issues) to make sure the bug has not yet been reported, or that your proposed enhancement hasn't already been started. Once you're certain nobody else is working on your proposed change or fix, you can contact our development team for a quick chat, and maybe we can give you some pointers before you start. You can get their contact details [here](https://github.wdf.sap.corp/Norman/Drive/blob/master/Contributors.md).
 
 Committ messages (describe)_
+
+
+## Report an Issue
+
+We appreciate all efforts to notify us if something goes wrong. However, we have limite capacity, and only support real bugs that are reported according to the guidelines below.
+
+Once you have acquainted yourself with the guidelines, you can go to project Issue Tracker to report the issue.
+
+
+### Requirements for a bug report
+
+Please conform you bug report to the following:
+ 1. **Only real bugs**: please do your best to make sure to only report real bugs. You should not report:
+   * issues caused by application code or any code outside Project Norman.
+   * issues that you cannot reproduce.
+   * something that behaves just different from what you expected. A bug is when something behaves different than specified. When in doubt, ask in a forum.
+   * requests for help in achieving a task in Project Norman. Please use a support forum like stackoverflow to request help.
+   * feature requests. Features requests are removed from the project Issue Tracker automatically. For guidelines on contributing an enhancment, please refer to <a href="#Propose and Build New Features">    Propose and Build New Features</a> section.
+ 2. No duplicate: please search the issue tracker and make sure you bug has been reported previously.
+ 3. Good summary: please ensure the summary is specific to the issue.
+ 4. Current bug: the bug can be reproduced in the most current version. Please state the tested version!
+ 5. Reproducible bug: Please provide steps to reproduce the error, including:
+   * a URL to access the example
+   * any required user/password information. However, please ensure you don't reveal any proprietary security credentials.
+   * detailed and complete step-by-step instructions to reproduce the bug
+ 6. Precise description:
+   * precisely state the expected and the actual behavior
+   * give information about the used browser/device and its version, if possible also the behavior in other browsers/devices
+   * if the bug is appears on a UI, please attach a screenshot with callouts describing the problem.
+   * generally give as much additional information as possible. (But find the right balance: don not invest hours for a very obvious and easy to solve issue. When in doubt, give more information.)
+ 7. Minimal example: it is highly encouraged to provide a minimal example to reproduce in e.g. jsbin: isolate the application code which triggers the issue and strip it down as much as possible as long as the issue still occurs. If several files are required, you can create a gist. This may not always be possible and sometimes be overkill, but it always helps analyzing a bug.
+ 8. Only one bug per report: open different tickets for different issues
+ 
+### Quick Checklist for Bug Reports
+
+ * Issue report checklist:
+ * Real, current bug
+ * No duplicate
+ * Reproducible
+ * Good summary
+ * Well-documented
+ * Minimal example
+ * Use the [template](http://openui5.org/bugreport_template.txt)
+
+You are encouraged to use [this template](http://openui5.org/bugreport_template.txt).
+
+Please report bugs in English, so all users can understand them.
+
+If the bug appears to be a regression introduced in a new version of UI5, try to find the closest versions between which it was introduced and take special care to make sure the issue is not caused by your application's usage of any internal method which changed its behavior.
+
+
+### Issue handling process
+
+When an issue is reported, a committer will look at it and either confirm it as a real issue (by giving the "approved" label), close it if it is not an issue, or ask for more details. Approved issues are then either assigned to a committer in GitHub, reported in our internal issue handling system, or left open as "contribution welcome" for easy or not urgent fixes.
+
+An issue that is about a real bug is closed as soon as the fix is committed. The closing comment explains which patch version(s) of UI5 will contain the fix.
+
+
+### Reporting Security Issues
+
+If you find a security issue, please act responsibly and report it not in the public issue tracker, but directly to us, so we can fix it before it can be exploited:
+ * SAP Customers: if the found security issue is not covered by a published security note, please report it by creating a customer message at https://service.sap.com/message.
+ * Researchers/non-Customers: please send the related information to secure@sap.com using [PGP for e-mail encryption](http://global.sap.com/pc/security/keyblock.txt).
+Also refer to the general [SAP security information page](http://www54.sap.com/pc/tech/application-foundation-security/software/security-at-sap/report.html).
+
+
+### Usage of Labels
+
+Github offers labels to categorize issues. We defined the following labels so far:
+
+Labels for issue categories:
+ * bug: this issue is a bug in the code
+ * documentation: this issue is about wrong documentation
+ * enhancement: this is not a bug report, but an enhancement request
+
+Status of open issues:
+ * unconfirmed: this report needs confirmation whether it is really a bug (no label; this is the default status)
+ * approved: this issue is confirmed to be a bug
+ * author action: the author is required to provide information
+ * contribution welcome: this fix/enhancement is approved and you are invited to contribute it
+
+Status/resolution of closed issues:
+ * fixed: a fix for the issue was provided
+ * duplicate: the issue is also reported in a different ticket and is handled there
+ * invalid: for some reason or another this issue report will not be handled further (maybe lack of information or issue does not apply anymore)
+ * works: not reproducible or working as expected
+ * wontfix: while acknowledged to be an issue, a fix cannot or will not be provided
+
+The labels can only be set and modified by committers.
+
+
+### Issue Reporting Disclaimer
+
+We want to improve the quality of UI5 and good bug reports are welcome! But our capacity is limited, so we cannot handle questions or consultation requests and we cannot afford to ask for required details. So we reserve the right to close or to not process insufficient bug reports in favor of those which are very cleanly documented and easy to reproduce. Even though we would like to solve each well-documented issue, there is always the chance that it won't happen - remember: OpenUI5 is Open Source and comes without warranty.
+
+Bug report analysis support is very welcome! (e.g. pre-analysis or proposing solutions)
 
 
 ##<a name="How Do I Contribute Code?"></a>How Do I Contribute Code?
