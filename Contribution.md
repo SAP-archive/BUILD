@@ -110,18 +110,6 @@ Abstract definition of the languages, styles, quality issues (they can impact wh
 
 
 
-1. Base all your work off of the devel branch. The devel branch is where active development happens. We do not merge patches directly into master.
-
-2. Name your branch to match the new feature of bug fix that you are submitting.
-
-3. Limit yourself to one feature or bug fix per pull request.
-
-4. Include tests that prove your code works.
-
-5. Follow the MDG style guide for code and commit messages.
-
-Be sure your author field in git is properly filled out with your full name and email address so we can credit you.
-
 
 
 ##<a name="Who Contributes to Project Norman Projects?"></a>Who Contributes to Project Norman Projects?
