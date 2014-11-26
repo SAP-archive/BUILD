@@ -5,13 +5,13 @@ So you want to contribute to Project Norman? Good choice! There is lots of scope
 To make the best use of your valuable time we recommend you take a few minutes to read this page before you dive in. It contains everything you need to know in order to get started. 
 
 
-+ <a href="###What Can I Contribute?">What Can I Contribute?</a>
++ <a href="###What Can I Contribute?">   What Can I Contribute?</a>
 
-+ <a href="###How Do I Report Issues?">How Do I Report Issues?</a>
++ <a href="###How Do I Report Issues?">   How Do I Report Issues?</a>
 
-+ <a href="###How Do I Contribute Code?">How Do I Contribute Code?</a>
++ <a href="###How Do I Contribute Code?">   How Do I Contribute Code?</a>
 
-+ <a href="###Who Contributes to Project Norman Projects?">Who Contributes to Project Norman Projects?</a>
++ <a href="###Who Contributes to Project Norman Projects?">   Who Contributes to Project Norman Projects?</a>
 
 
 ##<a name="What Can I Contribute?"></a>What Can I Contribute?
