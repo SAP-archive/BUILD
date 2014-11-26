@@ -151,7 +151,7 @@ The labels can only be set and modified by committers.
 
 ### Issue Reporting Disclaimer
 
-We want to improve the quality of UI5 and good bug reports are welcome! But our capacity is limited, so we cannot handle questions or consultation requests and we cannot afford to ask for required details. So we reserve the right to close or to not process insufficient bug reports in favor of those which are very cleanly documented and easy to reproduce. Even though we would like to solve each well-documented issue, there is always the chance that it won't happen - remember: OpenUI5 is Open Source and comes without warranty.
+We want to improve the quality of Project Norman and good bug reports are welcome! But our capacity is limited, so we cannot handle questions or consultation requests and we cannot afford to ask for required details. So we reserve the right to close or to not process insufficient bug reports in favor of those which are very cleanly documented and easy to reproduce. Even though we would like to solve each well-documented issue, there is always the chance that it won't happen - remember: Project Norman is Open Source and comes without warranty.
 
 Bug report analysis support is very welcome! (e.g. pre-analysis or proposing solutions)
 
