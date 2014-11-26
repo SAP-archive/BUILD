@@ -1,9 +1,6 @@
-This document describes guidelines for enter bug reports in the Issue Tracker for projects in Project Norman .
+We appreciate all efforts to notify us if something goes wrong. However, we have limite capacity, and only support real bugs that are reported according to the guidelines below.
 
 <b>We do not accept proposal for new features through the Issue Tracker. They will be removed.</b>
-
-
-We appreciate all efforts to notify us if something goes wrong. However, we have limite capacity, and only support real bugs that are reported according to the guidelines below.
 
 Once you have acquainted yourself with the guidelines, you can go to project Issue Tracker to report the issue.
 
