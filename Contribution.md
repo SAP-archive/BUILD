@@ -79,7 +79,7 @@ You submit changes to Project Norman sub-projects, such as bug fixes and new or 
 
 **To create code for your enhancment of bug fix, do the following**:
 
-**1.**   Fork the sub-project repo and then clone the fork. For more information, see [Fork a Repo](https://help.github.com/articles/fork-a-repo/).
+**1.**   Fork the sub-project repo and then clone the fork. For more information, see [Fork a Repo] (https://help.github.com/articles/fork-a-repo/).
 
 **2.**   Install the required tools. For more information, see 
 
@@ -90,7 +90,7 @@ You submit changes to Project Norman sub-projects, such as bug fixes and new or 
 <li>Name your branch to match the new feature of bug fix that you are submitting.</li>
 <li>Limit yourself to one feature or bug fix per pull request.</li>
 <li>Include tests that prove your code works.</li>
-<li>For consistency, and to enhance the chances that your contribution will be passed for review without corrections required, please read the [Project Norman Style Guide](https://github.wdf.sap.corp/Norman/Norman/blob/master/Project%20Norman%20Style%20Guide.md) to ensure that your code conforms to our current approach.</li>
+<li>For consistency, and to enhance the chances that your contribution will be passed for review without corrections required, please read the [Project Norman Style Guide] (https://github.wdf.sap.corp/Norman/Norman/blob/master/Project%20Norman%20Style%20Guide.md) to ensure that your code conforms to our current approach.</li>
 <li>Be sure your author field in git is properly filled out with your full name and email address so we can credit you.</li>
 </ul>
 **4.**   Perform the requisite pre-pull request testing procedures (link to description of these in the wiki - overlap with guidelines)
