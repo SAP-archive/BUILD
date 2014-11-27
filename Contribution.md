@@ -79,10 +79,10 @@ You submit changes to Project Norman sub-projects, such as bug fixes and new or 
 
 **To create code for your enhancment of bug fix, do the following**:
 
-**1.**   Download the GiTHub Repository for the project. (link to instructions on how to)
+**1.**   Fork the sub-project repo and then clone the fork. For more information, see [Fork a Repo](https://help.github.com/articles/fork-a-repo/).
 
-**2.**   Install the required tools. (link to suitable documents in wiki)
- 
+**2.**   Install the required tools. For more information, see 
+
 **3.**   Implement your new feature or bug fix on your branch, taking the following into consideration:
 
 <ul>
@@ -104,15 +104,13 @@ You submit changes to Project Norman sub-projects, such as bug fixes and new or 
 
 **To submit your completed code, do the following**:
 
-**7.**   Make a pull request, and wait for a response from the project team reviewer or committer for the area to which your bug fix or enhancment applies. 
-
-**Note**:  For more information on making a pull request, see [Creating a Pull Request](https://help.github.com/articles/creating-a-pull-request)
+**7.**  Push the changes on your fork,  and submit pull request for original repository. Fore more information, see [Using Pull Requests](https://help.github.com/articles/using-pull-requests/).
 
 **Note**:  For guidelines on commit messages, see the [Project Norman Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Project%20Norman%20Style%20Guide.md).
 
 **After you have submitter your completed code, do the following**:
 
-**8.**   Wait for a reviewer to review and approve your code. When you have submitted a pull request, a qualified review on the project team reviews your contribution to evaluate whether it can be committed to the master copy of the project, whether further discussion and development for further consideration, or whether it is not accepted as a contribution. It is generally expected that some communication is required with contributors after they have submitted a pull request, and quite rare that a contribution is accepted without qualification on the first attempt.
+**9.**   Wait for a response from the project team reviewer or committer for the area to which your bug fix or enhancment applies. For more information on the the reviewing process, see <a href="#Reviewers">Reviewers</a>
 
 
 
@@ -151,6 +149,7 @@ You can find out more about our current reviewers and contributors on the [Contr
 
 Reviewers are responsible for reviewing all code and documentation submissions to projects. Reviewers are respsible for ensuring that submissions meet the agreed requirments in terms of scope, code-quality, and functionality. In order to optimize the chances for your submissions to pass the review stage, we recommend you review the submission guidelines (link) and code guidelines (link.)
 
+Wait for a reviewer to review and approve your code. When you have submitted a pull request, a qualified review on the project team reviews your contribution to evaluate whether it can be committed to the master copy of the project, whether further discussion and development for further consideration, or whether it is not accepted as a contribution. It is generally expected that some communication is required with contributors after they have submitted a pull request, and quite rare that a contribution is accepted without qualification on the first attempt.
 The number of reviewers per project varies with the size of the project and the number of contribution.
 
 Reviewers are generally experts in the environment to which the contribution applies, and are also Committers.
