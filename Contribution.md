@@ -2,7 +2,7 @@
 
 ##Introduction
 
-So you want to contribute to a Project Norman project? Good choice! There is lots of scope for contribution, and there's plenty to do! Project Norman is composed of the numerous <a href="#Project Norman Sub-Projects"> Project Norman Sub-Projects</a>, each of which have their own repository. This document desibes contirubiton guidelines that should be applied if you are make contributions to any of these sub-project repositories. 
+So you want to contribute to a Project Norman project? Good choice! There is lots of scope for contribution, and there's plenty to do! Project Norman is composed of the numerous <a href="#Project Norman Sub-Projects"> Project Norman Sub-Projects</a>, each of which have their own repository. This document describes contribution guidelines that should be applied if you are make contributions to any of these sub-project repositories. 
 
 Want to get coding straight away? No problem because we want you to get going as fast as possible as well! To make the best use of your valuable time we recommend you take a few minutes to read this page before you dive in. It contains the following sections:
 
@@ -20,7 +20,7 @@ Want to get coding straight away? No problem because we want you to get going as
 
 You might already know exactly what you do, but if not, you might consider contributing in one or all of the following ways: 
 
-+ <a href="#Help Other Drive.SAP Users and Contributors">    Help Other Drive.SAP Users and Contributors</a>
++ <a href="#Help Other Users and Contributors">    Help Other Drive.SAP Users and Contributors</a>
 
 + <a href="#Analyse Existing Issues">    Analyse Existing Issues</a>
 
@@ -30,13 +30,13 @@ You might already know exactly what you do, but if not, you might consider contr
 
 + <a href="#Propose and Build New Features">    Propose and Build New Features</a>
 
-###<a name="Help Other Drive.SAP Users and Contributors"></a>Help Other Drive.SAP Users and Contributors
+###<a name="Help Other Users and Contributors"></a>Help Other Drive.SAP Users and Contributors
 
 You can contribute valuably to one or more Project Norman sub-projects by helping others users who need support. You will find them, for example, on StackOverflow, or in the SAP Community Network forum.
 
 
 ###<a name="Analyse Existing Issues"></a>Analyze Existing Issues
-Check the Issue Tracker in the Project Norman sub-project repository you interested in contributing to. You might might be able to provide further information, or a hint that helps other contributors understand the issue. This is a great way to get acquainted with the project. You might want to fix an issue. For more information, see <a href="#Fix Issues">    Fix Issues</a>.
+Check the Issue Tracker in the Project Norman sub-project repository you interested in contributing to. You might be able to provide further information, or a hint that helps other contributors understand the issue. This is a great way to get acquainted with the project. You might want to fix an issue. For more information, see <a href="#Fix Issues">    Fix Issues</a>.
 
 
 ###<a name="Report Issues"></a>Report Issues
@@ -52,7 +52,7 @@ For guidelines on contributing a fix, please refer to <a href="#How Do I Make Ch
 
 ###<a name="Propose and Build New Features"></a>Propose and Build New Features
 
-We welcome your innovations to Project Norman. If you don't know exactly what you'd like to contribution, why not see if there is something on the project roadmap you find interesting. If you see something, why not give it a go? However, to ensure you are not wasting your valuable time, contact one of our core developers through the mailing list and discuss the proposed enhacement with them.
+We welcome your innovations to Project Norman. If you don't know exactly what you'd like to contribution, why not see if there is something on the project roadmap you find interesting. If you see something, why not give it a go? However, to ensure you are not wasting your valuable time, contact one of our core developers through the mailing list and discuss the proposed enhancement with them.
 
 ***We do not accept proposal for new features through the Issue Tracker. They will be removed.***
 
@@ -78,12 +78,10 @@ Once you have acquainted yourself with the guidelines, you can go to project Iss
 
 ##<a name="How Do I Make Changes to Product Norman Sub-Projects?"></a>How Do I Make Changes to Product Norman Sub-Projects?
 
-You submit changes to Project Norman sub-projects, such as bug fixes and new or improved features, using pull requests to the relevent sub-project repository. However, prior to making changes to your branched version of the project, you should ensure that you are spending your time wisely. We do not accept all pull requests, and those we accept have to meet specific standards. 
+You submit changes to Project Norman sub-projects, such as bug fixes and new or improved features, using pull requests to the relevant sub-project repository. However, prior to making changes to your branched version of the project, you should ensure that you are spending your time wisely. We do not accept all pull requests, and those we accept have to meet specific standards. 
 Therefore, prior to creating new code, you should always disuss new features with our core developers via mailing list. For more information on Project Norman mailing lists, see our [Communications Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Communication%20Guidelines.md).
 
-Once this discussion yields a shared consensus, you can confidentaly proceed and create the code. Furthermore, the developer might have some valuable hints and tips that save you a lot of time of and effort. Once this discussion yields a shared consensus, you can confidentaly proceed and create the code. 
-
-Furthermore, the developer might have some valuable hints and tips that save you a lot of time of and effort.Once this discussion yields a shared consensus, you can confidentaly proceed and create the code.
+Furthermore, the developer might have some valuable hints and tips that save you a lot of time of and effort. Once this discussion yields a shared consensus, you can confidently proceed and create the code. 
 
 **To create code for your enhancment of bug fix, do the following**:
 
@@ -94,14 +92,14 @@ Furthermore, the developer might have some valuable hints and tips that save you
 **3.**   Implement your new feature or bug fix on your branch, taking the following into consideration:
 
 <ul>
-<li>Base all your work off of the devel branch. The devel branch is where active development happens. We do not merge patches directly into master.</li>
-<li>Name your branch to match the new feature of bug fix that you are submitting.</li>
-<li>Limit yourself to one feature or bug fix per pull request.</li>
-<li>Include tests that prove your code works.</li>
+<li>Base all your work off of the <b>dev<b/> branch. The devel branch is where active development happens. We do not merge patches directly into <b>master</b>.</li>
+<li>Please name your branch to match the new feature of bug fix that you are submitting.</li>
+<li>Please do not submit more than one feature or bug fix per pull request.</li>
 <li>For consistency, and to enhance the chances that your contribution will be passed for review without corrections required, please read the <a href="https://github.wdf.sap.corp/Norman/Norman/blob/master/Project%20Norman%20Style%20Guide.md">Project Norman Style Guide</a> to ensure that your code conforms to our current approach.</li>
-<li>Be sure your author field in git is properly filled out with your full name and email address so we can credit you.</li>
+<li>Be sure your author field in Git is filled out correctly, including full name and email address. This enables us to credit you for your contribution.</li>
 </ul>
-**4.**   Perform the requisite pre-pull request testing procedures (link to description of these in the wiki - overlap with guidelines)
+
+**4.**   Perform the requisite pre-pull request testing procedures. Please include tests to prove your code works. 
 
 **Before you submit your completed code, do the following**: 
 
@@ -167,7 +165,7 @@ The number of reviewers per project varies with the size of the project and the 
 
 ###<a name="Committers"></a>Committers
 
-Committers are responsible for commiting changes submitted by pull request and passed by a reviewer.
+Committers are responsible for committing changes submitted by pull request and passed by a reviewer.
 
 Established contributors in a project can be enabled as reviewers for that project if they receive the support of the project steering committee. It can be useful to be a committer. For example, providing support for Project Norman to a customer, being a committer could be a big selling poin of their skills for the customer.  
 
@@ -176,7 +174,7 @@ You can find out more about our current reviewers and contributors on the [Contr
 
 ###<a name="Project Steering Committee"></a>Public Management Committee
 
-Each project is run on day to day basis by the contributors, and operates under the guidance of a dedicated Project Steering Committee. Project Steering Committees are responsible for providing oversight of project developments, securing and organizing resources, removing obtacles, and resolving conflicts. Each Project Steering Committee, in turn, operates under the guidance of the Project Norman Steering Committee. For more information on the composition and roles of these steering committees, and the Project Norman project structure, see [Project Norman Project Managment](https://github.wdf.sap.corp/Norman/Norman/wiki/Project-Norman-Project-Management).
+Each project is run on day to day basis by the contributors, and operates under the guidance of a dedicated Project Steering Committee. Project Steering Committees are responsible for providing oversight of project developments, securing and organizing resources, removing obtacles, and resolving conflicts. Each Project Steering Committee, in turn, operates under the guidance of the Project Norman Steering Committee. For more information on the composition and roles of these steering committees, and the Project Norman project structure, see [Project Norman Project Management](https://github.wdf.sap.corp/Norman/Norman/wiki/Project-Norman-Project-Management).
 
 
 ###<a name="Project Norman Sub-Projects"></a>Project Norman Sub-Projects
