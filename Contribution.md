@@ -65,6 +65,7 @@ We appreciate all efforts to notify us if something goes wrong. However, we have
  * It must contains a minimal example
  * It must conform to this [template](https://github.wdf.sap.corp/Norman/Norman/blob/master/bug_report_template.md)
 
+For more comprehensive guidelines for submitting bug reports, please refer to 
 Once you have acquainted yourself with the guidelines, you can go to project Issue Tracker to report the issue.
 To report and issue, you simple open the Issue Tracker in the project, and click the <b>New Issue</b> button. 
 
