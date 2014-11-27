@@ -75,9 +75,10 @@ Once you have acquainted yourself with the guidelines, you can go to project Iss
 
 ##<a name="How Do I Make Changes to Product Norman Sub-Projects?"></a>How Do I Make Changes to Product Norman Sub-Projects?
 
-You submit changes to Project Norman sub-projects, such as bug fixes and new or improved features, using pull requests to the relevent sub-project repository. However, prior to making changes to your branched version of the project, you should ensure that you are spending your time wisely. We do not accept all pull requests, and those we accept have to meet specific standards. Therefore, prior to creating new code, you should always disuss new features with our core developers via mailing list. For more information on Project Norman mailing lists, see ()[].
+You submit changes to Project Norman sub-projects, such as bug fixes and new or improved features, using pull requests to the relevent sub-project repository. However, prior to making changes to your branched version of the project, you should ensure that you are spending your time wisely. We do not accept all pull requests, and those we accept have to meet specific standards. 
+Therefore, prior to creating new code, you should always disuss new features with our core developers via mailing list. For more information on Project Norman mailing lists, see our [Communications Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Communication%20Guidelines.md).
 
-These identify "virtual meeting rooms" where conversations happen asynchronously, which is a general requirement for groups that are so geographically distributed to cover all time zones. Furthermore, the developer might have some valuable hints and tips that save you a lot of time of and effort.Once this discussion yields a shared consensus, you can confidentaly proceed and create the code.
+Once this discussion yields a shared consensus, you can confidentaly proceed and create the code. Furthermore, the developer might have some valuable hints and tips that save you a lot of time of and effort.Once this discussion yields a shared consensus, you can confidentaly proceed and create the code. 
 
 **To create code for your enhancment of bug fix, do the following**:
 
