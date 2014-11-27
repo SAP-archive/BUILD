@@ -35,9 +35,10 @@ Please consider the following guidelines when using Project Norman open source m
 
 + Never initiate or comment on religious or political discussions or arguments. 
 
-We wish to credit the following web-sites for contributions to this document:
-+ (Student Guide)[http://en.flossmanuals.net/GSoCStudentGuide/ch014_communication-best-practices/]
-+ (The Apache Software Foundation)[http://www.apache.org/foundation/how-it-works.html]
-+ 
+<b>We wish to credit the following web-sites for contributions to this document</b>:
+
++ [Student Guide](http://en.flossmanuals.net/GSoCStudentGuide/ch014_communication-best-practices/)
++ [The Apache Software Foundation](http://www.apache.org/foundation/how-it-works.html)
+
 
 
