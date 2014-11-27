@@ -2,7 +2,7 @@
 
 So you want to contribute to a Project Norman project? Good choice! There is lots of scope for contribution, and there's plenty to do! Want to get coding straight away? No problem because we want you to get going as fast as possible as well! To make the best use of your valuable time we recommend you take a few minutes to read this page before you dive in. This document desibes contirubiton guidelines that should be applied if you are make contributions to any of these sub-project repositories.
 
-** NB Note**: Project Norman is composed of the numerous <a href="#Project Norman Sub-Projects"> Project Norman Sub-Projects</a>, each of which have their own repository. The same guidelines apply to each of these repositories.
+**NB Note**: Project Norman is composed of the numerous <a href="#Project Norman Sub-Projects"> Project Norman Sub-Projects</a>, each of which have their own repository. The same guidelines apply to each of these repositories.
 
 
 + <a href="#What Can I Contribute?">   What Can I Contribute?</a>
