@@ -9,7 +9,7 @@ Please consider the following guidelines when using Project Norman open source m
 
 + On matters of community conduct, the [project steering committe](https://github.wdf.sap.corp/Norman/Norman/wiki/Project-Norman-Project-Management) can make a final decision.
 
-+ The policy of the Project Norman open source community is to to conduct as much discussion in public as possible, to encourage openness, provide a public record, and stimulate the broader community. However sometimes internal private mail lists are necessary. You must never divulge such information in public without the express permission of the list. Also never copy an email between private and public lists (no Cc). Such an event would go beyond the normal need for email ettiquette and be a serious breach of confidence. It could have serious ramifications, cause unneccessary confusion and ill-informed discussion.
++ The policy of the Project Norman open source community is to to conduct as much discussion in public as possible, to encourage openness, provide a public record, and stimulate the broader community. However sometimes internal private mail lists are necessary. You should never divulge such information in public, or copy an email between private and public lists  without the permission of the mailing list members. 
 
 + Follow the mailing list posting style. For example, do people top or bottom post? Generally, the will be sound reasons for doing things a certain way.
 
@@ -34,11 +34,4 @@ Please consider the following guidelines when using Project Norman open source m
 + Only post if you have exhausted all other reasonable options, such as checking the archives, searching documentation first, Google etc.
 
 + Never initiate or comment on religious or political discussions or arguments. 
-
-<b>We wish to credit the following web-sites for contributions to this document</b>:
-
-+ [Student Guide](http://en.flossmanuals.net/GSoCStudentGuide/ch014_communication-best-practices/)
-+ [The Apache Software Foundation](http://www.apache.org/foundation/how-it-works.html)
-
-
 
