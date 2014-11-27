@@ -10,8 +10,7 @@ module.exports = {
                     'index.html',
                     'welcome/*.html',
                     'assets/**/*',
-                    '*.{ico,txt}',
-                    '.htaccess'
+                    '*.{ico,txt}'
                 ]
             },
             {

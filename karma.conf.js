@@ -23,7 +23,7 @@ module.exports = function(config) {
 
     // list of files / patterns to exclude
     exclude: [
-        'node_modules/norman*client/node_modules/*.js',
+        'node_modules/norman*client/node_modules/**/*.js',
     ],
 
     // web server port

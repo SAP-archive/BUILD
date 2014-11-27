@@ -8,16 +8,15 @@ module.exports = {
             compress: true,
             sourceMap: true,
             sourceMapFilename: 'dev/assets/style.css.map',
-            sourceMapURL: 'style.css.map',
-            // dumpLineNumbers: 'mediaquery'
+            sourceMapURL: 'style.css.map'
         },
         files: {
             'dev/assets/style.css': [
-                'client/assets/*.less',
                 'client/*.less',
+                'client/assets/*.less',
                 'client/welcome/*.less',
                 'node_modules/norman-*/**/*.less',
-                '!node_modules/norman-*/node_modules/*.less'
+                '!node_modules/norman-*/node_modules/**/*.less'
             ]
         }
     }
