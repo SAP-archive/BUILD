@@ -1,6 +1,8 @@
 ##Project Norman Mailing Lists
 
-Mailing lists are an important part of the Project Norman community. Every community uses mailing lists differently, so we recommed you spend some time understanding how to participate in a way that is acceptable to the community. Read the mailing list archives, observe for awhile first and be sure to inquire about and read any codes of conduct or guidelines before you post.
+Mailing lists are an important part of the Project Norman community. These identify "virtual meeting rooms" where conversations happen asynchronously, which is a general requirement for groups that are so geographically distributed to cover all time zones. 
+
+Every community uses mailing lists differently, so we recommed you spend some time understanding how to participate in a way that is acceptable to the community. Read the mailing list archives, observe for awhile first and be sure to inquire about and read any codes of conduct or guidelines before you post.
 
 Please consider the following guidelines when using Project Norman open source mailing lists:
 
