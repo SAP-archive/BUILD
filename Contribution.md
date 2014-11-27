@@ -106,9 +106,9 @@ You submit changes to Project Norman sub-projects, such as bug fixes and new or 
 
 **7.**   Make a pull request, and wait for a response from the project team reviewer or committer for the area to which your bug fix or enhancment applies. 
 
-For more information on making a pull request, see [Creating a Pull Request](https://help.github.com/articles/creating-a-pull-request)
+**Note**:  For more information on making a pull request, see [Creating a Pull Request](https://help.github.com/articles/creating-a-pull-request)
 
-For guidelines on commit messages, see the [Project Norman Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Project%20Norman%20Style%20Guide.md).
+**Note**:  For guidelines on commit messages, see the [Project Norman Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Project%20Norman%20Style%20Guide.md).
 
 **After you have submitter your completed code, do the following**:
 
