@@ -1,7 +1,7 @@
 {
   "name": "norman-norman",
   "version": "0.0.1",
-  "description": "Norman Template",
+  "description": "Norman",
   "repository": {
     "type:": "git",
     "url": "git@github.wdf.sap.corp:Norman/Norman.git"
