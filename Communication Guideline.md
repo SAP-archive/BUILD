@@ -1,13 +1,5 @@
-from apache site (http://www.apache.org/foundation/how-it-works.html)
 
-We endeavour to conduct as much discussion in public as possible. This encourages openness, provides a public record, and stimulates the broader community.
-
-However sometimes internal private mail lists are necessary. You must never divulge such information in public without the express permission of the list. Also never copy an email between private and public lists (no Cc). Such an event would go beyond the normal need for email ettiquette and be a serious breach of confidence. It could have serious ramifications, cause unneccessary confusion and ill-informed discussion.
-
-
-Mailing lists and web forums
-
-##How to Use a Mailing List
+##Project Norman Mailing Lists
 
 Mailing lists are an important part of the Project Norman community. Every community uses mailing lists differently, so we recommed you spend some time understanding how to participate in a way that is acceptable to the community. Read the mailing list archives, observe for awhile first and be sure to inquire about and read any codes of conduct or guidelines before you post.
 
@@ -15,7 +7,9 @@ Please consider the following guidelines when using Project Norman open source m
 
 + Please use a valid email address to which direct responses can be made.
 
-+ Please avoid flamewars, trolling, personal attacks, and repetitive arguments. On technical matters, our Product Owners can make a final decision. On matters of community conduct, the [project steering committe](https://github.wdf.sap.corp/Norman/Norman/wiki/Project-Norman-Project-Management) can make a final decision.
++ On matters of community conduct, the [project steering committe](https://github.wdf.sap.corp/Norman/Norman/wiki/Project-Norman-Project-Management) can make a final decision.
+
++ The policy of the Project Norman open source community is to to conduct as much discussion in public as possible, to encourage openness, provide a public record, and stimulate the broader community. However sometimes internal private mail lists are necessary. You must never divulge such information in public without the express permission of the list. Also never copy an email between private and public lists (no Cc). Such an event would go beyond the normal need for email ettiquette and be a serious breach of confidence. It could have serious ramifications, cause unneccessary confusion and ill-informed discussion.
 
 + Follow the mailing list posting style. For example, do people top or bottom post? Generally, the will be sound reasons for doing things a certain way.
 
@@ -40,4 +34,10 @@ Please consider the following guidelines when using Project Norman open source m
 + Only post if you have exhausted all other reasonable options, such as checking the archives, searching documentation first, Google etc.
 
 + Never initiate or comment on religious or political discussions or arguments. 
+
+We wish to credit the following web-sites for contributions to this document:
++ (Student Guide)[http://en.flossmanuals.net/GSoCStudentGuide/ch014_communication-best-practices/]
++ (The Apache Software Foundation)[http://www.apache.org/foundation/how-it-works.html]
++ 
+
 
