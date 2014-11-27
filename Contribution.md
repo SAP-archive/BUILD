@@ -1,6 +1,6 @@
 # Welcome to the Project Norman Contribution Page!
 
-So you want to contribute to a Project Norman project? Good choice! There is lots of scope for contribution, and there's plenty to do! As you may know, Project Norman is composed of the numerous [<a href="#What Can I Contribute?">   What Can I Contribute?</a>](sub-projects), each of which have their own repository. 
+So you want to contribute to a Project Norman project? Good choice! There is lots of scope for contribution, and there's plenty to do! As you may know, Project Norman is composed of the numerous <a href="#Project Norman Sub-Projects"> Project Norman Sub-Projects</a>, each of which have their own repository. 
 
 
 Project Norman Sub-Projects
