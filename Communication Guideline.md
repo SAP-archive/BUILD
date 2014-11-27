@@ -6,16 +6,16 @@ However sometimes internal private mail lists are necessary. You must never divu
 
 
 Mailing lists and web forums
-Mailing lists are an important part of the Project Norman community. The code of conduct applies to your behaviour in those there aswell. Please follow these guidelines in addition to the general code of conduct:
-
-+ Please use a valid email address to which direct responses can be made.
-+ Please avoid flamewars, trolling, personal attacks, and repetitive arguments. On technical matters, our Product Owners can make a final decision. On matters of community conduct, the [project steering committe](https://github.wdf.sap.corp/Norman/Norman/wiki/Project-Norman-Project-Management) can make a final decision.
 
 ##How to Use a Mailing List
 
-Every community uses mailing lists differently, so we recommed you spend some time understanding how to participate in a way that is acceptable to the community. Read the mailing list archives, observe for awhile first and be sure to inquire about and read any codes of conduct or guidelines before you post.
+Mailing lists are an important part of the Project Norman community. Every community uses mailing lists differently, so we recommed you spend some time understanding how to participate in a way that is acceptable to the community. Read the mailing list archives, observe for awhile first and be sure to inquire about and read any codes of conduct or guidelines before you post.
 
 Please consider the following guidelines when using Project Norman open source mailing lists:
+
++ Please use a valid email address to which direct responses can be made.
+
++ Please avoid flamewars, trolling, personal attacks, and repetitive arguments. On technical matters, our Product Owners can make a final decision. On matters of community conduct, the [project steering committe](https://github.wdf.sap.corp/Norman/Norman/wiki/Project-Norman-Project-Management) can make a final decision.
 
 + Follow the mailing list posting style. For example, do people top or bottom post? Generally, the will be sound reasons for doing things a certain way.
 
