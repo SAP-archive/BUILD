@@ -1,6 +1,8 @@
 # Welcome to the Project Norman Contribution Page!
 
-So you want to contribute to a Project Norman project? Good choice! There is lots of scope for contribution, and there's plenty to do! 
+So you want to contribute to a Project Norman project? Good choice! There is lots of scope for contribution, and there's plenty to do! As you may know, Project Norman is composed of the following sub-projects, each of which have their own repository: 
+
+
 
 Want to get coding straight away? No problem because we want you to get going as fast as possible as well! To make the best use of your valuable time we recommend you take a few minutes to read this page before you dive in. It contains everything you need to know in order to get started. 
 
@@ -8,7 +10,7 @@ Want to get coding straight away? No problem because we want you to get going as
 
 + <a href="#How Do I Report Issues?">   How Do I Report Issues?</a>
 
-+ <a href="#How Do I Make Changes to Product Norman?"> How Do I Make Changes to Product Norman?</a>
++ <a href="#How Do I Make Changes to Product Norman Projects?"> How Do I Make Changes to Product Norman Projects?</a>
 
 + <a href="#Who Contributes to Project Norman Projects?">   Who Contributes to Project Norman Projects?</a>
 
@@ -70,7 +72,7 @@ For more comprehensive guidelines for submitting bug reports, please refer to [B
 Once you have acquainted yourself with the guidelines, you can go to project Issue Tracker to report the issue.
 To report and issue, you simple open the Issue Tracker in the project, and click the <b>New Issue</b> button. 
 
-##<a name="How Do I Make Changes to Product Norman?"></a>How Do I Make Changes to Product Norman?
+##<a name="How Do I Make Changes to Product Norman Projects?"></a>How Do I Make Changes to Product Norman Projects?
 
 You submt changes to Project Norman projects, such as bug fixes and new or improved features, using pull requests. However, prior to making changes to your branched version of the project, you should ensure that you are spending your time wisely. We do not accept all pull requests, and those we accept have to meet specific standards. Therefore, prior to creating new code, you should always disuss new features with our core developers. Communication about enhancments is via mailing lists. These identify "virtual meeting rooms" where conversations happen asynchronously, which is a general requirement for groups that are so geographically distributed to cover all time zones. Furthermore, the developer might have some valuable hints and tips that save you a lot of time of and effort.  Once this discussion yields a shared consensus, you can confidentaly proceed and create the code.
 
