@@ -107,8 +107,7 @@ Once this discussion yields a shared consensus, you can confidently proceed and 
 **Note**:  For guidelines on commit messages, see the [Project Norman Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Project%20Norman%20Style%20Guide.md).
 
 
-**8.**   Wait for a response from the project team reviewer or committer for the area to which your bug fix or enhancment applies. For more information on the the reviewing process, see <a href="#Reviewers">Reviewers</a>
-
+**8.**   Wait for a response from the project team reviewer or committer for the area to which your bug fix or enhancment applies. When you have submitted a pull request, a reviewer on the project team reviews your contribution to evaluate whether it can be committed to the master copy of the project, whether further discussion and development for further consideration, or whether it is not accepted as a contribution. It is generally expected that some communication is required with contributors after they have submitted a pull request, and quite rare that a contribution is accepted without qualification on the first attempt.
 
 
 ###<a name="Links to Project Norman Sub-Projects"></a>Project Norman Sub-Projects
