@@ -8,8 +8,6 @@ To make the best use of your valuable time we recommend you take a few minutes t
 
 + <a href="#How Do I Report Issues?">   How Do I Report Issues?</a>
 
-+ <a href="#How Do I Submit a Bug Fix?">   How Do I Submit a Bug Fix?</a>
-
 + <a href="#How Do I Make Changes to Product Norman?"> How Do I Make Changes to Product Norman?</a>
 
 + <a href="#Who Contributes to Project Norman Projects?">   Who Contributes to Project Norman Projects?</a>
