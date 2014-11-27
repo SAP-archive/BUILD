@@ -123,7 +123,8 @@ module.exports = function (grunt) {
     grunt.registerTask('dev', [
         'jshint',
         'build',
-        'karma'
+        'test:client',
+        'test:server'
     ]);
 
     grunt.registerTask('dist', [
