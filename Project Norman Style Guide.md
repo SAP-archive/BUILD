@@ -1,6 +1,4 @@
-These guidelines are designed to help you to write clear, organized, high-quality code that is consistent with the code in Project Norman.
-
-All code in pull requests to Project Norman should follow these rules. 
+These guidelines are designed to help you to write clear, organized, high-quality code that is consistent with the code in Project Norman. All code in pull requests to Project Norman should follow these rules. 
 
 ###Commit messages
 
