@@ -105,15 +105,13 @@ You submt changes to Project Norman projects, such as bug fixes and new or impro
 
 **After you have submitter your completed code, do the following**:
 
-**8**   Wait for a reviewer to review and approve your code. When you have submitted a pull request, a qualified review on the project team reviews your contribution to evaluate whether it can be committed to the master copy of the project, whether further discussion and development for further consideration, or whether it is not accepted as a contribution. It is generally expected that some communication is required with contributors after they have submitted a pull request, and quite rare that a contribution is accepted without qualification on the first attempt.
+**8.**   Wait for a reviewer to review and approve your code. When you have submitted a pull request, a qualified review on the project team reviews your contribution to evaluate whether it can be committed to the master copy of the project, whether further discussion and development for further consideration, or whether it is not accepted as a contribution. It is generally expected that some communication is required with contributors after they have submitted a pull request, and quite rare that a contribution is accepted without qualification on the first attempt.
 
 
 ###<a name="What are the Project Norman Development Guidelines?"></a>What are the Project Norman Development Guidelines?
 Integrate this with the above (i.e. what are the things that need to be provide for 1. a bug fix; 2. a new feature) - in a sense, what to do before (see above), and then the adherence to guidelines are two sepearate processes.
 
 Abstract definition of the languages, styles, quality issues (they can impact whether the contribution is adopted and integrated - this should also be stressed in earlier section, along with the warning that not all pull requests are accepted). Include links to specific wiki pages, where this information is stored.
-
-
 
 
 
