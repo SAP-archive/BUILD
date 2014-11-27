@@ -108,7 +108,7 @@ You submit changes to Project Norman sub-projects, such as bug fixes and new or 
 
 For more information on making a pull request, see [https://help.github.com/articles/creating-a-pull-request](Creating a Pull Request)
 
-For guidelines on commit messages, see [] ()
+For guidelines on commit messages, see the [https://github.wdf.sap.corp/Norman/Norman/blob/master/Project%20Norman%20Style%20Guide.md] (Project Norman Guidelines).
 
 **After you have submitter your completed code, do the following**:
 
