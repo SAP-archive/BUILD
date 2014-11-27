@@ -1,10 +1,7 @@
 # Welcome to the Project Norman Contribution Page!
 
-So you want to contribute to a Project Norman project? Good choice! There is lots of scope for contribution, and there's plenty to do! As you may know, Project Norman is composed of the numerous <a href="#Project Norman Sub-Projects"> Project Norman Sub-Projects</a>, each of which have their own repository. 
+So you want to contribute to a Project Norman project? Good choice! There is lots of scope for contribution, and there's plenty to do! As you may know, Project Norman is composed of the numerous <a href="#Project Norman Sub-Projects"> Project Norman Sub-Projects</a>, each of which have their own repository. This document desibes contirubiton guidelines that applies to any of these sub-projects.
 
-
-Project Norman Sub-Projects
-Each sub-project is
 Want to get coding straight away? No problem because we want you to get going as fast as possible as well! To make the best use of your valuable time we recommend you take a few minutes to read this page before you dive in. It contains everything you need to know in order to get started. 
 
 + <a href="#What Can I Contribute?">   What Can I Contribute?</a>
@@ -32,11 +29,11 @@ You might already know exactly what you do, but if not, you might consider contr
 
 ###<a name="Help Other Drive.SAP Users and Contributors"></a>Help Other Drive.SAP Users and Contributors
 
-You can contribute valuably to Project Norman by helping others users who need support. You will find them, for example, on StackOverflow, or in the SAP Community Network forum.
+You can contribute valuably to one or more Project Norman sub-projects by helping others users who need support. You will find them, for example, on StackOverflow, or in the SAP Community Network forum.
 
 
 ###<a name="Analyse Existing Issues"></a>Analyze Existing Issues
-Check the Issue Tracker in the project repository for issues in an area you are interested in contributing to. You might might be able to provide further information, or a hint that helps other contributors understand the issue. This is a great way to get acquainted with the project. You might want to fix an issue. For more information, see <a href="#Fix Issues">    Fix Issues</a>.
+Check the Issue Tracker in the Project Norman sub-project repository you interested in contributing to. You might might be able to provide further information, or a hint that helps other contributors understand the issue. This is a great way to get acquainted with the project. You might want to fix an issue. For more information, see <a href="#Fix Issues">    Fix Issues</a>.
 
 
 ###<a name="Report Issues"></a>Report Issues
