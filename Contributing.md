@@ -1,3 +1,5 @@
+## Guidelines for Reporting Bugs
+
 We appreciate all efforts to notify us if something goes wrong. However, we have limite capacity, and only support real bugs that are reported according to the guidelines below.
 
 <b>We do not accept proposal for new features through the Issue Tracker. They will be removed.</b>
