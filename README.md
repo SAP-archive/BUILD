@@ -1,4 +1,4 @@
-
+[![Build Status](https://norman-jenkins.mo.sap.corp/jenkins/job/Norman-master/badge/icon)](https://norman-jenkins.mo.sap.corp/jenkins/job/Norman-master/)
 ##Welcome to Project Norman
 
 
