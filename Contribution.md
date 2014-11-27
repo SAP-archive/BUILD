@@ -52,7 +52,7 @@ For guidelines on contributing a fix, please refer to <a href="#How Do I Make Ch
 
 ###<a name="Propose and Build New Features"></a>Propose and Build New Features
 
-We welcome your innovations to Project Norman. If you don't know exactly what you'd like to contribution, why not see if there is something on the project roadmap you find interesting. If you see something, why not give it a go? However, to ensure you are not wasting your valuable time, contact one of our core developers through the mailing list and discuss the proposed enhancement with them.
+We welcome your innovations to Project Norman. If you don't know exactly what you'd like to contribution, why not see if there is something on the in the Issue Tracker back log you find interesting. If you see something, why not give it a go? However, to ensure you are not wasting your valuable time, contact one of our core developers through the mailing list and discuss the proposed enhancement with them.
 
 ***We do not accept proposal for new features through the Issue Tracker. They will be removed.***
 
