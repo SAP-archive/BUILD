@@ -147,16 +147,14 @@ You can find out more about our current reviewers and contributors on the [Contr
 
 ###<a name="Reviewers"></a>Reviewers
 
-Reviewers are responsible for reviewing all code and documentation submissions to projects. Reviewers are respsible for ensuring that submissions meet the agreed requirments in terms of scope, code-quality, and functionality. In order to optimize the chances for your submissions to pass the review stage, we recommend you review the submission guidelines (link) and code guidelines (link.)
+Reviewers are responsible for ensuring all code and documentation submissions to Project Norman sub-projects meet the agreed requirements in terms of scope, code-quality, and functionality. Reviewers are generally experts in the environment to which the contribution applies, and are also Committers.
 
-Wait for a reviewer to review and approve your code. When you have submitted a pull request, a qualified review on the project team reviews your contribution to evaluate whether it can be committed to the master copy of the project, whether further discussion and development for further consideration, or whether it is not accepted as a contribution. It is generally expected that some communication is required with contributors after they have submitted a pull request, and quite rare that a contribution is accepted without qualification on the first attempt.
+When you have submitted a pull request, a reviewer on the project team reviews your contribution to evaluate whether it can be committed to the master copy of the project, whether further discussion and development for further consideration, or whether it is not accepted as a contribution. It is generally expected that some communication is required with contributors after they have submitted a pull request, and quite rare that a contribution is accepted without qualification on the first attempt.
 The number of reviewers per project varies with the size of the project and the number of contribution.
 
-Reviewers are generally experts in the environment to which the contribution applies, and are also Committers.
+**Note**:  In order to optimize the chances for your submissions to pass the review stage, we recommend you review  [Project Norman Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Project%20Norman%20Style%20Guide.md).
 
-Established contributors in a project can be enabled as reviewers for that project if they receive the support of the project steering committee. It can be useful to be a committer. 
-
-You can find out more about our current reviewers and contributors on the [Contributors] (https://github.wdf.sap.corp/Norman/Drive/blob/master/Contributors.md)  page.
+**Note**:  You can find out more about our current reviewers and contributors on the [Contributors](https://github.wdf.sap.corp/Norman/Drive/blob/master/Contributors.md)  page.
 
 
 ###<a name="Committers"></a>Committers
