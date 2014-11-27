@@ -1,24 +1,9 @@
 # Welcome to the Project Norman Contribution Page!
 
-So you want to contribute to a Project Norman project? Good choice! There is lots of scope for contribution, and there's plenty to do! As you may know, Project Norman is composed of the following sub-projects, each of which have their own repository: 
-+ [Auth] (https://github.wdf.sap.corp/Norman/Auth) 
-+ [Data Composer] (https://github.wdf.sap.corp/Norman/DataComposer)
-+ [Data Model Editor] (https://github.wdf.sap.corp/Norman/DataModelEditor)
-+ [Flow Composer] (https://github.wdf.sap.corp/Norman/FlowComposer)
-+ [Sample Data Server] (https://github.wdf.sap.corp/Norman/SampleDataServer)
-+ [UX Rule Engine] (https://github.wdf.sap.corp/Norman/UXRuleEngine )
-+ [UI Canvas] (https://github.wdf.sap.corp/Norman/UICanvas )
-+ [UI Composer] (https://github.wdf.sap.corp/Norman/UIComposer)
-+ [Shared Workspace] (https://github.wdf.sap.corp/Norman/SharedWorkspace)
-+ [UI Catalog Manager] (https://github.wdf.sap.corp/Norman/UICatalogManager)
-+ [Previewer] (https://github.wdf.sap.corp/Norman/Previewer)
-+ [User Research] (https://github.wdf.sap.corp/Norman/UserResearch)
-+ [Collaboration] (https://github.wdf.sap.corp/Norman/Collaboration)
-+ [Shell] (https://github.wdf.sap.corp/Norman/Shell)
-+ [Analytics] (https://github.wdf.sap.corp/Norman/Analytics)
-+ [Common] (https://github.wdf.sap.corp/Norman/Common)
-+ [Projects - aka Project Management] (https://github.wdf.sap.corp/Norman/Projects)
+So you want to contribute to a Project Norman project? Good choice! There is lots of scope for contribution, and there's plenty to do! As you may know, Project Norman is composed of the numerous [<a href="#What Can I Contribute?">   What Can I Contribute?</a>](sub-projects), each of which have their own repository. 
 
+
+Project Norman Sub-Projects
 Each sub-project is
 Want to get coding straight away? No problem because we want you to get going as fast as possible as well! To make the best use of your valuable time we recommend you take a few minutes to read this page before you dive in. It contains everything you need to know in order to get started. 
 
@@ -189,3 +174,23 @@ You can find out more about our current reviewers and contributors on the [Contr
 ###<a name="Project Steering Committee"></a>Public Management Committee
 
 Each project is run on day to day basis by the contributors, and operates under the guidance of a dedicated Project Steering Committee. Project Steering Committees are responsible for providing oversight of project developments, securing and organizing resources, removing obtacles, and resolving conflicts. Each Project Steering Committee, in turn, operates under the guidance of the Project Norman Steering Committee. For more information on the composition and roles of these steering committees, and the Project Norman project structure, see [Project Norman Project Managment](https://github.wdf.sap.corp/Norman/Norman/wiki/Project-Norman-Project-Management).
+
+
+###<a name="Project Norman Sub-Projects"></a>Project Norman Sub-Projects
++ [Auth] (https://github.wdf.sap.corp/Norman/Auth) 
++ [Data Composer] (https://github.wdf.sap.corp/Norman/DataComposer)
++ [Data Model Editor] (https://github.wdf.sap.corp/Norman/DataModelEditor)
++ [Flow Composer] (https://github.wdf.sap.corp/Norman/FlowComposer)
++ [Sample Data Server] (https://github.wdf.sap.corp/Norman/SampleDataServer)
++ [UX Rule Engine] (https://github.wdf.sap.corp/Norman/UXRuleEngine )
++ [UI Canvas] (https://github.wdf.sap.corp/Norman/UICanvas )
++ [UI Composer] (https://github.wdf.sap.corp/Norman/UIComposer)
++ [Shared Workspace] (https://github.wdf.sap.corp/Norman/SharedWorkspace)
++ [UI Catalog Manager] (https://github.wdf.sap.corp/Norman/UICatalogManager)
++ [Previewer] (https://github.wdf.sap.corp/Norman/Previewer)
++ [User Research] (https://github.wdf.sap.corp/Norman/UserResearch)
++ [Collaboration] (https://github.wdf.sap.corp/Norman/Collaboration)
++ [Shell] (https://github.wdf.sap.corp/Norman/Shell)
++ [Analytics] (https://github.wdf.sap.corp/Norman/Analytics)
++ [Common] (https://github.wdf.sap.corp/Norman/Common)
++ [Projects - aka Project Management] (https://github.wdf.sap.corp/Norman/Projects)
