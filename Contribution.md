@@ -1,8 +1,9 @@
-# Welcome to the Project Norman Contribution Page!
+# Project Norman Contribution Page
 
-So you want to contribute to a Project Norman project? Good choice! There is lots of scope for contribution, and there's plenty to do! As you may know, Project Norman is composed of the numerous <a href="#Project Norman Sub-Projects"> Project Norman Sub-Projects</a>, each of which have their own repository. This document desibes contirubiton guidelines that should be applied if you are make contributions to any of these sub-project repositories.
+So you want to contribute to a Project Norman project? Good choice! There is lots of scope for contribution, and there's plenty to do! Want to get coding straight away? No problem because we want you to get going as fast as possible as well! To make the best use of your valuable time we recommend you take a few minutes to read this page before you dive in. This document desibes contirubiton guidelines that should be applied if you are make contributions to any of these sub-project repositories.
 
-Want to get coding straight away? No problem because we want you to get going as fast as possible as well! To make the best use of your valuable time we recommend you take a few minutes to read this page before you dive in. It contains everything you need to know in order to get started. 
+**NB Note**: Project Norman is composed of the numerous <a href="#Project Norman Sub-Projects"> Project Norman Sub-Projects</a>, each of which have their own repository. The same guidelines apply to each of these repositories.
+
 
 + <a href="#What Can I Contribute?">   What Can I Contribute?</a>
 
@@ -75,14 +76,19 @@ Once you have acquainted yourself with the guidelines, you can go to project Iss
 
 ##<a name="How Do I Make Changes to Product Norman Sub-Projects?"></a>How Do I Make Changes to Product Norman Sub-Projects?
 
-You submit changes to Project Norman sub-projects, such as bug fixes and new or improved features, using pull requests to the relevent sub-project repository. However, prior to making changes to your branched version of the project, you should ensure that you are spending your time wisely. We do not accept all pull requests, and those we accept have to meet specific standards. Therefore, prior to creating new code, you should always disuss new features with our core developers. Communication about enhancments is via mailing lists. These identify "virtual meeting rooms" where conversations happen asynchronously, which is a general requirement for groups that are so geographically distributed to cover all time zones. Furthermore, the developer might have some valuable hints and tips that save you a lot of time of and effort.  Once this discussion yields a shared consensus, you can confidentaly proceed and create the code.
+You submit changes to Project Norman sub-projects, such as bug fixes and new or improved features, using pull requests to the relevent sub-project repository. However, prior to making changes to your branched version of the project, you should ensure that you are spending your time wisely. We do not accept all pull requests, and those we accept have to meet specific standards. 
+Therefore, prior to creating new code, you should always disuss new features with our core developers via mailing list. For more information on Project Norman mailing lists, see our [Communications Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Communication%20Guidelines.md).
+
+Once this discussion yields a shared consensus, you can confidentaly proceed and create the code. Furthermore, the developer might have some valuable hints and tips that save you a lot of time of and effort. Once this discussion yields a shared consensus, you can confidentaly proceed and create the code. 
+
+Furthermore, the developer might have some valuable hints and tips that save you a lot of time of and effort.Once this discussion yields a shared consensus, you can confidentaly proceed and create the code.
 
 **To create code for your enhancment of bug fix, do the following**:
 
-**1.**   Download the GiTHub Repository for the project. (link to instructions on how to)
+**1.**   Fork the sub-project repo and then clone the fork. For more information, see [Fork a Repo] (https://help.github.com/articles/fork-a-repo/).
 
-**2.**   Install the required tools. (link to suitable documents in wiki)
- 
+**2.**   Install the required tools. For more information, see 
+
 **3.**   Implement your new feature or bug fix on your branch, taking the following into consideration:
 
 <ul>
@@ -90,7 +96,7 @@ You submit changes to Project Norman sub-projects, such as bug fixes and new or 
 <li>Name your branch to match the new feature of bug fix that you are submitting.</li>
 <li>Limit yourself to one feature or bug fix per pull request.</li>
 <li>Include tests that prove your code works.</li>
-<li>For consistency, and to enhance the chances that your contribution will be passed for review without corrections required, please review our coding guidelines to ensure that your code conforms to our current approach. (link to coding guidelines).</li>
+<li>For consistency, and to enhance the chances that your contribution will be passed for review without corrections required, please read the <a href="https://github.wdf.sap.corp/Norman/Norman/blob/master/Project%20Norman%20Style%20Guide.md">Project Norman Style Guide</a> to ensure that your code conforms to our current approach.</li>
 <li>Be sure your author field in git is properly filled out with your full name and email address so we can credit you.</li>
 </ul>
 **4.**   Perform the requisite pre-pull request testing procedures (link to description of these in the wiki - overlap with guidelines)
@@ -104,17 +110,13 @@ You submit changes to Project Norman sub-projects, such as bug fixes and new or 
 
 **To submit your completed code, do the following**:
 
-**7.**   Make a pull request, and wait for a response from the project team reviewer or committer for the area to which your bug fix or enhancment applies. (link to how to make a pull request) + (link to our specific committe message procedure - probably on our guidelines)
+**7.**  Push the changes on your fork,  and submit pull request for original repository. Fore more information, see [Using Pull Requests](https://help.github.com/articles/using-pull-requests/).
+
+**Note**:  For guidelines on commit messages, see the [Project Norman Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Project%20Norman%20Style%20Guide.md).
 
 **After you have submitter your completed code, do the following**:
 
-**8.**   Wait for a reviewer to review and approve your code. When you have submitted a pull request, a qualified review on the project team reviews your contribution to evaluate whether it can be committed to the master copy of the project, whether further discussion and development for further consideration, or whether it is not accepted as a contribution. It is generally expected that some communication is required with contributors after they have submitted a pull request, and quite rare that a contribution is accepted without qualification on the first attempt.
-
-
-###<a name="What are the Project Norman Development Guidelines?"></a>What are the Project Norman Development Guidelines?
-Integrate this with the above (i.e. what are the things that need to be provide for 1. a bug fix; 2. a new feature) - in a sense, what to do before (see above), and then the adherence to guidelines are two sepearate processes.
-
-Abstract definition of the languages, styles, quality issues (they can impact whether the contribution is adopted and integrated - this should also be stressed in earlier section, along with the warning that not all pull requests are accepted). Include links to specific wiki pages, where this information is stored.
+**9.**   Wait for a response from the project team reviewer or committer for the area to which your bug fix or enhancment applies. For more information on the the reviewing process, see <a href="#Reviewers">Reviewers</a>
 
 
 
@@ -151,15 +153,14 @@ You can find out more about our current reviewers and contributors on the [Contr
 
 ###<a name="Reviewers"></a>Reviewers
 
-Reviewers are responsible for reviewing all code and documentation submissions to projects. Reviewers are respsible for ensuring that submissions meet the agreed requirments in terms of scope, code-quality, and functionality. In order to optimize the chances for your submissions to pass the review stage, we recommend you review the submission guidelines (link) and code guidelines (link.)
+Reviewers are responsible for ensuring all code and documentation submissions to Project Norman sub-projects meet the agreed requirements in terms of scope, code-quality, and functionality. Reviewers are generally experts in the environment to which the contribution applies, and are also Committers.
 
+When you have submitted a pull request, a reviewer on the project team reviews your contribution to evaluate whether it can be committed to the master copy of the project, whether further discussion and development for further consideration, or whether it is not accepted as a contribution. It is generally expected that some communication is required with contributors after they have submitted a pull request, and quite rare that a contribution is accepted without qualification on the first attempt.
 The number of reviewers per project varies with the size of the project and the number of contribution.
 
-Reviewers are generally experts in the environment to which the contribution applies, and are also Committers.
+**Note**:  In order to optimize the chances for your submissions to pass the review stage, we recommend you review  [Project Norman Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Project%20Norman%20Style%20Guide.md).
 
-Established contributors in a project can be enabled as reviewers for that project if they receive the support of the project steering committee. It can be useful to be a committer. 
-
-You can find out more about our current reviewers and contributors on the [Contributors] (https://github.wdf.sap.corp/Norman/Drive/blob/master/Contributors.md)  page.
+**Note**:  You can find out more about our current reviewers and contributors on the [Contributors](https://github.wdf.sap.corp/Norman/Drive/blob/master/Contributors.md)  page.
 
 
 ###<a name="Committers"></a>Committers
