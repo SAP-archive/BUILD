@@ -51,6 +51,8 @@ For guidelines on contributing a fix, please refer to <a href="#How Do I Make Ch
 
 We welcome your innovations to Project Norman. If you don't know exactly what you'd like to contribution, why not see if there is something on the project roadmap you find interesting. If you see something, why not give it a go? However, to ensure you are not wasting your valuable time, contact one of our core developers through the mailing list and discuss the proposed enhacement with them.
 
+***We do not accept proposal for new features through the Issue Tracker. They will be removed.***
+
 For guidelines on contributing an enhancement, please refer to <a href="#How Do I Make Changes to Product Norman Sub-Projects?">   How Do I Make Changes to Product Norman Sub-Projects?</a> section.
 
 ##<a name="How Do I Report Issues?"></a> How Do I Report Issues?
