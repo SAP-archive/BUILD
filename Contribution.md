@@ -2,7 +2,7 @@
 
 ##Introduction
 
-So you want to contribute to a Project Norman project? Good choice! There is lots of scope for contribution, and there's plenty to do! Project Norman is composed of the numerous <a href="#Project Norman Sub-Projects"> Project Norman Sub-Projects</a>, each of which have their own repository. This document describes how to make contributions to any of these sub-projects. 
+So you want to contribute to a Project Norman project? Good choice! There is lots of scope for contribution, and there's plenty to do! Project Norman is composed of the numerous <a href="#Links to Project Norman Sub-Projects"> Project Norman Sub-Projects</a>, each of which have their own repository. This document describes how to make contributions to any of these sub-projects. 
 
 Want to get coding straight away? No problem because we want you to get going as fast as possible as well! To make the best use of your valuable time we recommend you take a few minutes to read this page before you dive in. It contains the following sections:
 
@@ -15,8 +15,9 @@ Want to get coding straight away? No problem because we want you to get going as
 
 + <a href="#Who Contributes to Project Norman Projects?">   Who Contributes to Project Norman Projects?</a>
 
-
-##<a name="What Can I Contribute?"></a>What Can I Contribute?
++ <a href="#Who Contributes to Project Norman Projects?">   Who Contributes to Project Norman Projects?</a>
++ 
+##<a name="Links to Project Norman Sub-Projects"></a>Links to Project Norman Sub-Projects
 
 You might already know exactly what you do, but if not, you might consider contributing in one or all of the following ways: 
 
@@ -84,13 +85,15 @@ For more information on Project Norman mailing lists, see our [Communications Gu
 
 Once this discussion yields a shared consensus, you can confidently proceed and create the code and submit your change using the following procedure:
 
-**Create code for your enhancment of bug fix, do the following**:
+**1.**   Review the [Apache License] (https://github.wdf.sap.corp/Norman/Drive/blob/master/License.txt) (which describes contributions) which outlines both your and the Project Norman Open Source Community's legal rights regarding your contribution.
 
-**1.**   Fork the sub-project repo and then clone the fork. For more information, see [Fork a Repo] (https://help.github.com/articles/fork-a-repo/).
+**2.**  Download, read, sign, and send us our [Individual Contribution License Agreement] (https://github.wdf.sap.corp/Norman/Drive/blob/master/docs/SAP%20Individual%20Contributor%20License%20Agreement.pdf) if you want to submit code as an individual. Alternatively, if you want to submit code on behalf of your employer, a company representative authorized to do so needs to download, fill, and print the [Corporate Contributor License Agreement] (https://github.wdf.sap.corp/Norman/Drive/blob/master/docs/SAP%20Corporate%20Contributor%20License%20Agreement.pdf) form.  
 
-**2.**   Install the required tools. For more information, see 
+**3.**   Fork the sub-project repo and then clone the fork. For more information, see [Fork a Repo] (https://help.github.com/articles/fork-a-repo/).
 
-**3.**   Implement your new feature or bug fix on your branch, taking the following into consideration:
+**4.**   Install the required tools. For more information, see 
+
+**5.**   Implement your new feature or bug fix on your branch, taking the following into consideration:
 
 <ul>
 <li>Base all your work off of the <b>dev<b/> branch. The devel branch is where active development happens. We do not merge patches directly into <b>master</b>.</li>
@@ -100,24 +103,14 @@ Once this discussion yields a shared consensus, you can confidently proceed and 
 <li>Be sure your author field in Git is filled out correctly, including full name and email address. This enables us to credit you for your contribution.</li>
 </ul>
 
-**4.**   Perform the requisite pre-pull request testing procedures. Please include tests to prove your code works. 
-
-**Before you submit your completed code, do the following**: 
-
-**5.**   Review the [Apache License] (https://github.wdf.sap.corp/Norman/Drive/blob/master/License.txt) (which describes contributions) which outlines both your and the Project Norman Open Source Community's legal rights regarding your contribution.
-
-**6.**  Download, read, sign, and send us our [Individual Contribution License Agreement] (https://github.wdf.sap.corp/Norman/Drive/blob/master/docs/SAP%20Individual%20Contributor%20License%20Agreement.pdf) if you want to submit code as an individual. Alternatively, if you want to submit code on behalf of your employer, a company representative authorized to do so needs to download, fill, and print the [Corporate Contributor License Agreement] (https://github.wdf.sap.corp/Norman/Drive/blob/master/docs/SAP%20Corporate%20Contributor%20License%20Agreement.pdf) form.  
-
-
-**To submit your completed code, do the following**:
+**6.**   Perform the requisite pre-pull request testing procedures. Please include tests to prove your code works. 
 
 **7.**  Push the changes on your fork,  and submit pull request for original repository. Fore more information, see [Using Pull Requests](https://help.github.com/articles/using-pull-requests/).
 
 **Note**:  For guidelines on commit messages, see the [Project Norman Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Project%20Norman%20Style%20Guide.md).
 
-**After you have submitter your completed code, do the following**:
 
-**9.**   Wait for a response from the project team reviewer or committer for the area to which your bug fix or enhancment applies. For more information on the the reviewing process, see <a href="#Reviewers">Reviewers</a>
+*8.**   Wait for a response from the project team reviewer or committer for the area to which your bug fix or enhancment applies. For more information on the the reviewing process, see <a href="#Reviewers">Reviewers</a>
 
 
 
@@ -178,7 +171,7 @@ You can find out more about our current reviewers and contributors on the [Contr
 Each project is run on day to day basis by the contributors, and operates under the guidance of a dedicated Project Steering Committee. Project Steering Committees are responsible for providing oversight of project developments, securing and organizing resources, removing obtacles, and resolving conflicts. Each Project Steering Committee, in turn, operates under the guidance of the Project Norman Steering Committee. For more information on the composition and roles of these steering committees, and the Project Norman project structure, see [Project Norman Project Management](https://github.wdf.sap.corp/Norman/Norman/wiki/Project-Norman-Project-Management).
 
 
-###<a name="Project Norman Sub-Projects"></a>Project Norman Sub-Projects
+###<a name="Links to Project Norman Sub-Projects"></a>Project Norman Sub-Projects
 + [Auth] (https://github.wdf.sap.corp/Norman/Auth) 
 + [Data Composer] (https://github.wdf.sap.corp/Norman/DataComposer)
 + [Data Model Editor] (https://github.wdf.sap.corp/Norman/DataModelEditor)
