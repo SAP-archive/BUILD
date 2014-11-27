@@ -77,13 +77,15 @@ Once you have acquainted yourself with the guidelines, you can go to project Iss
 
 ##<a name="How Do I Make Changes to Product Norman Sub-Projects?"></a>How Do I Make Changes to Product Norman Sub-Projects?
 
-You submit changes to Project Norman sub-projects, such as bug fixes and new or improved features, using pull requests to the relevant sub-project repository. Therefore, prior to coding changes, you should ensure that you are spending your time wisely. We do not accept all pull requests, and those we accept have to meet specific standards by proposing and disussing new features with our core developers via mailing list. Furthermore, the developer might have some valuable hints and tips that save you a lot of time of and effort.
+You submit changes to Project Norman sub-projects, such as bug fixes and new or improved features, using pull requests to the relevant sub-project repository. However, we do not accept all pull requests, and those we accept have to meet specific standards. Therefore, prior to coding changes, to ensure that you are spending your time wisely, we recommend you propose and disuss your new feature or significant bug fix with on of our core developers via mailing list. Once this discussion yields a shared consensus, you can confidently proceed and create the code. Furthermore, the developer might have some valuable hints and tips that save you a lot of time of and effort.
 
 **Note**:  For more information on Project Norman mailing lists, see our [Communications Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Communication%20Guidelines.md).
 
 **Note**:  For more information on the roles of contributors, committers, reviews, and project steering committe, see the  [Community Roles](https://github.wdf.sap.corp/Norman/Norman/blob/master/Community Roles.md).
 
-Once this discussion yields a shared consensus, you can confidently proceed and create the code and submit your change using the following procedure:
+###<a name="Changing Code and Submitting Your Changes"></a>Changing Code and Submitting Your Changes
+
+Use the following procedure to change code and submit your changes:
 
 **1.**   Review the [Apache License] (https://github.wdf.sap.corp/Norman/Drive/blob/master/License.txt) (which describes contributions) which outlines both your and the Project Norman Open Source Community's legal rights regarding your contribution.
 
