@@ -79,9 +79,9 @@ Once you have acquainted yourself with the guidelines, you can go to project Iss
 
 You submit changes to Project Norman sub-projects, such as bug fixes and new or improved features, using pull requests to the relevant sub-project repository. Therefore, prior to coding changes, you should ensure that you are spending your time wisely. We do not accept all pull requests, and those we accept have to meet specific standards by proposing and disussing new features with our core developers via mailing list. Furthermore, the developer might have some valuable hints and tips that save you a lot of time of and effort.
 
-For more information on Project Norman mailing lists, see our [Communications Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Communication%20Guidelines.md).
+**Note**:  For more information on Project Norman mailing lists, see our [Communications Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Communication%20Guidelines.md).
 
-For more information on the roles of contributors, committers, reviews, and project steering committe, see the  [Community Roles](https://github.wdf.sap.corp/Norman/Norman/blob/master/Community Roles.md).
+**Note**:  For more information on the roles of contributors, committers, reviews, and project steering committe, see the  [Community Roles](https://github.wdf.sap.corp/Norman/Norman/blob/master/Community Roles.md).
 
 Once this discussion yields a shared consensus, you can confidently proceed and create the code and submit your change using the following procedure:
 
