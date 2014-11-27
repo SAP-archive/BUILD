@@ -1,6 +1,6 @@
 Please use the template below when reporting issues on Project Norman projects:
 
-+ ###Project Norman Version:
++ ###Project Norman version:
 
 
 + ###Project:
