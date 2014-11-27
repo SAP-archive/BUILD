@@ -76,11 +76,11 @@ You submt changes to Project Norman projects, such as bug fixes and new or impro
 
 **To create code for your enhancment of bug fix, do the following**:
 
-**1**   Download the GiTHub Repository for the project. (link to instructions on how to)
+**1.**   Download the GiTHub Repository for the project. (link to instructions on how to)
 
-**2**   Install the required tools. (link to suitable documents in wiki)
+**2.**   Install the required tools. (link to suitable documents in wiki)
  
-**3**   Implement your new feature or bug fix on your branch, taking the following into consideration:
+**3.**   Implement your new feature or bug fix on your branch, taking the following into consideration:
 
 <ul>
 <li>Base all your work off of the devel branch. The devel branch is where active development happens. We do not merge patches directly into master.</li>
@@ -90,18 +90,18 @@ You submt changes to Project Norman projects, such as bug fixes and new or impro
 <li>For consistency, and to enhance the chances that your contribution will be passed for review without corrections required, please review our coding guidelines to ensure that your code conforms to our current approach. (link to coding guidelines).</li>
 <li>Be sure your author field in git is properly filled out with your full name and email address so we can credit you.</li>
 </ul>
-**4**   Perform the requisite pre-pull request testing procedures (link to description of these in the wiki - overlap with guidelines)
+**4.**   Perform the requisite pre-pull request testing procedures (link to description of these in the wiki - overlap with guidelines)
 
 **Before you submit your completed code, do the following**: 
 
-**5**   Review the [Apache License] (https://github.wdf.sap.corp/Norman/Drive/blob/master/License.txt) (which describes contributions) which outlines both your and the Project Norman Open Source Community's legal rights regarding your contribution.
+**5.**   Review the [Apache License] (https://github.wdf.sap.corp/Norman/Drive/blob/master/License.txt) (which describes contributions) which outlines both your and the Project Norman Open Source Community's legal rights regarding your contribution.
 
-**6**  Download, read, sign, and send us our [Individual Contribution License Agreement] (https://github.wdf.sap.corp/Norman/Drive/blob/master/docs/SAP%20Individual%20Contributor%20License%20Agreement.pdf) if you want to submit code as an individual. Alternatively, if you want to submit code on behalf of your employer, a company representative authorized to do so needs to download, fill, and print the [Corporate Contributor License Agreement] (https://github.wdf.sap.corp/Norman/Drive/blob/master/docs/SAP%20Corporate%20Contributor%20License%20Agreement.pdf) form.  
+**6.**  Download, read, sign, and send us our [Individual Contribution License Agreement] (https://github.wdf.sap.corp/Norman/Drive/blob/master/docs/SAP%20Individual%20Contributor%20License%20Agreement.pdf) if you want to submit code as an individual. Alternatively, if you want to submit code on behalf of your employer, a company representative authorized to do so needs to download, fill, and print the [Corporate Contributor License Agreement] (https://github.wdf.sap.corp/Norman/Drive/blob/master/docs/SAP%20Corporate%20Contributor%20License%20Agreement.pdf) form.  
 
 
 **To submit your completed code, do the following**:
 
-**7**   Make a pull request, and wait for a response from the project team reviewer or committer for the area to which your bug fix or enhancment applies. (link to how to make a pull request) + (link to our specific committe message procedure - probably on our guidelines)
+**7.**   Make a pull request, and wait for a response from the project team reviewer or committer for the area to which your bug fix or enhancment applies. (link to how to make a pull request) + (link to our specific committe message procedure - probably on our guidelines)
 
 **After you have submitter your completed code, do the following**:
 
