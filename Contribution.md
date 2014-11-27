@@ -79,7 +79,7 @@ You submit changes to Project Norman sub-projects, such as bug fixes and new or 
 
 For more information on Project Norman mailing lists, see our [Communications Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Communication%20Guidelines.md).
 
-For more information on the roles of contributors, committers, reviews, and project steering committe, see []().
+For more information on the roles of contributors, committers, reviews, and project steering committe, see the  [Community Roles](https://github.wdf.sap.corp/Norman/Norman/blob/master/Community Roles.md).
 
 Once this discussion yields a shared consensus, you can confidently proceed and create the code and submit your change using the following procedure:
 
@@ -89,7 +89,7 @@ Once this discussion yields a shared consensus, you can confidently proceed and 
 
 **3.**   Fork the sub-project repo and then clone the fork. For more information, see [Fork a Repo] (https://help.github.com/articles/fork-a-repo/).
 
-**4.**   Install the required tools. For more information, see 
+**4.**   Install the required tools. 
 
 **5.**   Implement your new feature or bug fix on your branch, taking the following into consideration:
 
