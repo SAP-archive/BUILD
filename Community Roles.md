@@ -44,7 +44,6 @@ You can find out more about our current reviewers and contributors on the [Contr
 
 Reviewers are responsible for ensuring all code and documentation submissions to Project Norman sub-projects meet the agreed requirements in terms of scope, code-quality, and functionality. Reviewers are generally experts in the environment to which the contribution applies, and are also Committers.
 
-When you have submitted a pull request, a reviewer on the project team reviews your contribution to evaluate whether it can be committed to the master copy of the project, whether further discussion and development for further consideration, or whether it is not accepted as a contribution. It is generally expected that some communication is required with contributors after they have submitted a pull request, and quite rare that a contribution is accepted without qualification on the first attempt.
 The number of reviewers per project varies with the size of the project and the number of contribution.
 
 **Note**:  In order to optimize the chances for your submissions to pass the review stage, we recommend you review  [Project Norman Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Project%20Norman%20Style%20Guide.md).
