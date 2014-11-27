@@ -1,6 +1,6 @@
 # Welcome to the Project Norman Contribution Page!
 
-So you want to contribute to a Project Norman project? Good choice! There is lots of scope for contribution, and there's plenty to do! As you may know, Project Norman is composed of the numerous <a href="#Project Norman Sub-Projects"> Project Norman Sub-Projects</a>, each of which have their own repository. This document desibes contirubiton guidelines that applies to any of these sub-projects.
+So you want to contribute to a Project Norman project? Good choice! There is lots of scope for contribution, and there's plenty to do! As you may know, Project Norman is composed of the numerous <a href="#Project Norman Sub-Projects"> Project Norman Sub-Projects</a>, each of which have their own repository. This document desibes contirubiton guidelines that should be applied if you are make contributions to any of these sub-project repositories.
 
 Want to get coding straight away? No problem because we want you to get going as fast as possible as well! To make the best use of your valuable time we recommend you take a few minutes to read this page before you dive in. It contains everything you need to know in order to get started. 
 
@@ -8,7 +8,7 @@ Want to get coding straight away? No problem because we want you to get going as
 
 + <a href="#How Do I Report Issues?">   How Do I Report Issues?</a>
 
-+ <a href="#How Do I Make Changes to Product Norman Projects?"> How Do I Make Changes to Product Norman Projects?</a>
++ <a href="#How Do I Make Changes to Product Norman Sub-Projects?"> How Do I Make Changes to Product Norman Sub-Projects?</a>
 
 + <a href="#Who Contributes to Project Norman Projects?">   Who Contributes to Project Norman Projects?</a>
 
@@ -37,23 +37,25 @@ Check the Issue Tracker in the Project Norman sub-project repository you interes
 
 
 ###<a name="Report Issues"></a>Report Issues
-You can contribute by simply reporting issues you encountered when using Project Norman. Before you report a bug, please check in the Issues Tracker first whether it has already been reported by another user.
+You can contribute by simply reporting issues you encountered when using Project Norman. 
 
 For more comprehensive guidelines on reporting issues, please refer to <a href="#How Do I Report Issues?">    How Do I Report Issues?</a> section.
 
 ###<a name="Fix Issues"></a>Fix Issues
 
-Check the Issue Tracker in the project repository for issues in an area you are interested in fixing. Consider issues that are currently being fixed aswell if they interest you, because the contributor responsible might appreciate the offer of assistance. 
+Check the Issue Tracker in repository for the Project Norman sub-project for issues you are interested in fixing. Consider issues that are currently being fixed aswell if they interest you, because the contributor responsible might appreciate the offer of assistance. 
 
-For guidelines on contributing a fix, please refer to <a href="#How Do I Contribute Code?">    How Do I Contribute Code?</a> section.
+For guidelines on contributing a fix, please refer to <a href="#How Do I Make Changes to Product Norman Sub-Projects?">    How Do I Make Changes to Product Norman Sub-Projects?</a> section.
 
 ###<a name="Propose and Build New Features"></a>Propose and Build New Features
 
 We welcome your innovations to Project Norman. If you don't know exactly what you'd like to contribution, why not see if there is something on the project roadmap you find interesting. If you see something, why not give it a go? However, to ensure you are not wasting your valuable time, contact one of our core developers through the mailing list and discuss the proposed enhacement with them.
 
-For guidelines on contributing an enhancement, please refer to <a href="#How Do I Contribute Code?">    How Do I Contribute Code?</a> section.
+For guidelines on contributing an enhancement, please refer to <a href="#How Do I Make Changes to Product Norman Sub-Projects?">   How Do I Make Changes to Product Norman Sub-Projects?</a> section.
 
 ##<a name="How Do I Report Issues?"></a> How Do I Report Issues?
+
+Ideally, you should report bugs in the Issue Tracker of the Project Norman sub-project repository most relevant to the issue. To report and issue, you simple open the Issue Tracker in the sub-project, and click the <b>New Issue</b> button. 
 
 We appreciate all efforts to notify us if something goes wrong. However, we have limited capacity, and only support real bugs that are reported with the following criteria: 
 
@@ -68,11 +70,10 @@ We appreciate all efforts to notify us if something goes wrong. However, we have
 For more comprehensive guidelines for submitting bug reports, please refer to [Bug Reporting Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Contributing.md).
 
 Once you have acquainted yourself with the guidelines, you can go to project Issue Tracker to report the issue.
-To report and issue, you simple open the Issue Tracker in the project, and click the <b>New Issue</b> button. 
 
-##<a name="How Do I Make Changes to Product Norman Projects?"></a>How Do I Make Changes to Product Norman Projects?
+##<a name="How Do I Make Changes to Product Norman Sub-Projects?"></a>How Do I Make Changes to Product Norman Sub-Projects?
 
-You submt changes to Project Norman projects, such as bug fixes and new or improved features, using pull requests. However, prior to making changes to your branched version of the project, you should ensure that you are spending your time wisely. We do not accept all pull requests, and those we accept have to meet specific standards. Therefore, prior to creating new code, you should always disuss new features with our core developers. Communication about enhancments is via mailing lists. These identify "virtual meeting rooms" where conversations happen asynchronously, which is a general requirement for groups that are so geographically distributed to cover all time zones. Furthermore, the developer might have some valuable hints and tips that save you a lot of time of and effort.  Once this discussion yields a shared consensus, you can confidentaly proceed and create the code.
+You submit changes to Project Norman sub-projects, such as bug fixes and new or improved features, using pull requests to the relevent sub-project repository. However, prior to making changes to your branched version of the project, you should ensure that you are spending your time wisely. We do not accept all pull requests, and those we accept have to meet specific standards. Therefore, prior to creating new code, you should always disuss new features with our core developers. Communication about enhancments is via mailing lists. These identify "virtual meeting rooms" where conversations happen asynchronously, which is a general requirement for groups that are so geographically distributed to cover all time zones. Furthermore, the developer might have some valuable hints and tips that save you a lot of time of and effort.  Once this discussion yields a shared consensus, you can confidentaly proceed and create the code.
 
 **To create code for your enhancment of bug fix, do the following**:
 
