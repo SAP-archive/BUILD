@@ -27,7 +27,7 @@ You might already know exactly what you do, but if not, you might consider contr
 
 + <a href="#Fix Issues">    Fix Issues</a>
 
-+ <a href="#ropose and Build New Features, Enhancements, and Optimizations">    ropose and Build New Features, Enhancements, and Optimizations</a>
++ <a href="#Propose and Build New Features, Enhancements, and Optimizations">    Propose and Build New Features, Enhancements, and Optimizations</a>
 
 ###<a name="Help Other Users and Contributors"></a>Help Other Users and Contributors
 
