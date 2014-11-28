@@ -12,7 +12,7 @@ in the Project Norman open source community. It contains the following sections:
 
 Project Name | @Reviewers | @Contributors
 ------------- | -------------
-[Auth] (https://github.wdf.sap.corp/Norman/Auth)  |  |  | 
+[Auth] (https://github.wdf.sap.corp/Norman/Auth)  | h | j | 
 [Data Composer] (https://github.wdf.sap.corp/Norman/DataComposer)  | Content Cell |
 [Business Catalog Manager] (https://github.wdf.sap.corp/Norman/BusinessCatalogManager) | Content Cell |
 [Flow Composer] (https://github.wdf.sap.corp/Norman/FlowComposer)  | Content Cell |
