@@ -10,8 +10,8 @@ in the Project Norman open source community. It contains the following sections:
 
 ##<a name="Who are the Reviews and Committers of Project Norman Sub-Projects?"></a>Who are the Reviews and Committers of Project Norman Sub-Projects?
 
-Project Name | @Reviewers | @Contributors
-------------- | -------------
+| Project Name | @Reviewers | @Contributors |
+| ------------- | ------------- | ------------- |
 | [Auth] (https://github.wdf.sap.corp/Norman/Auth) | h | j | 
 | [Data Composer] (https://github.wdf.sap.corp/Norman/DataComposer) | Content Cell |
 | [Business Catalog Manager] (https://github.wdf.sap.corp/Norman/BusinessCatalogManager) | Content Cell |
