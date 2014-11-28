@@ -3,7 +3,7 @@
 This document identifies the Committers and Reviewers nominated for each Project Norman sub-project, and describes all the roles 
 in the Project Norman open source community. It contains the following sections:
 
-+ <a href="#Who are the Reviews and Committers of Project Norman Sub-Projects?">Who are the Reviews and Committers of Project Norman Sub-Projects?</a>
++ <a href="#Who Contributes to Project Norman Projects?">Who Contributes to Project Norman Projects?</a>
 
 + <a href="#Who are the Reviews and Committers of Project Norman Sub-Projects?">Who are the Reviews and Committers of Project Norman Sub-Projects?</a>
 
