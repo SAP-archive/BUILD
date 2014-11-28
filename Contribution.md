@@ -46,7 +46,7 @@ You might identify and issues you want to fix. Great! For guidelines on contribu
 
 ###<a name="Provide Miscellanous Information"></a>Provide Miscellanous Information
 
-We welcome contributions of all types of project relation information, such as test scenarios and results in various environments, performance tests and results, documentation about the project, such as 'How To's or API documentation, and any other information you think the community will be able to use.
+We welcome contributions of all types of project-related information, such as test scenarios and results in various environments, performance tests and results, documentation about the project, such as 'How To's or API documentation, and any other information you think the community will be able to use.
 
 ###<a name="Propose and Build New Features, Enhancements, and Optimizations"></a>Propose and Build New Features, Enhancements, and Optimizations
 
