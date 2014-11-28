@@ -1,3 +1,4 @@
+<img src = "https://github.wdf.sap.corp/github-enterprise-assets/0000/3598/0000/2546/8cda45ac-76ea-11e4-9ae1-6842e5baa7cc.png" align="middle"></div>
 
 ##Welcome to Project Norman
 
@@ -7,7 +8,7 @@ Project Norman is a free, open-sourced, cloud-based and social platform that ena
 It contains the following projects:
 + [Auth] (https://github.wdf.sap.corp/Norman/Auth) 
 + [Data Composer] (https://github.wdf.sap.corp/Norman/DataComposer)
-+ [Data Model Editor] (https://github.wdf.sap.corp/Norman/DataModelEditor)
++ [Business Catalog Manager] (https://github.wdf.sap.corp/Norman/BusinessCatalogManager)
 + [Flow Composer] (https://github.wdf.sap.corp/Norman/FlowComposer)
 + [Sample Data Server] (https://github.wdf.sap.corp/Norman/SampleDataServer)
 + [UX Rule Engine] (https://github.wdf.sap.corp/Norman/UXRuleEngine )
