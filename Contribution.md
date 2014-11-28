@@ -19,7 +19,7 @@ Want to get coding straight away? No problem because we want you to get going as
 
 You might already know exactly what you do, but if not, you might consider contributing in one or all of the following ways: 
 
-+ <a href="#Help Other Users and Contributors">    Help Other Drive.SAP Users and Contributors</a>
++ <a href="#Help Other Users and Contributors">    Help Other Users and Contributors</a>
 
 + <a href="#Analyse Existing Issues">    Analyse Existing Issues</a>
 
@@ -27,12 +27,11 @@ You might already know exactly what you do, but if not, you might consider contr
 
 + <a href="#Fix Issues">    Fix Issues</a>
 
-+ <a href="#Propose and Build New Features">    Propose and Build New Features</a>
++ <a href="#ropose and Build New Features, Enhancements, and Optimizations">    ropose and Build New Features, Enhancements, and Optimizations</a>
 
-###<a name="Help Other Users and Contributors"></a>Help Other Drive.SAP Users and Contributors
+###<a name="Help Other Users and Contributors"></a>Help Other Users and Contributors
 
-You can contribute valuably to one or more Project Norman sub-projects by helping others users who need support. You will find them, for example, on StackOverflow, or in the SAP Community Network forum.
-
+You can contribute valuably to one or more Project Norman sub-projects by helping others users who need support. 
 
 ###<a name="Analyse Existing Issues"></a>Analyze Existing Issues
 Check the Issue Tracker in the Project Norman sub-project repository you interested in contributing to. You might be able to provide further information, or a hint that helps other contributors understand the issue. This is a great way to get acquainted with the project. You might want to fix an issue. For more information, see <a href="#Fix Issues">    Fix Issues</a>.
@@ -49,19 +48,23 @@ Check the Issue Tracker in repository for the Project Norman sub-project for iss
 
 For guidelines on contributing a fix, please refer to <a href="#How Do I Make Changes to Product Norman Sub-Projects?">    How Do I Make Changes to Product Norman Sub-Projects?</a> section.
 
-###<a name="Propose and Build New Features"></a>Propose and Build New Features
+###<a name="Propose and Build New Features, Enhancements, and Optimizations"></a>ropose and Build New Features, Enhancements, and Optimizations
 
-We welcome your innovations to Project Norman. If you don't know exactly what you'd like to contribution, why not see if there is something on the in the Issue Tracker back log you find interesting. If you see something, why not give it a go? However, to ensure you are not wasting your valuable time, contact one of our core developers through the mailing list and discuss the proposed enhancement with them.
+We welcome innovations and improvements to Project Norman, including contributions to documentation, examples or test cases, optimizations, new features and enhancments to existing features.
+
+If you don't know exactly what you'd like to contribution, why not see if there is something on the in the Issue Tracker back log you find interesting. If you see something, why not give it a go? However, to ensure you are not wasting your valuable time, contact one of our core developers through the mailing list and discuss the proposed enhancement with them.
 
 ***!!!We do not accept proposal for new features through the Issue Tracker. They will be removed!!!***
 
-For guidelines on contributing an enhancement, please refer to <a href="#How Do I Make Changes to Product Norman Sub-Projects?">   How Do I Make Changes to Product Norman Sub-Projects?</a> section.
+For guidelines on contributing a new feature or enhancement to existing features, please refer to <a href="#How Do I Make Changes to Product Norman Sub-Projects?">   How Do I Make Changes to Product Norman Sub-Projects?</a> section.
+
+
 
 ##<a name="How Do I Report Issues?"></a> How Do I Report Issues?
 
 Ideally, you should report bugs in the Issue Tracker of the Project Norman sub-project repository most relevant to the issue. To report and issue, you simple open the Issue Tracker in the sub-project, and click the <b>New Issue</b> button. 
 
-We appreciate all efforts to notify us if something goes wrong. However, we have limited capacity, and only support real bugs that are reported with the following criteria: 
+We appreciate all efforts to notify us if something goes wrong. However, we have limited capacity, we give priority to bugs well-reported bugs that conform to the following criteria: 
 
  * It must be a real, current bug
  * It must not be a duplicate
