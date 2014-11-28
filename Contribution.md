@@ -110,7 +110,7 @@ Use the following procedure to change code and submit your changes:
 
 **7.**  Push the changes on your fork,  and submit pull request for original repository. Fore more information, see [Using Pull Requests](https://help.github.com/articles/using-pull-requests/).
 
-**Note**:  For guidelines on commit messages, see the [Project Norman Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Project%20Norman%20Style%20Guide.md).
+**Note**:  For guidelines on commit messages, see the [Project Norman Style Guide](https://github.wdf.sap.corp/Norman/Norman/blob/master/Project%20Norman%20Style%20Guide.md).
 
 
 **8.**   When you have submitted a pull request, a reviewer on the project team reviews your contribution to evaluate whether it can be committed to the master copy of the project, whether further discussion and development for further consideration, or whether it is not accepted as a contribution. It is generally expected that some communication is required with contributors after they have submitted a pull request, and quite rare that a contribution is accepted without qualification on the first attempt.
