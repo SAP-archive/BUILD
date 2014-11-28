@@ -12,21 +12,21 @@ in the Project Norman open source community. It contains the following sections:
 
 Project Name | @Reviewers | @Contributors
 ------------- | -------------
-[Auth] (https://github.wdf.sap.corp/Norman/Auth)  | h | j | 
-[Data Composer] (https://github.wdf.sap.corp/Norman/DataComposer)  | Content Cell |
-[Business Catalog Manager] (https://github.wdf.sap.corp/Norman/BusinessCatalogManager) | Content Cell |
-[Flow Composer] (https://github.wdf.sap.corp/Norman/FlowComposer)  | Content Cell |
-[Sample Data Server] (https://github.wdf.sap.corp/Norman/SampleDataServer)  | Content Cell |
-[UX Rule Engine] (https://github.wdf.sap.corp/Norman/UXRuleEngine )  | Content Cell |
-[UI Composer] (https://github.wdf.sap.corp/Norman/UIComposer)  | Content Cell |
-[Shared Workspace] (https://github.wdf.sap.corp/Norman/SharedWorkspace)  | Content Cell |
-[UI Catalog Manager] (https://github.wdf.sap.corp/Norman/UICatalogManager)  | Content Cell |
-[Previewer] (https://github.wdf.sap.corp/Norman/Previewer) | Content Cell |
-[User Research] (https://github.wdf.sap.corp/Norman/UserResearch) | Content Cell |
-[Shell] (https://github.wdf.sap.corp/Norman/Shell)  | Content Cell |
-[Analytics] (https://github.wdf.sap.corp/Norman/Analytics) (https://github.wdf.sap.corp/Norman/Collaboration)  | Content Cell |
-[Common] (https://github.wdf.sap.corp/Norman/Common)  | Content Cell |
-[Projects - aka Project Management] (https://github.wdf.sap.corp/Norman/Projects)  | Content Cell |
+| [Auth] (https://github.wdf.sap.corp/Norman/Auth) | h | j | 
+| [Data Composer] (https://github.wdf.sap.corp/Norman/DataComposer) | Content Cell |
+| [Business Catalog Manager] (https://github.wdf.sap.corp/Norman/BusinessCatalogManager) | Content Cell |
+| [Flow Composer] (https://github.wdf.sap.corp/Norman/FlowComposer) | Content Cell |
+| [Sample Data Server] (https://github.wdf.sap.corp/Norman/SampleDataServer) | Content Cell |
+| [UX Rule Engine] (https://github.wdf.sap.corp/Norman/UXRuleEngine ) | Content Cell |
+| [UI Composer] (https://github.wdf.sap.corp/Norman/UIComposer) | Content Cell |
+| [Shared Workspace] (https://github.wdf.sap.corp/Norman/SharedWorkspace) | Content Cell |
+| [UI Catalog Manager] (https://github.wdf.sap.corp/Norman/UICatalogManager) | Content Cell |
+| [Previewer] (https://github.wdf.sap.corp/Norman/Previewer) | Content Cell |
+| [User Research] (https://github.wdf.sap.corp/Norman/UserResearch) | Content Cell |
+| [Shell] (https://github.wdf.sap.corp/Norman/Shell) | Content Cell |
+| [Analytics] (https://github.wdf.sap.corp/Norman/Analytics) (https://github.wdf.sap.corp/Norman/Collaboration) | Content Cell |
+| [Common] (https://github.wdf.sap.corp/Norman/Common) | Content Cell |
+| [Projects - aka Project Management] (https://github.wdf.sap.corp/Norman/Projects) | Content Cell |
 
 ###@Reviewers
 
