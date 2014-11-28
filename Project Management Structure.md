@@ -14,9 +14,11 @@ Each Project Steering Committee comprises the following:
 + **A Project Management lead** - The project management lead is resposible for the following:
     + 1.	Ensure visibility and communication across the team and overall project, and communicating project status to stakeholders and the team through various means, such as weekly status reports, quality reports, iteration reviews, project meetings and so forth.
     + 2.	Ensure team is aware of the project schedule and milestones and is executing towards it. This requires the following:
-          o	Capacity/ Availability planning for the project.
-          o	Supporting the teams in their iteration planning. 
-          o	Developing an appropriately detailed project plan to monitor and track progress. For long term projects this includes a Release Plan.
+          
+           o	Capacity/ Availability planning for the project.
+           o	Supporting the teams in their iteration planning. 
+           o	Developing an appropriately detailed project plan to monitor and track progress. For long term projects this includes a Release Plan.
+
 3.	Manage Risk/Impediments/Dependencies.  
           o	Identify, monitor, communicate, resolve, escalate.
 4.	Ensure continuous improvement of the project.
