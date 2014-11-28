@@ -10,7 +10,6 @@ Each project is run on day to day basis by the contributors, and operates under 
 
 Each Project Steering Committee comprises the following:
 + **A Requirements lead** - The Requiements lead is responsible for gathering requirement for discussion with the other members of the SC for inclusion in an agreed release scope, that agreed contributions are delivered. They are also responsible for building a vibrant community. This role may suit, for example, the Product Owner.
-+ **A Resources lead** - The Resources lead is responsible for ensuring that adequate resources are assigned to enable the project team to accomplish its agreed goals.
 + **A Project Management lead** - The project management lead is resposible for the following:
     + 1. Ensure visibility and communication across the team and overall project, and communicating project status to stakeholders and the team through various means, such as weekly status reports, quality reports, iteration reviews, project meetings and so forth.
     + 2. Ensure team is aware of the project schedule and milestones and is executing towards it. This requires the following:
