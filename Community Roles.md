@@ -1,12 +1,19 @@
-##Roles in the Project Norman Open Source Community
+#Roles in the Project Norman Open Source Community
 
 This document identifies the Committers and Reviewers nominated for each Project Norman sub-project, and describes all the roles 
-in the Project Norman open source community.
+in the Project Norman open source community. It contains the following sections:
 
++ <a href="#Who are the Reviews and Committers of Project Norman Sub-Projects?">Who are the Reviews and Committers of Project Norman Sub-Projects?</a>
+
++ + <a href="#Who are the Reviews and Committers of Project Norman Sub-Projects?">Who are the Reviews and Committers of Project Norman Sub-Projects?</a>
+
+
+##<a name="Who are the Reviews and Committers of Project Norman Sub-Projects?"></a>Who are the Reviews and Committers of Project Norman Sub-Projects?
 
 ###@Reviewers
 
-[@cwelsh] (https://github.wdf.sap.corp/Norman/Drive)
+
+
 ###@Committers
 
 ##<a name="Who Contributes to Project Norman Projects?"></a>Who Contributes to Project Norman Projects?
