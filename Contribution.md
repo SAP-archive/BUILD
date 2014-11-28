@@ -102,7 +102,7 @@ Use the following procedure to change code and submit your changes:
 **5.**   Implement your new feature or bug fix on your branch, taking the following into consideration:
 
 <ul>
-<li>Base all your work off of the <b>master<b/> branch. The devel branch is where active development happens. We do not merge patches directly into <b>master</b>.</li>
+<li>Base all your work off of the <b>master<b/> branch. </li>
 <li>Please name your branch to match the new feature of bug fix that you are submitting.</li>
 <li>Please do not submit more than one feature or bug fix per pull request.</li>
 <li>For consistency, and to enhance the chances that your contribution will be passed for review without corrections required, please read the <a href="https://github.wdf.sap.corp/Norman/Norman/blob/master/Project%20Norman%20Style%20Guide.md">Project Norman Style Guide</a> to ensure that your code conforms to our current approach.</li>
