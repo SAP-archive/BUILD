@@ -5,7 +5,7 @@ in the Project Norman open source community. It contains the following sections:
 
 + <a href="#Who are the Reviews and Committers of Project Norman Sub-Projects?">Who are the Reviews and Committers of Project Norman Sub-Projects?</a>
 
-+ + <a href="#Who are the Reviews and Committers of Project Norman Sub-Projects?">Who are the Reviews and Committers of Project Norman Sub-Projects?</a>
++ <a href="#Who are the Reviews and Committers of Project Norman Sub-Projects?">Who are the Reviews and Committers of Project Norman Sub-Projects?</a>
 
 
 ##<a name="Who are the Reviews and Committers of Project Norman Sub-Projects?"></a>Who are the Reviews and Committers of Project Norman Sub-Projects?
