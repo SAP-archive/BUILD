@@ -1,5 +1,4 @@
-<div style="text-align:center"><img src = "https://github.wdf.sap.corp/github-enterprise-assets/0000/3598/0000/2546/8cda45ac-76ea-11e4-9ae1-6842e5baa7cc.png" align="middle"></div>
-
+<style =.center { margin-left: auto; margin-right: auto; width: 70%;}><img src = "https://github.wdf.sap.corp/github-enterprise-assets/0000/3598/0000/2546/8cda45ac-76ea-11e4-9ae1-6842e5baa7cc.png" align="middle"></div>
 
 ##Welcome to Project Norman
 
