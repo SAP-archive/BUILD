@@ -44,9 +44,9 @@ For more comprehensive guidelines on reporting issues, please refer to <a href="
 
 You might identify and issues you want to fix. Great! For guidelines on contributing a fix, please refer to <a href="#How Do I Make Changes to Product Norman Sub-Projects?">    How Do I Make Changes to Product Norman Sub-Projects?</a> section.
 
-###<a name="Provide Miscellanous Information"></a>Provide Miscellanous Information
+###<a name="Provide Miscellaneous Information"></a>Provide Miscellaneous Information
 
-We welcome contributions of all types of project-related information, such as test scenarios and results in various environments, performance tests and results, documentation about the project, such as 'How To's or API documentation, and any other information you think the community will be able to use.
+Inevitably, there is a wealth of information wihch the community would benefit from but nobodya has yet provided. We welcome contributions of all types of project-related information, such as test scenarios and results in various environments, performance tests and results, <i>How To</i>  or API documentation, and any other information you think the community will be able to use.
 
 ###<a name="Propose and Build New Features, Enhancements, and Optimizations"></a>Propose and Build New Features, Enhancements, and Optimizations
 
