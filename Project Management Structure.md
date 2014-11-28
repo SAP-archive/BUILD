@@ -15,15 +15,15 @@ Each Sub-Project Steering Committee comprises the following:
     
     + **2**.Ensure team is aware of the sub-project schedule and milestones and is executing towards it. This requires the following:
           
-      ++ Capacity/ Availability planning for the sub-project.
+      + Capacity/ Availability planning for the sub-project.
  
-      ++ Supporting the teams in their iteration planning. 
+      + Supporting the teams in their iteration planning. 
            
-      ++ Developing an appropriately detailed project plan to monitor and track progress. For long term sub-projects this includes a Release Plan.
+      + Developing an appropriately detailed project plan to monitor and track progress. For long term sub-projects this includes a Release Plan.
 
     + **3**. Manage Risk/Impediments/Dependencies.  
 
-      ++  Identify, monitor, communicate, resolve, escalate.
+      +  Identify, monitor, communicate, resolve, escalate.
           
     + **4**. Ensure continuous improvement of the sub-project.
 
