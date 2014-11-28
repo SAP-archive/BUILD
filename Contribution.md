@@ -58,8 +58,6 @@ If you don't know exactly what you'd like to contribution, why not see if there 
 
 For guidelines on contributing a new feature or enhancement to existing features, please refer to <a href="#How Do I Make Changes to Product Norman Sub-Projects?">   How Do I Make Changes to Product Norman Sub-Projects?</a> section.
 
-
-
 ##<a name="How Do I Report Issues?"></a> How Do I Report Issues?
 
 Ideally, you should report bugs in the Issue Tracker of the Project Norman sub-project repository most relevant to the issue. To report and issue, you simple open the Issue Tracker in the sub-project, and click the <b>New Issue</b> button. 
