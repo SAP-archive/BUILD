@@ -36,10 +36,9 @@ The Project Norman Steering Committee comprises the following:
 
    + **1**. Ensure visibility and communication across the team and overall project, and communicating project status to stakeholders and the team through various means, such as weekly status reports, quality reports, iteration reviews, project meetings and so forth.
    
-+ **2**. Ensure team is aware of the project schedule and milestones and is executing towards it. This requires the following:
+   + **2**. Ensure team is aware of the project schedule and milestones and is executing towards it. This requires the following:
 
      ++ Capacity/ Availability planning for the project.
-
      ++ Supporting the teams in their iteration planning.
 
      ++ Developing an appropriately detailed project plan to monitor and track progress. For long term projects this includes a Release Plan.
