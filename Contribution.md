@@ -48,7 +48,7 @@ Check the Issue Tracker in repository for the Project Norman sub-project for iss
 
 For guidelines on contributing a fix, please refer to <a href="#How Do I Make Changes to Product Norman Sub-Projects?">    How Do I Make Changes to Product Norman Sub-Projects?</a> section.
 
-###<a name="Propose and Build New Features, Enhancements, and Optimizations"></a>ropose and Build New Features, Enhancements, and Optimizations
+###<a name="Propose and Build New Features, Enhancements, and Optimizations"></a>Propose and Build New Features, Enhancements, and Optimizations
 
 We welcome innovations and improvements to Project Norman, including contributions to documentation, examples or test cases, optimizations, new features and enhancments to existing features.
 
