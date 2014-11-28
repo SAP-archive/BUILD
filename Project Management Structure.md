@@ -9,14 +9,23 @@ Each project is run on day to day basis by the contributors, and operates under 
 
 
 Each Project Steering Committee comprises the following:
-+ **A Requirements lead** - The Requiements lead is responsible for gathering requirement for discussion with the other members of the SC for inclusion in an agreed release scope. They Requirments lead is subsequently responsible for nurturing the community and ensuring that agreed contributions are delivered. This role may suit, for example, the Product Owner.
++ **A Requirements lead** - The Requiements lead is responsible for gathering requirement for discussion with the other members of the SC for inclusion in an agreed release scope, that agreed contributions are delivered. They are also responsible for building a vibrant community. This role may suit, for example, the Product Owner.
 + **A Resources lead** - The Resources lead is responsible for ensuring that adequate resources are assigned to enable the project team to accomplish its agreed goals.
-+ **A Project Management lead** - line managers.
++ **A Project Management lead** - The project management lead is resposible for the following:
+    + 1.	Ensure visibility and communication across the team and overall project, and communicating project status to stakeholders and the team through various means, such as weekly status reports, quality reports, iteration reviews, project meetings and so forth.
+    + 2.	Ensure team is aware of the project schedule and milestones and is executing towards it. This requires the following:
+          o	Capacity/ Availability planning for the project.
+          o	Supporting the teams in their iteration planning. 
+          o	Developing an appropriately detailed project plan to monitor and track progress. For long term projects this includes a Release Plan.
+3.	Manage Risk/Impediments/Dependencies.  
+          o	Identify, monitor, communicate, resolve, escalate.
+4.	Ensure continuous improvement of the project.
+
 + **A Technical lead** - an expert in the technical aspects of the project. This role may suit, for example, an architect or a senior developer.
 
 The Project Norman Steering Committee comprises the following:
-+ **Requirements/Scope Lead** - 
-+ **Project Execution/Management Lead** - 
-+ **Architecture/Technical Lead** - 
++ **Requirements/Scope Lead** 
++ **Project Execution/Management Lead** 
++ **Architecture/Technical Lead** 
 + **Engagement Lead/Community representative** - responsible for marketing this project, reaching out to external/internal  consumers, enroll more contributors to the project etc.
 + **Project Norman Steering Committee Lead** - the Project Norman Steering Committee Lead is responsible for leading this project in terms of the project structure.
