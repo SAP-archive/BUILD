@@ -118,7 +118,7 @@ Use the following procedure to change code and submit your changes:
 
 **8.**   When you have submitted a pull request, a reviewer on the project team reviews your contribution to evaluate whether it can be committed to the master copy of the project, whether further discussion and development for further consideration, or whether it is not accepted as a contribution. It is generally expected that some communication is required with contributors after they have submitted a pull request, and quite rare that a contribution is accepted without qualification on the first attempt.
 
-###<a name="Links to Project Norman Sub-Projects"></a>Project Norman Sub-Projects
+##<a name="Links to Project Norman Sub-Projects"></a>Project Norman Sub-Projects
 + [Auth] (https://github.wdf.sap.corp/Norman/Auth) 
 + [Data Composer] (https://github.wdf.sap.corp/Norman/DataComposer)
 + [Business Catalog Manager] (https://github.wdf.sap.corp/Norman/BusinessCatalogManager)
