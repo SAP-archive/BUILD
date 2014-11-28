@@ -10,5 +10,5 @@ Please consider the following guidelines when writing a commit message:
 + Subsequent lines, if any, can be more detailed. 
 
 ###Coding Guidelines for Angular JS
-Click [here] to view the recommended coding guidelines for Angular JS for follow when working on Project Norman.
+Click [here](https://github.wdf.sap.corp/Norman/Norman/wiki/Coding-Guidelines-for-AngularJS) to view the recommended coding guidelines for Angular JS for follow when working on Project Norman.
 
