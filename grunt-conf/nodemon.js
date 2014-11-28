@@ -4,8 +4,12 @@ module.exports = {
     debug: {
         script: 'server/app.js',
         options: {
-            nodeArgs: ['--debug-brk'],
-            env: { PORT: process.env.PORT || 9000 },
+            args: [],
+            nodeArgs: ['--debug'],
+            env: {
+                port: process.env.PORT || 9000,
+                hostname: '127.0.0.1'
+            },
 
             callback: function (nodemon) {
                 nodemon.on('log', function (event) {
@@ -14,7 +18,7 @@ module.exports = {
 
                 // opens browser on initial server start
                 nodemon.on('config:update', function () {
-                    console.log('Debug URL: http://localhost:8080/debug?port=5858');
+                    // console.log('Debug URL: http://localhost:8080/debug?port=5858');
                 });
 
 
