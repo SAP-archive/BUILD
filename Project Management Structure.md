@@ -11,9 +11,9 @@ Each project is run on day to day basis by the contributors, and operates under 
 Each Sub-Project Steering Committee comprises the following:
 + **A Requirements lead** - The Requiements lead is responsible for gathering requirement for discussion with the other members of the SC for inclusion in an agreed release scope, that agreed contributions are delivered. They are also responsible for building a vibrant community. This role may suit, for example, the Product Owner.
 + **A Project Management lead** - The project management lead is resposible for the following:
-    + **1**.Ensure visibility and communication across the team and overall sub-project, and communicating project status to stakeholders and the team through various means, such as weekly status reports, quality reports, iteration reviews, project meetings and so forth.
+    + Ensure visibility and communication across the team and overall sub-project, and communicating project status to stakeholders and the team through various means, such as weekly status reports, quality reports, iteration reviews, project meetings and so forth.
     
-    + **2**.Ensure team is aware of the sub-project schedule and milestones and is executing towards it. This requires the following:
+    + Ensure team is aware of the sub-project schedule and milestones and is executing towards it. This requires the following:
           
       + Capacity/ Availability planning for the sub-project.
  
@@ -21,11 +21,11 @@ Each Sub-Project Steering Committee comprises the following:
            
       + Developing an appropriately detailed project plan to monitor and track progress. For long term sub-projects this includes a Release Plan.
 
-    + **3**. Manage Risk/Impediments/Dependencies.  
+    + Manage Risk/Impediments/Dependencies.  
 
       +  Identify, monitor, communicate, resolve, escalate.
           
-    + **4**. Ensure continuous improvement of the sub-project.
+    + Ensure continuous improvement of the sub-project.
 
 + **A Technical lead** - an expert in the technical aspects of the project. This role may suit, for example, an architect or a senior developer.
 
