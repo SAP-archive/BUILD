@@ -11,11 +11,11 @@
   },
   "main": "server/app.js",
   "dependencies": {
-    "norman-common-client": "^0.0.1",
-    "norman-common-server": "^0.0.1",
-    "norman-shell-client": "^0.0.1",
-    "norman-auth-client": "^0.0.1",
-    "norman-auth-server": "^0.0.1"
+    "norman-common-client": "*",
+    "norman-common-server": "*",
+    "norman-shell-client": "*",
+    "norman-auth-client": "*",
+    "norman-auth-server": "*"
   },
   "scripts": {
     "test": "grunt test",

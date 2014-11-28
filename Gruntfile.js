@@ -84,8 +84,9 @@ module.exports = function (grunt) {
         var tasks = {
             debug : [
                 'env:dev',
-                'nodemon',
-                'nodeinspector'
+                'express:dev',
+                'nodeinspector',
+                'nodemon'
             ],
 
             dev : [
