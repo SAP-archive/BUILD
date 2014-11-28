@@ -117,7 +117,7 @@ Use the following procedure to change code and submit your changes:
 ###<a name="Links to Project Norman Sub-Projects"></a>Project Norman Sub-Projects
 + [Auth] (https://github.wdf.sap.corp/Norman/Auth) 
 + [Data Composer] (https://github.wdf.sap.corp/Norman/DataComposer)
-+ [Data Model Editor] (https://github.wdf.sap.corp/Norman/DataModelEditor)
++ [Business Catalog Manager] (https://github.wdf.sap.corp/Norman/DataModelEditor)
 + [Flow Composer] (https://github.wdf.sap.corp/Norman/FlowComposer)
 + [Sample Data Server] (https://github.wdf.sap.corp/Norman/SampleDataServer)
 + [UX Rule Engine] (https://github.wdf.sap.corp/Norman/UXRuleEngine )
