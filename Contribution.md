@@ -23,9 +23,9 @@ You might already know exactly what you do, but if not, you might consider contr
 
 + <a href="#Analyse Existing Issues">    Analyse Existing Issues</a>
 
-+ <a href="#Report Issues">    Report Issues</a>
++ <a href="#Report Issues">    Report or Fix Issues</a>
 
-+ <a href="#Fix Issues">    Fix Issues</a>
++ <a href="#Provide Miscellaneous Information">    Provide Miscellaneous Information</a>
 
 + <a href="#Propose and Build New Features, Enhancements, and Optimizations">    Propose and Build New Features, Enhancements, and Optimizations</a>
 
@@ -37,16 +37,16 @@ You can contribute valuably to one or more Project Norman sub-projects by helpin
 Check the Issue Tracker in the Project Norman sub-project repository you interested in contributing to. You might be able to provide further information, or a hint that helps other contributors understand the issue. This is a great way to get acquainted with the project. You might want to fix an issue. For more information, see <a href="#Fix Issues">    Fix Issues</a>.
 
 
-###<a name="Report Issues"></a>Report Issues
-You can contribute by simply reporting issues you encountered when using Project Norman. 
+###<a name="Report Issues"></a>Report or Fix Issues
+You can contribute by simply reporting issues you encountered when using Project Norman. Check the Issue Tracker in repository for the Project Norman sub-project for issues you are interested in fixing. Consider issues that are currently being fixed aswell if they interest you, because the contributor responsible might appreciate the offer of assistance. 
 
 For more comprehensive guidelines on reporting issues, please refer to <a href="#How Do I Report Issues?">    How Do I Report Issues?</a> section.
 
-###<a name="Fix Issues"></a>Fix Issues
+You might identify and issues you want to fix. Great! For guidelines on contributing a fix, please refer to <a href="#How Do I Make Changes to Product Norman Sub-Projects?">    How Do I Make Changes to Product Norman Sub-Projects?</a> section.
 
-Check the Issue Tracker in repository for the Project Norman sub-project for issues you are interested in fixing. Consider issues that are currently being fixed aswell if they interest you, because the contributor responsible might appreciate the offer of assistance. 
+###<a name="Provide Miscellanous Information"></a>Provide Miscellanous Information
 
-For guidelines on contributing a fix, please refer to <a href="#How Do I Make Changes to Product Norman Sub-Projects?">    How Do I Make Changes to Product Norman Sub-Projects?</a> section.
+We welcome contributions of all types of project relation information, such as test scenarios and results in various environments, performance tests and results, documentation about the project, such as 'How To's or API documentation, and any other information you think the community will be able to use.
 
 ###<a name="Propose and Build New Features, Enhancements, and Optimizations"></a>Propose and Build New Features, Enhancements, and Optimizations
 
@@ -94,14 +94,14 @@ Use the following procedure to change code and submit your changes:
 
 **2.**  Download, read, sign, and send us our [Individual Contribution License Agreement] (https://github.wdf.sap.corp/Norman/Drive/blob/master/docs/SAP%20Individual%20Contributor%20License%20Agreement.pdf) if you want to submit code as an individual. Alternatively, if you want to submit code on behalf of your employer, a company representative authorized to do so needs to download, fill, and print the [Corporate Contributor License Agreement] (https://github.wdf.sap.corp/Norman/Drive/blob/master/docs/SAP%20Corporate%20Contributor%20License%20Agreement.pdf) form.  
 
-**3.**   Fork the sub-project repo and then clone the fork. For more information, see [Fork a Repo] (https://help.github.com/articles/fork-a-repo/).
+**3.**   Fork the sub-project repo. For more information, see [Fork a Repo] (https://help.github.com/articles/fork-a-repo/).
 
-**4.**   Install the required tools. 
+**4.**   Install the required dependancies and tools. 
 
 **5.**   Implement your new feature or bug fix on your branch, taking the following into consideration:
 
 <ul>
-<li>Base all your work off of the <b>dev<b/> branch. The devel branch is where active development happens. We do not merge patches directly into <b>master</b>.</li>
+<li>Base all your work off of the <b>master<b/> branch. The devel branch is where active development happens. We do not merge patches directly into <b>master</b>.</li>
 <li>Please name your branch to match the new feature of bug fix that you are submitting.</li>
 <li>Please do not submit more than one feature or bug fix per pull request.</li>
 <li>For consistency, and to enhance the chances that your contribution will be passed for review without corrections required, please read the <a href="https://github.wdf.sap.corp/Norman/Norman/blob/master/Project%20Norman%20Style%20Guide.md">Project Norman Style Guide</a> to ensure that your code conforms to our current approach.</li>
