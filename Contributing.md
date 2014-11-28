@@ -1,6 +1,6 @@
 ## Guidelines for Reporting Bugs
 
-.We appreciate all efforts to notify us if something goes wrong. However, we have limited capacity, we give priority to bugs well-reported bugs. Following the guidelines below will ensure that your bug gets the highest priority from community developers.
+We appreciate all efforts to notify us if something goes wrong. However, we have limited capacity, we give priority to bugs well-reported bugs. Following the guidelines below will ensure that your bug gets the highest priority from community developers.
 
 <b>We do not accept proposal for new features through the Issue Tracker. They will be removed.</b>
 
