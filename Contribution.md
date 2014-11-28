@@ -15,6 +15,8 @@ Want to get coding straight away? No problem because we want you to get going as
 
 + <a href="#Links to Project Norman Sub-Projects">Links to Project Norman Sub-Projects
 
++ (Learn About the Project Norman Project Management Structure)[https://github.wdf.sap.corp/Norman/Norman/blob/master/Project%20Management%20Structure.md] 
+
 
 ##<a name="What Can I Contribute?"></a>What Can I Contribute?
 
