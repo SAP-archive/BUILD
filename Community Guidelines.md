@@ -1,7 +1,11 @@
 ##Our Approach to Open Source
 Consciously or unconsciously every open source community establishes their own unique sense of community and set of cultural norms. This document presents guidelines which aim to enhance Project Noman community members' mutual respect and understanding to better enable us to work together towards our shared goals in an open, rewarding, and productive community. 
 
-Gnerally, you should consider the content here as guidelines, except the prohibitions in the Rules section. 
+Gnerally, you should consider the content here as guidelines, except the prohibitions in the <a href="#Rules">Rules</a> section. 
+
+
+##<a name="Who are the Reviews and Committers of Project Norman Sub-Projects?"></a>Who are the Reviews and Committers of Project Norman Sub-Projects?
+
 
 Some of these guidelines have been borrowed from the following open source initiatives, as they encapsulate what we believe are sound open-source community values:
 + [Ghost.org](https://ghost.org/about/guidelines/)
@@ -29,7 +33,7 @@ everyone consider different points of view, but we don’t allow frustration to 
 
 + <b>Take responsibility</b>: We can all make mistakes; when we do, we take responsibility for them. If someone has been harmed or offended, we listen carefully and respectfully, and work to right the wrong.
 
-### Rules 
+###<a name="Rules"></a>Rules
 
 We <i<demand</i> that you do the following, and do the same ourselves:
 
