@@ -10,7 +10,6 @@ var config = {
 var path = require('path');
 var express = require('express');
 var morgan = require('morgan');
-var errorHandler = require('errorhandler');
 var errorHandler = require('composable-middleware');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
@@ -52,11 +51,12 @@ if (config.env === 'development' || config.env === 'test') {
 
 // All other routes should redirect to the index.html
 app.route('/*')
-.get(function(req, res) {
-  res.sendfile(app.get('appPath') + '/index.html');
-});
+    .get(function (req, res) {
+        res.sendFile(app.get('appPath') + '/index.html', { root: config.root });
+    });
 
 // Start server
 server.listen(config.port, config.ip, function () {
-  console.log('Express server listening on %d, in %s mode', config.port, config.env);
+    console.log('Express server listening on %d, in %s mode', config.port, config.env);
 });
+

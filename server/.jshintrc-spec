@@ -1,11 +1,15 @@
 {
   "extends": ".jshintrc",
+  "expr": true,
   "globals": {
     "describe": true,
     "it": true,
     "before": true,
     "beforeEach": true,
     "after": true,
-    "afterEach": true
+    "afterEach": true,
+    "chai": true,
+    "inject" : true,
+    "sinon":true
   }
 }

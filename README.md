@@ -1,10 +1,12 @@
+<img src = "https://github.wdf.sap.corp/github-enterprise-assets/0000/3598/0000/2546/8cda45ac-76ea-11e4-9ae1-6842e5baa7cc.png" align="middle"></div>
 
 ##Welcome to Project Norman
 
 
-Project Norman is a free, open-sourced, cloud-based and social platform that enables even non-technical users to easily create useful enterprise-ready applications and deliver them to end-users without writing a line of code.
+Project Norman is a free, open-sourced, cloud-based and social platform that enables even non-technical users to easily create fully interactive prototypes with real data, share them with end-users and consolidate feedback without writing a line of code.
+
 It contains the following projects:
-+ [Log-on] (https://github.wdf.sap.corp/Norman/Logon) 
++ [Auth] (https://github.wdf.sap.corp/Norman/Auth) 
 + [Data Composer] (https://github.wdf.sap.corp/Norman/DataComposer)
 + [Business Catalog Manager] (https://github.wdf.sap.corp/Norman/BusinessCatalogManager)
 + [Flow Composer] (https://github.wdf.sap.corp/Norman/FlowComposer)
@@ -46,9 +48,10 @@ This is a bare-bones norman application. Use this to build norman modules on top
 
 3. Build and run:
     ```sh
-    grunt dev       // just build in development mode
-    grunt serve     // build dev + start express server + watch js & less for changes
-    grunt dist      // build for production
+    grunt dev            // just build in development mode
+    grunt serve          // build dev + start express server + watch js & less for changes
+    grunt serve:debug    // run app in debug mode (with node-inspector)
+    grunt dist           // build for production
     ```
 
 ## Adding Modules
@@ -65,7 +68,7 @@ This is a bare-bones norman application. Use this to build norman modules on top
 3. Build and Run
 
 
-#### To include another Norman module on the Server e.g. the Login module:
+#### To include another Norman module on the Server e.g. the Auth module:
 
 1. `npm install norman-auth-server` 
 

@@ -38,6 +38,7 @@
     "afterEach": true,
     "expect": true,
     "it": true,
-    "by": true
+    "by": true,
+    "chai": true
   }
 }

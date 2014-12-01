@@ -12,7 +12,6 @@ module.exports = function (grunt) {
         ngtemplates   : 'grunt-angular-templates',
         protractor    : 'grunt-protractor-runner',
         express       : 'grunt-express-server',
-        nodeinspector : 'grunt-node-inspector',
         ngAnnotate    : 'grunt-ng-annotate',
     });
 
@@ -68,10 +67,10 @@ module.exports = function (grunt) {
         protractor: require('./grunt-conf/protractor.js'),
 
         // Debugging with node inspector
-        nodeinspector: { custom: { options: { 'web-host': 'localhost' }}},
+        'node-inspector': { custom: { options: { 'web-host': 'localhost' }}},
 
         // Run server in debug mode with an initial breakpoint
-        nodemon: require('./grunt-conf/nodemon.js'),
+        // nodemon: require('./grunt-conf/nodemon.js'),
 
         // Open browser window
         open: { server: { url: 'http://localhost:<%= express.options.port %>' }}
@@ -84,16 +83,15 @@ module.exports = function (grunt) {
         var tasks = {
             debug : [
                 'env:dev',
-                'nodemon',
-                'nodeinspector'
+                'express:dev',
+                'node-inspector'
             ],
 
             dev : [
                 'build',
                 'env:dev',
                 'express:dev',
-                'watch',
-                // 'open'
+                'watch'
             ]
         };
 
@@ -123,7 +121,8 @@ module.exports = function (grunt) {
     grunt.registerTask('dev', [
         'jshint',
         'build',
-        'karma'
+        'test:client',
+        'test:server'
     ]);
 
     grunt.registerTask('dist', [

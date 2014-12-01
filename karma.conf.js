@@ -8,12 +8,12 @@ module.exports = function(config) {
     basePath: '',
 
     // testing framework to use (jasmine/mocha/qunit/...)
-    frameworks: ['jasmine'],
+    frameworks: ['mocha', 'chai', 'sinon-chai'],
 
     // list of files / patterns to load in the browser
     files: [
       'dev/assets/bundle.js',
-      'client/node_modules/angular-mocks/angular-mocks.js',
+      'node_modules/angular-mocks/angular-mocks.js',
 
       'client/*.spec.js',
       'node_modules/norman*client/**/*.spec.js',
@@ -23,8 +23,7 @@ module.exports = function(config) {
 
     // list of files / patterns to exclude
     exclude: [
-        'client/node_modules/*.js',
-        'node_modules/norman*client/node_modules/*.js',
+        'node_modules/norman*client/node_modules/**/*.js',
     ],
 
     // web server port
