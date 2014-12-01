@@ -122,21 +122,21 @@ The Project Norman Steering Committee comprises the following members:
 
 + **Project Execution/Management Lead** - The project execution/management lead is resposible for the following:
 
-    + Ensuring visibility and communication across the team and overall sub-project, and communicating project status to stakeholders and the team through various means, such as weekly status reports, quality reports, iteration reviews, project meetings and so forth.
+    + Ensuring visibility and communication across the team and overall Norman project, and communicating project status to stakeholders and the team through various means, such as weekly status reports, quality reports, iteration reviews, project meetings and so forth.
     
     + Ensuring team is aware of the Project Norman schedule and milestones and is executing towards it. This requires the following:
           
-      + Capacity/ Availability planning for the sub-project.
+      + Capacity/ Availability planning for the overall Norman project.
  
-      + Supporting the teams in their iteration planning. 
+      + Supporting the teams in their iteration planning and ensuer coordination between teams. 
            
-      + Developing an appropriately detailed project plan to monitor and track progress. For long term sub-projects this includes a Release Plan.
+      + Developing an appropriately detailed Release plan for the overall Norman project to monitor and track progress.
 
     + Managing Risk/Impediments/Dependencies.  
 
       +  Identify, monitor, communicate, resolve, escalate.
           
-    + Ensuring continuous improvement of the sub-project.
+    + Ensuring continuous improvement of the overall Norman project.
 
 + **A Technical lead** - an expert in the technical aspects of the project. This role may suit, for example, an architect or a senior developer.
 
