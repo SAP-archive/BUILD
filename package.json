@@ -1,25 +1,27 @@
 {
-  "name": "norman-norman",
-  "version": "0.0.1",
-  "description": "Norman",
-  "repository": {
-    "type:": "git",
-    "url": "git@github.wdf.sap.corp:Norman/Norman.git"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "main": "server/app.js",
-  "dependencies": {
-    "norman-common-client": "*",
-    "norman-common-server": "*",
-    "norman-shell-client": "*",
-    "norman-auth-client": "*",
-    "norman-auth-server": "*"
-  },
-  "scripts": {
-    "test": "grunt test",
-    "start": "node server/app.js"
-  },
-  "private": true
+    "name": "norman-norman",
+    "version": "0.0.1",
+    "description": "Norman",
+    "repository": {
+        "type:": "git",
+        "url": "git@github.wdf.sap.corp:Norman/Norman.git"
+    },
+    "engines": {
+        "node": ">=0.10.0"
+    },
+    "main": "server/app.js",
+    "dependencies": {
+        "norman-common-client": "*",
+        "norman-common-server": "*",
+        "norman-shell-client": "*",
+        "norman-auth-client": "*",
+        "norman-auth-server": "*",
+        "norman-projects-client": "*",
+        "norman-projects-server": "*"
+    },
+    "scripts": {
+        "test": "grunt test",
+        "start": "node server/app.js"
+    },
+    "private": true
 }
