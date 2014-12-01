@@ -18,7 +18,7 @@ We encourage you to do the following, and try and do the same ourselves:
 
 + <b>Be positive</b>: There is so much more value in building people up than breaking them down. Even when we have to give an unpopular answer, we try to do so in a friendly and positive manner.
 
-+ <b>Be respectful: We work together to resolve conflict, placing facts before opinions. Heated debate is valuable and pushes 
++ <b>Be respectful</b>: We work together to resolve conflict, placing facts before opinions. Heated debate is valuable and pushes 
 everyone consider different points of view, but we don’t allow frustration to turn into a personal attack.
 
 + <b>Be collaborative</b>: Collaboration reduces redundancy and improves the quality of our work. We prefer to work transparently and involve interested parties as early as possible.
