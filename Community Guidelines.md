@@ -35,7 +35,7 @@ everyone consider different points of view, but we don’t allow frustration to 
 
 ###<a name="Rules"></a>Rules
 
-We <i<demand</i> that you do the following, and do the same ourselves:
+We <i>demand</i> that you do the following, and do the same ourselves:
 
 <b>Note</b> This is not an exhaustive list, but you get the idea. You will receive a warning from a community representative if you engage in any of these behaviors. If, after being warned, you continue, you will be banned. There are no exceptions to this rule.
 
