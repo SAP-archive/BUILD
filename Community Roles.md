@@ -138,9 +138,7 @@ The Project Norman Steering Committee comprises the following members:
           
     + Ensuring continuous improvement of the overall Norman project.
 
-+ **A Technical lead** - an expert in the technical aspects of the project. This role may suit, for example, an architect or a senior developer.
-
-+ **Architecture/Technical Lead** - (role to be defined)
++ **Architectural/Technical lead** - an expert in the technical aspects of the project. This role may suit, for example, an architect or a senior developer.
 
 + **Engagement Lead/Community representative** - responsible for marketing this project, reaching out to external/internal  consumers, enroll more contributors to the project etc.
 
