@@ -12,7 +12,7 @@ Some of these guidelines have been borrowed from the following open source initi
 
 ###Our Approach
 
-We encourage you to do the following, and try and do the same ourselves:
+We <i>encourage</i> you to do the following, and try and do the same ourselves:
 
 + <b>Be open</b>: We invite anybody, from any company or from no company, to participate in any aspect of our projects. Our community is open, and any responsibility can be carried by any contributor who demonstrates the required capacity and competence.
 
@@ -29,7 +29,10 @@ everyone consider different points of view, but we don’t allow frustration to 
 
 + <b>Take responsibility</b>: We can all make mistakes; when we do, we take responsibility for them. If someone has been harmed or offended, we listen carefully and respectfully, and work to right the wrong.
 
-We demand that you do the following, and do the same ourselves
+
+We <i<demand</i> that you do the following, and do the same ourselves:
+
+<b>Note</b> This is not an exhaustive list, but you get the idea. You will receive a warning from a community representative if you engage in any of these behaviors. If, after being warned, you continue, you will be banned. There are no exceptions to this rule.
 
 + Refrain from sexist, heterosexist, racist, or otherwise hateful remarks. Which are not tolerated under any circumstances.
 
@@ -41,7 +44,6 @@ We demand that you do the following, and do the same ourselves
 
 + Refrain from doing anything illegal, and always take due consideration of  trademarks, copyrights, and anything else illegal.
 
-This is not an exhaustive list, but you get the idea. You will receive a warning from a community representative if you engage in any of these behaviors. If, after being warned, you continue, you will be banned. There are no exceptions to this rule.
 
 ### Conflicts of Interest
 We expect leaders and community members to be aware when they are conflicted due to employment or other projects they are involved in, and abstain from or delegate decisions that may be perceived as self-interested.
