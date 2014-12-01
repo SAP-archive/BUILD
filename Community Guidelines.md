@@ -1,7 +1,7 @@
-##Community Guidelines
-Consciously or unconsciously every open source community establishes their own unique sense of community and set of cultural norms. This document presents guidelines are designed enhance Project Noman community members' mutual respect and understanding to better enable us to work together towards our shared goals. 
+##Our Approach to Open Source
+Consciously or unconsciously every open source community establishes their own unique sense of community and set of cultural norms. This document presents guidelines which aim to enhance Project Noman community members' mutual respect and understanding to better enable us to work together towards our shared goals in an open, rewarding, and productive community. 
 
-Gnerally, you should consider these simple guidelines, and not rules (with excpetions marked *), and we hope that they will you collectively to  nurture an open, rewarding, and productive community. 
+Gnerally, you should consider the content here as guidelines, except the prohibitions in the Rules section. 
 
 Some of these guidelines have been borrowed from the following open source initiatives, as they encapsulate what we believe are sound open-source community values:
 + [Ghost.org](https://ghost.org/about/guidelines/)
@@ -10,7 +10,7 @@ Some of these guidelines have been borrowed from the following open source initi
 + [Npm Code of Conduct](https://github.com/npm/policies/blob/master/conduct.md) 
 + [Tumblr Community Guidelines](https://www.tumblr.com/policy/en/community) 
 
-###Our Approach
+###Guidelines
 
 We <i>encourage</i> you to do the following, and try and do the same ourselves:
 
@@ -29,6 +29,7 @@ everyone consider different points of view, but we don’t allow frustration to 
 
 + <b>Take responsibility</b>: We can all make mistakes; when we do, we take responsibility for them. If someone has been harmed or offended, we listen carefully and respectfully, and work to right the wrong.
 
+### Rules 
 
 We <i<demand</i> that you do the following, and do the same ourselves:
 
@@ -46,6 +47,7 @@ We <i<demand</i> that you do the following, and do the same ourselves:
 
 
 ### Conflicts of Interest
+
 We expect leaders and community members to be aware when they are conflicted due to employment or other projects they are involved in, and abstain from or delegate decisions that may be perceived as self-interested.
 
 When in doubt, ask for a second opinion. Perceived conflicts of interest are important to address; as a leader, act to ensure that decisions are credible even if they must occasionally be unpopular, difficult or favorable to the interests of one group over another.
