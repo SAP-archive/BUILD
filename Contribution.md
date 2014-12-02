@@ -65,8 +65,6 @@ For guidelines on contributing a new feature or enhancement to existing features
 
 Ideally, you should report bugs in the Issue Tracker of the Project Norman sub-project repository most relevant to the issue. To report and issue, you simple open the Issue Tracker in the sub-project, and click the <b>New Issue</b> button. 
 
-## Guidelines for Reporting Bugs
-
 We appreciate all efforts to notify us if something goes wrong. However, we have limited capacity, we give priority to bugs well-reported bugs. Following the guidelines below will ensure that your bug gets the highest priority from community developers.
 
 **Note**: These guidelines were adapted from the [SAP UI5 Open Source Contributing documentation](https://github.com/SAP/openui5/blob/master/CONTRIBUTING.md).
