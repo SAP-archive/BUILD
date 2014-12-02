@@ -2,6 +2,7 @@
   "extends": ".jshintrc",
   "expr": true,
   "globals": {
+    "angular": true,
     "describe": true,
     "it": true,
     "before": true,
