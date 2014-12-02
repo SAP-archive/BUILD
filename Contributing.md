@@ -53,13 +53,15 @@ Please report bugs in English, so all users can understand them.
 
 ### Issue handling process
 
-When an issue is reported, a committer will look at it and either confirm it as a real issue, close it if it is not an issue, or ask for more details. Approved issues are then either assigned to a committer in GitHub, reported in our internal issue handling system, or left open as "contribution welcome" for easy or not urgent fixes.
+When an issue is reported, a committer will look at it and either confirm it as a real issue, close it if it is not an issue, or ask for more details. Approved issues are either assigned to a committer in GitHub or added to the backlog for future resolution. All issues remain open until they are fixed.
 
 An issue that is about a real bug is closed as soon as the fix is committed. The closing comment explains which patch version(s) will contain the fix.
 
 
 ### Usage of Labels
 
-Github offers labels to categorize issues. This section will be updated when we have identified the labels we ar using for Project Norman.
+Github offers labels to categorize issues. 
+
+<i>This section will be updated when we have identified the labels we ar using for Project Norman.</i>
 
 
