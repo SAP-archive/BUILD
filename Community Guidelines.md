@@ -35,15 +35,15 @@ We <i>demand</i> that you do the following, and do the same ourselves:
 
 <b>Note</b> This is not an exhaustive list, but you get the idea. You will receive a warning from a community representative if you engage in any of these behaviors. If, after being warned, you continue, you will be banned. There are no exceptions to this rule.
 
-+ * Refrain from sexist, heterosexist, racist, or otherwise hateful remarks. Which are not tolerated under any circumstances.
++ Refrain from sexist, heterosexist, racist, or otherwise hateful remarks. Which are not tolerated under any circumstances.
 
-+ * Refrain from harassing or bulling people in any circumstance. Do not attempt to communicate with someone who has asked you to stop.
++ Refrain from harassing or bulling people in any circumstance. Do not attempt to communicate with someone who has asked you to stop.
 
-+ * Refrain from spamming. 
++ Refrain from spamming. 
 
-+ * Refrain from impersonating or do things that would cause confusion between you and a person or company.
++ Refrain from impersonating or do things that would cause confusion between you and a person or company.
 
-+ * Refrain from doing anything illegal, and always take due consideration of  trademarks, copyrights, and anything else illegal.
++ Refrain from doing anything illegal, and always take due consideration of  trademarks, copyrights, and anything else illegal.
 
 
 ### Conflicts of Interest
