@@ -9,24 +9,24 @@ in the Project Norman open source community. It contains the following sections:
 
 ##<a name="Who are the Reviews and Committers of Project Norman Sub-Projects?"></a>Who are the Reviews and Committers of Project Norman Sub-Projects?
 
-| Project Name | @Reviewers | @Contributors |
+| Project Name | @Reviewers | @Contributors | @Project Lead | @Requirements Lead | @Technical Lead |
 | ------------- | ------------- | ------------- |
-| [Auth] (https://github.wdf.sap.corp/Norman/Auth) |  |  | 
-| [Data Composer] (https://github.wdf.sap.corp/Norman/DataComposer) |  |
-| [Business Catalog Manager] (https://github.wdf.sap.corp/Norman/BusinessCatalogManager) |  |
-| [Flow Composer] (https://github.wdf.sap.corp/Norman/FlowComposer) |  |
-| [Sample Data Server] (https://github.wdf.sap.corp/Norman/SampleDataServer) |  |
-| [UX Rule Engine] (https://github.wdf.sap.corp/Norman/UXRuleEngine ) |  |
-| [UI Composer] (https://github.wdf.sap.corp/Norman/UIComposer) |  |
-| [Shared Workspace] (https://github.wdf.sap.corp/Norman/SharedWorkspace) |  |
-| [UI Catalog Manager] (https://github.wdf.sap.corp/Norman/UICatalogManager) |  |
-| [Previewer] (https://github.wdf.sap.corp/Norman/Previewer) |  |
-| [User Research] (https://github.wdf.sap.corp/Norman/UserResearch) |  |
-| [Collaboration] (https://github.wdf.sap.corp/Norman/Collaboration) |  |
-| [Shell] (https://github.wdf.sap.corp/Norman/Shell) |  |
-| [Analytics] (https://github.wdf.sap.corp/Norman/Analytics) |  |
-| [Common] (https://github.wdf.sap.corp/Norman/Common) |  |
-| [Projects - aka Project Management] (https://github.wdf.sap.corp/Norman/Projects) |  |
+| [Auth] (https://github.wdf.sap.corp/Norman/Auth) |  |  |  |  |  | 
+| [Data Composer] (https://github.wdf.sap.corp/Norman/DataComposer) |  | |  |  | 
+| [Business Catalog Manager] (https://github.wdf.sap.corp/Norman/BusinessCatalogManager) |  | |  |  | 
+| [Flow Composer] (https://github.wdf.sap.corp/Norman/FlowComposer) |  | |  |  | 
+| [Sample Data Server] (https://github.wdf.sap.corp/Norman/SampleDataServer) |  | |  |  | 
+| [UX Rule Engine] (https://github.wdf.sap.corp/Norman/UXRuleEngine ) |  | |  |  | 
+| [UI Composer] (https://github.wdf.sap.corp/Norman/UIComposer) |  | |  |  | 
+| [Shared Workspace] (https://github.wdf.sap.corp/Norman/SharedWorkspace) |  | |  |  | 
+| [UI Catalog Manager] (https://github.wdf.sap.corp/Norman/UICatalogManager) |  | |  |  | 
+| [Previewer] (https://github.wdf.sap.corp/Norman/Previewer) |  | |  |  | 
+| [User Research] (https://github.wdf.sap.corp/Norman/UserResearch) |  | |  |  | 
+| [Collaboration] (https://github.wdf.sap.corp/Norman/Collaboration) |  | |  |  | 
+| [Shell] (https://github.wdf.sap.corp/Norman/Shell) |  | |  |  | 
+| [Analytics] (https://github.wdf.sap.corp/Norman/Analytics) |  | |  |  | 
+| [Common] (https://github.wdf.sap.corp/Norman/Common) |  | |  |  | 
+| [Projects - aka Project Management] (https://github.wdf.sap.corp/Norman/Projects) |  | |  |  | 
 
 
 ##<a name="Who Contributes to Project Norman Projects?"></a>Who Contributes to Project Norman Projects?
