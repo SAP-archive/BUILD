@@ -28,7 +28,7 @@ Please conform you bug report to the following:
    * give information about the used browser/device and its version, if possible also the behavior in other browsers/devices
    * if the bug is appears on a UI, please attach a screenshot with callouts describing the problem.
    * generally give as much additional information as possible. (But find the right balance: don not invest hours for a very obvious and easy to solve issue. When in doubt, give more information.)
- 7. Minimal example: it is highly encouraged to provide a minimal example to reproduce in e.g. jsbin: isolate the application code which triggers the issue and strip it down as much as possible as long as the issue still occurs. If several files are required, you can create a gist. This may not always be possible and sometimes be overkill, but it always helps analyzing a bug.
+ 7. Minimal example: it is highly encouraged to provide a minimal example to reproduce.
  8. Only one bug per report: open different tickets for different issues
 
 
@@ -58,24 +58,6 @@ An issue that is about a real bug is closed as soon as the fix is committed. The
 
 ### Usage of Labels
 
-Github offers labels to categorize issues. We defined the following labels so far:
+Github offers labels to categorize issues. This section will be updated when we have identified the labels we ar using for Project Norman.
 
-Labels for issue categories:
- * bug: this issue is a bug in the code
- * documentation: this issue is about wrong documentation
- * enhancement: this is not a bug report, but an enhancement request
 
-Status of open issues:
- * unconfirmed: this report needs confirmation whether it is really a bug (no label; this is the default status)
- * approved: this issue is confirmed to be a bug
- * author action: the author is required to provide information
- * contribution welcome: this fix/enhancement is approved and you are invited to contribute it
-
-Status/resolution of closed issues:
- * fixed: a fix for the issue was provided
- * duplicate: the issue is also reported in a different ticket and is handled there
- * invalid: for some reason or another this issue report will not be handled further (maybe lack of information or issue does not apply anymore)
- * works: not reproducible or working as expected
- * wontfix: while acknowledged to be an issue, a fix cannot or will not be provided
-
-The labels can only be set and modified by committers.
