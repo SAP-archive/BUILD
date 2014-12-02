@@ -8,3 +8,8 @@ dist
 npm-debug.log
 client/requires.js
 server/requires.js
+
+# Ignore Intellij project and settings
+.idea/
+*.iml
+*.ipr
