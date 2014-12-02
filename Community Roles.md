@@ -9,7 +9,7 @@ in the Project Norman open source community. It contains the following sections:
 
 ##<a name="Who are the Reviews and Committers of Project Norman Sub-Projects?"></a>Who are the Reviews and Committers of Project Norman Sub-Projects?
 
-| Project Name | @Reviewers | @Contributors | @Project Lead | @Requirements Lead | @Technical Lead |
+| Project Name | @Reviewers | @Committer | @Project Lead | @Requirements Lead | @Technical Lead |
 | ------------- | ------------- | ------------- |------------- |------------- |------------- |
 | [Auth] (https://github.wdf.sap.corp/Norman/Auth) |  |  |  |  |  | 
 | [Data Composer] (https://github.wdf.sap.corp/Norman/DataComposer) |  | |  |  | 
