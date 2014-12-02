@@ -2,7 +2,7 @@
 
 We appreciate all efforts to notify us if something goes wrong. However, we have limited capacity, we give priority to bugs well-reported bugs. Following the guidelines below will ensure that your bug gets the highest priority from community developers.
 
-**Note**: These guidelines were adapted from the [SAP UI5 Open Soucce Contributing documentation](https://github.com/SAP/openui5/blob/master/CONTRIBUTING.md).
+**Note**: These guidelines were adapted from the [SAP UI5 Open Source Contributing documentation](https://github.com/SAP/openui5/blob/master/CONTRIBUTING.md).
 
 <b>We do not accept proposals for new features through the Issue Tracker. They will be removed.</b> For information on proposing new features or enhancments, see the [Contribution](https://github.wdf.sap.corp/Norman/Norman/blob/dev/Contribution.md) document.
 
