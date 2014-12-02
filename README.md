@@ -3,7 +3,7 @@
 ##Welcome to Project Norman
 
 
-Project Norman is a free, open-sourced, cloud-based and social platform that enables even non-technical users to easily create fully interactive prototypes with real data, share them with end-users and consolidate feedback without writing a line of code.
+Norman is an open-source, cloud-based and social platform that enables users, even those with no UI development knowledge, to easily create fully interactive prototypes with realistic data, share them with colleagues and consolidate this feedback without writing a line of code.
 
 It contains the following projects:
 + [Auth] (https://github.wdf.sap.corp/Norman/Auth) 
