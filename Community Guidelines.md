@@ -1,5 +1,5 @@
 ##Our Approach to Open Source
-Consciously or unconsciously every open source community establishes their own unique sense of community and set of cultural norms. This document presents guidelines which aim to enhance Project Noman community members' mutual respect and understanding to better enable us to work together towards our shared goals in an open, rewarding, and productive community. 
+Consciously or unconsciously every open source community establishes its own unique sense of community and set of cultural norms. This document presents guidelines which aim to enhance Project Noman community members' mutual respect and understanding to better enable us to work together towards our shared goals in an open, rewarding, and productive community. 
 
 Gnerally, you should consider the content here as guidelines, except the prohibitions in the <a href="#Rules">Rules</a> section. 
 
