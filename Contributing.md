@@ -16,20 +16,20 @@ Please conform you bug report to the following:
    * something that behaves just different from what you expected. A bug is when something behaves different than specified. When in doubt, ask in a forum.
    * requests for help in achieving a task in Project Norman. Please use a support forum like stackoverflow to request help.
    * feature requests. Features requests are removed from the project Issue Tracker automatically. For guidelines on contributing an enhancment, please refer to <a href="#Propose and Build New Features">    Propose and Build New Features</a> section.
- 2. No duplicate: please search the issue tracker and make sure you bug has been reported previously.
- 3. Good summary: please ensure the summary is specific to the issue.
- 4. Current bug: the bug can be reproduced in the most current version. Please state the tested version!
- 5. Reproducible bug: Please provide steps to reproduce the error, including:
+ 2. **No duplicate**: please search the issue tracker and make sure you bug has been reported previously.
+ 3. **Good summary**: please ensure the summary is specific to the issue.
+ 4. **Current bug**: the bug can be reproduced in the most current version. Please state the tested version!
+ 5. **Reproducible bug**: Please provide steps to reproduce the error, including:
    * a URL to access the example
    * any required user/password information. However, please ensure you don't reveal any proprietary security credentials.
    * detailed and complete step-by-step instructions to reproduce the bug
- 6. Precise description:
+ 6. **Precise description**:
    * precisely state the expected and the actual behavior
    * give information about the used browser/device and its version, if possible also the behavior in other browsers/devices
    * if the bug is appears on a UI, please attach a screenshot with callouts describing the problem.
    * generally give as much additional information as possible. (But find the right balance: don not invest hours for a very obvious and easy to solve issue. When in doubt, give more information.)
- 7. Minimal example: it is highly encouraged to provide a minimal example to reproduce.
- 8. Only one bug per report: open different tickets for different issues
+ 7. **Minimal example**: it is highly encouraged to provide a minimal example to reproduce.
+ 8. **Only one bug per report**: open different tickets for different issues
 
 
 You are encouraged to use [this template](https://github.wdf.sap.corp/Norman/Norman/blob/master/bug_report_template.md).
