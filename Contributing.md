@@ -36,9 +36,7 @@ You are encouraged to use [this template](https://github.wdf.sap.corp/Norman/Nor
 
 Please report bugs in English, so all users can understand them.
 
-If the bug appears to be a regression introduced in a new version of UI5, try to find the closest versions between which it was introduced and take special care to make sure the issue is not caused by your application's usage of any internal method which changed its behavior.
 
- 
 ### Quick Checklist for Bug Reports
 
  * Issue report checklist:
