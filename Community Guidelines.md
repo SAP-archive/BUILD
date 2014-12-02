@@ -3,10 +3,6 @@ Consciously or unconsciously every open source community establishes their own u
 
 Gnerally, you should consider the content here as guidelines, except the prohibitions in the <a href="#Rules">Rules</a> section. 
 
-
-##<a name="Who are the Reviews and Committers of Project Norman Sub-Projects?"></a>Who are the Reviews and Committers of Project Norman Sub-Projects?
-
-
 Some of these guidelines have been borrowed from the following open source initiatives, as they encapsulate what we believe are sound open-source community values:
 + [Ghost.org](https://ghost.org/about/guidelines/)
 + [Ember.js Community Guidelines](http://emberjs.com/guidelines/) 
