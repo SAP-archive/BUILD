@@ -8,8 +8,8 @@
 @aside-bg: #d6d6d6;
 @aside-bg-active:#eeeeee;
 
-@navbar-bg: #5e5e5e;
-@navbar-b: #5e5e5e;
+@navbar-bg: #2C3E50;
+@navbar-b: #2C3E50;
 @bg-text:#5e5e5e;
 
 /**
@@ -19,15 +19,52 @@
 html, body, .app {width: 100%;height: 100%;}
 
 
-.navbar { margin-bottom: 0px; border:none}
-.navbar-default {background-color: @navbar-bg;border-color: @navbar-b;}
-.navbar-collapse, .app-content, .app-footer {margin-left: @margin-aside}
-//.navbar-default .navbar-collapse, .navbar-default .navbar-form {border-color: #e7e7e7;}
-.navbar-header.shell-header{background-color: @aside-bg; width:@margin-aside}
-.container-fluid .navbar-header .navbar-brand {margin-left: 12px; padding:10px}
-.navbar-default .navbar-nav > .open > a{color:#fff}
-.navbar-default .navbar-nav > li > a {color:#fff}
-.navbar-default .navbar-text {color:#ccc}
+.navbar {
+    margin-bottom: 0px;
+    border: none
+}
+.navbar-default {
+    background-color: @navbar-bg;
+    border-color: @navbar-b;
+}
+.navbar-collapse, .app-content, .app-footer {
+    margin-left: @margin-aside
+}
+
+.navbar-brand {
+    float: left;
+    height: 71px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+/*
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #e7e7e7;
+}
+*/
+.navbar-header.shell-header {
+    background-color: @navbar-bg;
+    width: @margin-aside
+}
+.container-fluid .navbar-header .navbar-brand {
+    margin-left: 4px;
+    margin-top: 3px;
+    padding: 10px
+}
+.navbar-default .navbar-nav > .open > a {
+    color: #fff
+}
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+    line-height: 43px;
+    font-family: 'roboto';
+    font-weight: normal;
+    font-size: 24px;
+}
+.navbar-default .navbar-text {
+    color: #ccc
+}
 
 .container-fluid {padding-left: 0px;}
 
@@ -39,7 +76,7 @@ html, body, .app {width: 100%;height: 100%;}
 .app-header-fixed .app-header {position: fixed;top: 0;width: 100%;}
 
 .app-aside {float: left;width:75px;height:100%;background: @aside-bg}
-.app-aside-fixed .aside-wrap {position: fixed;	top: 50px;	bottom: 0;	left: 0;	z-index: 1000;	width: 200px;	overflow: hidden}
+.app-aside-fixed .aside-wrap {position: fixed;  top: 50px;  bottom: 0;  left: 0;    z-index: 1000;  width: 200px;   overflow: hidden}
 .app-aside .nav > li.active {background:@aside-bg-active;border-left: 3px solid @navbar-bg;}
 .app-aside .nav > li > a {position: relative;display: block;padding: 5px 5px;color: @navbar-bg;text-align: center;}
 .app-aside .nav > li > a i{display: block;font-size:22px;}
