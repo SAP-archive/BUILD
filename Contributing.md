@@ -65,7 +65,6 @@ For guidelines on contributing a new feature or enhancement to existing features
 
 Issues can be reported and tracked using the GitHub Issue Tracker for each sub-project. To report and issue, you simple open the Issue Tracker in the sub-project, and click the <b>New Issue</b> button. 
 
-<b>!!!We do not accept proposals for new features through the Issue Tracker. They will be removed.!!!</b> 
 
 For information on proposing new features or enhancments, see <a href="#Propose and Build New Features, Enhancements, and Optimizations">    Propose and Build New Features, Enhancements, and Optimizations</a>.
 
