@@ -55,9 +55,10 @@ Inevitably, there is a wealth of information wihch the community would benefit f
 
 We welcome innovations and improvements to Project Norman, including contributions to documentation, examples or test cases, optimizations, new features and enhancments to existing features.
 
-If you don't know exactly what you'd like to contribution, why not see if there is something on the in the Issue Tracker back log you find interesting. If you see something, why not give it a go? However, to ensure you are not wasting your valuable time, contact one of our core developers through the mailing list and discuss the proposed enhancement with them.
+However, before you do any work beyond conceptual, we recommend you post an Issue with the label User Story on the Issue Tracker. When a core developer contacts you, discuss the proposed enhancement with them.
 
-***!!!We do not accept proposal for new features through the Issue Tracker. They will be removed!!!***
+If you don't know exactly what you'd like to contribution, why not see if there is something on the in the Issue Tracker back log you find interesting. If you see something, why not give it a go? 
+
 
 For guidelines on contributing a new feature or enhancement to existing features, please refer to <a href="#How Do I Make Changes to Product Norman Sub-Projects?">   How Do I Make Changes to Product Norman Sub-Projects?</a> section.
 
@@ -133,7 +134,7 @@ Github offers labels to categorize issues.
 
 ##<a name="How Do I Make Changes to Product Norman Sub-Projects?"></a>How Do I Make Changes to Product Norman Sub-Projects?
 
-You submit changes to Project Norman sub-projects, such as bug fixes and new or improved features, using pull requests to the relevant sub-project repository. However, we do not accept all pull requests, and those we accept have to meet specific standards. Therefore, prior to coding changes, to ensure that you are spending your time wisely, we recommend you propose and disuss your new feature or significant bug fix with on of our core developers via mailing list. Once this discussion yields a shared consensus, you can confidently proceed and create the code. Furthermore, the developer might have some valuable hints and tips that save you a lot of time of and effort.
+You submit changes to Project Norman sub-projects, such as bug fixes and new or improved features, using pull requests to the relevant sub-project repository. However, we do not accept all pull requests, and those we accept have to meet specific standards. Therefore, prior to coding changes, to ensure that you are spending your time wisely, we recommend you propose and disuss your new feature or significant bug fix with on of our core developers using the Issue Tracker for the Norman sub-project you want to contributing to. Once this discussion yields a shared consensus, you can confidently proceed and create the code. Furthermore, the developer might have some valuable hints and tips that save you a lot of time of and effort.
 
 **Note**:  For more information on Project Norman mailing lists, see our [Communications Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Communication%20Guidelines.md).
 
