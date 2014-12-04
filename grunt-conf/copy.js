@@ -9,7 +9,7 @@ function getServerModules () {
     var pkg = require('../node_modules/norman-common-server/package.json'),
         peers = pkg && pkg.peerDependencies ? Object.keys(pkg.peerDependencies) : [],
         devs = pkg && pkg.devDependencies, deps = [];
-    peers.forEach(function (p) { if (!devs[p]) deps.push(p + '/**/*.*'); });
+    peers.forEach(function (p) { if (!devs[p]) { deps.push(p + '/**/*.*'); } });
     return deps;
 }
 
@@ -70,15 +70,14 @@ module.exports = {
                 expand: true,
                 dot: true,
                 cwd: 'dev',
-                dest: 'dist',
+                dest: 'dist/public',
                 src: '**/*'
             },
             {
                 expand: true,
-                cwd: 'server',
                 dest: 'dist',
                 src: [
-                    '**/*.js'
+                    'server/**/*.js'
                 ]
             },
             {
