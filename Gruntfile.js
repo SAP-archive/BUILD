@@ -114,7 +114,7 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('dev', [
-        'jshint',
+        // 'jshint',
         'build',
         'test:client',
         'test:server'

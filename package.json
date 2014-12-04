@@ -1,6 +1,6 @@
 {
   "name": "norman-norman",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Norman",
   "repository": {
     "type:": "git",
@@ -17,7 +17,9 @@
     "norman-common-server": "*",
     "norman-projects-client": "*",
     "norman-projects-server": "*",
-    "norman-shell-client": "*"
+    "norman-shell-client": "*",
+    "norman-business-catalog-manager-client": "*",
+    "norman-business-catalog-manager-server": "*"
   },
   "scripts": {
     "test": "grunt test",
