@@ -25,6 +25,10 @@ It contains the following sub-projects:
 + [Projects - aka Project Management] (https://github.wdf.sap.corp/Norman/Projects)
 
 
+##Make a Contribution
+Click here to view our [Contribution](https://github.wdf.sap.corp/Norman/Norman/blob/master/Contributing.md) document.
+
+
 norman-norman
 ===============
 This is a bare-bones norman application. Use this to build norman modules on top of that.
