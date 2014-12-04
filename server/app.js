@@ -30,6 +30,7 @@ require('./requires.js')(app);
 
 
 if (config.env === 'production') {
+    config.ip = '0.0.0.0';
     // app.use(favicon(path.join(config.root, 'public', 'favicon.ico')));
     app.use(express.static(path.join(config.root, 'public')));
     app.set('appPath', config.root + '/public');
