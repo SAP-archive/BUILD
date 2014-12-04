@@ -11,12 +11,12 @@
         </div>
         <div collapse="isCollapsed" class="navbar-collapse collapse" id="navbar-main">
             <ul class="nav navbar-nav navbar-right">
-                <li ><a href="/signup">Help &amp; Support</a></li>
-                <li ng-hide="isLoggedIn()" ng-class="{active: isActive('/signup')}"><a href="/signup">Sign up</a></li>
-                <li ng-hide="isLoggedIn()" ng-class="{active: isActive('/login')}"><a href="/login">Login</a></li>
+                <li ><a class="nn-navbar-link" href="/signup">Help &amp; Support</a></li>
+                <li ng-hide="isLoggedIn()" ng-class="{active: isActive('/signup')}"><a class="nn-navbar-link" href="/signup">Sign up</a></li>
+                <li ng-hide="isLoggedIn()" ng-class="{active: isActive('/login')}"><a class="nn-navbar-link" href="/login">Login</a></li>
                 <li ng-show="isLoggedIn()"><p class="navbar-text">Hello {{ getCurrentUser().name }}</p> </li>
-                <li ng-show="isLoggedIn()" ng-class="active" ><a ui-sref="shell">Home</a></li>
-                <li ng-show="isLoggedIn()" ng-class="{active: isActive('/logout')}"><a href="" ng-click="logout()">Logout</a></li>
+                <li ng-show="isLoggedIn()" ng-class="active" ><a class="nn-navbar-link" ui-sref="shell">Home</a></li>
+                <li ng-show="isLoggedIn()" ng-class="{active: isActive('/logout')}"><a class="nn-navbar-link" href="" ng-click="logout()">Logout</a></li>
             </ul>
         </div>
     </div>

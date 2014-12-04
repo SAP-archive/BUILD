@@ -1,24 +1,21 @@
 //@import 'bootstrap/less/bootstrap.less';
 //@import 'font-awesome/less/font-awesome.less';
-
 //@icon-font-path: '/bower_components/bootstrap/fonts/';
 //@fa-font-path: '/bower_components/font-awesome/fonts';
 
 @margin-aside: 75px;
 @aside-bg: #d6d6d6;
-@aside-bg-active:#eeeeee;
-
+@aside-bg-active: #eeeeee;
 @navbar-bg: #2C3E50;
 @navbar-b: #2C3E50;
-@bg-text:#5e5e5e;
+@bg-text: #5e5e5e;
 
-/**
- * App-wide Styles
- */
-
-html, body, .app {width: 100%;height: 100%;}
-
-
+/** * App-wide Styles */
+html, body, .app {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
 .navbar {
     margin-bottom: 0px;
     border: none
@@ -30,7 +27,6 @@ html, body, .app {width: 100%;height: 100%;}
 .navbar-collapse, .app-content, .app-footer {
     margin-left: @margin-aside
 }
-
 .navbar-brand {
     float: left;
     height: 71px;
@@ -38,8 +34,8 @@ html, body, .app {width: 100%;height: 100%;}
     font-size: 18px;
     line-height: 20px;
 }
-/*
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+
+/* .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border-color: #e7e7e7;
 }
 */
@@ -65,63 +61,124 @@ html, body, .app {width: 100%;height: 100%;}
 .navbar-default .navbar-text {
     color: #ccc
 }
-
-.container-fluid {padding-left: 0px;}
-
-.app-contain {height: 100%;margin-left:@margin-aside}
-.app-content, .app-footer {margin-left:@margin-aside}
-
-.app-content.no-aside{margin-left: 0px;}
-
-.app-header-fixed .app-header {position: fixed;top: 0;width: 100%;}
-
-.app-aside {float: left;width:75px;height:100%;background: @aside-bg}
-.app-aside-fixed .aside-wrap {position: fixed;  top: 50px;  bottom: 0;  left: 0;    z-index: 1000;  width: 200px;   overflow: hidden}
-.app-aside .nav > li.active {background:@aside-bg-active;border-left: 3px solid @navbar-bg;}
-.app-aside .nav > li > a {position: relative;display: block;padding: 5px 5px;color: @navbar-bg;text-align: center;}
-.app-aside .nav > li > a i{display: block;font-size:22px;}
-
-
-.app-aside .nav > li.divider {border-bottom: 1px solid @navbar-bg; margin-left:6px;margin-right:6px; margin-bottom:10px;}
-
-
-
+.container-fluid {
+    padding-left: 0px;
+}
+.app-contain {
+    height: 100%;
+    margin-left: @margin-aside;
+    overflow: auto;
+}
+.app-content, .app-footer {
+    margin-left: @margin-aside
+}
+.app-content.no-aside {
+    margin-left: 0px;
+}
+.app-header-fixed .app-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.app-aside {
+    float: left;
+    width: 75px;
+    height: 100%;
+    background: @aside-bg
+}
+.app-aside-fixed .aside-wrap {
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    width: 200px;
+    overflow: hidden
+}
+.app-aside .nav > li.active {
+    background: @aside-bg-active;
+    border-left: 3px solid @navbar-bg;
+}
+.app-aside .nav > li > a {
+    position: relative;
+    display: block;
+    padding: 5px 5px;
+    color: @navbar-bg;
+    text-align: center;
+}
+.app-aside .nav > li > a i {
+    display: block;
+    font-size: 22px;
+}
+.app-aside .nav > li.divider {
+    border-bottom: 1px solid @navbar-bg;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-bottom: 10px;
+}
 .nav-pills > li > a, .nav-pills > li > a:hover, .nav-pills > li > a:focus {
     color: @bg-text;
 }
-
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
     color: @bg-text;
     background-color: @aside-bg;
 }
-
 navbar-nav > li > a, .navbar-nav> li > a:hover, .navbar-nav> li > a:focus {
     color: @bg-text;
 }
+a.base {
+    color: @bg-text;
+}
 
-a.base {color: @bg-text;}
-/**
- * form-control
- */
+/** * form-control */
 .form-control.no-borders, .form-control.no-borders:focus {
     webkit-box-shadow: none;
     box-shadow: none;
 }
-
 .thumbnail input {
     width: 100%;
 }
 .thumbnail.new {
     border: dashed 1px gray;
 }
-
-
-.avatar-people{widht:256px;height:256px}
-.i-checks input:checked+i:before {top: 4px;left: 4px;width: 10px;height: 10px;background-color: #23b7e5;}
-.i-checks input:checked+i {border-color: #23b7e5;}
-.i-checks>i {position: relative;display: inline-block;width: 20px;height: 20px;margin-top: -2px;margin-right: 4px;margin-left: -20px;line-height: 1;vertical-align: middle;background-color: #fff;border: 1px solid #cfdadd;}
-.i-checks>i:before {position: absolute;top: 50%;left: 50%;width: 0;height: 0;background-color: transparent;content: "";-webkit-transition: all .2s;transition: all .2s;}
-
+.avatar-people {
+    widht: 256px;
+    height: 256px
+}
+.i-checks input:checked+i:before {
+    top: 4px;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+    background-color: #23b7e5;
+}
+.i-checks input:checked+i {
+    border-color: #23b7e5;
+}
+.i-checks>i {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-top: -2px;
+    margin-right: 4px;
+    margin-left: -20px;
+    line-height: 1;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #cfdadd;
+}
+.i-checks>i:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    content: "";
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
 // injector
 //@import 'layout.less';
 //@import '/client/modules/account/login/login.less';
