@@ -22,7 +22,6 @@
     "jQuery": true,
     "angular": true,
     "console": true,
-    "AppConfig": true,
     "$": true,
     "_": true,
     "moment": true,

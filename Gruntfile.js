@@ -19,6 +19,12 @@ module.exports = function (grunt) {
 
     // Define the configuration for all the tasks
     grunt.initConfig({
+        // vars
+        env: {
+            dev: { NODE_ENV: 'development' },
+            prod: { NODE_ENV: 'production' }
+        },
+
         // Make sure code styles are up to par and there are no obvious mistakes
         jshint: require('./grunt-conf/jshint.js'),
 
@@ -52,11 +58,6 @@ module.exports = function (grunt) {
 
 
         /*** SERVER *******************************************************************************/
-        env: {
-            dev: { NODE_ENV: 'development' },
-            prod: { NODE_ENV: 'production' }
-        },
-
         // Server settings
         express: require('./grunt-conf/express.js'),
 
@@ -67,13 +68,7 @@ module.exports = function (grunt) {
         protractor: require('./grunt-conf/protractor.js'),
 
         // Debugging with node inspector
-        'node-inspector': { custom: { options: { 'web-host': 'localhost' }}},
-
-        // Run server in debug mode with an initial breakpoint
-        // nodemon: require('./grunt-conf/nodemon.js'),
-
-        // Open browser window
-        open: { server: { url: 'http://localhost:<%= express.options.port %>' }}
+        'node-inspector': { custom: { options: { 'web-host': 'localhost' }}}
     });
 
 

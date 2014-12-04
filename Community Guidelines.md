@@ -55,4 +55,7 @@ When in doubt, ask for a second opinion. Perceived conflicts of interest are imp
 ### Resolving Disputes
 
 Each sub-project has a steering committee. One of their roles is to act as the ultimate arbiter in discussions between contributors that lead to disagreement and require mediation. Elevate rather than repeat yourselves. That's what they are there for.
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
