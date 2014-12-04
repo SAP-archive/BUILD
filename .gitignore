@@ -1,7 +1,5 @@
 node_modules
-public
 .tmp
-.idea
 dev
 dist
 .DS_Store
@@ -9,3 +7,8 @@ npm-debug.log
 client/requires.js
 server/requires.js
 *.sublime-*
+
+# Ignore Intellij project and settings
+.idea/
+*.iml
+*.ipr

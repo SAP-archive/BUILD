@@ -32,6 +32,25 @@ module.exports = {
         tasks: ['less']
     },
 
+    testsClient: {
+        files: [
+            'client/**/*.{spec,mock}.js',
+            '!client/node_modules/**/*.js'
+        ],
+        tasks: [
+            'jshint',
+            'build',
+            'test:client'
+        ]
+    },
+
+    testsServer: {
+        files: [
+            'server/**/*.{spec,mock}.js',
+            '!server/node_modules/**/*.js'
+        ],
+        tasks: [ 'test:server' ]
+    },
 
     livereload: {
         options: { livereload: true },
