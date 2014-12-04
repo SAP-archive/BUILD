@@ -68,7 +68,7 @@ The number of reviewers per project varies with the size of the project and the 
 
 **Note**:  In order to optimize the chances for your submissions to pass the review stage, we recommend you review  [Project Norman Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Project%20Norman%20Style%20Guide.md).
 
-**Note**:  You can find out more about our current reviewers and contributors on the [Contributors](https://github.wdf.sap.corp/Norman/Drive/blob/master/Contributors.md)  page.
+**Note**:  You can find identify current reviewers on each sub-project <a href="#Who are the Reviews and Committers of Project Norman Sub-Projects?">here</a>.
 
 
 ###<a name="Committers"></a>Committers
@@ -77,7 +77,7 @@ Committers are responsible for committing changes submitted by pull request and 
 
 Established contributors in a project can be enabled as reviewers for that project if they receive the support of the project steering committee. It can be useful to be a committer. For example, providing support for Project Norman to a customer, being a committer could be a big selling poin of their skills for the customer.  
 
-You can find out more about our current reviewers and contributors on the [Contributors] (https://github.wdf.sap.corp/Norman/Drive/blob/master/Contributors.md)  page.
+**Note**:  You can find identify current committers on each sub-project <a href="#Who are the Reviews and Committers of Project Norman Sub-Projects?">here</a>.
 
 
 ###<a name="Project and Sub-Project Steering Committee Members"></a>Project and Sub-Project Steering Committee Members
@@ -111,7 +111,7 @@ Each Sub-Project Steering Committee comprises the following:
 
 + **A Technical lead** - an expert in the technical aspects of the project. This role may suit, for example, an architect or a senior developer.
 
-
+**Note**:  You can find identify current sub-project steering committee members <a href="#Who are the Reviews and Committers of Project Norman Sub-Projects?">here</a>.
 
 <a name="Project Norman Steering Committee "></a>**Project Norman Steering Committee**
 
