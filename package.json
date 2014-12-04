@@ -1,6 +1,6 @@
 {
   "name": "norman-norman",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Norman",
   "repository": {
     "type:": "git",
@@ -13,8 +13,6 @@
   "dependencies": {
     "norman-auth-client": "*",
     "norman-auth-server": "*",
-    "norman-business-catalog-manager-client": "*",
-    "norman-business-catalog-manager-server": "*",
     "norman-common-client": "*",
     "norman-common-server": "*",
     "norman-projects-client": "*",
