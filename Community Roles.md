@@ -68,7 +68,8 @@ The number of reviewers per project varies with the size of the project and the 
 
 **Note**:  In order to optimize the chances for your submissions to pass the review stage, we recommend you review  [Project Norman Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Project%20Norman%20Style%20Guide.md).
 
-**Note**:  You can find out more about our current reviewers and contributors on the [Contributors](https://github.wdf.sap.corp/Norman/Drive/blob/master/Contributors.md)  page.
+**Note**:  You can find identify currant reviewer on each sub-project <a href="#Who are the Reviews and Committers of Project Norman Sub-Projects?">here</a>
+.
 
 
 ###<a name="Committers"></a>Committers
