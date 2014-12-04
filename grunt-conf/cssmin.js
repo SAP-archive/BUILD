@@ -3,7 +3,7 @@ module.exports = {
 
     dist: {
         files: {
-            'dist/assets/style.css': 'dev/assets/*.css'
+            'dist/public/assets/style.css': 'dev/assets/*.css'
         }
     }
 

@@ -3,7 +3,7 @@ module.exports = {
 
     app: {
         files: {
-            'dist/assets/bundle.js': 'dev/assets/bundle.js'
+            'dist/public/assets/bundle.js': 'dev/assets/bundle.js'
         }
     }
 };

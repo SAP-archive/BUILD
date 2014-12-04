@@ -84,6 +84,12 @@ module.exports = {
                 expand: true,
                 cwd: 'node_modules',
                 dest: 'dist/node_modules',
+                src: [ 'norman*server/**/*.*' ]
+            },
+            {
+                expand: true,
+                cwd: 'node_modules',
+                dest: 'dist/node_modules',
                 src: getServerModules()
             }
 
