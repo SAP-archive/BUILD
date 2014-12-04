@@ -10,6 +10,5 @@
   "regexp": true,
   "undef": true,
   "smarttabs": true,
-  "asi": true,
   "debug": true
 }
