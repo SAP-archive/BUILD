@@ -23,7 +23,7 @@ You might already know exactly what you do, but if not, you might consider contr
 
 To report a bug, do the following:
 
-1. Prior to reporting the bug, please review the <a href="#Guidelines for Bug Reports"> Guidelines for Bug Reports</a>.
+1. Prior to reporting the bug, please review the [Guidelines for Bug Reports](https://github.wdf.sap.corp/Norman/Norman/blob/master/Guidelines%20for%20Bug%20Reports.md).
 
 2. Bugs can be reported using the GitHub Issue Tracker for each sub-project.  To report a bug, you simply open the Issue Tracker in the sub-project, and click the <b>New Issue</b> button. For links to each sub-projects, click <a href="#Useful Links"></a>here.
 
@@ -44,21 +44,12 @@ To report a bug, do the following:
  * Minimal example
  * Use the [template](https://github.wdf.sap.corp/Norman/Norman/blob/master/bug_report_template.md)
 
-
-
-
-
-
-
 ### Bug handling process
 
 When a bug is reported, a committer will look at it and either confirm it as a real bug, close it if it is not an bug, or ask for more details. Approved bugs are either assigned to a committer in GitHub or added to the backlog for future resolution. All bugs remain open until they are fixed.
 
 A bug that is about a real bug is closed as soon as the fix is committed. The closing comment explains which version(s) contain the fix.
 
-
-
-##<a name="How do I fix bugs?"></a>How do I fix bugs?
 
 
 ##<a name="How do propose enhancments?"></a>How do I propose enhancments?
