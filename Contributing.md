@@ -11,14 +11,13 @@ You might already know exactly what you do, but if not, you might consider contr
 + **Contribute Bug Reports** - you can contribute by simply reporting bugs you encountered when using Project Norman. For more information, see <a href="#How Do I Report Bugs?">   How Do I Report Bugs?</a>.
 
 
-+ **Fix Bug Reports Fixes**  -  you can contribut by fixing bugs. For more information, see
++ **Fix Bug Reports Fixes**  -  you can contribut by fixing bugs. For more information, see <a href="#How Do I Fix Bugs?">   How Do I Fix Bugs?</a>.
 
-+ **Propose and Build New Features, Enhancements, and Optimizations** - you can contribute new features or enhancments, or contribute to already scheduled new features. For more information, see 
++ **Propose and Build New Features, Enhancements, and Optimizations** - you can contribute new features or enhancments, or contribute to already scheduled new features. For more information, see <a href="#How Do I Fix Bugs?">   How Do I Fix Bugs?</a>
 
 + **Provide Miscellaneous Information** - inevitably, there is a wealth of information wihch the community would benefit from but that nobody has yet provided. We welcome contributions of all types of project-related information, such as test scenarios and results in various environments, performance tests and results, <i>How To</i>  or API documentation, and any other information you think the community will be able to use.
 
 + **Assist other users** - you can contribute valuably to one or more Project Norman sub-projects by helping others users who need support. You can check SAP Community Network (SCN) for support requests. 
-
 
 
 ##<a name="How Do I Report Bugs?"></a> How Do I Report Bugs?
