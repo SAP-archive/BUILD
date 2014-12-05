@@ -24,7 +24,7 @@ You might already know exactly what you do, but if not, you might consider contr
 
 + <a href="#Help Other Users and Contributors">    Help Other Users and Contributors</a>
 
-+ <a href="#Contribute Bug Reports, Analyses, or Fixes">    Analyse Existing Bugs</a>
++ <a href="#Contribute Bug Reports, Analyses, or Fixes">   Contribute Bug Reports, Analyses, or Fixes</a>
 
 + <a href="#Provide Miscellaneous Information">    Provide Miscellaneous Information</a>
 
