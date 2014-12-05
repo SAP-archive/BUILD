@@ -154,18 +154,3 @@ The following labels have been centrally defined in GitHub for Project Norman pr
 + User Story
 
 <i>If you create a new label, please submit it to the Project Norman Steering Committe for apporval.</i>
-
-
-
-
-
-+ <a href="#What Can I Contribute?">   What Can I Contribute?</a>
-
-+ <a href="#How Do I Report Bugs?">   How Do I Report Bugs?</a>
-
-+ <a href="#How Do I Propose New Features?"> How Do I Propose New Features?
-
-+ <a href="#How Do I Submit Repots?"> How Do I Make Changes to Product Norman Sub-Projects?</a>
-
-
-+ [Learn About the Project Norman Project Management Structure](https://github.wdf.sap.corp/Norman/Norman/blob/master/Project%20Management%20Structure.md)
