@@ -24,15 +24,22 @@ You might already know exactly what you do, but if not, you might consider contr
 
 
 ##<a name="Using Issue Tracker"></a> Using Issue Tracker
-You can use the Issee Tracker of the relevant sub-project to do the following:
-Ask Questions
-Report Bugs
-Propose Enhancements
+
+Please review our our [Communications Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Communication%20Guidelines.md) document before posting on the Issue Tracker. You can use the Issee Tracker of the relevant sub-project to do the following:
+
++ <a href="#Ask Questions"> Ask Questions</a>
+
++ <a href="#Report Bugs"> Report Bugs</a>
+
++ <a href="#Propose Enhancements"> Propose Enhancements</a>
 
 
-To report a bug, do the following:
+##<a name="Asking Questions Using Issue Tracker"></a> Asking Questions Using Issue Tracker
 
-1. Bugs can be reported using the GitHub Issue Tracker for each sub-project. Please review our our [Communications Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Communication%20Guidelines.md) document before posting on the Issue Tracker. In summary, to be valid a bug must be the following:
+
+##<a name="Proposing Enhancments Using Issue Tracker"></a> Proposing Enhancments Using Issue Tracker
+
+1. Bugs can be reported using the GitHub Issue Tracker for each sub-project.  In summary, to be valid a bug must be the following:
  * A real, current bug
  * Not a duplicate
  * Reproducible
@@ -52,7 +59,7 @@ To report a bug, do the following:
 To review the complete guidelines for reporting bugs, see [Guidelines for Bug Reports](https://github.wdf.sap.corp/Norman/Norman/blob/master/Guidelines%20for%20Bug%20Reports.md).
 
 
-##<a name="Contribute Enhancments"></a>Contribute 
+##<a name="Proposing Enhancments Using Issue Tracker"></a> Proposing Enhancments Using Issue Tracker 
 
 1. New feature or enhacement proposals can be created using the GitHub Issue Tracker for each sub-project.  To propose a new feature or enhancement, you simply open the Issue Tracker in the sub-project, and click the <b>New Issue</b> button. For links to each sub-projects, click <a href="#Useful Links"></a>here.
 
