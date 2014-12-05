@@ -25,26 +25,26 @@ Prior to reporting the bug, please review the [Guidelines for Bug Reports](https
 
 To report a bug, do the following:
 
-1. Bugs can be reported using the GitHub Issue Tracker for each sub-project.  To report a bug, you simply open the Issue Tracker in the sub-project, and click the <b>New Issue</b> button. For links to each sub-projects, click <a href="#Useful Links"></a>here.
-
-**Note**:  Please review our our [Communications Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Communication%20Guidelines.md) document before posting on the Issue Tracker.
-
-2. Label the issue as a <b>Bug</b>.
-
-3. Enter a title that summarizes the issue, so that at a glance the community can identify whether it may be relevant to them. For example, if reporting that a feature on the Projects UI is displaying incorrectly, use 'Display issue with Projects UI', rather than 'UI Issue'. In addition, if the issue is related to a particular backlog item, please include the backlog issue number in the title.
-
-4. Enter a summary is specific to the bug.
-
-### Quick Checklist for Bug Reports
-
- * Bug report checklist:
+1. Bugs can be reported using the GitHub Issue Tracker for each sub-project. Please review our our [Communications Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Communication%20Guidelines.md) document before posting on the Issue Tracker. In summary, to be valid a bug must be the following:
  * Real, current bug
  * No duplicate
  * Reproducible
- * Good summary
- * Well-documented
- * Minimal example
- * Use the [template](https://github.wdf.sap.corp/Norman/Norman/blob/master/bug_report_template.md)
+
+2. To report a bug, you simply open the Issue Tracker in the sub-project, and click the <b>New Issue</b> button. For links to each sub-projects, click <a href="#Useful Links"></a>here.
+
+3. In summary, we prioritize bugs reported as following:
+ * A good summary is provided
+ * The bukg is well-documented
+ * A minimal example (with screen shots if applicable)
+ * The [recommended bug template](https://github.wdf.sap.corp/Norman/Norman/blob/master/bug_report_template.md) is used.
+
+4. Enter a title that summarizes the issue, so that at a glance the community can identify whether it may be relevant to them. For example, if reporting that a feature on the Projects UI is displaying incorrectly, use 'Display issue with Projects UI', rather than 'UI Issue'. In addition, if the issue is related to a particular backlog item, please include the backlog issue number in the title.
+
+5. Enter a summary is specific to the bug.
+
+### Quick Checklist for Bug Reports
+
+ 
 
 ### Bug handling process
 
