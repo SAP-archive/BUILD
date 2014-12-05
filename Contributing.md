@@ -8,7 +8,7 @@ Want to get coding straight away? No problem because we want you to get going as
 
 You might already know exactly what you do, but if not, you might consider contributing in one or all of the following ways: 
 
-+ ** Contribute Bug Reports** - you can contribute by simply reporting bugs you encountered when using Project Norman. For more information, see <a href="#How Do I Report Bugs?">   How Do I Report Bugs?</a>.
++ **Contribute Bug Reports** - you can contribute by simply reporting bugs you encountered when using Project Norman. For more information, see <a href="#How Do I Report Bugs?">   How Do I Report Bugs?</a>.
 
 
 + **Fix Bug Reports Fixes**  -  you can contribut by fixing bugs. For more information, see
