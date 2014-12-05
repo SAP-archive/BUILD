@@ -57,9 +57,9 @@ Please review our our [Communications Guidelines](https://github.wdf.sap.corp/No
 3. Label the issue as a <i>Bug</i>. 
 
 3. We prioritize bugs reported as follows:
- * A good summary is provided
- * The bug is well-documented
- * A minimal example (with screen shots if applicable)
+ * A good summary is provided.
+ * The bug is well-documented.
+ * A minimal example (with screen shots if applicable) is provided.
  * The [recommended bug template](https://github.wdf.sap.corp/Norman/Norman/blob/master/bug_report_template.md) is used.
 
 4. Enter a title that summarizes the issue, so that at a glance the community can identify whether it may be relevant to them. For example, if reporting that a feature on the Projects UI is displaying incorrectly, use 'Display issue with Projects UI', rather than 'UI Issue'. In addition, if the issue is related to a particular backlog item, please include the backlog issue number in the title.
