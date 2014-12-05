@@ -8,7 +8,7 @@ Please conform you bug report to the following:
    * bugs that you cannot reproduce.
    * something that behaves just different from what you expected. A bug is when something behaves different than specified. When in doubt, ask in a forum.
    * requests for help in achieving a task in Project Norman. Please use a support forum like stackoverflow to request help.
-   * feature requests. Features requests are removed from the project Issue Tracker automatically. For information on proposing new features or enhancments, see the [Contribution](https://github.wdf.sap.corp/Norman/Norman/blob/dev/Contribution.md) document.
+   * feature requests. Features requests are removed from the project Issue Tracker automatically. For information on proposing new features or enhancments, see the [Contribution](https://github.wdf.sap.corp/Norman/Norman/blob/master/Contributing.md) document.
  2. **No duplicates**: please search the Issue Tracker and make sure you bug has been reported previously.
  3. **Title**: please make sure the title reflects the issue, so that at a glance the community can identify whether it may be relevant to them. For example, if reporting that a feature on the Projects UI is displaying incorrectly, use 'Display issue with Projects UI', rather than 'UI Issue'. In addition, if the issue is related to a particular backlog item, please include the backlog issue number in the title.
  4. **Good summary**: please ensure the summary is specific to the bug.
