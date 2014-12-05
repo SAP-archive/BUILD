@@ -60,8 +60,8 @@ For guidelines on contributing a new feature or enhancement to existing features
 
 ##<a name="How Do I Report Bugs?"></a> How Do I Report Bugs?
 
-Bugs can be reported and tracked using the GitHub Issue Tracker for each sub-project. To report a bug, you simply open the Issue Tracker in the sub-project, and click the <b>New Issue</b> button. 
-
+Bugs can be reported and tracked using the GitHub Issue Tracker for each sub-project.  To report a bug, you simply open the Issue Tracker in the sub-project, and click the <b>New Issue</b> button. 
+For links to Issue Trackers for each of the Project Noman sub-project Issue Trackers, see <a href="#Useful Links">    Useful Links</a>.
 
 For information on proposing new features or enhancments, see <a href="#Propose and Build New Features, Enhancements, and Optimizations">    Propose and Build New Features, Enhancements, and Optimizations</a>.
 
