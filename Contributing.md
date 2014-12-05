@@ -76,9 +76,9 @@ You submit changes to Project Norman sub-projects, such as bug fixes and new or 
 
 For guidelines on create a pull request to include your changes into the Master branch of the relevant sub-project, contributing a new feature or enhancement to existing features, please refer to <a href="#Changing Code and Submitting Your Changes"> Changing Code and Submitting Your Changes</a> section.
 
-###<a name="Changing Code and Submitting Your Changes"></a>Changing Code and Submitting Your Changes
+##<a name="Changing Code and Submitting Your Changes"></a>Changing Code and Submitting Your Changes
 
-Use the following procedure to change code and submit your changes:
+Use the following procedure to change code, whether it is a bug fix or a new feature, and submit your changes:
 
 **1.**   Review the [Apache License] (https://github.wdf.sap.corp/Norman/Drive/blob/master/License.txt) (which describes contributions) which outlines both your and the Project Norman Open Source Community's legal rights regarding your contribution.
 
