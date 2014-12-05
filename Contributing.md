@@ -27,11 +27,11 @@ You might already know exactly what you do, but if not, you might consider contr
 
 Please review our our [Communications Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Communication%20Guidelines.md) document before posting on the Issue Tracker. You can use the Issue Tracker of the relevant sub-project to do the following:
 
-+ <a href="#Ask Questions Using Issue Tracker"> Ask Questions</a>
++ <a href="#Ask Questions Using Issue Tracker"> Ask Questions</a> - you can ask our core development team, or any contributors viewing issues in the Issue Tracker, question regarding anything and everything in Project Norman. 
 
-+ <a href="#Report Bugs Using Issue Tracker"> Report Bugs</a>
++ <a href="#Report Bugs Using Issue Tracker"> Report Bugs</a> - you can report bugs, or review and have conversations with other contributors about existing issues with the <code>bug<code> label.
 
-+ <a href="#Propose Enhancements Using Issue Tracker"> Propose Enhancements</a>
++ <a href="#Propose Enhancements Using Issue Tracker"> Propose Enhancements</a> - you can propose enhancements, new features, and optimizations or review and have conversations with other contributors about issues with the <user story> or.
 
 
 ###<a name="Ask Questions Using Issue Tracker"></a> Asking Questions Using Issue Tracker
