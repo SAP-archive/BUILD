@@ -4,7 +4,7 @@ These guidelines are designed to help you to write clear, organized, high-qualit
 
 Please consider the following guidelines when writing a commit message:
 
-+ The title of the message should reference the issue number from the Issue Tracker that the pull request relates to. For example, the title for a pull-request for issue number 20 should be in the format [<i>Message Title</i>][<i>Issus #20</i>]
++ The title of the message should reference the issue number from the Issue Tracker that the pull request relates to, if any. For example, the title for a pull-request for issue number 20 should be in the format [<i>Message Title</i>][<i>Issus #20</i>]
 + The title should be a summary of the change.
 + Imperative titles are effective. For example, "Add KPI to monitor performance" is better than "Performance KPIs" or "Added KPIs so that we can monitor performance"
 + In order to ensure the the GitHub command line output is readable, the first line of a commit message should contain a maximum of 50 characters. 
