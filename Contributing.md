@@ -29,9 +29,9 @@ Please review our our [Communications Guidelines](https://github.wdf.sap.corp/No
 
 + <a href="#Ask Questions Using Issue Tracker"> Ask Questions</a> - you can ask our core development team, or any contributors viewing issues in the Issue Tracker, question regarding anything and everything in Project Norman. 
 
-+ <a href="#Report Bugs Using Issue Tracker"> Report Bugs</a> - you can report bugs, or review and have conversations with other contributors about existing issues with the <code>bug<code> label.
++ <a href="#Report Bugs Using Issue Tracker"> Report Bugs</a> - you can report bugs, or review and have conversations with other contributors about existing issues with the <code>Bug</code> label.
 
-+ <a href="#Propose Enhancements Using Issue Tracker"> Propose Enhancements</a> - you can propose enhancements, new features, and optimizations or review and have conversations with other contributors about issues with the <user story> or.
++ <a href="#Propose Enhancements Using Issue Tracker"> Propose Enhancements</a> - you can propose enhancements, new features, and optimizations, or review and have conversations with other contributors about issues with either the <code>user story</code> or <code>Please Contribute</code> labels.
 
 
 ###<a name="Ask Questions Using Issue Tracker"></a> Asking Questions Using Issue Tracker
