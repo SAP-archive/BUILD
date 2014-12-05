@@ -10,12 +10,11 @@ You might already know exactly what you do, but if not, you might consider contr
 
 + **Contribute Bug Reports** - you can contribute by simply reporting bugs you encountered when using Project Norman. For more information, see <a href="#How Do I Report Bugs?">   How Do I Report Bugs?</a>.
 
++ **Fix Bug Reports Fixes**  -  you can contribute by fixing bugs. For more information, see <a href="#How Do I Fix Bugs?">   How Do I Fix Bugs?</a>.
 
-+ **Fix Bug Reports Fixes**  -  you can contribut by fixing bugs. For more information, see <a href="#How Do I Fix Bugs?">   How Do I Fix Bugs?</a>.
++ **Propose and Build New Features, Enhancements, and Optimizations** - you can contribute new features or enhancments, or contribute to already scheduled new features. For information on proposing new features or enhancments, see <a href="#Propose and Build New Features, Enhancements, and Optimizations">    Propose and Build New Features, Enhancements, and Optimizations</a>.
 
-+ **Propose and Build New Features, Enhancements, and Optimizations** - you can contribute new features or enhancments, or contribute to already scheduled new features. For more information, see <a href="#How Do I Fix Bugs?">   How Do I Fix Bugs?</a>
-
-+ **Provide Miscellaneous Information** - inevitably, there is a wealth of information wihch the community would benefit from but that nobody has yet provided. We welcome contributions of all types of project-related information, such as test scenarios and results in various environments, performance tests and results, <i>How To</i>  or API documentation, and any other information you think the community will be able to use.
++ **Provide Miscellaneous Information** - inevitably, there is a wealth of information wihch the community would benefit from but that nobody has yet provided. We welcome contributions of all types of project-information, such as test scenarios and results in various environments, performance tests and results, <i>How To</i>  or API documentation, and any other information you think the community will be able to use. Check the bugs in the Issue Tracker in the Project Norman sub-project repository you interested in contributing to. You might be able to provide further information, or a hint that helps other contributors understand the bug. 
 
 + **Assist other users** - you can contribute valuably to one or more Project Norman sub-projects by helping others users who need support. You can check SAP Community Network (SCN) for support requests. 
 
@@ -24,66 +23,15 @@ You might already know exactly what you do, but if not, you might consider contr
 
 To report a bug, do the following:
 
-1. Prior to reporting the bug, please review the guidelines <a href="#Guidelines for Bug Reports"> Guidelines for Bug Reports</a>.
- 
-2. Add an issue in the Issue Tracker of the relevant Norman sub-project. For links to each sub-projects, click <a href="#Useful Links"></a>here.
+1. Prior to reporting the bug, please review the <a href="#Guidelines for Bug Reports"> Guidelines for Bug Reports</a>.
 
-3. Label Issue as Bug.
+2. Bugs can be reported using the GitHub Issue Tracker for each sub-project.  To report a bug, you simply open the Issue Tracker in the sub-project, and click the <b>New Issue</b> button. For links to each sub-projects, click <a href="#Useful Links"></a>here.
 
-"Add Description and Details according to the Contribution Guidelines
-"
-If possible reference the Bug to the relevant Backlog Item using issue # 
+3. Label the issue as a <b>Bug</b>.
 
+3. Enter a title that summarizes the issue, so that at a glance the community can identify whether it may be relevant to them. For example, if reporting that a feature on the Projects UI is displaying incorrectly, use 'Display issue with Projects UI', rather than 'UI Issue'. In addition, if the issue is related to a particular backlog item, please include the backlog issue number in the title.
 
-Check the Issue Tracker in the Project Norman sub-project repository you interested in contributing to. You might be able to provide further information, or a hint that helps other contributors understand the bug. This is a great way to get acquainted with the project. You might want to fix a bug. For more information, see <a href="#Fix Bugs">    Fix Bugs</a>.
-
-You can contribute by simply reporting bugs you encountered when using Project Norman. Check the Issue Tracker in repository for the Project Norman sub-project for bugs you are interested in fixing. Consider issues that are currently being fixed aswell if they interest you, because the contributor responsible might appreciate the offer of assistance. 
-
-For more comprehensive guidelines on reporting bugs, please refer to <a href="#How Do I Report Bugs?">    How Do I Report Bugs?</a> section.
-
-You might identify and bugs you want to fix. Great! For guidelines on contributing a fix, please refer to <a href="#How Do I Make Changes to Product Norman Sub-Projects?">    How Do I Make Changes to Product Norman Sub-Projects?</a> section.
-
-Bugs can be reported and tracked using the GitHub Issue Tracker for each sub-project.  To report a bug, you simply open the Issue Tracker in the sub-project, and click the <b>New Issue</b> button. 
-For links to Issue Trackers for each of the Project Noman sub-project, see <a href="#Useful Links">    Useful Links</a>.
-
-For information on proposing new features or enhancments, see <a href="#Propose and Build New Features, Enhancements, and Optimizations">    Propose and Build New Features, Enhancements, and Optimizations</a>.
-
-Please review the guidelines below before submitting an bug. 
-
-**Note**: These guidelines were adapted from the [SAP UI5 Open Source Contributing documentation](https://github.com/SAP/openui5/blob/master/CONTRIBUTING.md).
-
-##<a name="Guidelines for Bug Reports"></a> Guidelines for Bug Reports
-
-We appreciate all efforts to notify us if something goes wrong. However, we have limited capacity, we give priority to bugs well-reported bugs. Following the guidelines below will ensure that your bug gets the highest priority from community developers.
-
-Please conform you bug report to the following:
- 1. **Only real bugs**: please do your best to make sure to only report real bugs. You should not report:
-   * bugs caused by application code or any code outside Project Norman.
-   * bugs that you cannot reproduce.
-   * something that behaves just different from what you expected. A bug is when something behaves different than specified. When in doubt, ask in a forum.
-   * requests for help in achieving a task in Project Norman. Please use a support forum like stackoverflow to request help.
-   * feature requests. Features requests are removed from the project Issue Tracker automatically. For information on proposing new features or enhancments, see the [Contribution](https://github.wdf.sap.corp/Norman/Norman/blob/dev/Contribution.md) document.
- 2. **No duplicates**: please search the Issue Tracker and make sure you bug has been reported previously.
- 3. **Title**: please make sure the title reflects the issue, so that at a glance the community can identify whether it may be relevant to them. For example, if reporting that a feature on the Projects UI is displaying incorrectly, use 'Display issue with Projects UI', rather than 'UI Issue'. In addition, 
- 4. **Good summary**: please ensure the summary is specific to the bug.
- 5. **Current bug**: the bug can be reproduced in the most current version. Please state the tested version!
- 6. **Reproducible bug**: Please provide steps to reproduce the error, including:
-   * a URL to access the example
-   * any required user/password information. However, please ensure you don't reveal any proprietary security credentials.
-   * detailed and complete step-by-step instructions to reproduce the bug
- 7. **Precise description**:
-   * precisely state the expected and the actual behavior
-   * give information about the used browser/device and its version, if possible also the behavior in other browsers/devices
-   * if the bug is appears on a UI, please attach a screenshot with callouts describing the problem.
-   * generally give as much additional information as possible. (But find the right balance: don not invest hours for a very obvious and easy to solve bug. When in doubt, give more information.)
- 8. **Minimal example**: it is highly encouraged to provide a minimal example to reproduce.
- 9. **Only one bug per report**: open different tickets for different bugs
-
-
-You are encouraged to use [this template](https://github.wdf.sap.corp/Norman/Norman/blob/master/bug_report_template.md).
-
-Please report bugs in English, so all users can understand them.
-
+4. Enter a summary is specific to the bug.
 
 ### Quick Checklist for Bug Reports
 
@@ -95,6 +43,11 @@ Please report bugs in English, so all users can understand them.
  * Well-documented
  * Minimal example
  * Use the [template](https://github.wdf.sap.corp/Norman/Norman/blob/master/bug_report_template.md)
+
+
+
+
+
 
 
 ### Bug handling process
