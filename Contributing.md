@@ -52,21 +52,32 @@ A bug that is about a real bug is closed as soon as the fix is committed. The cl
 
 
 
-##<a name="How do propose enhancments?"></a>How do I propose enhancments?
+##<a name="How do I propose enhancments?"></a>How Do I Propose Enhancments?
 
+We welcome innovations and improvements to Project Norman,  optimizations, new features and enhancments to existing features. However, we do not accept all pull requests, and those we accept have to meet specific standards. Therefore, prior to coding changes, to ensure that you are spending your time wisely, we recommend you propose and disuss new features to core project developer first.
 
-##<a name="Guidelines for Making Pull Requests"></a>Guidelines for Making Pull Requests
+To contact the core development team about and new feature or enhancments, do the following:
 
-We welcome innovations and improvements to Project Norman, including contributions to documentation, examples or test cases, optimizations, new features and enhancments to existing features.
+1. Prior to reporting the bug, please review the [Guidelines for Bug Reports](https://github.wdf.sap.corp/Norman/Norman/blob/master/Guidelines%20for%20Bug%20Reports.md).
 
-However, before you do any work beyond conceptual, we recommend you post an Issue with the label User Story on the Issue Tracker. When a core developer contacts you, discuss the proposed enhancement with them.
+2. New feature or enhacement proposals can be created using the GitHub Issue Tracker for each sub-project.  To propose a new feature or enhancement, you simply open the Issue Tracker in the sub-project, and click the <b>New Issue</b> button. For links to each sub-projects, click <a href="#Useful Links"></a>here.
+
+3. Label the issue as a <b>Feature Enhancement</b>.
+
+3. Enter a title that summarizes the issue, so that at a glance the community can identify whether it may be relevant to them. For example, if proposing to create a feature that enables users to , use 'Display issue with Projects UI', rather than 'UI Issue'. In addition, if the issue is related to a particular backlog item, please include the backlog issue number in the title.
+
+4. Enter a summary is specific to the bug.
+
+simply create an issue in the Issue Tracker of the releant sub-project. 
+
+When a core developer responds, discuss the proposed enhancement with them. Once this discussion yields a shared consensus, you can confidently proceed and create the code. Furthermore, the developer might have some valuable hints and tips that save you a lot of time of and effort.However, before you do any work beyond conceptual, we recommend you post an Issue with the label User Story on the Issue Tracker. When a core developer contacts you, discuss the proposed enhancement with them.
 
 If you don't know exactly what you'd like to contribution, why not see if there is something on the in the Issue Tracker back log you find interesting. If you see something, why not give it a go? 
 
 
 For guidelines on contributing a new feature or enhancement to existing features, please refer to <a href="#How Do I Make Changes to Product Norman Sub-Projects?">   How Do I Make Changes to Product Norman Sub-Projects?</a> section.
 
-You submit changes to Project Norman sub-projects, such as bug fixes and new or improved features, using pull requests to the relevant sub-project repository. However, we do not accept all pull requests, and those we accept have to meet specific standards. Therefore, prior to coding changes, to ensure that you are spending your time wisely, we recommend you propose and disuss your new feature or significant bug fix with on of our core developers using the Issue Tracker for the Norman sub-project you want to contribute to. When a core developer responds, discuss the proposed enhancement with them. Once this discussion yields a shared consensus, you can confidently proceed and create the code. Furthermore, the developer might have some valuable hints and tips that save you a lot of time of and effort.
+You submit changes to Project Norman sub-projects, such as bug fixes and new or improved features, using pull requests to the relevant sub-project repository. 
 
 **Note**:  For more information on Project Norman mailing lists, see our [Communications Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Communication%20Guidelines.md).
 
