@@ -42,6 +42,8 @@ Please review our our [Communications Guidelines](https://github.wdf.sap.corp/No
 
 3. Ensure the summary reflects the essence of your question, to enable community members to identify if it is releveant to them.
 
+4. Click the <b>Submit Issue</b> button.
+
    Once an Issue has been created, you can click comment to add further comments or respond.
 
 
@@ -66,9 +68,11 @@ Please review our our [Communications Guidelines](https://github.wdf.sap.corp/No
 
 5. Enter a summary is specific to the bug.
 
-   To review the complete guidelines for reporting bugs, see [Guidelines for Bug                       Reports](https://github.wdf.sap.corp/Norman/Norman/blob/master/Guidelines%20for%20Bug%20Reports.md).
+6. Click the <b>Submit Issue</b> button.
 
-   Once an Issue has been created, you can click comment to add further comments or respond.
+   To review the complete guidelines for reporting bugs, see [Guidelines for Bug Reports](https://github.wdf.sap.corp/Norman/Norman/blob/master/Guidelines%20for%20Bug%20Reports.md).
+
+   Once an issue has been created, you can click comment to add further comments or respond.
 
 
 ###<a name="Propose Enhancements Using Issue Tracker"></a> Proposing Enhancements Using Issue Tracker 
@@ -77,7 +81,9 @@ Please review our our [Communications Guidelines](https://github.wdf.sap.corp/No
 
 2. Label the issue as a <b>Feature Enhancement</b>.
 
-3. Once an Issue has been created, you can click comment to add further comments or respond.
+3. Click the <b>Submit Issue</b> button.
+
+   Once an issue has been created, you can click comment to add further comments or respond.
 
 
 ##<a name="Changing Code and Submitting Your Changes"></a>Changing Code and Submitting Your Changes
