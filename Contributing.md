@@ -1,8 +1,8 @@
 # Project Norman Contribution Page
 
-##Introduction
-
 **About This Document**: Project Norman is composed of the numerous <a href="#Useful Links"> Project Norman Sub-Projects</a>, each of which have their own repository. This document describes how to make contributions to any of these sub-projects. 
+
+##Introduction
 
 So you want to contribute to a Project Norman project? Good choice! There is lots of scope for contribution, and there's plenty to do! Want to get coding straight away? No problem because we want you to get going as fast as possible as well! To make the best use of your valuable time we recommend you take a few minutes to read this page before you dive in. 
 
@@ -21,15 +21,15 @@ You might already know exactly what you do, but if not, you might consider contr
 
 ##<a name="Reporting Bugs"></a> Reporting Bugs
 
+Prior to reporting the bug, please review the [Guidelines for Bug Reports](https://github.wdf.sap.corp/Norman/Norman/blob/master/Guidelines%20for%20Bug%20Reports.md).
+
 To report a bug, do the following:
 
-1. Prior to reporting the bug, please review the [Guidelines for Bug Reports](https://github.wdf.sap.corp/Norman/Norman/blob/master/Guidelines%20for%20Bug%20Reports.md).
-
-2. Bugs can be reported using the GitHub Issue Tracker for each sub-project.  To report a bug, you simply open the Issue Tracker in the sub-project, and click the <b>New Issue</b> button. For links to each sub-projects, click <a href="#Useful Links"></a>here.
+1. Bugs can be reported using the GitHub Issue Tracker for each sub-project.  To report a bug, you simply open the Issue Tracker in the sub-project, and click the <b>New Issue</b> button. For links to each sub-projects, click <a href="#Useful Links"></a>here.
 
 **Note**:  Please review our our [Communications Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Communication%20Guidelines.md) document before posting on the Issue Tracker.
 
-3. Label the issue as a <b>Bug</b>.
+2. Label the issue as a <b>Bug</b>.
 
 3. Enter a title that summarizes the issue, so that at a glance the community can identify whether it may be relevant to them. For example, if reporting that a feature on the Projects UI is displaying incorrectly, use 'Display issue with Projects UI', rather than 'UI Issue'. In addition, if the issue is related to a particular backlog item, please include the backlog issue number in the title.
 
