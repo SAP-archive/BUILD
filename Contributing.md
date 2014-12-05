@@ -24,9 +24,7 @@ You might already know exactly what you do, but if not, you might consider contr
 
 + <a href="#Help Other Users and Contributors">    Help Other Users and Contributors</a>
 
-+ <a href="#Analyse Existing Bugs">    Analyse Existing Bugs</a>
-
-+ <a href="#Report Bugs">    Report or Fix Bugs</a>
++ <a href="#Contribute Bug Reports, Analyses, or Fixes">    Analyse Existing Bugs</a>
 
 + <a href="#Provide Miscellaneous Information">    Provide Miscellaneous Information</a>
 
@@ -36,11 +34,9 @@ You might already know exactly what you do, but if not, you might consider contr
 
 You can contribute valuably to one or more Project Norman sub-projects by helping others users who need support. 
 
-###<a name="Analyse Existing Bugs"></a>Analyze Existing Bugs
+###<a name="Contribute Bug Reports, Analyses, or Fixes"></a>Contribute Bug Reports, Analyses, or Fixes
 Check the Issue Tracker in the Project Norman sub-project repository you interested in contributing to. You might be able to provide further information, or a hint that helps other contributors understand the bug. This is a great way to get acquainted with the project. You might want to fix a bug. For more information, see <a href="#Fix Bugs">    Fix Bugs</a>.
 
-
-###<a name="Report Bugs"></a>Report or Fix Bugs
 You can contribute by simply reporting bugs you encountered when using Project Norman. Check the Issue Tracker in repository for the Project Norman sub-project for bugs you are interested in fixing. Consider issues that are currently being fixed aswell if they interest you, because the contributor responsible might appreciate the offer of assistance. 
 
 For more comprehensive guidelines on reporting bugs, please refer to <a href="#How Do I Report Bugs?">    How Do I Report Bugs?</a> section.
