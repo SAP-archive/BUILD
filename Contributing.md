@@ -24,13 +24,14 @@ Want to get coding straight away? No problem because we want you to get going as
 
 You might already know exactly what you do, but if not, you might consider contributing in one or all of the following ways: 
 
-+ <a href="#Help Other Users and Contributors">    Help Other Users and Contributors</a>
++ <a href="#Contribute Bug Reports ">   Contribute Bug Reports, Analyses, or Fixes</a>
 
-+ <a href="#Contribute Bug Reports, Analyses, or Fixes">   Contribute Bug Reports, Analyses, or Fixes</a>
++ <a href="#Fix Bug Reports Fixes">   Contribute Bug Reports, Analyses, or Fixes</a>
+
++ <a href="#Propose and Build New Features, Enhancements, and Optimizations">    Propose and Build New Features, Enhancements, and Optimizations</a>
 
 + <a href="#Provide Miscellaneous Information">    Provide Miscellaneous Information</a>
 
-+ <a href="#Propose and Build New Features, Enhancements, and Optimizations">    Propose and Build New Features, Enhancements, and Optimizations</a>
 
 ###<a name="Help Other Users and Contributors"></a>Help Other Users and Contributors
 
