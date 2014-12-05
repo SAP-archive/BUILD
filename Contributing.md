@@ -8,15 +8,11 @@ So you want to contribute to a Project Norman sub-project? Good choice! There is
 
 You might already know exactly what you do, but if not, you might consider contributing in one or all of the following ways: 
 
-+ **Contribute Bug Reports** - you can contribute by simply reporting bugs you encountered when using Project Norman. When a bug is reported, a committer will look at it and either confirm it as a real bug, close it if it is not an bug, or ask for more details. Approved bugs are either assigned to a committer in GitHub or added to the backlog for future resolution. All bugs remain open until they are fixed.
-
-A bug that is about a real bug is closed as soon as the fix is committed. The closing comment explains which version(s) contain the fix.
- 
-For more information on reporting bugs using the Issue Tracker of the relevant sub-project, see <a href="#Reporting Bugs"> Reporting Bugs</a>.
++ **Contribute Bug Reports** - you can contribute by simply reporting bugs you encountered when using Project Norman. When a bug is reported, a committer will look at it and either confirm it as a real bug, close it if it is not an bug, or ask for more details. Approved bugs are either assigned to a committer in GitHub or added to the backlog for future resolution. All bugs remain open until they are fixed. A bug that is about a real bug is closed as soon as the fix is committed. The closing comment explains which version(s) contain the fix. For more information on reporting bugs using the Issue Tracker of the relevant sub-project, see <a href="#Using Issue Tracker"> Using Issue Tracker</a>.
 
 + **Contribute Bug Fixes**  -  you can contribute by fixing bugs. Simply browse the <a href="Useful Links"> </a>Issue Tracker for the relevant sub-project, and identify a bug you want to fix. Before you begin, make sure that it is reproducible in the latest version of the sub-project, and has not already been fixed. For instructions on how to submit a pull request for your bug fix, please review <a href="#Changing Code and Submitting Your Changes">   Changing Code and Submitting Your Changes</a>.
 
-+ **Contribute Enhancements and Optimizations** - you can contribute new features or enhancments, or contribute to already scheduled new features. Project Norman welcomes optimizations, new features and enhancments to existing features. However, we do not accept all pull requests, and those we accept have to meet specific standards. Therefore, to ensure that you are spending your time wisely,  prior to coding your proposed enhancments we recommend you propose and disuss new features to core project developer first by creating an Issue labelled <b>Feature Enhancement</b> in the relevant sub-project Issue Tracker. For more information, see Creating Issues in Issue Tracker.
++ **Contribute Enhancements and Optimizations** - you can contribute new features or enhancments, or contribute to already scheduled new features. Project Norman welcomes optimizations, new features and enhancments to existing features. However, we do not accept all pull requests, and those we accept have to meet specific standards. Therefore, to ensure that you are spending your time wisely,  prior to coding your proposed enhancments we recommend you propose and disuss new features to core project developer first by creating an Issue labelled <b>Feature Enhancement</b> in the relevant sub-project Issue Tracker. For more information on prosing new features using the Issue Tracker of the relevant sub-project, see <a href="#Using Issue Tracker"> Using Issue Tracker</a>.
 
 When a core developer responds, discuss the proposed enhancement with them. Once this discussion yields a shared consensus, you can confidently proceed and create the code. Furthermore, the developer might have some valuable hints and tips that save you a lot of time of and effort.However, before you do any work beyond conceptual, we recommend you post an Issue with the label User Story on the Issue Tracker. When a core developer contacts you, discuss the proposed enhancement with them.
 
@@ -28,10 +24,11 @@ For instructions on how to submit a pull request for your new feature, please re
 
 
 ##<a name="Using Issue Tracker"></a> Using Issue Tracker
+You can use the Issee Tracker of the relevant sub-project to do the following:
+Ask Questions
+Report Bugs
+Propose Enhancements
 
-
-
-Prior to reporting the bug, please review the [Guidelines for Bug Reports](https://github.wdf.sap.corp/Norman/Norman/blob/master/Guidelines%20for%20Bug%20Reports.md).
 
 To report a bug, do the following:
 
@@ -52,11 +49,10 @@ To report a bug, do the following:
 
 5. Enter a summary is specific to the bug.
 
-### Bug handling process
+To review the complete guidelines for reporting bugs, see [Guidelines for Bug Reports](https://github.wdf.sap.corp/Norman/Norman/blob/master/Guidelines%20for%20Bug%20Reports.md).
 
 
 ##<a name="Contribute Enhancments"></a>Contribute 
-
 
 1. New feature or enhacement proposals can be created using the GitHub Issue Tracker for each sub-project.  To propose a new feature or enhancement, you simply open the Issue Tracker in the sub-project, and click the <b>New Issue</b> button. For links to each sub-projects, click <a href="#Useful Links"></a>here.
 
