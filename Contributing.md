@@ -79,7 +79,7 @@ Please review our our [Communications Guidelines](https://github.wdf.sap.corp/No
 
 1. New feature or enhacement proposals can be created using the GitHub Issue Tracker for each sub-project.  
 
-2. Label the issue as a <b>Feature Enhancement</b>.
+2. Label the issue as a <code>Feature Enhancement</code>.
 
 3. Click the <b>Submit Issue</b> button.
 
