@@ -52,8 +52,6 @@ When a bug is reported, a committer will look at it and either confirm it as a r
 
 A bug that is about a real bug is closed as soon as the fix is committed. The closing comment explains which version(s) contain the fix.
 
-
-
 ##<a name="How do I propose enhancments?"></a>How Do I Propose Enhancments?
 
 We welcome innovations and improvements to Project Norman,  optimizations, new features and enhancments to existing features. However, we do not accept all pull requests, and those we accept have to meet specific standards. Therefore, prior to coding changes, to ensure that you are spending your time wisely, we recommend you propose and disuss new features to core project developer first.
@@ -63,9 +61,7 @@ When a core developer responds, discuss the proposed enhancement with them. Once
 If you don't know exactly what you'd like to contribution, why not see if there is something on the in the Issue Tracker back log you find interesting. If you see something, why not give it a go? 
 To contact the core development team about and new feature or enhancments, do the following:
 
-1. Prior to proposing your enhancement, .
-
-2. New feature or enhacement proposals can be created using the GitHub Issue Tracker for each sub-project.  To propose a new feature or enhancement, you simply open the Issue Tracker in the sub-project, and click the <b>New Issue</b> button. For links to each sub-projects, click <a href="#Useful Links"></a>here.
+1. New feature or enhacement proposals can be created using the GitHub Issue Tracker for each sub-project.  To propose a new feature or enhancement, you simply open the Issue Tracker in the sub-project, and click the <b>New Issue</b> button. For links to each sub-projects, click <a href="#Useful Links"></a>here.
 
 **Note**:  Please review our our [Communications Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Communication%20Guidelines.md) document before posting on the Issue Tracker.
 
