@@ -20,7 +20,7 @@ You might already know exactly what you do, but if not, you might consider contr
 + **Assist other users** - you can contribute valuably to one or more Project Norman sub-projects by helping others users who need support. You can check SAP Community Network (SCN) for support requests. 
 
 
-##<a name="How Do I Report Bugs?"></a> How Do I Report Bugs?
+##<a name="Guidelines for Bug Reports"></a> Guidelines for Bug Reports
 
 Check the Issue Tracker in the Project Norman sub-project repository you interested in contributing to. You might be able to provide further information, or a hint that helps other contributors understand the bug. This is a great way to get acquainted with the project. You might want to fix a bug. For more information, see <a href="#Fix Bugs">    Fix Bugs</a>.
 
@@ -39,7 +39,7 @@ Please review the guidelines below before submitting an bug.
 
 **Note**: These guidelines were adapted from the [SAP UI5 Open Source Contributing documentation](https://github.com/SAP/openui5/blob/master/CONTRIBUTING.md).
 
-### Guidelines for a bug reports
+### Making a Bug Report
 
 We appreciate all efforts to notify us if something goes wrong. However, we have limited capacity, we give priority to bugs well-reported bugs. Following the guidelines below will ensure that your bug gets the highest priority from community developers.
 
@@ -97,7 +97,7 @@ A bug that is about a real bug is closed as soon as the fix is committed. The cl
 ##<a name="How do propose enhancments?"></a>How do I propose enhancments?
 
 
-##<a name="How Do I Make Changes to Product Norman Sub-Projects?"></a>How Do I Make Changes to Product Norman Sub-Projects?
+##<a name="Guidelines for Making Pull Requests"></a>Guidelines for Making Pull Requests
 
 We welcome innovations and improvements to Project Norman, including contributions to documentation, examples or test cases, optimizations, new features and enhancments to existing features.
 
