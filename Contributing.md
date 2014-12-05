@@ -77,6 +77,8 @@ Please review our our [Communications Guidelines](https://github.wdf.sap.corp/No
 
 2. Label the issue as a <b>Feature Enhancement</b>.
 
+3. Once an Issue has been created, you can click comment to add further comments or respond.
+
 
 ##<a name="Changing Code and Submitting Your Changes"></a>Changing Code and Submitting Your Changes
 
