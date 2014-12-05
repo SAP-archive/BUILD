@@ -26,15 +26,15 @@ Prior to reporting the bug, please review the [Guidelines for Bug Reports](https
 To report a bug, do the following:
 
 1. Bugs can be reported using the GitHub Issue Tracker for each sub-project. Please review our our [Communications Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Communication%20Guidelines.md) document before posting on the Issue Tracker. In summary, to be valid a bug must be the following:
- * Real, current bug
- * No duplicate
+ * A real, current bug
+ * Not a duplicate
  * Reproducible
 
 2. To report a bug, you simply open the Issue Tracker in the sub-project, and click the <b>New Issue</b> button. For links to each sub-projects, click <a href="#Useful Links"></a>here.
 
 3. In summary, we prioritize bugs reported as following:
  * A good summary is provided
- * The bukg is well-documented
+ * The bug is well-documented
  * A minimal example (with screen shots if applicable)
  * The [recommended bug template](https://github.wdf.sap.corp/Norman/Norman/blob/master/bug_report_template.md) is used.
 
@@ -42,17 +42,13 @@ To report a bug, do the following:
 
 5. Enter a summary is specific to the bug.
 
-### Quick Checklist for Bug Reports
-
- 
-
 ### Bug handling process
 
 When a bug is reported, a committer will look at it and either confirm it as a real bug, close it if it is not an bug, or ask for more details. Approved bugs are either assigned to a committer in GitHub or added to the backlog for future resolution. All bugs remain open until they are fixed.
 
 A bug that is about a real bug is closed as soon as the fix is committed. The closing comment explains which version(s) contain the fix.
 
-##<a name="Propose Enhancments?"></a>How Do I Propose Enhancments?
+##<a name="Contribute Enhancments"></a>Contribute 
 
 We welcome innovations and improvements to Project Norman,  optimizations, new features and enhancments to existing features. However, we do not accept all pull requests, and those we accept have to meet specific standards. Therefore, to ensure that you are spending your time wisely,  prior to coding your proposed enhancments we recommend you propose and disuss new features to core project developer first. When a core developer responds, discuss the proposed enhancement with them. Once this discussion yields a shared consensus, you can confidently proceed and create the code. Furthermore, the developer might have some valuable hints and tips that save you a lot of time of and effort.However, before you do any work beyond conceptual, we recommend you post an Issue with the label User Story on the Issue Tracker. When a core developer contacts you, discuss the proposed enhancement with them.
 
