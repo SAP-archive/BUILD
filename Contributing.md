@@ -27,11 +27,11 @@ You might already know exactly what you do, but if not, you might consider contr
 
 Please review our our [Communications Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Communication%20Guidelines.md) document before posting on the Issue Tracker. You can use the Issee Tracker of the relevant sub-project to do the following:
 
-+ <a href="#Ask Questions"> Ask Questions</a>
++ <a href="#Ask Questions Using Issue Tracker"> Ask Questions</a>
 
-+ <a href="#Report Bugs"> Report Bugs</a>
++ <a href="#Report Bugs Using Issue Tracker"> Report Bugs</a>
 
-+ <a href="#Propose Enhancements"> Propose Enhancements</a>
++ <a href="#Propose Enhancements Using Issue Tracker"> Propose Enhancements</a>
 
 
 ###<a name="Asking Questions Using Issue Tracker"></a> Asking Questions Using Issue Tracker
