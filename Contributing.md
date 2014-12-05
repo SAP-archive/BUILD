@@ -8,9 +8,9 @@ Want to get coding straight away? No problem because we want you to get going as
 
 You might already know exactly what you do, but if not, you might consider contributing in one or all of the following ways: 
 
-+ **Contribute Bug Reports** - you can contribute by simply reporting bugs you encountered when using Project Norman. For more information, see <a href="#How Do I Report Bugs?">   How Do I Report Bugs?</a>.
++ **Contribute Bug Reports** - you can contribute by simply reporting bugs you encountered when using Project Norman. For more information, see <a href="#Reporting Bugs"> Reporting Bugs</a>.
 
-+ **Fix Bug Reports Fixes**  -  you can contribute by fixing bugs. For more information, see <a href="#How Do I Fix Bugs?">   How Do I Fix Bugs?</a>.
++ **Contribute Bug Fixes**  -  you can contribute by fixing bugs. Simply browse the <a href="Useful Links"> </a>Issue Tracker for the relevant sub-project, and identify a bug you want to fix. Before you begin, make sure that it is reproducible in the latest version of the sub-project, and has not already been fixed. For instructions on how to submit a pull request for your bug fix, please review <a href="#Changing Code and Submitting Your Changes">   Changing Code and Submitting Your Changes</a>.
 
 + **Propose and Build New Features, Enhancements, and Optimizations** - you can contribute new features or enhancments, or contribute to already scheduled new features. For information on proposing new features or enhancments, see <a href="#Propose and Build New Features, Enhancements, and Optimizations">    Propose and Build New Features, Enhancements, and Optimizations</a>.
 
