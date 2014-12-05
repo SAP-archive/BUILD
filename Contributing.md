@@ -10,9 +10,9 @@ You might already know exactly what you do, but if not, you might consider contr
 
 + **Contribute Bug Reports** - you can contribute by simply reporting bugs you encountered when using Project Norman. When you report a but, a code reviewer/committer on the core development team reviews it it and either confirm it as a real bug, closes it if it is not an bug, or ask for more details. Approved bugs are either assigned to a committer in GitHub to fix or added to the backlog for future resolution. All bugs remain open until they are fixed. A bug that is about a real bug is closed as soon as the fix is committed. The closing comment explains which version(s) contain the fix. For more information on reporting bugs using the Issue Tracker of the relevant sub-project, see <a href="#Using The Issue Tracker"> Using The Issue Tracker</a>.
 
-+ **Contribute Bug Fixes**  -  you can contribute by fixing bugs. Simply browse the <a href="Useful Links"> </a>Issue Tracker for the relevant sub-project, and identify a bug with the label <b><i>Please Contribute</i></b> you want to fix. Before you begin, make sure that it is reproducible in the latest version of the sub-project, and has not already been fixed. For instructions on how to submit a pull request to include your bug fix in the latest version of the relevant sub-project, please review <a href="#Changing Code and Submitting Your Changes">   Changing Code and Submitting Your Changes</a>. 
++ **Contribute Bug Fixes**  -  you can contribute by fixing bugs. Simply browse the <a href="Useful Links"> </a>Issue Tracker for the relevant sub-project, and identify a bug with the label <code>Please Contribute</code> you want to fix. Before you begin, make sure that it is reproducible in the latest version of the sub-project, and has not already been fixed. For instructions on how to submit a pull request to include your bug fix in the latest version of the relevant sub-project, please review <a href="#Changing Code and Submitting Your Changes">   Changing Code and Submitting Your Changes</a>. 
 
-+ **Contribute Enhancements and Optimizations** - you can contribute new features or enhancments, or contribute to already scheduled new features (with the label <b><i>Please Contribute</i></b> in the sub-project Issue Tracker. Project Norman welcomes optimizations, new features and enhancments to existing features. However, we do not accept all feature requests. Therefore, to ensure that you are spending your time wisely,  prior to coding your proposed enhancments we request that propose and disuss new features to core project developer first by creating an Issue labelled <i>Feature Enhancement</i> in the relevant sub-project Issue Tracker. For more information on prosing new features using the Issue Tracker of the relevant sub-project, see <a href="#Using The Issue Tracker"> Using The Issue Tracker</a>.
++ **Contribute Enhancements and Optimizations** - you can contribute new features or enhancments, or contribute to already scheduled new features (with the label <code>Please Contribute</code> in the sub-project Issue Tracker. Project Norman welcomes optimizations, new features and enhancments to existing features. However, we do not accept all feature requests. Therefore, to ensure that you are spending your time wisely,  prior to coding your proposed enhancments we request that propose and disuss new features to core project developer first by creating an Issue labelled <code>Feature Enhancement</code> in the relevant sub-project Issue Tracker. For more information on prosing new features using the Issue Tracker of the relevant sub-project, see <a href="#Using The Issue Tracker"> Using The Issue Tracker</a>.
 
     When a core developer responds, discuss the proposed enhancement with them. Once this discussion yields a shared consensus,     you can confidently proceed and create the code. Furthermore, the developer might have some valuable hints and tips that        save you a lot of time of and effort.However, before you do any work beyond conceptual, we recommend you post an Issue with     the label User Story on the Issue Tracker. When a core developer contacts you, discuss the proposed enhancement with them.
 
@@ -38,7 +38,7 @@ Please review our our [Communications Guidelines](https://github.wdf.sap.corp/No
 
 1. Click the <b>New Issue</b> button in the Issue Tracker of the relevant <a href="#Useful Links"></a>sub-project.
 
-2. Label the issue as a <i>Question</i>.
+2. Label the issue as a <code>Question</code>.
 
 3. Ensure the summary reflects the essence of your question, to enable community members to identify if it is releveant to them.
 
@@ -56,7 +56,7 @@ Please review our our [Communications Guidelines](https://github.wdf.sap.corp/No
 
 2. To report a bug, click the <i>New Issue</i> button in the Issue Tracker of the relevant <a href="#Useful Links"></a>sub-project.
 
-3. Label the issue as a <i>Bug</i>. 
+3. Label the issue as a <code>Bug</code>. 
 
 3. We prioritize bugs reported as follows:
  * A good summary is provided.
