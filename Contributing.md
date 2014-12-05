@@ -10,7 +10,7 @@ You might already know exactly what you do, but if not, you might consider contr
 
 + **Contribute Bug Reports** - you can contribute by simply reporting bugs you encountered when using Project Norman. When a bug is reported, a committer will look at it and either confirm it as a real bug, close it if it is not an bug, or ask for more details. Approved bugs are either assigned to a committer in GitHub or added to the backlog for future resolution. All bugs remain open until they are fixed. A bug that is about a real bug is closed as soon as the fix is committed. The closing comment explains which version(s) contain the fix. For more information on reporting bugs using the Issue Tracker of the relevant sub-project, see <a href="#Using Issue Tracker"> Using Issue Tracker</a>.
 
-+ **Contribute Bug Fixes**  -  you can contribute by fixing bugs. Simply browse the <a href="Useful Links"> </a>Issue Tracker for the relevant sub-project, and identify a bug you want to fix. Before you begin, make sure that it is reproducible in the latest version of the sub-project, and has not already been fixed. For instructions on how to submit a pull request for your bug fix, please review <a href="#Changing Code and Submitting Your Changes">   Changing Code and Submitting Your Changes</a>.
++ **Contribute Bug Fixes**  -  you can contribute by fixing bugs. Simply browse the <a href="Useful Links"> </a>Issue Tracker for the relevant sub-project, and identify a bug you want to fix. Before you begin, make sure that it is reproducible in the latest version of the sub-project, and has not already been fixed. For instructions on how to submit a pull request for your bug fix, please review <a href="#Changing Code and Submitting Your Changes">   Changing Code and Submitting Your Changes</a>. You submit changes to Project Norman sub-projects, such as bug fixes and new or improved features, using pull requests to the relevant sub-project repository.  For guidelines on create a pull request to include your changes into the Master branch of the relevant sub-project, please refer to <a href="#Changing Code and Submitting Your Changes"> Changing Code and Submitting Your Changes</a> section.
 
 + **Contribute Enhancements and Optimizations** - you can contribute new features or enhancments, or contribute to already scheduled new features. Project Norman welcomes optimizations, new features and enhancments to existing features. However, we do not accept all pull requests, and those we accept have to meet specific standards. Therefore, to ensure that you are spending your time wisely,  prior to coding your proposed enhancments we recommend you propose and disuss new features to core project developer first by creating an Issue labelled <b>Feature Enhancement</b> in the relevant sub-project Issue Tracker. For more information on prosing new features using the Issue Tracker of the relevant sub-project, see <a href="#Using Issue Tracker"> Using Issue Tracker</a>.
 
@@ -25,7 +25,7 @@ You might already know exactly what you do, but if not, you might consider contr
 
 ##<a name="Using The Issue Tracker"></a> Using Issue Tracker
 
-Please review our our [Communications Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Communication%20Guidelines.md) document before posting on the Issue Tracker. You can use the Issee Tracker of the relevant sub-project to do the following:
+Please review our our [Communications Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Communication%20Guidelines.md) document before posting on the Issue Tracker. You can use the Issue Tracker of the relevant sub-project to do the following:
 
 + <a href="#Ask Questions Using Issue Tracker"> Ask Questions</a>
 
@@ -36,17 +36,27 @@ Please review our our [Communications Guidelines](https://github.wdf.sap.corp/No
 
 ###<a name="Ask Questions Using Issue Tracker"></a> Asking Questions Using Issue Tracker
 
+1. Click the <b>New Issue</b> button in the Issue Tracker of the relevant <a href="#Useful Links"></a>sub-project.
+
+2. Label the issue as a <b>Question</b>.
+
+3. Ensure the summary reflects the essence of your question, to enable community members to identify if it is releveant to them.
+
+   Once an Issue has been created, you can click comment to add further comments or respond.
+
 
 ###<a name="Report Bugs Using Issue Tracker"></a> Report Bugs Using Issue Tracker
 
-1. Bugs can be reported using the GitHub Issue Tracker for each sub-project.  In summary, to be valid a bug must be the following:
+1. Before you report a bug, ensure that it is: 
  * A real, current bug
  * Not a duplicate
  * Reproducible
 
-2. To report a bug, you simply open the Issue Tracker in the sub-project, and click the <b>New Issue</b> button. For links to each sub-projects, click <a href="#Useful Links"></a>here.
+2. To report a bug, click the <b>New Issue</b> button in the Issue Tracker of the relevant <a href="#Useful Links"></a>sub-project.
 
-3. In summary, we prioritize bugs reported as following:
+3. Label the issue as a <b>Bug</b>. 
+
+3. We prioritize bugs reported as follows:
  * A good summary is provided
  * The bug is well-documented
  * A minimal example (with screen shots if applicable)
@@ -56,25 +66,17 @@ Please review our our [Communications Guidelines](https://github.wdf.sap.corp/No
 
 5. Enter a summary is specific to the bug.
 
-To review the complete guidelines for reporting bugs, see [Guidelines for Bug Reports](https://github.wdf.sap.corp/Norman/Norman/blob/master/Guidelines%20for%20Bug%20Reports.md).
+   To review the complete guidelines for reporting bugs, see [Guidelines for Bug                       Reports](https://github.wdf.sap.corp/Norman/Norman/blob/master/Guidelines%20for%20Bug%20Reports.md).
+
+   Once an Issue has been created, you can click comment to add further comments or respond.
 
 
 ###<a name="Propose Enhancements Using Issue Tracker"></a> Proposing Enhancements Using Issue Tracker 
 
-1. New feature or enhacement proposals can be created using the GitHub Issue Tracker for each sub-project.  To propose a new feature or enhancement, you simply open the Issue Tracker in the sub-project, and click the <b>New Issue</b> button. For links to each sub-projects, click <a href="#Useful Links"></a>here.
-
-**Note**:  Please review our our [Communications Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Communication%20Guidelines.md) document before posting on the Issue Tracker.
+1. New feature or enhacement proposals can be created using the GitHub Issue Tracker for each sub-project.  
 
 2. Label the issue as a <b>Feature Enhancement</b>.
 
-3. Enter a title that summarizes the issue, so that at a glance the community can identify whether it may be relevant to them. For example, if proposing to create a feature that enables users to , use 'Display issue with Projects UI', rather than 'UI Issue'. In addition, if the issue is related to a particular backlog item, please include the backlog issue number in the title.
-
-4. Enter a summary is specific to the bug.
-
-
-You submit changes to Project Norman sub-projects, such as bug fixes and new or improved features, using pull requests to the relevant sub-project repository. 
-
-For guidelines on create a pull request to include your changes into the Master branch of the relevant sub-project, contributing a new feature or enhancement to existing features, please refer to <a href="#Changing Code and Submitting Your Changes"> Changing Code and Submitting Your Changes</a> section.
 
 ##<a name="Changing Code and Submitting Your Changes"></a>Changing Code and Submitting Your Changes
 
@@ -130,27 +132,3 @@ Use the following procedure to change code, whether it is a bug fix or a new fea
 | [Common] (https://github.wdf.sap.corp/Norman/Common)  | [Common sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/Common/issues)  |
 | [Projects - aka Project Management] (https://github.wdf.sap.corp/Norman/Projects)  | [Projects sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/Projects/issues)  |
 
-### Usage of Labels
-
-The following labels have been centrally defined in GitHub for Project Norman projects:
-+ 0 - Product Backlog
-+ 4 - Ready
-+ 5 - In Progress
-+ 8 - Done
-+ PBI
-+ Release V1
-+ Task
-+ Technical Backlog Item
-+ 7 - QA
-+ 9 - Accepted
-+ Bug
-+ Epic
-+ Feature Enhancment
-+ High
-+ Low
-+ Mediem
-+ Question
-+ Risk/Limitation
-+ User Story
-
-<i>If you create a new label, please submit it to the Project Norman Steering Committe for apporval.</i>
