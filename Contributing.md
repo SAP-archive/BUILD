@@ -63,7 +63,7 @@ To contact the core development team about and new feature or enhancments, do th
 
 **Note**:  Please review our our [Communications Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Communication%20Guidelines.md) document before posting on the Issue Tracker.
 
-3. Label the issue as a <b>Feature Enhancement</b>.
+2. Label the issue as a <b>Feature Enhancement</b>.
 
 3. Enter a title that summarizes the issue, so that at a glance the community can identify whether it may be relevant to them. For example, if proposing to create a feature that enables users to , use 'Display issue with Projects UI', rather than 'UI Issue'. In addition, if the issue is related to a particular backlog item, please include the backlog issue number in the title.
 
