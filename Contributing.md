@@ -229,7 +229,7 @@ Use the following procedure to change code and submit your changes:
 | Links to Sub-Projects  | Links to Sub-Project Issue Trackers |
 | ------------- | ------------- |
 | [Auth] (https://github.wdf.sap.corp/Norman/Auth)   | [Auth sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/Common/issues)  |
-| [Data Composer] (https://github.wdf.sap.corp/Norman/DataComposer)  | [Data Composer Issue Tracker] (https://github.wdf.sap.corp/Norman/DataComposer/Issues)  |
+| [DataComposer] (https://github.wdf.sap.corp/Norman/DataComposer)  | [DataComposer sub-project Issue Tracker] (https://github.wdf.sap.corp/Norman/DataComposer/Issues)  |
 | [Business Catalog Manager] (https://github.wdf.sap.corp/Norman/BusinessCatalogManager)  | [BusinessCatalogManager sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/BusinessCatalogManager/issues)  |
 | [Flow Composer] (https://github.wdf.sap.corp/Norman/FlowComposer)  | [Flow Composer Issue Tracker] (https://github.wdf.sap.corp/Norman/FlowComposer/Issues) |
 | [Sample Data Server] (https://github.wdf.sap.corp/Norman/SampleDataServer)  | [SampleDataServer sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/SampleDataServer/issues)  |
@@ -248,38 +248,3 @@ Use the following procedure to change code and submit your changes:
 | [Projects - aka Project Management] (https://github.wdf.sap.corp/Norman/Projects)  | [Projects sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/Projects/issues)  |
 
 
- [Projec Norman Issue Tracker](https://github.wdf.sap.corp/Norman/Norman/issues)
-
-+ [UIComposer sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/UIComposer/issues)
-
-+ [Projects sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/Projects/issues)
-
-+ [Common sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/Common/issues)
-
-+ [UserResearch sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/User Resarch/issues)
-
-+ [AppServer sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/AppServer/issues)
-
-+ [Auth sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/Common/issues)
-
-+ [Shell sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/Shell/issues)
-
-+ [SampleDataServer sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/SampleDataServer/issues)
-
-+ [DataModeler sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/DataModeler/issues)
-
-+ [SharedWorkspace sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/SharedWorkspace/issues)
-
-+ [UXRuleEngine sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/UXRuleEngine/issues)
-
-+ [BusinessCatalogManager sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/BusinessCatalogManager/issues)
-
-+ [Analytics sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/Analytics/issues)
-
-+ [Collaboration sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/Collaboration/issues)
-
-+ [Previewer sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/Previewer/issues)
-
-+ [UICatalogManager sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/UICatalogManager/issues)
-
-+ [UICanvas sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/UICanvas/issues)
