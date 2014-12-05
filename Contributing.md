@@ -4,7 +4,7 @@
 
 ##Introduction
 
-So you want to contribute to a Project Norman project? Good choice! There is lots of scope for contribution, and there's plenty to do! Want to get coding straight away? No problem because we want you to get going as fast as possible as well! To make the best use of your valuable time we recommend you take a few minutes to read this page before you dive in. 
+So you want to contribute to a Project Norman sub-project? Good choice! There is lots of scope for contribution, and there's plenty to do! Want to get coding straight away? No problem because we want you to get going as fast as possible as well! To make the best use of your valuable time we recommend you take a few minutes to read this page before you dive in. 
 
 You might already know exactly what you do, but if not, you might consider contributing in one or all of the following ways: 
 
