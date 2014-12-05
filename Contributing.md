@@ -11,7 +11,9 @@ Want to get coding straight away? No problem because we want you to get going as
 
 + <a href="#How Do I Report Bugs?">   How Do I Report Bugs?</a>
 
-+ <a href="#How Do I Make Changes to Product Norman Sub-Projects?"> How Do I Make Changes to Product Norman Sub-Projects?</a>
++ + <a href="#How Do I Propose New Features?" How Do I Propose New Features?
+
++ <a href="#How Do I Submit Repots?"> How Do I Make Changes to Product Norman Sub-Projects?</a>
 
 + <a href="#Useful Links">Useful Links
 
