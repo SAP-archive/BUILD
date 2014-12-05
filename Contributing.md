@@ -110,6 +110,8 @@ Use the following procedure to change code, whether it is a bug fix or a new fea
 
 **6.**   Perform the requisite pre-pull request testing procedures. Please include tests to prove your code works. 
 
+<i>A link to a comprehensive guide to testing new code prior to submitting your pull request will be inserted shortly.</i>
+
 **7.**  Push the changes on your fork,  and submit pull request for original repository. Fore more information, see [Using Pull Requests](https://help.github.com/articles/using-pull-requests/).
 
 **Note**:  For guidelines on commit messages, see the [Project Norman Style Guide](https://github.wdf.sap.corp/Norman/Norman/blob/master/Project%20Norman%20Style%20Guide.md).
