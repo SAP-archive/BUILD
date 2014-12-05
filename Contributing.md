@@ -37,7 +37,7 @@ Please review our our [Communications Guidelines](https://github.wdf.sap.corp/No
 ###<a name="Asking Questions Using Issue Tracker"></a> Asking Questions Using Issue Tracker
 
 
-###<a name="Proposing Enhancments Using Issue Tracker"></a> Proposing Enhancments Using Issue Tracker
+###<a name="Reporting Bugs Using Issue Tracker"></a> Proposing Enhancments Using Issue Tracker
 
 1. Bugs can be reported using the GitHub Issue Tracker for each sub-project.  In summary, to be valid a bug must be the following:
  * A real, current bug
