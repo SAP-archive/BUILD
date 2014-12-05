@@ -71,43 +71,6 @@ Please review the guidelines below before submitting an bug.
 
 ### Guidelines for a bug reports
 
-**Project Norm Issue Tracker**
-
-+ [Projec Norman Issue Tracker](https://github.wdf.sap.corp/Norman/Norman/issues)
-
-+ [UIComposer sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/UIComposer/issues)
-
-+ [Projects sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/Projects/issues)
-
-+ [Common sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/Common/issues)
-
-+ [UserResearch sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/User Resarch/issues)
-
-+ [AppServer sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/AppServer/issues)
-
-+ [Auth sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/Common/issues)
-
-+ [Shell sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/Shell/issues)
-
-+ [SampleDataServer sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/SampleDataServer/issues)
-
-+ [DataModeler sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/DataModeler/issues)
-
-+ [SharedWorkspace sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/SharedWorkspace/issues)
-
-+ [UXRuleEngine sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/UXRuleEngine/issues)
-
-+ [BusinessCatalogManager sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/BusinessCatalogManager/issues)
-
-+ [Analytics sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/Analytics/issues)
-
-+ [Collaboration sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/Collaboration/issues)
-
-+ [Previewer sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/Previewer/issues)
-
-+ [UICatalogManager sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/UICatalogManager/issues)
-
-+ [UICanvas sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/UICanvas/issues)
 
 We appreciate all efforts to notify us if something goes wrong. However, we have limited capacity, we give priority to bugs well-reported bugs. Following the guidelines below will ensure that your bug gets the highest priority from community developers.
 
