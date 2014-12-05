@@ -32,7 +32,7 @@ You might already know exactly what you do, but if not, you might consider contr
 
 ###<a name="Help Other Users and Contributors"></a>Help Other Users and Contributors
 
-You can contribute valuably to one or more Project Norman sub-projects by helping others users who need support. 
+You can contribute valuably to one or more Project Norman sub-projects by helping others users who need support. You can check SAP Community Network (SCN) for support requests. 
 
 ###<a name="Contribute Bug Reports, Analyses, or Fixes"></a>Contribute Bug Reports, Analyses, or Fixes
 Check the Issue Tracker in the Project Norman sub-project repository you interested in contributing to. You might be able to provide further information, or a hint that helps other contributors understand the bug. This is a great way to get acquainted with the project. You might want to fix a bug. For more information, see <a href="#Fix Bugs">    Fix Bugs</a>.
