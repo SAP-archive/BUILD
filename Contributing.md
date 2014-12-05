@@ -37,7 +37,7 @@ Please review our our [Communications Guidelines](https://github.wdf.sap.corp/No
 ###<a name="Ask Questions Using Issue Tracker"></a> Asking Questions Using Issue Tracker
 
 
-###<a name="Report Bugs Using Issue Tracker"></a> Proposing Enhancments Using Issue Tracker
+###<a name="Report Bugs Using Issue Tracker"></a> Report Bugs Using Issue Tracker
 
 1. Bugs can be reported using the GitHub Issue Tracker for each sub-project.  In summary, to be valid a bug must be the following:
  * A real, current bug
@@ -59,7 +59,7 @@ Please review our our [Communications Guidelines](https://github.wdf.sap.corp/No
 To review the complete guidelines for reporting bugs, see [Guidelines for Bug Reports](https://github.wdf.sap.corp/Norman/Norman/blob/master/Guidelines%20for%20Bug%20Reports.md).
 
 
-###<a name="Propose Enhancments Using Issue Tracker"></a> Proposing Enhancments Using Issue Tracker 
+###<a name="Propose Enhancements Using Issue Tracker"></a> Proposing Enhancements Using Issue Tracker 
 
 1. New feature or enhacement proposals can be created using the GitHub Issue Tracker for each sub-project.  To propose a new feature or enhancement, you simply open the Issue Tracker in the sub-project, and click the <b>New Issue</b> button. For links to each sub-projects, click <a href="#Useful Links"></a>here.
 
