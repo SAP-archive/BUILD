@@ -27,6 +27,8 @@ To report a bug, do the following:
 
 2. Bugs can be reported using the GitHub Issue Tracker for each sub-project.  To report a bug, you simply open the Issue Tracker in the sub-project, and click the <b>New Issue</b> button. For links to each sub-projects, click <a href="#Useful Links"></a>here.
 
+**Note**:  Please review our our [Communications Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Communication%20Guidelines.md) document before posting on the Issue Tracker.
+
 3. Label the issue as a <b>Bug</b>.
 
 3. Enter a title that summarizes the issue, so that at a glance the community can identify whether it may be relevant to them. For example, if reporting that a feature on the Projects UI is displaying incorrectly, use 'Display issue with Projects UI', rather than 'UI Issue'. In addition, if the issue is related to a particular backlog item, please include the backlog issue number in the title.
@@ -56,11 +58,16 @@ A bug that is about a real bug is closed as soon as the fix is committed. The cl
 
 We welcome innovations and improvements to Project Norman,  optimizations, new features and enhancments to existing features. However, we do not accept all pull requests, and those we accept have to meet specific standards. Therefore, prior to coding changes, to ensure that you are spending your time wisely, we recommend you propose and disuss new features to core project developer first.
 
+When a core developer responds, discuss the proposed enhancement with them. Once this discussion yields a shared consensus, you can confidently proceed and create the code. Furthermore, the developer might have some valuable hints and tips that save you a lot of time of and effort.However, before you do any work beyond conceptual, we recommend you post an Issue with the label User Story on the Issue Tracker. When a core developer contacts you, discuss the proposed enhancement with them.
+
+If you don't know exactly what you'd like to contribution, why not see if there is something on the in the Issue Tracker back log you find interesting. If you see something, why not give it a go? 
 To contact the core development team about and new feature or enhancments, do the following:
 
-1. Prior to reporting the bug, please review the [Guidelines for Bug Reports](https://github.wdf.sap.corp/Norman/Norman/blob/master/Guidelines%20for%20Bug%20Reports.md).
+1. Prior to proposing your enhancement, .
 
 2. New feature or enhacement proposals can be created using the GitHub Issue Tracker for each sub-project.  To propose a new feature or enhancement, you simply open the Issue Tracker in the sub-project, and click the <b>New Issue</b> button. For links to each sub-projects, click <a href="#Useful Links"></a>here.
+
+**Note**:  Please review our our [Communications Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Communication%20Guidelines.md) document before posting on the Issue Tracker.
 
 3. Label the issue as a <b>Feature Enhancement</b>.
 
@@ -68,20 +75,10 @@ To contact the core development team about and new feature or enhancments, do th
 
 4. Enter a summary is specific to the bug.
 
-simply create an issue in the Issue Tracker of the releant sub-project. 
-
-When a core developer responds, discuss the proposed enhancement with them. Once this discussion yields a shared consensus, you can confidently proceed and create the code. Furthermore, the developer might have some valuable hints and tips that save you a lot of time of and effort.However, before you do any work beyond conceptual, we recommend you post an Issue with the label User Story on the Issue Tracker. When a core developer contacts you, discuss the proposed enhancement with them.
-
-If you don't know exactly what you'd like to contribution, why not see if there is something on the in the Issue Tracker back log you find interesting. If you see something, why not give it a go? 
-
-
-For guidelines on contributing a new feature or enhancement to existing features, please refer to <a href="#How Do I Make Changes to Product Norman Sub-Projects?">   How Do I Make Changes to Product Norman Sub-Projects?</a> section.
 
 You submit changes to Project Norman sub-projects, such as bug fixes and new or improved features, using pull requests to the relevant sub-project repository. 
 
-**Note**:  For more information on Project Norman mailing lists, see our [Communications Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Communication%20Guidelines.md).
-
-**Note**:  For more information on the roles of contributors, committers, reviews, and project steering committe, see the  [Community Roles](https://github.wdf.sap.corp/Norman/Norman/blob/master/Community Roles.md).
+For guidelines on create a pull request to include your changes into the Master branch of the relevant sub-project, contributing a new feature or enhancement to existing features, please refer to <a href="#Changing Code and Submitting Your Changes"> Changing Code and Submitting Your Changes</a> section.
 
 ###<a name="Changing Code and Submitting Your Changes"></a>Changing Code and Submitting Your Changes
 
