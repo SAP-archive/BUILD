@@ -22,10 +22,14 @@ You might already know exactly what you do, but if not, you might consider contr
 
 ##<a name="Reporting Bugs"></a> Reporting Bugs
 
-To report a bug, do the following;
+To report a bug, do the following:
+
 1. Prior to reporting the bug, please review the guidelines <a href="#Guidelines for Bug Reports"> Guidelines for Bug Reports</a>.
+ 
 2. Add an issue in the Issue Tracker of the relevant Norman sub-project. For links to each sub-projects, click <a href="#Useful Links"></a>here.
+
 3. Label Issue as Bug.
+
 "Add Description and Details according to the Contribution Guidelines
 "
 If possible reference the Bug to the relevant Backlog Item using issue # 
@@ -60,19 +64,20 @@ Please conform you bug report to the following:
    * requests for help in achieving a task in Project Norman. Please use a support forum like stackoverflow to request help.
    * feature requests. Features requests are removed from the project Issue Tracker automatically. For information on proposing new features or enhancments, see the [Contribution](https://github.wdf.sap.corp/Norman/Norman/blob/dev/Contribution.md) document.
  2. **No duplicates**: please search the Issue Tracker and make sure you bug has been reported previously.
- 3. **Good summary**: please ensure the summary is specific to the bug.
- 4. **Current bug**: the bug can be reproduced in the most current version. Please state the tested version!
- 5. **Reproducible bug**: Please provide steps to reproduce the error, including:
+ 3. **Title**: please make sure the title reflects the issue, so that at a glance the community can identify whether it may be relevant to them. For example, if reporting that a feature on the Projects UI is displaying incorrectly, use 'Display issue with Projects UI', rather than 'UI Issue'. In addition, 
+ 4. **Good summary**: please ensure the summary is specific to the bug.
+ 5. **Current bug**: the bug can be reproduced in the most current version. Please state the tested version!
+ 6. **Reproducible bug**: Please provide steps to reproduce the error, including:
    * a URL to access the example
    * any required user/password information. However, please ensure you don't reveal any proprietary security credentials.
    * detailed and complete step-by-step instructions to reproduce the bug
- 6. **Precise description**:
+ 7. **Precise description**:
    * precisely state the expected and the actual behavior
    * give information about the used browser/device and its version, if possible also the behavior in other browsers/devices
    * if the bug is appears on a UI, please attach a screenshot with callouts describing the problem.
    * generally give as much additional information as possible. (But find the right balance: don not invest hours for a very obvious and easy to solve bug. When in doubt, give more information.)
- 7. **Minimal example**: it is highly encouraged to provide a minimal example to reproduce.
- 8. **Only one bug per report**: open different tickets for different bugs
+ 8. **Minimal example**: it is highly encouraged to provide a minimal example to reproduce.
+ 9. **Only one bug per report**: open different tickets for different bugs
 
 
 You are encouraged to use [this template](https://github.wdf.sap.corp/Norman/Norman/blob/master/bug_report_template.md).
