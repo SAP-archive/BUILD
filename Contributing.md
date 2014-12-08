@@ -106,7 +106,7 @@ Use the following procedure to change code, whether it is a bug fix or a new fea
 <li>Please do not submit more than one feature or bug fix per pull request.</li>
 <li>For consistency, and to enhance the chances that your contribution will be passed for review without corrections required,   ensure that your code conforms to our current approach.</li>
 
-    <b>Note</b>: For more information, see the [Project Norman Style Guide](https://github.wdf.sap.corp/Norman/Norman/wiki/Project-Norman-Style-Guide).
+**Note**:  For more inforamtion, see the [Project Norman Style Guide](https://github.wdf.sap.corp/Norman/Norman/wiki/Project-Norman-Style-Guide).
 
 <li>Be sure your author field in Git is filled out correctly, including full name and email address. This enables us to credit you for your contribution.</li>
 </ul>
