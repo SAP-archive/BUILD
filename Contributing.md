@@ -92,7 +92,7 @@ Use the following procedure to change code, whether it is a bug fix or a new fea
 
 **1.**   Review the [Apache License](https://github.wdf.sap.corp/Norman/Norman/wiki/License) which outlines both your and the Project Norman Open Source Community's legal rights regarding your contribution.
 
-**2.**  Download, read, sign, and send us our [Individual Contribution License Agreement] (https://github.wdf.sap.corp/Norman/Norman/blob/master/docs/SAP%20License%20Agreements/SAP%2BIndividual%2BContributor%2BLicense%2BAgreement.pdf) if you want to submit code as an individual. Alternatively, if you want to submit code on behalf of your employer, a company representative authorized to do so needs to download, fill, and print the [Corporate Contributor License Agreement] (https://github.wdf.sap.corp/Norman/Drive/blob/master/docs/SAP%20Corporate%20Contributor%20License%20Agreement.pdf) form.  
+**2.**  Download, read, sign, and send us our [Individual Contribution License Agreement](https://github.wdf.sap.corp/Norman/Norman/blob/master/docs/SAP%20License%20Agreements/SAP%2BIndividual%2BContributor%2BLicense%2BAgreement.pdf) if you want to submit code as an individual. Alternatively, if you want to submit code on behalf of your employer, a company representative authorized to do so needs to download, fill, and print the [Corporate Contributor License Agreement] https://github.wdf.sap.corp/Norman/Norman/blob/master/docs/SAP%20License%20Agreements/SAP%2BCorporate%2BContributor%2BLicense%2BAgreement.pdf) form.  
 
 **3.**   Fork the sub-project repo. For more information, see [Fork a Repo](https://help.github.com/articles/fork-a-repo/).
 
