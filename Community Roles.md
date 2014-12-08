@@ -11,9 +11,9 @@ in the Project Norman open source community. It contains the following sections:
 
 | Project Name | @Reviewers | @Committer | @Project Lead | @Requirements Lead | @Technical Lead |
 | ------------- | ------------- | ------------- |------------- |------------- |------------- |
-| [Auth] (https://github.wdf.sap.corp/Norman/Auth) |  |  |  |  |  | 
+| [Auth] (https://github.wdf.sap.corp/Norman/Auth) |  |  | Mark McSherry |  |  | 
 | [Data Composer] (https://github.wdf.sap.corp/Norman/DataComposer) |  | |  |  | 
-| [Business Catalog Manager] (https://github.wdf.sap.corp/Norman/BusinessCatalogManager) |  | |  |  | 
+| [Business Catalog Manager] (https://github.wdf.sap.corp/Norman/BusinessCatalogManager) |  | | Jean-Luc Schmit |  | 
 | [Flow Composer] (https://github.wdf.sap.corp/Norman/FlowComposer) |  | |  |  | 
 | [Sample Data Server] (https://github.wdf.sap.corp/Norman/SampleDataServer) |  | |  |  | 
 | [UX Rule Engine] (https://github.wdf.sap.corp/Norman/UXRuleEngine ) |  | |  |  | 
