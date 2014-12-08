@@ -11,10 +11,10 @@
   },
   "main": "server/app.js",
   "dependencies": {
-    "norman-auth-client": "*",
-    "norman-auth-server": "*",
     "norman-common-client": "*",
     "norman-common-server": "*",
+    "norman-auth-client": "*",
+    "norman-auth-server": "*",
     "norman-projects-client": "*",
     "norman-projects-server": "*",
     "norman-shell-client": "*",

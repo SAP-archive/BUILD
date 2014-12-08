@@ -2,34 +2,33 @@
 module.exports = {
 
     html: {
-        files: [
-            'client/**/*.html'
-        ],
+        files: [ 'client/**/*.html' ],
         tasks: ['copy:dev']
-    },
-    js: {
-        files: [
-            'client/*.js',
-            '!client/**/*.{spec,mock}/js',
-
-            'node_modules/norman*/**/*.js',
-            '!node_modules/norman*/node_modules/**/*.js',
-            '!node_modules/norman*/**/*.{spec,mock}.js'
-        ],
-        tasks: [
-            'browserify',
-            'ngAnnotate'
-        ]
     },
 
     less: {
         files: [
             'client/**/*.less',
-
             'node_modules/norman*/**/*.less',
             '!node_modules/norman*/node_modules/**/*.less'
         ],
         tasks: ['less']
+    },
+
+    js: {
+        files: [
+            'client/**/*.js',
+            '!client/**/*.{spec,mock}.js',
+            '!client/node_modules/**/*.js',
+            'node_modules/norman*/**/*.js',
+            '!node_modules/norman*/node_modules/**/*.js',
+            '!node_modules/norman*/**/*.{spec,mock}.js'
+        ],
+        tasks: [
+            'browserify:dev',
+            'exorcise',
+            'ngAnnotate'
+        ]
     },
 
     testsClient: {

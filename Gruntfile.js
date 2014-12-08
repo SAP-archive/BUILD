@@ -50,6 +50,9 @@ module.exports = function (grunt) {
         // wrap node modules for browser
         browserify: require('./grunt-conf/browserify.js'),
 
+        // externalize source maps from bundle.js
+        exorcise: { bundle: { files: { 'dev/assets/bundle.js.map': ['dev/assets/bundle.js'] }}},
+
         // Test settings
         karma: require('./grunt-conf/karma.js'),
 
@@ -81,15 +84,13 @@ module.exports = function (grunt) {
                 'express:dev',
                 'node-inspector'
             ],
-
             dev : [
-                'build',
+                'build:dev',
                 'env:dev',
                 'express:dev',
                 'watch'
             ]
         };
-
         return grunt.task.run(tasks[target || 'dev']);
     });
 
@@ -105,30 +106,35 @@ module.exports = function (grunt) {
     });
 
 
-    grunt.registerTask('build', [
-        'clean:dev',
-        'less',
-        'copy:dev',
-        'browserify',
-        'ngAnnotate'
-    ]);
+    grunt.registerTask('build', function (target) {
+        var tasks = [
+            // 'jshint',
+            'clean:' + target,
+            'less',
+            'copy:dev',
+            'browserify',
+            'ngAnnotate'
+        ];
+        if (target === 'dev') {
+            tasks.push('exorcise');
+        }
+        else {
+            tasks.push('copy:dist');
+            tasks.push('cssmin');
+            tasks.push('uglify');
+        }
+        tasks.push('test:client');
+        tasks.push('test:server');
 
-    grunt.registerTask('dev', [
-        // 'jshint',
-        'build',
-        'test:client',
-        'test:server'
-    ]);
-
-    grunt.registerTask('dist', [
-        'clean:dist',
-        'dev',
-        'cssmin',
-        'uglify',
-        'copy:dist'
-    ]);
+        return grunt.task.run(tasks);
+    });
 
 
-    grunt.registerTask('default', [ 'build' ]);
+    // just run (app must be already built)
+    grunt.registerTask('start',   [ 'env:dev', 'express:dev', 'watch' ]);
+
+    grunt.registerTask('dist',    [ 'build:dist' ]);
+    grunt.registerTask('dev',     [ 'build:dev' ]);
+    grunt.registerTask('default', [ 'build:dev' ]);
 
 };

@@ -2,9 +2,12 @@
 module.exports = {
 
     dist: {
-        files: {
-            'dist/public/assets/style.css': 'dev/assets/*.css'
-        }
+        files: [{
+            expand: true,
+            cwd: 'dev/assets/',
+            src: ['*.css'],
+            dest: 'dist/public/assets/'
+        }]
     }
 
 };

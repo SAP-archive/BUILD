@@ -24,6 +24,19 @@ require('angular-ui-router');
 // Require optional modules
 require('./requires.js');
 
+
+
+angular.module('source-map-exception-handler', [])
+.config(function ($provide) {
+    $provide.decorator('$exceptionHandler', function ($delegate) {
+        return function (exception, cause) {
+            $delegate(exception, cause);
+            throw exception;
+        };
+    });
+});
+
+
 angular.module('norman', modules)
     .config(function ($urlRouterProvider, $locationProvider) {
         $urlRouterProvider.otherwise('/');

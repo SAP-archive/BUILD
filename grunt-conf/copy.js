@@ -24,7 +24,8 @@ module.exports = {
                     'index.html',
                     'welcome/*.html',
                     'assets/**/*',
-                    '*.{ico,txt}'
+                    '*.{ico,txt}',
+                    '!**/*.less'
                 ]
             },
             {
@@ -66,27 +67,30 @@ module.exports = {
 
     dist: {
         files: [
-            {
+            {   // CLIENT
                 expand: true,
                 dot: true,
                 cwd: 'dev',
                 dest: 'dist/public',
-                src: '**/*'
+                src: [
+                    '**/*',
+                    '!**/*.map'
+                ]
             },
-            {
+            {   // SERVER
                 expand: true,
                 dest: 'dist',
                 src: [
                     'server/**/*.js'
                 ]
             },
-            {
+            {   // Norman Server Modules
                 expand: true,
                 cwd: 'node_modules',
                 dest: 'dist/node_modules',
                 src: [ 'norman*server/**/*.*' ]
             },
-            {
+            {   // Other Dependencies (from norman-common-server)
                 expand: true,
                 cwd: 'node_modules',
                 dest: 'dist/node_modules',
