@@ -1,9 +1,11 @@
 'use strict';
-module.exports = function ($scope, $location, Auth) {
+module.exports = function ($scope, $rootScope, $location, Auth) {
     $scope.menu = [{
         'title': 'Home',
         'link': '/'
     }];
+
+    $rootScope.bodyClass = 'welcome';
 
     $scope.isCollapsed = true;
     $scope.isLoggedIn = Auth.isLoggedIn;
