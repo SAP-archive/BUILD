@@ -25,7 +25,7 @@ You might already know exactly what you do, but if not, you might consider contr
 
 ##<a name="Using The Issue Tracker"></a> Using Issue Tracker
 
-Please review our our [Communications Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Communication%20Guidelines.md) document before posting on the Issue Tracker. You can use the Issue Tracker of the relevant sub-project to do the following:
+Please review our our [Communications Guidelines](https://github.wdf.sap.corp/Norman/Norman/wiki/Communication-Guidelines) document before posting on the Issue Tracker. You can use the Issue Tracker of the relevant sub-project to do the following:
 
 + <a href="#Ask Questions Using Issue Tracker"> Ask Questions</a> - you can ask our core development team, or any contributors viewing issues in the Issue Tracker, question regarding anything and everything in Project Norman. 
 
@@ -62,7 +62,7 @@ Please review our our [Communications Guidelines](https://github.wdf.sap.corp/No
  * A good summary is provided.
  * The bug is well-documented.
  * A minimal example (with screen shots if applicable) is provided.
- * The [recommended bug template](https://github.wdf.sap.corp/Norman/Norman/blob/master/bug_report_template.md) is used.
+ * The [recommended bug template](https://github.wdf.sap.corp/Norman/Norman/wiki/bug_report_template) is used.
 
 4. Enter a title that summarizes the issue, so that at a glance the community can identify whether it may be relevant to them. For example, if reporting that a feature on the Projects UI is displaying incorrectly, use 'Display issue with Projects UI', rather than 'UI Issue'. In addition, if the issue is related to a particular backlog item, please include the backlog issue number in the title.
 
@@ -70,7 +70,7 @@ Please review our our [Communications Guidelines](https://github.wdf.sap.corp/No
 
 6. Click the <b>Submit Issue</b> button.
 
-   To review the complete guidelines for reporting bugs, see [Guidelines for Bug Reports](https://github.wdf.sap.corp/Norman/Norman/blob/master/Guidelines%20for%20Bug%20Reports.md).
+   To review the complete guidelines for reporting bugs, see [Guidelines for Bug Reports](https://github.wdf.sap.corp/Norman/Norman/wiki/Guidelines-for-Bug-Reports).
 
    Once an issue has been created, you can click comment to add further comments or respond.
 
@@ -90,11 +90,11 @@ Please review our our [Communications Guidelines](https://github.wdf.sap.corp/No
 
 Use the following procedure to change code, whether it is a bug fix or a new feature, and submit your changes:
 
-**1.**   Review the [Apache License] (https://github.wdf.sap.corp/Norman/Drive/blob/master/License.txt) (which describes contributions) which outlines both your and the Project Norman Open Source Community's legal rights regarding your contribution.
+**1.**   Review the [Apache License](https://github.wdf.sap.corp/Norman/Norman/wiki/License) which outlines both your and the Project Norman Open Source Community's legal rights regarding your contribution.
 
 **2.**  Download, read, sign, and send us our [Individual Contribution License Agreement] (https://github.wdf.sap.corp/Norman/Drive/blob/master/docs/SAP%20Individual%20Contributor%20License%20Agreement.pdf) if you want to submit code as an individual. Alternatively, if you want to submit code on behalf of your employer, a company representative authorized to do so needs to download, fill, and print the [Corporate Contributor License Agreement] (https://github.wdf.sap.corp/Norman/Drive/blob/master/docs/SAP%20Corporate%20Contributor%20License%20Agreement.pdf) form.  
 
-**3.**   Fork the sub-project repo. For more information, see [Fork a Repo] (https://help.github.com/articles/fork-a-repo/).
+**3.**   Fork the sub-project repo. For more information, see [Fork a Repo](https://help.github.com/articles/fork-a-repo/).
 
 **4.**   Install the required dependancies and tools. 
 
@@ -104,7 +104,7 @@ Use the following procedure to change code, whether it is a bug fix or a new fea
 <li>Base all your work off of the <b>master<b/> branch. </li>
 <li>Please name your branch to match the new feature of bug fix that you are submitting.</li>
 <li>Please do not submit more than one feature or bug fix per pull request.</li>
-<li>For consistency, and to enhance the chances that your contribution will be passed for review without corrections required, please read the <a href="https://github.wdf.sap.corp/Norman/Norman/blob/master/Project%20Norman%20Style%20Guide.md">Project Norman Style Guide</a> to ensure that your code conforms to our current approach.</li>
+<li>For consistency, and to enhance the chances that your contribution will be passed for review without corrections required, please read the [Project Norman Style Guide](https://github.wdf.sap.corp/Norman/Norman/wiki/Project-Norman-Style-Guide) to ensure that your code conforms to our current approach.</li>
 <li>Be sure your author field in Git is filled out correctly, including full name and email address. This enables us to credit you for your contribution.</li>
 </ul>
 
@@ -114,10 +114,10 @@ Use the following procedure to change code, whether it is a bug fix or a new fea
 
 **7.**  Push the changes on your fork,  and submit pull request for original repository. Fore more information, see [Using Pull Requests](https://help.github.com/articles/using-pull-requests/).
 
-**Note**:  For guidelines on commit messages, see the [Project Norman Style Guide](https://github.wdf.sap.corp/Norman/Norman/blob/master/Project%20Norman%20Style%20Guide.md).
+**Note**:  For guidelines on commit messages, see the [Project Norman Style Guide](https://github.wdf.sap.corp/Norman/Norman/wiki/Project-Norman-Style-Guide).
 
 
-**8.**   When you have submitted a pull request, a reviewer on the project team reviews your contribution to evaluate whether it can be committed to the master copy of the project, whether further discussion and development for further consideration, or whether it is not accepted as a contribution. It is generally expected that some communication is required with contributors after they have submitted a pull request, and quite rare that a contribution is accepted without qualification on the first attempt. To identify reviewers and committers for each sub-project, click [here](https://github.wdf.sap.corp/Norman/Norman/blob/master/Community%20Roles.md).
+**8.**   When you have submitted a pull request, a reviewer on the project team reviews your contribution to evaluate whether it can be committed to the master copy of the project, whether further discussion and development for further consideration, or whether it is not accepted as a contribution. It is generally expected that some communication is required with contributors after they have submitted a pull request, and quite rare that a contribution is accepted without qualification on the first attempt. To identify reviewers and committers for each sub-project, click [here](https://github.wdf.sap.corp/Norman/Norman/wiki/Community-Roles).
 
 ##<a name="Useful Links"></a>Useful Links
 
