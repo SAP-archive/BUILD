@@ -1,6 +1,3 @@
-/**
- * Created by i311181 on 11/25/14.
- */
 'use strict';
 module.exports = function ($scope, $location, Auth) {
     $scope.menu = [{
