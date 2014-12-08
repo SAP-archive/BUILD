@@ -47,12 +47,12 @@ module.exports = {
             },
 
 
-            // font-awesome
+            // font-awesome and roboto font
             {
                 expand: true,
                 flatten: true,
                 dest: 'dev/fonts',
-                src: [ 'node_modules/font-awesome/fonts/*.*' ]
+                src: [ 'node_modules/font-awesome/fonts/*.*', 'node_modules/norman-common-client/fonts/Roboto/*.*' ]
             },
             {
                 expand: true,
