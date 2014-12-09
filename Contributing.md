@@ -33,7 +33,7 @@ Please review our our [Communications Guidelines](https://github.wdf.sap.corp/No
 
 + <a href="#Propose Enhancements Using Issue Tracker"> Propose Enhancements</a> - you can propose enhancements, new features, and optimizations, or review and have conversations with other contributors about issues with either the <code>User Story</code> or <code>Please Contribute</code> labels.
 
-**Note**: You can highlight issues you create in the Issue Tracker for the attention of a specific person by adding # and the relevant GitHub user name / identifier to the title of the issue. GitHub usernames are displayed in parentheses in the table below. If you do not identify a specific user, your issue is assigned to the most appropriate member of the team. To identify team member of individual Norman sub-projects, click [here]().
+**Note**: You can highlight issues you create in the Issue Tracker for the attention of a specific person by adding # and the relevant GitHub user name / identifier to the title of the issue. GitHub usernames are displayed in parentheses in the table below. If you do not identify a specific user, your issue is assigned to the most appropriate member of the team. To identify team member of individual Norman sub-projects, click [here](https://github.wdf.sap.corp/Norman/Norman/blob/master/Community%20Roles.md).
 
 ###<a name="Ask Questions Using Issue Tracker"></a> Asking Questions Using Issue Tracker
 
