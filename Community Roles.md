@@ -30,7 +30,7 @@ The table below identifies key personnel in the core development teams for each 
 | [Shell] (https://github.wdf.sap.corp/Norman/Shell) |  | |  |  | |
 | [Analytics] (https://github.wdf.sap.corp/Norman/Analytics) |  | |  |  | 
 | [Common] (https://github.wdf.sap.corp/Norman/Common) |  | |  |  | 
-| [Projects - aka Project Management] (https://github.wdf.sap.corp/Norman/Projects) |  | Mark McSherry  ([#I056744](https://github.wdf.sap.corp/I056744)) |Mark Hill ([#I072326](https://github.wdf.sap.corp/I072326))| Austin Devine ([#I058153](https://github.wdf.sap.corp/I058153))|
+| [Projects - aka Project Management] (https://github.wdf.sap.corp/Norman/Projects) | Snr. Dev. (tbd) |Dublin Dev Team| Mark McSherry  ([#I056744](https://github.wdf.sap.corp/I056744)) |Mark Hill ([#I072326](https://github.wdf.sap.corp/I072326))| Austin Devine ([#I058153](https://github.wdf.sap.corp/I058153))|
 
 
 ##<a name="Who Contributes to Project Norman Projects?"></a>Who Contributes to Project Norman Projects?
