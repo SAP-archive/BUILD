@@ -30,7 +30,7 @@ The table below identifies key personnel in the core development teams for each 
 | [Shell] (https://github.wdf.sap.corp/Norman/Shell) |  | |  |  | 
 | [Analytics] (https://github.wdf.sap.corp/Norman/Analytics) |  | |  |  | 
 | [Common] (https://github.wdf.sap.corp/Norman/Common) |  | |  |  | 
-| [Projects - aka Project Management] (https://github.wdf.sap.corp/Norman/Projects) |  | |  |Mark Hill | |
+| [Projects - aka Project Management] (https://github.wdf.sap.corp/Norman/Projects) |  | |  |Mark Hill ([#I072326](https://github.wdf.sap.corp/I072326))| |
 
 
 ##<a name="Who Contributes to Project Norman Projects?"></a>Who Contributes to Project Norman Projects?
