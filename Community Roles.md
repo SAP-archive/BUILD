@@ -15,7 +15,7 @@ The table below identifies key personnel in the core development teams for each 
 
 | Project Name | @Reviewers | @Committer | @Project Lead | @Requirements Lead | @Technical Lead |
 | ------------- | ------------- | ------------- |------------- |------------- |------------- |
-| [Auth] (https://github.wdf.sap.corp/Norman/Auth) |  |  | Mark McSherry Jean-Luc Schmit ([#I056744](https://github.wdf.sap.corp/I056744))|  |  | 
+| [Auth] (https://github.wdf.sap.corp/Norman/Auth) |  |  | Mark McSherry  ([#I056744](https://github.wdf.sap.corp/I056744))|  |  | 
 | [Data Composer] (https://github.wdf.sap.corp/Norman/DataComposer) |  | |  |  | 
 | [Business Catalog Manager] (https://github.wdf.sap.corp/Norman/BusinessCatalogManager) |  | | Jean-Luc Schmit ([#I051501](https://github.wdf.sap.corp/I051501))|  | 
 | [Flow Composer] (https://github.wdf.sap.corp/Norman/FlowComposer) |  | |  |  | 
@@ -25,7 +25,7 @@ The table below identifies key personnel in the core development teams for each 
 | [Shared Workspace] (https://github.wdf.sap.corp/Norman/SharedWorkspace) |  | |  |  | 
 | [UI Catalog Manager] (https://github.wdf.sap.corp/Norman/UICatalogManager) |  | |  |  | 
 | [Previewer] (https://github.wdf.sap.corp/Norman/Previewer) |  | |  |  | 
-| [User Research] (https://github.wdf.sap.corp/Norman/UserResearch) |  | | Caroline Welsh ([#I058807](https://github.wdf.sap.corp/I058007)) | |Austin Devine |
+| [User Research] (https://github.wdf.sap.corp/Norman/UserResearch) |  | | Caroline Welsh ([#I058807](https://github.wdf.sap.corp/I058007)) | |Austin Devine ([#I058153](https://github.wdf.sap.corp/I058153))|
 | [Collaboration] (https://github.wdf.sap.corp/Norman/Collaboration) |  | |  |  | 
 | [Shell] (https://github.wdf.sap.corp/Norman/Shell) |  | |  |  | 
 | [Analytics] (https://github.wdf.sap.corp/Norman/Analytics) |  | |  |  | 
