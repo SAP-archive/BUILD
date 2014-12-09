@@ -26,7 +26,7 @@ The table below identifies key personnel in the core development teams for each 
 | [UI Catalog Manager] (https://github.wdf.sap.corp/Norman/UICatalogManager) |  | |  |  | 
 | [Previewer] (https://github.wdf.sap.corp/Norman/Previewer) |  | |  |  | 
 | [User Research] (https://github.wdf.sap.corp/Norman/UserResearch) |  | | Caroline Welsh ([#I058807](https://github.wdf.sap.corp/I058007)) |Caroline Welsh ([#I058807](https://github.wdf.sap.corp/I058007)) |Austin Devine ([#I058153](https://github.wdf.sap.corp/I058153))|
-| [Collaboration] (https://github.wdf.sap.corp/Norman/Collaboration) |  | |([#I056744](https://github.wdf.sap.corp/I056744))  | Mark Hill ([#I072326](https://github.wdf.sap.corp/I072326))  |Luan O'Carroll([#I058153](https://github.wdf.sap.corp/I058153)) |
+| [Collaboration] (https://github.wdf.sap.corp/Norman/Collaboration) |  | |Mark McSherry ([#I056744](https://github.wdf.sap.corp/I056744))  | Mark Hill ([#I072326](https://github.wdf.sap.corp/I072326))  |Luan O'Carroll([#I058153](https://github.wdf.sap.corp/I058153)) |
 | [Shell] (https://github.wdf.sap.corp/Norman/Shell) |  | |  |  | |
 | [Analytics] (https://github.wdf.sap.corp/Norman/Analytics) |  | |  |  | 
 | [Common] (https://github.wdf.sap.corp/Norman/Common) |  | |  |  | 
