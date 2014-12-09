@@ -15,7 +15,7 @@ The table below identifies key personnel in the core development teams for each 
 
 | Project Name | @Reviewers | @Committer | @Project Lead | @Requirements Lead | @Technical Lead |
 | ------------- | ------------- | ------------- |------------- |------------- |------------- |
-| [Auth] (https://github.wdf.sap.corp/Norman/Auth) |  |Dublin Dev Team  | Mark McSherry  ([#I056744](https://github.wdf.sap.corp/I056744))|  | Luan O'Carroll([#I058153](https://github.wdf.sap.corp/I058153)) | 
+| [Auth] (https://github.wdf.sap.corp/Norman/Auth) | Snr. Dev. - tbd |Dublin Dev Team  | Mark McSherry  ([#I056744](https://github.wdf.sap.corp/I056744))|  | Luan O'Carroll([#I058153](https://github.wdf.sap.corp/I058153)) | 
 | [Data Composer] (https://github.wdf.sap.corp/Norman/DataComposer) |  | |  |  | 
 | [Business Catalog Manager] (https://github.wdf.sap.corp/Norman/BusinessCatalogManager) |  | | Jean-Luc Schmit ([#I051501](https://github.wdf.sap.corp/I051501))|  | 
 | [Flow Composer] (https://github.wdf.sap.corp/Norman/FlowComposer) |  | |  |  | 
