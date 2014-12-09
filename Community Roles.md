@@ -21,7 +21,7 @@ in the Project Norman open source community. It contains the following sections:
 | [Shared Workspace] (https://github.wdf.sap.corp/Norman/SharedWorkspace) |  | |  |  | 
 | [UI Catalog Manager] (https://github.wdf.sap.corp/Norman/UICatalogManager) |  | |  |  | 
 | [Previewer] (https://github.wdf.sap.corp/Norman/Previewer) |  | |  |  | 
-| [User Research] (https://github.wdf.sap.corp/Norman/UserResearch) |  | | Caroline Welsh |Austin Devine | 
+| [User Research] (https://github.wdf.sap.corp/Norman/UserResearch) |  | | Caroline Welsh | |Austin Devine |
 | [Collaboration] (https://github.wdf.sap.corp/Norman/Collaboration) |  | |  |  | 
 | [Shell] (https://github.wdf.sap.corp/Norman/Shell) |  | |  |  | 
 | [Analytics] (https://github.wdf.sap.corp/Norman/Analytics) |  | |  |  | 
