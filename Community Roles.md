@@ -26,7 +26,7 @@ in the Project Norman open source community. It contains the following sections:
 | [Shell] (https://github.wdf.sap.corp/Norman/Shell) |  | |  |  | 
 | [Analytics] (https://github.wdf.sap.corp/Norman/Analytics) |  | |  |  | 
 | [Common] (https://github.wdf.sap.corp/Norman/Common) |  | |  |  | 
-| [Projects - aka Project Management] (https://github.wdf.sap.corp/Norman/Projects) |  | |  |  | 
+| [Projects - aka Project Management] (https://github.wdf.sap.corp/Norman/Projects) |  | |  |Mark Hill | |
 
 
 ##<a name="Who Contributes to Project Norman Projects?"></a>Who Contributes to Project Norman Projects?
