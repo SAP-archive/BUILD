@@ -9,6 +9,10 @@ in the Project Norman open source community. It contains the following sections:
 
 ##<a name="Who are the Reviews and Committers of Project Norman Sub-Projects?"></a>Who are the Reviews and Committers of Project Norman Sub-Projects?
 
+The table below identifies key personnel in the core development teams for each Norman sub-project. 
+
+**Note**: You can highlight issues you create in the Issue Tracker for the attention of a specific person by adding # and the relevant GitHub user name / identifier to the title of the issue. GitHub usernames are displayed in parentheses in the table below. If you do not identify a specific user, your issue is assigned to the most appropriate member of the team. 
+
 | Project Name | @Reviewers | @Committer | @Project Lead | @Requirements Lead | @Technical Lead |
 | ------------- | ------------- | ------------- |------------- |------------- |------------- |
 | [Auth] (https://github.wdf.sap.corp/Norman/Auth) |  |  | Mark McSherry |  |  | 
