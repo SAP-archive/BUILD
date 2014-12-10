@@ -16,9 +16,9 @@ The table below identifies key personnel in the core development teams for each 
 | Project Name | @Reviewers | @Committer | @Project Lead | @Requirements Lead | @Technical Lead |
 | ------------- | ------------- | ------------- |------------- |------------- |------------- |
 | [Auth] (https://github.wdf.sap.corp/Norman/Auth) | Snr. Dev. - tbd |Dublin Dev Team  | Mark McSherry  ([#I056744](https://github.wdf.sap.corp/I056744))|  | Luan O'Carroll([#I057952](https://github.wdf.sap.corp/I057952)) | 
-| [Business Catalog Manager] (https://github.wdf.sap.corp/Norman/BusinessCatalogManager) |  | | Jean-Luc Schmit ([#I051501](https://github.wdf.sap.corp/I051501))|  | 
+| [Business Catalog Manager] (https://github.wdf.sap.corp/Norman/BusinessCatalogManager) |  | | Jean-Luc Schmit ([#I051501](https://github.wdf.sap.corp/I051501))| Jérôme | 
 | [Sample Data Server] (https://github.wdf.sap.corp/Norman/SampleDataServer) |  | |  |  | Ranjitha Balaraman ([I055549](https://github.wdf.sap.corp/I055549))  |
-| [UX Rule Engine] (https://github.wdf.sap.corp/Norman/UXRuleEngine ) |  | |  |  | 
+| [UX Rule Engine] (https://github.wdf.sap.corp/Norman/UXRuleEngine ) |  | |  | | Nicolas Lunet([#I053631](https://github.wdf.sap.corp/I053631)) | 
 | [UI Composer] (https://github.wdf.sap.corp/Norman/UIComposer) |  | |  |  | 
 | [Shared Workspace] (https://github.wdf.sap.corp/Norman/SharedWorkspace) |  | |  | | Sam | 
 | [UI Catalog Manager] (https://github.wdf.sap.corp/Norman/UICatalogManager) |  | |  | | Ranjitha Balaraman ([I055549](https://github.wdf.sap.corp/I055549)) | 
