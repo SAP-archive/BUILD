@@ -20,14 +20,14 @@ The table below identifies key personnel in the core development teams for each 
 | [Sample Data Server] (https://github.wdf.sap.corp/Norman/SampleDataServer) |  | |  |  | Ranjitha Balaraman ([I055549](https://github.wdf.sap.corp/I055549))  |
 | [UX Rule Engine] (https://github.wdf.sap.corp/Norman/UXRuleEngine ) |  | |  |  | 
 | [UI Composer] (https://github.wdf.sap.corp/Norman/UIComposer) |  | |  |  | 
-| [Shared Workspace] (https://github.wdf.sap.corp/Norman/SharedWorkspace) |  | |  | Sam | 
-| [UI Catalog Manager] (https://github.wdf.sap.corp/Norman/UICatalogManager) |  | |  | Ranjitha Balaraman ([I055549](https://github.wdf.sap.corp/I055549)) | 
-| [Previewer] (https://github.wdf.sap.corp/Norman/Previewer) |  | |  | Sam | 
+| [Shared Workspace] (https://github.wdf.sap.corp/Norman/SharedWorkspace) |  | |  | | Sam | 
+| [UI Catalog Manager] (https://github.wdf.sap.corp/Norman/UICatalogManager) |  | |  | | Ranjitha Balaraman ([I055549](https://github.wdf.sap.corp/I055549)) | 
+| [Previewer] (https://github.wdf.sap.corp/Norman/Previewer) |  | |  | | Sam | 
 | [User Research] (https://github.wdf.sap.corp/Norman/UserResearch) | Snr. Dev. (tbd) |Dublin Dev Team | Caroline Welsh ([#I058807](https://github.wdf.sap.corp/I058007)) |Caroline Welsh ([#I058807](https://github.wdf.sap.corp/I058007)) |Austin Devine ([#I058153](https://github.wdf.sap.corp/I058153))|
 | [Collaboration] (https://github.wdf.sap.corp/Norman/Collaboration) | Snr. Dev. (tbd) |Dublin Dev Team |Mark McSherry ([#I056744](https://github.wdf.sap.corp/I056744))  | Mark Hill ([#I072326](https://github.wdf.sap.corp/I072326))  |Luan O'Carroll([#I057952](https://github.wdf.sap.corp/I057952)) |
 | [Shell] (https://github.wdf.sap.corp/Norman/Shell) |  | |  |  | Luan O'Carroll([#I057952](https://github.wdf.sap.corp/I057952))|
-| [Analytics] (https://github.wdf.sap.corp/Norman/Analytics) |  | |  | Divyesh Jain (#I820335](https://github.wdf.sap.corp/I820335)) | 
-| [Common-Client] (https://github.wdf.sap.corp/Norman/Common) |  | |  | Luan O'Carroll([#I057952](https://github.wdf.sap.corp/I057952)),  Austin Devine ([#I058153](https://github.wdf.sap.corp/I058153)), Gilles Poirot ([#I051516](https://github.wdf.sap.corp/I051516)) | 
+| [Analytics] (https://github.wdf.sap.corp/Norman/Analytics) |  | |  | | Divyesh Jain (#I820335](https://github.wdf.sap.corp/I820335)) | 
+| [Common] (https://github.wdf.sap.corp/Norman/Common) |  | |  | | Luan O'Carroll([#I057952](https://github.wdf.sap.corp/I057952)),  Austin Devine ([#I058153](https://github.wdf.sap.corp/I058153)), Gilles Poirot ([#I051516](https://github.wdf.sap.corp/I051516)) | 
 | [Projects - aka Project Management] (https://github.wdf.sap.corp/Norman/Projects) | Snr. Dev. (tbd) |Dublin Dev Team| Mark McSherry  ([#I056744](https://github.wdf.sap.corp/I056744)) |Mark Hill ([#I072326](https://github.wdf.sap.corp/I072326))| Austin Devine ([#I058153](https://github.wdf.sap.corp/I058153))|
 
 
