@@ -25,7 +25,7 @@ require('angular-ui-router');
 require('./requires.js');
 
 
-
+// display angular errors using source-maps
 angular.module('source-map-exception-handler', [])
 .config(function ($provide) {
     $provide.decorator('$exceptionHandler', function ($delegate) {
@@ -41,5 +41,12 @@ angular.module('norman', modules)
     .config(function ($urlRouterProvider, $locationProvider) {
         $urlRouterProvider.otherwise('/');
         $locationProvider.html5Mode(true);
+    })
+    // add state name as a class to the body
+    .run(function ($rootScope, $state) {
+        $rootScope.$on('$stateChangeStart', function (ev, toState, toParams, fromState, fromParams) {
+            $rootScope.pageClass = 'page-' + toState.name;
+        });
     });
+
 
