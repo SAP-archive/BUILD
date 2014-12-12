@@ -107,6 +107,7 @@ module.exports = function (grunt) {
 
 
     grunt.registerTask('build', function (target) {
+        target = target || dev;
         var tasks = [
             // 'jshint',
             'clean:' + target,
