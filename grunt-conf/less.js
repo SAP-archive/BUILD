@@ -1,7 +1,7 @@
 'use strict';
 module.exports = {
     options: {
-        paths: [ 'client' ]
+        paths: ['client']
     },
     dev: {
         options: {
@@ -12,12 +12,13 @@ module.exports = {
         },
         files: {
             'dev/assets/style.css': [
-                'client/*.less',
-                'client/assets/*.less',
+                'node_modules/norman-common-client/styles/base.less',
                 'client/welcome/*.less',
                 'node_modules/norman-*/**/*.less',
+                '!node_modules/norman-common-client/styles/*.less',
                 '!node_modules/norman-*/node_modules/**/*.less'
             ]
         }
     }
+
 };

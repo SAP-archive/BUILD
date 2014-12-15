@@ -1,54 +1,55 @@
-<div layout="column" layout-fill>
-    <div class="main" ng-controller="WelcomeCtrl">
+<div class="welcome-wrapper animated fadeIn" layout="column" layout-fill ng-controller="WelcomeCtrl">
+    <div class="welcome-main-wrapper">
         <header>
-            <div class="wrap">
+            <div class="welcome-content-wrapper">
                 <div class="header-wrapper">
-                    <a class="nav-brand" href="index.html"><img class="homecover-logo" src="assets/norman-logo.png">
-                    </a>
+                    <a class="nav-brand" href="index.html"><img class="homecover-logo" src="assets/norman-logo.png"></a>
                     <a ng-hide="isLoggedIn()" ng-class="{active: isActive('/login')}" href="/login" class="btn-homecover btn-right">LOG IN</a>
                     <a ng-hide="isLoggedIn()" ng-class="{active: isActive('/signup')}" href="/signup" class="btn-homecover btn-right">SIGN UP</a>
                     <a ng-show="isLoggedIn()" ng-class="{active: isActive('/logout')}" href="" ng-click="logout()" class="btn-homecover btn-right">LOG OUT</a>
                 </div>
             </div>
         </header>
-        <div class="spanning">
+
+        <div class="welcome-content-row">
             <div class="comments clearfix">
-                <div class="wrap">
-                    <div class="tab">
-                        <div class="box visible middle-text">
-                            <h1>Project Norman</h1>
-                            <h2>Create prototypes in a blink of an eye</h2>
-                        </div>
-                    </div>
+                <div class="welcome-content-wrapper">
+                    <h1 class="middle-text-h1">Project Norman</h1>
+                    <h2 class="middle-text-h2">Create prototypes in a blink of an eye</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="welcome-content-row">
+            <div class="bubble-list clearfix">
+                <div class="welcome-content-wrapper">
+                    <ul class="icon-list">
+                        <li><img src="assets/build.png"><span>Plan</span></li>
+                        <li><img src="assets/build.png"><span>Build</span></li>
+                        <li><img src="assets/build.png"><span>Test</span></li>
+                        <li><img src="assets/build.png"><span>Share</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="welcome-content-row">
+            <div class="signup clearfix">
+                <div class="welcome-content-wrapper">
+                    <a href="/signup" class="btn-signup btn-center">SIGN UP, IT'S FREE</a>
+                    <p class="signup-already">Already got an account? <a href="/login" class="link">Log in</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="welcome-content-row">
+            <div class="footer clearfix">
+                <div class="welcome-content-wrapper">
+                    <p class="footer-logo">&copy; Copyright SAP Ltd. 2015</p>
+                    <p class="footer-contacts"><a href="" class="link">Contacts</a></p>
+                    <p class="footer-github"><a href="https://github.wdf.sap.corp/Norman" class="link">View project on GitHub</a></p>
                 </div>
             </div>
         </div>
     </div>
-    <footer>
-        <div class="wrap">
-            <div class="clearfix">
-                <ul class="icon-list">
-                    <li><img src="assets/build.png"><span>Plan</span>
-                    </li>
-                    <li><img src="assets/build.png"><span>Build</span>
-                    </li>
-                    <li><img src="assets/build.png"><span>Test</span>
-                    </li>
-                    <li><img src="assets/build.png"><span>Share</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="signup clearfix">
-                <a href="/signup" class="btn-signup btn-center">SIGN UP, IT'S FREE</a>
-                <p class="signup-already">Already got an account? <a href="/login" class="link">Log in</a>.</p>
-            </div>
-            <div class="footer clearfix">
-                <p class="footer-logo">&copy; Copyright SAP Ltd. 2015</p>
-                <p class="footer-contacts"><a href="" class="link">Contacts</a>
-                </p>
-                <p class="footer-github"><a href="https://github.wdf.sap.corp/Norman" class="link">View project on GitHub</a>
-                </p>
-            </div>
-        </div>
-    </footer>
 </div>

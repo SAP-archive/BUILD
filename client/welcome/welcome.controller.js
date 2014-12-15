@@ -5,9 +5,6 @@ module.exports = function ($scope, $rootScope, $location, Auth) {
         'link': '/'
     }];
 
-    $rootScope.pageClass = 'welcome';
-
-    $scope.isCollapsed = true;
     $scope.isLoggedIn = Auth.isLoggedIn;
     $scope.isAdmin = Auth.isAdmin;
     $scope.getCurrentUser = Auth.getCurrentUser;
