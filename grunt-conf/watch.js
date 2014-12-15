@@ -15,7 +15,7 @@ module.exports = {
         tasks: ['less']
     },
 
-    js: {
+    jsClient: {
         files: [
             'client/**/*.js',
             '!client/**/*.{spec,mock}.js',
@@ -29,6 +29,14 @@ module.exports = {
             'exorcise',
             'ngAnnotate'
         ]
+    },
+    jsServer: {
+        files: [
+            'server/**/*.js',
+            '!server/**/*.{spec,mock}.js',
+            '!server/node_modules/**/*.js'
+        ],
+        tasks: []
     },
 
     testsClient: {

@@ -30,38 +30,21 @@ module.exports = {
             },
             {
                 expand: true,
-                dest: 'dev',
-                src: [ 'node_modules/norman*/**/*.{html,png,gif,jpg,svg}' ]
+                cwd: 'node_modules/',
+                dest: 'dev/resources/',
+                src: [ 'norman*/**/*.{html,png,gif,jpg,svg}' ]
             },
 
 
-            // bootstrap css
-            {
-                expand: true,
-                flatten: true,
-                dest: 'dev/assets',
-                src: [ 'node_modules/bootstrap/dist/css/bootstrap.css' ]
-                // to copy .map file too; it's confusing in the dev-tools and not useful, as
-                // bootstrap css should not be changed only overwritten
-                // src: [ 'node_modules/bootstrap/dist/css/bootstrap.css*' ]
-            },
-
-
-            // font-awesome and roboto font
+            // roboto font
             {
                 expand: true,
                 flatten: true,
                 dest: 'dev/fonts',
-                src: [ 'node_modules/font-awesome/fonts/*.*', 'node_modules/norman-common-client/fonts/Roboto/*.*' ]
-            },
-            {
-                expand: true,
-                flatten: true,
-                dest: 'dev/assets',
-                src: [ 'node_modules/font-awesome/css/font-awesome.css' ]
+                src: [
+                    'node_modules/norman-common-client/fonts/Roboto/*.*'
+                ]
             }
-
-
         ]
     },
 
@@ -93,7 +76,7 @@ module.exports = {
             {   // Other Dependencies (from norman-common-server)
                 expand: true,
                 cwd: 'node_modules',
-                dest: 'dist/node_modules',
+                dest: 'dist/resources',
                 src: getServerModules()
             }
 

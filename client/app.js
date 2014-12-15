@@ -1,7 +1,6 @@
 'use strict';
 
 // Require dependencies after angular and before all the aother modules
-require('jquery');
 require('angular');
 
 var aModule = angular.module, modules = [], dependencies = [];
