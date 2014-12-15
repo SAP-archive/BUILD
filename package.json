@@ -1,6 +1,6 @@
 {
   "name": "norman-norman",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Norman",
   "repository": {
     "type:": "git",
@@ -23,9 +23,9 @@
     "norman-ui-composer-client": "*",
     "norman-ui-composer-server": "*"
   },
-    "devDependencies": {
-        "connect-livereload" : "*"
-    },
+  "devDependencies": {
+    "connect-livereload": "*"
+  },
   "scripts": {
     "test": "grunt test",
     "start": "node server/app.js"
