@@ -23,6 +23,9 @@
     "norman-ui-composer-client": "*",
     "norman-ui-composer-server": "*"
   },
+    "devDependencies": {
+        "connect-livereload" : "*"
+    },
   "scripts": {
     "test": "grunt test",
     "start": "node server/app.js"
