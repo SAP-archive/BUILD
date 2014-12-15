@@ -1,13 +1,10 @@
 @import '../node_modules/norman-common-client/styles/base';
-
 /* --------------------------------------------------- */
-/*                  welcome page                       */
+/* welcome page */
 /* --------------------------------------------------- */
 body.page-welcome {
     color: #fff;
     font: normal 14px 'roboto', sans-serif;
-    min-height: 800px;
-    background-repeat: no-repeat;
     background: rgba(44, 62, 80, 1);
     background: -moz-linear-gradient(-45deg, rgba(44, 62, 80, 1) 0%, rgba(141, 68, 173, 1) 100%);
     background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(44, 62, 80, 1)), color-stop(100%, rgba(141, 68, 173, 1)));
@@ -16,6 +13,11 @@ body.page-welcome {
     background: -ms-linear-gradient(-45deg, rgba(44, 62, 80, 1) 0%, rgba(141, 68, 173, 1) 100%);
     background: linear-gradient(135deg, rgba(44, 62, 80, 1) 0%, rgba(141, 68, 173, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c3e50', endColorstr='#8d44ad', GradientType=1 );
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    background-position: 0px 0px;
     .app {
         height: 100%;
     }
@@ -33,8 +35,9 @@ body.page-welcome {
         box-sizing: border-box;
     }
     header {
-        padding: 20px 0 200px 0;
-        background: url('../assets/header-bg.png') no-repeat 50% 50%;
+        height: 359px;
+        /* background: url('../assets/header-bg.png') no-repeat 50% 50%;
+        */
         -moz-background-size: cover;
         -webkit-background-size: cover;
         -o-background-size: cover;
@@ -46,6 +49,30 @@ body.page-welcome {
     .header-wrapper {
         padding: 20px 0 120px 0;
         max-width: 100%;
+        .video-container {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            max-height: 359px;
+        }
+        video {
+            position: absolute;
+            z-index: 0;
+        }
+        video.fillWidth {
+            min-width: 100%;
+            min-height: 365px;
+        }
+        .nav-brand {
+            width: 60px;
+            height: 60px;
+            float: left;
+            position: absolute;
+            top: 20px;
+        }
     }
     .homecover-logo {
         width: 60px;
