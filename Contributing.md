@@ -39,7 +39,7 @@ Please review our our [Communications Guidelines](https://github.wdf.sap.corp/No
 
 1. Click the <b>New Issue</b> button in the Issue Tracker of the relevant <a href="#Useful Links"></a>sub-project.
 
-2. Label the issue as a <code>Question</code>.
+2. Include the text **#Question** in the title of issue.
 
 3. Ensure the summary reflects the essence of your question, to enable community members to identify if it is releveant to them.
 
@@ -58,7 +58,7 @@ Please review our our [Communications Guidelines](https://github.wdf.sap.corp/No
 
 2. To report a bug, click the <i>New Issue</i> button in the Issue Tracker of the relevant <a href="#Useful Links"></a>sub-project.
 
-3. Label the issue as a <code>Bug</code>. 
+3. Include the text **#Bug** in the title of issue. 
 
 3. We prioritize bugs reported as follows:
  * A good summary is provided.
@@ -81,7 +81,7 @@ Please review our our [Communications Guidelines](https://github.wdf.sap.corp/No
 
 1. New feature or enhacement proposals can be created using the GitHub Issue Tracker for each sub-project.  
 
-2. Label the issue as a <code>Feature Enhancement</code>.
+2. Include the text **#Feature Enhancement** in the title of issue.
 
 3. Click the <b>Submit Issue</b> button.
 
