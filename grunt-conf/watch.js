@@ -25,6 +25,7 @@ module.exports = {
             '!node_modules/norman*/**/*.{spec,mock}.js'
         ],
         tasks: [
+            'eslint',
             'browserify:dev',
             'exorcise',
             'ngAnnotate'
@@ -45,7 +46,7 @@ module.exports = {
             '!client/node_modules/**/*.js'
         ],
         tasks: [
-            'jshint',
+            'eslint',
             'build',
             'test:client'
         ]

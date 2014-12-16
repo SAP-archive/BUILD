@@ -6,9 +6,12 @@ module.exports = {
     dev: {
         options: {
             compress: false,
-            sourceMap: true,
-            sourceMapFilename: 'dev/assets/style.css.map',
-            sourceMapURL: 'style.css.map'
+            // sourceMap: true,
+            // outputSourceFiles: false,
+            // paths: [ 'less' ],
+            // dumpLineNumbers: 'mediaquery'
+            // sourceMapFilename: 'dev/assets/style.css.map',
+            // sourceMapURL: 'style.css.map'
         },
         files: {
             'dev/assets/style.css': [

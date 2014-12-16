@@ -14,7 +14,7 @@ angular.module = function (name, dep) {
     return aModule(name, dep);
 };
 
-//require('angular-bootstrap');
+require('angular-bootstrap');
 require('angular-cookies');
 require('angular-resource');
 require('angular-sanitize');
@@ -42,8 +42,8 @@ angular.module('norman', modules)
         $locationProvider.html5Mode(true);
     })
     // add state name as a class to the body
-    .run(function ($rootScope, $state) {
-        $rootScope.$on('$stateChangeStart', function (ev, toState, toParams, fromState, fromParams) {
+    .run(function ($rootScope) {
+        $rootScope.$on('$stateChangeStart', function (ev, toState) {
             $rootScope.pageClass = 'page-' + toState.name;
         });
     });

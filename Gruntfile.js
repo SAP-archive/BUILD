@@ -26,7 +26,7 @@ module.exports = function (grunt) {
         },
 
         // Make sure code styles are up to par and there are no obvious mistakes
-        jshint: require('./grunt-conf/jshint.js'),
+        eslint: require('./grunt-conf/eslint.js'),
 
         // Empties folders to start fresh
         clean: require('./grunt-conf/clean.js'),
@@ -109,7 +109,7 @@ module.exports = function (grunt) {
     grunt.registerTask('build', function (target) {
         target = target || dev;
         var tasks = [
-            // 'jshint',
+            'eslint',
             'clean:' + target,
             'less',
             'copy:dev',
