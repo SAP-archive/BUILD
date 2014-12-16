@@ -1,4 +1,4 @@
-###Proposing and Contributing New UI Elements
+###Proposing and Contributing UI Elements
 
 As per our open source ethos, we welcome all contributions and proposals for new UI Elements for use in Project Norman.
 
