@@ -19,7 +19,8 @@ module.exports = {
                 'client/welcome/*.less',
                 'node_modules/norman-*/**/*.less',
                 '!node_modules/norman-common-client/styles/*.less',
-                '!node_modules/norman-*/node_modules/**/*.less'
+                '!node_modules/norman-*/node_modules/**/*.less',
+                '!node_modules/norman-openui5/**/*.less'
             ]
         }
     }

@@ -24,7 +24,8 @@
     "norman-data-modeler-server": "^0.2.0",
     "norman-ui-composer-client": "*",
     "norman-ui-composer-server": "*",
-    "norman-uicanvas-client": "*"
+    "norman-uicanvas-client": "*",
+    "norman-uicanvas-server": "*"
   },
   "devDependencies": {
       "grunt-concurrent": "^1.0.0",
