@@ -155,3 +155,4 @@ Use the following procedure to change code, whether it is a bug fix or a new fea
 + [Corporate Contributor License Agreement](https://github.wdf.sap.corp/Norman/Norman/blob/master/docs/SAP%20License%20Agreements/SAP%2BCorporate%2BContributor%2BLicense%2BAgreement.pdf) 
 + [Guidelines for Bug Reports](https://github.wdf.sap.corp/Norman/Norman/wiki/Guidelines-for-Bug-Reports)
 + [Community Guidelines](https://github.wdf.sap.corp/Norman/Norman/wiki/Community-Guidelines)
++ [Project Norman Blog](https://norman-blog.mo.sap.corp)
