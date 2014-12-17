@@ -14,15 +14,15 @@ var errorHandler = require('composable-middleware');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var cookieParser = require('cookie-parser');
-// var commonServer = require('norman-common-server');
+var commonServer = require('norman-common-server');
 
 // Setup DB
-// commonServer.db.connection.initialize(function (err) {
-//     if (err) {
-//         console.error('Error while initializing DB : ' + err);
-//         throw err;
-//     }
-// });
+commonServer.db.connection.initialize(function (err) {
+    if (err) {
+        console.error('Error while initializing DB : ' + err);
+        throw err;
+    }
+});
 
 
 // Setup server

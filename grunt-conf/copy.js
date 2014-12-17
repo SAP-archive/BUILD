@@ -25,7 +25,7 @@ module.exports = {
                 expand: true,
                 cwd: 'node_modules/',
                 dest: 'dev/resources/',
-                src: [ 'norman*/**/*.{html}' ]
+                src: [ 'norman*/**/*.html' ]
             }
         ]
     },
