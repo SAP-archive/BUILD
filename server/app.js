@@ -47,22 +47,22 @@ if (config.env === 'production') {
 }
 
 if (config.env === 'development' || config.env === 'test') {
-	app.use(require('connect-livereload')());
-	app.use(express.static(path.join(config.root, 'dev')));
-	// app.use(express.static(path.join(config.root, 'client')));
-	app.set('appPath', 'dev');
-	app.use(morgan('dev'));
-	app.use(errorHandler()); // Error handler - has to be last
+    app.use(require('connect-livereload')());
+    app.use(express.static(path.join(config.root, 'dev')));
+    // app.use(express.static(path.join(config.root, 'client')));
+    app.set('appPath', 'dev');
+    app.use(morgan('dev'));
+    app.use(errorHandler()); // Error handler - has to be last
 }
 
 // All undefined asset or api routes should return a 404
 /*app.route('/:url(api|auth|components|app|bower_components|assets)/*')
-.get(errors[404]);*/
+ .get(errors[404]);*/
 
 // All other routes should redirect to the index.html
 app.route('/*')
     .get(function (req, res) {
-        res.sendFile(app.get('appPath') + '/index.html', { root: config.root });
+        res.sendFile(app.get('appPath') + '/index.html', {root: config.root});
     });
 
 // Start server

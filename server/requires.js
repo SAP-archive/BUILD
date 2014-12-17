@@ -6,4 +6,5 @@ module.exports = function (app) {
     require('norman-auth-server')(app);
     require('norman-business-catalog-manager-server')(app);
     require('norman-ui-composer-server')(app);
+    require('norman-data-modeler-server')(app);
 };

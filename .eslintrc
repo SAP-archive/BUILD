@@ -14,7 +14,7 @@
         "by": true,
         "inject": true,
         "browser": true,
-        "element": true,
+        "element": true
     },
     "rules": {
         // http://eslint.org/docs/rules/
