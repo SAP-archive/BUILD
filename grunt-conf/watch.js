@@ -2,11 +2,13 @@
 module.exports = {
 
     html: {
-        files: [ 'client/**/*.html' ],
-        tasks: ['copy:dev']
+        options: { livereload: true },
+        files: ['client/**/*.html'],
+        tasks: ['newer:copy:html']
     },
 
     less: {
+        options: { livereload: true },
         files: [
             'client/**/*.less',
             'node_modules/norman*/**/*.less',
@@ -16,53 +18,28 @@ module.exports = {
     },
 
     jsClient: {
+        options: { livereload: true },
         files: [
             'client/**/*.js',
-            '!client/**/*.{spec,mock}.js',
-            '!client/node_modules/**/*.js',
             'node_modules/norman*/**/*.js',
-            '!node_modules/norman*/node_modules/**/*.js',
-            '!node_modules/norman*/**/*.{spec,mock}.js'
+            '!node_modules/norman*/node_modules/**/*.js'
         ],
         tasks: [
-            'eslint',
+            'newer:eslint',
             'browserify:dev',
             'exorcise',
-            'ngAnnotate'
-        ]
-    },
-    jsServer: {
-        files: [
-            'server/**/*.js',
-            '!server/**/*.{spec,mock}.js',
-            '!server/node_modules/**/*.js'
-        ],
-        tasks: []
-    },
-
-    testsClient: {
-        files: [
-            'client/**/*.{spec,mock}.js',
-            '!client/node_modules/**/*.js'
-        ],
-        tasks: [
-            'eslint',
-            'build',
+            'ngAnnotate',
             'test:client'
         ]
     },
 
-    testsServer: {
-        files: [
-            'server/**/*.{spec,mock}.js',
-            '!server/node_modules/**/*.js'
-        ],
-        tasks: [ 'test:server' ]
-    },
-
-    livereload: {
-        options: { livereload: true },
-        files: [ 'dev/**/*' ]
+    jsServer: {
+        files: ['server/**/*.js'],
+        tasks: ['test:server']
     }
 
+    // livereload: {
+    //     options: { livereload: true },
+    //     files: ['dev/**/*']
+    // }
 };

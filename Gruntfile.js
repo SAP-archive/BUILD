@@ -12,7 +12,7 @@ module.exports = function (grunt) {
         ngtemplates   : 'grunt-angular-templates',
         protractor    : 'grunt-protractor-runner',
         express       : 'grunt-express-server',
-        ngAnnotate    : 'grunt-ng-annotate',
+        ngAnnotate    : 'grunt-ng-annotate'
     });
 
 
@@ -97,8 +97,8 @@ module.exports = function (grunt) {
 
     grunt.registerTask('test', function (target) {
         var tasks = {
-            server : [ 'env:dev', 'mochaTest' ],
-            client : [ 'env:dev', 'karma' ],
+            server : [ 'eslint', 'env:dev', 'mochaTest' ],
+            client : [ 'eslint', 'env:dev', 'karma' ],
             e2e    : [ 'express:dev', 'protractor' ],
             dflt   : [ 'test:server', 'test:client' ]
         };
@@ -107,11 +107,12 @@ module.exports = function (grunt) {
 
 
     grunt.registerTask('build', function (target) {
-        target = target || dev;
+        target = target || 'dev';
         var tasks = [
             'eslint',
             'clean:' + target,
             'less',
+            'copy:html',
             'copy:dev',
             'browserify',
             'ngAnnotate'
@@ -124,8 +125,8 @@ module.exports = function (grunt) {
             tasks.push('cssmin');
             tasks.push('uglify');
         }
-        tasks.push('test:client');
-        tasks.push('test:server');
+        // tasks.push('test:client');
+        // tasks.push('test:server');
 
         return grunt.task.run(tasks);
     });

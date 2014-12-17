@@ -47,5 +47,3 @@ angular.module('norman', modules)
             $rootScope.pageClass = 'page-' + toState.name;
         });
     });
-
-

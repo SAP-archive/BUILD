@@ -14,6 +14,15 @@ var errorHandler = require('composable-middleware');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var cookieParser = require('cookie-parser');
+// var commonServer = require('norman-common-server');
+
+// Setup DB
+// commonServer.db.connection.initialize(function (err) {
+//     if (err) {
+//         console.error('Error while initializing DB : ' + err);
+//         throw err;
+//     }
+// });
 
 
 // Setup server
@@ -60,4 +69,3 @@ app.route('/*')
 server.listen(config.port, config.ip, function () {
     console.log('Express server listening on %d, in %s mode', config.port, config.env);
 });
-

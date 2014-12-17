@@ -5,7 +5,7 @@ module.exports = {
     },
     dev: {
         options: {
-            compress: false,
+            compress: false
             // sourceMap: true,
             // outputSourceFiles: false,
             // paths: [ 'less' ],
