@@ -145,3 +145,12 @@ Use the following procedure to change code, whether it is a bug fix or a new fea
 | [Common] (https://github.wdf.sap.corp/Norman/Common)  | [Common sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/Common/issues)  |
 | [Projects - aka Project Management] (https://github.wdf.sap.corp/Norman/Projects)  | [Projects sub-project Issue Tracker](https://github.wdf.sap.corp/Norman/Projects/issues)  |
 
+###Links to Contribution-Releated Documents
+
++ [Communications Guidelines](https://github.wdf.sap.corp/Norman/Norman/wiki/Communication-Guidelines)
++ [Project Norman Style Guide](https://github.wdf.sap.corp/Norman/Norman/wiki/Project-Norman-Style-Guide)
++ [Community Roles](https://github.wdf.sap.corp/Norman/Norman/blob/master/Community%20Roles.md)
++ [Apache License](https://github.wdf.sap.corp/Norman/Norman/wiki/License)
++ [Individual Contribution License Agreement](https://github.wdf.sap.corp/Norman/Norman/blob/master/docs/SAP%20License%20Agreements/SAP%2BIndividual%2BContributor%2BLicense%2BAgreement.pdf) 
++ [Corporate Contributor License Agreement](https://github.wdf.sap.corp/Norman/Norman/blob/master/docs/SAP%20License%20Agreements/SAP%2BCorporate%2BContributor%2BLicense%2BAgreement.pdf) 
++ [Guidelines for Bug Reports](https://github.wdf.sap.corp/Norman/Norman/wiki/Guidelines-for-Bug-Reports)
