@@ -27,7 +27,7 @@ The table below identifies key personnel in the core development teams for each 
 | [Collaboration] (https://github.wdf.sap.corp/Norman/Collaboration) | Snr. Dev. (tbd) |Dublin Dev Team |Mark McSherry ([#I056744](https://github.wdf.sap.corp/I056744))  | Mark Hill ([#I072326](https://github.wdf.sap.corp/I072326))  |Luan O'Carroll([#I057952](https://github.wdf.sap.corp/I057952)) |
 | [Shell] (https://github.wdf.sap.corp/Norman/Shell) |  | |  |  | Luan O'Carroll([#I057952](https://github.wdf.sap.corp/I057952))|
 | [Analytics] (https://github.wdf.sap.corp/Norman/Analytics) |  | |  | | Divyesh Jain (#I820335](https://github.wdf.sap.corp/I820335)) | 
-| [Common] (https://github.wdf.sap.corp/Norman/Common) |  | |  | | Luan O'Carroll([#I057952](https://github.wdf.sap.corp/I057952)),  Austin Devine ([#I058153](https://github.wdf.sap.corp/I058153)), Gilles Poirot ([#I051516](https://github.wdf.sap.corp/I051516)) | 
+| [Common] (https://github.wdf.sap.corp/Norman/Common) |  | |  | | Luan O'Carroll([#I057952](https://github.wdf.sap.corp/I057952)), Gilles Poirot ([#I051516](https://github.wdf.sap.corp/I051516)) | 
 | [Projects - aka Project Management] (https://github.wdf.sap.corp/Norman/Projects) | Snr. Dev. (tbd) |Dublin Dev Team| Mark McSherry  ([#I056744](https://github.wdf.sap.corp/I056744)) |Mark Hill ([#I072326](https://github.wdf.sap.corp/I072326))| Austin Devine ([#I058153](https://github.wdf.sap.corp/I058153))|
 
 
