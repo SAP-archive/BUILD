@@ -42,7 +42,7 @@ module.exports = {
             'server/**/*.js',
             '!server/**/*.{spec,mock}.js',
             '!server/node_modules/**/*.js',
-            'node_modules/norman*/server/**/*.js',
+            'node_modules/norman*/server/**/*.js'
         ],
         tasks: [
             'test:server',
