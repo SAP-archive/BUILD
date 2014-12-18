@@ -25,7 +25,10 @@ module.exports = {
                 expand: true,
                 cwd: 'node_modules/',
                 dest: 'dev/resources/',
-                src: [ 'norman*/**/*.html' ]
+                src: [
+                    'norman*client/**/*.html',
+                    '!norman*client/node_modules/**/*.html'
+                ]
             }
         ]
     },
@@ -41,7 +44,10 @@ module.exports = {
                 expand: true,
                 cwd: 'node_modules/',
                 dest: 'dev/resources/',
-                src: [ 'norman*/**/*.{png,gif,jpg,svg}' ]
+                src: [
+                    'norman*client/**/*.{png,gif,jpg,svg}',
+                    'norman*client/node_modules/**/*.{png,gif,jpg,svg}'
+                ]
             },
 
             // bootstrap css
@@ -88,7 +94,7 @@ module.exports = {
             {   // Other Dependencies (from norman-common-server)
                 expand: true,
                 cwd: 'node_modules',
-                dest: 'dist/resources',
+                dest: 'dist/node_modules',
                 src: getServerModules()
             }
 

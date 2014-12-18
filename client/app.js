@@ -14,7 +14,7 @@ angular.module = function (name, dep) {
     return aModule(name, dep);
 };
 
-require('angular-bootstrap');
+// require('angular-bootstrap');
 require('angular-cookies');
 require('angular-resource');
 require('angular-sanitize');
