@@ -18,8 +18,10 @@
     "norman-projects-client": "*",
     "norman-projects-server": "*",
     "norman-shell-client": "*",
-    "norman-business-catalog-manager-client": "*",
-    "norman-business-catalog-manager-server": "*",
+    "norman-business-catalog-manager-client": "^0.2.0",
+    "norman-business-catalog-manager-server": "^0.2.0",
+    "norman-data-modeler-client": "^0.2.0",
+    "norman-data-modeler-server": "^0.2.0",
     "norman-ui-composer-client": "*",
     "norman-ui-composer-server": "*"
   },
