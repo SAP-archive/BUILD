@@ -1,6 +1,6 @@
 {
   "name": "norman-norman",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Norman",
   "repository": {
     "type:": "git",
@@ -30,6 +30,7 @@
       "grunt-newer": "^0.8.0",
       "grunt-nodemon": "^0.3.0",
       "grunt-open": "^0.2.3",
+      "grunt-notify": "^0.4.1",
       "karma-sinon-chai": "^0.2.0",
       "open": "0.0.5",
       "norman-build-helper": "^0.1.13",

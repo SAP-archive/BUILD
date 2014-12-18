@@ -4,7 +4,7 @@ module.exports = function (grunt) {
 
     // Time how long tasks take. Can help when optimizing build times
     require('time-grunt')(grunt);
-
+    grunt.loadNpmTasks('grunt-notify');
 
     // Load grunt tasks automatically, when needed
     require('jit-grunt')(grunt, {
@@ -22,6 +22,16 @@ module.exports = function (grunt) {
         env: {
             dev: {NODE_ENV: 'development'},
             prod: {NODE_ENV: 'production'}
+        },
+
+        notify_hooks: {
+            options: {
+                enabled: true,
+                success: false,               // whether successful grunt executions should be notified automatically
+                max_jshint_notifications: 5,  // maximum number of notifications from jshint output
+                // title: 'norman-norman',       // defaults to the name in package.json, or will use project directory's name
+                duration: 3                   // the duration of notification in seconds, for `notify-send only
+            }
         },
 
         // Make sure code styles are up to par and there are no obvious mistakes
@@ -191,4 +201,5 @@ module.exports = function (grunt) {
     grunt.registerTask('dev', ['build:dev']);
     grunt.registerTask('default', ['build:dev']);
 
+    grunt.task.run('notify_hooks');
 };
