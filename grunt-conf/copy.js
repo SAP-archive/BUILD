@@ -4,11 +4,16 @@
  * Copy all server dependencies from node_modules to dist/node_modules, excluding devDependencies
  * @return  {array}  flat array of names of required dependencies
  */
-function getServerModules () {
-    var pkg = require('../node_modules/norman-common-server/package.json');
-    var peers = pkg && pkg.peerDependencies ? Object.keys(pkg.peerDependencies) : [],
-        devs = pkg && pkg.devDependencies, deps = [];
-    peers.forEach(function (p) { if (!devs[p]) { deps.push(p + '/**/*.*'); } });
+function getServerModules() {
+    var pkg = require('../node_modules/norman-common-server/package.json'),
+        peers = pkg && pkg.peerDependencies ? Object.keys(pkg.peerDependencies) : [],
+        devs = pkg && pkg.devDependencies ? pkg.devDependencies : [],
+        deps = [];
+    peers.forEach(function (p) {
+        if (!devs[p]) {
+            deps.push(p + '/**/*.*');
+        }
+    });
     return deps;
 }
 
@@ -49,7 +54,7 @@ module.exports = {
                 expand: true,
                 flatten: true,
                 dest: 'dev/assets',
-                src: [ 'node_modules/bootstrap/dist/css/bootstrap.css' ]
+                src: ['node_modules/bootstrap/dist/css/bootstrap.css']
                 // to copy .map file too; it's confusing in the dev-tools and not useful, as
                 // bootstrap css should not be changed only overwritten
                 // src: [ 'node_modules/bootstrap/dist/css/bootstrap.css*' ]
@@ -83,7 +88,7 @@ module.exports = {
                 expand: true,
                 cwd: 'node_modules',
                 dest: 'dist/node_modules',
-                src: [ 'norman*server/**/*.*' ]
+                src: ['norman*server/**/*.*']
             },
             {   // Other Dependencies (from norman-common-server)
                 expand: true,

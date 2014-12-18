@@ -16,13 +16,12 @@ module.exports = function (grunt) {
     });
 
 
-
     // Define the configuration for all the tasks
     grunt.initConfig({
         // vars
         env: {
-            dev: { NODE_ENV: 'development' },
-            prod: { NODE_ENV: 'production' }
+            dev: {NODE_ENV: 'development'},
+            prod: {NODE_ENV: 'production'}
         },
 
         // Make sure code styles are up to par and there are no obvious mistakes
@@ -51,7 +50,7 @@ module.exports = function (grunt) {
         browserify: require('./grunt-conf/browserify.js'),
 
         // externalize source maps from bundle.js
-        exorcise: { bundle: { files: { 'dev/assets/bundle.js.map': ['dev/assets/bundle.js'] }}},
+        exorcise: {bundle: {files: {'dev/assets/bundle.js.map': ['dev/assets/bundle.js']}}},
 
         // Test settings
         karma: require('./grunt-conf/karma.js'),
@@ -71,20 +70,73 @@ module.exports = function (grunt) {
         protractor: require('./grunt-conf/protractor.js'),
 
         // Debugging with node inspector
-        'node-inspector': { custom: { options: { 'web-host': 'localhost' }}}
+        'node-inspector': {
+            custom: {
+                options: {
+                    'web-host': 'localhost',
+                    'no-preload': true
+                }
+            },
+            liveEdit: {
+                options: {
+                    'save-live-edit': true,
+                    'web-host': 'localhost',
+                    'no-preload': true
+                }
+            }
+        },
+
+        'nodemon': {
+            debug: {
+                script: 'server/app.js',
+                options: {
+                    watch: ['server'],
+                    nodeArgs: ['--debug-brk'],
+                    ignore: ['node_modules/**', '.git/', 'Gruntfile.js'],
+                    env: {
+                        PORT: process.env.PORT || 9000
+                    },
+                    callback: function (nodemon) {
+                        nodemon.on('log', function (event) {
+                            console.log(event.colour);
+                        });
+
+                        // opens browser on initial server start
+                        nodemon.on('config:update', function () {
+                            setTimeout(function () {
+                                require('open')('http://localhost:8080/debug?port=5858');
+                            }, 500);
+                        });
+                    }
+                }
+            }
+        },
+
+        'concurrent': {
+            debug: {
+                tasks: [
+                    'nodemon:debug',
+                    'node-inspector:custom'
+                ],
+                options: {
+                    logConcurrentOutput: true
+                }
+            }
+        }
     });
 
 
-    grunt.registerTask('express-keepalive', 'Keep grunt running', function () { this.async(); });
+    grunt.registerTask('express-keepalive', 'Keep grunt running', function () {
+        this.async();
+    });
 
     grunt.registerTask('serve', function (target) {
         var tasks = {
-            debug : [
+            debug: [
                 'env:dev',
-                'express:dev',
-                'node-inspector'
+                'concurrent:debug'
             ],
-            dev : [
+            dev: [
                 'build:dev',
                 'env:dev',
                 'express:dev',
@@ -133,10 +185,10 @@ module.exports = function (grunt) {
 
 
     // just run (app must be already built)
-    grunt.registerTask('start',   [ 'env:dev', 'express:dev', 'watch' ]);
+    grunt.registerTask('start', ['env:dev', 'express:dev', 'watch']);
 
-    grunt.registerTask('dist',    [ 'build:dist' ]);
-    grunt.registerTask('dev',     [ 'build:dev' ]);
-    grunt.registerTask('default', [ 'build:dev' ]);
+    grunt.registerTask('dist', ['build:dist']);
+    grunt.registerTask('dev', ['build:dev']);
+    grunt.registerTask('default', ['build:dev']);
 
 };
