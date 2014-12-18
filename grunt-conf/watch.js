@@ -2,9 +2,13 @@
 module.exports = {
 
     html: {
+        files: [
+            'client/**/*.html',
+            'node_modules/norman*/**/*.html',
+            '!node_modules/norman*/node_modules/**/*.html'
+        ],
         options: { livereload: true },
-        files: ['client/**/*.html'],
-        tasks: ['newer:copy:html']
+        tasks: ['newer:copy:dev']
     },
 
     less: {
@@ -14,7 +18,7 @@ module.exports = {
             'node_modules/norman*/**/*.less',
             '!node_modules/norman*/node_modules/**/*.less'
         ],
-        tasks: ['less']
+        tasks: ['newer:less']
     },
 
     jsClient: {
@@ -30,12 +34,20 @@ module.exports = {
             'exorcise',
             'ngAnnotate',
             'test:client'
-        ]
+          ]
     },
 
     jsServer: {
-        files: ['server/**/*.js'],
-        tasks: ['test:server']
+        files: [
+            'server/**/*.js',
+            '!server/**/*.{spec,mock}.js',
+            '!server/node_modules/**/*.js',
+            'node_modules/norman*/server/**/*.js'
+        ],
+        tasks: [
+            'test:server',
+            'express:dev'
+        ]
     }
 
     // livereload: {
