@@ -46,4 +46,5 @@ angular.module('norman', modules)
         $rootScope.$on('$stateChangeStart', function (ev, toState) {
             $rootScope.pageClass = 'page-' + toState.name;
         });
-    });
+    })
+    .constant('jQuery', require('norman-jquery'));
