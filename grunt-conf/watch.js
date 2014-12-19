@@ -8,7 +8,7 @@ module.exports = {
             'node_modules/norman*/**/*.html',
             '!node_modules/norman*/node_modules/**/*.html'
         ],
-        tasks: ['newer:copy:dev']
+        tasks: ['newer:copy:html']
     },
 
     less: {
