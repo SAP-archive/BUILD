@@ -1,70 +1,50 @@
-<div class="welcome-wrapper animated fadeIn" layout="column" layout-fill ng-controller="WelcomeCtrl">
-    <div class="welcome-main-wrapper">
-        <header>
-            <div class="welcome-content-wrapper">
-                <div class="header-wrapper">
-                    <div class="video-container">
-                        <video autoplay loop class="fillWidth">
-                            <source src="assets/Norman_Video.mpeg" type="video/mp4" />
-                            <source src="assets/Norman_Video.ogg" type="video/ogg" />
-                            <source src="assets/Norman_Video.webm" type="video/webm" />
-                        </video>
-                    </div>
-                    <div class="nav-brand">
-                        <a href="index.html"><img class="homecover-logo" src="assets/norman-logo.png"></a>
-                    </div>
-                    <a ng-hide="isLoggedIn()" ng-class="{active: isActive('/login')}" href="/login" class="btn-homecover btn-right">LOG IN</a>
-                    <a ng-hide="isLoggedIn()" ng-class="{active: isActive('/signup')}" href="/signup" class="btn-homecover btn-right">SIGN UP</a>
-                    <a ng-show="isLoggedIn()" ng-class="{active: isActive('/logout')}" href="" ng-click="logout()" class="btn-homecover btn-right">LOG OUT</a>
-                </div>
-            </div>
-        </header>
+<div class="welcome-wrapper animated fadeIn" flex ng-controller="WelcomeCtrl">
 
-        <div class="welcome-content-row">
-            <div class="comments clearfix">
-                <div class="welcome-content-wrapper">
-                    <h1 class="middle-text-h1">Project Norman</h1>
-                    <h2 class="middle-text-h2">Create prototypes in a blink of an eye</h2>
-                </div>
-            </div>
+    <div class="header">
+        <div class="header-wrapper">
+            <a href="/norman" class="norman-logo"><img src="resources/norman-common-client/assets/icon-norman.svg" alt="Norman"/></a>
+
+            <a href="/login"  class="btn-homecover btn-right" ng-hide="isLoggedIn()" ng-class="{active: isActive('/login')}">LOG IN</a>
+            <a href="/signup" class="btn-homecover btn-right" ng-hide="isLoggedIn()" ng-class="{active: isActive('/signup')}">SIGN UP</a>
+            <a href="#"       class="btn-homecover btn-right" ng-show="isLoggedIn()" ng-class="{active: isActive('/logout')}" ng-click="logout()">LOG OUT</a>
         </div>
 
-        <div class="welcome-content-row">
-            <div class="bubble-list clearfix">
-                <div class="welcome-content-wrapper">
-                    <ul class="icon-list">
-                        <li><img src="assets/Icon-Plan.svg"><span>Plan</span>
-                        </li>
-                        <li><img src="assets/build.png"><span>Build</span>
-                        </li>
-                        <li><img src="assets/Icon-Test.svg"><span>Test</span>
-                        </li>
-                        <li><img src="assets/build.png"><span>Share</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <video class="welcome-video" autoplay loop>
+            <source src="assets/Norman_Video.mp4" type="video/mp4" />
+            <source src="assets/Norman_Video.ogg" type="video/ogg" />
+            <source src="assets/Norman_Video.webm" type="video/webm" />
+        </video>
+    </div>
 
-        <div class="welcome-content-row">
-            <div class="signup clearfix">
-                <div class="welcome-content-wrapper">
-                    <a href="/signup" class="btn-signup btn-center">SIGN UP, IT'S FREE</a>
-                    <p class="signup-already">Already got an account? <a href="/login" class="link">Log in</a>.</p>
-                </div>
-            </div>
-        </div>
 
-        <div class="welcome-content-row">
-            <div class="footer clearfix">
-                <div class="welcome-content-wrapper">
-                    <p class="footer-logo">&copy; Copyright SAP Ltd. 2015</p>
-                    <p class="footer-contacts"><a href="" class="link">Contacts</a>
-                    </p>
-                    <p class="footer-github"><a href="https://github.wdf.sap.corp/Norman" class="link">View project on GitHub</a>
-                    </p>
-                </div>
-            </div>
+    <div class="welcome-row welcome-row-white">
+        <h1>Project Norman</h1>
+        <h2>Create prototypes in a blink of an eye</h2>
+    </div>
+
+    <div class="welcome-content-row">
+        <div class="welcome-content-wrapper welcome-bubbles">
+            <div class="welcome-bubble"><img src="assets/Icon-Plan.svg"><span>Plan</span></div>
+            <div class="welcome-bubble"><img src="assets/build.png"><span>Build</span></div>
+            <div class="welcome-bubble"><img src="assets/Icon-Test.svg"><span>Test</span></div>
+            <div class="welcome-bubble"><img src="assets/build.png"><span>Share</span></div>
         </div>
     </div>
+
+    <div class="welcome-content-row welcome-row-signup" ng-hide="isLoggedIn()">
+        <a href="/signup" class="btn-signup">SIGN UP, IT'S FREE</a>
+        <p class="signup-already">Already got an account? <a href="/login">Log in</a>.</p>
+    </div>
+
+    <div class="welcome-content-row welcome-foot">
+        <div class="welcome-content-wrapper">
+            <div class="welcome-foot-right">
+                <a href="https://github.wdf.sap.corp/Norman/Norman">View project on Github</a>
+                <a href="#">Contact</a>
+            </div>
+            <a class="sap-logo" href="#"><img src="resources/norman-common-client/assets/icon-sap-white.svg" alt="SAP" /></a>
+            &copy; Copyright SAP Ltd. 2015
+        </div>
+    </div>
+
 </div>

@@ -1,226 +1,74 @@
 @import '../node_modules/norman-common-client/styles/base';
-/* --------------------------------------------------- */
-/* welcome page */
-/* --------------------------------------------------- */
-body.page-welcome {
-    color: #fff;
-    font: normal 14px 'roboto', sans-serif;
-    background: rgba(44, 62, 80, 1);
-    background: -moz-linear-gradient(-45deg, rgba(44, 62, 80, 1) 0%, rgba(141, 68, 173, 1) 100%);
-    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(44, 62, 80, 1)), color-stop(100%, rgba(141, 68, 173, 1)));
-    background: -webkit-linear-gradient(-45deg, rgba(44, 62, 80, 1) 0%, rgba(141, 68, 173, 1) 100%);
-    background: -o-linear-gradient(-45deg, rgba(44, 62, 80, 1) 0%, rgba(141, 68, 173, 1) 100%);
-    background: -ms-linear-gradient(-45deg, rgba(44, 62, 80, 1) 0%, rgba(141, 68, 173, 1) 100%);
-    background: linear-gradient(135deg, rgba(44, 62, 80, 1) 0%, rgba(141, 68, 173, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c3e50', endColorstr='#8d44ad', GradientType=1 );
-    height: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    width: 100%;
-    background-position: 0px 0px;
-    .app {
-        height: 100%;
-    }
+
+html.page-welcome,
+body.page-welcome { overflow: hidden; }
+
+body.page-welcome { height: 100%; width: 100%; color: #fff; overflow-y: auto;
+    font: normal 14px 'roboto', sans-serif; .norman-gradient();
+    .app { height: auto; min-height: 1200px; overflow: hidden; }
 }
-.welcome-wrapper {
-    min-height: 800px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    position: relative;
-    height: 100%;
-    .welcome-main-wrapper {
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
+
+.welcome-wrapper { box-sizing: border-box; position: relative; height: 100%;
+    a { color: #fff; text-decoration: underline;
+        &:hover { text-decoration: none; }
     }
-    header {
-        height: 359px;
-        /* background: url('../assets/header-bg.png') no-repeat 50% 50%;
-        */
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
+    .header { height: 400px; box-sizing: border-box; overflow: hidden; position: relative; }
+    .welcome-video { min-width: 100%; min-height: 400px; position: absolute; z-index: 0; top: 0; }
+
+    .header-wrapper { max-width: 1140px; padding: 20px 0 120px 0; margin: 0 auto; position: relative; z-index: 1; }
+    .norman-logo { float: left; }
+
+    .btn-homecover { display: block; width: 150px; height: 40px; line-height: 39px;
+        background: rgba(0,0,0,0.5); border-radius: 3px; border: none;
+        color: #fff; padding: 0; font-size: 15px; font-weight: 700; text-align: center;
+        box-sizing: border-box; cursor: pointer; text-decoration: none;
+        text-shadow: 0 1px 1px rgba(0,0,0,0.6);
+        -moz-user-select: none; -webkit-user-select: none; user-select: none;
+        transition: background .3s ease-out;
+
+        &::-moz-focus-inner { border: 0; padding: 0; }
+        &:focus,
+        &:hover { background: rgba(0,0,0,0.8); }
+        &:active { background: rgba(0,0,0,0.9); }
     }
-    .header-wrapper {
-        padding: 20px 0 120px 0;
-        max-width: 100%;
-        .video-container {
-            position: absolute;
-            top: 0%;
-            left: 0%;
-            height: 100%;
-            width: 100%;
-            overflow: hidden;
-            max-height: 359px;
-        }
-        video {
-            position: absolute;
-            z-index: 0;
-        }
-        video.fillWidth {
-            min-width: 100%;
-            min-height: 365px;
-        }
-        .nav-brand {
-            width: 60px;
-            height: 60px;
-            float: left;
-            position: absolute;
-            top: 20px;
-        }
+    .btn-right { float: right; margin-left: 20px; }
+
+    .welcome-row { color: #fff; }
+    .welcome-content-wrapper { max-width: 1140px; margin: 0 auto; }
+    .welcome-row-white { background: #fff; text-align: center; color: #2C3E50; height: 230px;
+        h1 { font:  100 72px/95px @roboto-font; margin: 0; padding: 35px 0 0 0; }
+        h2 { font:  500 36px/48px @roboto-font; margin: 0; }
     }
-    .homecover-logo {
-        width: 60px;
-        height: 60px;
+
+    .welcome-bubbles { text-align: center; padding: 75px 0; }
+    .welcome-bubble { display: inline-block; vertical-align: top; width: 150px; margin-right: 30px;
+        &:last-child { margin-right: 0; }
+        img { padding-bottom: 10px; }
+        span { font: 500 20px/26px @roboto-font; }
     }
-    .welcome-content-row {
-        clear: both;
-        .comments {
-            background: #FFF;
-            height: 230px;
-            color: #000;
-            text-align: center;
-        }
-        .bubble-list {
-            text-align: center;
-        }
-        .signup {
-            padding: 20px 0;
-            text-align: center;
-        }
-        .footer {
-            padding: 20px 0;
-            margin: 0 0 50px 0;
-        }
+
+    .welcome-row-signup { text-align: center; height: 240px; }
+
+    .btn-signup { display: inline-block; width: 330px; height: 42px; background: #fff; border-radius: 3px; color: #604281;
+            padding: 23px 7px 0 8px; border: none; line-height: 1; text-decoration: none;
+            box-sizing: border-box; box-shadow: 0 1px 2px rgba(0,0,0,0.4); cursor: pointer;
+            text-transform: uppercase; height: 66px; font-weight: 700; font-size: 20px;
+            -moz-user-select: none; -webkit-user-select: none; user-select: none;
+            transition: background .3s ease-out;
+
+
+        &::-moz-focus-inner { border: 0; padding: 0; }
+        &:focus,
+        &:hover { background: #F7E6FF; }
+        &:active { background: #C2A4D0; }
     }
-    .welcome-content-wrapper {
-        margin: 0 auto;
-        padding: 0 15px;
-        max-width: 1140px;
-        height: 100%;
-        .icon-list {
-            padding: 75px 0;
-            text-align: center;
-        }
-        .icon-list li {
-            display: inline-block;
-            list-style-type: none;
-            padding-right: 20px;
-            width: 150px;
-        }
-        .icon-list li img {
-            padding-bottom: 10px;
-        }
-        .icon-list > li > span {
-            font-family: @roboto-font;
-            font-size: 20px;
-            font-weight: 500;
-            color: #FFFFFF;
-            line-height: 26px;
-        }
-        .middle-text-h1 {
-            font-family: @roboto-font;
-            font-size: 72px;
-            font-weight: 100;
-            color: #2C3E50;
-            line-height: 95px;
-            margin: 0;
-            padding: 35px 0 0 0;
-        }
-        .middle-text-h2 {
-            font-family: @roboto-font;
-            font-size: 36px;
-            font-weight: 500;
-            color: #2C3E50;
-            line-height: 48px;
-            margin: 0;
-        }
-        .footer-logo {
-            background-image: url('../assets/sap-logo.png');
-            background-position: left top, right bottom;
-            background-repeat: no-repeat;
-            font-family: @roboto-font;
-            font-size: 14px;
-            font-weight: 500;
-            color: #FFFFFF;
-            float: left;
-            padding-left: 75px;
-            height: 30px;
-            line-height: 30px;
-        }
-        .footer-contacts, .footer-github {
-            float: right;
-            font-family: @roboto-font;
-            font-size: 14px;
-            font-weight: 500;
-            color: #FFFFFF;
-            padding-left: 20px;
-        }
-        .signup-already {
-            padding: 35px 0;
-            font-family: @roboto-font;
-            font-size: 20px;
-            font-weight: 500;
-            color: #FFFFFF;
-            line-height: 26px;
-        }
-        .btn-signup {
-            background: #FFFFFF;
-            box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.50);
-            border-radius: 4px;
-            font-family: @roboto-font;
-            font-size: 20px;
-            font-weight: 700;
-            color: #604281;
-            line-height: 26px;
-            padding: 26px 80px;
-            cursor: pointer;
-            text-decoration: none;
-        }
-        .btn-signup:hover {
-            background: #F7E6FF;
-            box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.50);
-            border-radius: 4px;
-            color: #604281;
-            text-decoration: none;
-        }
-        .btn-homecover, .btn-homecover:hover, .btn-homecover:focus {
-            margin: 10px 10px 4px 0 !important;
-            line-height: 32px;
-            height: 34px;
-            background: rgba(0, 0, 0, 0.50);
-            border: 0px;
-            box-shadow: none;
-            color: #FFF;
-            text-decoration: none;
-            font-family: @roboto-font;
-            font-size: 15px;
-            color: #FFFFFF;
-            line-height: 32px !important;
-            text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.60);
-            cursor: pointer;
-            padding: 0 26px;
-            display: inline-block;
-            letter-spacing: 1px;
-            font-weight: 700;
-            outline: none;
-            position: relative;
-            border-radius: 4px;
-        }
-        .btn-homecover:hover, .btn-homecover:focus {
-            background: rgba(0, 0, 0, 0.80);
-        }
-        .btn-right {
-            float: right !important;
-        }
-        .link, .link:hover {
-            color: #FFF;
-            text-decoration: underline;
-        }
+
+    .signup-already { font: 300 20px/26px @roboto-font; padding: 14px 0 0; }
+
+    .welcome-foot { display: block; clear: both; position: absolute; bottom: 10px; left: 0; right: 0; width: 100%;
+        .welcome-foot-right { float: right; padding-top: 3px; }
+        .sap-logo img { vertical-align: middle; }
+        a { padding-left: 20px; color: #fff; }
     }
+
 }

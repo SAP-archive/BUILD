@@ -5,10 +5,11 @@
  * @return  {array}  flat array of names of required dependencies
  */
 function getServerModules() {
-    var pkg = require('../node_modules/norman-common-server/package.json'),
-        peers = pkg && pkg.peerDependencies ? Object.keys(pkg.peerDependencies) : [],
-        devs = pkg && pkg.devDependencies ? pkg.devDependencies : [],
-        deps = [];
+    var pkg = require('../node_modules/norman-common-server/package.json');
+    var peers = pkg && pkg.peerDependencies ? Object.keys(pkg.peerDependencies) : [];
+    var devs = pkg && pkg.devDependencies ? pkg.devDependencies : [];
+    var deps = [];
+
     peers.forEach(function (p) {
         if (!devs[p]) {
             deps.push(p + '/**/*.*');

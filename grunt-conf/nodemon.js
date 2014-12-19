@@ -1,16 +1,14 @@
 'use strict';
 module.exports = {
-
     debug: {
         script: 'server/app.js',
         options: {
-            args: [],
-            nodeArgs: ['--debug'],
+            watch: ['server'],
+            nodeArgs: ['--debug-brk'],
+            ignore: ['node_modules/**', '.git/', 'Gruntfile.js'],
             env: {
-                port: process.env.PORT || 9000,
-                hostname: '127.0.0.1'
+                PORT: process.env.PORT || 9000
             },
-
             callback: function (nodemon) {
                 nodemon.on('log', function (event) {
                     console.log(event.colour);
@@ -18,10 +16,10 @@ module.exports = {
 
                 // opens browser on initial server start
                 nodemon.on('config:update', function () {
-                    // console.log('Debug URL: http://localhost:8080/debug?port=5858');
+                    setTimeout(function () {
+                        require('open')('http://localhost:8080/debug?port=5858');
+                    }, 500);
                 });
-
-
             }
         }
     }

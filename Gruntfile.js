@@ -20,8 +20,8 @@ module.exports = function (grunt) {
     grunt.initConfig({
         // vars
         env: {
-            dev: {NODE_ENV: 'development'},
-            prod: {NODE_ENV: 'production'}
+            dev: { NODE_ENV: 'development' },
+            prod: { NODE_ENV: 'production' }
         },
 
         notify_hooks: {
@@ -80,57 +80,17 @@ module.exports = function (grunt) {
         protractor: require('./grunt-conf/protractor.js'),
 
         // Debugging with node inspector
-        'node-inspector': {
-            custom: {
-                options: {
-                    'web-host': 'localhost',
-                    'no-preload': true
-                }
-            },
-            liveEdit: {
-                options: {
-                    'save-live-edit': true,
-                    'web-host': 'localhost',
-                    'no-preload': true
-                }
-            }
-        },
+        'node-inspector': require('./grunt-conf/nodeinspector.js'),
 
-        'nodemon': {
+        nodemon: require('./grunt-conf/nodemon.js'),
+
+        concurrent: {
             debug: {
-                script: 'server/app.js',
-                options: {
-                    watch: ['server'],
-                    nodeArgs: ['--debug-brk'],
-                    ignore: ['node_modules/**', '.git/', 'Gruntfile.js'],
-                    env: {
-                        PORT: process.env.PORT || 9000
-                    },
-                    callback: function (nodemon) {
-                        nodemon.on('log', function (event) {
-                            console.log(event.colour);
-                        });
-
-                        // opens browser on initial server start
-                        nodemon.on('config:update', function () {
-                            setTimeout(function () {
-                                require('open')('http://localhost:8080/debug?port=5858');
-                            }, 500);
-                        });
-                    }
-                }
-            }
-        },
-
-        'concurrent': {
-            debug: {
+                options: { logConcurrentOutput: true },
                 tasks: [
                     'nodemon:debug',
                     'node-inspector:custom'
-                ],
-                options: {
-                    logConcurrentOutput: true
-                }
+                ]
             }
         }
     });

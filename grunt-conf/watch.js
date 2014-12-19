@@ -2,12 +2,12 @@
 module.exports = {
 
     html: {
+        options: { livereload: true },
         files: [
             'client/**/*.html',
             'node_modules/norman*/**/*.html',
             '!node_modules/norman*/node_modules/**/*.html'
         ],
-        options: { livereload: true },
         tasks: ['newer:copy:dev']
     },
 
