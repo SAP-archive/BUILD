@@ -51,7 +51,8 @@ module.exports = {
                 dest: 'dev/resources/',
                 src: [
                     'norman*client/**/*.{png,gif,jpg,svg}',
-                    'norman*client/node_modules/**/*.{png,gif,jpg,svg}'
+                    'norman*client/node_modules/**/*.{png,gif,jpg,svg}',
+                    '!norman-openui5/**/*'
                 ]
             },
 
