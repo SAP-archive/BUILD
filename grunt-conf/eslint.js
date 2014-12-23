@@ -1,12 +1,31 @@
 'use strict';
 module.exports = {
-    options: {
-        config: '.eslintrc',
-        ignore: false
-    },
-    dev: {
+    client: {
+        options: {
+            config: 'client/.eslintrc',
+            ignore: false
+        },
         src: [
-            '{client,server}/**/*.js'
+            'client/**/*.js',
+            '!client/tests/**/*.js',
+
+            'node_modules/norman*client/**/*.js',
+            '!node_modules/**/test*/**/*.js',
+            '!node_modules/norman*client/node_modules/**/*.js'
+        ]
+    },
+    server: {
+        options: {
+            config: 'server/.eslintrc',
+            ignore: false
+        },
+        src: [
+            'server/**/*.js',
+            '!server/tests/**/*.js',
+
+            'node_modules/norman*server/**/*.js',
+            '!node_modules/**/test*/**/*.js',
+            '!node_modules/norman*server/node_modules/**/*.js'
         ]
     }
 };
