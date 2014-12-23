@@ -143,7 +143,7 @@ module.exports = function (grunt) {
             tasks.push('ngAnnotate');
             tasks.push('copy:dist');
             tasks.push('cssmin');
-            tasks.push('uglify');
+            // tasks.push('uglify');
         }
         // tasks.push('test:client');
         // tasks.push('test:server');
