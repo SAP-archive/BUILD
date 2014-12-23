@@ -137,12 +137,10 @@ module.exports = function (grunt) {
             'copy:html',
             'copy:dev',
             'browserify',
+            'exorcise',
             'ngAnnotate'
         ];
-        if (target === 'dev') {
-            tasks.push('exorcise');
-        }
-        else {
+        if (target !== 'dev') {
             tasks.push('copy:dist');
             tasks.push('cssmin');
             tasks.push('uglify');
