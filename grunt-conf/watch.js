@@ -23,18 +23,8 @@ module.exports = {
 
     jsClient: {
         options: { livereload: true },
-        files: [
-            'client/**/*.js',
-            'node_modules/norman*/**/*.js',
-            '!node_modules/norman*/node_modules/**/*.js'
-        ],
-        tasks: [
-            'newer:eslint',
-            'browserify:dev',
-            'exorcise',
-            'ngAnnotate',
-            'test:client'
-          ]
+        files: [ 'dev/assets/*.js' ],
+        tasks: []
     },
 
     jsServer: {
@@ -44,14 +34,7 @@ module.exports = {
             '!server/node_modules/**/*.js',
             'node_modules/norman*/server/**/*.js'
         ],
-        tasks: [
-            'test:server',
-            'express:dev'
-        ]
+        tasks: [ 'test:server', 'express:dev' ]
     }
 
-    // livereload: {
-    //     options: { livereload: true },
-    //     files: ['dev/**/*']
-    // }
 };

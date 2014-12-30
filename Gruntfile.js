@@ -119,8 +119,8 @@ module.exports = function (grunt) {
 
     grunt.registerTask('test', function (target) {
         var tasks = {
-            server : [ 'eslint', 'env:dev', 'mochaTest' ],
-            client : [ 'eslint', 'env:dev', 'karma' ],
+            server : [ 'eslint:server', 'env:dev', 'mochaTest' ],
+            client : [ 'eslint:client', 'env:dev', 'karma' ],
             e2e    : [ 'express:dev', 'protractor' ],
             dflt   : [ 'test:server', 'test:client' ]
         };
@@ -131,21 +131,19 @@ module.exports = function (grunt) {
     grunt.registerTask('build', function (target) {
         target = target || 'dev';
         var tasks = [
-            'eslint',
+            // 'eslint',
             'clean:' + target,
             'less',
             'copy:html',
             'copy:dev',
-            'browserify',
-            'ngAnnotate'
+            'browserify'
         ];
-        if (target === 'dev') {
+        if (target !== 'dev') {
             tasks.push('exorcise');
-        }
-        else {
+            tasks.push('ngAnnotate');
             tasks.push('copy:dist');
             tasks.push('cssmin');
-            tasks.push('uglify');
+            // tasks.push('uglify');
         }
         // tasks.push('test:client');
         // tasks.push('test:server');

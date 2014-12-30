@@ -1,4 +1,5 @@
 'use strict';
+// @ngInject
 module.exports = function ($scope, $rootScope, $location, Auth) {
 
     // $scope.menu = [{
