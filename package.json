@@ -28,15 +28,15 @@
     "norman-uicanvas-server": "*"
   },
   "devDependencies": {
-      "grunt-concurrent": "^1.0.0",
-      "grunt-newer": "^0.8.0",
-      "grunt-nodemon": "^0.3.0",
-      "grunt-open": "^0.2.3",
-      "grunt-notify": "^0.4.1",
-      "karma-sinon-chai": "^0.2.0",
-      "open": "0.0.5",
-      "norman-build-helper": "^0.1.13",
-      "connect-livereload": "*"
+    "connect-livereload": "*",
+    "grunt-concurrent": "^1.0.0",
+    "grunt-newer": "^0.8.0",
+    "grunt-nodemon": "^0.3.0",
+    "grunt-notify": "^0.4.1",
+    "grunt-open": "^0.2.3",
+    "karma-sinon-chai": "^0.2.0",
+    "norman-build-helper": "^0.1.13",
+    "open": "0.0.5"
   },
   "scripts": {
     "test": "grunt test",

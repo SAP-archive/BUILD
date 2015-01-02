@@ -90,21 +90,22 @@ module.exports = {
             {   // SERVER
                 expand: true,
                 dest: 'dist',
-                src: [ 'server/**/*.js' ]
+                src: [ 'server/**/*.js', 'server/errors/*.html', 'server/log-config.json' ]
             },
             {   // Norman Server Modules
                 expand: true,
                 cwd: 'node_modules',
                 dest: 'dist/node_modules',
                 src: ['norman*server/**/*.*']
-            },
+            }
+            /*,
             {   // Other Dependencies (from norman-common-server)
                 expand: true,
                 cwd: 'node_modules',
                 dest: 'dist/node_modules',
                 src: getServerModules()
             }
-
+*/
         ]
     }
 

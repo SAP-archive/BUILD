@@ -1,5 +1,5 @@
 {
-    "debug": true,
+    "debug": false,
     "logging": "log-config.json",
     "db": {
         "hosts": "localhost",
@@ -23,6 +23,6 @@
         "port": 9000
     },
     "web": {
-        "root": "../dev"
+        "root": "../public"
     }
 }
