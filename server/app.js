@@ -27,7 +27,7 @@ logger.info("Starting server");
 
 // 3. Open DB connection
 logger.info("Connecting to MongoDB");
-var serverStarted = commonServer.db.connection.initialize(config.db, config.deployment)
+commonServer.db.connection.initialize(config.db, config.deployment)
     .then(start, function (dbErr) {
         logger.error("Failed to connect to MongoDB: " + dbErr.toString());
     })
@@ -50,6 +50,7 @@ function start() {
     if (config.debug) {
         app.use(require('connect-livereload')());
     }
+    app.use(commonServer.context.init());
 
     logger.info("Loading services");
     serviceLoader.loadServices();
