@@ -1,10 +1,13 @@
 'use strict';
+var fs = require('fs');
+var path = require('path');
 
 module.exports = function (grunt) {
 
     // Time how long tasks take. Can help when optimizing build times
     require('time-grunt')(grunt);
     grunt.loadNpmTasks('grunt-notify');
+    grunt.loadNpmTasks('grunt-contrib-rename');
 
     // Load grunt tasks automatically, when needed
     require('jit-grunt')(grunt, {
@@ -12,7 +15,7 @@ module.exports = function (grunt) {
         ngtemplates   : 'grunt-angular-templates',
         protractor    : 'grunt-protractor-runner',
         express       : 'grunt-express-server',
-        ngAnnotate    : 'grunt-ng-annotate'
+        ngAnnotate    : 'grunt-ng-annotate',
     });
 
 
@@ -55,6 +58,8 @@ module.exports = function (grunt) {
 
         // Copies remaining files to places other tasks can use
         copy: require('./grunt-conf/copy.js'),
+
+        rename: require('./grunt-conf/rename.js'),
 
         // wrap node modules for browser
         browserify: require('./grunt-conf/browserify.js'),
@@ -130,6 +135,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', function (target) {
         target = target || 'dev';
+        console.log("TARGET = " + target);
         var tasks = [
             // 'eslint',
             'clean:' + target,
@@ -142,6 +148,7 @@ module.exports = function (grunt) {
             tasks.push('exorcise');
             tasks.push('ngAnnotate');
             tasks.push('copy:dist');
+            tasks.push('config-prod');
             tasks.push('cssmin');
             // tasks.push('uglify');
         }
@@ -151,6 +158,16 @@ module.exports = function (grunt) {
         return grunt.task.run(tasks);
     });
 
+    // Copy production config to dist
+    grunt.registerTask('config-prod', function () {
+        var targetDir = path.join(__dirname, 'dist');
+        ensureDirectory(targetDir);
+        targetDir = path.join(targetDir, 'server');
+        ensureDirectory(targetDir);
+
+        var buf = fs.readFileSync(path.join(__dirname, 'server/config-prod.json'));
+        fs.writeFileSync(path.join(targetDir, 'config.json'), buf);
+    });
 
     // just run (app must be already built)
     grunt.registerTask('start', ['env:dev', 'express:dev', 'watch']);
@@ -161,3 +178,9 @@ module.exports = function (grunt) {
 
     grunt.task.run('notify_hooks');
 };
+
+function ensureDirectory(dirname) {
+    if (!fs.existsSync(dirname)) {
+        fs.mkdirSync(dirname);
+    }
+}

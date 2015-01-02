@@ -1,71 +1,79 @@
 'use strict';
 
-var config = {
-    env: process.env.NODE_ENV || 'development',
-    port: process.env.PORT || 9000,
-    ip: process.env.IP || '127.0.0.1',
-    root: './'
-};
-
+var fs = require('fs');
 var path = require('path');
 var express = require('express');
 var morgan = require('morgan');
-var errorHandler = require('composable-middleware');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var cookieParser = require('cookie-parser');
 var commonServer = require('norman-common-server');
 
-// Setup DB
-commonServer.db.connection.initialize(function (err) {
-    if (err) {
-        console.error('Error while initializing DB : ' + err);
-        throw err;
-    }
-});
-
-
-// Setup server
-var app = express();
-
-app.use(bodyParser.json());
-app.use(methodOverride());
-app.use(cookieParser());
-
-var server = require('http').createServer(app);
-
-// Require optional modules
-require('./requires.js')(app);
-
-
-if (config.env === 'production') {
-    config.ip = '0.0.0.0';
-    // app.use(favicon(path.join(config.root, 'public', 'favicon.ico')));
-    app.use(express.static(path.join(config.root, 'public')));
-    app.set('appPath', config.root + '/public');
-    app.use(morgan('dev'));
+// 1. Load configuration
+var configFile = "config.json";
+if (!fs.existsSync(configFile)) {
+    configFile = "server/config.json"; // debug run
 }
+var config = commonServer.config.initialize(configFile);
+var errors = {
+    root: path.resolve(config.cwd, 'errors')
+};
 
-if (config.env === 'development' || config.env === 'test') {
-    app.use(require('connect-livereload')());
-    app.use(express.static(path.join(config.root, 'dev')));
-    // app.use(express.static(path.join(config.root, 'client')));
-    app.set('appPath', 'dev');
-    app.use(morgan('dev'));
-    app.use(errorHandler()); // Error handler - has to be last
-}
+// 2. Initialize logging
+commonServer.logging.configure(config.logging);
 
-// All undefined asset or api routes should return a 404
-/*app.route('/:url(api|auth|components|app|bower_components|assets)/*')
- .get(errors[404]);*/
+var logger = commonServer.logging.createLogger("NormanServer");
+logger.info("Starting server");
 
-// All other routes should redirect to the index.html
-app.route('/*')
-    .get(function (req, res) {
-        res.sendFile(app.get('appPath') + '/index.html', {root: config.root});
+// 3. Open DB connection
+logger.info("Connecting to MongoDB");
+commonServer.db.connection.initialize(config.db, config.deployment)
+    .then(start, function (dbErr) {
+        logger.error("Failed to connect to MongoDB: " + dbErr.toString());
+    })
+    .catch(function (err) {
+        logger.error("Failed to start server: " + err.toString());
     });
 
-// Start server
-server.listen(config.port, config.ip, function () {
-    console.log('Express server listening on %d, in %s mode', config.port, config.env);
-});
+
+function start() {
+    var serviceLoader = require("./services");
+
+    logger.info("Creating Express application");
+
+    var app = express();
+    app.use(bodyParser.json());
+    app.use(methodOverride());
+    app.use(cookieParser());
+    app.use(express.static(path.resolve(config.cwd, config.web.root)));
+    app.use(morgan('dev'));
+    if (config.debug) {
+        app.use(require('connect-livereload')());
+    }
+    app.use(commonServer.context.init());
+
+    logger.info("Loading services");
+    serviceLoader.loadServices();
+
+    logger.info("Initializing services");
+    serviceLoader.initializeServices();
+
+    logger.info("Mounting services");
+    serviceLoader.initializeHandlers(app);
+
+    // Return 404 if request has not been handlend
+    app.use(function (req, res) {
+        res.statusCode = 404;
+        res.sendFile(path.join(errors.root, "404.html"));
+    });
+
+    var msg = 'Starting http listener on port ' + config.http.port;
+    if (config.http.hostname) {
+        msg += ' for host ' + config.http.hostname;
+    }
+    logger.info(msg);
+    var server = require('http').createServer(app);
+    server.listen(config.http.port, config.http.hostname, function () {
+        logger.info('Server started');
+    });
+}

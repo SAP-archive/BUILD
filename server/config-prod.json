@@ -1,0 +1,28 @@
+{
+    "debug": false,
+    "logging": "log-config.json",
+    "db": {
+        "hosts": "localhost",
+        "database": "norman",
+        "options": {
+            "db": {
+                "safe": true
+            },
+            "server": {
+                "poolSize": 20,
+                "socketOptions": {
+                    "keepAlive": 1
+                }
+            }
+        }
+    },
+    "deployment": {
+        "strategy": "single"
+    },
+    "http": {
+        "port": 9000
+    },
+    "web": {
+        "root": "../public"
+    }
+}
