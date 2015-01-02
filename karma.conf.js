@@ -15,7 +15,9 @@ module.exports = function (config) {
             'node_modules/es5-shim/es5-shim.js',
             'dev/assets/bundle.js',
             'node_modules/angular-mocks/angular-mocks.js',
-            'node_modules/norman*client/tests/**/*.spec.js'
+            'node_modules/norman*client/tests/**/*.spec.js',
+
+            { pattern: 'dev/assets/bundle.js.map', watched: false, included: false, served: true }
         ],
 
         preprocessors: {},

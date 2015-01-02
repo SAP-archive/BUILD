@@ -4,18 +4,20 @@
  * Copy all server dependencies from node_modules to dist/node_modules, excluding devDependencies
  * @return  {array}  flat array of names of required dependencies
  */
-function getServerModules() {
-    var pkg = require('../node_modules/norman-common-server/package.json');
-    var peers = pkg && pkg.peerDependencies ? Object.keys(pkg.peerDependencies) : [];
-    var devs = pkg && pkg.devDependencies ? pkg.devDependencies : [];
-    var deps = [];
+function getServerDependencies() {
+    var grunt = require('grunt');
+    var packageFiles = grunt.file.expand({}, 'node_modules/norman*server/package.json'),
+        dependencies = {}, pkg, peers, devs;
 
-    peers.forEach(function (p) {
-        if (!devs[p]) {
-            deps.push(p + '/**/*.*');
-        }
+    packageFiles.forEach(function (path) {
+        pkg = grunt.file.readJSON(path);
+        peers = pkg && pkg.peerDependencies ? Object.keys(pkg.peerDependencies) : [];
+        devs = pkg && pkg.devDependencies ? pkg.devDependencies : [];
+        peers.forEach(function (p) {
+            if (!devs[p]) dependencies[p + '/**/*.*'] = 1;
+        });
     });
-    return deps;
+    return Object.keys(dependencies);
 }
 
 module.exports = {
@@ -97,15 +99,15 @@ module.exports = {
                 cwd: 'node_modules',
                 dest: 'dist/node_modules',
                 src: ['norman*server/**/*.*']
-            }
-            /*,
-            {   // Other Dependencies (from norman-common-server)
+            },
+
+            {   // Other Dependencies (from norman-*-server)
                 expand: true,
                 cwd: 'node_modules',
                 dest: 'dist/node_modules',
-                src: getServerModules()
+                src: getServerDependencies()
             }
-*/
+
         ]
     }
 
