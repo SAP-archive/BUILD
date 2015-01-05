@@ -1,7 +1,7 @@
-node_modules
+node_modules/
 .tmp
-dev
-dist
+dev/
+dist/
 .DS_Store
 npm-debug.log
 client/requires.js
