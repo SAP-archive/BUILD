@@ -2,7 +2,7 @@
 
 **About This Document**: Project Norman is composed of the numerous <a href="#Useful Links"> Project Norman Sub-Projects</a>, each of which have their own repository. This document describes how to make contributions to any of these sub-projects. 
 
-Check out the [Norman Contribution Model - Intro. Video [](https://github.wdf.sap.corp/Norman/Norman/blob/master/docs/Videos/logo_for_video.png)] (https://github.wdf.sap.corp/Norman/Norman/blob/master/docs/Videos/Norman%20Contribution%20Model%20Intro%20Video.mp4) for a brief overview of the Norman Contribution Model.
+Check out the [(https://github.wdf.sap.corp/Norman/Norman/blob/master/docs/Videos/logo_for_video.png)] (https://www.youtube.com/watch?v=00gtlQlrkT8&feature=youtu.be) for a brief overview of the Norman Contribution Model.
 
 ##Introduction
 
