@@ -4,7 +4,7 @@
 
 Check out the [![](https://github.wdf.sap.corp/Norman/Norman/blob/master/docs/Videos/logo_for_video.png)] (https://www.youtube.com/watch?v=00gtlQlrkT8&feature=youtu.be) for a brief overview of the Norman Contribution Model.
 
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+[![IMAGE ALT TEXT HERE](http://github.wdf.sap.corp/github-enterprise-assets/0000/3598/0000/3053/97ca02ec-94e8-11e4-803d-0be88af32ce9.png)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
 
 ##Introduction
 
