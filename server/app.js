@@ -38,6 +38,7 @@ commonServer.db.connection.initialize(config.db, config.deployment)
 
 function start() {
     var serviceLoader = require("./services");
+    var staticRoot = path.resolve(config.cwd, config.web.root);
 
     logger.info("Creating Express application");
 
@@ -45,7 +46,7 @@ function start() {
     app.use(bodyParser.json());
     app.use(methodOverride());
     app.use(cookieParser());
-    app.use(express.static(path.resolve(config.cwd, config.web.root)));
+    app.use(express.static(staticRoot));
     app.use(morgan('dev'));
     if (config.debug) {
         app.use(require('connect-livereload')());
@@ -61,7 +62,12 @@ function start() {
     logger.info("Mounting services");
     serviceLoader.initializeHandlers(app);
 
-    // Return 404 if request has not been handlend
+    app.use("/norman", function (req, res) {
+        // Unhandled requests below norman should return the index.html page for Angular deep-linking
+        res.sendFile(path.join(staticRoot, "index.html"));
+    });
+
+    // Return 404 if request has not been handled
     app.use(function (req, res) {
         res.statusCode = 404;
         res.sendFile(path.join(errors.root, "404.html"));
