@@ -10,9 +10,9 @@ var cookieParser = require('cookie-parser');
 var commonServer = require('norman-common-server');
 
 // 1. Load configuration
-var configFile = "config.json";
+var configFile = 'config.json';
 if (!fs.existsSync(configFile)) {
-    configFile = "server/config.json"; // debug run
+    configFile = 'server/config.json'; // debug run
 }
 var config = commonServer.config.initialize(configFile);
 var errors = {
@@ -22,25 +22,25 @@ var errors = {
 // 2. Initialize logging
 commonServer.logging.configure(config.logging);
 
-var logger = commonServer.logging.createLogger("NormanServer");
-logger.info("Starting server");
+var logger = commonServer.logging.createLogger('NormanServer');
+logger.info('Starting server');
 
 // 3. Open DB connection
-logger.info("Connecting to MongoDB");
+logger.info('Connecting to MongoDB');
 commonServer.db.connection.initialize(config.db, config.deployment)
     .then(start, function (dbErr) {
-        logger.error("Failed to connect to MongoDB: " + dbErr.toString());
+        logger.error('Failed to connect to MongoDB: ' + dbErr.toString());
     })
     .catch(function (err) {
-        logger.error("Failed to start server: " + err.toString());
+        logger.error('Failed to start server: ' + err.toString());
     });
 
 
 function start() {
-    var serviceLoader = require("./services");
+    var serviceLoader = require('./services');
     var staticRoot = path.resolve(config.cwd, config.web.root);
 
-    logger.info("Creating Express application");
+    logger.info('Creating Express application');
 
     var app = express();
     app.use(bodyParser.json());
@@ -53,24 +53,27 @@ function start() {
     }
     app.use(commonServer.context.init());
 
-    logger.info("Loading services");
+    logger.info('Loading services');
     serviceLoader.loadServices();
 
-    logger.info("Initializing services");
+    logger.info('Initializing services');
     serviceLoader.initializeServices();
 
-    logger.info("Mounting services");
+    logger.info('Mounting services');
     serviceLoader.initializeHandlers(app);
 
-    app.use("/norman", function (req, res) {
-        // Unhandled requests below norman should return the index.html page for Angular deep-linking
-        res.sendFile(path.join(staticRoot, "index.html"));
-    });
+
+    // Unhandled requests below norman should return the index.html page for Angular deep-linking
+    var index = path.join(staticRoot, 'index.html');
+    app.use('/login', function (req, res) { res.sendFile(index); });
+    app.use('/signup', function (req, res) { res.sendFile(index); });
+    app.use('/norman', function (req, res) { res.sendFile(index); });
+
 
     // Return 404 if request has not been handled
     app.use(function (req, res) {
         res.statusCode = 404;
-        res.sendFile(path.join(errors.root, "404.html"));
+        res.sendFile(path.join(errors.root, '404.html'));
     });
 
     var msg = 'Starting http listener on port ' + config.http.port;
