@@ -2,6 +2,9 @@
 
 **About This Document**: Project Norman is composed of the numerous <a href="#Useful Links"> Project Norman Sub-Projects</a>, each of which have their own repository. This document describes how to make contributions to any of these sub-projects. 
 
+
+
+
 ##Introduction
 
 So you want to contribute to a Project Norman sub-project? Good choice! There is lots of scope for contribution, and there's plenty to do! Want to get coding straight away? No problem because we want you to get going as fast as possible as well! However, to make the best use of your valuable time we recommend you take a few minutes to read this page before you dive in. 
