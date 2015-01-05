@@ -4,6 +4,10 @@
 
 [Norman Contribution Model - Intro. Video [](https://github.wdf.sap.corp/Norman/Norman/blob/master/docs/Videos/logo_for_video.png)] (https://github.wdf.sap.corp/Norman/Norman/blob/master/docs/Videos/Norman%20Contribution%20Model%20Intro%20Video.mp4)
 
+<a href="https://github.wdf.sap.corp/Norman/Norman/blob/master/docs/Videos/Norman%20Contribution%20Model%20Intro%20Video.mp4
+" target="_blank"><img src="https://github.wdf.sap.corp/Norman/Norman/blob/master/docs/Videos/logo_for_video.png" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
 ##Introduction
 
 So you want to contribute to a Project Norman sub-project? Good choice! There is lots of scope for contribution, and there's plenty to do! Want to get coding straight away? No problem because we want you to get going as fast as possible as well! However, to make the best use of your valuable time we recommend you take a few minutes to read this page before you dive in. 
