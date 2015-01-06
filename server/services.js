@@ -7,7 +7,8 @@ var normanServices = {
     'norman-business-catalog-manager-server': '/api/catalogs',
     'norman-ui-composer-server': '',
     'norman-uicanvas-server': '',
-    'norman-data-modeler-server': '/api/models'
+    'norman-data-modeler-server': '/api/models',
+    'norman-sample-data-server-server': ''
 };
 
 var serviceLoader = {
