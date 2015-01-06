@@ -47,7 +47,7 @@ The Project Norman Open Source community comprises the following roles:
 + <a href="#Reviewers">Reviewers</a>
 
 
-+ <a href="#Public Management Committee Member">Public Management Committee </a>
++ <a href="#Project and Sub-Project Steering Committee Members">Project and Sub-Project Steering Committee Members </a>
 
 
 ###<a name="Users"></a>Users
