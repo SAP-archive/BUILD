@@ -13,9 +13,14 @@
   "dependencies": {
     "body-parser": "^1.10.1",
     "cookie-parser": "^1.3.3",
+    "composable-middleware": "^0.3.0",
+    "errorhandler": "^1.0.0",
     "express": "^4.10.7",
+    "express-jwt": "^0.1.3",
+    "express-session": "^1.0.2",
     "method-override": "^2.3.1",
     "morgan": "^1.5.1",
+    "norman-promise": "*",
     "norman-common-client": "*",
     "norman-common-server": "*",
     "norman-auth-client": "*",
@@ -48,6 +53,5 @@
     "test": "grunt test",
     "start": "node server/app.js",
     "postinstall": "node run.js node_modules/norman-build-helper/scripts/postinstall.js"
-  },
-  "private": true
+  }
 }
