@@ -2,7 +2,7 @@
 
 Thanks for contributing to Project Norman.
 
-Want to get coding straight away? No problem because we want you to get going as fast as possible as well! However, to make the best use of your valuable time we recommend you take a few minutes to read our [contribution guidelines](https://github.wdf.sap.corp/Norman/Norman/wiki/Contribution-Guidelines) before you dive in. 
+Want to get coding straight away? No problem because we want you to get going as fast as possible as well! However, to make the best use of your valuable time we recommend you take a few minutes to read our [Contribution Guidelines](https://github.wdf.sap.corp/Norman/Norman/wiki/Contribution-Guidelines) before you dive in. 
 
 ###Links to Contribution-Releated Documents
 
