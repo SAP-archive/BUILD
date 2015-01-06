@@ -7,9 +7,6 @@ Looking for a good place to start? Check out this brief video (3 mins) for an <b
 <a href="https://www.youtube.com/watch?v=00gtlQlrkT8&feature=youtu.be
 " target="_blank"><img src="https://github.wdf.sap.corp/github-enterprise-assets/0000/3598/0000/3054/3d1e40b8-94ea-11e4-9f71-230bdf1f86d5.png" 
 alt="IMAGE ALT TEXT HERE" width="500" height="300" border="10" /></a>
-##Introduction
-
-So you want to contribute to a Project Norman sub-project? Good choice! There is lots of scope for contribution, and there's plenty to do! Want to get coding straight away? No problem because we want you to get going as fast as possible as well! However, to make the best use of your valuable time we recommend you take a few minutes to read this page before you dive in. 
 
 You might already know exactly what you do, but if not, you might consider contributing in one or all of the following ways: 
 
