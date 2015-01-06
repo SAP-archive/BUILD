@@ -35,7 +35,8 @@
     "norman-ui-composer-client": "*",
     "norman-ui-composer-server": "*",
     "norman-uicanvas-client": "*",
-    "norman-uicanvas-server": "*"
+    "norman-uicanvas-server": "*",
+    "norman-sample-data-server-server": "*"
   },
   "devDependencies": {
     "connect-livereload": "*",
