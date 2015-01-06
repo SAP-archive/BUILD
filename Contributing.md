@@ -6,6 +6,7 @@ Want to get coding straight away? No problem because we want you to get going as
 
 ###Links to Contribution-Releated Documents
 
++ [Contribution Guidelines](https://github.wdf.sap.corp/Norman/Norman/wiki/Contribution-Guidelines)
 + [Communications Guidelines](https://github.wdf.sap.corp/Norman/Norman/wiki/Communication-Guidelines)
 + [Project Norman Style Guide](https://github.wdf.sap.corp/Norman/Norman/wiki/Project-Norman-Style-Guide)
 + [Community Roles](https://github.wdf.sap.corp/Norman/Norman/blob/master/Community%20Roles.md)
