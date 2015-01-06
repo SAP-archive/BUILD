@@ -15,7 +15,7 @@ module.exports = function (grunt) {
         ngtemplates   : 'grunt-angular-templates',
         protractor    : 'grunt-protractor-runner',
         express       : 'grunt-express-server',
-        ngAnnotate    : 'grunt-ng-annotate',
+        ngAnnotate    : 'grunt-ng-annotate'
     });
 
 
@@ -90,6 +90,13 @@ module.exports = function (grunt) {
         nodemon: require('./grunt-conf/nodemon.js'),
 
         concurrent: {
+            liveEdit: {
+                options: { logConcurrentOutput: true },
+                tasks: [
+                    'nodemon:dev',
+                    'node-inspector:liveEdit'
+                ]
+            },
             debug: {
                 options: { logConcurrentOutput: true },
                 tasks: [
@@ -116,6 +123,12 @@ module.exports = function (grunt) {
                 'env:dev',
                 'express:dev',
                 'watch'
+            ],
+            liveEdit: [
+                'build:liveEdit',
+                'env:dev',
+                'concurrent:liveEdit',
+                'watch'
             ]
         };
         return grunt.task.run(tasks[target || 'dev']);
@@ -135,16 +148,28 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', function (target) {
         target = target || 'dev';
-        console.log('TARGET = ' + target);
-        var tasks = [
-            // 'eslint',
-            'clean:' + target,
-            'less',
-            'copy:html',
-            'copy:dev',
-            'browserify'
-        ];
-        if (target !== 'dev') {
+        console.log("TARGET = " + target);
+        var tasks = [];
+        if (target === 'liveEdit') {
+            tasks = [
+                // 'eslint',
+                'newer:less',
+                'newer:copy:html',
+                'newer:copy:dev',
+                'browserify'
+            ];
+        }
+        else {
+            tasks = [
+                // 'eslint',
+                'clean:' + target,
+                'less',
+                'copy:html',
+                'copy:dev',
+                'browserify'
+            ];
+        }
+        if (target !== 'dev' && target !== 'liveEdit') {
             tasks.push('exorcise');
             tasks.push('ngAnnotate');
             tasks.push('copy:dist');

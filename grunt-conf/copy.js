@@ -55,6 +55,7 @@ module.exports = {
                 src: [
                     'norman*client/**/*.{png,gif,jpg,svg}',
                     'norman*client/node_modules/**/*.{png,gif,jpg,svg}',
+                    'norman*client/bower_components/**/*.{png,gif,jpg,svg,js,html,css}',
                     '!norman-openui5/**/*'
                 ]
             },
@@ -75,7 +76,7 @@ module.exports = {
                 expand: true,
                 flatten: true,
                 dest: 'dev/fonts',
-                src: [ 'node_modules/norman-common-client/fonts/Roboto/*.*' ]
+                src: ['node_modules/norman-common-client/fonts/Roboto/*.*']
             }
         ]
     },
@@ -87,7 +88,7 @@ module.exports = {
                 dot: true,
                 cwd: 'dev',
                 dest: 'dist/public',
-                src: [ '**/*', '!**/*.map' ]
+                src: ['**/*', '!**/*.map']
             },
             {   // SERVER
                 expand: true,

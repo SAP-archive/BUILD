@@ -7,7 +7,8 @@ var normanServices = {
     'norman-business-catalog-manager-server': '/api/catalogs',
     'norman-ui-composer-server': '',
     'norman-uicanvas-server': '',
-    'norman-data-modeler-server': '/api/models'
+    'norman-data-modeler-server': '/api/models',
+    'norman-sample-data-server-server': ''
 };
 
 var serviceLoader = {
@@ -44,7 +45,11 @@ serviceLoader.initializeHandlers = function (app) {
                 if (typeof service.getHandlers === "function") {
                     handlers = service.getHandlers();
                     Object.keys(handlers).forEach(function (handlerName) {
-                        if (handlerConfig[handlerName]) {
+                        if (typeof handlerConfig === "string") {
+                            // simple case, mount all handlers under the same path
+                            app.use(handlerConfig, handlers[handlerName]);
+                        }
+                        else if (handlerConfig[handlerName]) {
                             app.use(handlerConfig[handlerName], handlers[handlerName]);
                         }
                     });

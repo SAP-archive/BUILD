@@ -25,16 +25,6 @@ module.exports = {
         options: { livereload: true },
         files: [ 'dev/assets/*.js' ],
         tasks: []
-    },
-
-    jsServer: {
-        files: [
-            'server/**/*.js',
-            '!server/**/*.{spec,mock}.js',
-            '!server/node_modules/**/*.js',
-            'node_modules/norman*/server/**/*.js'
-        ],
-        tasks: [ 'test:server', 'express:dev' ]
     }
 
 };
