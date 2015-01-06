@@ -16,10 +16,11 @@
     <link rel="stylesheet" href="assets/bootstrap.css">
     <link rel="stylesheet" href="assets/style.css">
 </head>
-<body ng-class="pageClass" layout="row">
+<body ng-class="pageClass">
 
     <!-- Add your site or application content here -->
-    <div ui-view="" class="app" layout="row" layout-fill></div>
+    <div class="app" ui-view
+        ng-class="{ 'nav-bar-hidden': navbarService.hidden, 'aside-hidden': asideIsHidden }"></div>
 
     <script src="assets/vendor.js"></script>
     <script src="assets/bundle.js"></script>
