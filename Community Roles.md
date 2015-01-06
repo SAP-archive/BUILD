@@ -68,7 +68,7 @@ Reviewers are responsible for ensuring all code and documentation submissions to
 
 The number of reviewers per project varies with the size of the project and the number of contribution.
 
-**Note**:  In order to optimize the chances for your submissions to pass the review stage, we recommend you review  [Project Norman Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Project%20Norman%20Style%20Guide.md).
+**Note**:  In order to optimize the chances for your submissions to pass the review stage, we recommend you review  [Contribution Guidelines](https://github.wdf.sap.corp/Norman/Norman/blob/master/Contributing.md#<a name="Changing Code and Submitting Your Changes">).
 
 **Note**:  You can find identify current reviewers on each sub-project <a href="#Who are the Reviews and Committers of Project Norman Sub-Projects?">here</a>.
 
