@@ -9,7 +9,11 @@ var normanServices = {
     'norman-uicanvas-server': '',
     'norman-data-modeler-server': '/api/models',
     'norman-sample-data-server-server': '',
-    'norman-ui-catalog-manager-server':'/api/uicatalogs'
+    'norman-ui-catalog-manager-server':'/api/uicatalogs',
+    'norman-user-research-server': {
+        'studies': '/api/study',
+        'questions': '/api/question'
+    }
 };
 
 var serviceLoader = {
