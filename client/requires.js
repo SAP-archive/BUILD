@@ -9,3 +9,4 @@ require('norman-business-catalog-manager-client');
 require('norman-ui-composer-client');
 require('norman-uicanvas-client');
 require('norman-data-modeler-client');
+require('norman-ui-catalog-manager-client');
