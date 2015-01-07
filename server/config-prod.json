@@ -1,6 +1,29 @@
 {
+    "env": {
+        "NODE_ENV": "production"
+    },
     "debug": false,
-    "logging": "log-config.json",
+    "server": {
+        "workers": 4
+    },
+    "logging": {
+        "logDirectory": "../logs",
+        "output": {
+            "stdout": {
+                "type": "console"
+            },
+            "logfile": {
+                "type": "file",
+                "path": "norman_{now:yyyyMMdd}_{pid}.log"
+            }
+        },
+        "loggers": {
+            "*": {
+                "stdout": "debug",
+                "logfile": "info"
+            }
+        }
+    },
     "db": {
         "hosts": "localhost",
         "database": "norman",
@@ -23,6 +46,13 @@
         "port": 9000
     },
     "web": {
-        "root": "../public"
+        "root": "../public",
+        "options": {
+            "etag": false,
+            "maxAge": "5d"
+        },
+        "compression": {
+            "threshold": 512
+        }
     }
 }

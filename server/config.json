@@ -1,6 +1,28 @@
 {
+    "env": {
+        "NODE_ENV": "development"
+    },
     "debug": true,
-    "logging": "log-config.json",
+    "server": {
+    },
+    "logging": {
+        "logDirectory": "logs",
+        "output": {
+            "stdout": {
+                "type": "console"
+            },
+            "logfile": {
+                "type": "file",
+                "path": "norman_{now:yyyyMMdd}.log"
+            }
+        },
+        "loggers": {
+            "*": {
+                "stdout": "debug",
+                "logfile": "info"
+            }
+        }
+    },
     "db": {
         "hosts": "localhost",
         "database": "norman",

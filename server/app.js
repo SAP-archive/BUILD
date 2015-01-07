@@ -6,6 +6,7 @@ var path = require('path');
 var commonServer = require('norman-common-server');
 var tp = require("norman-server-tp");
 
+var compression = require('compression');
 var morgan = require('morgan');
 var methodOverride = require('method-override');
 var cookieParser = require('cookie-parser');
@@ -23,13 +24,20 @@ var errors = {
     root: path.resolve(config.cwd, 'errors')
 };
 
-// 2. Initialize logging
+// 2. Set configured environment variables (e.g. NODE_ENV)
+if (config.env) {
+    Object.keys(config.env).forEach(function (v) {
+        process.env[v] = config.env[v];
+    });
+}
+
+// 3. Initialize logging
 commonServer.logging.configure(config.logging);
 
 var logger = commonServer.logging.createLogger('NormanServer');
 logger.info('Starting server');
 
-// 3. Open DB connection
+// 4. Open DB connection
 logger.info('Connecting to MongoDB');
 commonServer.db.connection.initialize(config.db, config.deployment)
     .then(start, function (dbErr) {
@@ -42,20 +50,26 @@ commonServer.db.connection.initialize(config.db, config.deployment)
 
 function start() {
     var serviceLoader = require('./services');
-    var staticRoot = path.resolve(config.cwd, config.web.root);
+    var staticRoot;
+    if (config.web) {
+        staticRoot = path.resolve(config.cwd, config.web.root);
+    }
 
     logger.info('Creating Express application');
 
     var app = express();
+    app.use(commonServer.context.init());
+    app.use(compression(config.web.compression));
     app.use(bodyParser.json());
     app.use(methodOverride());
     app.use(cookieParser());
-    app.use(express.static(staticRoot));
+    if (staticRoot) {
+        app.use(express.static(staticRoot, config.web.options));
+    }
     app.use(morgan('dev'));
     if (config.debug) {
         app.use(require('connect-livereload')());
     }
-    app.use(commonServer.context.init());
 
     logger.info('Loading services');
     serviceLoader.loadServices();

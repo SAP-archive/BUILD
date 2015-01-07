@@ -21,12 +21,21 @@ function getServerDependencies() {
         console.log('Found server module ' + dependency);
         dependencies[dependency + '/**/*']  = 1;
 
-        // add peer dependencies if any
         depPkg = grunt.file.readJSON('node_modules/' + dependency + '/package.json');
+
+        // add peer dependencies if any
         if (depPkg.peerDependencies) {
             Object.keys(depPkg.peerDependencies).forEach(function (peer) {
                 console.log("Found server module " + peer);
                 dependencies[peer + '/**/*'] = 1;
+            });
+        }
+
+        // add dependencies if needed
+        if (depPkg.dependencies) {
+            Object.keys(depPkg.dependencies).forEach(function (dep) {
+                console.log("Found server module " + dep);
+                dependencies[dep + '/**/*'] = 1;
             });
         }
     });
