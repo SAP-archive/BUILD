@@ -2,12 +2,16 @@
 
 var fs = require('fs');
 var path = require('path');
-var express = require('express');
+
+var commonServer = require('norman-common-server');
+var tp = require("norman-server-tp");
+
 var morgan = require('morgan');
-var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var cookieParser = require('cookie-parser');
-var commonServer = require('norman-common-server');
+
+var express = tp.express;
+var bodyParser = tp['body-parser'];
 
 // 1. Load configuration
 var configFile = 'config.json';
