@@ -2,6 +2,7 @@
 
 var fs = require('fs');
 var path = require('path');
+var multipart = require('connect-multiparty');
 
 var commonServer = require('norman-common-server');
 var tp = require("norman-server-tp");
@@ -47,6 +48,7 @@ function start() {
     logger.info('Creating Express application');
 
     var app = express();
+    app.use(multipart());
     app.use(bodyParser.json());
     app.use(methodOverride());
     app.use(cookieParser());
