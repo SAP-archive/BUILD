@@ -200,6 +200,7 @@ module.exports = function (grunt) {
     grunt.registerTask('dist', ['build:dist']);
     grunt.registerTask('dev', ['build:dev']);
     grunt.registerTask('default', ['build:dev']);
+    grunt.registerTask('liveEdit', ['server:liveEdit']);
 
     grunt.task.run('notify_hooks');
 };
