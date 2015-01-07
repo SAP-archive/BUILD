@@ -23,6 +23,7 @@
     "norman-promise": "0.3.5",
     "norman-common-client": "0.0.68",
     "norman-common-server": "0.3.5",
+    "norman-server-tp": "^0.3.0",
     "norman-auth-client": "0.1.9",
     "norman-auth-server": "0.1.8",
     "norman-projects-client": "0.0.31",
@@ -36,7 +37,7 @@
     "norman-ui-composer-server": "*",
     "norman-uicanvas-client": "*",
     "norman-uicanvas-server": "*",
-    "norman-sample-data-server-server": "*",
+    "norman-sample-data-server-server": "0.0.7",
     "norman-ui-catalog-manager-client":"0.0.2",
     "norman-ui-catalog-manager-server":"0.0.3"
   },
