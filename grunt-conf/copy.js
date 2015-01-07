@@ -1,21 +1,34 @@
 'use strict';
 
+var path = require('path');
+
 /**
  * Copy all server dependencies from node_modules to dist/node_modules, excluding devDependencies
  * @return  {array}  flat array of names of required dependencies
  */
 function getServerDependencies() {
     var grunt = require('grunt');
-    var packageFiles = grunt.file.expand({}, 'node_modules/norman*server/package.json'),
-        dependencies = {}, pkg, peers, devs;
+    var pkg = grunt.file.readJSON('package.json');
+    var directDependencies = Object.keys(pkg.dependencies);
+    var dependencies = {};
+    var clientRegExp = /norman.*client/;
+    directDependencies.forEach(function (dependency) {
+        var depPkg, depPath;
+        if (clientRegExp.test(dependency)) {
+            // ignore client packages
+            return;
+        }
+        console.log('Found server module ' + dependency);
+        dependencies[dependency + '/**/*']  = 1;
 
-    packageFiles.forEach(function (path) {
-        pkg = grunt.file.readJSON(path);
-        peers = pkg && pkg.peerDependencies ? Object.keys(pkg.peerDependencies) : [];
-        devs = pkg && pkg.devDependencies ? pkg.devDependencies : [];
-        peers.forEach(function (p) {
-            if (!devs[p]) dependencies[p + '/**/*.*'] = 1;
-        });
+        // add peer dependencies if any
+        depPkg = grunt.file.readJSON('node_modules/' + dependency + '/package.json');
+        if (depPkg.peerDependencies) {
+            Object.keys(depPkg.peerDependencies).forEach(function (peer) {
+                console.log("Found server module " + peer);
+                dependencies[peer + '/**/*'] = 1;
+            });
+        }
     });
     return Object.keys(dependencies);
 }
@@ -99,16 +112,8 @@ module.exports = {
                 expand: true,
                 cwd: 'node_modules',
                 dest: 'dist/node_modules',
-                src: ['norman*server/**/*.*']
-            },
-
-            {   // Other Dependencies (from norman-*-server)
-                expand: true,
-                cwd: 'node_modules',
-                dest: 'dist/node_modules',
                 src: getServerDependencies()
             }
-
         ]
     }
 
