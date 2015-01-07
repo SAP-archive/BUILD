@@ -41,8 +41,11 @@ angular.module('norman', modules)
         $urlRouterProvider.otherwise('/');
         $locationProvider.html5Mode(true);
     })
-    // add state name as a class to the body
-    .run(function ($rootScope) {
+    .run(function ($rootScope, NavBarService, AsideService) {
+        $rootScope.navbarService = NavBarService;
+        $rootScope.asideService = AsideService;
+
+        // add state name as a class to the body
         $rootScope.$on('$stateChangeStart', function (ev, toState) {
             $rootScope.pageClass = 'page-' + toState.name;
         });

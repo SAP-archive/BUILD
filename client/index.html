@@ -21,10 +21,11 @@
     <script src="resources/norman-data-modeler-client/bower_components/dagre/dist/dagre.core.js"></script>
     <script src="resources/norman-data-modeler-client/bower_components/jsPlumb/dist/js/dom.jsPlumb-1.7.2.js"></script>
 </head>
-<body ng-class="pageClass" layout="row">
+<body ng-class="pageClass">
 
     <!-- Add your site or application content here -->
-    <div ui-view="" class="app" layout="row" layout-fill></div>
+    <div class="app" ui-view
+        ng-class="{ 'nav-bar-hidden': navbarService.hidden, 'aside-hidden': asideService.hidden }"></div>
 
     <script src="assets/vendor.js"></script>
     <script src="assets/bundle.js"></script>
