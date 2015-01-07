@@ -68,7 +68,7 @@ function start() {
     }
     app.use(morgan('dev'));
     if (config.debug) {
-        app.use(require('connect-livereload')());
+        app.use('/norman', require('connect-livereload')());
     }
 
     logger.info('Loading services');
