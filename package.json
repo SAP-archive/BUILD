@@ -38,7 +38,7 @@
     "norman-uicanvas-client": "*",
     "norman-uicanvas-server": "*",
     "norman-sample-data-server-server": "0.0.7",
-    "norman-ui-catalog-manager-client":"0.0.2",
+    "norman-ui-catalog-manager-client":"0.0.4",
     "norman-ui-catalog-manager-server":"0.0.3"
   },
   "devDependencies": {
