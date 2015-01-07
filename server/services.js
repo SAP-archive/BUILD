@@ -8,7 +8,8 @@ var normanServices = {
     'norman-ui-composer-server': '',
     'norman-uicanvas-server': '',
     'norman-data-modeler-server': '/api/models',
-    'norman-sample-data-server-server': ''
+    'norman-sample-data-server-server': '',
+    'norman-ui-catalog-manager-server':'/api/uicatalogs'
 };
 
 var serviceLoader = {
