@@ -98,6 +98,14 @@ module.exports = {
                 expand: true,
                 flatten: true,
                 dest: 'dev/fonts',
+                src: ['node_modules/bootstrap/fonts/*.*']
+            },
+
+            // roboto font
+            {
+                expand: true,
+                flatten: true,
+                dest: 'dev/fonts',
                 src: ['node_modules/norman-common-client/fonts/Roboto/*.*']
             }
         ]
