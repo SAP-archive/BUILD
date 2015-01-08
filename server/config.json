@@ -2,7 +2,12 @@
     "env": {
         "NODE_ENV": "development"
     },
-    "debug": true,
+    "debug": {
+        "active": true,
+        "liveReload": [
+            "/norman"
+        ]
+    },
     "server": {
     },
     "logging": {
@@ -44,7 +49,19 @@
     "http": {
         "port": 9000
     },
+    "services": "services.json",
     "web": {
-        "root": "../dev"
+        "root": "../dev",
+        "errors": {
+            "root": "errors"
+        },
+        "indexFallback": [
+            "/login",
+            "/signup",
+            "/norman"
+        ],
+        "compression": {
+            "threshold": 512
+        }
     }
 }

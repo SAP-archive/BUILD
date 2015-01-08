@@ -2,6 +2,7 @@ node_modules/
 .tmp
 dev/
 dist/
+logs/
 .DS_Store
 npm-debug.log
 client/requires.js

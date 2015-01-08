@@ -19,12 +19,14 @@
     "express": "^4.10.7",
     "express-jwt": "^0.1.3",
     "express-session": "^1.0.2",
+    "lodash": "^2.4.1",
     "method-override": "^2.3.1",
     "morgan": "^1.5.1",
     "norman-promise": "0.3.5",
     "norman-common-client": "0.0.68",
     "norman-common-server": "0.3.5",
     "norman-server-tp": "^0.3.0",
+    "norman-app-server": "^0.3.0",
     "norman-auth-client": "0.1.9",
     "norman-auth-server": "0.1.8",
     "norman-projects-client": "0.0.31",
@@ -40,7 +42,9 @@
     "norman-uicanvas-server": "*",
     "norman-sample-data-server-server": "0.0.7",
     "norman-ui-catalog-manager-client":"0.0.4",
-    "norman-ui-catalog-manager-server":"0.0.3"
+    "norman-ui-catalog-manager-server":"0.0.3",
+    "norman-user-research-client":"0.0.5",
+    "norman-user-research-server":"0.0.5"
   },
   "devDependencies": {
     "connect-livereload": "*",

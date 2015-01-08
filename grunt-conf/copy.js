@@ -115,7 +115,7 @@ module.exports = {
             {   // SERVER
                 expand: true,
                 dest: 'dist',
-                src: [ 'server/**/*.js', 'server/errors/*.html', 'server/log-config.json' ]
+                src: [ 'server/**/*.js', 'server/errors/*.html', 'server/services.json' ]
             },
             {   // Norman Server Modules
                 expand: true,
