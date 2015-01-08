@@ -55,6 +55,8 @@
             "root": "errors"
         },
         "indexFallback": [
+            "/verifyemail",
+            "/auth",
             "/login",
             "/signup",
             "/norman"
