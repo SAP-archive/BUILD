@@ -15,7 +15,4 @@ server.initialize()// Connect to Mongo, create Express app and load services
     })
     .then(function () {
         return server.start(); // Mount not found handlers and start http server
-    })
-    .catch(function (err) {
-
     });
