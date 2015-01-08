@@ -47,7 +47,11 @@
         "strategy": "single"
     },
     "http": {
-        "port": 9000
+        "port": 9000,
+        "proxy": {
+            "host": "proxy",
+            "port": 8080
+        }
     },
     "services": "services.json",
     "web": {
