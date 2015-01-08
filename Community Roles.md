@@ -147,4 +147,3 @@ The Project Norman Steering Committee comprises the following members:
 + **Engagement Lead/Community representative** - responsible for marketing this project, reaching out to external/internal  consumers, enroll more contributors to the project etc.
 
 + **Project Norman Steering Committee Lead** - the Project Norman Steering Committee Lead is responsible for leading this project in terms of the project structure.
-
