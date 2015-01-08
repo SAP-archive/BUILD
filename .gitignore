@@ -13,3 +13,5 @@ server/requires.js
 .idea/
 *.iml
 *.ipr
+uploads
+logs
