@@ -2,7 +2,6 @@
     "env": {
         "NODE_ENV": "production"
     },
-    "debug": false,
     "server": {
         "workers": 4
     },
@@ -45,8 +44,17 @@
     "http": {
         "port": 9000
     },
+    "services": "services.json",
     "web": {
         "root": "../public",
+        "errors": {
+            "root": "errors"
+        },
+        "indexFallback": [
+            "/login",
+            "/signup",
+            "/norman"
+        ],
         "options": {
             "etag": false,
             "maxAge": "5d"
