@@ -22,7 +22,7 @@
     "method-override": "^2.3.1",
     "morgan": "^1.5.1",
     "norman-promise": "0.3.5",
-    "norman-common-client": "0.0.72",
+    "norman-common-client": "0.0.73",
     "norman-common-server": "0.3.6",
     "norman-server-tp": "^0.3.0",
     "norman-auth-client": "0.1.11",
