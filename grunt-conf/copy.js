@@ -1,7 +1,5 @@
 'use strict';
 
-var path = require('path');
-
 /**
  * Copy all server dependencies from node_modules to dist/node_modules, excluding devDependencies
  * @return  {array}  flat array of names of required dependencies
@@ -13,20 +11,17 @@ function getServerDependencies() {
     var dependencies = {};
     var clientRegExp = /norman.*client/;
     directDependencies.forEach(function (dependency) {
-        var depPkg, depPath;
-        if (clientRegExp.test(dependency)) {
-            // ignore client packages
-            return;
-        }
+        // ignore client packages
+        if (clientRegExp.test(dependency)) return;
         console.log('Found server module ' + dependency);
-        dependencies[dependency + '/**/*']  = 1;
+        dependencies[dependency + '/**/*'] = 1;
 
-        depPkg = grunt.file.readJSON('node_modules/' + dependency + '/package.json');
+        var depPkg = grunt.file.readJSON('node_modules/' + dependency + '/package.json');
 
         // add peer dependencies if any
         if (depPkg.peerDependencies) {
             Object.keys(depPkg.peerDependencies).forEach(function (peer) {
-                console.log("Found server module " + peer);
+                console.log('Found server module ' + peer);
                 dependencies[peer + '/**/*'] = 1;
             });
         }
@@ -34,7 +29,7 @@ function getServerDependencies() {
         // add dependencies if needed
         if (depPkg.dependencies) {
             Object.keys(depPkg.dependencies).forEach(function (dep) {
-                console.log("Found server module " + dep);
+                console.log('Found server module ' + dep);
                 dependencies[dep + '/**/*'] = 1;
             });
         }

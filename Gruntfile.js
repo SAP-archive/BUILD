@@ -7,7 +7,6 @@ module.exports = function (grunt) {
     // Time how long tasks take. Can help when optimizing build times
     require('time-grunt')(grunt);
     grunt.loadNpmTasks('grunt-notify');
-    grunt.loadNpmTasks('grunt-contrib-rename');
 
     // Load grunt tasks automatically, when needed
     require('jit-grunt')(grunt, {
@@ -32,10 +31,12 @@ module.exports = function (grunt) {
                 enabled: true,
                 success: false,               // whether successful grunt executions should be notified automatically
                 max_jshint_notifications: 5,  // maximum number of notifications from jshint output
-                // title: 'norman-norman',       // defaults to the name in package.json, or will use project directory's name
                 duration: 3                   // the duration of notification in seconds, for `notify-send only
             }
         },
+
+        // put partials in angular cache
+        html2js: require('./grunt-conf/html2js.js'),
 
         // Make sure code styles are up to par and there are no obvious mistakes
         eslint: require('./grunt-conf/eslint.js'),
@@ -166,7 +167,8 @@ module.exports = function (grunt) {
                 'less',
                 'copy:html',
                 'copy:dev',
-                'browserify'
+                'browserify',
+                'html2js'
             ];
         }
         if (target !== 'dev' && target !== 'liveEdit') {
