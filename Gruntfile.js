@@ -167,8 +167,8 @@ module.exports = function (grunt) {
                 'less',
                 'copy:html',
                 'copy:dev',
-                'browserify',
-                'html2js'
+                'browserify'
+                // 'html2js'
             ];
         }
         if (target !== 'dev' && target !== 'liveEdit') {
