@@ -10,6 +10,8 @@
     "norman-data-modeler-server": "/api/models",
     "norman-sample-data-server-server": "",
     "norman-ui-catalog-manager-server":"/api/uicatalogs",
+    "norman-ux-rule-engine-server": "/api/appFlow",
+    "norman-shared-workspace-server": "",
     "norman-user-research-server": {
         "studies": "/api/study",
         "questions": "/api/question"
