@@ -23,6 +23,10 @@ module.exports = {
     },
     main: {
         dest: 'dev/assets/templates.js',
-        src: ['welcome/*.html', 'dev/resources/**/*.html']
+        src: [
+            'welcome/*.html',
+            'dev/resources/**/*.html',
+            '!dev/resources/norman-common-client/ui-elements/index.html'
+        ]
     }
 };
