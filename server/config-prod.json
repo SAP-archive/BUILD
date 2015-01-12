@@ -44,7 +44,7 @@
     "http": {
         "port": 9000,
         "proxy": {
-            "host": "proxy",
+            "host": "proxy.wdf.sap.corp",
             "port": 8080
         }
     },
