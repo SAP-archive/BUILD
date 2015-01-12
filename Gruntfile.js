@@ -168,15 +168,16 @@ module.exports = function (grunt) {
                 'copy:html',
                 'copy:dev',
                 'browserify'
-                // 'html2js'
             ];
         }
+
         if (target !== 'dev' && target !== 'liveEdit') {
             tasks.push('exorcise');
             tasks.push('ngAnnotate');
             tasks.push('copy:dist');
             tasks.push('config-prod');
             tasks.push('cssmin');
+            tasks.push('html2js');
             // tasks.push('uglify');
         }
         // tasks.push('test:client');

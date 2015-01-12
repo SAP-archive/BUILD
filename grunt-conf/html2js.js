@@ -8,8 +8,7 @@ module.exports = {
         htmlmin: {
             collapseBooleanAttributes: true,
             collapseWhitespace: true,
-            // conservativeCollapse: true,
-            removeAttributeQuotes: true,
+            removeAttributeQuotes: false,
             removeComments: true,
             removeEmptyAttributes: true,
             removeRedundantAttributes: true,

@@ -35,8 +35,9 @@ module.exports = {
             ],
             external: null // Reset this here because it's not needed
         },
-        src: ['.'],
-        dest: 'dev/assets/vendor.js'
+        files: {
+            'dev/assets/vendor.js': [ '.' ]
+        }
     }
 
 
