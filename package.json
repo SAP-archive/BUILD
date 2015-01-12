@@ -41,8 +41,8 @@
     "norman-uicanvas-client": "0.0.21",
     "norman-uicanvas-server": "0.0.8",
     "norman-sample-data-server-server": "0.0.9",
-    "norman-ui-catalog-manager-client":"0.0.7",
-    "norman-ui-catalog-manager-server":"0.0.5",
+    "norman-ui-catalog-manager-client":"0.0.8",
+    "norman-ui-catalog-manager-server":"0.0.6",
     "norman-user-research-client":"0.0.18",
     "norman-user-research-server":"0.0.11"
   },
