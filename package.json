@@ -1,6 +1,6 @@
 {
   "name": "norman-norman",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Norman",
   "repository": {
     "type:": "git",
@@ -32,21 +32,19 @@
     "norman-projects-client": "0.0.40",
     "norman-projects-server": "0.0.21",
     "norman-shell-client": "0.2.0",
-    "norman-business-catalog-manager-client": "^0.3.3",
-    "norman-business-catalog-manager-server": "^0.3.3",
-    "norman-data-modeler-client": "^0.3.0",
-    "norman-data-modeler-server": "^0.3.0",
+    "norman-business-catalog-manager-client": "^0.4.0",
+    "norman-business-catalog-manager-server": "^0.4.0",
+    "norman-data-modeler-client": "^0.4.0",
+    "norman-data-modeler-server": "^0.4.0",
     "norman-ui-composer-client": "0.0.7",
     "norman-ui-composer-server": "0.0.3",
-    "norman-uicanvas-client": "0.0.21",
-    "norman-uicanvas-server": "0.0.8",
     "norman-sample-data-server-server": "0.0.9",
     "norman-ui-catalog-manager-client":"0.0.8",
     "norman-ui-catalog-manager-server":"0.0.6",
     "norman-user-research-client":"0.0.18",
     "norman-user-research-server":"0.0.11",
-    "norman-ux-rule-engine-client": "^0.4.1",
-    "norman-ux-rule-engine-server": "^0.4.1"
+    "norman-ux-rule-engine-client": "^0.4.0",
+    "norman-ux-rule-engine-server": "^0.4.0"
   },
   "devDependencies": {
     "connect-livereload": "*",
