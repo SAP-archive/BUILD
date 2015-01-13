@@ -18,7 +18,7 @@
     "norman-app-server": "0.3.4",
     "norman-shell-client": "0.2.0",
     "norman-auth-client": "0.1.19",
-    "norman-auth-server": "0.2.7",
+    "norman-auth-server": "0.2.8",
     "norman-projects-client": "0.0.44",
     "norman-projects-server": "0.0.25",
     "norman-business-catalog-manager-client": "^0.4.0",
