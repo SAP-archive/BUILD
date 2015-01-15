@@ -12,7 +12,7 @@
     "main": "server/app.js",
     "dependencies": {
         "norman-promise": "0.3.5",
-        "norman-common-client": "0.2.23",
+        "norman-common-client": "0.2.24",
         "norman-common-server": "0.3.9",
         "norman-server-tp": "0.3.5",
         "norman-app-server": "0.3.4",
@@ -30,7 +30,7 @@
         "norman-sample-data-server-server": "0.0.9",
         "norman-ui-catalog-manager-client": "0.0.8",
         "norman-ui-catalog-manager-server": "0.0.6",
-        "norman-user-research-client": "0.0.18",
+        "norman-user-research-client": "0.0.19",
         "norman-user-research-server": "0.0.11",
         "norman-ux-rule-engine-client": "^0.4.0",
         "norman-ux-rule-engine-server": "^0.4.0",
