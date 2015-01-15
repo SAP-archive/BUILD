@@ -172,12 +172,12 @@ module.exports = function (grunt) {
         }
 
         if (target !== 'dev' && target !== 'liveEdit') {
-            tasks.push('exorcise');
             tasks.push('ngAnnotate');
+            tasks.push('exorcise');
+            tasks.push('html2js');
+            tasks.push('cssmin');
             tasks.push('copy:dist');
             tasks.push('config-prod');
-            tasks.push('cssmin');
-            tasks.push('html2js');
             // tasks.push('uglify');
         }
         // tasks.push('test:client');
