@@ -6,7 +6,7 @@
         "workers": 0
     },
     "logging": {
-        "logDirectory": "../logs",
+        "logDirectory": "logs",
         "output": {
             "stdout": {
                 "type": "console"
