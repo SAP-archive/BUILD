@@ -3,6 +3,7 @@
         "users": "/api/users",
         "auth": "/auth"
     },
+    "norman-shared-workspace-server": "/api/projects/*/prototype",
     "norman-projects-server": "/api/projects",
     "norman-business-catalog-manager-server": "/api/catalogs",
     "norman-ui-composer-server": "",
