@@ -11,3 +11,4 @@ require('norman-data-modeler-client');
 require('norman-ui-catalog-manager-client');
 require('norman-user-research-client');
 require('norman-ux-rule-engine-client');
+require('norman-sample-data-manager-client');

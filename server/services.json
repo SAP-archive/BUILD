@@ -7,7 +7,7 @@
     "norman-business-catalog-manager-server": "/api/catalogs",
     "norman-ui-composer-server": "",
     "norman-data-modeler-server": "/api/models",
-    "norman-sample-data-server-server": "",
+    "norman-sample-data-manager-server": "",
     "norman-ui-catalog-manager-server":"/api/uicatalogs",
     "norman-ux-rule-engine-server": "/api/appFlow",
     "norman-user-research-server": {
