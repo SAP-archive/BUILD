@@ -28,7 +28,7 @@
         "database": "norman",
         "options": {
             "db": {
-                "safe": true
+                "safe": { "w": 1}
             },
             "server": {
                 "poolSize": 20,
