@@ -102,6 +102,14 @@ module.exports = {
                 flatten: true,
                 dest: 'dev/fonts',
                 src: ['node_modules/norman-common-client/fonts/Roboto/*.*']
+            },
+
+            // ui-elements docs css
+            {
+                expand: true,
+                flatten: true,
+                dest: 'dev/docs/styles',
+                src: ['node_modules/norman-common-client/docs/**/*.css']
             }
         ]
     },
