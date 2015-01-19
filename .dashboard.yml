@@ -1,0 +1,9 @@
+logo: https://github.wdf.sap.corp/github-enterprise-assets/0000/3598/0000/2546/8cda45ac-76ea-11e4-9ae1-6842e5baa7cc.png       # url to logo image
+delay: 5               # minutes to display notifications
+branch:                # list of watched branches
+  - master
+stats:                 # list of statistics
+  - url: http://...
+    icon: octicon octicon-star
+  - url: http://...
+    icon: octicon octicon-star
