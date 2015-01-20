@@ -31,7 +31,7 @@
         "norman-sample-data-manager-server": "0.1.2",
         "norman-sample-data-manager-client": "0.0.4",
         "norman-ui-catalog-manager-client": "0.0.9",
-        "norman-ui-catalog-manager-server": "0.0.10",
+        "norman-ui-catalog-manager-server": "0.0.11",
         "norman-user-research-client": "0.0.20",
         "norman-user-research-server": "0.0.12",
         "norman-ux-rule-engine-client": "^0.4.0",
