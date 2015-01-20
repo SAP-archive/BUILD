@@ -4,6 +4,7 @@ require('norman-common-client');
 require('norman-auth-client');
 require('norman-shell-client');
 require('./welcome');
+require('norman-shared-workspace-client');
 require('norman-projects-client');
 require('norman-business-catalog-manager-client');
 require('norman-ui-composer-client');
