@@ -70,7 +70,7 @@ module.exports = {
                 cwd: 'node_modules/',
                 dest: 'dev/resources/',
                 src: [
-                    'norman*client/**/*.{png,gif,jpg,svg}',
+                    'norman*client/**/*.{png,gif,jpg,svg,json}',
                     'norman*client/node_modules/**/*.{png,gif,jpg,svg}',
                     'norman*client/bower_components/**/*.{png,gif,jpg,svg,js,html,css}',
                     '!norman-openui5/**/*'
