@@ -47,6 +47,9 @@ module.exports = function (grunt) {
         // Convert less to css
         less: require('./grunt-conf/less.js'),
 
+        // Autoprefixer, add vendor specific css prefix
+        autoprefixer: require('./grunt-conf/autoprefixer.js'),
+
         // Minify css
         cssmin: require('./grunt-conf/cssmin.js'),
 
@@ -155,6 +158,7 @@ module.exports = function (grunt) {
             tasks = [
                 // 'eslint',
                 'newer:less',
+                'newer:autoprefixer',
                 'newer:copy:html',
                 'newer:copy:dev',
                 'browserify'
@@ -165,6 +169,7 @@ module.exports = function (grunt) {
                 // 'eslint',
                 'clean:' + target,
                 'less',
+                'autoprefixer',
                 'copy:html',
                 'copy:dev',
                 'browserify'
