@@ -17,7 +17,6 @@ angular.module('source-map-exception-handler', [])
     });
 });
 
-
 angular.module('norman', modules)
     .config(function ($urlRouterProvider, $locationProvider) {
         $urlRouterProvider.otherwise('/');
