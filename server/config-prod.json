@@ -3,7 +3,7 @@
         "NODE_ENV": "production"
     },
     "server": {
-        "workers": 0
+        "workers": 4
     },
     "logging": {
         "logDirectory": "logs",
