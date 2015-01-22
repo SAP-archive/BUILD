@@ -74,7 +74,7 @@ On a daily basis, reviewers are responsible for:
 
 + Monitoring the Pull Request tab and reviewing all pull requests to ensure the code submitted conforms to the Norman coding guidelines and test requirements. In addition, in the case of bug fixes reviewers must ensure that the code is required solution in the up-to-date code base. In the case of in the case of new features or enhancements, the reviewer must ensure that it works according to agreed specifications. 
 
-+ Monitoring the Issue Tracker tab and ensuring that all issues are labelled correctly, and that the relevent team member is aware of the issue. 
++ Monitoring the Issue Tracker tab and ensuring that all issues are labelled correctly, and that the relevent team member is aware of issues relevent to them that need to be addressed. 
 
 **Note**:  In order to optimize the chances for your submissions to pass the review stage, we recommend you review  [Project Norman Style Guide](https://github.wdf.sap.corp/Norman/Norman/wiki/Project-Norman-Style-Guide).
 
