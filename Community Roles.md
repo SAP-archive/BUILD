@@ -68,9 +68,13 @@ You can find out more about our current reviewers and contributors on the [Contr
 
 ###<a name="Reviewers"></a>Reviewers
 
-Reviewers are responsible for ensuring all code and documentation submissions to Project Norman sub-projects meet the agreed requirements in terms of scope, code-quality, and functionality. Reviewers are generally experts in the environment to which the contribution applies, and are also Committers.
+In general, the reviewer(s) on a team is responsible for ensuring all code and documentation submissions to Project Norman sub-projects meet the agreed requirements in terms of scope, code-quality, and functionality. Reviewers are generally experts in the environment to which the contribution applies, and are also Committers.The number of reviewers per project varies with the size of the project and the number of contribution.
 
-The number of reviewers per project varies with the size of the project and the number of contribution.
+On a daily basis, reviewers are responsible for:
+
++ Monitoring the Pull Request tab and reviewing all pull requests to ensure the code submitted conforms to the Norman coding guidelines and test requirements. In addition, in the case of bug fixes reviewers must ensure that the code is required solution in the up-to-date code base. In the case of in the case of new features or enhancements, the review must ensure that it works according to specification. 
+
++ Monitoring the Issue Tracker tab and ensuring that all issues are labelled correctly, and that the relevent team member is aware of the issue. 
 
 **Note**:  In order to optimize the chances for your submissions to pass the review stage, we recommend you review  [Project Norman Style Guide](https://github.wdf.sap.corp/Norman/Norman/wiki/Project-Norman-Style-Guide).
 
