@@ -1,11 +1,7 @@
-var fs = require('fs');
+var path = require('path');
 
 var Server = require('norman-app-server').Server;
-
-var configFile = 'config.json';
-if (!fs.existsSync(configFile)) {
-    configFile = 'server/config.json'; // debug run
-}
+var configFile = path.join(__dirname, 'config.json');
 
 var k, n;
 for (k = 2, n = process.argv.length; k < n; ++k) {
