@@ -1,0 +1,69 @@
+{
+    "env": {
+        "NODE_ENV": "development"
+    },
+    "debug": {
+        "active": false,
+        "liveReload": [
+            "/norman"
+        ]
+    },
+    "server": {
+    },
+    "logging": {
+        "logDirectory": "logs",
+        "output": {
+            "stdout": {
+                "type": "console"
+            },
+            "logfile": {
+                "type": "file",
+                "path": "norman_{now:yyyyMMdd}.log"
+            }
+        },
+        "loggers": {
+            "*": {
+                "stdout": "debug",
+                "logfile": "info"
+            }
+        }
+    },
+    "db": {
+        "hosts": "localhost",
+        "database": "norman-e2e-test-sever",
+        "options": {
+            "db": {
+                "safe": true
+            },
+            "server": {
+                "poolSize": 20,
+                "socketOptions": {
+                    "keepAlive": 1
+                }
+            }
+        }
+    },
+    "deployment": {
+        "strategy": "single"
+    },
+    "http": {
+        "port": 9000
+    },
+    "services": "services.json",
+    "web": {
+        "root": "../dev",
+        "errors": {
+            "root": "errors"
+        },
+        "indexFallback": [
+            "/verifyemail",
+            "/auth",
+            "/login",
+            "/signup",
+            "/norman"
+        ],
+        "compression": {
+            "threshold": 512
+        }
+    }
+}

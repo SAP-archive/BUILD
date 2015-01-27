@@ -6,7 +6,8 @@ module.exports = {
     },
 
     src: [
-        'node_modules/norman*server/tests/**/*.spec.js'
+        'node_modules/norman*server/tests/**/*.spec.js',
+        'test/int/server/**/*.spec.js'
     ]
 
 };
