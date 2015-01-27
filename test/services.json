@@ -1,0 +1,18 @@
+{
+    "norman-auth-server": {
+        "users": "/api/users",
+        "auth": "/auth"
+    },
+    "norman-shared-workspace-server": "/api/projects/*/prototype",
+    "norman-projects-server": "/api/projects",
+    "norman-business-catalog-manager-server": "/api/catalogs",
+    "norman-ui-composer-server": "",
+    "norman-data-modeler-server": "/api/models",
+    "norman-sample-data-manager-server": "",
+    "norman-ui-catalog-manager-server":"/api/uicatalogs",
+    "norman-ux-rule-engine-server": "/api/appFlow",
+    "norman-user-research-server": {
+        "studies": "/api/study",
+        "questions": "/api/question"
+    }
+}

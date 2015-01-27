@@ -87,6 +87,8 @@
         "karma-sinon-chai": "^0.2.0",
         "lodash": "^2.4.1",
         "norman-build-helper": "^0.3.1",
+        "norman-testing-tp": "^0.1.0",
+        "norman-testing-server": "^0.1.1",
         "open": "0.0.5",
         "q": "^1.1.2",
         "supertest": "^0.15.0",
