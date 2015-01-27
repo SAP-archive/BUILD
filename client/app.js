@@ -1,6 +1,6 @@
 'use strict';
 
-var modules = require('norman-client-tp');
+var modules = require('norman-client-tp').modules;
 
 // Require optional modules
 require('./requires.js');
@@ -40,4 +40,4 @@ angular.module('norman', modules)
         });
 
     })
-    .constant('jQuery', require('norman-jquery'));
+    .constant('jQuery', require('norman-client-tp').jquery);
