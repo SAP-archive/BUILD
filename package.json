@@ -13,12 +13,12 @@
     "dependencies": {
         "norman-logging": "^0.4.12",
         "norman-promise": "^0.4.12",
-        "norman-client-tp": "0.2.40",
+        "norman-client-tp": "^0.2.40",
         "norman-common-client": "^0.2.42",
         "norman-common-server": "^0.4.12",
         "norman-server-tp": "^0.4.12",
         "norman-app-server": "^0.4.4",
-        "norman-shell-client": "0.2.6",
+        "norman-shell-client": "^0.2.6",
         "norman-auth-client": "0.1.25",
         "norman-auth-server": "^0.2.14",
         "norman-projects-client": "0.1.9",
@@ -33,10 +33,10 @@
         "norman-sample-data-manager-client": "0.0.4",
         "norman-ui-catalog-manager-client": "0.0.12",
         "norman-ui-catalog-manager-server": "0.0.13",
-        "norman-user-research-client": "0.2.2",
+        "norman-user-research-client": "0.2.3",
         "norman-user-research-server": "0.2.1",
-        "norman-ux-rule-engine-client": "0.4.13",
-        "norman-ux-rule-engine-server": "0.4.13",
+        "norman-ux-rule-engine-client": "0.4.12",
+        "norman-ux-rule-engine-server": "0.4.12",
         "norman-shared-workspace-client": "0.0.5",
         "norman-shared-workspace-server": "0.0.34",
         "norman-previewer-server": "0.0.7"
@@ -69,7 +69,6 @@
         "grunt-mocha-test": "^0.12.3",
         "grunt-newer": "^0.8.0",
         "grunt-ng-annotate": "^0.7.0",
-        "grunt-node-inspector": "^0.1.5",
         "grunt-nodemon": "^0.3.0",
         "grunt-notify": "^0.4.1",
         "grunt-open": "^0.2.3",
@@ -92,7 +91,8 @@
         "open": "0.0.5",
         "q": "^1.1.2",
         "supertest": "^0.15.0",
-        "time-grunt": "^1.0.0"
+        "time-grunt": "^1.0.0",
+        "node-inspector": "^0.8.0"
     },
     "scripts": {
         "test": "grunt test",
