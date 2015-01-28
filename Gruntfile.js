@@ -1,11 +1,14 @@
 'use strict';
 var fs = require('fs');
 var path = require('path');
+var nodeInspector = require('./grunt-conf/nodeinspector.js');
 
 module.exports = function (grunt) {
 
     // Time how long tasks take. Can help when optimizing build times
     require('time-grunt')(grunt);
+    // Load custom node inspector task
+    nodeInspector.task(grunt);
     grunt.loadNpmTasks('grunt-notify');
 
     // Load grunt tasks automatically, when needed
@@ -89,7 +92,7 @@ module.exports = function (grunt) {
         protractor: require('./grunt-conf/protractor.js'),
 
         // Debugging with node inspector
-        'node-inspector': require('./grunt-conf/nodeinspector.js'),
+        'node-inspector': nodeInspector.config,
 
         nodemon: require('./grunt-conf/nodemon.js'),
 
