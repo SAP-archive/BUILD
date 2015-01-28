@@ -65,7 +65,8 @@
             "/auth/*",
             "/login",
             "/signup",
-            "/norman"
+            "/norman",
+            "/reset-password"
         ],
         "compression": {
             "threshold": 512
