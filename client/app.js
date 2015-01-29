@@ -22,9 +22,9 @@ angular.module('norman', modules)
         $urlRouterProvider.otherwise('/');
         $locationProvider.html5Mode(true);
     })
-    .run(function ($rootScope, $location, NavBarService, AsideService) {
+    .run(function ($rootScope, $location, NavBarService, AsideFactory) {
         $rootScope.navbarService = NavBarService;
-        $rootScope.asideService = AsideService;
+        $rootScope.asideService = AsideFactory;
 
         // add state name as a class to the body
         $rootScope.$on('$stateChangeStart', function (ev, toState) {
