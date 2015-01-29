@@ -14,7 +14,7 @@
         "norman-logging": "0.4.23",
         "norman-promise": "0.4.23",
         "norman-client-tp": "0.2.41",
-        "norman-common-client": "0.2.52",
+        "norman-common-client": "0.2.54",
         "norman-common-server": "0.4.23",
         "norman-server-tp": "0.4.23",
         "norman-app-server": "0.4.12",
