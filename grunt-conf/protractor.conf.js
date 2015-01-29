@@ -16,7 +16,7 @@ exports.config = {
     // Tests for browsers other than chrome will not run.
     directConnect: true,
 
-    chromeDriver:'../node_modules/norman-common-e2e/node_modules/chromedriver/lib/chromedriver/chromedriver.exe',
+    chromeDriver:'../node_modules/norman-common-e2e/node_modules/chromedriver/lib/chromedriver/chromedriver',
 
     // list of files / patterns to load in the browser
     //specs: 'node_modules/*e2e/e2e/testcases/*.feature',
