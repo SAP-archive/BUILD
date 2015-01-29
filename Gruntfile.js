@@ -86,7 +86,7 @@ module.exports = function (grunt) {
         mochaTest: require('./grunt-conf/mocha.js'),
 
         // e2e tests
-        protractor: require('./grunt-conf/protractor.js'),
+        protractor: require('./grunt-conf/protractor.js')(grunt),
 
         // Debugging with node inspector
         'node-inspector': require('./grunt-conf/nodeinspector.js'),
@@ -143,7 +143,7 @@ module.exports = function (grunt) {
         var tasks = {
             server : [ 'eslint:server', 'env:dev', 'mochaTest' ],
             client : [ 'eslint:client', 'env:dev', 'karma' ],
-            e2e    : [ 'express:dev', 'protractor' ],
+            e2e    : [ 'express:dev', 'protractor:e2e' ],
             dflt   : [ 'test:server', 'test:client' ]
         };
         return grunt.task.run(tasks[target || 'dflt']);
