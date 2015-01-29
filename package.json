@@ -22,7 +22,7 @@
         "norman-auth-client": "0.2.15",
         "norman-auth-server": "0.2.15",
         "norman-projects-client": "0.1.10",
-        "norman-projects-server": "0.1.8",
+        "norman-projects-server": "0.1.9",
         "norman-business-catalog-manager-client": "0.4.9",
         "norman-business-catalog-manager-server": "0.4.9",
         "norman-data-modeler-client": "0.4.25",
