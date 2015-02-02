@@ -144,8 +144,8 @@ module.exports = function (grunt) {
 
     grunt.registerTask('test', function (target) {
         var tasks = {
-            server : [ 'eslint:server', 'env:dev', 'mochaTest' ],
-            client : [ 'eslint:client', 'env:dev', 'karma' ],
+            server : [ 'env:dev', 'mochaTest' ],
+            client : [ 'env:dev', 'karma' ],
             e2e    : [ 'express:dev', 'protractor:e2e' ],
             dflt   : [ 'test:server', 'test:client' ]
         };
@@ -188,6 +188,8 @@ module.exports = function (grunt) {
             tasks.push('config-prod');
             // tasks.push('uglify');
         }
+        //tasks.push('eslint:client');
+        //tasks.push('eslint:server');
         // tasks.push('test:client');
         tasks.push('test:server');
 
