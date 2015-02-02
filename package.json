@@ -91,7 +91,7 @@
         "norman-auth-e2e": "*",
         "norman-common-e2e": "*",
         "norman-build-helper": "^0.3.1",
-        "norman-testing-tp": "^0.1.2",
+        "norman-testing-tp": "^0.1.1",
         "norman-testing-server": "^0.1.2",
         "open": "0.0.5",
         "q": "^1.1.2",
