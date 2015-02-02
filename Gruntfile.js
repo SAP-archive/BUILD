@@ -191,7 +191,7 @@ module.exports = function (grunt) {
         //tasks.push('eslint:client');
         //tasks.push('eslint:server');
         // tasks.push('test:client');
-        tasks.push('test:server');
+        //tasks.push('test:server');
 
         return grunt.task.run(tasks);
     });
