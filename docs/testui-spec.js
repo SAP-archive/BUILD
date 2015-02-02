@@ -2,7 +2,7 @@
 
 // browser variable is the browser that has been instantiated is the 'webdriver' section of the Gruntfile.js file
 
-var chai = require('chai');
+var chai = require('norman-testing-tp').chai;
 var localConfig = require('../../../server/config/local.env');
 
 var assert = chai.assert;
@@ -107,5 +107,3 @@ describe('webdriverio tests', function () {
 
     }
 );
-
-

@@ -1,7 +1,7 @@
 'use strict';
-
-var should = require('norman-testing-tp').chai.should();
-var expect = require('norman-testing-tp').chai.expect;
+var chai = require('norman-testing-tp').chai;
+var should = chai.should();
+var expect = chai.expect;
 var app = require('../../app');
 var path = require('path');
 
@@ -12,7 +12,7 @@ var api = new normanAPI();
 var projectId;
 var userEmail = 'e2e.server@sap.com', userPassword = 'Minisap!1';
 describe('Test REST API for E2E Server\r\n', function () {
-
+    this.timeout(15000);
     before('Intialize API', function (done) {
         api.initialize(userEmail, userPassword).then(done);
     });

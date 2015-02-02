@@ -1,7 +1,6 @@
 'use strict';
 
-
-var chai = require('chai');
+var chai = require('norman-testing-tp').chai;
 var assert = chai.assert;
 var expect = chai.expect;
 var should = chai.should();

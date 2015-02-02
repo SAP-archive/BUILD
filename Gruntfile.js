@@ -189,7 +189,7 @@ module.exports = function (grunt) {
             // tasks.push('uglify');
         }
         // tasks.push('test:client');
-        // tasks.push('test:server');
+        tasks.push('test:server');
 
         return grunt.task.run(tasks);
     });

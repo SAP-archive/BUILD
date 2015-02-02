@@ -1,7 +1,5 @@
 'use strict';
 
-var should = require('norman-testing-tp').chai.should();
-var expect = require('norman-testing-tp').chai.expect;
 var normanAppServer = require('../../app'); //need require app before normanTestRequester
 var NormanTestServer = require('norman-testing-server').server;
 var NormanTestRequester = require('norman-testing-server').Requester;
