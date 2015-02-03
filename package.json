@@ -86,6 +86,7 @@
         "karma-sinon-chai": "^0.2.0",
         "lodash": "^2.4.1",
         "norman-build-helper": "^0.3.1",
+        "norman-auth-e2e": "*",
         "norman-testing-tp": "^0.1.1",
         "norman-testing-server": "^0.1.2",
         "open": "0.0.5",
