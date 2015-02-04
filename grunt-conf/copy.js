@@ -73,10 +73,20 @@ module.exports = {
                     'norman*client/**/*.{png,gif,jpg,svg,json}',
                     'norman*client/node_modules/**/*.{png,gif,jpg,svg}',
                     'norman*client/bower_components/**/*.{png,gif,jpg,svg,js,html,css}',
+                    'norman-ng-grid/**/*.{png,gif,jpg,svg,json}',
                     '!norman-openui5/**/*'
                 ]
             },
 
+            //norman-ng-grid(ui-grid) css and fonts
+            //fonts should be in the same directory as css. So will be copied to dev/assets folder
+            {
+                expand: true,
+                flatten: true,
+                dest: 'dev/assets',
+                src: [ 'node_modules/norman-ng-grid/styles/ui-grid.css',
+                       'node_modules/norman-ng-grid/fonts/*.*']
+            },
             // bootstrap css
             {
                 expand: true,

@@ -147,6 +147,7 @@ module.exports = function (grunt) {
             server : [ 'env:dev', 'mochaTest' ],
             client : [ 'env:dev', 'karma' ],
             e2e    : [ 'express:dev', 'protractor:e2e' ],
+            e2e_ci : [ 'protractor:e2e'],
             dflt   : [ 'test:server', 'test:client' ]
         };
         return grunt.task.run(tasks[target || 'dflt']);
