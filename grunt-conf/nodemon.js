@@ -3,10 +3,7 @@ module.exports = {
     dev: {
         script: 'server/app.js',
         options: {
-            watch: ['.'],
-            ext: 'js',
             nodeArgs: ['--debug'],
-            ignore: ['node_modules/norman*client/node_modules/**', 'node_modules/norman*server/node_modules/**', '.git/', 'Gruntfile.js'],
             env: {
                 PORT: process.env.PORT || 9000
             },

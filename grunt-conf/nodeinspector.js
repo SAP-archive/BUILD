@@ -20,19 +20,22 @@ module.exports = {
                 'save-live-edit',
                 'readTimeout',
                 'stack-trace-limit',
-                'no-preload',
+                'preload',
                 'hidden'
             ].forEach(function (option) {
                     if (option in options) {
                         args.push('--' + option);
+
                         if (option === 'hidden') {
-                            args.push(JSON.stringify(options[option]));
-                            return;
+                            args.push('\'' + JSON.stringify(options[option]) + '\'');
+
                         }
-                        args.push(options[option]);
+                        else {
+                            args.push(options[option]);
+                        }
+
                     }
                 });
-
             grunt.util.spawn({
                     cmd: 'node',
                     args: args,
@@ -63,7 +66,7 @@ module.exports = {
             options: {
                 'save-live-edit': true,
                 'web-host': 'localhost',
-                'no-preload': true
+                'preload': false
             }
         }
 

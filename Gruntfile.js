@@ -13,11 +13,11 @@ module.exports = function (grunt) {
 
     // Load grunt tasks automatically, when needed
     require('jit-grunt')(grunt, {
-        injector      : 'grunt-asset-injector',
-        ngtemplates   : 'grunt-angular-templates',
-        protractor    : 'grunt-protractor-runner',
-        express       : 'grunt-express-server',
-        ngAnnotate    : 'grunt-ng-annotate'
+        injector: 'grunt-asset-injector',
+        ngtemplates: 'grunt-angular-templates',
+        protractor: 'grunt-protractor-runner',
+        express: 'grunt-express-server',
+        ngAnnotate: 'grunt-ng-annotate'
     });
 
 
@@ -25,8 +25,8 @@ module.exports = function (grunt) {
     grunt.initConfig({
         // vars
         env: {
-            dev: { NODE_ENV: 'development' },
-            prod: { NODE_ENV: 'production' }
+            dev: {NODE_ENV: 'development'},
+            prod: {NODE_ENV: 'production'}
         },
 
         notify_hooks: {
@@ -97,15 +97,8 @@ module.exports = function (grunt) {
         nodemon: require('./grunt-conf/nodemon.js'),
 
         concurrent: {
-            liveEdit: {
-                options: { logConcurrentOutput: true },
-                tasks: [
-                    'nodemon:dev',
-                    'node-inspector:liveEdit'
-                ]
-            },
             debug: {
-                options: { logConcurrentOutput: true },
+                options: {logConcurrentOutput: true},
                 tasks: [
                     'nodemon:debug',
                     'node-inspector:custom'
@@ -132,9 +125,10 @@ module.exports = function (grunt) {
                 'watch'
             ],
             liveEdit: [
-                'build:liveEdit',
+                'build:dev',
                 'env:dev',
-                'concurrent:liveEdit',
+                'express:dev',
+                'node-inspector:liveEdit',
                 'watch'
             ]
         };
@@ -144,11 +138,11 @@ module.exports = function (grunt) {
 
     grunt.registerTask('test', function (target) {
         var tasks = {
-            server : [ 'env:dev', 'mochaTest' ],
-            client : [ 'env:dev', 'karma' ],
-            e2e    : [ 'express:dev', 'protractor:e2e' ],
-            e2e_ci : [ 'protractor:e2e'],
-            dflt   : [ 'test:server', 'test:client' ]
+            server: ['env:dev', 'mochaTest'],
+            client: ['env:dev', 'karma'],
+            e2e: ['express:dev', 'protractor:e2e'],
+            e2e_ci: ['protractor:e2e'],
+            dflt: ['test:server', 'test:client']
         };
         return grunt.task.run(tasks[target || 'dflt']);
     });
@@ -158,27 +152,16 @@ module.exports = function (grunt) {
         target = target || 'dev';
         console.log('TARGET = ' + target);
         var tasks = [];
-        if (target === 'liveEdit') {
-            tasks = [
-                // 'eslint',
-                'newer:less',
-                'newer:autoprefixer',
-                'newer:copy:html',
-                'newer:copy:dev',
-                'browserify'
-            ];
-        }
-        else {
-            tasks = [
-                // 'eslint',
-                'clean:' + target,
-                'less',
-                'autoprefixer',
-                'copy:html',
-                'copy:dev',
-                'browserify'
-            ];
-        }
+
+        tasks = [
+            // 'eslint',
+            'clean:' + target,
+            'less',
+            'autoprefixer',
+            'copy:html',
+            'copy:dev',
+            'browserify'
+        ];
 
         if (target !== 'dev' && target !== 'liveEdit') {
             tasks.push('ngAnnotate');
