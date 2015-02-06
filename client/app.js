@@ -29,7 +29,7 @@ angular.module('norman', modules)
         // add state name as a class to the body
         $rootScope.$on('$stateChangeStart', function (ev, toState) {
             // add state name to body class
-            $rootScope.pageClass = 'page-' + toState.name;
+            $rootScope.pageClass = 'page-' + toState.name.replace(/\./g, '-');
 
             // redirect (aka deep-link)
             var path = $location.path().substr(1), redirect = $rootScope.redirect;
