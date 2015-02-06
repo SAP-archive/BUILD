@@ -122,6 +122,7 @@ module.exports = function (grunt) {
                 'build:dev',
                 'env:dev',
                 'express:dev',
+                'node-inspector:liveEdit',
                 'watch'
             ],
             liveEdit: [

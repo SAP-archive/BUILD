@@ -98,7 +98,6 @@
     },
     "scripts": {
         "test": "grunt test",
-        "start": "node server/app.js",
-        "postinstall": "node run.js node_modules/norman-build-helper/scripts/postinstall.js"
+        "start": "node server/app.js"
     }
 }
