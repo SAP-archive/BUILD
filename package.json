@@ -94,8 +94,7 @@
         "open": "0.0.5",
         "q": "^1.1.2",
         "request": "^2.51.0",
-        "time-grunt": "^1.0.0",
-        "node-inspector": "^0.8.0"
+        "time-grunt": "^1.0.0"
     },
     "scripts": {
         "test": "grunt test",
