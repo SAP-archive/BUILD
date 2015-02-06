@@ -1,13 +1,8 @@
 'use strict';
 // @ngInject
 module.exports = function ($scope, $rootScope, $location, Auth) {
-
-    // $scope.menu = [{
-    //     'title': 'Home',
-    //     'link': '/'
-    // }];
+    
     $scope.isLoggedIn = Auth.isLoggedIn;
-    $scope.isAdmin = Auth.isAdmin;
     Auth.getCurrentUser();
 
     $scope.logout = function () {
