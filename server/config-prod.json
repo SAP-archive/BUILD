@@ -8,9 +8,6 @@
     "logging": {
         "logDirectory": "logs",
         "output": {
-            "stdout": {
-                "type": "console"
-            },
             "logfile": {
                 "type": "file",
                 "path": "norman_{now:yyyyMMdd}_{pid}.log"
@@ -18,7 +15,6 @@
         },
         "loggers": {
             "*": {
-                "stdout": "debug",
                 "logfile": "info"
             }
         }
