@@ -51,12 +51,14 @@ Server.start(configFile).then(function () {
 
         // create or assign admin role
         if (cmd === 'create') {
-            auth.createAdmin(admin, function (err, created) {
+            if (auth.createAdmin) auth.createAdmin(admin, function (err, created) {
                 msg(err, created ? 'Admin created!' : 'Admin role assigned to: ' + admin.email);
             });
         }
         else if (cmd === 'unassign') {
-            auth.unassignAdmin(admin, function (err) { msg(err, 'Admin role unassigned!'); });
+            if (auth.unassignAdmin) auth.unassignAdmin(admin, function (err) {
+                msg(err, 'Admin role unassigned!');
+            });
         }
     }
 });
