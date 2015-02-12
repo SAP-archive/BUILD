@@ -4,7 +4,10 @@
         "auth": "/auth"
     },
     "norman-shared-workspace-server": "/api/projects/*/prototype",
-    "norman-projects-server": "/api/projects",
+    "norman-projects-server": {
+        "projects": "/api/projects",
+        "history": "/api/history"
+    },
     "norman-business-catalog-manager-server": "/api/catalogs",
     "norman-ui-composer-server": "",
     "norman-data-modeler-server": "/api/models",
