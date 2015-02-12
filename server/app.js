@@ -1,4 +1,6 @@
 /*eslint no-process-exit: 0*/
+'use strict';
+
 var path = require('path');
 var Server = require('norman-app-server').Server;
 var configFile = path.join(__dirname, 'config.json');
@@ -12,7 +14,8 @@ for (k = 2, n = process.argv.length; k < n; ++k) {
         if (k < n - 2) {
             admin = {
                 name: process.argv[k + 1],
-                email: process.argv[k + 2]
+                email: process.argv[k + 2],
+                password: process.argv[k + 3] || null
             };
         }
         else {
@@ -26,8 +29,12 @@ Server.start(configFile).then(function () {
     // Create Admin user (required for Admin section)
     if (admin) {
         require('norman-auth-server').createAdmin(admin, function (err) {
-            if (err) throw err;
-            console.log('Admin created!');
+            if (err) {
+                if (err.errors && err.errors.email) err = err.errors.email.message;
+                return console.error('\nERROR: ' + err + '\n');
+            }
+
+            console.log('\nAdmin created!\n');
         });
     }
 });
