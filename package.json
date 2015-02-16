@@ -13,9 +13,9 @@
     "dependencies": {
         "norman-logging": "0.5.15",
         "norman-promise": "0.5.15",
-        "norman-client-tp": "0.5.11",
-        "norman-common-client": "0.5.23",
-        "norman-common-server": "0.5.22",
+        "norman-client-tp": "0.5.14",
+        "norman-common-client": "0.5.30",
+        "norman-common-server": "0.5.30",
         "norman-server-tp": "0.5.15",
         "norman-app-server": "0.4.27",
         "norman-shell-client": "0.3.3",
