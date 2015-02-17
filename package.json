@@ -88,7 +88,7 @@
         "norman-auth-e2e": "0.2.36",
         "norman-testing-tp": "0.5.15",
         "norman-testing-tp-client": "0.5.15",
-        "norman-testing-server": "0.5.15",
+        "norman-testing-server": "0.5.30",
         "grunt-protractor-runner": "^1.2.1",
         "cucumber": "^0.4.7",
         "open": "0.0.5",
