@@ -12,7 +12,7 @@ module.exports = {
         grunt.registerMultiTask('node-inspector', 'Runs node-inspector to debug your node.js JavaScripts', function () {
             var options = this.options();
             var done = this.async();
-            var args = [require.resolve('node-inspector/bin/inspector')];
+            var args = [];
             [
                 'web-port',
                 'web-host',
@@ -37,13 +37,14 @@ module.exports = {
                     }
                 });
             grunt.util.spawn({
-                    cmd: 'node',
+                    cmd: 'node-inspector',
                     args: args,
                     opts: {
                         stdio: 'inherit'
                     }
                 },
                 function (error) {
+                    console.log("Make sure node-inspector is installed globally using \npm install -g node-inspector\"");
                     if (error) {
                         grunt.fail.fatal(error);
                     }
