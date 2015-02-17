@@ -33,7 +33,7 @@
         "norman-sample-data-manager-client": "0.0.9",
         "norman-ui-catalog-manager-client": "0.0.22",
         "norman-ui-catalog-manager-server": "0.0.28",
-        "norman-user-research-client": "0.2.12",
+        "norman-user-research-client": "0.2.13",
         "norman-user-research-server": "0.2.6",
         "norman-ux-rule-engine-client": "0.4.31",
         "norman-ux-rule-engine-server": "0.4.31",
@@ -86,11 +86,10 @@
         "lodash": "^2.4.1",
         "norman-build-helper": "^0.3.1",
         "norman-auth-e2e": "0.2.36",
-        "norman-projects-e2e": "0.0.3",
         "norman-testing-tp": "0.5.15",
         "norman-testing-tp-client": "0.5.15",
-        "norman-testing-server": "0.5.30",
-        "grunt-protractor-runner": "1.2.1",
+        "norman-testing-server": "0.5.15",
+        "grunt-protractor-runner": "^1.2.1",
         "cucumber": "^0.4.7",
         "open": "0.0.5",
         "q": "^1.1.2",
@@ -99,6 +98,7 @@
     },
     "scripts": {
         "test": "grunt test",
-        "start": "node server/app.js"
+        "start": "node server/app.js",
+        "postinstall": "node run.js node_modules/norman-build-helper/scripts/postinstall.js"
     }
 }
