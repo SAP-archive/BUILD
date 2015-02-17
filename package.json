@@ -86,6 +86,7 @@
         "lodash": "^2.4.1",
         "norman-build-helper": "^0.3.1",
         "norman-auth-e2e": "0.2.36",
+        "norman-projects-e2e": "0.0.3",
         "norman-testing-tp": "0.5.15",
         "norman-testing-tp-client": "0.5.15",
         "norman-testing-server": "0.5.30",
