@@ -44,7 +44,8 @@ exports.config = {
     // assertion framework if working with mocha.
     framework: 'cucumber',
 
-    specs: ['../node_modules/norman-*e2e/e2e/testcases/*.feature'],
+    specs: ['../test/e2e/testcases/*.feature',
+        '../node_modules/norman-*e2e/e2e/testcases/*.feature'],
     cucumberOpts: {
         require: '../node_modules/norman-*e2e/e2e/testcases/steps/*.steps.js',
         format: 'pretty'
