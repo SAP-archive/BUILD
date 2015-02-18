@@ -40,7 +40,7 @@ Server.start(configFile).then(function () {
 
     // Create Admin user (required for Admin section)
     if (admin) {
-        var auth = require('norman-auth-server').aclService,
+        var auth = require('norman-auth-server'),
             msg = function (err, success) {
                 if (err) {
                     if (err.errors && err.errors.email) err = err.errors.email.message;
