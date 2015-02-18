@@ -2,9 +2,12 @@
 
 
 
-Norman is an open-source, cloud-based and social platform that enables users, even those with no UI development knowledge, to easily create fully interactive prototypes with realistic data, share them with colleagues and consolidate this feedback without writing a line of code.
+Norman is an open-source, cloud-based and social platform that enables users, even those with no UI development knowledge, to easily create fully interactive prototypes with realistic data, share them with colleagues and consolidate this feedback without writing a line of code. For an overview of Project Norman, see the [Project Norman Charter]( https://github.wdf.sap.corp/Norman/Norman/wiki/Project-Norman-Charter).
 
-It contains the following sub-projects:
+
+##Project Norman Sub-Projects
+
+Project Norman contains the following sub-projects:
 + [Auth] (https://github.wdf.sap.corp/Norman/Auth) 
 + [Data Composer] (https://github.wdf.sap.corp/Norman/DataComposer)
 + [Business Catalog Manager] (https://github.wdf.sap.corp/Norman/BusinessCatalogManager)
