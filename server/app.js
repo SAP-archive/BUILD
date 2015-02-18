@@ -40,7 +40,7 @@ Server.start(configFile).then(function () {
 
     // Create Admin user (required for Admin section)
     if (admin) {
-        var auth = require('norman-auth-server'),
+        var auth = require('norman-auth-server').aclService,
             msg = function (err, success) {
                 if (err) {
                     if (err.errors && err.errors.email) err = err.errors.email.message;
@@ -48,7 +48,7 @@ Server.start(configFile).then(function () {
                 }
                 console.log('\n' + success + '\n');
             };
-
+        if (!auth) return msg('ACL service not found. Please update norman-auth-server');
         // create or assign admin role
         if (cmd === 'create') {
             if (auth.createAdmin) auth.createAdmin(admin, function (err, created) {
