@@ -87,24 +87,6 @@ module.exports = {
                 src: [ 'node_modules/norman-ng-grid/styles/ui-grid.css',
                        'node_modules/norman-ng-grid/fonts/*.*']
             },
-            // bootstrap css
-            {
-                expand: true,
-                flatten: true,
-                dest: 'dev/assets',
-                src: ['node_modules/bootstrap/dist/css/bootstrap.css']
-                // to copy .map file too; it's confusing in the dev-tools and not useful, as
-                // bootstrap css should not be changed only overwritten
-                // src: [ 'node_modules/bootstrap/dist/css/bootstrap.css*' ]
-            },
-
-            // roboto font
-            {
-                expand: true,
-                flatten: true,
-                dest: 'dev/fonts',
-                src: ['node_modules/bootstrap/fonts/*.*']
-            },
 
             // roboto font
             {
