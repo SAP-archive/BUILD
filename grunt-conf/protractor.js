@@ -1,6 +1,5 @@
 'use strict';
 module.exports = function (grunt) {
-    console.log("here");
     var cucumberTags = grunt.option('cucumberTags');
 
     return {
