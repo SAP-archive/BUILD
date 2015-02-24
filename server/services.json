@@ -9,7 +9,16 @@
         "history": "/api/history"
     },
     "norman-business-catalog-manager-server": "/api/catalogs",
-    "norman-ui-composer-server": "",
+    "norman-ui-composer-server": {
+        "page": "/api/projects",
+        "prototype": "/api/projects",
+        "snapshot": "/api/projects",
+        "artifact": "/api/projects",
+        "ui5libs": "/sapui5",
+        "public": "/deploy"
+    },
+    "norman-previewer-server": "",
+    "norman-prototype-builder-server": "",
     "norman-data-modeler-server": "/api/models",
     "norman-sample-data-manager-server": "",
     "norman-ui-catalog-manager-server":"/api/uicatalogs",
