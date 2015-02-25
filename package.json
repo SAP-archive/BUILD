@@ -35,8 +35,8 @@
     "norman-ui-catalog-manager-server": "0.0.33",
     "norman-user-research-client": "0.2.17",
     "norman-user-research-server": "0.2.17",
-    "norman-ux-rule-engine-client": "0.4.43",
-    "norman-ux-rule-engine-server": "0.4.43",
+    "norman-ux-rule-engine-client": "0.4.44",
+    "norman-ux-rule-engine-server": "0.4.44",
     "norman-shared-workspace-server": "0.1.5",
     "norman-prototype-builder-server": "0.6.18",
     "norman-previewer-server": "0.1.2"
