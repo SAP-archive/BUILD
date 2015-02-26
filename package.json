@@ -17,7 +17,7 @@
     "norman-common-client": "0.5.38",
     "norman-common-server": "0.5.38",
     "norman-server-tp": "0.5.15",
-    "norman-app-server": "0.4.27",
+    "norman-app-server": "0.4.29",
     "norman-shell-client": "0.3.3",
     "norman-auth-client": "0.2.43",
     "norman-auth-server": "0.2.45",
