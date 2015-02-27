@@ -1,0 +1,125 @@
+Using ChromeDriver directly...
+[launcher] Running 1 instances of WebDriver
+[36m@setup[0m
+Feature: Setup
+
+
+  [36m@flow @createUser @createProjectUser @createProfileUser[0m
+  Scenario: Setup Users   [2m[37m# test\e2e\testcases\1UserSetup.feature:8[0m
+
+[36m@user[0m
+Feature: User
+
+
+  [36m@flow[0m
+  Scenario: Sign Up with Valid Credentials   [2m[37m# test\e2e\testcases\2UserSanity.feature:5[0m
+length is7
+    [32mGiven I am on the sign up page[0m           [2m[37m# test\e2e\testcases\2UserSanity.feature:6[0m
+    [32mWhen I enter valid signup details[0m        [2m[37m# test\e2e\testcases\2UserSanity.feature:7[0m
+    [32mThen I am logged in[0m                      [2m[37m# test\e2e\testcases\2UserSanity.feature:8[0m
+
+  [36m@flow[0m
+  Scenario: Forgot Password                          [2m[37m# test\e2e\testcases\2UserSanity.feature:11[0m
+length is6
+    [32mGiven I am on the login page[0m                     [2m[37m# test\e2e\testcases\2UserSanity.feature:12[0m
+    [32mWhen I Click Forgot Password[0m                     [2m[37m# test\e2e\testcases\2UserSanity.feature:13[0m
+    [32mAnd I Enter my Email[0m                             [2m[37m# test\e2e\testcases\2UserSanity.feature:14[0m
+    [32mAnd Click Reset Password[0m                         [2m[37m# test\e2e\testcases\2UserSanity.feature:15[0m
+WARNING - more than one element found for locator By.cssSelector(".login-form-success-icon") - the first result will be used
+    [32mThen I see the Reset Password Confirmation Label[0m [2m[37m# test\e2e\testcases\2UserSanity.feature:16[0m
+
+  [36m@flow[0m
+  Scenario: Login with Valid Credentials   [2m[37m# test\e2e\testcases\2UserSanity.feature:19[0m
+length is6
+    [32mGiven I am on the login page[0m           [2m[37m# test\e2e\testcases\2UserSanity.feature:20[0m
+    [32mWhen I enter 2nd User credentials[0m      [2m[37m# test\e2e\testcases\2UserSanity.feature:21[0m
+    [32mThen I am logged in[0m                    [2m[37m# test\e2e\testcases\2UserSanity.feature:22[0m
+
+  [36m@flow[0m
+  Scenario: Go to Profile Settings   [2m[37m# test\e2e\testcases\2UserSanity.feature:25[0m
+    [32mGiven I am on the Landing Page[0m   [2m[37m# test\e2e\testcases\2UserSanity.feature:26[0m
+    [32mWhen I click the Avatar Image[0m    [2m[37m# test\e2e\testcases\2UserSanity.feature:27[0m
+    [32mAnd I click Settings[0m             [2m[37m# test\e2e\testcases\2UserSanity.feature:28[0m
+    [32mThen I am on the profile Page[0m    [2m[37m# test\e2e\testcases\2UserSanity.feature:29[0m
+
+  [36m@flow[0m
+  Scenario: Change the username     [2m[37m# test\e2e\testcases\2UserSanity.feature:32[0m
+/norman/settings/profile
+    [32mGiven I am on the Settings Page[0m [2m[37m# test\e2e\testcases\2UserSanity.feature:33[0m
+    [32mWhen I change the name[0m          [2m[37m# test\e2e\testcases\2UserSanity.feature:34[0m
+    [32mAnd I click Save[0m                [2m[37m# test\e2e\testcases\2UserSanity.feature:35[0m
+    [32mThen The username is changed[0m    [2m[37m# test\e2e\testcases\2UserSanity.feature:36[0m
+
+  [36m@flow[0m
+  Scenario: Change the email        [2m[37m# test\e2e\testcases\2UserSanity.feature:39[0m
+/norman/settings/profile
+    [32mGiven I am on the Settings Page[0m [2m[37m# test\e2e\testcases\2UserSanity.feature:40[0m
+    [32mWhen I change the email[0m         [2m[37m# test\e2e\testcases\2UserSanity.feature:41[0m
+    [32mAnd I click Save[0m                [2m[37m# test\e2e\testcases\2UserSanity.feature:42[0m
+    [32mThen The email is changed[0m       [2m[37m# test\e2e\testcases\2UserSanity.feature:43[0m
+
+  [36m@flow[0m
+  Scenario: Upload a Avatar Picture   [2m[37m# test\e2e\testcases\2UserSanity.feature:46[0m
+/norman/settings/picture
+    [32mGiven I am on the Picture Page[0m    [2m[37m# test\e2e\testcases\2UserSanity.feature:47[0m
+    [32mWhen I upload a picture[0m           [2m[37m# test\e2e\testcases\2UserSanity.feature:48[0m
+    [32mAnd I select the Image[0m            [2m[37m# test\e2e\testcases\2UserSanity.feature:49[0m
+    [32mThen Avatar image is displayed[0m    [2m[37m# test\e2e\testcases\2UserSanity.feature:50[0m
+
+  [36m@flow[0m
+  Scenario: Change Password                [2m[37m# test\e2e\testcases\2UserSanity.feature:53[0m
+/norman/settings/password
+    [32mGiven I am on the Change Passowrd Page[0m [2m[37m# test\e2e\testcases\2UserSanity.feature:54[0m
+    [32mWhen I Change Password[0m                 [2m[37m# test\e2e\testcases\2UserSanity.feature:55[0m
+    [32mAnd I click Save[0m                       [2m[37m# test\e2e\testcases\2UserSanity.feature:56[0m
+    [32mThen The Password is changed[0m           [2m[37m# test\e2e\testcases\2UserSanity.feature:57[0m
+
+[36m@projects[0m
+Feature: Projects
+
+
+  [36m@flow[0m
+  Scenario: Login with Valid Credentials   [2m[37m# test\e2e\testcases\3ProjectsSanity.feature:5[0m
+length is6
+    [32mGiven I am on the login page[0m           [2m[37m# test\e2e\testcases\3ProjectsSanity.feature:6[0m
+    [32mWhen I enter valid credentials[0m         [2m[37m# test\e2e\testcases\3ProjectsSanity.feature:7[0m
+    [32mThen I am logged in[0m                    [2m[37m# test\e2e\testcases\3ProjectsSanity.feature:8[0m
+
+  [36m@flow[0m
+  Scenario: Once Logged in you are on the Norman Page   [2m[37m# test\e2e\testcases\3ProjectsSanity.feature:11[0m
+    [32mGiven I am on the Landing Page[0m                      [2m[37m# test\e2e\testcases\3ProjectsSanity.feature:12[0m
+    [32mWhen I click Project in Nav Bar[0m                     [2m[37m# test\e2e\testcases\3ProjectsSanity.feature:13[0m
+    [32mAnd I click New Project[0m                             [2m[37m# test\e2e\testcases\3ProjectsSanity.feature:14[0m
+    [32mAnd I enter Project Name[0m                            [2m[37m# test\e2e\testcases\3ProjectsSanity.feature:15[0m
+    [32mThen The project is created[0m                         [2m[37m# test\e2e\testcases\3ProjectsSanity.feature:16[0m
+
+  [36m@flow[0m
+  Scenario: Once a project is created   [2m[37m# test\e2e\testcases\3ProjectsSanity.feature:19[0m
+    [32mGiven A project exists[0m              [2m[37m# test\e2e\testcases\3ProjectsSanity.feature:20[0m
+    [32mWhen I click to enter the project[0m   [2m[37m# test\e2e\testcases\3ProjectsSanity.feature:21[0m
+    [32mThen I am in the prototype page[0m     [2m[37m# test\e2e\testcases\3ProjectsSanity.feature:22[0m
+
+  [36m@flow[0m
+  Scenario: Invite User To A Project   [2m[37m# test\e2e\testcases\3ProjectsSanity.feature:25[0m
+    [32mWhen I click Team in Nav Bar[0m       [2m[37m# test\e2e\testcases\3ProjectsSanity.feature:27[0m
+    [32mAnd I am in the Team Page[0m          [2m[37m# test\e2e\testcases\3ProjectsSanity.feature:28[0m
+    [32mAnd I click Add People[0m             [2m[37m# test\e2e\testcases\3ProjectsSanity.feature:29[0m
+    [32mAnd I Add A New Team Member[0m        [2m[37m# test\e2e\testcases\3ProjectsSanity.feature:30[0m
+    [32mAnd I Send an Invite[0m               [2m[37m# test\e2e\testcases\3ProjectsSanity.feature:31[0m
+    [32mThen Team Invite is Sent[0m           [2m[37m# test\e2e\testcases\3ProjectsSanity.feature:32[0m
+    [32mAnd I Logout[0m                       [2m[37m# test\e2e\testcases\3ProjectsSanity.feature:33[0m
+
+  [36m@flow[0m
+  Scenario: Accept Team Invite             [2m[37m# test\e2e\testcases\3ProjectsSanity.feature:36[0m
+WARNING - more than one element found for locator By.cssSelector(".ui-avatar-initials") - the first result will be used
+    [32mGiven I am logged out[0m                  [2m[37m# test\e2e\testcases\3ProjectsSanity.feature:37[0m
+    [32mWhen I login using Invitee Credentails[0m [2m[37m# test\e2e\testcases\3ProjectsSanity.feature:38[0m
+    [32mAnd I click Project in Nav Bar[0m         [2m[37m# test\e2e\testcases\3ProjectsSanity.feature:39[0m
+    [32mAnd I Accept the Invite[0m                [2m[37m# test\e2e\testcases\3ProjectsSanity.feature:40[0m
+    [32mThen I am Collaborating on the Project[0m [2m[37m# test\e2e\testcases\3ProjectsSanity.feature:41[0m
+
+
+14 scenarios ([32m14 passed[0m)
+54 steps ([32m54 passed[0m)
+[launcher] 0 instance(s) of WebDriver still running
+
