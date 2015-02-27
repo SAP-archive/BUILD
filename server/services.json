@@ -28,6 +28,5 @@
         "questions": "/api/projects/:projectId/studies/:studyId/questions",
         "annotations": "/api/projects/:projectId/studies/:studyId/annotations",
         "participants": "/api/participant"
-    },
-     "norman-audit-server": "/audit"
+    }
 }
