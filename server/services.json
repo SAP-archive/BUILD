@@ -1,32 +1,47 @@
 {
-    "norman-auth-server": {
-        "users": "/api/users",
-        "auth": "/auth"
+    "filters" : {
+        "xsrf" : {
+            "module" : "norman-auth-server",
+            "filter" : "xsrf",
+            "options" : {"headerName":"X-CSRF-Token", "cookieName":"X-CSRF-Token"}
+        }
     },
-    "norman-shared-workspace-server": "/api/projects/*/prototype",
-    "norman-projects-server": {
-        "projects": "/api/projects",
-        "history": "/api/history"
-    },
-    "norman-business-catalog-manager-server": "/api/catalogs",
-    "norman-ui-composer-server": {
-        "page": "/api/projects",
-        "prototype": "/api/projects",
-        "snapshot": "/api/projects",
-        "artifact": "/api/projects",
-        "ui5libs": "/sapui5",
-        "public": "/deploy"
-    },
-    "norman-previewer-server": "",
-    "norman-prototype-builder-server": "",
-    "norman-data-modeler-server": "/api/models",
-    "norman-sample-data-manager-server": "",
-    "norman-ui-catalog-manager-server":"/api/uicatalogs",
-    "norman-ux-rule-engine-server": "/api/appFlow",
-    "norman-user-research-server": {
-        "studies": "/api/projects/:projectId/studies",
-        "questions": "/api/projects/:projectId/studies/:studyId/questions",
-        "annotations": "/api/projects/:projectId/studies/:studyId/annotations",
-        "participants": "/api/participant"
+    "locations" : [
+        {
+            "/api" : [ "xsrf" ]
+        }
+    ],
+    "handlers" : {
+        "norman-auth-server" : {
+            "users" : "/api/users",
+            "auth" : "/auth"
+        },
+        "norman-shared-workspace-server": "/api/projects/*/prototype",
+        "norman-projects-server": {
+            "projects": "/api/projects",
+            "history": "/api/history"
+        },
+        "norman-business-catalog-manager-server": "/api/catalogs",
+        "norman-ui-composer-server": {
+            "page": "/api/projects",
+            "prototype": "/api/projects",
+            "snapshot": "/api/projects",
+            "artifact": "/api/projects",
+            "ui5libs": "/sapui5",
+            "public": "/deploy"
+        },
+        "norman-previewer-server": "",
+        "norman-prototype-builder-server": "",
+        "norman-data-modeler-server": "/api/models",
+        "norman-sample-data-manager-server": "",
+        "norman-ui-catalog-manager-server":"/api/uicatalogs",
+        "norman-ux-rule-engine-server": "/api/appFlow",
+        "norman-user-research-server": {
+            "studies": "/api/projects/:projectId/studies",
+            "questions": "/api/projects/:projectId/studies/:studyId/questions",
+            "annotations": "/api/projects/:projectId/studies/:studyId/annotations",
+            "participants": "/api/participant"
+        },
+        "norman-audit-server": "/audit"
     }
 }

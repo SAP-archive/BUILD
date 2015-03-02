@@ -18,9 +18,11 @@ angular.module('source-map-exception-handler', [])
 });
 
 angular.module('norman', modules)
-    .config(function ($urlRouterProvider, $locationProvider) {
+    .config(function ($urlRouterProvider, $locationProvider, $httpProvider) {
         $urlRouterProvider.otherwise('/');
         $locationProvider.html5Mode(true);
+        $httpProvider.defaults.xsrfCookieName = 'X-CSRF-Token';
+        $httpProvider.defaults.xsrfHeaderName  = 'X-CSRF-Token';
     })
     .run(function ($rootScope, $location, NavBarService, AsideFactory) {
         $rootScope.navbarService = NavBarService;
