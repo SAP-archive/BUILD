@@ -42,7 +42,8 @@
         "proxy": {
             "host": "proxy.wdf.sap.corp",
             "port": 8080
-        }
+        },
+        "secureFlag" : false
     },
     "services": "services.json",
     "web": {

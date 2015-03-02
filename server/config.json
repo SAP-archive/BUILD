@@ -51,7 +51,8 @@
         "proxy": {
             "host": "proxy",
             "port": 8080
-        }
+        },
+        "secureFlag": false
     },
     "services": "services.json",
     "web": {
