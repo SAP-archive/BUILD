@@ -40,25 +40,15 @@ Server.start(configFile).then(function () {
 
     // Create Admin user (required for Admin section)
     if (admin) {
-        var auth = require('norman-auth-server'),
-            msg = function (err, success) {
-                if (err) {
-                    if (err.errors && err.errors.email) err = err.errors.email.message;
-                    return console.error('\nERROR: ' + err + '\n');
-                }
-                console.log('\n' + success + '\n');
-            };
-        if (!auth) return msg('ACL service not found. Please update norman-auth-server');
-        // create or assign admin role
-        if (cmd === 'create') {
-            if (auth.createAdmin) auth.createAdmin(admin, function (err, created) {
-                msg(err, created ? 'Admin created!' : 'Admin role assigned to: ' + admin.email);
-            });
-        }
-        else if (cmd === 'unassign') {
-            if (auth.unassignAdmin) auth.unassignAdmin(admin, function (err) {
-                msg(err, 'Admin role unassigned!');
-            });
-        }
+        var registry = require('norman-common-server').registry,
+            aclService = registry.getModule('AclService');
+
+        if (!aclService) return console.error('ACL service not found. Please update norman-auth-server');
+
+        // create, assign or unassign admin role
+        aclService[cmd + 'Admin'](admin).then(function () {
+            console.log('\nAdmin role ' + cmd + 'ed, ' + admin.email + '\n');
+        });
     }
+
 });
