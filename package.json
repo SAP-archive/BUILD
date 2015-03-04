@@ -94,7 +94,7 @@
     "norman-projects-e2e": "0.1.1",
     "norman-testing-server": "0.5.35",
     "norman-testing-tp": "0.5.15",
-    "norman-testing-tp-client": "0.5.15",
+    "norman-testing-tp-client": "0.5.55",
     "open": "0.0.5",
     "q": "^1.1.2",
     "request": "^2.51.0",
