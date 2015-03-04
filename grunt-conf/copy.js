@@ -121,7 +121,7 @@ module.exports = {
                 dot: true,
                 cwd: 'dev',
                 dest: 'dist/public',
-                src: ['**/*', '!**/*.map']
+                src: ['**/*']
             },
             {   // SERVER
                 expand: true,
