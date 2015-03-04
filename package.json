@@ -89,7 +89,7 @@
     "karma-script-launcher": "^0.1.0",
     "karma-sinon-chai": "^0.2.0",
     "lodash": "^2.4.1",
-    "norman-auth-e2e": "0.2.48",
+    "norman-auth-e2e": "0.2.57",
     "norman-build-helper": "^0.3.1",
     "norman-projects-e2e": "0.1.1",
     "norman-testing-server": "0.5.35",
