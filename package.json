@@ -92,7 +92,7 @@
     "norman-auth-e2e": "0.2.57",
     "norman-build-helper": "^0.3.1",
     "norman-projects-e2e": "0.1.1",
-    "norman-testing-server": "0.5.35",
+    "norman-testing-server": "0.5.61",
     "norman-testing-tp": "0.5.15",
     "norman-testing-tp-client": "0.5.15",
     "open": "0.0.5",
