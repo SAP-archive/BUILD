@@ -34,9 +34,9 @@
         "norman-ui-catalog-manager-server":"/api/uicatalogs",
         "norman-ux-rule-engine-server": "/api/appFlow",
         "norman-user-research-server": {
-            "studies": "/api/projects/:projectId/studies",
-            "questions": "/api/projects/:projectId/studies/:studyId/questions",
-            "annotations": "/api/projects/:projectId/studies/:studyId/annotations",
+            "studies": "/api/projects/:projectId",
+            "questions": "/api/projects/:projectId",
+            "annotations": "/api/projects/:projectId",
             "participants": "/api/participant"
         },
         "norman-audit-server": "/audit"
