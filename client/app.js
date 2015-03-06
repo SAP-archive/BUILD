@@ -24,7 +24,7 @@ angular.module('norman', modules)
         $httpProvider.defaults.xsrfCookieName = 'X-CSRF-Token';
         $httpProvider.defaults.xsrfHeaderName  = 'X-CSRF-Token';
     })
-    .run(function ($rootScope, $location, NavBarService, AsideFactory) {
+    .run(function ($rootScope, $location, NavBarService, AsideFactory, Auth) {
         $rootScope.navbarService = NavBarService;
         $rootScope.asideService = AsideFactory;
 
@@ -35,10 +35,21 @@ angular.module('norman', modules)
 
             // redirect (aka deep-link)
             var path = $location.path().substr(1), redirect = $rootScope.redirect;
-            if (redirect && path !== 'login' && path !== 'signup') {
-                delete $rootScope.redirect;
-                $location.path(redirect);
-            }
+            Auth.getSecurityConfig()
+                .then(function(d){
+                    var settings = d.settings;
+                    if (path === 'signup' && settings && settings.registration && settings.registration.self === false){
+                        $location.path("/");
+                    }
+                    if (path === 'login' && settings && settings.provider && settings.provider.local === false){
+                        $location.path("/");
+                    }
+                }).then(function(){
+                    if (redirect && path !== 'login' && path !== 'signup') {
+                        delete $rootScope.redirect;
+                        $location.path(redirect);
+                    }
+                });
         });
 
     })

@@ -4,9 +4,9 @@
         <div class="header-wrapper">
             <a href="/" class="norman-logo"><img src="resources/norman-common-client/assets/icon-norman.svg" alt="Norman"/></a>
 
-            <a href="/login"  class="btn-homecover btn-right" ng-hide="isLoggedIn()" ng-class="{active: isActive('/login')}">LOG IN</a>
-            <a href="/signup" class="btn-homecover btn-right" ng-hide="isLoggedIn()" ng-class="{active: isActive('/signup')}">SIGN UP</a>
-            <a href="#"       class="btn-homecover btn-right" ng-show="isLoggedIn()" ng-class="{active: isActive('/logout')}" ng-click="logout()">LOG OUT</a>
+            <a ng-click="login()"  class="btn-homecover btn-right" ng-hide="isLoggedIn()" ng-class="{active: isActive('/login')}">LOG IN</a>
+            <a href="/signup" class="btn-homecover btn-right" ng-hide="hideSignup()" ng-class="{active: isActive('/signup')}">SIGN UP</a>
+            <a href="#"       class="btn-homecover btn-right" ng-show="showLogout()" ng-class="{active: isActive('/logout')}" ng-click="logout()">LOG OUT</a>
         </div>
 
         <video class="welcome-video" autoplay loop>
@@ -31,9 +31,10 @@
         </div>
     </div>
 
-    <div class="welcome-content-row welcome-row-signup" ng-hide="isLoggedIn()">
-        <a href="/signup" class="btn-signup">SIGN UP, IT'S FREE</a>
-        <p class="signup-already">Already got an account? <a href="/login">Log in</a>.</p>
+    <div class="welcome-content-row welcome-row-signup">
+        <a href="/signup" class="btn-signup" ng-hide="hideSignup()">SIGN UP, IT'S FREE</a>
+        <p class="signup-already" ng-hide="hideSignup()">Already got an account? <a ng-click="login()">Log in</a>.</p>
+        <button  class="welcome-btn-login" ng-show="hideSignup()" ng-click="login()">LOG IN</button>
     </div>
 
     <div class="welcome-content-row welcome-foot">
