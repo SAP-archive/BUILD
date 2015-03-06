@@ -16,8 +16,7 @@
         },
         "norman-shared-workspace-server": "/api/projects/*/prototype",
         "norman-projects-server": {
-            "projects": "/api/projects",
-            "history": "/api/history"
+            "projects": "/api/projects"
         },
         "norman-business-catalog-manager-server": "/api/catalogs",
         "norman-ui-composer-server": {
