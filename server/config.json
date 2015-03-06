@@ -8,8 +8,7 @@
             "/norman"
         ]
     },
-    "server": {
-    },
+    "server": {},
     "logging": {
         "logDirectory": "logs",
         "output": {
@@ -72,5 +71,8 @@
         "compression": {
             "threshold": 512
         }
+    },
+    "session": {
+        "secret": "ccd4d99dac71175c5f59a37533c6e00aaa9718818c74b61763200a4622f4c198"
     }
 }
