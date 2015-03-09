@@ -16,9 +16,9 @@
             "options" : {"headerName":"X-CSRF-Token", "cookieName":"X-CSRF-Token"}
         }
     },
-    "locations" : [
+    "locations" : [{
         "/api" : [ "jwt", "auth", "xsrf" ]
-    ],
+    }],
     "handlers" : {
         "norman-auth-server" : {
             "users" : "/api/users",
