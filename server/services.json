@@ -1,15 +1,15 @@
 {
     "filters" : {
- +      "auth" : {
- +          "module" : "norman-auth-server",
- +          "filter" : "auth",
- +          "options" : {}
- +      },
- +      "jwt" : {
- +          "module" : "norman-auth-server",
- +          "filter" : "jwt",
- +          "options" : {}
- +      },
+        "auth" : {
+            "module" : "norman-auth-server",
+            "filter" : "auth",
+            "options" : {}
+        },
+        "jwt" : {
+            "module" : "norman-auth-server",
+            "filter" : "jwt",
+            "options" : {}
+        },
         "xsrf" : {
             "module" : "norman-auth-server",
             "filter" : "xsrf",
