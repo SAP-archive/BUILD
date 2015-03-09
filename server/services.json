@@ -17,7 +17,7 @@
         }
     },
     "locations" : [
-
+        "/api" : [ "jwt", "auth", "xsrf" ]
     ],
     "handlers" : {
         "norman-auth-server" : {
