@@ -8,8 +8,7 @@
             "/norman"
         ]
     },
-    "server": {
-    },
+    "server": {},
     "logging": {
         "logDirectory": "logs",
         "output": {
@@ -67,10 +66,14 @@
             "/login",
             "/signup",
             "/norman",
-            "/reset-password"
+            "/forgot-password",
+            "/reset-password/*"
         ],
         "compression": {
             "threshold": 512
         }
+    },
+    "session": {
+        "secret": "3b1f6c2f75566d88034c25bf52745e0f79dc6daf4851918acd91b6dbc754e0e5"
     }
 }
