@@ -54,9 +54,12 @@
         "indexFallback": [
             "/verifyemail",
             "/auth",
+            "/auth/*",
             "/login",
             "/signup",
-            "/norman"
+            "/norman",
+            "/forgot-password",
+            "/reset-password/*"
         ],
         "options": {
             "etag": false,
