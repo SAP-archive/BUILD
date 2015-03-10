@@ -6,6 +6,12 @@
     "type:": "git",
     "url": "git@github.wdf.sap.corp:Norman/Norman.git"
   },
+  "licenses": [
+    {
+      "type": "Apache License, Version 2.0",
+      "url": "https://github.wdf.sap.corp/Norman/Norman/blob/master/LICENSE.txt"
+    }
+  ],
   "engines": {
     "node": ">=0.10.0"
   },
