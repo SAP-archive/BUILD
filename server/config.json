@@ -75,5 +75,15 @@
     },
     "session": {
         "secret": "3b1f6c2f75566d88034c25bf52745e0f79dc6daf4851918acd91b6dbc754e0e5"
-    }
+    },
+	"security": {
+		"registration": {
+			"self": true,
+			"social": true
+		},
+		"provider": {
+			"local": true
+		}
+	}
+
 }
