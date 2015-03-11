@@ -42,7 +42,7 @@ angular.module('norman', modules)
                         $location.path("/");
                     }
                     if (path === 'login' && settings && settings.provider && settings.provider.local === false){
-                        $location.path("/");
+                        $location.path("/norman");
                     }
                 }).then(function(){
                     if (redirect && path !== 'login' && path !== 'signup') {
