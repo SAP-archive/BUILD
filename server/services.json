@@ -47,7 +47,8 @@
             "studies": "/api/projects/:projectId",
             "questions": "/api/projects/:projectId",
             "annotations": "/api/projects/:projectId",
-            "participants": "/api/participant"
+            "participants": "/api/participant",
+            "userStudies": "/api/projects/studies/"
         },
         "norman-audit-server": "/audit"
     }
