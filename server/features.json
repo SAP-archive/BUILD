@@ -1,6 +1,6 @@
 {
     "disable-prototype": {
-        "name": "Prototype service",
+        "name": "Prototype service, transform the prototype definition from metadata to actual code.",
         "enabled": false
     }
 }
