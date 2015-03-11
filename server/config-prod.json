@@ -68,5 +68,14 @@
         "compression": {
             "threshold": 512
         }
+    },
+    "security": {
+        "registration": {
+            "self": true,
+            "social": true
+        },
+        "provider": {
+        "local": true
+        }
     }
 }
