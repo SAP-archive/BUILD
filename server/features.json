@@ -1,5 +1,5 @@
 {
-    "prototype": {
+    "disable-prototype": {
         "name": "Prototype service",
         "enabled": false
     }
