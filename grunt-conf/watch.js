@@ -16,7 +16,8 @@ module.exports = {
         files: [
             'client/**/*.less',
             'node_modules/norman*/**/*.less',
-            '!node_modules/norman*/node_modules/**/*.less'
+            '!node_modules/norman*/node_modules/**/*.less',
+'!node_modules/norman-ui-catalog-manager-server/server/lib/api/catalog/library/**/*.js' 
         ],
         tasks: ['newer:less']
     },

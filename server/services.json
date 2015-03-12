@@ -1,14 +1,24 @@
 {
     "filters" : {
+        "auth" : {
+            "module" : "norman-auth-server",
+            "filter" : "auth",
+            "options" : {}
+        },
+        "jwt" : {
+            "module" : "norman-auth-server",
+            "filter" : "jwt",
+            "options" : {}
+        },
         "xsrf" : {
             "module" : "norman-auth-server",
             "filter" : "xsrf",
             "options" : {"headerName":"X-CSRF-Token", "cookieName":"X-CSRF-Token"}
         }
     },
-    "locations" : [
-
-    ],
+    "locations" : [{
+        "/api" : [ "jwt", "auth", "xsrf" ]
+    }],
     "handlers" : {
         "norman-auth-server" : {
             "users" : "/api/users",
@@ -37,7 +47,8 @@
             "studies": "/api/projects/:projectId",
             "questions": "/api/projects/:projectId",
             "annotations": "/api/projects/:projectId",
-            "participants": "/api/participant"
+            "participants": "/api/participant",
+            "userStudies": "/api/projects/studies/"
         },
         "norman-audit-server": "/audit"
     }

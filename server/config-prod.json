@@ -54,9 +54,12 @@
         "indexFallback": [
             "/verifyemail",
             "/auth",
+            "/auth/*",
             "/login",
             "/signup",
-            "/norman"
+            "/norman",
+            "/forgot-password",
+            "/reset-password/*"
         ],
         "options": {
             "etag": false,
@@ -64,6 +67,15 @@
         },
         "compression": {
             "threshold": 512
+        }
+    },
+    "security": {
+        "registration": {
+            "self": true,
+            "social": true
+        },
+        "provider": {
+        "local": true
         }
     }
 }

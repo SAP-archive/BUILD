@@ -25,7 +25,8 @@ module.exports = {
 
             'node_modules/norman*server/**/*.js',
             '!node_modules/**/test*/**/*.js',
-            '!node_modules/norman*server/node_modules/**/*.js'
+            '!node_modules/norman*server/node_modules/**/*.js',
+'!node_modules/norman-ui-catalog-manager-server/server/lib/api/catalog/library/**/*.js' 
         ]
     }
 };
