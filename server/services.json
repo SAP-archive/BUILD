@@ -24,7 +24,7 @@
             "users" : "/api/users",
             "auth" : "/auth"
         },
-        "norman-shared-workspace-server": "/api/projects/*/prototype",
+        "norman-shared-workspace-server": "",
         "norman-projects-server": {
             "projects": "/api/projects"
         },
@@ -47,6 +47,7 @@
             "studies": "/api/projects/:projectId",
             "questions": "/api/projects/:projectId",
             "annotations": "/api/projects/:projectId",
+            "prototypes": "/api/projects/:projectId",
             "participants": "/api/participant",
             "userStudies": "/api/projects/studies/"
         },
