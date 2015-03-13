@@ -28,8 +28,8 @@
     "norman-shell-client": "0.3.13",
     "norman-auth-client": "0.2.65",
     "norman-auth-server": "0.2.65",
-    "norman-projects-client": "0.1.36",
-    "norman-projects-server": "0.1.36",
+    "norman-projects-client": "0.1.42",
+    "norman-projects-server": "0.1.42",
     "norman-business-catalog-manager-client": "0.4.35",
     "norman-business-catalog-manager-server": "0.4.35",
     "norman-data-modeler-client": "0.4.82",
@@ -47,7 +47,9 @@
     "norman-ux-rule-engine-server": "0.9.1",
     "norman-shared-workspace-server": "0.1.12",
     "norman-prototype-builder-server": "0.9.1",
-    "norman-previewer-server": "0.1.3"
+    "norman-previewer-server": "0.1.3",
+    "norman-openui5": "1.0.2",
+    "norman-custom-controls": "0.0.14"
   },
   "devDependencies": {
     "angular-mocks": "^1.3.3",
