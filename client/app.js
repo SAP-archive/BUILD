@@ -22,7 +22,7 @@ angular.module('norman', modules)
         $urlRouterProvider.otherwise('/');
         $locationProvider.html5Mode(true);
         $httpProvider.defaults.xsrfCookieName = 'X-CSRF-Token';
-        $httpProvider.defaults.xsrfHeaderName  = 'X-CSRF-Token';
+        $httpProvider.defaults.xsrfHeaderName = 'X-CSRF-Token';
     })
     .run(function ($rootScope, $location, NavBarService, AsideFactory) {
         $rootScope.navbarService = NavBarService;
