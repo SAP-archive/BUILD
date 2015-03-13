@@ -4,7 +4,7 @@
         "enabled": false
     },
     "disable-verification-email": {
-        "name": "Disable the ability of the application to to resend verification email from users profile",
+        "name": "Disable the ability of the application to resend verification email from users profile",
         "enabled": false
     }
 }
