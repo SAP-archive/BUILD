@@ -54,7 +54,6 @@
         "secureFlag": false
     },
     "services": "services.json",
-    "features": "features.json",
     "web": {
         "root": "../dev",
         "errors": {
@@ -67,24 +66,22 @@
             "/login",
             "/signup",
             "/norman",
-            "/forgot-password",
-            "/reset-password/*"
+            "/reset-password"
         ],
         "compression": {
             "threshold": 512
         }
     },
     "session": {
-        "secret": "3b1f6c2f75566d88034c25bf52745e0f79dc6daf4851918acd91b6dbc754e0e5"
+        "secret": "ccd4d99dac71175c5f59a37533c6e00aaa9718818c74b61763200a4622f4c198"
     },
-	"security": {
-		"registration": {
-			"self": true,
-			"social": true
-		},
-		"provider": {
-			"local": true
-		}
-	}
-
+    "security":{
+        "registration":{
+            "self":true,
+            "social": true
+        },
+        "provider":{
+            "local": true
+        }
+    }
 }
