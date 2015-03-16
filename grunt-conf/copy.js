@@ -63,7 +63,7 @@ module.exports = {
                 expand: true,
                 cwd: 'client',
                 dest: 'dev',
-                src: ['assets/**/*','framing_control.js', '*.{ico,txt}', '!**/*.less']
+                src: ['legal/**/*','assets/**/*','framing_control.js', '*.{ico,txt}', '!**/*.less']
             },
             {
                 expand: true,
