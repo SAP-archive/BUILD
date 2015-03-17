@@ -27,7 +27,7 @@ Feature: DataModeler
   @CreateBlankDataModel
   Scenario: I choose to create a data Model from an Excel file
     Given The create model page is displayed
-    Then I upload XL file: "..\..\..\testcase\Sales Order Data model.xlsx"
+    Then I upload XL file: "..\..\..\..\test\testcase\Sales Order Data model.xlsx"
     Then I click on Reorder Horizontally
 
   @flow
@@ -99,7 +99,7 @@ Feature: DataModeler
   @UploadExcelFile
   Scenario: Create a DataModel: uploading Excel file
     Given Data modeler page is displayed
-    Then I upload XL file: "..\..\..\testcase\Product.xlsx"
+    Then I upload XL file: "..\..\..\..\test\testcase\Product.xlsx"
     Then I click on Reorder Horizontally
 
   @flow
