@@ -168,9 +168,9 @@ module.exports = function (grunt) {
             tasks.push('ngAnnotate');
             tasks.push('exorcise');
             tasks.push('html2js');
-            tasks.push('cssmin');
             tasks.push('copy:dist');
             tasks.push('config-prod');
+            tasks.push('cssmin');
             tasks.push('uglify');
         }
         //tasks.push('eslint:client');
