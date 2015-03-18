@@ -1,19 +1,19 @@
-@datamodler
-Feature: DataModeler
+#@datamodler
+#Feature: DataModeler
 
-  @flow
-  Scenario: Login with Data Modeller User
-    Given I am on the login page
-    When I enter Data Modeler User credentials
-    Then I am logged in
+ # @flow
+  #Scenario: Login with Data Modeller User
+   # Given I am on the login page
+    #When I enter Data Modeler User credentials
+    #Then I am logged in
 
-  @flow
-  @OnceLoggedInCreateProject
-  Scenario: Once Logged in you are on the Norman Page
-    Given I am on the Landing Page
-    When  I click New Project Link
-    And  I enter Project Name "TESTPROJECTXLS"
-    Then Project "TESTPROJECTXLS" is created
+  #@flow
+  #@OnceLoggedInCreateProject
+  #Scenario: Once Logged in you are on the Norman Page
+   # Given I am on the Landing Page
+#    When  I click New Project Link
+    #And  I enter Project Name "TESTPROJECTXLS"
+    #Then Project "TESTPROJECTXLS" is created
 
 #  @OpenTheCreatedProject
 #  Scenario: Once a project is created
