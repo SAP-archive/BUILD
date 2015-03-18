@@ -127,7 +127,7 @@ module.exports = {
             {   // SERVER
                 expand: true,
                 dest: 'dist',
-                src: [ 'server/**/*.js', 'server/errors/*.html', 'server/services.json','server/dbinitconfig.json' ,'!node_modules/norman-ui-catalog-manager-server/server/lib/api/catalog/library/**/*.js' ]
+                src: [ 'server/**/*.js', 'server/errors/*.html', 'server/services.json', 'server/features.json', 'server/dbinitconfig.json' ,'!node_modules/norman-ui-catalog-manager-server/server/lib/api/catalog/library/**/*.js' ]
             },
             {   // Norman Server Modules
                 expand: true,
