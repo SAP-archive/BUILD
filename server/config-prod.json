@@ -46,6 +46,7 @@
         "secureFlag" : false
     },
     "services": "services.json",
+    "features": "features.json",
     "web": {
         "root": "../public",
         "errors": {
