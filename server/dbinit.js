@@ -4,6 +4,8 @@
 var path = require('path');
 var AppServer = require('norman-app-server');
 var configFile = path.join(__dirname, 'dbinitconfig.json');
+var commonServer = require('norman-common-server');
+var registry = commonServer.registry;
 
 var k, n;
 for (k = 2, n = process.argv.length; k < n; ++k) {
@@ -14,7 +16,7 @@ for (k = 2, n = process.argv.length; k < n; ++k) {
 var server = new AppServer.Server(configFile);
 server.start().then(function() {
     //create initial data for UI Catalog manager
-    var uicatalogMangerServer = require('norman-ui-catalog-manager-server');
+    var uicatalogMangerServer = registry.getModule('UICatalog');
     uicatalogMangerServer.initializeDb(function(err) {
         if (err) {
             console.log(err);
