@@ -10,8 +10,7 @@ Feature: Projects
     @flow
     Scenario: Once Logged in you are on the Norman Page
         Given I am on the Landing Page
-        When I click Project in Nav Bar
-        And  I click New Project
+        When  I click New Project Link
         And  I enter Project Name
         Then The project is created
 
@@ -36,6 +35,6 @@ Feature: Projects
     Scenario: Accept Team Invite
         Given I am logged out
         When I login using Invitee Credentails
-        And I click Project in Nav Bar
-        And I Accept the Invite
+        And I Click on New Project Invite
+        And I Accept the New Invite
         Then I am Collaborating on the Project

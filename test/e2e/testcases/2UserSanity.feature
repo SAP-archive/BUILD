@@ -46,7 +46,7 @@ Feature: User
     Scenario: Upload a Avatar Picture
         Given I am on the Picture Page
         When I upload a picture
-        And I select the Image
+        And I Cilck Select Button
         Then Avatar image is displayed
 
     @flow
