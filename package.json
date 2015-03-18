@@ -1,6 +1,6 @@
 {
     "name": "norman-norman",
-    "version": "0.3.0",
+    "version": "0.9.0",
     "description": "Norman",
     "repository": {
         "type:": "git",
@@ -15,13 +15,13 @@
     },
     "main": "server/app.js",
     "dependencies": {
-        "norman-logging": "0.5.61",
-        "norman-promise": "0.5.61",
-        "norman-client-tp": "0.5.80",
+        "norman-logging": "0.9.7",
+        "norman-promise": "0.9.7",
+        "norman-client-tp": "0.9.7",
         "norman-common-client": "0.9.7",
         "norman-common-server": "0.9.7",
         "norman-audit-server": "0.5.72",
-        "norman-server-tp": "0.5.69",
+        "norman-server-tp": "0.9.7",
         "norman-app-server": "0.4.31",
         "norman-shell-client": "0.3.13",
         "norman-auth-client": "0.9.3",
