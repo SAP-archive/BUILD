@@ -2,10 +2,9 @@
 Feature: DataModeler
 
   @flow
-  @Signup  
-  Scenario: Sign Up with Valid Credentials
-    Given I am on the sign up page
-    When I enter valid signup details
+  Scenario: Login with Data Modeller User
+    Given I am on the login page
+    When I enter Data Modeler User credentials
     Then I am logged in
 
   @flow
@@ -51,7 +50,7 @@ Feature: DataModeler
     Given Data modeler page is displayed
     Then I check relations for entity "SalesOrder" are "SalesOrderSet" with cardinality "n"
 
-    
+
 
   @flow
   @CheckSalesOrderItemEntityExistsAndClickOnIt
@@ -94,7 +93,7 @@ Feature: DataModeler
     Given Data modeler page is displayed
     Then I delete Entity named "Product"
     Then I click on Reorder Horizontally
-    
+
   @flow
   @UploadExcelFile
   Scenario: Create a DataModel: uploading Excel file
