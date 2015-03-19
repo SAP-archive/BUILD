@@ -313,7 +313,9 @@
                         "permissions": [
                             "*"
                         ]
-                    }
+                    },
+                    { "resources": "/api/uicatalogs", "permissions": ["*"] },
+                    { "resources": "/api/sampleDataMgr", "permissions": ["*"] }
                 ]
             }
         ]

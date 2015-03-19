@@ -199,7 +199,9 @@
             {
                 "roles": "admin",
                 "allows": [
-                    { "resources": "/api", "permissions": ["*"] }
+                    { "resources": "/api", "permissions": ["*"] },
+                    { "resources": "/api/uicatalogs", "permissions": ["*"] },
+                    { "resources": "/api/sampleDataMgr", "permissions": ["*"] }
                 ]
             }
         ]
