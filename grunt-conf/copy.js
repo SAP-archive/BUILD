@@ -63,7 +63,7 @@ module.exports = {
                 expand: true,
                 cwd: 'client',
                 dest: 'dev',
-                src: ['legal/**/*','assets/**/*','framing_control.js', '*.{ico,txt}', '!**/*.less']
+                src: ['legal/**/*', 'assets/**/*', 'framing_control.js', '*.{ico,txt}', '!**/*.less']
             },
             {
                 expand: true,
@@ -75,7 +75,7 @@ module.exports = {
                     'norman*client/bower_components/**/*.{png,gif,jpg,svg,js,html,css}',
                     'norman-ng-grid/**/*.{png,gif,jpg,svg,json}',
                     '!norman-openui5/**/*',
-                    '!node_modules/norman-ui-catalog-manager-server/server/lib/api/catalog/library/**/*.js' 
+                    '!node_modules/norman-ui-catalog-manager-server/server/lib/api/catalog/library/**/*.js'
                 ]
             },
 
@@ -127,7 +127,14 @@ module.exports = {
             {   // SERVER
                 expand: true,
                 dest: 'dist',
-                src: [ 'server/**/*.js', 'server/errors/*.html', 'server/services.json', 'server/features.json', 'server/dbinitconfig.json' ,'!node_modules/norman-ui-catalog-manager-server/server/lib/api/catalog/library/**/*.js' ]
+                src: [
+					'server/**/*.js',
+					'server/errors/*.html',
+					'server/services.json',
+					'server/features.json',
+                    'server/dbinitconfig.json'
+					//'!node_modules/norman-ui-catalog-manager-server/server/lib/api/catalog/library/**/*.js'
+				]
             },
             {   // Norman Server Modules
                 expand: true,

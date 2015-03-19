@@ -168,10 +168,10 @@ module.exports = function (grunt) {
             tasks.push('ngAnnotate');
             tasks.push('exorcise');
             tasks.push('html2js');
-            tasks.push('cssmin');
             tasks.push('copy:dist');
             tasks.push('config-prod');
-            // tasks.push('uglify');
+            tasks.push('cssmin');
+            tasks.push('uglify');
         }
         //tasks.push('eslint:client');
         //tasks.push('eslint:server');
@@ -184,9 +184,9 @@ module.exports = function (grunt) {
     // Copy production config to dist
     grunt.registerTask('config-prod', function () {
         var targetDir = path.join(__dirname, 'dist');
-        ensureDirectory(targetDir);
+        if (!fs.existsSync(targetDir)) fs.mkdirSync(targetDir);
         targetDir = path.join(targetDir, 'server');
-        ensureDirectory(targetDir);
+        if (!fs.existsSync(targetDir)) fs.mkdirSync(targetDir);
 
         var buf = fs.readFileSync(path.join(__dirname, 'server/config-prod.json'));
         fs.writeFileSync(path.join(targetDir, 'config.json'), buf);
@@ -202,9 +202,3 @@ module.exports = function (grunt) {
 
     grunt.task.run('notify_hooks');
 };
-
-function ensureDirectory(dirname) {
-    if (!fs.existsSync(dirname)) {
-        fs.mkdirSync(dirname);
-    }
-}
