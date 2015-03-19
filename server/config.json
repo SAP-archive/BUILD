@@ -54,6 +54,7 @@
         "secureFlag": false
     },
     "services": "services.json",
+    "features": "features.json",
     "web": {
         "root": "../dev",
         "errors": {
