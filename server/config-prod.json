@@ -123,10 +123,10 @@
         "maxLoginAttempts": 5,
         "lockTimeInHours": 2,
         "crypto" :{
-            "saltLenght" :128,
-            "keyLenght" :128,
+            "saltLength" :128,
+            "keyLength" :128,
             "iterations" :10000,
-            "emailVerifingTokenLenght": 64
+            "emailVerifyingTokenLength": 64
         },
         "failedLoginReasons" :{
             "notFound" : "The email or password you entered is incorrect.",
