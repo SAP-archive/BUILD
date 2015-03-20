@@ -10,7 +10,7 @@ exports.config = {
 
     // A base URL for your application under test. Calls to protractor.get()
     // with relative paths will be prepended with this.
-    baseUrl: 'http://localhost:' + (process.env.PORT || '9000'),
+    baseUrl: 'http://localhost:9000/',
 
     // If true, only chromedriver will be started, not a standalone selenium.
     // Tests for browsers other than chrome will not run.
@@ -44,8 +44,7 @@ exports.config = {
     // assertion framework if working with mocha.
     framework: 'cucumber',
 
-    specs: ['../test/e2e/testcases/*.feature',
-        '../node_modules/norman-*e2e/**/testcases/*.feature'],
+    specs: ['../test/e2e/testcases/*.feature'],
     cucumberOpts: {
         require: '../node_modules/norman-*e2e/**/testcases/steps/*.steps.js',
         format: 'pretty'
