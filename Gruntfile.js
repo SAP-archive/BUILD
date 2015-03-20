@@ -10,6 +10,7 @@ module.exports = function (grunt) {
     // Load custom node inspector task
     nodeInspector.task(grunt);
     grunt.loadNpmTasks('grunt-notify');
+    grunt.loadNpmTasks('grunt-wait');
 
     // Load grunt tasks automatically, when needed
     require('jit-grunt')(grunt, {
@@ -55,6 +56,9 @@ module.exports = function (grunt) {
 
         // Minify css
         cssmin: require('./grunt-conf/cssmin.js'),
+
+        //Grunt wait Task for e2e testing:
+        wait: require('./grunt-conf/wait.js'),
 
         // Minify js
         uglify: require('./grunt-conf/uglify.js'),
@@ -141,7 +145,7 @@ module.exports = function (grunt) {
         var tasks = {
             server: ['env:dev', 'mochaTest'],
             client: ['env:dev', 'karma'],
-            e2e: ['express:dev', 'protractor'],
+            e2e: ['express:dev', 'wait:dev', 'protractor'],
             e2e_ci: ['protractor'],
             dflt: ['test:server', 'test:client']
         };
