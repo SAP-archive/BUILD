@@ -45,6 +45,18 @@
         },
         "secureFlag" : false
     },
+    "mail": {
+        "sender":"do.not.reply@sap.com",
+        "smtp": {
+            "host": "mail.sap.corp",
+            "port": 25,
+            "debug": true,
+            "tls": {
+                //"ca" : "path/to/CA_mailserver/cert.pem"
+                "rejectUnauthorized": false
+            }
+        }
+    },
     "facebook": {
         "clientID": "942447102435121",
         "clientSecret": "33a4514d7c42bea5f421219f7218c727",

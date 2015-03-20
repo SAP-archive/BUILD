@@ -52,6 +52,18 @@
             "port": 8080
         }
     },
+    "mail": {
+        "sender":"do.not.reply@sap.com",
+        "smtp": {
+            "host": "mail.sap.corp",
+            "port": 25,
+            "debug": true,
+            "tls": {
+                //"ca" : "path/to/CA_mailserver/cert.pem"
+                "rejectUnauthorized": false
+            }
+        }
+    },
     "services": "services.json",
     "web": {
         "root": "../dev",
