@@ -88,7 +88,7 @@
         "jshint-stylish": "^1.0.0",
         "karma": "^0.12.25",
         "karma-chai": "^0.1.0",
-        "karma-chai-plugins": "^0.2.3",
+        "karma-chai-plugins": "^0.3.0",
         "karma-coverage": "^0.2.7",
         "karma-mocha": "^0.1.9",
         "karma-ng-html2js-preprocessor": "^0.1.2",
