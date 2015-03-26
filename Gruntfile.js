@@ -4,8 +4,6 @@ var fs = require('fs');
 var path = require('path');
 var nodeInspector = require('./grunt-conf/nodeinspector.js');
 
-var projects = [
-];
 var repo = "Norman";
 var settings = require("./config.json");
 
@@ -221,6 +219,7 @@ module.exports = function (grunt) {
         var issueTypes = settings.GHIssueType;
         var ghUser = settings.GHUser;
         var ghPassword = settings.GHPassword;
+        var projects = [];
         helper.github.updateGithub(projects, issueTypes, ghUser, ghPassword, mailNotif, repo, done);
     });
 
