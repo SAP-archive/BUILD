@@ -1,7 +1,11 @@
 'use strict';
+var helper = require('norman-build-helper');
 var fs = require('fs');
 var path = require('path');
 var nodeInspector = require('./grunt-conf/nodeinspector.js');
+
+var repo = "Norman";
+var settings = require("./config.json");
 
 module.exports = function (grunt) {
 
@@ -99,6 +103,9 @@ module.exports = function (grunt) {
         'node-inspector': nodeInspector.config,
 
         nodemon: require('./grunt-conf/nodemon.js'),
+
+        // publish in the npm registry
+        publish: require('./grunt-conf/publish.js'),
 
         concurrent: {
             debug: {
@@ -203,6 +210,17 @@ module.exports = function (grunt) {
     grunt.registerTask('dev', ['build:dev']);
     grunt.registerTask('default', ['build:dev']);
     grunt.registerTask('liveEdit', ['server:liveEdit']);
+
+    grunt.registerTask('npm-publish', ['dist', 'publish', 'github-update']);
+
+    grunt.registerTask('github-update', 'Update Github issue status', function () {
+        var done = this.async();
+        var mailNotif = settings.GHMailNotif;
+        var issueTypes = settings.GHIssueType;
+        var ghUser = settings.GHUser;
+        var ghPassword = settings.GHPassword;
+        helper.github.updateGithub(projects, issueTypes, ghUser, ghPassword, mailNotif, repo, done);
+    });
 
     grunt.task.run('notify_hooks');
 };
