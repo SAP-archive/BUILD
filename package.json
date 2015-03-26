@@ -43,7 +43,7 @@
         "norman-user-assistance": "0.1.2",
         "norman-ux-rule-engine-client": "0.9.6",
         "norman-ux-rule-engine-server": "0.9.6",
-        "norman-shared-workspace-server": "0.9.4",
+        "norman-shared-workspace-server": "0.9.5",
         "norman-prototype-builder-server": "0.9.5",
         "norman-previewer-server": "0.9.3",
         "norman-openui5": "1.0.2",
