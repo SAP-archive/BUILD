@@ -4,6 +4,8 @@ var fs = require('fs');
 var path = require('path');
 var nodeInspector = require('./grunt-conf/nodeinspector.js');
 
+var projects = [
+];
 var repo = "Norman";
 var settings = require("./config.json");
 
