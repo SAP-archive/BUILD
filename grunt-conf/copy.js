@@ -141,6 +141,11 @@ module.exports = {
                 cwd: 'node_modules',
                 dest: 'dist/node_modules',
                 src: getServerDependencies()
+            },
+            {   // Norman package.json
+                expand: true,
+                dest: 'dist',
+                src: ['package.json']
             }
         ]
     }
