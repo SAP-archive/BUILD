@@ -110,6 +110,11 @@
         },
         "compression": {
             "threshold": 512
+        },
+        "body-parser":{
+         "json":{
+         "limit":"1mb"
+         }
         }
     },
     "security": {
