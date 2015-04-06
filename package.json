@@ -17,7 +17,7 @@
   },
   "main": "server/app.js",
   "publishConfig": {
-    "registry": "http://norman-npm.mo.sap.corp:8080/"
+    "registry": "http://build-npm.mo.sap.corp:8080/"
   },
   "dependencies": {
     "norman-logging": "0.9.21",
