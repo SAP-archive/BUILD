@@ -19,7 +19,7 @@ The table below identifies key personnel in the core development teams for each 
 | [Business Catalog Manager] (https://github.wdf.sap.corp/Norman/BusinessCatalogManager) |  | | Jean-Luc Schmit ([#I051501](https://github.wdf.sap.corp/I051501))| | Jérôme Leconte ([#I051710](https://github.wdf.sap.corp/I051710)) | 
 | [Sample Data Server] (https://github.wdf.sap.corp/Norman/SampleDataServer) |  | |Anand Nidamaru  |  | Ranjitha Balaraman ([I055549](https://github.wdf.sap.corp/I055549))  |
 | [UX Rule Engine] (https://github.wdf.sap.corp/Norman/UXRuleEngine ) |  | | Jean-Luc Schmit | | Nicolas Lunet([#I053631](https://github.wdf.sap.corp/I053631)) | 
-| [UI Composer] (https://github.wdf.sap.corp/Norman/UIComposer) |  | | Arturo Duarte ([I802776](#https://github.wdf.sap.corp/I802776))|  | 
+| [UI Composer] (https://github.wdf.sap.corp/Norman/UIComposer) |  | | Arturo Duarte ([I802776](#https://github.wdf.sap.corp/I802776)) |  | 
 | [Shared Workspace] (https://github.wdf.sap.corp/Norman/SharedWorkspace) |  | |Arturo Duarte ([I802776](#https://github.wdf.sap.corp/I802776))| | Sam |
 | [UX Rule Engine] (https://github.wdf.sap.corp/Norman/UXRuleEngine ) |  | |  | | Nicolas Lunet([#I053631](https://github.wdf.sap.corp/I053631)) | 
 | [UI Composer] (https://github.wdf.sap.corp/Norman/UIComposer) |  | |Arturo Duarte ([I802776](#https://github.wdf.sap.corp/I802776))| Divyesh Jain ([#I820335](https://github.wdf.sap.corp/I820335)) | 
