@@ -22,7 +22,7 @@ The table below identifies key personnel in the core development teams for each 
 | [UI Composer] (https://github.wdf.sap.corp/Norman/UIComposer) |  | | Arturo Duarte ([#I802776](https://github.wdf.sap.corp/I802776)) |  | 
 | [Shared Workspace] (https://github.wdf.sap.corp/Norman/SharedWorkspace) |  | |Arturo Duarte ([#I802776](https://github.wdf.sap.corp/I802776))| | Sam |
 | [UX Rule Engine] (https://github.wdf.sap.corp/Norman/UXRuleEngine ) |  | |  | | Nicolas Lunet([#I053631](https://github.wdf.sap.corp/I053631)) | 
-| [UI Composer] (https://github.wdf.sap.corp/Norman/UIComposer) |  | |Arturo Duarte ([#I802776](#https://github.wdf.sap.corp/I802776))| Divyesh Jain ([#I820335](https://github.wdf.sap.corp/I820335)) | 
+| [UI Composer] (https://github.wdf.sap.corp/Norman/UIComposer) |  | | Arturo Duarte ([#I802776](https://github.wdf.sap.corp/I802776))| Divyesh Jain ([#I820335](https://github.wdf.sap.corp/I820335)) | 
 | [Shared Workspace] (https://github.wdf.sap.corp/Norman/SharedWorkspace) |  | |  | | Sam Thambu ([#I055546](https://github.wdf.sap.corp/I055546)) | 
 | [UI Catalog Manager] (https://github.wdf.sap.corp/Norman/UICatalogManager) |  | | Anand Nidamaru | | Ranjitha Balaraman ([I055549](https://github.wdf.sap.corp/I055549)) | 
 | [Previewer] (https://github.wdf.sap.corp/Norman/Previewer) |  | |Arturo Duarte ([#I802776](https://github.wdf.sap.corp/I802776))| | Sam Thambu ([#I055546](https://github.wdf.sap.corp/I055546)) | 
