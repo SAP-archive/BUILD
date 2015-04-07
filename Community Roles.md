@@ -20,10 +20,9 @@ The table below identifies key personnel in the core development teams for each 
 | [Sample Data Server] (https://github.wdf.sap.corp/Norman/SampleDataServer) |  | |Anand Nidamanaru ([#I038020](https://github.wdf.sap.corp/I038020)) |  | Ranjitha Balaraman ([I055549](https://github.wdf.sap.corp/I055549))  |
 | [UX Rule Engine] (https://github.wdf.sap.corp/Norman/UXRuleEngine ) |  | | Jean-Luc Schmit | | Nicolas Lunet([#I053631](https://github.wdf.sap.corp/I053631)) | 
 | [UI Composer] (https://github.wdf.sap.corp/Norman/UIComposer) |  | | Arturo Duarte ([#I802776](https://github.wdf.sap.corp/I802776)) |  | 
-| [Shared Workspace] (https://github.wdf.sap.corp/Norman/SharedWorkspace) |  | |Arturo Duarte ([#I802776](https://github.wdf.sap.corp/I802776))| | Sam |
+| [Shared Workspace] (https://github.wdf.sap.corp/Norman/SharedWorkspace) |  | |Arturo Duarte ([#I802776](https://github.wdf.sap.corp/I802776))| | Sam Thambu ([#I055546](https://github.wdf.sap.corp/I055546)) |
 | [UX Rule Engine] (https://github.wdf.sap.corp/Norman/UXRuleEngine ) |  | |  | | Nicolas Lunet([#I053631](https://github.wdf.sap.corp/I053631)) | 
 | [UI Composer] (https://github.wdf.sap.corp/Norman/UIComposer) |  | | Arturo Duarte ([#I802776](https://github.wdf.sap.corp/I802776))| Divyesh Jain ([#I820335](https://github.wdf.sap.corp/I820335)) | 
-| [Shared Workspace] (https://github.wdf.sap.corp/Norman/SharedWorkspace) |  | |  | | Sam Thambu ([#I055546](https://github.wdf.sap.corp/I055546)) | 
 | [UI Catalog Manager] (https://github.wdf.sap.corp/Norman/UICatalogManager) |  | | Anand Nidamanaru ([#I038020](https://github.wdf.sap.corp/I038020)) | | Ranjitha Balaraman ([I055549](https://github.wdf.sap.corp/I055549)) | 
 | [Previewer] (https://github.wdf.sap.corp/Norman/Previewer) |  | |Arturo Duarte ([#I802776](https://github.wdf.sap.corp/I802776))| | Sam Thambu ([#I055546](https://github.wdf.sap.corp/I055546)) | 
 | [User Research] (https://github.wdf.sap.corp/Norman/UserResearch) | Cris Lopes [#I072556](https://github.wdf.sap.corp/cristover-lopes) |Dublin Dev Team | Caroline Welsh ([#I058807](https://github.wdf.sap.corp/I058007)) |Caroline Welsh ([#I058807](https://github.wdf.sap.corp/I058007)) |Austin Devine ([#I058153](https://github.wdf.sap.corp/I058153))|
