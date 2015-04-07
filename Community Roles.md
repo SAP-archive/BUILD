@@ -15,7 +15,7 @@ The table below identifies key personnel in the core development teams for each 
 
 | Project Name | @Reviewers | @Committer | @Project Lead | @Requirements Lead | @Technical Lead |
 | ------------- | ------------- | ------------- |------------- |------------- |------------- |
-| Project Build Steering Committee | ------------- | ------------- |? |? |?|
+| <a href="#Project and Sub-Project Steering Committee Members">Project Build Steering Committee |  | |? |? |?|
 | [Auth] (https://github.wdf.sap.corp/Norman/Auth) | Asim Muhammad ([#I31189](https://github.wdf.sap.corp/I311189)) |Dublin Dev Team  | Mark McSherry  ([#I056744](https://github.wdf.sap.corp/I056744))|  | Austin Devine ([#I058153](https://github.wdf.sap.corp/I058153)) | 
 | [Business Catalog Manager] (https://github.wdf.sap.corp/Norman/BusinessCatalogManager) |  | | Jean-Luc Schmit ([#I051501](https://github.wdf.sap.corp/I051501))| | Jérôme Leconte ([#I051710](https://github.wdf.sap.corp/I051710)) | 
 | [Sample Data Server] (https://github.wdf.sap.corp/Norman/SampleDataServer) |  | |Anand Nidamanaru ([#I038020](https://github.wdf.sap.corp/I038020)) |  | Ranjitha Balaraman ([I055549](https://github.wdf.sap.corp/I055549))  |
