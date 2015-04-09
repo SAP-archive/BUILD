@@ -150,8 +150,9 @@ module.exports = function (grunt) {
 
     grunt.registerTask('test', function (target) {
         var tasks = {
-            server: ['env:dev', 'mochaTest'],
+            server: ['env:dev', 'mochaTest:test'],
             client: ['env:dev', 'karma'],
+            server_int: ['env:dev', 'mochaTest:int'],
             e2e: ['express:dev', 'wait:dev', 'protractor'],
             e2e_ci: ['protractor'],
             dflt: ['test:server', 'test:client']

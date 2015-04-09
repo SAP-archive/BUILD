@@ -1,6 +1,7 @@
 'use strict';
 module.exports = {
 
+    test: {
     options: {
         reporter: 'spec'
     },
@@ -9,5 +10,9 @@ module.exports = {
         'node_modules/norman*server/tests/**/*.spec.js',
         'test/int/server/**/*.spec.js'
     ]
+    },
+
+    int: {
+    }
 
 };
