@@ -1,4 +1,4 @@
-##<img src = "https://github.wdf.sap.corp/github-enterprise-assets/0000/3598/0000/2546/8cda45ac-76ea-11e4-9ae1-6842e5baa7cc.png" height="128" align="left">  Welcome to Project Norman  [![Build Status](https://norman-jenkins.mo.sap.corp/jenkins/view/Dublin/job/Norman-master/badge/icon)](https://norman-jenkins.mo.sap.corp/jenkins/view/Dublin/job/Norman-master/)
+##<img src = "https://github.wdf.sap.corp/github-enterprise-assets/0000/3598/0000/2546/8cda45ac-76ea-11e4-9ae1-6842e5baa7cc.png" height="128" align="left">  Welcome to Project Norman  [![Build Status](https://build-jenkins.mo.sap.corp/jenkins/job/Norman-master/badge/icon)](https://build-jenkins.mo.sap.corp/jenkins/job/Norman-master/)
 
 
 
