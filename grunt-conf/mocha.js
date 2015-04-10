@@ -2,17 +2,24 @@
 module.exports = {
 
     test: {
-    options: {
-        reporter: 'spec'
+        options: {
+            reporter: 'spec'
+        },
+
+        src: [
+            'node_modules/norman*server/tests/**/*.spec.js',
+            'test/int/server/**/*.spec.js'
+        ]
     },
 
-    src: [
-        'node_modules/norman*server/tests/**/*.spec.js',
-        'test/int/server/**/*.spec.js'
-    ]
-    },
+    modules_int: {
+        options: {
+            reporter: 'spec'
+        },
 
-    int: {
+        src: [
+            'node_modules/norman*test/int/**/*.spec.js'
+        ]
     }
 
 };

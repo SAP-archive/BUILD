@@ -152,7 +152,7 @@ module.exports = function (grunt) {
         var tasks = {
             server: ['env:dev', 'mochaTest:test'],
             client: ['env:dev', 'karma'],
-            server_int: ['env:dev', 'mochaTest:int'],
+            modules_int: ['env:dev', 'mochaTest:modules_int'],
             e2e: ['express:dev', 'wait:dev', 'protractor'],
             e2e_ci: ['protractor'],
             dflt: ['test:server', 'test:client']
