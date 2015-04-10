@@ -40,7 +40,7 @@
         "norman-previewer-server": "",
         "norman-prototype-builder-server": "",
         "norman-data-modeler-server": "/api/models",
-        "norman-sample-data-manager-server": "",
+        "norman-sample-data-manager-server": "/api/sampledata",
         "norman-ui-catalog-manager-server":"/api/uicatalogs",
         "norman-ux-rule-engine-server": "/api/appFlow",
         "norman-user-research-server": {
