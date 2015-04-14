@@ -27,14 +27,15 @@ Feature: Composer
         When I click on thumbnail of page
         Then I am in ui composer page
 
-    @temp2
+    @temp
     Scenario: User drag and drop Button control
         Given I am on the ui composer page
         When I drag and drop button control to canvas
         Then button control displayed in the canvas
 
-    @temp
+    @temp2
     Scenario: User adds a new page
         Given I am on the ui composer page
         When I click on the Add Page link
         Then A new page is created
+
