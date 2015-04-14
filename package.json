@@ -114,6 +114,7 @@
     "norman-build-helper": "^0.3.1",
     "norman-data-modeler-e2e": "0.9.7",
     "norman-projects-e2e": "0.9.14",
+    "norman-ui-composer-e2e": "0.9.18",
     "norman-testing-server": "0.9.25",
     "norman-testing-tp": "0.9.25",
     "norman-testing-tp-client": "0.9.25",
