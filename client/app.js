@@ -32,6 +32,8 @@ angular.module('norman', modules)
             //If the current user is not already initialize, will try to do it
             Auth.initCurrentUser();
 
+            $rootScope.pageClass = 'page-' + toState.name.replace(/\./g, '-');
+
             var path = $location.path().substr(1);
             Auth.isLoggedInAsync(function (loggedIn) {
                 Auth.getSecurityConfig()
@@ -48,10 +50,10 @@ angular.module('norman', modules)
                             var settings = d.settings;
                             path = $location.path().substr(1);
                             if (path === 'signup' && settings && settings.registration && settings.registration.self === false) {
-                                $location.path("/");
+                                $location.path('/');
                             }
                             if (path === 'login' && settings && settings.provider && settings.provider.local === false) {
-                                $location.path("/");
+                                $location.path('/');
                             }
                         }
                         return d;
@@ -61,10 +63,10 @@ angular.module('norman', modules)
                             path = $location.path().substr(1);
                             var settings = d.settings;
                             if (path === 'signup' && settings && settings.registration && settings.registration.self === false) {
-                                $location.path("/");
+                                $location.path('/');
                             }
                             if (path === 'login' && settings && settings.provider && settings.provider.local === false) {
-                                $location.path("/");
+                                $location.path('/');
                             }
                         }
                     }).then(function () {
