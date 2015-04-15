@@ -16,7 +16,7 @@ The table below identifies key personnel in the core development teams for each 
 | Project Name | @Reviewers | @Committer | @Project Lead | @Requirements Lead | @Technical Lead |
 | ------------- | ------------- | ------------- |------------- |------------- |------------- |
 | <a href="#Project and Sub-Project Steering Committee Members">Project Build Steering Committee |  | |? |? |?|
-| [Auth] (https://github.wdf.sap.corp/Norman/Auth) | Asim Muhammad ([#I31189](https://github.wdf.sap.corp/I311189)) |Dublin Dev Team  | Mark McSherry  ([#I056744](https://github.wdf.sap.corp/I056744))|  | Austin Devine ([#I058153](https://github.wdf.sap.corp/I058153)) | 
+| [Auth] (https://github.wdf.sap.corp/Norman/Auth) |  |Paris Dev Team  | |  | Austin Devine ([#I058153](https://github.wdf.sap.corp/I058153)) | 
 | [Business Catalog Manager] (https://github.wdf.sap.corp/Norman/BusinessCatalogManager) |  | | Jean-Luc Schmit ([#I051501](https://github.wdf.sap.corp/I051501))| | Jérôme Leconte ([#I051710](https://github.wdf.sap.corp/I051710)) | 
 | [Sample Data Server] (https://github.wdf.sap.corp/Norman/SampleDataServer) |  | |Anand Nidamanaru ([#I038020](https://github.wdf.sap.corp/I038020)) |  | Ranjitha Balaraman ([I055549](https://github.wdf.sap.corp/I055549))  |
 | [UX Rule Engine] (https://github.wdf.sap.corp/Norman/UXRuleEngine ) |  | | Jean-Luc Schmit | | Nicolas Lunet([#I053631](https://github.wdf.sap.corp/I053631)) | 
@@ -28,7 +28,7 @@ The table below identifies key personnel in the core development teams for each 
 | [Previewer] (https://github.wdf.sap.corp/Norman/Previewer) |  | |Arturo Duarte ([#I802776](https://github.wdf.sap.corp/I802776))| | Sam Thambu ([#I055546](https://github.wdf.sap.corp/I055546)) | 
 | [User Research] (https://github.wdf.sap.corp/Norman/UserResearch) | Cris Lopes [#I072556](https://github.wdf.sap.corp/cristover-lopes) |Dublin Dev Team | Caroline Welsh ([#I058807](https://github.wdf.sap.corp/I058007)) |Caroline Welsh ([#I058807](https://github.wdf.sap.corp/I058007)) |Austin Devine ([#I058153](https://github.wdf.sap.corp/I058153))|
 | [Collaboration] (https://github.wdf.sap.corp/Norman/Collaboration) | Snr. Dev. (tbd) |Dublin Dev Team |Mark McSherry ([#I056744](https://github.wdf.sap.corp/I056744))  | Mark Hill ([#I072326](https://github.wdf.sap.corp/I072326))  |Luan O'Carroll([#I057952](https://github.wdf.sap.corp/I057952)) |
-| [Shell] (https://github.wdf.sap.corp/Norman/Shell) | John Maguire [#I311181](https://github.wdf.sap.corp/i311181) | | Mark McSherry |  | Luan O'Carroll([#I057952](https://github.wdf.sap.corp/I057952))|
+| [Shell] (https://github.wdf.sap.corp/Norman/Shell) | Tomasz Borychowski ([#I311181](https://github.wdf.sap.corp/I313281)) | | Mark McSherry |  | Luan O'Carroll([#I057952](https://github.wdf.sap.corp/I057952))|
 | [Analytics] (https://github.wdf.sap.corp/Norman/Analytics) |  | |  | | Divyesh Jain ([#I820335](https://github.wdf.sap.corp/I820335)) | 
 | [Common] (https://github.wdf.sap.corp/Norman/Common) |Ian Quigley ([#I305274](https://github.wdf.sap.corp/I305274) | |  | | Luan O'Carroll([#I057952](https://github.wdf.sap.corp/I057952)), Gilles Poirot ([#I051516](https://github.wdf.sap.corp/I051516)) | 
 | [Projects - aka Project Management] (https://github.wdf.sap.corp/Norman/Projects) | John Long [I313149](https://github.wdf.sap.corp/I313149) |Dublin Dev Team| Mark McSherry  ([#I056744](https://github.wdf.sap.corp/I056744)) |Mark Hill ([#I072326](https://github.wdf.sap.corp/I072326))| Austin Devine ([#I058153](https://github.wdf.sap.corp/I058153))|
