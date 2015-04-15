@@ -23,9 +23,7 @@ Feature: Projects
     @flow
     Scenario: Invite User To A Project
         Given: I Am In A Project
-        When I click Team in Nav Bar
-        And I am in the Team Page
-        And I click Add People
+        When I click Add People
         And I Add A New Team Member
         And I Send an Invite
         Then Team Invite is Sent
