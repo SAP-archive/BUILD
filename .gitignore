@@ -7,7 +7,7 @@ logs/
 npm-debug.log
 client/requires.js
 server/requires.js
-results
+test/results/**
 *.sublime-*
 
 # Ignore Intellij project and settings
