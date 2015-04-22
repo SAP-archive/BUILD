@@ -130,10 +130,10 @@ module.exports = {
                 src: [
 					'server/**/*.js',
 					'server/errors/*.html',
-					'server/services.json',
-					'server/features.json',
+					'server/config/services.json',
+					'server/config/features.json',
+                    'server/config/security.json',
                     'server/dbinitconfig.json'
-					//'!node_modules/norman-ui-catalog-manager-server/server/lib/api/catalog/library/**/*.js'
 				]
             },
             {   // Norman Server Modules
