@@ -68,6 +68,10 @@
 						"resources" : "/api/models/projectId",
 						"permissions" : ["put", "post", "patch", "get", "delete"]
 					},
+                    {
+                        "resources" : "/api/sampledata/projectId",
+                        "permissions" : ["post", "get"]
+                    },
 					{
 						"resources" : "/api/participant",
 						"permissions" : ["put", "post", "patch", "get", "delete"]
@@ -97,6 +101,10 @@
 						"resources" : "/api/projects/projectId/document",
 						"permissions" : ["*"]
 					},
+                    {
+                        "resources" : "/api/sampledata/projectId",
+                        "permissions" : ["post", "get"]
+                    },
 					{
 						"resources" : "/api/participant",
 						"permissions" : ["put", "post", "patch", "get", "delete"]
@@ -143,6 +151,10 @@
 						"resources" : "/api/projects/",
 						"permissions" : ["post"]
 					},
+                    {
+                        "resources" : "/api/sampledata/",
+                        "permissions" : ["post", "get"]
+                    },
 					{
 						"resources" : "/deploy/*",
 						"permissions" : ["get"]
