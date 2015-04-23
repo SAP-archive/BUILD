@@ -151,10 +151,6 @@
 						"resources" : "/api/projects/",
 						"permissions" : ["post"]
 					},
-                    {
-                        "resources" : "/api/sampledata/",
-                        "permissions" : ["post", "get"]
-                    },
 					{
 						"resources" : "/deploy/*",
 						"permissions" : ["get"]
