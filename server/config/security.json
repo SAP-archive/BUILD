@@ -130,7 +130,11 @@
 						"resources" : "/api",
 						"permissions" : ["*"]
 					},
-					{
+                    {
+                        "resources" : "/api/catalogs",
+                        "permissions" : ["*"]
+                    },
+                    {
 						"resources" : "/api/uicatalogs",
 						"permissions" : ["*"]
 					},
@@ -151,7 +155,19 @@
 						"resources" : "/api/projects/",
 						"permissions" : ["post"]
 					},
-					{
+                    {
+                        "resources" : "/api/catalogs",
+                        "permissions" : ["get"]
+                    },
+                    {
+                        "resources" : "/api/catalogs/search",
+                        "permissions" : ["post"]
+                    },
+                    {
+                        "resources" : "/api/catalogs/entities",
+                        "permissions" : ["post"]
+                    },
+                    {
 						"resources" : "/deploy/*",
 						"permissions" : ["get"]
 					},
