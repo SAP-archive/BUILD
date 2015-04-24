@@ -15,8 +15,8 @@
 		"emailVerifyingTokenLength" : 64
 	},
 	"failedLoginReasons" : {
-		"notFound" : "The email or password you entered is incorrect.",
-		"passwordIncorrect" : "The email or password you entered is incorrect.",
+		"notFound" : "The email or password you entered is incorrect. Please try again.",
+		"passwordIncorrect" : "The email or password you entered is incorrect. Please try again.",
 		"maxAttempts" : "Your account has been temporarily locked, please try again later."
 	},
 	"passwordPolicy" : {
