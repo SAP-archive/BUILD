@@ -72,7 +72,7 @@ Feature: Composer
         When I click on the Add Page link
         Then A new page is created
 
-    @temp2
+    @temp
     Scenario: User clicks on something
         Given I am in ui composer page
         When I click on something
