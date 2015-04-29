@@ -137,10 +137,6 @@
                     {
 						"resources" : "/api/uicatalogs",
 						"permissions" : ["*"]
-					},
-					{
-						"resources" : "/api/users",
-						"permissions" : ["post"]
 					}
 				]
 			},
@@ -186,10 +182,6 @@
 					{
 						"resources" : "/api/users/avatar",
 						"permissions" : ["post"]
-					},
-					{
-						"resources" : "/api/users",
-						"permissions" : ["get"]
 					}
 				]
 			},
