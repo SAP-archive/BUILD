@@ -53,6 +53,17 @@
         },
         "secureFlag": false
     },
+    "mail": {
+        "sender":"do.not.reply@sap.com",
+        "smtp": {
+            "host": "mail.sap.corp",
+            "port": 25,
+            "debug": true,
+            "tls": {
+                "rejectUnauthorized": false
+            }
+        }
+    },
     "services": "./config/services.json",
     "features": "./config/features.json",
     "security": "./config/security.json",
