@@ -1,0 +1,11 @@
+{
+    "projects": [
+        "."
+    ],
+    "options": {
+        "commitMessage": "Release v%VERSION% [ci skip]",
+        "remote": "origin/master",
+        "force": false,
+        "push": true
+    }
+}

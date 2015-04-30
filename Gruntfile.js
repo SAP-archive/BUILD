@@ -1,7 +1,11 @@
 'use strict';
+var helper = require('norman-build-helper');
 var fs = require('fs');
 var path = require('path');
 var nodeInspector = require('./grunt-conf/nodeinspector.js');
+
+var repo = "Norman";
+var settings = require("./config.json");
 
 module.exports = function (grunt) {
 
@@ -10,6 +14,7 @@ module.exports = function (grunt) {
     // Load custom node inspector task
     nodeInspector.task(grunt);
     grunt.loadNpmTasks('grunt-notify');
+    grunt.loadNpmTasks('grunt-wait');
 
     // Load grunt tasks automatically, when needed
     require('jit-grunt')(grunt, {
@@ -56,6 +61,9 @@ module.exports = function (grunt) {
         // Minify css
         cssmin: require('./grunt-conf/cssmin.js'),
 
+        //Grunt wait Task for e2e testing:
+        wait: require('./grunt-conf/wait.js'),
+
         // Minify js
         uglify: require('./grunt-conf/uglify.js'),
 
@@ -95,6 +103,9 @@ module.exports = function (grunt) {
         'node-inspector': nodeInspector.config,
 
         nodemon: require('./grunt-conf/nodemon.js'),
+
+        // publish in the npm registry
+        publish: require('./grunt-conf/publish.js'),
 
         concurrent: {
             debug: {
@@ -139,10 +150,11 @@ module.exports = function (grunt) {
 
     grunt.registerTask('test', function (target) {
         var tasks = {
-            server: ['env:dev', 'mochaTest'],
+            server: ['env:dev', 'mochaTest:test'],
             client: ['env:dev', 'karma'],
-            e2e: ['express:dev', 'protractor'],
-            e2e_ci: ['protractor'],
+            modules_int: ['env:dev', 'mochaTest:modules_int'],
+            e2e: ['express:dev', 'wait:dev', 'protractor'],
+            e2e_ci: ['express:prod', 'wait:dev', 'protractor'],
             dflt: ['test:server', 'test:client']
         };
         return grunt.task.run(tasks[target || 'dflt']);
@@ -199,6 +211,18 @@ module.exports = function (grunt) {
     grunt.registerTask('dev', ['build:dev']);
     grunt.registerTask('default', ['build:dev']);
     grunt.registerTask('liveEdit', ['server:liveEdit']);
+
+    grunt.registerTask('npm-publish', ['dist', 'publish', 'github-update']);
+
+    grunt.registerTask('github-update', 'Update Github issue status', function () {
+        var done = this.async();
+        var mailNotif = settings.GHMailNotif;
+        var issueTypes = settings.GHIssueType;
+        var ghUser = settings.GHUser;
+        var ghPassword = settings.GHPassword;
+        var projects = [];
+        helper.github.updateGithub(projects, issueTypes, ghUser, ghPassword, mailNotif, repo, done);
+    });
 
     grunt.task.run('notify_hooks');
 };

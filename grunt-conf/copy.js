@@ -86,7 +86,7 @@ module.exports = {
                 flatten: true,
                 dest: 'dev/assets',
                 src: [ 'node_modules/norman-ng-grid/styles/ui-grid.css',
-                       'node_modules/norman-ng-grid/fonts/*.*']
+                    'node_modules/norman-ng-grid/fonts/*.*']
             },
 
             // roboto font
@@ -128,19 +128,24 @@ module.exports = {
                 expand: true,
                 dest: 'dist',
                 src: [
-					'server/**/*.js',
-					'server/errors/*.html',
-					'server/services.json',
-					'server/features.json',
+                    'server/**/*.js',
+                    'server/errors/*.html',
+                    'server/config/services.json',
+                    'server/config/features.json',
+                    'server/config/security.json',
                     'server/dbinitconfig.json'
-					//'!node_modules/norman-ui-catalog-manager-server/server/lib/api/catalog/library/**/*.js'
-				]
+                ]
             },
             {   // Norman Server Modules
                 expand: true,
                 cwd: 'node_modules',
                 dest: 'dist/node_modules',
                 src: getServerDependencies()
+            },
+            {   // Norman package.json
+                expand: true,
+                dest: 'dist',
+                src: ['package.json']
             }
         ]
     }
