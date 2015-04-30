@@ -111,6 +111,14 @@ module.exports = {
                 cwd: 'node_modules/norman-user-assistance/',
                 dest: 'dev/',
                 src: ['help/**/*.*']
+            },
+            
+            // security
+            {
+                expand: true,
+                cwd: 'node_modules/norman-user-research-client/security',
+                dest: 'dev',
+                src: ['iframeMessaging.js']
             }
         ]
     },
