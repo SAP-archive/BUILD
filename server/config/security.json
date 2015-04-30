@@ -135,6 +135,10 @@
                         "permissions" : ["*"]
                     },
                     {
+                        "resources" : "/api/catalogs/import",
+                        "permissions" : ["*"]
+                    },
+                    {
 						"resources" : "/api/uicatalogs",
 						"permissions" : ["*"]
 					},
