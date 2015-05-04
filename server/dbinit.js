@@ -6,6 +6,7 @@ var AppServer = require('norman-app-server');
 var commonServer = require('norman-common-server');
 var registry = commonServer.registry;
 var INIT_TIMEOUT = 120;
+var Promise = require('norman-promise');
 
 var configFile = path.join(__dirname, 'config.json');
 
@@ -23,36 +24,19 @@ if (config.server && config.server.workers) {
 }
 
 var server = new AppServer.Server(config);
-server.start().then(function() {
-    // Enforce server shutdown after timeout expiration
-    var cancelId = setTimeout(function() {
+server.start()
+    .then(function () {
+        var initPromises = [];
+        var uiCatalog = registry.getModule('UICatalog');
+        initPromises.push(Promise.objectInvoke(uiCatalog, 'initializeDb'));
+        initPromises.push(Promise.objectInvoke(uiCatalog, 'initializeLibrary'));
+        return Promise.waitAll(initPromises);
+    })
+    .setTimeout(INIT_TIMEOUT * 1000, function () {
         var logger = commonServer.logging.createLogger('server');
         logger.error('Database initialization timeout, closing process.');
-        cancelId = undefined;
-        server.appServer.shutdown();
-    }, INIT_TIMEOUT * 1000);
-
-    //create initial data for UI Catalog manager
-    var uicatalogMangerServer = registry.getModule('UICatalog');
-    uicatalogMangerServer.initializeDb(function(err) {
-        if (err) {
-            console.log(err);
-        }
-        if (cancelId) {
-            clearTimeout(cancelId);
-            cancelId = undefined;
-        }
+        throw new Error("Timeout expired");
+    })
+    .always(function () {
         server.appServer.shutdown();
     });
-
-    uicatalogMangerServer.initializeLibrary(function(err) {
-        if (err) {
-            console.log(err);
-        }
-        if (cancelId) {
-            clearTimeout(cancelId);
-            cancelId = undefined;
-        }
-        server.appServer.shutdown();
-    });
-});
