@@ -45,7 +45,7 @@ server.start().then(function() {
         server.appServer.shutdown();
     });
 
-    uicatalogMangerServer.createZipFile(function(err) {
+    uicatalogMangerServer.initializeLibrary(function(err) {
         if (err) {
             console.log(err);
         }
