@@ -25,7 +25,7 @@ if (config.server && config.server.workers) {
 var server = new AppServer.Server(config);
 server.start().then(function() {
     // Enforce server shutdown after timeout expiration
-    var cancelId = setTimeout(function () {
+    var cancelId = setTimeout(function() {
         var logger = commonServer.logging.createLogger('server');
         logger.error('Database initialization timeout, closing process.');
         cancelId = undefined;
@@ -35,6 +35,17 @@ server.start().then(function() {
     //create initial data for UI Catalog manager
     var uicatalogMangerServer = registry.getModule('UICatalog');
     uicatalogMangerServer.initializeDb(function(err) {
+        if (err) {
+            console.log(err);
+        }
+        if (cancelId) {
+            clearTimeout(cancelId);
+            cancelId = undefined;
+        }
+        server.appServer.shutdown();
+    });
+
+    uicatalogMangerServer.createZipFile(function(err) {
         if (err) {
             console.log(err);
         }
