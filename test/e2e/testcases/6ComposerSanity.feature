@@ -106,7 +106,14 @@ Feature: Composer
     @temp
     Scenario: User drag and drop Button control
         Given I am in ui composer canvas view
-         When I drag and drop button control to canvas
+         When I drag and drop a control of type "Button" onto the canvas
+          And I drag and drop a control of type "Check Box" onto the canvas
+          And I wait for 10000 ms
          Then button control displayed in the canvas
 
+    @temp1
+    Scenario: User drag and drop Button control
+        Given I am in ui composer canvas view
+        When I drag and drop button control to canvas
+        Then button control displayed in the canvas
 
