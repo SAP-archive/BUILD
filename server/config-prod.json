@@ -86,7 +86,7 @@
         "forgotPasswordTokenExpiryInDays": 1,
         "autoResendEmailVerification" : true,
         "emailVerifingTokenExpiryInDays" : 30,
-        "emailHasAlreadyVerified" : "The resource you are looking for is not available.",
+        "emailHasAlreadyVerified" : "Your email address has been already verified.",
         "recoverAccountPasswordTokenExpiredMessage" : "The resource your are looking for hasbeen expired, please try again later.",
         "recoverAccountPasswordTokenVerifiedMessage" :"Your email address has been verified."
     },
