@@ -155,6 +155,7 @@ module.exports = function (grunt) {
             modules_int: ['env:dev', 'mochaTest:modules_int'],
             e2e: ['express:dev', 'wait:dev', 'protractor'],
             e2e_ci: ['express:prod', 'wait:dev', 'protractor'],
+            e2e_composer: ['protractor'],
             dflt: ['test:server', 'test:client']
         };
         return grunt.task.run(tasks[target || 'dflt']);
