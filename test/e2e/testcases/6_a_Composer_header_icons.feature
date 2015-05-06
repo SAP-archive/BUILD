@@ -2,13 +2,7 @@
 Feature: Composer
 
 
-#    @composerNB
-#    Scenario: Sign Up with Valid Credentials
-#        Given I am on the sign up page
-#        When I enter valid signup details
-#        Then I am logged in
-
-    @temp @composerNB
+    @composerNB
     Scenario: Sign Up with Valid Credentials
         Given I am on the sign up page
         When I signup with random credentials
