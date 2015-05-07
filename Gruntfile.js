@@ -184,7 +184,7 @@ module.exports = function (grunt) {
             tasks.push('copy:dist');
             tasks.push('config-prod');
             tasks.push('cssmin');
-            // tasks.push('uglify');
+            tasks.push('uglify');
         }
         //tasks.push('eslint:client');
         //tasks.push('eslint:server');
