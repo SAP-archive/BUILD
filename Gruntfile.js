@@ -98,9 +98,7 @@ module.exports = function (grunt) {
 
         // e2e tests
         protractor: require('./grunt-conf/protractor.js')(grunt),
-
-        // e2e tests Grid Hub
-        //protractorGrid: require('./grunt-conf/protractorGrid.js')(grunt),
+        
 
         // Debugging with node inspector
         'node-inspector': nodeInspector.config,
