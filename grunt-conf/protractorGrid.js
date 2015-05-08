@@ -4,7 +4,7 @@ module.exports = function (grunt) {
 
     return {
         options: {
-            configFile: "grunt-conf/protractor.conf.js",
+            configFile: "grunt-conf/protractor.gridHub.conf.js",
             keepAlive: false, // If false, the grunt process stops when the test fails.
             noColor: false, // If true, protractor will not use colors in its output.
             args: {
@@ -12,7 +12,7 @@ module.exports = function (grunt) {
             },
             output: "./test/results/testReport.json"
         },
-        e2e: {
+        e2eGridHub: {
             // Grunt requires at least one target to run so you can simply put 'all: {}' here too.
             options: {
                 //configFile: "protractor.conf.js", // Target-specific config file
@@ -21,6 +21,7 @@ module.exports = function (grunt) {
                     cucumberOpts: {
                         tags: cucumberTags
                     }
+
                 }
             }
         }
