@@ -24,19 +24,6 @@ module.exports = function (grunt) {
 
                 }
             }
-        },
-        e2eGridHub: {
-            options: {
-                configFile: "grunt-conf/protractor.gridHub.conf.js",
-                keepAlive: false, // If false, the grunt process stops when the test fails.
-                noColor: false, // If true, protractor will not use colors in its output.
-                args: {
-                    cucumberOpts: {
-                        tags: cucumberTags
-                    }
-                },
-                output: "./test/results/testReport.json"
-            }
         }
     };
 };
