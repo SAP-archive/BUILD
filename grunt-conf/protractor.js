@@ -23,6 +23,19 @@ module.exports = function (grunt) {
                     }
                 }
             }
+        },
+        e2eGridHub: {
+            // Grunt requires at least one target to run so you can simply put 'all: {}' here too.
+            options: {
+                configFile: "grunt-conf/protractor.gridHub.conf.js", // Target-specific config file
+                args: {
+                    seleniumAddress: process.env.SELENIUM_ADDRESS,
+                    baseUrl: process.env.AUT_URL,
+                    cucumberOpts: {
+                        tags: cucumberTags
+                    }
+                }
+            }
         }
     };
 };
