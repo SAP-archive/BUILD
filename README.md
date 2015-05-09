@@ -1,10 +1,12 @@
-##<img src = "https://github.wdf.sap.corp/github-enterprise-assets/0000/3454/0000/6735/b72f7e4a-e75f-11e4-9698-f93776ef1bd7.png" height="128" align="left">  Welcome to Project Norman  [![Build Status](https://build-jenkins.mo.sap.corp/jenkins/job/Norman-master/badge/icon)](https://build-jenkins.mo.sap.corp/jenkins/job/Norman-master/)
+<img src = "https://github.wdf.sap.corp/Norman/Norman/blob/master/docs/images/BUILD_Logo_Light.png?raw=true" height="128"> 
+
+## Welcome to BUILD [![Build Status](https://build-jenkins.mo.sap.corp/jenkins/job/Norman-master/badge/icon)](https://build-jenkins.mo.sap.corp/jenkins/job/Norman-master/)
 
 
 
-Norman is an open-source, cloud-based and social platform that enables users, even those with no UI development knowledge, to easily create fully interactive prototypes with realistic data, share them with colleagues and consolidate this feedback without writing a line of code. 
+BUILD (formerly known as Project Norman) is an open-source, cloud-based and social platform that enables users, even those with no UI development knowledge, to easily create fully interactive prototypes with realistic data, share them with colleagues and consolidate this feedback without writing a line of code. 
 
-For a more detailed overview of Project Norman, see the [Project Norman Overview](https://github.wdf.sap.corp/Norman/Norman/wiki/Project-Norman-Overview).
+For a more detailed description of BUILD, see the [BUILD Overview](https://github.wdf.sap.corp/Norman/Norman/wiki/Project-Norman-Overview).
 
 
 ##Project Norman Sub-Projects
@@ -29,7 +31,7 @@ Project Norman contains the following sub-projects:
 + [Projects - aka Project Management] (https://github.wdf.sap.corp/Norman/Projects)
 
 
-For an overview of Project Norman, see the [Project Norman Charter]( https://github.wdf.sap.corp/Norman/Norman/wiki/Project-Norman-Charter).
+For an overview of BUILD, see the [Project Norman Charter]( https://github.wdf.sap.corp/Norman/Norman/wiki/Project-Norman-Charter).
 
 ##Make a Contribution
 Click here to view our [Contribution](https://github.wdf.sap.corp/Norman/Norman/blob/master/Contributing.md) document.
