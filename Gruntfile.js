@@ -98,9 +98,7 @@ module.exports = function (grunt) {
 
         // e2e tests
         protractor: require('./grunt-conf/protractor.js')(grunt),
-
-        // e2e tests Grid Hub
-        protractorGrid: require('./grunt-conf/protractorGrid.js')(grunt),
+        
 
         // Debugging with node inspector
         'node-inspector': nodeInspector.config,
@@ -156,9 +154,9 @@ module.exports = function (grunt) {
             server: ['env:dev', 'mochaTest:test'],
             client: ['env:dev', 'karma'],
             modules_int: ['env:dev', 'mochaTest:modules_int'],
-            e2e: ['express:dev', 'wait:dev', 'protractor'],
-            e2e_ci: ['express:prod', 'wait:dev', 'protractor'],
-            e2e_composer: ['protractorGrid:e2eGridHub'],
+            e2e: ['express:dev', 'wait:dev', 'protractor:e2e'],
+            e2e_ci: ['express:prod', 'wait:dev', 'protractor:e2e'],
+            e2e_composer: ['protractor:e2eGridHub'],
             dflt: ['test:server', 'test:client']
         };
         return grunt.task.run(tasks[target || 'dflt']);
