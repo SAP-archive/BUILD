@@ -20,7 +20,7 @@
         "registry": "http://build-npm.mo.sap.corp:8080/"
     },
 "dependencies": {
-       "norman-logging": "0.9.37",
+    "norman-logging": "0.9.37",
     "norman-promise": "0.9.37",
     "norman-client-tp": "0.9.37",
     "norman-common-client": "0.9.37",
@@ -39,8 +39,8 @@
     "norman-data-modeler-server": "0.9.39",
     "norman-sample-data-manager-server": "0.9.18",
     "norman-sample-data-manager-client": "0.9.18",
-    "norman-ui-composer-client": "0.9.28",
-    "norman-ui-composer-server": "0.9.28",
+    "norman-ui-composer-client": "0.9.29",
+    "norman-ui-composer-server": "0.9.29",
     "norman-ui-catalog-manager-client": "0.9.50",
     "norman-ui-catalog-manager-server": "0.9.50",
     "norman-user-assistance": "0.1.2",
