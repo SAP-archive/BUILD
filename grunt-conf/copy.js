@@ -70,9 +70,9 @@ module.exports = {
                 cwd: 'node_modules/',
                 dest: 'dev/resources/',
                 src: [
-                    'norman*client/**/*.{png,gif,jpg,svg,json}',
-                    'norman*client/node_modules/**/*.{png,gif,jpg,svg}',
-                    'norman*client/bower_components/**/*.{png,gif,jpg,svg,js,html,css}',
+                    'norman*client/**/*.{pdf,png,gif,jpg,svg,json}',
+                    'norman*client/node_modules/**/*.{pdf,png,gif,jpg,svg}',
+                    'norman*client/bower_components/**/*.{pdf,png,gif,jpg,svg,js,html,css}',
                     'norman-ng-grid/**/*.{png,gif,jpg,svg,json}',
                     '!norman-openui5/**/*',
                     '!node_modules/norman-ui-catalog-manager-server/server/lib/api/catalog/library/**/*.js'
