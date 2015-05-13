@@ -8,7 +8,7 @@ BUILD (formerly known as Project Norman) is an open-source, cloud-based and soci
 
 For a more detailed description of BUILD, see the [BUILD Overview](https://github.wdf.sap.corp/Norman/Norman/wiki/Project-Norman-Overview).
 
-
+ 
 ##Project Norman Sub-Projects
 
 Project Norman contains the following sub-projects:
