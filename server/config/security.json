@@ -141,6 +141,10 @@
                     {
 						"resources" : "/api/uicatalogs",
 						"permissions" : ["*"]
+					},
+					{
+						"resources" : "/api/users",
+						"permissions" : ["post"]
 					}
 				]
 			},
@@ -192,6 +196,26 @@
 			{
 				"roles" : "guest",
 				"allows" : [
+					{
+						"resources" : "/api/participant",
+						"permissions" : ["put", "post", "patch", "get", "delete"]
+					},
+					{
+						"resources" : "/deploy/*",
+						"permissions" : ["get"]
+					},
+					{
+						"resources" : "/public/*",
+						"permissions" : ["get"]
+					},
+					{
+						"resources" : "/openui5/*",
+						"permissions" : ["get"]
+					},
+					{
+						"resources" : "/api/uicatalogs",
+						"permissions" : ["get"]
+					}
 				]
 			}
 		]
