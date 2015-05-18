@@ -28,7 +28,6 @@ Feature: Create Draft Study
         Given I am on the study edit page
         When  I click on an image
         And   the image enlarges
-#        Then  I should be able to enter question
 
     @flow
     Scenario: Add Question to Images
