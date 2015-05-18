@@ -32,10 +32,16 @@ Feature: Review Study
         And     Confirm Delete of Question
         Then    I see "3" Images with Question Ticks
 
-#    @flow
-#    Scenario: Reorder Questions in Draft Study
-#        Given   I am in a Draft Study
-#        When    Hover over last tile
-#        And     Drag and Drop last tile to be first
-#        Then    Study name should be "Draft Study"
+    @flow
+    Scenario: Preview the Draft Study
+        Given   I am in a Draft Study
+        When    I click Preview Icon
+        And     Switch to New Tab
+        Then    I am in the Preivew Mode
+
+    @flow
+    Scenario: Start study
+        Given I am on the study screen
+        When  I click start study
+        Then  I should be taking to the enlarge image of the first screen
 

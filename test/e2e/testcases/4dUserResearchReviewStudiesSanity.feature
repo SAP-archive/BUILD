@@ -14,7 +14,6 @@ Feature: Review Study
         When  I click into User Research
         Then  Create New Study button is displayed
 
-    #########  Active Studies  ##########
 
     @flow
     Scenario: Click into Acitve Studies
@@ -31,15 +30,46 @@ Feature: Review Study
         And     All Review Page Icons and Stats are present
 
     @flow
+    Scenario: Preview the Active Study
+        Given   I am on the study edit page
+        When    I click Review Study Preview Icon
+        And     Switch to New Tab
+        Then    I am in the Preivew Mode
+
+    @flow
+    Scenario: Start study
+        Given I am on the study screen
+        When  I click start study
+        Then  I should see the Start Task PopUp
+
+    @flow
+    Scenario: Participate in the Tasks
+        Given I am a Task Page to Participate
+        When  I click on the Start Task Button
+        Then  Close Tab 2 and reset to Tab 1
+
+    #########  Active Studies  ##########
+
+    @flow
     Scenario: Review Question 1 on Active Study
         Given   I am in Study Review Page
         When    I am click the Tasks & Questions link
-        Then    I see the "4" Questions
+        Then    I see the "5" Questions
         When    I click into the 1st Question
         Then    I am in the Question
 
+
     @flow
-    Scenario: Review Question 1 Sentiments
+    Scenario: Review Question 1 Stats
+        Given  I am in Question Review Page
+        When   I click on the Protoype Tab
+        And    I enable annotations
+        Then   I see "9" Annotations
+#        When   I click on the Statistics Tab
+#        Then   All Review Page Icons and Stats are present
+
+    @flow
+    Scenario: Review Question 2 Stats etc...
         Given   I am in Question Review Page
         Then    I see "9" Annotations
         And     The 1st comment should from Annon User
@@ -55,13 +85,13 @@ Feature: Review Study
         Then    The Sentiment Container count is "0"
 
     @flow
-    Scenario: Review Question 2 on Active Study
+    Scenario: Review Question 3 on Active Study
         Given   I am in Question Review Page
         When    I click Next
         Then    I see "3" Annotations
 
     @flow
-    Scenario: Review Question 3 on Active Study
+    Scenario: Review Question 4 on Active Study
         Given   I am in Question Review Page
         When    I click Next
         Then    Prgress bar is visibile
@@ -70,7 +100,7 @@ Feature: Review Study
         And     I see "3" Annotations
 
     @flow
-    Scenario: Review Question 4 on Active Study
+    Scenario: Review Question 5 on Active Study
         Given   I am in Question Review Page
         When    I click Next
         Then    Prgress bar is visibile
