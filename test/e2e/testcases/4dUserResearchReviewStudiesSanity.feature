@@ -71,6 +71,7 @@ Feature: Review Study
     @flow
     Scenario: Review Question 2 Stats etc...
         Given   I am in Question Review Page
+        When    I click Next
         Then    I see "9" Annotations
         And     The 1st comment should from Annon User
         When    I click a Sentiment

@@ -32,17 +32,17 @@ Feature: Review Study
         And     Confirm Delete of Question
         Then    I see "3" Images with Question Ticks
 
-    @flow
-    Scenario: Preview the Draft Study
-        Given   I am in a Draft Study
-        When    I click Preview Icon
-        And     Switch to New Tab
-        Then    I am in the Preivew Mode
-
-    @flow
-    Scenario: Start study
-        Given I am on the study screen
-        When  I click start study
-        Then  I should be taking to the enlarge image of the first screen
-        And   Close Tab 2 and reset to Tab 1
-
+#    @flow
+#    Scenario: Preview the Draft Study
+#        Given   I am in a Draft Study
+#        When    I click Preview Icon
+#        And     Switch to New Tab
+#        Then    I am in the Preivew Mode
+#
+#    @flow
+#    Scenario: Start study
+#        Given I am on the study screen
+#        When  I click start study
+#        Then  I should be taking to the enlarge image of the first screen
+#        And   Close Tab 2 and reset to Tab 1
+#

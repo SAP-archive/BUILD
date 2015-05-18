@@ -21,14 +21,14 @@ Feature: Create Draft Study
         Given I am on the study edit page
         When  I Upload images
         And   I Confirm Upload of Images
-        Then  selected Images should displayed on the page
+        Then  selected Images "4" should displayed on the page
 
     @flow
     Scenario: Associating questions to first image
         Given I am on the study edit page
         When  I click on an image
         And   the image enlarges
-        Then  I should be able to enter question
+#        Then  I should be able to enter question
 
     @flow
     Scenario: Add Question to Images

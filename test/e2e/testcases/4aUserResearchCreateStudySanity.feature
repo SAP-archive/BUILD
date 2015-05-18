@@ -52,7 +52,6 @@ Feature: User Research Create Active Study
         And   I Give some user Guidance "This is what the task is about"
         Then   Click Save and Next
 
-
     @flow
     Scenario: Add Question to Images
         Given   The Question Popover is Open
