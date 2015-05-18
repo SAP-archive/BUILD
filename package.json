@@ -20,7 +20,7 @@
         "registry": "http://build-npm.mo.sap.corp:8080/"
     },
 "dependencies": {
-    "norman-logging": "0.9.50",
+     "norman-logging": "0.9.50",
     "norman-promise": "0.9.50",
     "norman-client-tp": "0.9.54",
     "norman-common-client": "0.9.54",
