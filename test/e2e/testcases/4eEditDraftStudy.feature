@@ -44,4 +44,5 @@ Feature: Review Study
         Given I am on the study screen
         When  I click start study
         Then  I should be taking to the enlarge image of the first screen
+        And   Close Tab 2 and reset to Tab 1
 
