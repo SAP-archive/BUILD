@@ -13,7 +13,17 @@ Feature: Participate in Study
     Scenario: Start study
         Given I am on the study screen
         When  I click start study
-        Then  I should be taking to the enlarge image of the first screen
+        Then  I should see the Start Task PopUp
+
+    @flow
+    Scenario: Participate in the Tasks
+          Given I am a Task Page to Participate
+          When  I click on the Start Task Button
+          And   Click on the Prototype Panel to interact
+          And   Leave Feedack for the Page
+          And   I finish the Task
+          Then  I see the congratulations icon
+          And   I enter next screen
 
     @flow
     Scenario: Dropping annotations first screen.

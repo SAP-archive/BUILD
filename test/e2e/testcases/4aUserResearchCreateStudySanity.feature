@@ -16,7 +16,7 @@ Feature: User Research Create Active Study
     @flow
     Scenario: User clicks on User Research.
         Given I am in the prototype page
-        And I save the Project URL
+        And   I save the Project URL
         When  I click into User Research
         Then  Create New Study button is displayed
 
@@ -32,9 +32,11 @@ Feature: User Research Create Active Study
     @flow
     Scenario: Upload files through upload link
         Given I am on the study edit page
+        When  I upload a Zip file
+        And   I Name the Task "Task Test" and Confirm
         When  I Upload images
         And   I Confirm Upload of Images
-        Then  selected Images should displayed on the page
+        Then  selected Images "5" should displayed on the page
 
     @flow
     Scenario: Associating questions to first image
@@ -42,6 +44,13 @@ Feature: User Research Create Active Study
         When  I click on an image
         And   the image enlarges
         Then  I should be able to enter question
+
+    @flow
+    Scenario: Setup Task
+        Given There is a task present
+        When  I set Start and Target Pages
+        And   I Give some user Guidance "This is what the task is about"
+        Then   Click Save and Next
 
     @flow
     Scenario: Add Question to Images
