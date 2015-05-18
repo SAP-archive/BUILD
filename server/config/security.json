@@ -9,8 +9,8 @@
 	"maxLoginAttempts" : 5,
 	"lockTimeInHours" : 2,
 	"crypto" : {
-		"saltLength" : 128,
-		"keyLength" : 128,
+		"saltLength" : 32,
+		"keyLength" : 32,
 		"iterations" : 10000,
 		"emailVerifyingTokenLength" : 64
 	},
