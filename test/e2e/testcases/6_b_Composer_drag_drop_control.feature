@@ -26,15 +26,15 @@ Feature: Composer
         Given I am on the prototype page
         When I click on thumbnail of page
         Then I am in ui composer canvas view
-         And There are 2 pages
-         And I am on page 1
+         And There are "2" pages
+         And I am on page "1"
          And Desktop mode is active
          And Edit mode is active
 
     @composerNB
     Scenario: User drag and drop Button control
         Given I am in ui composer canvas view
-        When I drag and drop a control of type "Button" onto the canvas
-        And I drag and drop a control of type "Check Box" onto the canvas
-        And I wait for 10000 ms
-        Then button control displayed in the canvas
+         When I drag and drop a control of type "Button" onto the canvas
+          And I drag and drop a control of type "Check Box" onto the canvas
+         Then A control of type "Button" is on the canvas
+          And A control of type "Check Box" is on the canvas

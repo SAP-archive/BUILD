@@ -26,8 +26,8 @@ Feature: Composer
         Given I am on the prototype page
         When I click on thumbnail of page
         Then I am in ui composer canvas view
-         And There are 2 pages
-         And I am on page 1
+         And There are "2" pages
+         And I am on page "1"
          And Desktop mode is active
          And Edit mode is active
 
