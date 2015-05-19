@@ -115,7 +115,7 @@
         "norman-projects-e2e": "^0.9.0",
         "norman-userres-e2e": "^0.9.0",
         "norman-ui-composer-e2e": "^0.9.0",
-        "norman-testing-server": "0.9.54",
+        "norman-testing-server": "0.9.62",
         "norman-testing-tp": "0.9.54",
         "norman-testing-tp-client": "0.9.54",
         "open": "0.0.5",
