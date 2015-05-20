@@ -98,7 +98,7 @@ module.exports = function (grunt) {
 
         // e2e tests
         protractor: require('./grunt-conf/protractor.js')(grunt),
-        
+
 
         // Debugging with node inspector
         'node-inspector': nodeInspector.config,
@@ -185,7 +185,7 @@ module.exports = function (grunt) {
             tasks.push('copy:dist');
             tasks.push('config-prod');
             tasks.push('cssmin');
-            tasks.push('uglify');
+            //tasks.push('uglify');
         }
         //tasks.push('eslint:client');
         //tasks.push('eslint:server');
