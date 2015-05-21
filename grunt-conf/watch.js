@@ -23,6 +23,16 @@ module.exports = {
         tasks: ['newer:less']
     },
 
+    jsFiles: {
+        options: {livereload: true},
+        files: [
+            'node_modules/norman-ui-composer-client/**/*.js',
+            '!node_modules/norman-ui-composer-client/node_modules/!**/!*.*'
+            // DO NOT add generic rules like "norman*", but rather list folders you are watching specifically. Otherwise It will slow down the grunt start tremendously and is error prone.
+        ],
+        tasks: ['browserify:dev']
+    },
+
     jsClient: {
         options: {livereload: true},
         files: ['dev/assets/*.js'],
