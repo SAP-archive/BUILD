@@ -136,8 +136,8 @@ module.exports = function (grunt) {
                 'build:dev',
                 'env:dev',
                 'express:dev',
-                'node-inspector:liveEdit',
-                'watch'
+                'node-inspector:liveEdit'
+                // Node inspector is blocking all subsequent tasks.
             ]
         };
         return grunt.task.run(tasks[target || 'dev']);
