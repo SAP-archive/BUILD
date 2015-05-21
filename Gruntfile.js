@@ -202,7 +202,7 @@ module.exports = function (grunt) {
     });
 
     // just run (app must be already built)
-    grunt.registerTask('start', ['env:dev', 'express:dev', 'watch']);
+    grunt.registerTask('start', ['browserify:dev', 'env:dev', 'express:dev', 'watch']);
 
     grunt.registerTask('dist', ['build:dist']);
     grunt.registerTask('dev', ['build:dev']);
