@@ -23,7 +23,7 @@
      "norman-logging": "0.9.50",
     "norman-promise": "0.9.50",
     "norman-client-tp": "0.9.65",
-    "norman-common-client": "0.9.65",
+    "norman-common-client": "0.9.68",
     "norman-common-server": "0.9.65",
     "norman-audit-server": "0.9.65",
     "norman-server-tp": "0.9.65",
