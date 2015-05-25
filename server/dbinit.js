@@ -30,6 +30,7 @@ server.start()
         var uiCatalog = registry.getModule('UICatalog');
         initPromises.push(Promise.objectInvoke(uiCatalog, 'initializeDb'));
         initPromises.push(Promise.objectInvoke(uiCatalog, 'initializeLibrary'));
+        initPromises.push(Promise.objectInvoke(uiCatalog, 'storeOpenUI5Canvas'));
         return Promise.waitAll(initPromises);
     })
     .setTimeout(INIT_TIMEOUT * 1000, function () {
