@@ -53,6 +53,10 @@
 						"permissions" : ["put", "post", "patch", "get", "delete"]
 					},
 					{
+						"resources" : "/api/projects/projectId/studies",
+						"permissions" : ["put", "post", "patch", "get", "delete"]
+					},
+					{
 						"resources" : "/api/projects/projectId/document",
 						"permissions" : ["*"]
 					},
@@ -92,6 +96,10 @@
 					{
 						"resources" : "/api/projects/projectId",
 						"permissions" : ["put", "post", "patch", "get"]
+					},
+					{
+						"resources" : "/api/projects/projectId/studies",
+						"permissions" : ["put", "post", "patch", "get", "delete"]
 					},
 					{
 						"resources" : "/api/models/projectId",
