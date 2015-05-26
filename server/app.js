@@ -40,7 +40,7 @@ for (k = 2, n = process.argv.length; k < n; ++k) {
             cmd = 'checkSchema';
         }
         else {
-            console.log('Too much commands, --unassign-admin, --assign-admin, --checkSchema, --initSchema, --upgradeSchema are exclusives commands');
+            console.log('Too many commands, --unassign-admin, --assign-admin, --checkSchema, --initSchema, --upgradeSchema are exclusive commands');
             process.exit(1);
         }
     }
@@ -49,7 +49,7 @@ for (k = 2, n = process.argv.length; k < n; ++k) {
             cmd = 'initSchema';
         }
         else {
-            console.log('Too much commands, --unassign-admin, --assign-admin, --checkSchema, --initSchema, --upgradeSchema are exclusives commands');
+            console.log('Too many commands, --unassign-admin, --assign-admin, --checkSchema, --initSchema, --upgradeSchema are exclusive commands');
             process.exit(1);
         }
     }
@@ -58,7 +58,7 @@ for (k = 2, n = process.argv.length; k < n; ++k) {
             cmd = 'upgradeSchema';
         }
         else {
-            console.log('Too much commands, --unassign-admin, --assign-admin, --checkSchema, --initSchema, --upgradeSchema are exclusives commands');
+            console.log('Too many commands, --unassign-admin, --assign-admin, --checkSchema, --initSchema, --upgradeSchema are exclusive commands');
             process.exit(1);
         }
     }
