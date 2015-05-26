@@ -75,6 +75,7 @@ module.exports = {
                     'norman*client/bower_components/**/*.{pdf,png,gif,jpg,svg,js,html,css}',
                     'norman-ng-grid/**/*.{png,gif,jpg,svg,json}',
                     '!norman-openui5/**/*',
+                    '!norman-testing-tp-client/**/*',
                     '!node_modules/norman-ui-catalog-manager-server/server/lib/api/catalog/library/**/*.js'
                 ]
             },
