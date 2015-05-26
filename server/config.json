@@ -79,7 +79,8 @@
             "/login",
             "/signup",
             "/norman",
-            "/reset-password"
+            "/reset-password",
+            "/privacystatement"
         ],
         "compression": {
             "threshold": 512

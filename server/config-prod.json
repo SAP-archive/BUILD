@@ -114,7 +114,8 @@
             "/signup",
             "/norman",
             "/forgot-password",
-            "/reset-password/*"
+            "/reset-password/*",
+            "/privacystatement"
         ],
         "options": {
             "etag": false,
