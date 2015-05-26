@@ -119,11 +119,6 @@ module.exports = function (grunt) {
         }
     });
 
-
-    grunt.registerTask('express-keepalive', 'Keep grunt running', function () {
-        this.async();
-    });
-
     grunt.registerTask('serve', function (target) {
         var tasks = {
             debug: [
@@ -134,15 +129,15 @@ module.exports = function (grunt) {
                 'build:dev',
                 'env:dev',
                 'express:dev',
-                'node-inspector:liveEdit',
+                // Do NOT add node-inspector:liveEdit as it breaks the watch task
                 'watch'
             ],
             liveEdit: [
                 'build:dev',
                 'env:dev',
                 'express:dev',
-                'node-inspector:liveEdit',
-                'watch'
+                'node-inspector:liveEdit'
+                // Node inspector is blocking all subsequent tasks.
             ]
         };
         return grunt.task.run(tasks[target || 'dev']);
@@ -207,7 +202,7 @@ module.exports = function (grunt) {
     });
 
     // just run (app must be already built)
-    grunt.registerTask('start', ['env:dev', 'express:dev', 'watch']);
+    grunt.registerTask('start', ['browserify:dev', 'env:dev', 'express:dev', 'watch']);
 
     grunt.registerTask('dist', ['build:dist']);
     grunt.registerTask('dev', ['build:dev']);
