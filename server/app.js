@@ -2,7 +2,7 @@
 'use strict';
 
 var path = require('path');
-var Server = require('norman-app-server').Server;
+var AppServer = require('norman-app-server');
 var configFile = path.join(__dirname, 'config.json');
 
 var k, n, admin = null, cmd;
@@ -34,21 +34,63 @@ for (k = 2, n = process.argv.length; k < n; ++k) {
             process.exit(1);
         }
     }
+
+    if (process.argv[k] === '--checkSchema') {
+        if (!cmd) {
+            cmd = 'checkSchema';
+        }
+        else {
+            console.log('Too many commands, --unassign-admin, --create-admin, --checkSchema, --initSchema, --upgradeSchema are exclusive commands');
+            process.exit(1);
+        }
+    }
+    if (process.argv[k] === '--initSchema') {
+        if (!cmd) {
+            cmd = 'initSchema';
+        }
+        else {
+            console.log('Too many commands, --unassign-admin, --create-admin, --checkSchema, --initSchema, --upgradeSchema are exclusive commands');
+            process.exit(1);
+        }
+    }
+    if (process.argv[k] === '--upgradeSchema') {
+        if (!cmd) {
+            cmd = 'upgradeSchema';
+        }
+        else {
+            console.log('Too many commands, --unassign-admin, --create-admin, --checkSchema, --initSchema, --upgradeSchema are exclusive commands');
+            process.exit(1);
+        }
+    }
 }
 
-Server.start(configFile).then(function () {
+var server = new AppServer.Server(configFile);
+server.start()
+    .then(function () {
+        // Create Admin user (required for Admin section)
+        switch (cmd) {
+            case 'create':
+            case 'unassign':
+                var registry = require('norman-common-server').registry,
+                    aclService = registry.getModule('AclService');
 
-    // Create Admin user (required for Admin section)
-    if (admin) {
-        var registry = require('norman-common-server').registry,
-            aclService = registry.getModule('AclService');
+                if (!aclService) return console.error('ACL service not found. Please update norman-auth-server');
 
-        if (!aclService) return console.error('ACL service not found. Please update norman-auth-server');
-
-        // create, assign or unassign admin role
-        aclService[cmd + 'Admin'](admin).then(function () {
-            console.log('\nAdmin role ' + cmd + 'ed, ' + admin.email + '\n');
-        });
-    }
-
-});
+                // create, assign or unassign admin role
+                aclService[cmd + 'Admin'](admin).then(function () {
+                    console.log('\nAdmin role ' + cmd + 'ed, ' + admin.email + '\n');
+                });
+                break;
+            case 'checkSchema':
+                server.appServer.checkSchema();
+                break;
+            case 'initSchema':
+                server.appServer.initSchema();
+                break;
+            case 'upgradeSchema':
+                server.appServer.upgradeSchema();
+                break;
+            default:
+                break;
+        }
+    });

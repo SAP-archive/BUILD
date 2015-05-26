@@ -27,7 +27,7 @@
     "norman-common-server": "0.9.65",
     "norman-audit-server": "0.9.65",
     "norman-server-tp": "0.9.65",
-    "norman-app-server": "0.9.11",
+    "norman-app-server": "0.9.12",
     "norman-shell-client": "0.9.42",
     "norman-auth-client": "0.9.45",
     "norman-auth-server": "0.9.45",
