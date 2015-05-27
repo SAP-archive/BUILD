@@ -209,7 +209,7 @@ module.exports = function (grunt) {
     grunt.registerTask('default', ['build:dev']);
     grunt.registerTask('liveEdit', ['server:liveEdit']);
 
-    grunt.registerTask('npm-publish', ['dist', 'publish', 'github-update']);
+    grunt.registerTask('npm-publish', ['dist', 'publish', 'github-update', 'releaseReport']);
 
     grunt.registerTask('github-update', 'Update Github issue status', function () {
         var done = this.async();
@@ -219,6 +219,20 @@ module.exports = function (grunt) {
         var ghPassword = settings.GHPassword;
         var projects = [];
         helper.github.updateGithub(projects, issueTypes, ghUser, ghPassword, mailNotif, repo, done);
+    });
+
+    grunt.registerTask('releaseReport', 'Generate Release Report of new version BuiLD', function () {
+        var versionInfo = new Object();      //{prevVersion, prevVersionTag, prevSha, lastVersion, lastVersionTag, lastSha,lastCommitAt}
+        //versionInfo.lastVersion = "v0.9.4";
+        //versionInfo.prevVersion = "v0.9.1";
+        var commitInfo = new Object();     //{repo, branch, path, author, since, until}
+        commitInfo.repo = "Norman";
+        commitInfo.branch = "master";
+        commitInfo.since = "";  //"2015-03-01T00:00:000";
+        commitInfo.author = "ESADMIN";
+        commitInfo.path = "package.json";
+        var mail = settings.ReleaseMailNotif;
+        helper.github.generateVersionReleaseReport(versionInfo, commitInfo, mail);
     });
 
     grunt.task.run('notify_hooks');
