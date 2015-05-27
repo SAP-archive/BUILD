@@ -24,7 +24,10 @@
             "users" : "/api/users",
             "auth" : "/auth"
         },
-        "norman-shared-workspace-server": "",
+        "norman-shared-workspace-server": {
+            "snapshot": "/api/projects",
+            "public": "/deploy"
+        },
         "norman-projects-server": {
             "projects": "/api/projects"
         },
@@ -32,10 +35,8 @@
         "norman-ui-composer-server": {
             "page": "/api/projects",
             "prototype": "/api/projects",
-            "snapshot": "/api/projects",
-            "artifact": "/api/projects",
-            "ui5libs": "/sapui5",
-            "public": "/deploy"
+            "artifact": "/api/projects"
+
         },
         "norman-previewer-server": "",
         "norman-prototype-builder-server": "",
