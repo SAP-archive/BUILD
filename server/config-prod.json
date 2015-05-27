@@ -129,6 +129,13 @@
          "limit":"1mb"
          }
         }
-
+    },
+    "fileUpload":{
+        "limits": {
+            "fields": 50,
+            "fileSize": 50.5e7,
+            "files": 500,
+            "parts": 500
+        }
     }
 }
