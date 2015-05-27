@@ -13,7 +13,7 @@ function getServerDependencies() {
     directDependencies.forEach(function (dependency) {
         // ignore client packages
         if (clientRegExp.test(dependency)) return;
-        console.log('Found server module ' + dependency);
+        grunt.log.debug('Found server module ' + dependency);
         dependencies[dependency + '/**/*'] = 1;
 
         var depPkg = grunt.file.readJSON('node_modules/' + dependency + '/package.json');
@@ -21,7 +21,7 @@ function getServerDependencies() {
         // add peer dependencies if any
         if (depPkg.peerDependencies) {
             Object.keys(depPkg.peerDependencies).forEach(function (peer) {
-                console.log('Found server module ' + peer);
+                grunt.log.debug('Found server module ' + peer);
                 dependencies[peer + '/**/*'] = 1;
             });
         }
@@ -29,7 +29,7 @@ function getServerDependencies() {
         // add dependencies if needed
         if (depPkg.dependencies) {
             Object.keys(depPkg.dependencies).forEach(function (dep) {
-                console.log('Found server module ' + dep);
+                grunt.log.debug('Found server module ' + dep);
                 dependencies[dep + '/**/*'] = 1;
             });
         }
