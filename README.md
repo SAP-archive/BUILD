@@ -31,8 +31,6 @@ Project Norman contains the following sub-projects:
 + [Projects - aka Project Management] (https://github.wdf.sap.corp/Norman/Projects)
 
 
-For an overview of BUILD, see the [Project Norman Charter]( https://github.wdf.sap.corp/Norman/Norman/wiki/Project-Norman-Charter).
-
 ##Make a Contribution
 Click here to view our [Contribution](https://github.wdf.sap.corp/Norman/Norman/blob/master/Contributing.md) document.
 
