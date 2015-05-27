@@ -27,7 +27,7 @@
         "norman-shared-workspace-server": {
             "snapshot": "/api/projects",
             "public": "/deploy",
-            "lock": "api/projects"
+            "lock": "/api/projects"
         },
         "norman-projects-server": {
             "projects": "/api/projects"
