@@ -45,6 +45,7 @@
         "norman-ux-rule-engine-server": "/api/appFlow",
         "norman-user-research-server": {
             "studies": "/api/projects/:projectId",
+            "review": "/api/projects/:projectId",
             "questions": "/api/projects/:projectId",
             "annotations": "/api/projects/:projectId",
             "prototypes": "/api/projects/:projectId",
