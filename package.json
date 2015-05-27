@@ -49,7 +49,7 @@
     "norman-ux-rule-engine-server": "0.9.17",
     "norman-shared-workspace-server": "0.9.19",
     "norman-prototype-builder-server": "0.9.21",
-    "norman-previewer-server": "0.9.11",
+    "norman-previewer-server": "0.9.12",
     "norman-openui5": "1.0.2",
     "norman-custom-controls": "0.9.31"
   },
