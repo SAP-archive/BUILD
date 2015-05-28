@@ -106,14 +106,6 @@ module.exports = {
                 src: ['node_modules/norman-common-client/docs/**/*.css']
             },
 
-            // Help content
-            {
-                expand: true,
-                cwd: 'node_modules/norman-user-assistance/',
-                dest: 'dev/',
-                src: ['help/**/*.*']
-            },
-            
             // security
             {
                 expand: true,
