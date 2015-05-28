@@ -47,7 +47,7 @@
     "norman-user-research-client": "0.9.54",
     "norman-user-research-server": "0.9.54",
     "norman-ux-rule-engine-server": "0.9.17",
-    "norman-shared-workspace-server": "0.9.21",
+    "norman-shared-workspace-server": "0.9.22",
     "norman-prototype-builder-server": "0.9.21",
     "norman-previewer-server": "0.9.13",
     "norman-openui5": "1.0.2",
