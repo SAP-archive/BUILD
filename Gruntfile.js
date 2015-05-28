@@ -143,15 +143,32 @@ module.exports = function (grunt) {
         return grunt.task.run(tasks[target || 'dev']);
     });
 
+    //trim the json output from the test runner; the json from cucumber output may contain non-json entries.
+    grunt.registerTask('trimJsonOutput', function () {
+        console.log("triming");
+        var testOutput = grunt.file.read('test/results/testReport.json');
+        var data = testOutput.match(/(\[\s+\{[\s\S]*\}\s+\]\s+\}\s+\]\s+\}\s+\])/)[1];
+        grunt.file.write('test/results/testReport.json', data.replace(/\]\[/g, ','));
+    });
+
+    /**
+     * Check if any tests in the JSON report have failed, and if so, fail the associated task.
+     */
+    grunt.registerTask('checkTestFailed', 'My "default" task description.', function() {
+        var testOutput = grunt.file.read('test/results/testReport.json');
+        if (testOutput.indexOf('"status": "failed"') !== -1) {
+            grunt.fail.fatal('Test failures found', 1)
+        }
+    });
+
 
     grunt.registerTask('test', function (target) {
         var tasks = {
             server: ['env:dev', 'mochaTest:test'],
             client: ['env:dev', 'karma'],
             modules_int: ['env:dev', 'mochaTest:modules_int'],
-            e2e: ['express:dev', 'wait:dev', 'protractor:e2e'],
-            e2e_ci: ['express:prod', 'wait:dev', 'protractor:e2e'],
-            e2e_composer: ['protractor:e2eGridHub'],
+            e2e: ['express:prod', 'wait:dev', 'protractor:e2e','wait:dev','trimJsonOutput','checkTestFailed'], //wait dev after protractor to allow json output to complete.
+            e2e_composer: ['protractor:e2eGridHub','wait:dev','trimJsonOutput','checkTestFailed'], //wait dev after protractor to allow json output to complete.
             dflt: ['test:server', 'test:client']
         };
         return grunt.task.run(tasks[target || 'dflt']);
