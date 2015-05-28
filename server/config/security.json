@@ -21,7 +21,7 @@
 	},
 	"passwordPolicy" : {
 		"minLength" : 6,
-		"maxLength" : 13,
+		"maxLength" : 40,
 		"digits" : {
 			"allowed" : true
 		},
