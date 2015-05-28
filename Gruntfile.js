@@ -168,7 +168,7 @@ module.exports = function (grunt) {
             client: ['env:dev', 'karma'],
             modules_int: ['env:dev', 'mochaTest:modules_int'],
             e2e: ['express:prod', 'wait:dev', 'protractor:e2e','wait:dev','trimJsonOutput','checkTestFailed'], //wait dev after protractor to allow json output to complete.
-            e2e_composer: ['protractor:e2eGridHub'],
+            e2e_composer: ['protractor:e2eGridHub','wait:dev','trimJsonOutput','checkTestFailed'], //wait dev after protractor to allow json output to complete.
             dflt: ['test:server', 'test:client']
         };
         return grunt.task.run(tasks[target || 'dflt']);
