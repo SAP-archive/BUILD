@@ -91,6 +91,14 @@
             }
         }
     },
+      "fileUpload":{
+        "limits": {
+            "fields": 50,
+            "fileSize": 50.5e7,
+            "files": 500,
+            "parts": 500
+        }
+    },
     "session": {
         "secret": "ccd4d99dac71175c5f59a37533c6e00aaa9718818c74b61763200a4622f4c198",
         "tokenExpirationMinutes": 5,
