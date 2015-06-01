@@ -122,6 +122,7 @@
     "request": "^2.51.0",
     "sinon": "^1.12.2",
     "sinon-as-promised": "^3.0.0",
+    "supertest" : "0.15.0",
     "time-grunt": "^1.0.0"
   },
   "scripts": {
