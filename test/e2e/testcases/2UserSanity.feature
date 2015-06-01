@@ -23,35 +23,38 @@ Feature: User
 
     @flow
     Scenario: Go to Profile Settings
-        Given I am on the Landing Page
-        When I click the Avatar Image
-        And I click Settings
-        Then I am on the profile Page
+      Given I am on the Landing Page
+      When I click the Avatar Image
+      And I click Settings
+      Then Profile is opened
 
     @flow
-    Scenario: Change the username
-        Given I am on the Settings Page
-        When I change the name
-        And I click Save
-        Then The username is changed
+    Scenario: Change the username and email
+      Given I am on the Settings Page
+      When I change the name
+      When I change the email
+      Then button Save is enabled
+      When I click Save
 
     @flow
-    Scenario: Change the email
-        Given I am on the Settings Page
-        When I change the email
-        And I click Save
-        Then The email is changed
+    Scenario:Check that username and email are changed
+      Given I am on the Landing Page
+      When I click the Avatar Image
+      And I click Settings
+      Then The username is changed
+      Then The email is changed
 
     @flow
     Scenario: Upload a Avatar Picture
-        Given I am on the Picture Page
-        When I upload a picture
-        And I Cilck Select Button
-        Then Avatar image is displayed
+      Given I am on the Picture Page
+      When I upload a picture
+      When I Click crop and use link
+      Then Avatar image is displayed
 
     @flow
     Scenario: Change Password
-        Given I am on the Change Passowrd Page
-        When I Change Password
-        And I click Save
-        Then The Password is changed
+      Given I am on the Change Password Page
+      When I Change Password
+      Then button Save is enabled
+      When I click Save
+      Then The Password is changed
