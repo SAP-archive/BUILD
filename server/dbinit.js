@@ -2,7 +2,7 @@
 'use strict';
 
 var path = require('path');
-var AppServer = require('node-sap-app-server');
+var AppServer = require('norman-app-server');
 var commonServer = require('norman-common-server');
 var registry = commonServer.registry;
 var INIT_TIMEOUT = 120;
