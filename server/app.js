@@ -2,7 +2,7 @@
 'use strict';
 
 var path = require('path');
-var AppServer = require('norman-app-server');
+var AppServer = require('node-sap-app-server');
 var configFile = path.join(__dirname, 'config.json');
 
 var k, n, admin = null, cmd;
