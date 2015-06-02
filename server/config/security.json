@@ -21,7 +21,7 @@
 	},
 	"passwordPolicy" : {
 		"minLength" : 6,
-		"maxLength" : 13,
+		"maxLength" : 40,
 		"digits" : {
 			"allowed" : true
 		},
@@ -50,6 +50,14 @@
 					},
 					{
 						"resources" : "/api/projects/projectId",
+						"permissions" : ["put", "post", "patch", "get", "delete"]
+					},
+                    {
+                        "resources" : "/api/projects/projectId/prototype",
+                        "permissions" : ["put", "post", "patch", "get", "delete"]
+                    },
+					{
+						"resources" : "/api/projects/projectId/studies",
 						"permissions" : ["put", "post", "patch", "get", "delete"]
 					},
 					{
@@ -94,9 +102,17 @@
 						"permissions" : ["put", "post", "patch", "get"]
 					},
 					{
+						"resources" : "/api/projects/projectId/studies",
+						"permissions" : ["put", "post", "patch", "get", "delete"]
+					},
+					{
 						"resources" : "/api/models/projectId",
 						"permissions" : ["put", "post", "patch", "get", "delete"]
 					},
+                    {
+                        "resources" : "/api/projects/projectId/prototype",
+                        "permissions" : ["put", "post", "patch", "get", "delete"]
+                    },
 					{
 						"resources" : "/api/projects/projectId/document",
 						"permissions" : ["*"]

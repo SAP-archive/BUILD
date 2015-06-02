@@ -79,7 +79,8 @@
             "/login",
             "/signup",
             "/norman",
-            "/reset-password"
+            "/reset-password",
+            "/privacystatement"
         ],
         "compression": {
             "threshold": 512
@@ -88,6 +89,14 @@
             "json": {
                 "limit": "1mb"
             }
+        }
+    },
+      "fileUpload":{
+        "limits": {
+            "fields": 50,
+            "fileSize": 50.5e7,
+            "files": 500,
+            "parts": 500
         }
     },
     "session": {

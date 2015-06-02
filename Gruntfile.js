@@ -119,11 +119,6 @@ module.exports = function (grunt) {
         }
     });
 
-
-    grunt.registerTask('express-keepalive', 'Keep grunt running', function () {
-        this.async();
-    });
-
     grunt.registerTask('serve', function (target) {
         var tasks = {
             debug: [
@@ -134,18 +129,36 @@ module.exports = function (grunt) {
                 'build:dev',
                 'env:dev',
                 'express:dev',
-                'node-inspector:liveEdit',
+                // Do NOT add node-inspector:liveEdit as it breaks the watch task
                 'watch'
             ],
             liveEdit: [
                 'build:dev',
                 'env:dev',
                 'express:dev',
-                'node-inspector:liveEdit',
-                'watch'
+                'node-inspector:liveEdit'
+                // Node inspector is blocking all subsequent tasks.
             ]
         };
         return grunt.task.run(tasks[target || 'dev']);
+    });
+
+    //trim the json output from the test runner; the json from cucumber output may contain non-json entries.
+    grunt.registerTask('trimJsonOutput', function () {
+        console.log("triming");
+        var testOutput = grunt.file.read('test/results/testReport.json');
+        var data = testOutput.match(/(\[\s+\{[\s\S]*\}\s+\]\s+\}\s+\]\s+\}\s+\])/)[1];
+        grunt.file.write('test/results/testReport.json', data.replace(/\]\[/g, ','));
+    });
+
+    /**
+     * Check if any tests in the JSON report have failed, and if so, fail the associated task.
+     */
+    grunt.registerTask('checkTestFailed', 'My "default" task description.', function() {
+        var testOutput = grunt.file.read('test/results/testReport.json');
+        if (testOutput.indexOf('"status": "failed"') !== -1) {
+            grunt.fail.fatal('Test failures found', 1)
+        }
     });
 
 
@@ -154,9 +167,8 @@ module.exports = function (grunt) {
             server: ['env:dev', 'mochaTest:test'],
             client: ['env:dev', 'karma'],
             modules_int: ['env:dev', 'mochaTest:modules_int'],
-            e2e: ['express:dev', 'wait:dev', 'protractor:e2e'],
-            e2e_ci: ['express:prod', 'wait:dev', 'protractor:e2e'],
-            e2e_composer: ['protractor:e2eGridHub'],
+            e2e: ['express:prod', 'wait:dev', 'protractor:e2e','wait:dev','trimJsonOutput','checkTestFailed'], //wait dev after protractor to allow json output to complete.
+            e2e_composer: ['protractor:e2eGridHub','wait:dev','trimJsonOutput','checkTestFailed'], //wait dev after protractor to allow json output to complete.
             dflt: ['test:server', 'test:client']
         };
         return grunt.task.run(tasks[target || 'dflt']);
@@ -207,14 +219,14 @@ module.exports = function (grunt) {
     });
 
     // just run (app must be already built)
-    grunt.registerTask('start', ['env:dev', 'express:dev', 'watch']);
+    grunt.registerTask('start', ['browserify:dev', 'env:dev', 'express:dev', 'watch']);
 
     grunt.registerTask('dist', ['build:dist']);
     grunt.registerTask('dev', ['build:dev']);
     grunt.registerTask('default', ['build:dev']);
     grunt.registerTask('liveEdit', ['server:liveEdit']);
 
-    grunt.registerTask('npm-publish', ['dist', 'publish', 'github-update']);
+    grunt.registerTask('npm-publish', ['dist', 'publish', 'github-update', 'releaseReport']);
 
     grunt.registerTask('github-update', 'Update Github issue status', function () {
         var done = this.async();
@@ -224,6 +236,20 @@ module.exports = function (grunt) {
         var ghPassword = settings.GHPassword;
         var projects = [];
         helper.github.updateGithub(projects, issueTypes, ghUser, ghPassword, mailNotif, repo, done);
+    });
+
+    grunt.registerTask('releaseReport', 'Generate Release Report of new version BuiLD', function () {
+        var versionInfo = new Object();      //{prevVersion, prevVersionTag, prevSha, lastVersion, lastVersionTag, lastSha,lastCommitAt}
+        //versionInfo.lastVersion = "v0.9.4";
+        //versionInfo.prevVersion = "v0.9.1";
+        var commitInfo = new Object();     //{repo, branch, path, author, since, until}
+        commitInfo.repo = "Norman";
+        commitInfo.branch = "master";
+        commitInfo.since = "";  //"2015-03-01T00:00:000";
+        commitInfo.author = "ESADMIN";
+        commitInfo.path = "package.json";
+        var mail = settings.ReleaseMailNotif;
+        helper.github.generateVersionReleaseReport(versionInfo, commitInfo, mail);
     });
 
     grunt.task.run('notify_hooks');

@@ -1,5 +1,6 @@
 {
     "GHMailNotif": "DL NORMAN PAR QE <DL_54659D1EFD84A03D5D000002@exchange.sap.corp>, arturo.duarte@sap.com, mark.mcsherry@sap.com, anand.nidamanuru@sap.com",
+    "ReleaseMailNotif": "DL PI UXD Norman Product Management <DL_544FD40CFD84A00E82000002@exchange.sap.corp>, DL NORMAN PAR QE <DL_54659D1EFD84A03D5D000002@exchange.sap.corp>, arturo.duarte@sap.com, mark.mcsherry@sap.com, anand.nidamanuru@sap.com",
     "GHUser": "",
     "GHPassword": "",
     "GHIssueType": "bug-us-tbi"

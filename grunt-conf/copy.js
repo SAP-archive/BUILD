@@ -75,6 +75,7 @@ module.exports = {
                     'norman*client/bower_components/**/*.{pdf,png,gif,jpg,svg,js,html,css}',
                     'norman-ng-grid/**/*.{png,gif,jpg,svg,json}',
                     '!norman-openui5/**/*',
+                    '!norman-testing-tp-client/**/*',
                     '!node_modules/norman-ui-catalog-manager-server/server/lib/api/catalog/library/**/*.js'
                 ]
             },
@@ -105,14 +106,6 @@ module.exports = {
                 src: ['node_modules/norman-common-client/docs/**/*.css']
             },
 
-            // Help content
-            {
-                expand: true,
-                cwd: 'node_modules/norman-user-assistance/',
-                dest: 'dev/',
-                src: ['help/**/*.*']
-            },
-            
             // security
             {
                 expand: true,
