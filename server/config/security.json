@@ -86,7 +86,7 @@
 					},
 					{
 						"resources" : "/api/uicatalogs",
-						"permissions" : ["get"]
+						"permissions" : ["get","post","delete"]
 					}
 				]
 			},
@@ -127,7 +127,7 @@
 					},
 					{
 						"resources" : "/api/uicatalogs",
-						"permissions" : ["get"]
+						"permissions" : ["get","post","delete"]
 					}
 				]
 			},
@@ -201,7 +201,7 @@
 					},
 					{
 						"resources" : "/api/uicatalogs",
-						"permissions" : ["get"]
+						"permissions" : ["get","post","delete"]
 					},
 					{
 						"resources" : "/api/users/avatar",
