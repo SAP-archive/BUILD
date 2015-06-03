@@ -224,7 +224,7 @@ module.exports = function (grunt) {
     grunt.registerTask('dist', ['build:dist']);
     grunt.registerTask('dev', ['build:dev']);
     grunt.registerTask('default', ['build:dev']);
-    grunt.registerTask('liveEdit', ['server:liveEdit']);
+    grunt.registerTask('liveEdit', ['serve:liveEdit']);
 
     grunt.registerTask('npm-publish', ['dist', 'publish', 'github-update', 'releaseReport']);
 
