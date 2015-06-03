@@ -75,8 +75,8 @@
         "enable" : true
     },
     "linkedin": {
-        "clientID": "776t60krcb9nei",
-        "clientSecret": "nlmFC80g9Pv7Rlc1",
+        "clientID": "77jfov3s9ooaey",
+        "clientSecret": "nJKxCnNvHCdMPY67",
         "callbackURL": "/auth/linkedin/callback",
         "enable" : true
     },

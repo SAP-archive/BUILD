@@ -27,7 +27,8 @@
         "norman-shared-workspace-server": {
             "snapshot": "/api/projects",
             "public": "/deploy",
-            "lock": "/api/projects"
+            "lock": "/api/projects",
+            "artifact": "/api/projects"
         },
         "norman-projects-server": {
             "projects": "/api/projects"
@@ -35,9 +36,7 @@
         "norman-business-catalog-manager-server": "/api/catalogs",
         "norman-ui-composer-server": {
             "page": "/api/projects",
-            "prototype": "/api/projects",
-            "artifact": "/api/projects"
-
+            "prototype": "/api/projects"
         },
         "norman-previewer-server": "",
         "norman-prototype-builder-server": "",
@@ -52,7 +51,8 @@
             "annotations": "/api/projects/:projectId",
             "prototypes": "/api/projects/:projectId",
             "participants": "/api/participant",
-            "userStudies": "/api/projects/studies/"
+            "userStudies": "/api/projects/studies/",
+            "studyprototypes": "/api/projects/:projectId"
         },
         "norman-audit-server": "/audit"
     }
