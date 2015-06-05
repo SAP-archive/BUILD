@@ -34,34 +34,6 @@ for (k = 2, n = process.argv.length; k < n; ++k) {
             process.exit(1);
         }
     }
-
-    if (process.argv[k] === '--checkSchema') {
-        if (!cmd) {
-            cmd = 'checkSchema';
-        }
-        else {
-            console.log('Too many commands, --unassign-admin, --create-admin, --checkSchema, --initSchema, --upgradeSchema are exclusive commands');
-            process.exit(1);
-        }
-    }
-    if (process.argv[k] === '--initSchema') {
-        if (!cmd) {
-            cmd = 'initSchema';
-        }
-        else {
-            console.log('Too many commands, --unassign-admin, --create-admin, --checkSchema, --initSchema, --upgradeSchema are exclusive commands');
-            process.exit(1);
-        }
-    }
-    if (process.argv[k] === '--upgradeSchema') {
-        if (!cmd) {
-            cmd = 'upgradeSchema';
-        }
-        else {
-            console.log('Too many commands, --unassign-admin, --create-admin, --checkSchema, --initSchema, --upgradeSchema are exclusive commands');
-            process.exit(1);
-        }
-    }
 }
 
 var server = new AppServer.Server(configFile);
@@ -80,15 +52,6 @@ server.start()
                 aclService[cmd + 'Admin'](admin).then(function () {
                     console.log('\nAdmin role ' + cmd + 'ed, ' + admin.email + '\n');
                 });
-                break;
-            case 'checkSchema':
-                server.appServer.checkSchema();
-                break;
-            case 'initSchema':
-                server.appServer.initSchema();
-                break;
-            case 'upgradeSchema':
-                server.appServer.upgradeSchema();
                 break;
             default:
                 break;

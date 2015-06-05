@@ -20,7 +20,7 @@
     "registry": "http://build-npm.mo.sap.corp:8080/"
   },
   "dependencies": {
-    "node-sap-app-server": "0.1.6",
+    "node-sap-app-server": "0.1.12",
     "norman-logging": "0.9.50",
     "norman-promise": "0.9.50",
     "norman-client-tp": "0.9.79",
