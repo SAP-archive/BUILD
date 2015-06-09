@@ -38,7 +38,7 @@ Feature: User 2 Participate in Study
     Scenario: Participate in the Tasks
         Given I am a Task Page to Participate
         When  I click on the Start Task Button
-        And   Click on the Prototype Panel to interact
+#        And   Click on the Prototype Panel to interact
         And   Leave Feedack for the Page
         And   I finish the Task
         Then  I see the congratulations icon
