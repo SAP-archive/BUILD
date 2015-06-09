@@ -1,6 +1,6 @@
 <img src = "https://github.wdf.sap.corp/Norman/Norman/blob/master/docs/images/BUILD_Logo_Light.png?raw=true" height="128"> 
 
-## Welcome to BUILD [![Build Status](https://build-jenkins.mo.sap.corp/jenkins/job/Norman-master/badge/icon)](https://build-jenkins.mo.sap.corp/jenkins/job/Norman-master/)
+## Welcome to BUILD [![Build Status](https://build-jenkins.wdf.sap.corp/jenkins/job/Norman-master/badge/icon)](https://build-jenkins.wdf.sap.corp/jenkins/job/Norman-master/)
 
 
 
