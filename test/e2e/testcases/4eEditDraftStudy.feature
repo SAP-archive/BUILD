@@ -1,5 +1,5 @@
 @userRes
-Feature: Review Study
+Feature: Edit Draft Study
 
     @flow
     Scenario: Return the Studies Page

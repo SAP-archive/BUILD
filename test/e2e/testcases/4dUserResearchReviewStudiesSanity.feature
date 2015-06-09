@@ -60,7 +60,7 @@ Feature: Review Study
 
 
     @flow
-    Scenario: Review Question 1 Stats
+    Scenario: Review Question 1/Task Stats
         Given  I am in Question Review Page
         When   I click on the Protoype Tab
         And    I enable annotations
