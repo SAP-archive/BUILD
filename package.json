@@ -122,7 +122,7 @@
     "open": "0.0.5",
     "q": "^1.1.2",
     "request": "^2.51.0",
-    "sinon": "^1.12.2",
+    "sinon": "~1.14.1",
     "sinon-as-promised": "^3.0.0",
     "supertest": "0.15.0",
     "time-grunt": "^1.0.0"
