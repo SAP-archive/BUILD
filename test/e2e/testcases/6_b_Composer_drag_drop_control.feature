@@ -21,6 +21,24 @@ Feature: Composer
         When I click to enter the project
         Then I am in the prototype page
 
+###############################################################
+#    This section is embedded in the Project e2e test package
+#    as the UI Composer Pull Requests are all failing
+#
+###############################################################
+
+    @composerNB
+    Scenario: Create Prototype Pages as there are none
+        Given I see the View All Map
+        When  I click the View All Map Icon
+        And   Create 2 Blank Prototype Pages
+        Then  There are 2 Pages Created
+        And   I click Project in the Menu
+        And   I am in the prototype page
+###############################################################
+#   End of New Section
+###############################################################
+
     @composerNB
     Scenario: User clicks on thumbnail of page 1
         Given I am on the prototype page
