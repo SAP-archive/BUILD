@@ -15,6 +15,7 @@ Feature: DataModeler
     And  I enter Project Name "TESTPROJECTXLS"
     Then Project "TESTPROJECTXLS" is created
 
+  @flow
   @OpenTheCreatedProject
   Scenario: Once a project is created
     Given Project "TESTPROJECTXLS" exists
