@@ -226,7 +226,7 @@ module.exports = function (grunt) {
     grunt.registerTask('default', ['build:dev']);
     grunt.registerTask('liveEdit', ['server:liveEdit']);
 
-    grunt.registerTask('npm-publish', ['dist', 'publish', 'releaseReport']);
+    grunt.registerTask('npm-publish', ['dist', 'publish', 'github-update']);
 
     grunt.registerTask('github-update', 'Update Github issue status', function () {
         var done = this.async();
