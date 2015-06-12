@@ -20,15 +20,14 @@
     "registry": "http://build-npm.mo.sap.corp:8080/"
   },
   "dependencies": {
-    "node-sap-app-server": "0.1.12",
+    "node-sap-app-server": "0.1.20",
     "norman-logging": "0.9.50",
     "norman-promise": "0.9.50",
     "norman-client-tp": "0.9.82",
-    "norman-common-client": "0.9.79",
-    "norman-common-server": "0.9.79",
+    "norman-common-client": "0.9.82",
+    "norman-common-server": "0.9.82",
     "norman-audit-server": "0.9.72",
     "norman-server-tp": "0.9.82",
-    "norman-app-server": "0.9.14",
     "norman-shell-client": "0.9.44",
     "norman-auth-client": "0.9.56",
     "norman-auth-server": "0.9.56",
