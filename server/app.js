@@ -18,7 +18,7 @@ for (k = 2, n = process.argv.length; k < n; ++k) {
         console.warn('Deprecated unassign admin. Use the createAdmin script on admin app.');
         process.exit(1);
     }
-}
+        }
 
 var server = new AppServer.Server(configFile);
 server.start();
