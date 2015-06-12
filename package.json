@@ -70,7 +70,7 @@
     "grunt-contrib-uglify": "^0.8.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-env": "^0.4.2",
-    "grunt-eslint": "^2.1.0",
+    "grunt-eslint": "^13.0.0",
     "grunt-exorcise": "^0.2.0",
     "grunt-express-server": "^0.4.19",
     "grunt-html2js": "^0.2.9",
