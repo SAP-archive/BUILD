@@ -34,7 +34,7 @@ for (k = 2, n = process.argv.length; k < n; ++k) {
             process.exit(1);
         }
     }
-}
+        }
 
 var server = new AppServer.Server(configFile);
 server.start()
