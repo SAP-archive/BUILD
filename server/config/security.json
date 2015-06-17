@@ -39,6 +39,26 @@
 		"bannedCharacterCombination" : ["@sap.com"]
 	},
 	"errorMessage" : "Validation error",
+    "scopes": [
+        {
+            "name": "access",
+            "permissions": {
+                "registration": ["standard"]
+            }
+        },
+        {
+            "name": "project",
+            "permissions": {
+                "collaborator": ["standard"]
+            }
+        },
+        {
+            "name": "study",
+            "permissions": {
+                "participant": ["guest"]
+            }
+        }
+    ],
 	"roles" : {
 		"projectRoles" : [
 			{
