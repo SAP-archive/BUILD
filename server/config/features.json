@@ -10,5 +10,9 @@
     "disable-prototype-generation": {
         "name": "Automatic prototype generation from data model",
         "enabled": true
+    },
+    "disable-dataModeler": {
+        "name": "Data Modeler",
+        "enabled": false
     }
 }
