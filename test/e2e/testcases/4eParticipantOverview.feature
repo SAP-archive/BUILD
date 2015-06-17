@@ -45,7 +45,7 @@ Feature: Access and Test new Participant Feature
         Given 	I am on the Participant Page
         When 	I see "9" Annotations in Participants
         And     I see the "1" Tasks in Participants
-        And     I see the "4" Answers in Participants
+        And     I see the "3" Answers in Participants
         Then 	I see the "9" Questions in Participants
         And     Reset Page to Projects Page
 
