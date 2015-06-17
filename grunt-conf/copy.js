@@ -86,8 +86,8 @@ module.exports = {
                 expand: true,
                 flatten: true,
                 dest: 'dev/assets',
-                src: [ 'node_modules/norman-ng-grid/styles/ui-grid.css',
-                    'node_modules/norman-ng-grid/fonts/*.*']
+                src: ['node_modules/norman-prototype-editors-client/node_modules/norman-ng-grid/styles/ui-grid.css',
+                    'node_modules/norman-prototype-editors-client/node_modules/norman-ng-grid/fonts/*.*']
             },
 
             // roboto font
@@ -118,14 +118,14 @@ module.exports = {
 
     dist: {
         files: [
-            {   // CLIENT
+            { // CLIENT
                 expand: true,
                 dot: true,
                 cwd: 'dev',
                 dest: 'dist/public',
                 src: ['**/*']
             },
-            {   // SERVER
+            { // SERVER
                 expand: true,
                 dest: 'dist',
                 src: [
@@ -137,13 +137,13 @@ module.exports = {
                     'server/dbinitconfig.json'
                 ]
             },
-            {   // Norman Server Modules
+            { // Norman Server Modules
                 expand: true,
                 cwd: 'node_modules',
                 dest: 'dist/node_modules',
                 src: getServerDependencies()
             },
-            {   // Norman package.json
+            { // Norman package.json
                 expand: true,
                 dest: 'dist',
                 src: ['package.json']
