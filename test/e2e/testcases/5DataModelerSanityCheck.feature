@@ -28,7 +28,7 @@ Feature: DataModeler
   Scenario: I choose to create a data Model from an Excel file
     Given The create model page is displayed
     #file located in test/testcase folder of this project
-    Then I upload XL file: "../../../../test/testcase/Sales Order Data model.xlsx"
+    Then I upload XL file: "../../../../DataModeler/testcases/scenario/Sales Order Data model.xlsx"
     Then I click on Reorder Horizontally
 
   @flow
