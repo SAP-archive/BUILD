@@ -2,7 +2,6 @@
 Feature: Setup
 
     @flow
-    @delay
     @createUser
     @createProjectUser
     @createProfileUser
