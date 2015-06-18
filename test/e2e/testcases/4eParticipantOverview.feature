@@ -1,13 +1,6 @@
 @userRes
 Feature: Access and Test new Participant Feature
 
-#    @flow
-#    Scenario: Login with Valid Credentials
-#        Given I am on the login page
-#        When I enter valid credentials
-#        Then I am logged in
-#        And  Reset Page to Projects Page
-
     @flow
     Scenario: Return the Studies Page
         Given I am in the prototype page
@@ -44,7 +37,7 @@ Feature: Access and Test new Participant Feature
     Scenario: 	Check feedback is present
         Given 	I am on the Participant Page
         When 	I see "9" Annotations in Participants
-        And     I see the "1" Tasks in Participants
+        And     I see the "1" Tasks Completed Average in Participants
         And     I see the "3" Answers in Participants
         Then 	I see the "9" Questions in Participants
         And     Reset Page to Projects Page
