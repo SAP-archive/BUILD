@@ -33,7 +33,7 @@
     "norman-auth-server": "0.9.63",
     "norman-projects-client": "0.9.64",
     "norman-projects-server": "0.9.64",
-    "norman-business-catalog-manager-client": "0.9.10",
+    "norman-business-catalog-manager-client": "0.9.5",
     "norman-business-catalog-manager-server": "0.9.5",
     "norman-prototype-editors-client": "0.9.5",
     "norman-prototype-editors-server": "0.9.5",
@@ -41,7 +41,7 @@
     "norman-ui-catalog-manager-server": "0.9.76",
     "norman-user-research-client": "0.9.77",
     "norman-user-research-server": "0.9.77",
-    "norman-ux-rule-engine-server": "0.9.20",
+    "norman-ux-rule-engine-server": "0.9.17",
     "norman-openui5": "1.0.2",
     "lodash": "2.4.1"
   },
