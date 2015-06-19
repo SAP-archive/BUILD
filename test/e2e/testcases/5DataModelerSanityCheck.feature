@@ -26,7 +26,7 @@ Feature: DataModeler
   @flow
   @CreateBlankDataModel
   Scenario: I choose to create a data Model from an Excel file
-    Given The create model page is displayed
+    Given Data modeler page is displayed
     #file located in test/testcase folder of this project
     Then I upload XL file: "../../../../DataModeler/testcases/scenario/Sales Order Data model.xlsx"
     Then I click on Reorder Horizontally
@@ -117,26 +117,26 @@ Feature: DataModeler
     Then I check relations for entity "SalesOrder" are "SalesOrderItem" with cardinality "n"
     Then I check relations for entity "SalesOrderItem" are "RelationName" with cardinality "1"
 
-  @flow
-  @CheckingDataSampleIsNotEmpty
-    Given Data modeler page is displayed
-    Then I click on Entity named "SalesOrder"
-    Then I click on Open Editor
-
-  @flow
-  @InDataSampleEditorClickOnOkButton
-    Given SampleDataGrid page is displayed
-    Then I click on Tab named "SalesOrder"
-    Then I click on Tab named "SalesOrderItem"
-    Then I click on OK
-
-  @flow
-  @OpenDataSampleEditorClickOnCancelButton
-    Given Data modeler page is displayed
-    Then I click on Open Editor
-    Given SampleDataGrid page is displayed
-    Then I click on Tab named "SalesOrder"
-    Then I click on Tab named "SalesOrderItem"
-    Then I click on Cancel
-
-
+#  @flow
+#  @CheckingDataSampleIsNotEmpty
+#    Given Data modeler page is displayed
+#    Then I click on Entity named "SalesOrder"
+#    Then I click on Open Editor
+#
+#  @flow
+#  @InDataSampleEditorClickOnOkButton
+#    Given SampleDataGrid page is displayed
+#    Then I click on Tab named "SalesOrder"
+#    Then I click on Tab named "SalesOrderItem"
+#    Then I click on OK
+#
+#  @flow
+#  @OpenDataSampleEditorClickOnCancelButton
+#    Given Data modeler page is displayed
+#    Then I click on Open Editor
+#    Given SampleDataGrid page is displayed
+#    Then I click on Tab named "SalesOrder"
+#    Then I click on Tab named "SalesOrderItem"
+#    Then I click on Cancel
+#
+#
