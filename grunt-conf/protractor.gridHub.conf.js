@@ -46,7 +46,7 @@ exports.config = {
 
     specs: ['../test/e2e/testcases/*.feature'],
     cucumberOpts: {
-        require: '../node_modules/norman-*e2e/**/testcases/steps/*.steps.js',
+        require: ['../node_modules/norman-*e2e/**/testcases/steps/*.steps.js','../node_modules/norman-*test/**/e2e/testcases/steps/*.steps.js'],
         format: 'json'
     }
 };
