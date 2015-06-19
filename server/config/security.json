@@ -43,7 +43,8 @@
         {
             "name": "access",
             "permissions": {
-                "registration": ["standard"]
+                "standard": ["standard"],
+                "guest": ["guest"]
             }
         },
         {
