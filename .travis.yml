@@ -3,6 +3,8 @@ language: node_js
 node_js:
   - "0.10.38"
   - "0.12.4"
-before_install: npm install -g grunt-cli
+before_install:
+  - "npm install -g grunt-cli"
+  - "npm config set registry http://build-npm.mo.sap.corp:8080/"
 install: npm install
 before_script: grunt dist
