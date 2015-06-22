@@ -101,7 +101,7 @@
     "karma-sinon-chai": "^0.2.0",
     "mocha-jenkins-reporter": "^0.1.6",
     "node-inspector": "^0.9.2",
-    "norman-auth-e2e": "0.9.63",
+    "norman-auth-e2e": "0.9.70",
     "norman-build-helper": "0.9.23",
     "norman-userres-e2e": "0.9.78",
     "norman-prototype-editors-test": "0.9.9",
