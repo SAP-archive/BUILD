@@ -32,7 +32,8 @@
         },
         "norman-auth-server" : {
             "users" : "/api/users",
-            "auth" : "/auth"
+            "auth" : "/auth",
+            "internal" : "/internal"
         },
         "norman-projects-server": {
             "projects": "/api/projects"
