@@ -5,9 +5,7 @@ module.exports = {
     dev: {
         options: {
             watch: true,
-            browserifyOptions: {
-                debug: true                    // true to create map file
-            },
+            browserifyOptions: { debug: true },     // true to create map file
             external: [
                 'angular',
                 'angular-cookies',
@@ -21,6 +19,20 @@ module.exports = {
         }
     },
 
+    dist: {
+        options: {
+            watch: false,
+            browserifyOptions: { debug: false },
+            external: [
+                'angular',
+                'angular-cookies',
+                'angular-resource',
+                'angular-sanitize',
+                'angular-ui-router'
+            ]
+        },
+        files: { 'dev/assets/bundle.js': [ 'client/app.js' ] }
+    },
 
     vendor: {
         // External modules that don't need to be constantly re-compiled
