@@ -1,25 +1,6 @@
 @userRes
-Feature: User 2 Participate in Study
+Feature: Participate in Study
     As a user, I want to participate publish study
-
-    @flow
-    Scenario: Login as Participant 2
-        Given I am on the login page
-        When I enter Participant 1 User credentials
-        Then I am logged in
-
-    @flow
-    Scenario: I go to Home Page
-        Given I am on the Landing Page
-       # When I click Home in Nav Bar
-        Then I am on the Home page
-
-    @flow
-    Scenario: Delete a Project
-        Given I am on the Landing Page
-        When  I click New Project Button
-        And  I click delete project
-        Then The project is deleted
 
     @flow
     Scenario: Once Logged in go to the Study URL
@@ -38,7 +19,7 @@ Feature: User 2 Participate in Study
     Scenario: Participate in the Tasks
         Given I am a Task Page to Participate
         When  I click on the Start Task Button
-#        And   Click on the Prototype Panel to interact
+        And   Click on "All" the Links in the Prototype
         And   Leave Feedack for the Page
         And   I finish the Task
         Then  I see the congratulations icon
@@ -56,8 +37,8 @@ Feature: User 2 Participate in Study
     Scenario: Dropping annotations second screen.
         Given  I am on a study Participant screen enlarge page
         When   I drop annotation no comment or sentiment
-        And    I answer on the Free Text Question with "BOOOOO"
-        Then   I see the Freetext "BOOOOO"
+        And    I answer on the Free Text Question with "Hello There"
+        Then   I see the Freetext "Hello There"
         And    I should see "1" annotations
         And    I enter next screen
 
@@ -65,7 +46,7 @@ Feature: User 2 Participate in Study
     Scenario: Dropping annotations third screen.
         Given I am on a study Participant screen enlarge page
         When  I drop annotation no comment or sentiment
-        And   I click Answer That
+        And   I click Answer This
         Then  I should see "1" annotations
         Then  I enter next screen
 
@@ -74,7 +55,7 @@ Feature: User 2 Participate in Study
         Given I am on a study Participant screen enlarge page
         When  I drop annotation no comment or sentiment
         And   I click Answer This
-        And   I click Answer That
+        And   I click Answer Those
         Then  I should see "1" annotations
 
     @flow
@@ -82,3 +63,6 @@ Feature: User 2 Participate in Study
         Given I am on last screen enlarge page
         When  I click done
         Then  I should be taken to stating page
+        And   I have the Projects URL
+        And   Reset Page to Projects Page
+
