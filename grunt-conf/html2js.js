@@ -25,7 +25,7 @@ module.exports = {
         src: [
             'welcome/*.html',
             'dev/resources/**/*.html',
-            '!dev/resources/norman-common-client/ui-elements/index.html'
+            '!dev/resources/norman-client-tp/node_modules/angular-sap-ui-elements/index.html'
         ]
     }
 };

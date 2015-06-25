@@ -52,7 +52,17 @@ module.exports = {
                 dest: 'dev/resources/',
                 src: [
                     'norman*client/**/*.html',
+                    '!norman-common-client/**/*.html',
                     '!norman*client/node_modules/**/*.html'
+                ]
+            },
+            {
+                expand: true,
+                cwd: 'node_modules/norman-client-tp/node_modules/',
+                dest: 'dev/resources/',
+                src: [
+                    'angular-sap-*/**/*.html',
+                    '!angular-sap-*/node_modules/**/*.html'
                 ]
             }
         ]
@@ -79,6 +89,15 @@ module.exports = {
                     '!node_modules/norman-ui-catalog-manager-server/server/lib/api/catalog/library/**/*.js'
                 ]
             },
+            {
+                expand: true,
+                cwd: 'node_modules/norman-client-tp/node_modules',
+                dest: 'dev/resources/',
+                src: [
+                    'angular-sap-*/**/*.{pdf,png,gif,jpg,svg}',
+                    'angular-sap-*/node_modules/**/*.{pdf,png,gif,jpg,svg}'
+                ]
+            },
 
             //norman-ng-grid(ui-grid) css and fonts
             //fonts should be in the same directory as css. So will be copied to dev/assets folder
@@ -95,7 +114,7 @@ module.exports = {
                 expand: true,
                 flatten: true,
                 dest: 'dev/fonts',
-                src: ['node_modules/norman-common-client/fonts/Roboto/*.*']
+                src: ['node_modules/norman-client-tp/node_modules/angular-sap-ui-elements/fonts/Roboto/*.*']
             },
 
             // ui-elements docs css
