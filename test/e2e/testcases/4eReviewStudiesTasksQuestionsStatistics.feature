@@ -42,7 +42,7 @@ Feature: Review Study Tasks & Questions Detailed Statistics
         Given  I am in Question Review Page
         When   I click on the Page Flow Tab
         Then   I can see the Page Flow
-        Then   I see "4" nodes
+        Then   I see "3" nodes
 
     @flow
     Scenario: Review Statistics for Prototype Task
