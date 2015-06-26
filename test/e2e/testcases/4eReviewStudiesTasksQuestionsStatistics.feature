@@ -33,9 +33,6 @@ Feature: Review Study Tasks & Questions Detailed Statistics
         When   I click on the Protoype Tab
         And    I enable annotations
         Then   I see "6" Annotations
-        When   I Hide Annoatations
-        When   I enable the Heatmap
-        Then   I can see the Heatmap
 
     @flow
     Scenario: Review Page Flow for Prototype Task
@@ -51,12 +48,9 @@ Feature: Review Study Tasks & Questions Detailed Statistics
         Then   I see the Statstics Page Paricipants count is "3"
         Then   I see the Statstics Page Annotation count is "9"
         Then   I see the Statstics Page Comment count is "9"
-#        Then   I see the Task Statstics Page Avg Time is displayed
-#        Then   I see the Task Statstics Page Quickest Time is displayed
-#        Then   I see the Task Statstics Page Slowest Time is displayed
         Then   I see the Task Statstics Page Avg Visted is "2"
         Then   I see the Task Statstics Task Target Reached equals "2" with percentage "66.67%"
-        Then   I see the "Task" Statstics Task Target Not Reached equals "1" with percentage "33.33%"
+        Then   I see the Task Statstics Task Target Not Reached equals "1" with percentage "33.33%"
         Then   I see the "Task" Statstics Task Annotation "Positive" Sentiment "3" with percentage "33.33%"
         Then   I see the "Task" Statstics Task Annotation "Nuetral" Sentiment "3" with percentage "33.33%"
         Then   I see the "Task" Statstics Task Annotation "Negative" Sentiment "3" with percentage "33.33%"
