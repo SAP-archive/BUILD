@@ -41,5 +41,3 @@ Feature: Access and Test new Participant Feature
         And     I see the "3" Answers in Participants
         Then 	I see the "9" Questions in Participants
         And     Reset Page to Projects Page
-
-
