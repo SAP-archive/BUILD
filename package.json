@@ -23,7 +23,7 @@
     "node-sap-app-server": "0.1.20",
     "norman-promise": "0.9.50",
     "norman-client-tp": "0.9.89",
-    "norman-common-client": "0.9.86",
+    "norman-common-client": "0.9.94",
     "norman-common-server": "0.9.86",
     "norman-audit-server": "0.9.72",
     "norman-shell-client": "0.9.52",
