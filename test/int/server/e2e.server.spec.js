@@ -12,7 +12,7 @@ var api = new normanAPI();
 var projectId;
 var userEmail = 'e2e.server@sap.com', userPassword = 'Minisap!1';
 describe('Test REST API for E2E Server\r\n', function () {
-    this.timeout(15000);
+    this.timeout(30000);
     before('Intialize API', function (done) {
         api.initialize(userEmail, userPassword).then(done);
     });
@@ -38,12 +38,12 @@ describe('Test REST API for E2E Server\r\n', function () {
             });
         });
         it('Create a model by import - should 201', function (done) {
-            api.createModelByExcelImport(201, projectId, path.join(__dirname, 'material/fileExcel.xlsx'), function (err, res) {
+            api.createModelByExcelImport(201, projectId, path.join(__dirname, '../../testcase/Sales Order Data model.xlsx'), function (err, res) {
                 if (err) {
                     done(err);
                 }
                 else {
-                    res.body.entities.should.be.instanceof(Array);
+                    res.body.result.should.be.instanceof(Array);
                     done();
                 }
             });
