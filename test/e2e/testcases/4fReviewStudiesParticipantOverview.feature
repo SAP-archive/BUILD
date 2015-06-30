@@ -38,6 +38,6 @@ Feature: Access and Test new Participant Feature
         Given 	I am on the Participant Page
         When 	I see "9" Annotations in Participants
         And     I see the "1" Tasks Completed Average in Participants
-        And     I see the "3" Answers in Participants
+        And     I see the "5" Answers in Participants
         Then 	I see the "9" Questions in Participants
         And     Reset Page to Projects Page
