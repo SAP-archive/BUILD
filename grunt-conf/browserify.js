@@ -22,7 +22,6 @@ module.exports = {
     dist: {
         options: {
             watch: false,
-            browserifyOptions: { debug: false },
             external: [
                 'angular',
                 'angular-cookies',
@@ -37,7 +36,6 @@ module.exports = {
     vendor: {
         // External modules that don't need to be constantly re-compiled
         options: {
-            debug: false,
             alias: [
                 'angular:',
                 'angular-cookies:',
