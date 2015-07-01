@@ -104,7 +104,7 @@
     "norman-auth-e2e": "0.9.71",
     "norman-userres-e2e": "0.9.94",
     "norman-projects-e2e": "0.9.79",
-    "norman-prototype-editors-test": "0.9.34",
+    "norman-prototype-editors-e2e": "0.9.35",
     "norman-testing-server": "0.9.93",
     "norman-testing-tp": "0.9.82",
     "norman-testing-tp-client": "0.9.82",
@@ -114,6 +114,7 @@
     "sinon": "~1.14.1",
     "sinon-as-promised": "^3.0.0",
     "supertest": "0.15.0",
+    "superagent": "^0.21.0",
     "time-grunt": "^1.0.0"
   },
   "scripts": {
