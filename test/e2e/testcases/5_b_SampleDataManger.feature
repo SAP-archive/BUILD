@@ -1,5 +1,5 @@
-@datamodeler
-Feature: DataModeler
+@sampledatamanger
+Feature: SampleDataManager
 
   @flow
   Scenario: Login with Data Modeller User
@@ -28,7 +28,7 @@ Feature: DataModeler
   Scenario: I choose to create a data Model from an Excel file
     Given Data modeler page is displayed
     #file located in test/testcase folder of this project
-    Then I upload XL file: "../../../../DataModeler/testcases/scenario/Sales Order Data model.xlsx"
+    Then I upload XL file: "../files/Sales Order Data model.xlsx"
 
   @flow
   @CheckSalesOrderEntityExistsAndClickOnIt
@@ -88,53 +88,27 @@ Feature: DataModeler
     Then I check properties for entity "Product" are "ID,Description,Amount,Currency,Picture" of type "String,Numeric,String,String"
 
 
-  @flow
-  @DeleteSalesOrderItemFromDataModel
-  Scenario: Create a DataModel: delete SalesOrderItem
-    Given Data modeler page is displayed
-    Then I delete Entity named "SalesOrderItem"
 
   @flow
-  @RecreateSalesOrderItemEntityManually
+  @CheckingDataSampleIsNotEmpty
     Given Data modeler page is displayed
-    Then I add Entity named "SalesOrderItem"
-    Then I add property "Quantity" of type "Numeric" to entity "SalesOrderItem"
-    Then I check properties for entity "SalesOrderItem" are "ID,Quantity" of type "Numeric"
-
-  @flow
-  @AddingRelationFromAndToSalesOrderItemEntity
-    Given Data modeler page is displayed
-    #creation
     Then I click on Entity named "SalesOrder"
-    Then I add a relation from entity "SalesOrder" to entity "SalesOrderItem" with cardinality "n" named "SalesOrderItem"
-    Then I click on Entity named "SalesOrderItem"
-    Then I add a relation from entity "SalesOrderItem" to entity "Product" with cardinality "1" named "RelationName"
-    #check
-    Then I click on Entity named "SalesOrder"
-    Then I check relations for entity "SalesOrder" are "SalesOrderItem" with cardinality "n"
-    Then I click on Entity named "SalesOrderItem"
-    Then I check relations for entity "SalesOrderItem" are "RelationName" with cardinality "1"
+    Then I click on Open Editor
 
-#  @flow
-#  @CheckingDataSampleIsNotEmpty
-#    Given Data modeler page is displayed
-#    Then I click on Entity named "SalesOrder"
-#    Then I click on Open Editor
-#
-#  @flow
-#  @InDataSampleEditorClickOnOkButton
-#    Given SampleDataGrid page is displayed
-#    Then I click on Tab named "SalesOrder"
-#    Then I click on Tab named "SalesOrderItem"
-#    Then I click on OK
-#
-#  @flow
-#  @OpenDataSampleEditorClickOnCancelButton
-#    Given Data modeler page is displayed
-#    Then I click on Open Editor
-#    Given SampleDataGrid page is displayed
-#    Then I click on Tab named "SalesOrder"
-#    Then I click on Tab named "SalesOrderItem"
-#    Then I click on Cancel
-#
-#
+  @flow
+  @InDataSampleEditorClickOnOkButton
+    Given SampleDataGrid page is displayed
+    Then I click on Tab named "SalesOrder"
+    Then I click on Tab named "SalesOrderItem"
+    Then I click on OK
+
+  @flow
+  @OpenDataSampleEditorClickOnCancelButton
+    Given Data modeler page is displayed
+    Then I click on Open Editor
+    Given SampleDataGrid page is displayed
+    Then I click on Tab named "SalesOrder"
+    Then I click on Tab named "SalesOrderItem"
+    Then I click on Cancel
+
+
