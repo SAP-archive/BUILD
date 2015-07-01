@@ -115,7 +115,8 @@
             "/norman",
             "/forgot-password",
             "/reset-password/*",
-            "/privacystatement"
+            "/privacystatement",
+            "/tos"
         ],
         "options": {
             "etag": false,
