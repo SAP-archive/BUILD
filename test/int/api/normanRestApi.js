@@ -1,19 +1,17 @@
 'use strict';
 
-var normanAppServer = require('../../app'); //need require app before normanTestRequester
 var NormanTestServer = require('norman-testing-server').server;
 var NormanTestRequester = require('norman-testing-server').Requester;
 var Promise = require("norman-promise");
-
+var path = require('path');
 
 function normanRestApi() {
 };
 
 normanRestApi.prototype.initialize = function (user, password) {
 
-    var deferred = Promise.defer();
-    var self = this;
-    NormanTestServer.initialize(normanAppServer).then(function (server) {
+    var deferred = Promise.defer(), var self = this;
+    NormanTestServer.initialize(path.join(__dirname, '../../../server/config.json')).then(function (server) {
         self.normanTestRequester = new NormanTestRequester(server.app, user, password, deferred.resolve);
     });
     return deferred.promise;
@@ -22,7 +20,7 @@ normanRestApi.prototype.initialize = function (user, password) {
 //Create a user
 normanRestApi.prototype.createUser = function (httpCodeExpected, user, password) {
     var userCreation = {name: user, email: user, password: password };
-    this.normanTestRequester.reqPost('/api/users', httpCodeExpected, fnCallBack, userCreation);
+    this.normanTestRequester.reqPost('/auth/signup', httpCodeExpected, fnCallBack, userCreation);
 };
 
 //Get User Info
@@ -69,7 +67,7 @@ normanRestApi.prototype.deleteModel = function (httpCodeExpected, projectID, fnC
 ///*     =========== Import XL =========================== */
 normanRestApi.prototype.createModelByExcelImport = function (httpCodeExpected, projectID, attachValue, fnCallBack) {
     this.normanTestRequester.contentType = 'multipart/form-data';
-    this.normanTestRequester.reqPostAttach('/api/models/' + projectID + '/importxl', httpCodeExpected, fnCallBack, null, attachValue);
+    this.normanTestRequester.reqPostAttach('/api/models/' + projectID + '/importxl', httpCodeExpected, fnCallBack, attachValue);
     this.normanTestRequester.contentType = null;
 };
 
