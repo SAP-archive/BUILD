@@ -10,7 +10,7 @@ function normanRestApi() {
 
 normanRestApi.prototype.initialize = function (user, password) {
 
-    var deferred = Promise.defer(), var self = this;
+    var deferred = Promise.defer(), self = this;
     NormanTestServer.initialize(path.join(__dirname, '../../../server/config.json')).then(function (server) {
         self.normanTestRequester = new NormanTestRequester(server.app, user, password, deferred.resolve);
     });
