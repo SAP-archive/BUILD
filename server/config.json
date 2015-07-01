@@ -140,5 +140,12 @@
     },
     "audit": {
         "defaultCreatedBy": "SYSTEM"
+    },
+    "access": {
+        "defaultPermissions": [
+            {"access": "standard"},
+            {"study": "participant"},
+            {"project": "collaborator"}
+        ]
     }
 }
