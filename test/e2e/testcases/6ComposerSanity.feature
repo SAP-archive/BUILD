@@ -52,5 +52,5 @@ Feature: Composer
    Scenario: User drags and drops Button control
         Given I am in ui composer canvas view
         When I drag and drop a control of type "Button" onto the canvas
-        Then A control of type "sap_m_Button" is on the canvas
+        Then The value of property input field "Text" is "Button"
 
