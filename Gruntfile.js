@@ -4,8 +4,8 @@ var fs = require('fs');
 var path = require('path');
 var nodeInspector = require('./grunt-conf/nodeinspector.js');
 
-var repo = "Norman";
-var settings = require("./config.json");
+var repo = 'Norman';
+var settings = require('./config.json');
 
 module.exports = function (grunt) {
 
@@ -151,7 +151,7 @@ module.exports = function (grunt) {
 
     //trim the json output from the test runner; the json from cucumber output may contain non-json entries.
     grunt.registerTask('trimJsonOutput', function () {
-        console.log("triming");
+        console.log('triming');
         var testOutput = grunt.file.read('test/results/testReport.json');
         var data = testOutput.match(/(\[\s+\{[\s\S]*\}\s+\]\s+\}\s+\]\s+\}\s+\])/)[1];
         grunt.file.write('test/results/testReport.json', data.replace(/\]\[/g, ','));
@@ -163,7 +163,7 @@ module.exports = function (grunt) {
     grunt.registerTask('checkTestFailed', 'My "default" task description.', function() {
         var testOutput = grunt.file.read('test/results/testReport.json');
         if (testOutput.indexOf('"status": "failed"') !== -1) {
-            grunt.fail.fatal('Test failures found', 1)
+            grunt.fail.fatal('Test failures found', 1);
         }
     });
 
@@ -173,8 +173,8 @@ module.exports = function (grunt) {
             server: ['env:dev', 'mochaTest:test'],
             client: ['env:dev', 'karma'],
             modules_int: ['env:dev', 'mochaTest:modules_int'],
-            e2e: ['express:prod', 'wait:dev', 'protractor:e2e','wait:dev','trimJsonOutput','checkTestFailed'], //wait dev after protractor to allow json output to complete.
-            e2e_composer: ['protractor:e2eGridHub','wait:dev','trimJsonOutput','checkTestFailed'], //wait dev after protractor to allow json output to complete.
+            e2e: ['express:prod', 'wait:dev', 'protractor:e2e', 'wait:dev', 'trimJsonOutput', 'checkTestFailed'], //wait dev after protractor to allow json output to complete.
+            e2e_composer: ['protractor:e2eGridHub', 'wait:dev', 'trimJsonOutput', 'checkTestFailed'], //wait dev after protractor to allow json output to complete.
             dflt: ['test:server', 'test:client']
         };
         return grunt.task.run(tasks[target || 'dflt']);
@@ -193,22 +193,22 @@ module.exports = function (grunt) {
             'autoprefixer',
             'copy:html',
             'copy:dev',
-            'browserify'
+            'browserify:vendor'
         ];
 
-        if (target !== 'dev' && target !== 'liveEdit') {
+        if (target === 'dev' || target === 'liveEdit') {
+            tasks.push('browserify:dev');
+        }
+        else {
+            tasks.push('browserify:dist');
             tasks.push('ngAnnotate');
-            tasks.push('exorcise');
+            // tasks.push('exorcise');
             tasks.push('html2js');
             tasks.push('copy:dist');
             tasks.push('config-prod');
             tasks.push('cssmin');
-            //tasks.push('uglify');
+            tasks.push('uglify');
         }
-        //tasks.push('eslint:client');
-        //tasks.push('eslint:server');
-        // tasks.push('test:client');
-        //tasks.push('test:server');
 
         return grunt.task.run(tasks);
     });
@@ -245,15 +245,15 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('releaseReport', 'Generate Release Report of new version BuiLD', function () {
-        var versionInfo = new Object();      //{prevVersion, prevVersionTag, prevSha, lastVersion, lastVersionTag, lastSha,lastCommitAt}
+        var versionInfo = {};      //{prevVersion, prevVersionTag, prevSha, lastVersion, lastVersionTag, lastSha,lastCommitAt}
         //versionInfo.lastVersion = "v0.9.4";
         //versionInfo.prevVersion = "v0.9.1";
-        var commitInfo = new Object();     //{repo, branch, path, author, since, until}
-        commitInfo.repo = "Norman";
-        commitInfo.branch = "master";
-        commitInfo.since = "";  //"2015-03-01T00:00:000";
-        commitInfo.author = "ESADMIN";
-        commitInfo.path = "package.json";
+        var commitInfo = {};     //{repo, branch, path, author, since, until}
+        commitInfo.repo = 'Norman';
+        commitInfo.branch = 'master';
+        commitInfo.since = '';  //'2015-03-01T00:00:000';
+        commitInfo.author = 'ESADMIN';
+        commitInfo.path = 'package.json';
         var mail = settings.ReleaseMailNotif;
         helper.github.generateVersionReleaseReport(versionInfo, commitInfo, mail);
     });
