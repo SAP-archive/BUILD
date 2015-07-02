@@ -1,6 +1,9 @@
 /*eslint no-process-exit: 0*/
 'use strict';
 
+console.log('!!! Deprecated !!!');
+console.log('Use initSchema instead');
+
 var path = require('path');
 var AppServer = require('node-sap-app-server');
 var commonServer = require('norman-common-server');
