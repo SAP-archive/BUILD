@@ -132,6 +132,12 @@ module.exports = function (grunt) {
                 // Do NOT add node-inspector:liveEdit as it breaks the watch task
                 'watch'
             ],
+            init: [
+                'build:dev',
+                'env:dev',
+                'express:init',
+                'watch'
+            ],
             liveEdit: [
                 'build:dev',
                 'env:dev',
