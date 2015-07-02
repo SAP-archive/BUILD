@@ -20,28 +20,25 @@
         "/api" : [ "jwt", "auth", "xsrf" ]
     }],
     "handlers" : {
-        "norman-auth-server" : {
-            "users" : "/api/users",
-            "auth" : "/auth"
-        },
-        "norman-shared-workspace-server": {
+        "norman-prototype-editors-server": {
             "snapshot": "/api/projects",
             "public": "/deploy",
             "lock": "/api/projects",
-            "artifact": "/api/projects"
+            "artifact": "/api/projects",
+            "page": "/api/projects",
+            "prototype": "/api/projects",
+            "models": "/api/models",
+            "sampledata": "/api/sampledata"
+        },
+        "norman-auth-server" : {
+            "users" : "/api/users",
+            "auth" : "/auth",
+            "internal" : "/internal"
         },
         "norman-projects-server": {
             "projects": "/api/projects"
         },
         "norman-business-catalog-manager-server": "/api/catalogs",
-        "norman-ui-composer-server": {
-            "page": "/api/projects",
-            "prototype": "/api/projects"
-        },
-        "norman-previewer-server": "",
-        "norman-prototype-builder-server": "",
-        "norman-data-modeler-server": "/api/models",
-        "norman-sample-data-manager-server": "/api/sampledata",
         "norman-ui-catalog-manager-server":"/api/uicatalogs",
         "norman-ux-rule-engine-server": "/api/appFlow",
         "norman-user-research-server": {

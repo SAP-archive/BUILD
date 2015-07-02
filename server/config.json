@@ -80,7 +80,8 @@
             "/signup",
             "/norman",
             "/reset-password",
-            "/privacystatement"
+            "/privacystatement",
+            "/tos"
         ],
         "compression": {
             "threshold": 512
@@ -140,5 +141,12 @@
     },
     "audit": {
         "defaultCreatedBy": "SYSTEM"
+    },
+    "access": {
+        "defaultPermissions": [
+            {"access": "standard"},
+            {"study": "participant"},
+            {"project": "collaborator"}
+        ]
     }
 }

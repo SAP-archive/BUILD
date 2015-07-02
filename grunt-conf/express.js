@@ -9,6 +9,10 @@ module.exports = {
         options: { script: 'server/app.js', debug: true }
     },
 
+    init: {
+        options: { script: 'server/appWithInit.js', debug: true }
+    },
+
     prod: {
         options: { script: 'dist/server/app.js' }
     }

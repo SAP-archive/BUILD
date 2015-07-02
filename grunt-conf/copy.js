@@ -13,7 +13,7 @@ function getServerDependencies() {
     directDependencies.forEach(function (dependency) {
         // ignore client packages
         if (clientRegExp.test(dependency)) return;
-        console.log('Found server module ' + dependency);
+        grunt.log.debug('Found server module ' + dependency);
         dependencies[dependency + '/**/*'] = 1;
 
         var depPkg = grunt.file.readJSON('node_modules/' + dependency + '/package.json');
@@ -21,7 +21,7 @@ function getServerDependencies() {
         // add peer dependencies if any
         if (depPkg.peerDependencies) {
             Object.keys(depPkg.peerDependencies).forEach(function (peer) {
-                console.log('Found server module ' + peer);
+                grunt.log.debug('Found server module ' + peer);
                 dependencies[peer + '/**/*'] = 1;
             });
         }
@@ -29,7 +29,7 @@ function getServerDependencies() {
         // add dependencies if needed
         if (depPkg.dependencies) {
             Object.keys(depPkg.dependencies).forEach(function (dep) {
-                console.log('Found server module ' + dep);
+                grunt.log.debug('Found server module ' + dep);
                 dependencies[dep + '/**/*'] = 1;
             });
         }
@@ -52,7 +52,17 @@ module.exports = {
                 dest: 'dev/resources/',
                 src: [
                     'norman*client/**/*.html',
+                    '!norman-common-client/**/*.html',
                     '!norman*client/node_modules/**/*.html'
+                ]
+            },
+            {
+                expand: true,
+                cwd: 'node_modules/norman-client-tp/node_modules/',
+                dest: 'dev/resources/',
+                src: [
+                    'angular-sap-*/**/*.html',
+                    '!angular-sap-*/node_modules/**/*.html'
                 ]
             }
         ]
@@ -79,6 +89,15 @@ module.exports = {
                     '!node_modules/norman-ui-catalog-manager-server/server/lib/api/catalog/library/**/*.js'
                 ]
             },
+            {
+                expand: true,
+                cwd: 'node_modules/norman-client-tp/node_modules',
+                dest: 'dev/resources/',
+                src: [
+                    'angular-sap-*/**/*.{pdf,png,gif,jpg,svg}',
+                    'angular-sap-*/node_modules/**/*.{pdf,png,gif,jpg,svg}'
+                ]
+            },
 
             //norman-ng-grid(ui-grid) css and fonts
             //fonts should be in the same directory as css. So will be copied to dev/assets folder
@@ -86,8 +105,8 @@ module.exports = {
                 expand: true,
                 flatten: true,
                 dest: 'dev/assets',
-                src: [ 'node_modules/norman-ng-grid/styles/ui-grid.css',
-                    'node_modules/norman-ng-grid/fonts/*.*']
+                src: ['node_modules/norman-prototype-editors-client/node_modules/norman-ng-grid/styles/ui-grid.css',
+                    'node_modules/norman-prototype-editors-client/node_modules/norman-ng-grid/fonts/*.*']
             },
 
             // roboto font
@@ -95,7 +114,7 @@ module.exports = {
                 expand: true,
                 flatten: true,
                 dest: 'dev/fonts',
-                src: ['node_modules/norman-common-client/fonts/Roboto/*.*']
+                src: ['node_modules/norman-client-tp/node_modules/angular-sap-ui-elements/fonts/Roboto/*.*']
             },
 
             // ui-elements docs css
@@ -118,14 +137,14 @@ module.exports = {
 
     dist: {
         files: [
-            {   // CLIENT
+            { // CLIENT
                 expand: true,
                 dot: true,
                 cwd: 'dev',
                 dest: 'dist/public',
                 src: ['**/*']
             },
-            {   // SERVER
+            { // SERVER
                 expand: true,
                 dest: 'dist',
                 src: [
@@ -137,13 +156,13 @@ module.exports = {
                     'server/dbinitconfig.json'
                 ]
             },
-            {   // Norman Server Modules
+            { // Norman Server Modules
                 expand: true,
                 cwd: 'node_modules',
                 dest: 'dist/node_modules',
                 src: getServerDependencies()
             },
-            {   // Norman package.json
+            { // Norman package.json
                 expand: true,
                 dest: 'dist',
                 src: ['package.json']

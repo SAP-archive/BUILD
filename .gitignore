@@ -8,6 +8,7 @@ npm-debug.log
 client/requires.js
 server/requires.js
 test/results/**
+coverage/
 *.sublime-*
 
 # Ignore Intellij project and settings

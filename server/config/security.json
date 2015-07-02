@@ -39,6 +39,27 @@
 		"bannedCharacterCombination" : ["@sap.com"]
 	},
 	"errorMessage" : "Validation error",
+    "scopes": [
+        {
+            "name": "access",
+            "permissions": {
+                "standard": ["standard"],
+                "guest": ["guest"]
+            }
+        },
+        {
+            "name": "project",
+            "permissions": {
+                "collaborator": ["standard"]
+            }
+        },
+        {
+            "name": "study",
+            "permissions": {
+                "participant": ["guest"]
+            }
+        }
+    ],
 	"roles" : {
 		"projectRoles" : [
 			{
@@ -86,7 +107,7 @@
 					},
 					{
 						"resources" : "/api/uicatalogs",
-						"permissions" : ["get"]
+						"permissions" : ["get","post","delete"]
 					}
 				]
 			},
@@ -127,7 +148,7 @@
 					},
 					{
 						"resources" : "/api/uicatalogs",
-						"permissions" : ["get"]
+						"permissions" : ["get","post","delete"]
 					}
 				]
 			},
@@ -201,7 +222,7 @@
 					},
 					{
 						"resources" : "/api/uicatalogs",
-						"permissions" : ["get"]
+						"permissions" : ["get","post","delete"]
 					},
 					{
 						"resources" : "/api/users/avatar",

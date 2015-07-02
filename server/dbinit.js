@@ -1,6 +1,9 @@
 /*eslint no-process-exit: 0*/
 'use strict';
 
+console.log('!!! Deprecated !!!');
+console.log('Use initSchema instead');
+
 var path = require('path');
 var AppServer = require('node-sap-app-server');
 var commonServer = require('norman-common-server');
@@ -30,6 +33,7 @@ server.start()
         var uiCatalog = registry.getModule('UICatalog');
         initPromises.push(Promise.objectInvoke(uiCatalog, 'initializeDb'));
         initPromises.push(Promise.objectInvoke(uiCatalog, 'initializeLibrary'));
+        initPromises.push(Promise.objectInvoke(uiCatalog, 'storeOpenUI5Canvas'));
         return Promise.waitAll(initPromises);
     })
     .setTimeout(INIT_TIMEOUT * 1000, function () {
