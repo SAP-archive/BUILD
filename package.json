@@ -104,7 +104,7 @@
     "norman-auth-e2e": "0.9.81",
     "norman-userres-e2e": "0.9.99",
     "norman-projects-e2e": "0.9.83",
-    "norman-prototype-editors-e2e": "0.9.49",
+    "norman-prototype-editors-e2e": "0.9.53",
     "norman-testing-server": "0.9.93",
     "norman-testing-tp": "0.9.82",
     "norman-testing-tp-client": "0.9.82",
