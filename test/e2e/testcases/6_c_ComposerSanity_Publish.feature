@@ -38,7 +38,7 @@ Feature: Composer - Publish project
  @composerNB
     Scenario: User clicks on thumbnail of page 1
         Given I am on the prototype page
-        When I click on thumbnail of page
+        When I click on thumbnail of page "Page 1"
         Then I am in ui composer canvas view
         And There are "2" pages
         And I am on page "1"
