@@ -10,9 +10,9 @@
 				<a ng-click="login()" class="btn-homecover btn-right" ng-hide="isLoggedIn()"
 				   ng-class="{active: isActive('/login')}">SIGN IN</a>
 				<a href="/signup" class="btn-homecover btn-right" ng-hide="hideSignup()"
-				   ng-class="{active: isActive('/signup')}">SIGN UP</a>
+				   ng-class="{active: isActive('/signup')}">JOIN</a>
 				<a href="#" class="btn-homecover btn-right" ng-show="showLogout()"
-				   ng-class="{active: isActive('/logout')}" ng-click="logout()">LOG OUT</a>
+				   ng-class="{active: isActive('/logout')}" ng-click="logout()">SIGN OUT</a>
 			</div>
 
 			<video class="welcome-video" autoplay loop>
@@ -39,11 +39,11 @@
 		</div>
 
 		<div class="welcome-content-row welcome-row-signup">
-			<a href="/signup" class="btn-signup" ng-hide="hideSignup()">SIGN UP, IT'S FREE</a>
+			<a href="/signup" class="btn-signup" ng-hide="hideSignup()">JOIN, IT'S FREE</a>
 
 			<p class="signup-already white" ng-hide="hideSignup()">Already got an account? <a ng-click="login()">Sign In</a>.
 			</p>
-			<button class="welcome-btn-login" ng-show="hideSignup()" ng-click="login()">LOG IN</button>
+			<button class="welcome-btn-login" ng-show="hideSignup()" ng-click="login()">SIGN IN</button>
 		</div>
 
 		<div class="welcome-content-row welcome-foot">
