@@ -76,12 +76,12 @@ Feature: Review Study Tasks & Questions Detailed Statistics
     Scenario: Review Question 2 Statistics
         Given   I am in Question Review Page
         When    I click on the Statistics Tab
-        Then   I see the Statstics Page Paricipants count is "3"
-        Then   I see the Statstics Page Annotation count is "9"
-        Then   I see the Statstics Page Comment count is "9"
-        Then   I see the "Question" Statstics Task Annotation "Positive" Sentiment "3" with percentage "33.33%"
-        Then   I see the "Question" Statstics Task Annotation "Nuetral" Sentiment "3" with percentage "33.33%"
-        Then   I see the "Question" Statstics Task Annotation "Negative" Sentiment "3" with percentage "33.33%"
+        Then    I see the Statstics Page Paricipants count is "3"
+        Then    I see the Statstics Page Annotation count is "9"
+        Then    I see the Statstics Page Comment count is "9"
+        Then    I see the "Question" Statstics Task Annotation "Positive" Sentiment "3" with percentage "33.33%"
+        Then    I see the "Question" Statstics Task Annotation "Nuetral" Sentiment "3" with percentage "33.33%"
+        Then    I see the "Question" Statstics Task Annotation "Negative" Sentiment "3" with percentage "33.33%"
 
     @flow
     Scenario: Review Question 3 Overview
@@ -93,9 +93,9 @@ Feature: Review Study Tasks & Questions Detailed Statistics
     Scenario: Review Question 3 Statistics
         Given   I am in Question Review Page
         When    I click on the Statistics Tab
-        Then   I see the Statstics Page Paricipants count is "3"
-        Then   I see the Statstics Page Annotation count is "3"
-        Then   I see the Statstics Page Comment count is "3"
+        Then    I see the Statstics Page Paricipants count is "3"
+        Then    I see the Statstics Page Annotation count is "3"
+        Then    I see the Statstics Page Comment count is "3"
 
     @flow
     Scenario: Review Question 4 Overview
@@ -110,9 +110,9 @@ Feature: Review Study Tasks & Questions Detailed Statistics
     Scenario: Review Question 4 Statistics
         Given   I am in Question Review Page
         When    I click on the Statistics Tab
-        Then   I see the Statstics Page Paricipants count is "3"
-        Then   I see the Statstics Page Annotation count is "3"
-        Then   I see the Statstics Page Comment count is "3"
+        Then    I see the Statstics Page Paricipants count is "3"
+        Then    I see the Statstics Page Annotation count is "3"
+        Then    I see the Statstics Page Comment count is "3"
 
     @flow
     Scenario: Review Question 5 Overview
