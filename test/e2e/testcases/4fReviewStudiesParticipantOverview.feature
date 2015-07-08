@@ -3,9 +3,9 @@ Feature: Access and Test new Participant Feature
 
     @flow
     Scenario: Return the Studies Page
-        Given I am in the prototype page
-        When  I click into User Research
-        Then  Create New Study button is displayed
+        Given   I am in the prototype page
+        When    I click into User Research
+        Then    Create New Study button is displayed
 
     @flow
     Scenario: Click into Acitve Studies
