@@ -122,3 +122,7 @@ This is a bare-bones norman application. Use this to build norman modules on top
 <!-- Piwik Image Tracker-->
 <img src="https://norman-piwik.mo.sap.corp/piwik/piwik.php?idsite=4&rec=1" style="border:0" alt="" />
 <!-- End Piwik -->
+
+##Legal Notice About Font
+
+[View the legal notice about fonts used in Build](https://github.wdf.sap.corp/Norman/Norman/wiki/Legal-Notice-About-Fonts).
