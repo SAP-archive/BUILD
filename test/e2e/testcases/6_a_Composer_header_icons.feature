@@ -31,8 +31,8 @@
 #    Scenario: Create Prototype Pages as there are none
 #        Given I see the View All Map
 #        When  I click the View All Map Icon
-#        And   Create 2 Blank Prototype Pages
-#        Then  There are 2 Pages Created
+#        And   Create "2" Blank Prototype Pages
+#        Then  There are "2" Pages Created
 #        And   I click Project in the Menu
 #        And   I am in the prototype page
 ###############################################################
