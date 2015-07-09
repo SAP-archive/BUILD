@@ -101,7 +101,7 @@
     "mocha-jenkins-reporter": "^0.1.6",
     "node-inspector": "^0.9.2",
     "norman-build-helper": "0.9.28",
-    "norman-auth-e2e": "0.9.91",
+    "norman-auth-e2e": "0.9.92",
     "norman-userres-e2e": "0.9.106",
     "norman-projects-e2e": "0.9.92",
     "norman-prototype-editors-e2e": "0.9.77",
