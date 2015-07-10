@@ -41,8 +41,7 @@
     "norman-user-research-client": "0.9.106",
     "norman-user-research-server": "0.9.106",
     "norman-ux-rule-engine-server": "0.9.23",
-    "norman-openui5": "1.0.2",
-    "lodash": "2.4.1"
+    "norman-openui5": "1.0.2"
   },
   "devDependencies": {
     "object-assign": "~2.0.0",
