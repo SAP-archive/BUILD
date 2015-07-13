@@ -16,9 +16,28 @@ For a more detailed description of BUILD, see the [BUILD Overview](https://githu
 ##Project Norman Sub-Projects
 
 Project Norman contains the following sub-projects:
++ [Projects - aka Project Management] (https://github.wdf.sap.corp/Norman/Projects)
 + [Auth] (https://github.wdf.sap.corp/Norman/Auth) 
-+ [Data Composer] (https://github.wdf.sap.corp/Norman/DataComposer)
-+ [Business Catalog Manager] (https://github.wdf.sap.corp/Norman/BusinessCatalogManager)
++ [node-sap-mongo-config](https://github.wdf.sap.corp/Norman/node-sap-mongo-config)
++ [User Research] (https://github.wdf.sap.corp/Norman/UserResearch)
++ [UI Catalog Manager](https://github.wdf.sap.corp/Norman/UICatalogManager)
++ [PrototypeEditors] (https://github.wdf.sap.corp/Norman/PrototypeEditors)
++ [SharedThirdParties](https://github.wdf.sap.corp/Norman/SharedThirdParties)
++ [node-sampcommon](https://github.wdf.sap.corp/Norman)
++ [BusinessCatalogManager] (https://github.wdf.sap.corp/Norman/BusinessCatalogManager)
++ [BuildTools](https://github.wdf.sap.corp/Norman/BuildTools)
++ [node-sap-app-server](https://github.wdf.sap.corp/Norman/node-sap-app-server)
++ [Design](https://github.wdf.sap.corp/Norman/Design)
++ [DevFlowTest](https://github.wdf.sap.corp/Norman/DevFlowTest)
++ [admin-users](https://github.wdf.sap.corp/Norman/admin-users)
++ [node-sap-mailer](https://github.wdf.sap.corp/Norman/node-sap-mailer)
++ [build-hcp-web-dispatcher](https://github.wdf.sap.corp/Norman/build-hcp-web-dispatcher)
++ [Admin](https://github.wdf.sap.corp/Norman/Admin)
++ [angular-sap-ui-elements](https://github.wdf.sap.corp/Norman/angular-sap-ui-elements)
++ [Architecture](https://github.wdf.sap.corp/Norman/Architecture)
++ [](https://github.wdf.sap.corp/Norman/)
++ [](https://github.wdf.sap.corp/Norman/)
++ + [](https://github.wdf.sap.corp/Norman/)
 + [Flow Composer] (https://github.wdf.sap.corp/Norman/FlowComposer)
 + [Sample Data Server] (https://github.wdf.sap.corp/Norman/SampleDataServer)
 + [UX Rule Engine] (https://github.wdf.sap.corp/Norman/UXRuleEngine )
@@ -27,12 +46,11 @@ Project Norman contains the following sub-projects:
 + [Shared Workspace] (https://github.wdf.sap.corp/Norman/SharedWorkspace)
 + [UI Catalog Manager] (https://github.wdf.sap.corp/Norman/UICatalogManager)
 + [Previewer] (https://github.wdf.sap.corp/Norman/Previewer)
-+ [User Research] (https://github.wdf.sap.corp/Norman/UserResearch)
 + [Collaboration] (https://github.wdf.sap.corp/Norman/Collaboration)
 + [Shell] (https://github.wdf.sap.corp/Norman/Shell)
 + [Analytics] (https://github.wdf.sap.corp/Norman/Analytics)
 + [Common] (https://github.wdf.sap.corp/Norman/Common)
-+ [Projects - aka Project Management] (https://github.wdf.sap.corp/Norman/Projects)
+
 
 
 ##Make a Contribution
