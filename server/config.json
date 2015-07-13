@@ -66,6 +66,7 @@
     },
     "services": "./config/services.json",
     "features": "./config/features.json",
+    "uicatalog": "./config/uicatalog.json",
     "security": "./config/security.json",
     "web": {
         "root": "../dev",
