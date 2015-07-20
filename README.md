@@ -20,7 +20,6 @@ For a more detailed description of BUILD, see the [BUILD Overview](https://githu
 + [node-sap-mongo](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/node-sap-mongo)
 + [node-sap-promise](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/node-sap-promise)
 + [node-sap-logging](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/node-sap-logging)
-+ [node-sap-upload](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/node-sap-upload)
 + [node-sap-mongo-config](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/node-sap-mongo-config)
 + [node-sap-build](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/node-sap-build)
 
