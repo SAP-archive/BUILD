@@ -57,7 +57,7 @@ Check out this useful [overview of the BUILD architecture](https://github.wdf.sa
 
 
 ##Prerequisites
-- Ensure your proxy settings are resolved. (For internal SAP developers, you can configure [Sap NPM registry](https://github.wdf.sap.corp/Norman/Norman/wiki/How-to-Use-Build-npm-Registry) - for installing norman modules with `npm`)
+- Ensure your proxy settings are resolved. 
 - install [GIT](https://git-scm.com/downloads)
 - install [npm.js](https://docs.npmjs.com/cli/install) - _*only version 1.4.28 is supported*_
 - install [node.js](https://docs.npmjs.com/cli/install) -_*only version 10.28 is supported*_
