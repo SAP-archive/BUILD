@@ -64,9 +64,9 @@ Check out this useful [overview of the BUILD architecture](https://github.wdf.sa
 
 ## Download / Clone
 
-1. Clone [Norman/Norman](https://github.wdf.sap.corp/Norman/Norman) repo
+1. Clone [BUILD](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/BUILD) repo
     ```sh
-    git clone git@github.wdf.sap.corp:Norman/Norman.git
+    git clone git@github.wdf.sap.corp:https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/BUILD.git
     ```
 
 2. Install required node modules (dependencies):
