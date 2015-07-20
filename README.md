@@ -23,30 +23,6 @@ For a more detailed description of BUILD, see the [BUILD Overview](https://githu
 + [node-sap-mongo-config](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/node-sap-mongo-config)
 + [node-sap-build](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/node-sap-build)
 
-**Build Modules**
-+ [BUILD_PrototypeEditors](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/BUILD_PrototypeEditors)
-+ [BUILD](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/BUILD_angular-sap-common-directives)
-+ [BUILD_Projects](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/BUILD_Projects)
-+ [BUILD_UICatalogManager](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/BUILD_UICatalogManager)
-+ [BUILD_UserResearch](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/BUILD_UserResearch)
-+ [BUILD_UXRuleEngine](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/BUILD_UXRuleEngine)
-+ [BUILD_BusinessCatalogManager](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/BUILD_BusinessCatalogManager)
-+ [BUILD_Auth](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/BUILD_Auth) 
-+ [BUILD_Shell](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/BUILD_Shell)
-+ [BUILD_SharedThirdParties](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/BUILD_SharedThirdParties)
-+ [BUILD_Common](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/BUILD_Common)
-+ [BUILD_AngularUIGrid](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/BUILD_NgUIGrid)
-+ [BUILD_AngularUIGridTree](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/BUILD_norman-angular-ui-tree)
-+ [BUILD_AngularUIGridZip](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/BUILD_AngularZip)
-+ [BUILD_Html2Canvas](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/BUILD_Html2Canvas)
-+ [BUILD_KeyBoardEventPolyfill](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/BUILD_norman-keyboard-event-polyfill)
-+ [BUILD_D3Plugins](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/BUILD_norman-d3-plugins)
-+ [BUILD_jQuery](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/BUILD_jquery-norman)
-
-**Admin Modules**
-+ [BUILD_AdminUsers](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/BUILD_admin-users)
-+ [BUILD_Admin](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/BUILD_admin)
-+ [BUILD_AdminAudit](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/BUILD_admin-audit)
 
 # User Documentation
 Check out the [Build Support](http://sap.github.io/BUILD_User_Assistance) for detailed help topics and video tutorial about using Build!
