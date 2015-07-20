@@ -7,9 +7,9 @@ For a more detailed description of BUILD, see the [BUILD Overview](https://githu
 
 # Modules in Build
 **Foundation Modules**
-+ [angular-sap-common-directives](UXD-BUILD-OPENSOURCE/BUILD/angular-sap-common-directives)
-+ [angular-sap-common-services](UXD-BUILD-OPENSOURCE/BUILD/angular-sap-common-services)
-+ [angular-sap-ui-elements](UXD-BUILD-OPENSOURCE/BUILD/angular-sap-ui-elements)
++ [angular-sap-common-directives](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/BUILD/angular-sap-common-directives)
++ [angular-sap-common-services](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/BUILD/angular-sap-common-services)
++ [angular-sap-ui-elements](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/BUILD/angular-sap-ui-elements)
 + [angular-sap-common-filters](https://github.wdf.sap.corp/Norman/Norman)
 + [node-sap-mongo-config](https://github.wdf.sap.corp/Norman/node-sap-mongo-config)
 + [node-sap-common](https://github.wdf.sap.corp/Norman/node-sap-common)
