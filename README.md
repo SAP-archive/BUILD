@@ -1,5 +1,7 @@
 <img src = "https://github.com/SAP/BUILD/blob/master/docs/images/BUILD_Logo_Light.png?raw=true" height="128"> 
 
+** Release work in Progress - Check back soon**
+
 # Overview 
 BUILD  is an open-source, cloud-based and social platform that enables users, even those with no UI development knowledge, to easily create fully interactive prototypes with realistic data, share them with colleagues and consolidate this feedback without writing a line of code. 
 
@@ -56,6 +58,7 @@ Check out the [Build Support](http://sap.github.io/BUILD_User_Assistance) for de
 - install [GIT](https://git-scm.com/downloads)
 - install [npm.js](https://docs.npmjs.com/cli/install) - _*only version 1.4.28 is supported*_
 - install [node.js](https://docs.npmjs.com/cli/install) -_*only version 10.28 is supported*_
+- install [mongodb]()
 
 ## Download / Clone
 
@@ -70,6 +73,11 @@ Check out the [Build Support](http://sap.github.io/BUILD_User_Assistance) for de
     ```
 
 _If you're having a problem installing, you can create a bug or ask a question using the [BUILD Issue Tracker](https://github.com/SAP/BUILD/issues) or contact contact.build@sap.com and we will reach out to you._ 
+
+## TO DO 
+- [ ] Fix issue #2 with install
+- [ ] Update package names
+- [ ] 
 
 ## Copyright and Licenses
 
