@@ -77,7 +77,6 @@ _If you're having a problem installing, you can create a bug or ask a question u
 ## TO DO 
 - [ ] Fix issue #2 with install
 - [ ] Update package names
-- [ ] 
 
 ## Copyright and Licenses
 
