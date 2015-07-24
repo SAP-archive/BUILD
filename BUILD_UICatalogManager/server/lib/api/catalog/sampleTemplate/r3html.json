@@ -1,0 +1,89 @@
+{
+  "controls": { "html_my_GoogleMap":{
+    "additionalMetadata": {
+      "parent": "iframe",
+      "properties": { "width":{
+        "defaultValue": "300px",
+        "displayName": "Width",
+        "group": "Appearance",
+        "name": "width",
+        "type": "sap.ui.core.CSSSize",
+        "isEditable": true
+      },
+      "height":{
+        "defaultValue": "200px",
+        "displayName": "Height",
+        "group": "Appearance",
+        "name": "height",
+        "type": "sap.ui.core.CSSSize",
+        "isEditable": true
+      }
+      }
+    },
+    "description": "html.my.GoogleMap",
+    "groupName": "Standard Controls",
+    "helpText": "placeholder for text data",
+    "icon": "",
+    "link": "",
+    "uiLang": "html",
+    "displayToUser": true,
+    "displayName": "Google Map"
+  },
+  "html_my_YoutubeVideo":{
+    "additionalMetadata": {
+      "parent": "iframe",
+      "properties": { "Width":{
+        "defaultValue": "420px",
+        "displayName": "Width",
+        "group": "Appearance",
+        "name": "width",
+        "type": "sap.ui.core.CSSSize",
+        "isEditable": true,
+        "possibleValues": [
+          "200px",
+          "300px",
+          "400px",
+          "500px"
+        ]
+      },
+      "height":{
+        "defaultValue": "315px",
+        "displayName": "Height",
+        "group": "Appearance",
+        "name": "height",
+        "type": "sap.ui.core.CSSSize",
+        "isEditable": true
+      },
+      "allowfullscreen":{
+        "defaultValue": "true",
+        "displayName": "Fullscreen",
+        "group": "Behaviour",
+        "name": "allowfullscreen",
+        "type": "boolean",
+        "isEditable": true
+      }
+      }
+    },
+    "description": "html.my.YoutubeVideo",
+    "groupName": "Standard Controls",
+    "helpText": "placeholder for text data",
+    "link": "",
+    "uiLang": "html",
+    "displayToUser": true,
+    "displayName": "Youtube Video"
+  },
+  "libraryDescription": "HTML controls",
+  "libraryName": "html.my"
+  },
+    "floorplans": {},
+    "catalogVersion": "0.1",
+    "description": "sample html catalog",
+    "displayName":"Html",
+    "libraryType": "html",
+    "catalogName": "r3html",
+    "isRootCatalog":true,
+    "rootCatalogId":null,
+    "libraryURL": "",
+    "libraryPublicURL": ""
+}
+

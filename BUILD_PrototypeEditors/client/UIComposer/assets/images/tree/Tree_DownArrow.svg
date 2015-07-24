@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="8px" height="5px" viewBox="0 0 8 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Tree_DownArrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="AppComposer_NavOFF" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="APP-COMPOSER-2" sketch:type="MSArtboardGroup" transform="translate(-18.000000, -679.000000)" fill="#DBDFE1">
+            <g id="LIBRARY-+-Tree" sketch:type="MSLayerGroup" transform="translate(-1.000000, 100.000000)">
+                <g id="Tree" transform="translate(0.000000, 551.000000)" sketch:type="MSShapeGroup">
+                    <path d="M27,28.5 C27,28.6354173 26.9505213,28.7526037 26.8515625,28.8515625 L23.3515625,32.3515625 C23.2526037,32.4505213 23.1354173,32.5 23,32.5 C22.8645827,32.5 22.7473963,32.4505213 22.6484375,32.3515625 L19.1484375,28.8515625 C19.0494787,28.7526037 19,28.6354173 19,28.5 C19,28.3645827 19.0494787,28.2473963 19.1484375,28.1484375 C19.2473963,28.0494787 19.3645827,28 19.5,28 L26.5,28 C26.6354173,28 26.7526037,28.0494787 26.8515625,28.1484375 C26.9505213,28.2473963 27,28.3645827 27,28.5 L27,28.5 Z" id="Tree_DownArrow"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

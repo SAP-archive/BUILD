@@ -1,0 +1,101 @@
+@import (reference) '../node_modules/norman-client-tp/node_modules/angular-sap-ui-elements/styles/variables';
+@import (reference) '../node_modules/norman-client-tp/node_modules/angular-sap-ui-elements/styles/sprite';
+
+.cropArea { background: #2b3e50; overflow: hidden; width: 800px; height: 365px; position: relative; }
+
+.cropper { position:absolute; width: 100%; height: 100%; overflow: hidden;
+    top: 0; bottom: 0; left: 0; right: 0;
+    -moz-user-select: none; -webkit-user-select: none; user-select: none;
+
+    .bg { position: absolute; left: 270px; top: 30px; z-index: 0; opacity: 0.3; max-width: initial;
+        transform-origin: 0 0; pointer-events: none;
+    }
+
+    .img-wrapper { position: absolute; top: 50%; left: 50%; margin: -149px 0 0 -129px;
+        width: 260px; height: 260px; overflow: hidden;
+        border-radius: 100%; z-index: 2;
+    }
+
+    .img { position: absolute; top: 0; left: 0; cursor: move; max-width: none; }
+}
+
+.zoomSlider { position: absolute; height: 10px; width: 255px; top: 305px; left: 285px;
+    &.hidden { display: none; }
+}
+.zoomSlider .jslider.sliderCSS div.jslider-pointer {
+  top: -5px;
+  width: 15px;
+  height: 15px;
+}
+
+.sliderMinus {
+  position: absolute;
+  left: -20px;
+  top: -3px;
+  font-size: 20px;
+}
+
+.sliderPlus {
+  position: absolute;
+  left: 265px;
+  top: -3px;
+  font-size: 20px;
+}
+
+
+
+.na-avatar { margin-top: 35px; margin-bottom: 20px; }
+.na-avatar-file-input { position: fixed; top: -1000px; }
+
+.ui-dialog.na-avatar-upload-popover { height: 482px; width: 750px;
+    -moz-user-select: none; -webkit-user-select: none; user-select: none;
+}
+
+.na-user-avatar { display: inline-block; vertical-align: middle;
+    .ui-avatar { margin-top: -20px!important; width: 141px; height: 141px;
+      .ui-avatar-initials {line-height: 141px; font-size: 50px;}
+    }
+    .ui-avatar-image { width: 141px; height: 141px; line-height: 141px; font-size: 50px; }
+}
+
+
+.na-photo-actions { display: inline-block; margin-left: 30px; vertical-align: middle; }
+
+.na-upload-photo { margin-bottom: 14px; cursor: pointer; height: 25px; }
+.na-upload-photo-text { display: inline-block; color: #3398db; margin-left: 3px; height: 25px;
+    vertical-align: top;
+}
+
+.na-delete-photo { cursor: pointer; height: 25px; }
+.na-delete-photo-text { display: inline-block; color: #e74c3c; margin-left: 9px;
+  vertical-align: top;
+  position: relative;
+  padding-left: 20px;
+  &:before {
+    position: absolute;
+    content: '';
+    left: -6px;
+    top: 0;
+    .common-trashcan-small();
+    .common-trashcan-small-dims();
+  }
+}
+
+.crop-link-container {
+  top: 330px; left: 350px;
+  color: @CuriousBlue-500;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-left: 10px;
+  position: relative;
+  padding-left: 20px;
+  &:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 3px;
+    .common-ico-crop();
+    .common-ico-crop-dims();
+  }
+}
+

@@ -1,0 +1,111 @@
+{
+  "name": "SimplePage",
+  "mainEntityId": "",
+  "rootControlId": "RootControl",
+  "controls": [
+    {
+      "controlId": "RootControl",
+      "parentControlId": null,
+      "catalogControlName": "sap_m_Page",
+      "properties": [
+        {
+          "name": "title",
+          "value": "Simple Page"
+        }
+      ],
+      "groups": [
+        {
+          "groupId": "content",
+          "children": ["MyList"]
+        }
+      ]
+    },
+    {
+      "controlId": "MyList",
+      "parentControlId": "RootControl",
+      "catalogControlName": "sap_m_List",
+      "groups": [
+        {
+          "groupId": "items",
+          "children": ["MyListItem"],
+          "binding": {
+              "isRelative": false,
+              "paths": [{
+                  "entityId": "Entity1",
+                  "propertyId": ""
+              }]
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "MyListItem",
+      "parentControlId": "MyList",
+      "catalogControlName": "sap_m_ObjectListItem",
+      "properties": [
+        {
+          "name": "title",
+          "value": "My Item Title",
+          "binding": {
+              "isRelative": true,
+              "paths": [{
+                  "entityId": "Entity1",
+                  "propertyId": "Prop1"
+              }]
+          }
+        }
+      ],
+      "groups": [
+        {
+            "groupId": "attributes",
+            "children": ["MyObjectAttribute"],
+            "binding": {
+                "isRelative": true,
+                "paths": [{
+                    "entityId": "Entity1",
+                    "propertyId": "NavProp1"
+                }]
+            }
+        }
+      ]
+    },
+    {
+      "controlId": "MyObjectAttribute",
+      "parentControlId": "MyListItem",
+      "catalogControlName": "sap_m_ObjectAttribute",
+      "properties": [
+          {
+              "name": "title",
+              "value": "My sales order id",
+              "binding": {
+                  "isRelative": true,
+                  "paths": [
+                      {
+                          "entityId": "Entity3",
+                          "propertyId": "Prop1"
+                      }
+                  ]
+              }
+          },
+          {
+              "name": "text",
+              "value": "My product description",
+              "binding": {
+                  "isRelative": true,
+                  "paths": [
+                      {
+                          "entityId": "Entity3",
+                          "propertyId": "NavProp1"
+                      },
+                      {
+                          "entityId": "Entity2",
+                          "propertyId": "Prop2"
+                      }
+                  ]
+              }
+          }
+
+      ]
+    }
+  ]
+}

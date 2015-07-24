@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+           xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+           xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="SRA021_SRV" xml:lang="en" sap:schema-version="1"
+                xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityType Name="Descriptor" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="key"/>
+                </Key>
+                <Property Name="info" Type="Edm.String" sap:label="Info" sap:creatable="false" sap:updatable="false"
+                          sap:sortable="false" sap:filterable="false"/>
+                <Property Name="key" Type="Edm.Int32" Nullable="false" sap:label="Key" sap:creatable="false"
+                          sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="infoStatus" Type="Edm.String" m:FC_TargetPath="SyndicationTitle"
+                          m:FC_KeepInContent="true" sap:label="InfoStatus" sap:creatable="false" sap:updatable="false"
+                          sap:sortable="false" sap:filterable="false"/>
+                <Property Name="number" Type="Edm.Int32" sap:creatable="false" sap:updatable="false"
+                          sap:sortable="false" sap:filterable="false"/>
+                <Property Name="numberUnit" Type="Edm.String" sap:creatable="false" sap:updatable="false"
+                          sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="Customer" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="CustomerID"/>
+                </Key>
+                <Property Name="CustomerName" Type="Edm.String" MaxLength="35" m:FC_TargetPath="SyndicationTitle"
+                          m:FC_KeepInContent="true" sap:label="CustomerName" sap:creatable="false"/>
+                <Property Name="CustomerID" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="Customer Id"/>
+                <NavigationProperty Name="Invoices" Relationship="SRA021_SRV.CustomerInvoice"
+                                    FromRole="FromRole_CustomerInvoice" ToRole="ToRole_CustomerInvoice"/>
+            </EntityType>
+            <EntityType Name="Invoice" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="INVOICENUMBER"/>
+                </Key>
+                <Property Name="POCount" Type="Edm.Int32" sap:label="POCount" sap:creatable="false"
+                          sap:updatable="false" sap:sortable="false"/>
+                <Property Name="DueDate" Type="Edm.DateTime" Precision="7" sap:label="DueDate" sap:creatable="false"
+                          sap:updatable="false"/>
+                <Property Name="InvoiceDate" Type="Edm.DateTime" Precision="7" sap:label="InvoiceDate"
+                          sap:creatable="false" sap:updatable="false"/>
+                <Property Name="ReferenceInvoice" Type="Edm.String" MaxLength="16" sap:label="ReferenceInvoice"
+                          sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="TypeText" Type="Edm.String" MaxLength="20" sap:label="TypeText" sap:creatable="false"
+                          sap:updatable="false" sap:sortable="false"/>
+                <Property Name="SOCount" Type="Edm.Int32" sap:label="SOCount" sap:creatable="false"
+                          sap:updatable="false" sap:sortable="false"/>
+                <Property Name="INVOICENUMBER" Type="Edm.String" Nullable="false" MaxLength="10"
+                          sap:label="INVOICENUMBER" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Amount" Type="Edm.Decimal" Precision="23" Scale="4" sap:unit="Currency"
+                          sap:label="Amount" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Currency" Type="Edm.String" MaxLength="5" sap:label="Currency" sap:creatable="false"
+                          sap:updatable="false" sap:sortable="false" sap:semantics="currency-code"/>
+                <Property Name="Status" Type="Edm.String" sap:label="Status" sap:creatable="false" sap:updatable="false"
+                          sap:sortable="false"/>
+                <Property Name="PONumber" Type="Edm.String" MaxLength="35" sap:label="PONumber" sap:creatable="false"
+                          sap:updatable="false" sap:sortable="false"/>
+                <Property Name="SONumber" Type="Edm.String" MaxLength="10" sap:label="SONumber" sap:creatable="false"
+                          sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Type" Type="Edm.String" sap:label="Type" sap:creatable="false" sap:updatable="false"
+                          sap:sortable="false"/>
+                <Property Name="BillToParty" Type="Edm.String" m:FC_TargetPath="SyndicationTitle"
+                          m:FC_KeepInContent="true" sap:label="BillToParty" sap:creatable="false" sap:updatable="false"
+                          sap:sortable="false"/>
+                <NavigationProperty Name="DetailInvoice" Relationship="SRA021_SRV.InvoiceDetailInvoice"
+                                    FromRole="FromRole_InvoiceDetailInvoice" ToRole="ToRole_InvoiceDetailInvoice"/>
+                <NavigationProperty Name="Items" Relationship="SRA021_SRV.InvoiceItem" FromRole="FromRole_InvoiceItem"
+                                    ToRole="ToRole_InvoiceItem"/>
+                <NavigationProperty Name="Contacts" Relationship="SRA021_SRV.InvoiceContact"
+                                    FromRole="FromRole_InvoiceContact" ToRole="ToRole_InvoiceContact"/>
+            </EntityType>
+            <EntityType Name="DetailInvoice" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="INVOICENUMBER"/>
+                </Key>
+                <Property Name="TotalTax" Type="Edm.Decimal" Precision="13" Scale="13" sap:unit="Currency"
+                          sap:label="TotalTax" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="Currency" Type="Edm.String" MaxLength="5" sap:label="Currency" sap:creatable="false"
+                          sap:updatable="false" sap:sortable="false" sap:filterable="false"
+                          sap:semantics="currency-code"/>
+                <Property Name="BillingAdressName1" Type="Edm.String" MaxLength="35" sap:label="BillingAdressName1"
+                          sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="BillingAdressName2" Type="Edm.String" MaxLength="35" sap:label="BillingAdressName2"
+                          sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="BillingAdressCity" Type="Edm.String" MaxLength="35" sap:label="BillingAdressCity"
+                          sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="BillingAdressCountryKey" Type="Edm.String" MaxLength="3"
+                          sap:label="BillingAdressCountryKey" sap:creatable="false" sap:updatable="false"
+                          sap:sortable="false" sap:filterable="false"/>
+                <Property Name="BillingAdressPostalCode" Type="Edm.String" MaxLength="10"
+                          sap:label="BillingAdressPostalCode" sap:creatable="false" sap:updatable="false"
+                          sap:sortable="false" sap:filterable="false"/>
+                <Property Name="BillingAdressStras" Type="Edm.String" MaxLength="35" sap:label="BillingAdressStras"
+                          sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="INVOICENUMBER" Type="Edm.String" Nullable="false" MaxLength="10"
+                          sap:label="INVOICENUMBER" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="ContentType" Type="Edm.String" MaxLength="1" sap:label="ContentType"
+                          sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TotalItemAmount" Type="Edm.Decimal" Precision="15" Scale="14" sap:unit="Currency"
+                          sap:label="TotalItemAmount" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="TotalFreightAmount" Type="Edm.Decimal" Precision="13" Scale="13" sap:unit="Currency"
+                          sap:label="TotalFreightAmount" sap:creatable="false" sap:updatable="false"
+                          sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TotalAmount" Type="Edm.Decimal" Precision="15" Scale="14" sap:unit="Currency"
+                          sap:label="TotalAmount" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="Balance" Type="Edm.Decimal" Precision="15" Scale="14" sap:unit="Currency"
+                          sap:label="Balance" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="ReferenceInvoice" Type="Edm.String" MaxLength="16" sap:label="ReferenceInvoice"
+                          sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PaymentTerms" Type="Edm.String" MaxLength="30" sap:label="PaymentTerms"
+                          sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Carrier" Type="Edm.String" MaxLength="35" sap:label="Carrier" sap:creatable="false"
+                          sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Incoterms" Type="Edm.String" sap:label="Incoterms" sap:creatable="false"
+                          sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <NavigationProperty Name="SOItemSet" Relationship="SRA021_SRV.DetailInvoiceSOItem"
+                                    FromRole="FromRole_DetailInvoiceSOItem" ToRole="ToRole_DetailInvoiceSOItem"/>
+            </EntityType>
+            <EntityType Name="Item" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="INVOICENUMBER"/>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="TotalPrice" Type="Edm.Decimal" Nullable="false" Precision="29" Scale="9"
+                          sap:unit="Currency" sap:label="TotalPrice" sap:creatable="false" sap:updatable="false"
+                          sap:sortable="false" sap:filterable="false"/>
+                <Property Name="INVOICENUMBER" Type="Edm.String" Nullable="false" MaxLength="10"
+                          sap:label="INVOICENUMBER" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="ID" Type="Edm.Int32" Nullable="false" sap:label="ID" sap:creatable="false"
+                          sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Name" Type="Edm.String" Nullable="false" MaxLength="40"
+                          m:FC_TargetPath="SyndicationTitle" m:FC_KeepInContent="true" sap:label="Name"
+                          sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Quantity" Type="Edm.Decimal" Nullable="false" Precision="13" Scale="3" sap:unit="Unit"
+                          sap:label="Quantity" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="Unit" Type="Edm.String" Nullable="false" MaxLength="3" sap:label="Unit"
+                          sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"
+                          sap:semantics="unit-of-measure"/>
+                <Property Name="UnitPrice" Type="Edm.Decimal" Nullable="false" Precision="29" Scale="9"
+                          sap:unit="Currency" sap:label="UnitPrice" sap:creatable="false" sap:updatable="false"
+                          sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Currency" Type="Edm.String" Nullable="false" MaxLength="5" sap:label="Currency"
+                          sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"
+                          sap:semantics="currency-code"/>
+                <Property Name="Status" Type="Edm.String" Nullable="false" sap:label="Status" sap:creatable="false"
+                          sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="Contact" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Title"/>
+                    <PropertyRef Name="UserID"/>
+                </Key>
+                <Property Name="Title" Type="Edm.String" Nullable="false" sap:label="Title" sap:creatable="false"
+                          sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="FirstName" Type="Edm.String" Nullable="false" MaxLength="40" sap:label="FirstName"
+                          sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="LastName" Type="Edm.String" Nullable="false" MaxLength="40" sap:label="LastName"
+                          sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="FullName" Type="Edm.String" Nullable="false" MaxLength="80" sap:label="FullName"
+                          sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Department" Type="Edm.String" Nullable="false" MaxLength="40" sap:label="Department"
+                          sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="EMail" Type="Edm.String" Nullable="false" MaxLength="241" sap:label="EMail"
+                          sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="WorkPhone" Type="Edm.String" Nullable="false" MaxLength="30" sap:label="WorkPhone"
+                          sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="MobilePhone" Type="Edm.String" Nullable="false" MaxLength="30" sap:label="MobilePhone"
+                          sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CompanyName" Type="Edm.String" Nullable="false" MaxLength="40" sap:label="CompanyName"
+                          sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="AddressString" Type="Edm.String" Nullable="false" sap:label="AddressString"
+                          sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="UserID" Type="Edm.String" Nullable="false" MaxLength="12" sap:label="UserID"
+                          sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="SOItem" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="SONumber"/>
+                </Key>
+                <Property Name="SONumber" Type="Edm.String" Nullable="false" MaxLength="10"
+                          m:FC_TargetPath="SyndicationTitle" m:FC_KeepInContent="true" sap:label="SONumber"
+                          sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PONumber" Type="Edm.String" Nullable="false" MaxLength="35" sap:label="PONumber"
+                          sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <Association Name="InvoiceItem" sap:content-version="1">
+                <End Type="SRA021_SRV.Invoice" Multiplicity="1" Role="FromRole_InvoiceItem"/>
+                <End Type="SRA021_SRV.Item" Multiplicity="*" Role="ToRole_InvoiceItem"/>
+            </Association>
+            <Association Name="InvoiceContact" sap:content-version="1">
+                <End Type="SRA021_SRV.Invoice" Multiplicity="1" Role="FromRole_InvoiceContact"/>
+                <End Type="SRA021_SRV.Contact" Multiplicity="*" Role="ToRole_InvoiceContact"/>
+            </Association>
+            <Association Name="InvoiceDetailInvoice" sap:content-version="1">
+                <End Type="SRA021_SRV.Invoice" Multiplicity="1" Role="FromRole_InvoiceDetailInvoice"/>
+                <End Type="SRA021_SRV.DetailInvoice" Multiplicity="1" Role="ToRole_InvoiceDetailInvoice"/>
+            </Association>
+            <Association Name="CustomerInvoice" sap:content-version="1">
+                <End Type="SRA021_SRV.Customer" Multiplicity="1" Role="FromRole_CustomerInvoice"/>
+                <End Type="SRA021_SRV.Invoice" Multiplicity="*" Role="ToRole_CustomerInvoice"/>
+            </Association>
+            <Association Name="DetailInvoiceSOItem" sap:content-version="1">
+                <End Type="SRA021_SRV.DetailInvoice" Multiplicity="1" Role="FromRole_DetailInvoiceSOItem"/>
+                <End Type="SRA021_SRV.SOItem" Multiplicity="*" Role="ToRole_DetailInvoiceSOItem"/>
+            </Association>
+            <EntityContainer Name="SRA021_SRV_Entities" m:IsDefaultEntityContainer="true"
+                             sap:supported-formats="atom json">
+                <EntitySet Name="Descriptor" EntityType="SRA021_SRV.Descriptor" sap:creatable="false"
+                           sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false"
+                           sap:content-version="1"/>
+                <EntitySet Name="Customers" EntityType="SRA021_SRV.Customer" sap:creatable="false" sap:updatable="false"
+                           sap:deletable="false" sap:searchable="true" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="Invoices" EntityType="SRA021_SRV.Invoice" sap:creatable="false" sap:updatable="false"
+                           sap:deletable="false" sap:searchable="true" sap:content-version="1"/>
+                <EntitySet Name="DetailInvoices" EntityType="SRA021_SRV.DetailInvoice" sap:creatable="false"
+                           sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false"
+                           sap:content-version="1"/>
+                <EntitySet Name="Items" EntityType="SRA021_SRV.Item" sap:creatable="false" sap:updatable="false"
+                           sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="Contacts" EntityType="SRA021_SRV.Contact" sap:creatable="false" sap:updatable="false"
+                           sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="SOItems" EntityType="SRA021_SRV.SOItem" sap:creatable="false" sap:updatable="false"
+                           sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <AssociationSet Name="InvoiceDetailInvoice" Association="SRA021_SRV.InvoiceDetailInvoice"
+                                sap:creatable="false" sap:updatable="false" sap:deletable="false"
+                                sap:content-version="1">
+                    <End EntitySet="Invoices" Role="FromRole_InvoiceDetailInvoice"/>
+                    <End EntitySet="DetailInvoices" Role="ToRole_InvoiceDetailInvoice"/>
+                </AssociationSet>
+                <AssociationSet Name="InvoiceContact" Association="SRA021_SRV.InvoiceContact" sap:creatable="false"
+                                sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="Invoices" Role="FromRole_InvoiceContact"/>
+                    <End EntitySet="Contacts" Role="ToRole_InvoiceContact"/>
+                </AssociationSet>
+                <AssociationSet Name="InvoiceItem" Association="SRA021_SRV.InvoiceItem" sap:creatable="false"
+                                sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="Invoices" Role="FromRole_InvoiceItem"/>
+                    <End EntitySet="Items" Role="ToRole_InvoiceItem"/>
+                </AssociationSet>
+                <AssociationSet Name="CustomerInvoice" Association="SRA021_SRV.CustomerInvoice" sap:creatable="false"
+                                sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="Customers" Role="FromRole_CustomerInvoice"/>
+                    <End EntitySet="Invoices" Role="ToRole_CustomerInvoice"/>
+                </AssociationSet>
+                <AssociationSet Name="DetailInvoiceSOItem" Association="SRA021_SRV.DetailInvoiceSOItem"
+                                sap:creatable="false" sap:updatable="false" sap:deletable="false"
+                                sap:content-version="1">
+                    <End EntitySet="DetailInvoices" Role="FromRole_DetailInvoiceSOItem"/>
+                    <End EntitySet="SOItems" Role="ToRole_DetailInvoiceSOItem"/>
+                </AssociationSet>
+                <FunctionImport Name="Summary" ReturnType="SRA021_SRV.Descriptor" EntitySet="Descriptor"
+                                m:HttpMethod="GET"/>
+            </EntityContainer>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

@@ -1,0 +1,56 @@
+<div ng-controller="SearchCatalogController as controller">
+
+    <ui-dialog id="search-entity-panel" class="noMargin dm-search-catalog-dialog" modal="true" title="{{controller.getTitle(controller.step)}}"
+               cancel-text="Cancel" cancel-action="controller.clear()" close-text="Select"
+               close-action="controller.createEntities()">
+
+        <div>
+
+            <div>
+                <div ng-show="controller.step === controller.steps.CHOOSE_ENTITY">
+                    <div class="dm-search-in-editor-layout">
+                        <ui-input dark class="dm-search-in-editor" placeholder="Search"
+                                  ng-change="controller.onSearch($event)" ng-model="controller.searchText"
+                                  ng-value="controller.searchText"/>
+                    </div>
+                    <div class="dm-catalog-search-in-editor">
+                        <div class="dm-catalog-search-in-editor-container">
+                            <div ng-repeat="entity in controller.searchResults track by $index">
+                                <div class="dm-catalog-search-in-editor-content"
+                                     ng-click="controller.setSelectedEntity(entity)">
+                                    <div class="dm-catalog-search-in-editor-content-entity">
+                                        <span ng-repeat="part in controller.split(entity.name) track by $index"
+                                              ng-class="{'dm-search-match' : controller.match(part)}">
+                                            {{part}}
+                                        </span>
+                                    </div>
+                                    <div class="dm-catalog-search-in-editor-content-catalog">
+                                        from {{entity.catalog.description}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div ng-show="controller.step === controller.steps.CHOOSE_TYPE">
+                    <div class="dm-choose-type-title">
+                        <label class="dm-label">{{controller.selectedEntity.name}}</label>
+                    </div>
+                    <div class="dm-choose-type-container">
+                        <ui-radio dark ng-model="controller.creationType" value="{{controller.creationTypes.OBJECT}}"
+                                  id="dm-choosse-type-object"></ui-radio>
+                        <label for="dm-choosse-type-object" class="dm-label">Object</label>
+                    </div>
+                    <div class="dm-choose-type-container">
+                        <ui-radio dark ng-model="controller.creationType" value="{{controller.creationTypes.ALL}}"
+                                  id="dm-choosse-type-all"></ui-radio>
+                        <label for="dm-choosse-type-all" class="dm-label">Object & Relations</label>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </ui-dialog>
+</div>

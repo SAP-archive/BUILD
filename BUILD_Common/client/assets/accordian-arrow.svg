@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="7px" height="11px" viewBox="0 0 7 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-down 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="UI-TOOLKIT" sketch:type="MSArtboardGroup" transform="translate(-1163.000000, -1218.000000)" fill="#FFFFFF">
+            <g id="INPUTS-2" sketch:type="MSLayerGroup" transform="translate(736.000000, 1109.000000)">
+                <path d="M430.807072,117.871498 C430.720636,117.957166 430.61828,118 430.5,118 C430.38172,118 430.279364,117.957166 430.192928,117.871498 L425.129653,112.859903 C425.043217,112.774235 425,112.671659 425,112.552174 C425,112.432689 425.043217,112.330113 425.129653,112.244444 L426.262407,111.128502 C426.348842,111.042834 426.451199,111 426.569479,111 C426.687759,111 426.790115,111.042834 426.876551,111.128502 L430.5,114.719807 L434.123449,111.128502 C434.209885,111.042834 434.312241,111 434.430521,111 C434.548801,111 434.651158,111.042834 434.737593,111.128502 L435.870347,112.244444 C435.956783,112.330113 436,112.432689 436,112.552174 C436,112.671659 435.956783,112.774235 435.870347,112.859903 L430.807072,117.871498 Z" id="arrow-down-3" sketch:type="MSShapeGroup" transform="translate(430.500000, 114.500000) rotate(-90.000000) translate(-430.500000, -114.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,8 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.view.PageWithAsset" xmlns:m="sap.m">
+    <m:Page id="RootControl" title="Simple Page">
+        <m:content>
+            <m:Label id="MyLabel" text="My Label"/>
+            <m:Image id="MyImage" src="assets/54eb4221df562d9aa035aef7"/>
+        </m:content>
+    </m:Page>
+</mvc:View>

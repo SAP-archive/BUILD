@@ -1,0 +1,7 @@
+<div class="social-buttons">
+    <!--<label ng-if="OAUTH.FACEBOOK.enable || OAUTH.GOOGLE.enable || OAUTH.LINKEDIN.enable">or use social sign-in:</label>-->
+    <br/>
+    <a ng-if="OAUTH.FACEBOOK.enable"class="login-btn login-btn-fb" ng-click="loginOauth('facebook')">Sign in with Facebook</a>
+    <a ng-if="OAUTH.GOOGLE.enable"class="login-btn login-btn-gl" ng-click="loginOauth('google')">Sign in with Google</a>
+    <a ng-if="OAUTH.LINKEDIN.enable" class="login-btn login-btn-li" ng-click="loginOauth('linkedin')">Sign in with LinkedIn</a>
+</div>

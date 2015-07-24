@@ -1,0 +1,67 @@
+{
+    "name": "SimplePage",
+    "mainEntityId": "Entity1",
+    "rootControlId": "RootControl",
+    "controls": [
+        {
+            "controlId": "RootControl",
+            "controlName": "sap_m_Page",
+            "parentControlId": null,
+            "catalogControlName": "sap_m_Page",
+            "properties": [
+                {
+                    "name": "title",
+                    "value": "Simple Page"
+                }
+            ],
+            "groups": [
+                {
+                    "groupId": "content",
+                    "children": ["Date", "Time"]
+                }
+            ]
+        },
+        {
+            "controlId": "Date",
+            "parentControlId": null,
+            "catalogControlName": "sap_m_Text",
+            "controlName": "sap_m_Text",
+            "properties": [
+                {
+                    "name": "text",
+                    "value": "",
+                    "binding": {
+                        "isRelative": true,
+                        "paths": [
+                            {
+                                "entityId": "Entity1",
+                                "propertyId": "Prop4"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "controlId": "Time",
+            "parentControlId": null,
+            "catalogControlName": "sap_m_Text",
+            "controlName": "sap_m_Text",
+            "properties": [
+                {
+                    "name": "text",
+                    "value": "",
+                    "binding": {
+                        "isRelative": true,
+                        "paths": [
+                            {
+                                "entityId": "Entity1",
+                                "propertyId": "Prop5"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

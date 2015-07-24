@@ -1,0 +1,129 @@
+@import (reference) "../../styles/base.less";
+
+#study-review-participant-overview {
+    min-width: 1000px;
+
+    [layout="row"] {
+        margin-top: 20px;
+    }
+    [class*='icon-big'] {
+      min-width: 75px;
+    }
+    span.big {
+      min-width: 100px;
+    }
+     span.xbig {
+      min-width: 120px;
+    }
+
+    .actions div.big {
+        margin: 0 60px 0 10px;
+        min-width: 100px;
+    }
+    span.big-no-margin {
+      min-width: 100px;
+    }
+    .-no-margin {
+        margin: 0px;
+    }
+
+    .first-row {
+        margin-top: 0;
+        h1 {
+            margin: 0 0 10px 0;
+        }
+    }
+    .second-row {
+        margin-top: 50px;
+    }
+    .actions {
+        .text {
+            line-height: 50px;
+            font-weight: 300;
+            font-size: 36px;
+            margin: 0 30px 0 60px;
+        }
+        .text-left {
+            line-height: 50px;
+            font-weight: 300;
+            font-size: 36px;
+            margin-left: 50px;
+            small {
+                font-weight: 300;
+                font-size: 20px;
+            }
+        }
+        .text-left-sentiment {
+            line-height: 40px;
+            padding-left: 10px;
+            font-weight: 300;
+            font-size: 36px;
+            margin-left: 40px;
+            small {
+                font-weight: 300;
+                font-size: 20px;
+            }
+        }
+        span {
+            margin: 0 60px 0 10px;
+            &.title {
+                margin: 0px;
+            }
+            &.big {
+                font-weight: 300;
+                font-size: 64px;
+                letter-spacing: -1px;
+                .normal {
+                    font-weight: 300;
+                    font-size: 48px;
+                    margin: 0;
+                }
+            }
+             &.big-no-margin {
+                font-weight: 300;
+                font-size: 64px;
+                letter-spacing: -1px;
+                margin-right: 0px;
+            }
+            &.small {
+                margin-left: 55px;
+            }
+
+            &.tiny {
+                font-weight: 300;
+                font-size: 15px;
+                margin: -12px 40px 0 15px;
+            }
+            &.medium {
+                font-size: 36px;
+                font-weight: 300;
+                .normal {
+                    font-weight: 300;
+                    font-size: 24px;
+                    margin: 0;
+                }
+            }
+            small {
+                font-size: 36px;
+                font-weight: 400;
+                &.light {
+                    font-weight: 300;
+                }
+            }
+        }
+        .smallCol {
+            margin-top: 30px;
+            .top {
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .chart {
+        &[layout="row"] {
+            margin-top: 0;
+        }
+    }
+    .chart-data {
+        margin-top: 30px;
+    }
+}

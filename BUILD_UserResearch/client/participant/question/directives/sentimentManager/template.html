@@ -1,0 +1,33 @@
+<div class="editMode sentiment-content" ng-if="editMode">
+    <div class="annotation-edit-header text">Comment: </div>
+    <div class="annotation-edit-header numbers" ng-class="{'warning': remainingCharacters < warningLevel}">{{remainingCharacters}}</div>
+    <ui-textarea ng-attr-dark="{{dark}}" maxlength="{{maxlength}}" ng-trim="false" ng-model="details[commentPath]" nn-focus="true"></ui-textarea>
+    <div id="annotationFooter">
+        <div id="sentimentContainer">
+            <div class="sentimentText">I feel:</div>
+            <div class="sentimentButton" ng-class="{active: details.sentiment===SENTIMENT.SAD}" ng-click="changeSentiment(SENTIMENT.SAD)" id="button-sad"    ></div>
+            <div class="sentimentButton" ng-class="{active: details.sentiment===SENTIMENT.NEUTRAL}" ng-click="changeSentiment(SENTIMENT.NEUTRAL)" id="button-neutral"></div>
+            <div class="sentimentButton" ng-class="{active: details.sentiment===SENTIMENT.HAPPY}" ng-click="changeSentiment(SENTIMENT.HAPPY)" id="button-happy" ></div>
+        </div>
+        <ui-button size="small" ng-click="onSave()">SAVE</ui-button>
+    </div>
+</div>
+<div class="sentiment-content" ng-if="!editMode">
+    <div class="annotation-header">
+        <ui-avatar avatar-name="{{details.createdName}}" avatar-image="{{details.avatar_url}}"></ui-avatar>
+        <div ng-if="details.sentiment !== SENTIMENT.NONE" class="annonation-sentiment"
+            ng-class="{'annotation-sentiment-happy': details.sentiment===SENTIMENT.HAPPY,
+            'annotation-sentiment-sad': details.sentiment===SENTIMENT.SAD,
+            'annotation-sentiment-neutral': details.sentiment===SENTIMENT.NEUTRAL}"
+        ></div>
+        <div class="annotation-header-information">
+            <div class="annotation-participant-name">{{details.createdName}}</div>
+            <div class="annotation-comment-date">{{details.createTime | date:'dd-MM-\'yy HH:mm'}}</div>
+        </div>
+    </div>
+    <div class="annotation-comment">{{useLimit && limitedString ? limitedString : details[commentPath]}}</div>
+    <div ng-if="showEditButton || showDeleteButton" class="display-footer editMode">
+        <div ng-if="showEditButton" ng-click="onEdit()" class="annotation-button">Edit</div>
+        <div ng-if="showDeleteButton" class="annotation-button delete" ng-click="onDelete()">Delete</div>
+    </div>
+</div>

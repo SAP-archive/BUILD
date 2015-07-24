@@ -1,0 +1,89 @@
+<ui-toolbar layout="column" class="left-nav-title">
+    <h1 class="ui-toolbar-tools" flex layout="column">Directives > ui-pie-chart</h1>
+</ui-toolbar>
+<ui-content flex ui-scroll-y>
+    <ui-content flex class="doc-content">
+        <div layout="row"><a name="Directives-ui-pie-chart"><h2 class="item-name">ui-pie-chart</h2></a></div>
+
+        <div layout="row"><a name="Directives-ui-pie"><h2 class="item-name">Pie Chart with 3 values no color specify</h2></a></div>
+        <div layout="row">
+            <div class="item" flex="20" flex-sm="20">
+                <ui-pie-chart values-set="pieChartData"></ui-pie-chart>
+            </div>
+            <div class="code" flex="80" flex-sm="80">
+                <pre><code>
+&lt;ui-pie-chart values-set="pieChartData"&gt;&lt;/ui-pie-chart&gt;
+                </code></pre>
+            </div>
+        </div>
+
+        <div layout="row"><a name="Directives-ui-pie"><h2 class="item-name">Small pie Chart with 3 values no color specify</h2></a></div>
+        <div layout="row">
+            <div class="item" flex="20" flex-sm="20">
+                <ui-pie-chart values-set="pieChartData" small></ui-pie-chart>
+            </div>
+            <div class="code" flex="80" flex-sm="80">
+                <pre><code>
+&lt;ui-pie-chart values-set="pieChartData" small&gt;&lt;/ui-pie-chart&gt;
+                </code></pre>
+            </div>
+        </div>
+
+        <div layout="row"><a name="Directives-ui-pie"><h2 class="item-name">Pie Chart with 7 values but no color specify</h2></a></div>
+        <div layout="row">
+            <div class="item" flex="20" flex-sm="20">
+                <ui-pie-chart values-set="pieChartData1"></ui-pie-chart>
+            </div>
+            <div class="code" flex="80" flex-sm="80">
+                <pre><code>
+&lt;ui-pie-chart values-set="pieChartData1"&gt;&lt;/ui-pie-chart&gt;
+                </code></pre>
+            </div>
+        </div>
+
+        <div layout="row"><a name="Directives-ui-pie"><h2 class="item-name">Pie Chart with 7 values and colors</h2></a></div>
+        <div layout="row">
+            <div class="item" flex="20" flex-sm="20">
+                <ui-pie-chart values-set="pieChartData1" color-list="pieChartColor"></ui-pie-chart>
+            </div>
+            <div class="code" flex="80" flex-sm="80">
+                <pre><code>
+&lt;ui-pie-chart values-set="pieChartData1" color-list="pieChartColor"&gt;&lt;/ui-pie-chart&gt;
+                </code></pre>
+            </div>
+        </div>
+
+        <div layout="row"><a name="Directives-Tooltip-Top"><h2 class="item-name">ui-pie-chart Options</h2></a></div>
+        <div layout="row">
+            <div class="item">
+                <div class="table-options">
+                    <table class="table-options-values">
+                        <thead>
+                            <tr>
+                                <th style="width: 100px;">Name</th>
+                                <th style="width: 100px;">type</th>
+                                <th style="width: 50px;">default</th>
+                                <th>description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>values-set</td>
+                                <td>array</td>
+                                <td>''</td>
+                                <td>A one dimensional array representing the data for the chart</td>
+                            </tr>
+                            <tr>
+                                <td>color-list</td>
+                                <td>array</td>
+                                <td>''</td>
+                                <td>A one dimensional array representing the list of colors used by the chart.<br/>These color are represented as Hex value like '#fcfcfc'</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </ui-content>
+</ui-content>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="11px" height="13px" viewBox="0 0 11 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>ico-pause</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="01-MY-STUDIES" sketch:type="MSArtboardGroup" transform="translate(-304.000000, -250.000000)" fill="#FFFFFF">
+            <g id="Project-1" sketch:type="MSLayerGroup" transform="translate(285.000000, 232.000000)">
+                <path d="M19,18.9985023 C19,18.4470447 19.4433532,18 20.0093689,18 L21.9906311,18 C22.5480902,18 23,18.4474894 23,18.9985023 L23,30.0014977 C23,30.5529553 22.5566468,31 21.9906311,31 L20.0093689,31 C19.4519098,31 19,30.5525106 19,30.0014977 L19,18.9985023 Z M26,18.9985023 C26,18.4470447 26.4433532,18 27.0093689,18 L28.9906311,18 C29.5480902,18 30,18.4474894 30,18.9985023 L30,30.0014977 C30,30.5529553 29.5566468,31 28.9906311,31 L27.0093689,31 C26.4519098,31 26,30.5525106 26,30.0014977 L26,18.9985023 Z" id="ico-pause" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

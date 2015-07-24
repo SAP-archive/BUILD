@@ -1,0 +1,31 @@
+<div class="ui-study-tile animated fadeIn">
+    <div>
+        <div ng-if="thumb === '' || !thumb" class="empty-tile-cross-container" ng-click="openStudy()"></div>
+        <div ng-if="status==='paused'" class="paused"></div>
+        <ui-thumbnail ng-if="thumb !== '' && thumb" size="large" light thumbnail-src="{{thumb}}" ng-click="openStudy()"></ui-thumbnail>
+        <div class="link" ui-popup-open="study-url-popup-{{idx}}" ng-if="status==='published'  && !(type === 'participant')" title="Get Link"><div class="ico-link"></div></div>
+    </div>
+    <div class="details">
+        <div class="description" ng-click="openStudy()">
+            <h4 class="study-tile-title-{{idx}}" ng-bind="name"></h4>
+        </div>
+        <div class="date" ng-show="status === 'published' || status === 'paused'">
+            <h5 ng-bind-html="date | uiStudyTileDate"></h5>
+        </div>
+
+        <ui-toolbar layout="row" layout-align="start start" layout-wrap class="icons">
+            <div ng-if="!(type === 'participant')" layout="row" class="item">
+                <div class="icon ico-participant" title="Participants"></div>
+                <span class="text">{{participants}}</span>
+            </div>
+            <div layout="row" class="item">
+                <div class="icon ico-annotation" title="Total Responses"></div>
+                <span class="text">{{annotations}}</span>
+            </div>
+            <div layout="row" class="item">
+                <div class="icon ico-comment" title="Total Comments"></div>
+                <span class="text last">{{comments}}</span>
+            </div>
+        </ui-toolbar>
+    </div>
+</div>

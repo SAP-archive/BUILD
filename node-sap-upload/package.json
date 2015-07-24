@@ -1,0 +1,38 @@
+{
+  "name": "node-sap-upload",
+  "version": "0.1.0",
+  "description": "SAP file upload component",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SAP/BUILD.git"
+  },
+  "maintainers": [
+    {
+      "name": "BUILD Team",
+      "email": "contact.build@sap.com"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "Apache License, Version 2.0",
+      "url": "https://github.com/SAP/BUILD/node-sap-upload/blob/master/LICENSE.md"
+    }
+  ],
+  "dependencies": {
+    "node-sap-common": "~0.1.0",
+    "node-sap-promise": "~0.1.0",
+    "multer": "0.1.7"
+  },
+  "devDependencies": {
+    "chai": "~1.10.0",
+    "del": "~1.1.1",
+    "gulp": "~3.8.11",
+    "gulp-concat": "~2.5.2",
+    "gulp-eslint": "~0.12.0",
+    "gulp-istanbul": "~0.8.1",
+    "gulp-jsdoc-to-markdown": "~1.0.2",
+    "gulp-mocha": "~2.0.1",
+    "gulp-util": "~3.0.4",
+    "object-assign": "~2.0.0"
+  }
+}

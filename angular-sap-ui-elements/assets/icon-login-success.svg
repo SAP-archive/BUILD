@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval 19 + Oval 20 + Path 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="FORGOT--SUCCESS" sketch:type="MSArtboardGroup" transform="translate(-475.000000, -383.000000)">
+            <g id="Oval-19-+-Oval-20-+-Path-2" sketch:type="MSLayerGroup" transform="translate(475.000000, 383.000000)">
+                <circle id="Oval-19" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="16.5" cy="16.5" r="16.5"></circle>
+                <circle id="Oval-20" fill="#27AE60" sketch:type="MSShapeGroup" cx="16.5" cy="16.5" r="14.5"></circle>
+                <path d="M9.4479205,16.0200108 L13.6830113,19.7554992 C13.6830113,19.7554992 18.9209962,12.9264729 24.4359914,9.02557767 C24.8974702,9.99987914 24.4359914,9.02557767 25.1277485,10.4859538 C19.1463553,16.4787226 14.520806,24.9744223 14.520806,24.9744223 L7.87225151,17.7878345 L9.4479205,16.0200108 Z" id="Path-2" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

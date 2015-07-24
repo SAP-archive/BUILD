@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Type something</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.14 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="USE-CASE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="15" sketch:type="MSArtboardGroup" transform="translate(-1404.000000, -72.000000)" filter="url(#filter-1)" fill="#FFFFFF">
+            <g id="BLUE-BAR-for-DM-0" sketch:type="MSLayerGroup" transform="translate(0.000000, 60.000000)">
+                <g id="Undo-Redo" transform="translate(1360.000000, 11.000000)" sketch:type="MSShapeGroup">
+                    <path d="M61.2857337,2.42855525 C61.2857337,2.15288528 61.1160906,1.90902338 60.8722287,1.80299647 C60.6177642,1.69696956 60.3208888,1.74998301 60.1300404,1.95143415 L58.7516905,3.31918131 C57.256711,1.90902338 55.231597,1.07141078 53.1428668,1.07141078 C48.6579285,1.07141078 45,4.72933924 45,9.21427763 C45,13.699216 48.6579285,17.3571445 53.1428668,17.3571445 C55.5708831,17.3571445 57.8610644,16.2862727 59.4090574,14.420199 C59.5150843,14.282364 59.5150843,14.0809129 59.387852,13.9642833 L57.9352833,12.5011119 C57.8610644,12.4374958 57.7656402,12.4056877 57.670216,12.4056877 C57.5747918,12.4162904 57.4793676,12.4587011 57.4263541,12.53292 C56.3872904,13.8794618 54.8286948,14.6428555 53.1428668,14.6428555 C50.1529079,14.6428555 47.7142889,12.2042365 47.7142889,9.21427763 C47.7142889,6.2243187 50.1529079,3.78569973 53.1428668,3.78569973 C54.5318194,3.78569973 55.8465531,4.31583429 56.8432061,5.23826842 L55.3800347,6.70143981 C55.1785836,6.89228825 55.1255701,7.1891636 55.231597,7.4330255 C55.3376239,7.68749009 55.5814858,7.85713315 55.8571558,7.85713315 L60.6071615,7.85713315 C60.9782557,7.85713315 61.2857337,7.5496551 61.2857337,7.17856091 L61.2857337,2.42855525 Z" id="Type-something"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

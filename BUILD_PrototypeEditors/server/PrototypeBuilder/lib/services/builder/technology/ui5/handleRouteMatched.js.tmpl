@@ -1,0 +1,13 @@
+this.sRoute = oEvent.getParameter("name");
+        this.sContext;
+<% _.forEach(navigationTargets, function(navigationTarget) {%>
+        if (this.sRoute === "<%=navigationTarget.routeName%>") {
+            if (oEvent.mParameters.arguments.context != null && oEvent.mParameters.arguments.context != "") {
+                this.sContext = oEvent.mParameters.arguments.context;
+                var params = <%=navigationTarget.params%>
+                this.getView().bindElement("/" + this.sContext, params);
+            }
+        }
+<%
+    })
+%>

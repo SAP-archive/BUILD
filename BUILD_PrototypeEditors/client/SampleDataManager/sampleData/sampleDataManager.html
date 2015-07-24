@@ -1,0 +1,21 @@
+<div ng-controller="sampleDataManagerController">
+    <ui-dialog id="sd-grid-dialog-id" cancel-text="Cancel" close-text="Ok" close-action="okBtnClicked()" cancel-action="sdCancelled()" on-open="openSDDialog()" class="sd-editor-dialog" modal="true">
+        <ui-tabs selected-tab="{{selectedTab}}" class="sdEditorTabstrip" tab-on="tab.active">
+            <ui-tab-option ng:repeat="entityTab in entityTabs" id="{{entityTab.name}}" title="{{entityTab.name}}" key="{{entityTab.name}}"
+            ng-style="isSelected(entityTab.name) && entityTab.activeErrorStyle || entityTab.inactiveErrorStyle">
+                <div class="sdGridWrapper">
+                    <div ui-grid-auto-resize ui-grid-edit ui-grid-selection ui-grid-cellnav ui-grid="entityTab.gridOptions" class="sdEditorGrid" id="sdEditorGrid-id" ng-keyup="onKeyUp($event)">
+                    </div>
+                </div>
+            </ui-tab-option>
+            <div class="sd-header-popover" ng-style="popupShow">
+                <div class="sd-row-pointer-diamond"></div>
+                <ul class="sd-row-header-ul">
+                    <li ng-click="triggerNewLine(emittedRow)">Add Row Below</li>
+                    <li ng-click="triggerDuplicate(row)">Duplicate</li>
+                    <li ng-click="triggerDelete(row)">Delete Row</li>
+                </ul>
+            </div>
+        </ui-tabs>
+    </ui-dialog>
+</div>

@@ -1,0 +1,75 @@
+<div id="participant-list">
+    <div ng-if="showStudy">
+        <h2>STUDY</h2>
+        <h1>{{study.name}}</h1>
+        <h3>Created by {{creator.name}}</h3>
+
+        <!-- Content if the study is not finished -->
+        <div ng-if="answered.length !== study.questions.length">
+            <div class="separator"></div>
+            <div class="description-wrapper">
+                <div class="description">{{study.description}}</div>
+            </div>
+
+            <div class="study-progress">
+                <div class="study-progress-text">
+                    {{quesString}}
+                </div>
+                <div class="progress-bar-outer">
+                    <div class="progress-bar-inner" ng-style="{ 'width': 5 * progress + 'px' }"></div>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------>
+        <!-- Content if the study is finished -->
+        <div ng-if="answered.length === study.questions.length" class="done-message">
+            <div class="congrats-image"></div>
+            <div>All done!</div>
+            <label class="done-label">Thank you for your time, your feedback is valuable to us!</label>
+        </div>
+        <!-------------------------------------->
+
+        <div class="button-wrapper">
+            <ui-button ng-click="goToQuestion(findNextUnansweredQ())" size="large" class="ui-button-xlarge startBtn">
+                {{answered.length === 0 ? "START STUDY" :
+                (answered.length === study.questions.length ? "REVIEW MY ANSWERS" : "CONTINUE STUDY")}}
+            </ui-button>
+        </div>
+
+        <div class="anon-wrapper">
+            <ui-checkbox ng-model="isUserAnonymous" id="anon-check" ng-change="isAnonymous()"></ui-checkbox>
+            <label for="anon-check">I want to be kept anonymous</label>
+            <div class="question-mark-icon" ui-tooltip ui-tooltip-side="bottom" ui-tooltip-class="ui-tooltip-yellow"
+                 ui-tooltip-content="Any feedback you provide will not be identifiable by the Research Team." >?</div>
+        </div>
+
+        <div ng-if="study.annotations.length !== undefined && study.annotations.length !== 0" class="message">
+            <p class="message-text">This study was created using BUILD, a super cool tool for making prototypes and applications.
+                <a class="message-link" href="#" ng-click="goToNorman()">You can try it yourself!</a>
+            </p>
+            <p class="message-foot">Thanks for taking part.</p>
+            <!--<div class="message-delete-icon"></div>-->
+        </div>
+    </div>
+    <div ng-if="!showStudy">
+        <div class="message">
+            <p class="message-text">Unfortunately it is no longer possible to participate in  this  <img src="resources/angular-sap-ui-elements/assets/build-type-black.svg" alt="Build"/> user research study.
+            </p>
+            <p class="message-text">
+                Interested in making your own <img src="resources/angular-sap-ui-elements/assets/build-type-black.svg" alt="Build"/> user research study?
+                <a class="message-link" href="#" ng-click="goToNorman()">Try it yourself!</a>
+            </p>
+            <!--<div class="message-delete-icon"></div>-->
+        </div>
+    </div>
+
+    <div class="login-foot"><div class="login-foot-wrapper">
+        <div class="login-foot-right">
+            <a href="mailto:contact.build@sap.com">Contact</a>
+        </div>
+        <a class="sap-logo" href="#"><img src="resources/norman-user-research-client/assets/icon-sap-blue.svg" alt="SAP" /></a>
+        &copy; Copyright SAP SE 2015
+    </div></div>
+
+
+</div>

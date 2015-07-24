@@ -1,0 +1,103 @@
+{
+    "env": {
+        "NODE_ENV": "test"
+    },
+    "debug": {
+        "active": true,
+        "liveReload": ["/norman"]
+    },
+    "logging": {
+        "output": {
+            "stdout": {
+                "type": "console"
+            }
+        },
+        "loggers": {
+            "*": {
+                "stdout": "debug"
+            },
+            "test": {
+                "stdout": "debug"
+            }
+        }
+    },
+    "db": {
+        "hosts": "localhost",
+        "database": "norman-auth-server-test",
+        "options": {
+            "db": {
+                "safe": {
+                    "w": 1
+                }
+            },
+            "server": {
+                "poolSize": 1,
+                "socketOptions": {
+                    "keepAlive": 1
+                }
+            }
+        }
+    },
+    "deployment": {
+        "strategy": "single"
+    },
+    "http": {
+        "port": 9020,
+        "proxy": {
+            "host": "proxy",
+            "port": 8080
+        },
+        "secureFlag": false
+    },
+    "mail": {
+        "sender":"do.not.reply@test.com",
+        "smtp": {
+            "host": "mail.test.com",
+            "port": 25,
+            "debug": true,
+            "tls": {
+                "rejectUnauthorized": false
+            }
+        }
+    },
+    "services": "services.json",
+    "features": "features.json",
+    "web": {
+        "root": "../../dev",
+        "indexFallback": [
+            "/verifyemail",
+            "/auth",
+            "/auth/*",
+            "/login",
+            "/signup",
+            "/norman",
+            "/forgot-password",
+            "/reset-password/*"
+        ],
+        "compression": {
+            "threshold": 512
+        }
+    },
+    "session": {
+        "expiration": 20,
+        "secret": "4131c82638c2c6088ce04e0dbeb84355fcb851f3d1943e3c896174eef93a0d41"
+    },
+    "security": "security.json",
+    "account": {
+        "accountNameMinlength": 3,
+        "accountNameMaxlength": 120,
+        "forgotPasswordTokenExpiryInDays": 1,
+        "autoResendEmailVerification": true,
+        "emailVerifingTokenExpiryInDays": 30,
+        "emailHasAlreadyVerified": "Your email address has been already verified.",
+        "recoverAccountPasswordTokenExpiredMessage": "The resource your are looking for hasbeen expired, please try again later.",
+        "recoverAccountPasswordTokenVerifiedMessage": "Your email address has been verified."
+    },
+    "access": {
+        "defaultPermissions": [
+            {"access": "standard"},
+            {"study": "participant"},
+            {"project": "collaborator"}
+        ]
+    }
+}

@@ -1,0 +1,228 @@
+@import (reference) '../node_modules/norman-client-tp/node_modules/angular-sap-ui-elements/styles/variables';
+@import (reference) '../node_modules/norman-client-tp/node_modules/angular-sap-ui-elements/styles/sprite';
+
+#admin-access  {
+  padding: 0 30px;
+  height: 100%;
+  overflow: auto;
+  .actions {
+    float: right;
+    margin-top:30px;
+  }
+  .level-information {
+    background-color: @Portafino-500;
+    margin-right: 50px;
+    width: 300px;
+    min-width: 300px;
+    margin-top: 30px;
+
+    &.collapsed {
+      background-color: @White;
+    }
+    .ui-accordion-paneHeader-arrow {
+      background-color: @Portafino-500;
+      height: 33px;
+      width: 25px;
+      margin-left: 8px;
+      &::after, &::before {
+        .common-accordian-arrow-grey;
+        .common-accordian-arrow-grey-dims;
+        height: 10px;
+        padding-top: 5px;
+       }
+    }
+    .collapsed .ui-accordion-paneHeader-arrow {
+      background-color: @White;
+    }
+
+
+    .ui-accordion .ui-accordion-paneContent {
+      background-color: @Portafino-500;
+    }
+    .information-header {
+      height: 25px;
+      font-weight: bold;
+      font-size: 15px;
+      margin: 0;
+      display: inline-block;
+      background-color: @Portafino-500;
+
+      &.collapsed {
+        background-color: @White;
+      }
+
+      .icon-information {
+        float: left;
+        margin-top: 8px;
+        margin-left: 8px;
+        .common-Info;
+        .common-Info-dims;
+      }
+      span.title-information {
+        font-size: 18px;
+        color: @Cascade-500;
+        font-size: 17px;
+        padding-left: 8px;
+        font-weight: normal;
+        line-height: 30px;
+      }
+    }
+
+    .information-content {
+      position: relative;
+      top: -10px;
+      background-color: @Portafino-500;
+      padding-left: 8px;
+      padding-bottom: 10px;
+      padding-bottom: 20px;
+
+      .information-item {
+        margin-top: 20px;
+        padding-right: 10px;
+        .information-item-name {
+          font-weight: bold;
+        }
+      }
+    }
+
+  }
+  .access-list {
+    margin-top: 10px;
+    min-width: 740px;
+     .header {
+       height: 40px;
+       text-transform: uppercase;
+       border-bottom: 1px solid @Black;
+     }
+    .row-access {
+      margin-top: 5px;
+      padding: 5px;
+
+      &:hover {
+        background-color: @Porcelain-500;
+
+        .row-icon {
+          &.action-icon {
+            visibility: visible;
+          }
+        }
+      }
+
+      .row-error {
+        margin-top: 6px;
+        margin-right: 5px;
+        margin-left: 13px;
+         &.icon-error {
+           .common-icon_Warning_small;
+           .common-icon_Warning_small-dims;
+           min-width: 21px;
+         }
+      }
+      .row-domain {
+        height: 35px;
+        line-height: 35px;
+        padding-right: 20px;
+        padding-left: 40px;
+        display: inline-block;
+        min-width: 280px;
+        width:100%;
+
+        &.withError {
+          padding-left: 0px;
+
+        }
+        &.row-input {
+          padding-left: 30px;
+          padding-right: 30px;
+
+          input {
+            width: 210px;
+          }
+          input.error {
+            border-color: @Red;
+          }
+        }
+       }
+      .row-accessLevel {
+        height: 35px;
+        line-height: 35px;
+        padding-right: 20px;
+        display: inline-block;
+        width: 100%;
+        min-width: 310px;
+        .select-level {
+          padding-right: 15px;
+          width: 310px;
+          min-width: 310px;
+        }
+        .ui-select.light.error {
+          border-color: @Red;
+          box-shadow: 0px 1px 3px 0px @Red, inset 0px 1px 0px 0px @White;
+        }
+
+      }
+      .row-icon {
+        &.action-icon {
+          visibility: hidden;
+          float: right;
+          cursor: pointer;
+          background-repeat: no-repeat;
+          background-position: center center;
+          margin-left: 30px;
+          width: 17px;
+          height: 18px;
+          min-width: 17px;
+
+          &.icon-trash {
+            .common-Small_trash;
+            .common-Small_trash-dims;
+            min-width: 17px;
+            padding-top: 9px;
+          }
+
+          &.visible {
+            visibility: visible;
+          }
+        }
+      }
+    }
+    .row-access.header:hover {
+      background-color: @White;
+    }
+  }
+}
+
+#access-error-domain-popover {
+  background-color: @Red;
+  color:@White;
+
+   .access-error-content {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    max-width: 300px;
+    min-width: 200px;
+    min-height: 29px;
+
+    span.access-animate-if {
+      visibility: visible;
+    }
+    span.access-animate-if.ng-enter,  span.access-animate-if.ng-leave {
+      transition: visibility 0s 0.3s, opacity 0.3s !important;
+      transition-timing-function: ease-out;
+    }
+
+    span.access-animate-if.ng-enter,
+    span.access-animate-if.ng-leave.ng-leave-active {
+      opacity:0;
+      visibility: hidden;
+    }
+
+    span.access-animate-if.ng-leave,
+    span.access-animate-if.ng-enter.ng-enter-active {
+      opacity:1;
+      visibility: visible;
+    }
+  }
+}

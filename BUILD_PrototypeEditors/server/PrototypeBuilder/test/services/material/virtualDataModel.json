@@ -1,0 +1,66 @@
+{
+    "projectId": "MyVirtualProject",
+    "entities": [
+        {
+            "_id": "Entity_0",
+            "name": "Entity_0",
+            "nameSet": "Entity_0Set",
+            "label": "Entity_0",
+            "properties": [
+                {
+                    "_id": "Prop1",
+                    "isKey": true,
+                    "propertyType": "String",
+                    "label": "ID",
+                    "order": 0,
+                    "name": "ID"
+                }
+
+            ],
+            "navigationProperties": []
+        },
+        {
+            "_id": "Entity_1",
+            "name": "Entity_1",
+            "nameSet": "Entity_1Set",
+            "label": "Entity_1",
+            "properties": [
+                {
+                    "_id": "Prop11",
+                    "isKey": true,
+                    "propertyType": "String",
+                    "label": "Name",
+                    "order": 0,
+                    "name": "Name"
+                },
+                {
+                    "_id": "Prop12",
+                    "isKey": true,
+                    "propertyType": "String",
+                    "label": "Name_1",
+                    "order": 0,
+                    "name": "Name_1"
+                }
+            ],
+            "navigationProperties": []
+        },
+        {
+            "_id": "Entity_1_1",
+            "name": "Entity_1_1",
+            "nameSet": "Entity_1_1Set",
+            "label": "Entity_1_1",
+            "properties": [
+                {
+                    "_id": "Prop3",
+                    "isKey": true,
+                    "propertyType": "String",
+                    "label": "ID",
+                    "order": 0,
+                    "name": "ID"
+                }
+
+            ],
+            "navigationProperties": []
+        }
+    ]
+}

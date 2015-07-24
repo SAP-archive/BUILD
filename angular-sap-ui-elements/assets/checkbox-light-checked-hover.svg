@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="10px" viewBox="0 0 12 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2 (9961) - http://www.bohemiancoding.com/sketch -->
+    <title>Path 10</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="UI-TOOLKIT" sketch:type="MSArtboardGroup" transform="translate(-490.000000, -666.000000)" fill="#FFFFFF" opacity="0.5">
+            <g id="CHECK-BOXES" sketch:type="MSLayerGroup" transform="translate(445.000000, 435.000000)">
+                <path d="M46.2670683,235.36056 L49.1094066,237.797955 C49.1094066,237.797955 52.6248271,233.342035 56.3261602,230.796713 C56.6358771,231.432441 56.3261602,230.796713 56.790426,231.749604 C52.7760745,235.659868 49.671684,241.203287 49.671684,241.203287 L45.209574,236.51406 L46.2670683,235.36056 Z" id="Path-10" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

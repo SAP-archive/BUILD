@@ -1,0 +1,27 @@
+<ui-dialog
+        id="idRoleDialog"
+        title="SET ROLE"
+        cancel-text="Cancel"
+        close-text="OK"
+        cancel-action="_onCancel()"
+        close-action="_onSave(users[selectedIndex].id)"
+        modal="true"
+        class="ui-dialog-content ui-dialog-title">
+
+    <div class="contentRole">
+        <div class="roleDialogName"><p>{{users[selectedIndex].name}}</p></div>
+
+        <ui-radio type="radio" ng-click="_onClick()" ng-model="user.role" id="radioStandard" value="standard"></ui-radio>
+        <label for="radioStandard" class="textLabel">Standard User</label>
+        <div class="textRole">Create and Manage Projects</div>
+
+        <br/>
+
+        <ui-radio type="radio" ng-click="_onClick()" ng-model="user.role" id="radioGuest" value="guest"></ui-radio>
+        <label for="radioGuest" class="textLabel">Guest</label>
+        <div class="textRole" ng-show="toggleGuest">Participate in Studies Only</div>
+        <div class="textRoleOnChange" ng-show="!toggleGuest">Changing the user’s role from “Standard User” to “Guest” will delete all the user’s projects.</div>
+
+    </div>
+
+</ui-dialog>

@@ -1,0 +1,30 @@
+{
+  "name": "norman-projects-client",
+  "version": "0.1.0",
+  "description": "Angular module to handle projects",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SAP/BUILD.git"
+  },
+  "maintainers": [
+    {
+      "name": "BUILD Team",
+      "email": "contact.build@sap.com"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "Apache License, Version 2.0",
+      "url": "https://github.com/SAP/BUILD/blob/master/LICENSE.txt"
+    }
+  ],
+  "readmeFilename": "README.md",
+  "scripts": {},
+  "peerDependencies": {
+    "norman-client-tp": "*",
+    "norman-shell-client": "*"
+  },
+  "dependencies": {
+    "q": "1.1.2"
+  }
+}

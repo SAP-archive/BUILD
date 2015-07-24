@@ -1,0 +1,12 @@
+{
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "require": true,
+    "angular": true,
+    "module": true
+  },
+  "rules": {
+  }
+}

@@ -1,0 +1,483 @@
+{
+  "_id": "cb4e4292dc77d3ad0a62a7c2",
+  "__v": 0,
+  "projectId": "19576735b101d32b0a62a775",
+  "entities": [
+    {
+      "_id": "feb48b53de508dac0a62a784",
+      "name": "Product",
+      "nameSet": "ProductSet",
+      "label": "Product",
+      "isReadOnly": false,
+      "groups": [],
+      "tags": [],
+      "navigationProperties": [
+        {
+          "_id": "d3f6839e0f67729b0a62a784",
+          "toEntityId": "15f1e80027f639400a62a784",
+          "name": "setpart",
+          "multiplicity": true,
+          "isReadOnly": false,
+          "referentialConstraints": [
+            {
+              "entityId": "feb48b53de508dac0a62a784",
+              "propertyRef": "9c71b79844627c0b0a62a784"
+            },
+            {
+              "entityId": "15f1e80027f639400a62a784",
+              "propertyRef": "4dfd9c5ceeccebad0a62a784"
+            }
+          ]
+        },
+        {
+          "_id": "1af5d9fcf59114a70a62a784",
+          "toEntityId": "9e8d2f3b53d099470a62a784",
+          "name": "Contact",
+          "multiplicity": true,
+          "isReadOnly": false,
+          "referentialConstraints": [
+            {
+              "entityId": "feb48b53de508dac0a62a784",
+              "propertyRef": "9c71b79844627c0b0a62a784"
+            },
+            {
+              "entityId": "9e8d2f3b53d099470a62a784",
+              "propertyRef": "4c9912656b5dbef30a62a784"
+            }
+          ]
+        },
+        {
+          "_id": "924e67b4df08c5c90a62a7ac",
+          "toEntityId": "223f1b3d669f0d840a62a78e",
+          "name": "Category",
+          "multiplicity": false,
+          "isReadOnly": false,
+          "referentialConstraints": [
+            {
+              "entityId": "223f1b3d669f0d840a62a78e",
+              "propertyRef": "7aa49f7c4fa509130a62a78e"
+            },
+            {
+              "entityId": "feb48b53de508dac0a62a784",
+              "propertyRef": "7e58733199386dc20a62a7ac"
+            }
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "_id": "9c71b79844627c0b0a62a784",
+          "name": "ID",
+          "label": "ID",
+          "order": 1,
+          "propertyType": "String",
+          "isReadOnly": false,
+          "isKey": true,
+          "isNullable": true,
+          "isForeignKey": false,
+          "isAsset": false,
+          "tags": [],
+          "calculated": {"inputProperties": []}
+        },
+        {
+          "_id": "2de1fb62487990b80a62a784",
+          "name": "Name",
+          "label": "Name",
+          "order": 2,
+          "propertyType": "String",
+          "isReadOnly": false,
+          "isKey": false,
+          "isNullable": true,
+          "isForeignKey": false,
+          "isAsset": false,
+          "tags": [],
+          "calculated": {"inputProperties": []}
+        },
+        {
+          "_id": "ccf2b57382cc98a30a62a784",
+          "name": "Price",
+          "label": "Price",
+          "order": 3,
+          "propertyType": "String",
+          "isReadOnly": false,
+          "isKey": false,
+          "isNullable": true,
+          "isForeignKey": false,
+          "isAsset": false,
+          "tags": [],
+          "calculated": {"inputProperties": []}
+        },
+        {
+          "_id": "c9d690f842d3f2510a62a784",
+          "name": "Currency",
+          "label": "Currency",
+          "order": 4,
+          "propertyType": "String",
+          "isReadOnly": false,
+          "isKey": false,
+          "isNullable": true,
+          "isForeignKey": false,
+          "isAsset": false,
+          "tags": [],
+          "calculated": {"inputProperties": []}
+        },
+        {
+          "_id": "c073d9e94219a2420a62a784",
+          "name": "Pieces",
+          "label": "Pieces",
+          "order": 5,
+          "propertyType": "String",
+          "isReadOnly": false,
+          "isKey": false,
+          "isNullable": true,
+          "isForeignKey": false,
+          "isAsset": false,
+          "tags": [],
+          "calculated": {"inputProperties": []}
+        },
+        {
+          "_id": "d4797c6367d5c37c0a62a784",
+          "name": "Reviews",
+          "label": "Reviews",
+          "order": 6,
+          "propertyType": "String",
+          "isReadOnly": false,
+          "isKey": false,
+          "isNullable": true,
+          "isForeignKey": false,
+          "isAsset": false,
+          "tags": [],
+          "calculated": {"inputProperties": []}
+        },
+        {
+          "_id": "3d9e782e8957be3a0a62a784",
+          "name": "Notes",
+          "label": "Notes",
+          "order": 7,
+          "propertyType": "String",
+          "isReadOnly": false,
+          "isKey": false,
+          "isNullable": true,
+          "isForeignKey": false,
+          "isAsset": false,
+          "tags": [],
+          "calculated": {"inputProperties": []}
+        },
+        {
+          "_id": "fe5b10fcbd49e1a70a62a784",
+          "name": "Image",
+          "label": "Image",
+          "order": 8,
+          "propertyType": "String",
+          "isReadOnly": false,
+          "isKey": false,
+          "isNullable": true,
+          "isForeignKey": false,
+          "isAsset": true,
+          "tags": ["photo"],
+          "calculated": {"inputProperties": []}
+        },
+        {
+          "_id": "a6dffe9afe9e19c20a62a784",
+          "name": "Instruction",
+          "label": "Instruction",
+          "order": 9,
+          "propertyType": "String",
+          "isReadOnly": false,
+          "isKey": false,
+          "isNullable": true,
+          "isForeignKey": false,
+          "isAsset": false,
+          "tags": ["url"],
+          "calculated": {"inputProperties": []}
+        },
+        {
+          "_id": "7e58733199386dc20a62a7ac",
+          "name": "___FK_1436227bdcf0a08c0a62a7ac",
+          "label": "___FK_1436227bdcf0a08c0a62a7ac",
+          "order": 10,
+          "propertyType": "String",
+          "isReadOnly": false,
+          "isKey": false,
+          "isNullable": false,
+          "isForeignKey": true,
+          "isAsset": false,
+          "tags": [],
+          "calculated": {"inputProperties": []}
+        }
+      ],
+      "position": {
+        "left": 240,
+        "top": 210,
+        "width": 300,
+        "height": 50
+      }
+    },
+    {
+      "_id": "15f1e80027f639400a62a784",
+      "name": "pieces",
+      "nameSet": "piecesSet",
+      "label": "pieces",
+      "isReadOnly": false,
+      "groups": [],
+      "tags": [],
+      "navigationProperties": [],
+      "properties": [
+        {
+          "_id": "ab9608fe41209cba0a62a784",
+          "name": "ID",
+          "label": "ID",
+          "order": 1,
+          "propertyType": "String",
+          "isReadOnly": false,
+          "isKey": true,
+          "isNullable": true,
+          "isForeignKey": false,
+          "isAsset": false,
+          "tags": [],
+          "calculated": {"inputProperties": []}
+        },
+        {
+          "_id": "b2fe6c4f4f9b696e0a62a784",
+          "name": "PartName",
+          "label": "PartName",
+          "order": 2,
+          "propertyType": "String",
+          "isReadOnly": false,
+          "isKey": false,
+          "isNullable": true,
+          "isForeignKey": false,
+          "isAsset": false,
+          "tags": [],
+          "calculated": {"inputProperties": []}
+        },
+        {
+          "_id": "0a1c246bb58eae150a62a784",
+          "name": "Color",
+          "label": "Color",
+          "order": 3,
+          "propertyType": "String",
+          "isReadOnly": false,
+          "isKey": false,
+          "isNullable": true,
+          "isForeignKey": false,
+          "isAsset": false,
+          "tags": [],
+          "calculated": {"inputProperties": []}
+        },
+        {
+          "_id": "df3768decadedcef0a62a784",
+          "name": "Category",
+          "label": "Category",
+          "order": 4,
+          "propertyType": "String",
+          "isReadOnly": false,
+          "isKey": false,
+          "isNullable": true,
+          "isForeignKey": false,
+          "isAsset": false,
+          "tags": [],
+          "calculated": {"inputProperties": []}
+        },
+        {
+          "_id": "cf1ff059ba573e3e0a62a784",
+          "name": "Insets",
+          "label": "Insets",
+          "order": 5,
+          "propertyType": "String",
+          "isReadOnly": false,
+          "isKey": false,
+          "isNullable": true,
+          "isForeignKey": false,
+          "isAsset": false,
+          "tags": [],
+          "calculated": {"inputProperties": []}
+        },
+        {
+          "_id": "1881b5f234dda4040a62a784",
+          "name": "IntroducedIn",
+          "label": "IntroducedIn",
+          "order": 6,
+          "propertyType": "String",
+          "isReadOnly": false,
+          "isKey": false,
+          "isNullable": true,
+          "isForeignKey": false,
+          "isAsset": false,
+          "tags": [],
+          "calculated": {"inputProperties": []}
+        },
+        {
+          "_id": "4dfd9c5ceeccebad0a62a784",
+          "name": "___FK_5b31b53c4604e14b0a62a784",
+          "label": "From.Product",
+          "order": 7,
+          "propertyType": "String",
+          "isReadOnly": false,
+          "isKey": false,
+          "isNullable": true,
+          "isForeignKey": true,
+          "isAsset": false,
+          "tags": [],
+          "calculated": {"inputProperties": []}
+        }
+      ],
+      "position": {
+        "left": 650,
+        "top": 175,
+        "width": 300,
+        "height": 50
+      }
+    },
+    {
+      "_id": "9e8d2f3b53d099470a62a784",
+      "name": "Contact",
+      "nameSet": "ContactSet",
+      "label": "Contact",
+      "isReadOnly": false,
+      "groups": [],
+      "tags": [],
+      "navigationProperties": [],
+      "properties": [
+        {
+          "_id": "26d0a54c43d41d7a0a62a784",
+          "name": "ID",
+          "label": "ID",
+          "order": 1,
+          "propertyType": "String",
+          "isReadOnly": false,
+          "isKey": true,
+          "isNullable": true,
+          "isForeignKey": false,
+          "isAsset": false,
+          "tags": [],
+          "calculated": {"inputProperties": []}
+        },
+        {
+          "_id": "310876c2738e57140a62a784",
+          "name": "FistName",
+          "label": "FistName",
+          "order": 2,
+          "propertyType": "String",
+          "isReadOnly": false,
+          "isKey": false,
+          "isNullable": true,
+          "isForeignKey": false,
+          "isAsset": false,
+          "tags": [],
+          "calculated": {"inputProperties": []}
+        },
+        {
+          "_id": "87174f3a5c1cbc740a62a784",
+          "name": "LastName",
+          "label": "LastName",
+          "order": 3,
+          "propertyType": "String",
+          "isReadOnly": false,
+          "isKey": false,
+          "isNullable": true,
+          "isForeignKey": false,
+          "isAsset": false,
+          "tags": [],
+          "calculated": {"inputProperties": []}
+        },
+        {
+          "_id": "aa460316e34da8910a62a784",
+          "name": "PhoneNo",
+          "label": "PhoneNo",
+          "order": 4,
+          "propertyType": "String",
+          "isReadOnly": false,
+          "isKey": false,
+          "isNullable": true,
+          "isForeignKey": false,
+          "isAsset": false,
+          "tags": [],
+          "calculated": {"inputProperties": []}
+        },
+        {
+          "_id": "a3ebd9dea1758aca0a62a784",
+          "name": "eMail",
+          "label": "eMail",
+          "order": 5,
+          "propertyType": "String",
+          "isReadOnly": false,
+          "isKey": false,
+          "isNullable": true,
+          "isForeignKey": false,
+          "isAsset": false,
+          "tags": [],
+          "calculated": {"inputProperties": []}
+        },
+        {
+          "_id": "4c9912656b5dbef30a62a784",
+          "name": "___FK_5c88a19018f10fa40a62a784",
+          "label": "From.Product",
+          "order": 6,
+          "propertyType": "String",
+          "isReadOnly": false,
+          "isKey": false,
+          "isNullable": true,
+          "isForeignKey": true,
+          "isAsset": false,
+          "tags": [],
+          "calculated": {"inputProperties": []}
+        }
+      ],
+      "position": {
+        "left": 650,
+        "top": 255,
+        "width": 300,
+        "height": 50
+      }
+    },
+    {
+      "_id": "223f1b3d669f0d840a62a78e",
+      "name": "Category",
+      "nameSet": "CategorySet",
+      "label": "Category",
+      "isReadOnly": false,
+      "groups": [],
+      "tags": [],
+      "navigationProperties": [],
+      "properties": [
+        {
+          "_id": "7aa49f7c4fa509130a62a78e",
+          "name": "ID",
+          "label": "ID",
+          "order": 1,
+          "propertyType": "String",
+          "isReadOnly": false,
+          "isKey": true,
+          "isNullable": false,
+          "isForeignKey": false,
+          "isAsset": false,
+          "tags": [],
+          "calculated": {"inputProperties": []}
+        },
+        {
+          "_id": "46f3d9f34c71beea0a62a7c2",
+          "name": "Name",
+          "label": "Name",
+          "order": 2,
+          "propertyType": "String",
+          "isReadOnly": false,
+          "isKey": false,
+          "isNullable": true,
+          "isForeignKey": false,
+          "isAsset": false,
+          "tags": [],
+          "calculated": {"inputProperties": []}
+        }
+      ],
+      "position": {
+        "left": 240,
+        "top": 340,
+        "width": 300,
+        "height": 50
+      }
+    }
+  ],
+  "layout": "U",
+  "version": 8
+}

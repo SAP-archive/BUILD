@@ -1,0 +1,174 @@
+@import (reference) "../../styles/base.less";
+
+#task-overview {
+    .ui-tab-content {
+        padding: 0px;
+        padding-left: 30px;
+    }
+    [layout="row"] {
+        margin-top: 0px;
+    }
+    .task-overview-entries {
+        margin-top: 30px;
+        min-width: 1000px;
+
+        .thumbnail {
+            cursor: pointer;
+        }
+        .thumbnail-container {
+            &[layout="row"] {
+                margin-top: 0;
+            }
+            position: relative;
+            float: left;
+            &.showOver {
+                cursor: pointer;
+                .ui-thumbnail {
+                    box-shadow: 0 0 10px rgba(2, 157, 224, .7);
+                    border: 1px solid rgba(2, 157, 224, .73);
+                    transition: all 0.1s linear;
+                }
+            }
+        }
+        .actions {
+            margin: 0 0 0 30px;
+            .action-txt {
+                display: block;
+                cursor: pointer;
+                padding-left: 25px;
+                line-height: 16px;
+                font-weight: 500;
+                font-size: 20px;
+                text-decoration: underline;
+                color: @CuriousBlue-500;
+                word-wrap: break-word;
+                max-width: 800px;
+
+                &.no-icon {
+                    padding-left: 0;
+                    float: left;
+                }
+            }
+            .action-small-txt {
+                line-height: 16px;
+                font-weight: 400;
+                font-size: 20px;
+                color: @PickledBluewood-1100;
+            }
+            .result {
+                min-height: 50px;
+
+                &.secondRow {
+                    margin-top: 10px;
+                }
+                .text {
+                    line-height: 50px;
+                    font-weight: 300;
+                    font-size: 36px;
+                    margin-right: 40px;
+                    small {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .task-overview-data {
+            font-weight: bold;
+            font-size: 20px;
+            color: @PickledBluewood-900;
+
+            .result {
+                min-height: 45px;
+
+                .item-chart {
+                    margin: 15px 0 0 20px;
+                }
+                .item-detail {
+                    margin-top: 10px;
+                    max-height: 50px;
+
+                    .text {
+                        margin: 0 30px 0 60px;
+                    }
+                }
+                .item-detail-m {
+                    width: calc(~'100% + 37px');
+                    margin-top: 10px;
+                    max-height: 50px;
+
+                    .text {
+                        margin: 0 10px 0 70px;
+                        line-height: 65px;
+                        min-width: 85px;
+                    }
+                }
+                #stats-task-time {
+                    min-width: 190px;
+                }
+            }
+            .icon-small-trash {
+                left: 12px;
+            }
+            .page-name {
+                cursor: pointer;
+
+                &:hover {
+                    color: @CuriousBlue-500;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .chart-data-small {
+
+        .tasks {
+            margin: 5px 0;
+            min-width: 95px;
+
+            .text-left-sentiment {
+                line-height: 21px;
+                font-weight: 300;
+                font-size: 20px;
+                margin-left: 40px;
+                padding-left: 0;
+
+                small {
+                    font-weight: 300;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .actions {
+        .text {
+            line-height: 50px;
+            font-weight: 300;
+            font-size: 36px;
+            margin: 0 30px 0 60px;
+        }
+        .text-left {
+            line-height: 50px;
+            font-weight: 300;
+            font-size: 36px;
+            margin-left: 50px;
+            min-width: 120px;
+
+            small {
+                font-weight: 300;
+                font-size: 20px;
+            }
+        }
+        .text-left-sentiment {
+            line-height: 40px;
+            padding-left: 10px;
+            font-weight: 300;
+            font-size: 36px;
+            margin-left: 40px;
+
+            small {
+                font-weight: 300;
+                font-size: 20px;
+            }
+        }
+    }
+}

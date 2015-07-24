@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="05-QUESTION-POLL-STATS" sketch:type="MSArtboardGroup" transform="translate(-446.000000, -561.000000)">
+            <g id="Rectangle-130-Copy-+-Export-Comments-+-Group" sketch:type="MSLayerGroup" transform="translate(446.000000, 560.000000)">
+                <g id="Group" transform="translate(0.000000, 1.000000)" sketch:type="MSShapeGroup">
+                    <rect id="Rectangle-342" fill="#3398DB" x="0" y="0" width="19" height="19" rx="1"></rect>
+                    <rect id="Rectangle-343-Copy-5" fill="#FFFFFF" x="2" y="15" width="15" height="2"></rect>
+                    <rect id="Rectangle-343-Copy-6" fill="#FFFFFF" x="2" y="11" width="15" height="2"></rect>
+                    <rect id="Rectangle-343-Copy-7" fill="#FFFFFF" x="2" y="7" width="15" height="2"></rect>
+                    <rect id="Rectangle-343-Copy-8" fill="#FFFFFF" x="2" y="3" width="6" height="2"></rect>
+                    <rect id="Rectangle-343-Copy-9" fill="#FFFFFF" x="9" y="3" width="2" height="2"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

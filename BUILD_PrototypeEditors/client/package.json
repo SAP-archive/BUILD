@@ -1,0 +1,35 @@
+{
+  "name": "norman-prototype-editors-client",
+  "version": "0.1.0",
+  "description": "Prototype Editors Client",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SAP/BUILD.git"
+  },
+    "maintainers": [
+        {
+            "name": "BUILD Team",
+            "email": "contact.build@sap.com"
+        }
+    ],
+  "licenses": [
+    {
+      "type": "Apache License, Version 2.0",
+      "url": "https://github.com/SAP/BUILD/blob/master/LICENSE.txt"
+    }
+  ],
+  "dependencies": {
+    "angular-xeditable": "https://github.com/vitalets/angular-xeditable/archive/0.1.8.tar.gz",
+    "norman-angular-ui-tree": "0.1.0",
+    "norman-keyboard-event-polyfill": "0.1.0",
+    "norman-ng-grid": "0.1.0"
+  },
+  "peerDependencies": {
+    "norman-client-tp": "*",
+    "norman-common-client": "*"
+  },
+  "browser": {
+    "angular-xeditable": "./node_modules/angular-xeditable/dist/js/xeditable.js"
+  },
+  "readmeFilename": "README.md"
+}

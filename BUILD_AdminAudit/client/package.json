@@ -1,0 +1,24 @@
+{
+  "name": "norman-admin-audit-client",
+  "version": "0.1.0",
+  "description": "Angular module to handle audit in admin console",
+  "licenses": [
+    {
+      "type": "Apache License, Version 2.0",
+      "url": "https://github.com/SAP/BUILD/blob/master/LICENSE.txt"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "BUILD Team",
+      "email": "contact.build@sap.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SAP/BUILD.git"
+  },
+  "peerDependencies": {
+    "norman-client-tp": "*"
+  }
+}

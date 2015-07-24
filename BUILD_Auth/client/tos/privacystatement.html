@@ -1,0 +1,38 @@
+<div layout="column" layout-fill layout-align="space-between" class="tos">
+    <div class="tos-head">
+        <a href="/" class="norman-logo"><div class="build-mascot"></div><div class="build-type"></div></a>
+    </div>
+    <div layout="column">
+        <div layout="column" layout-align="center" class="tos-wrapper">
+            <div layout="row" layout-align="center">
+                <label class="tos-header">Privacy Statement</label>
+            </div>
+            <div layout="row" layout-align="center">
+                <textarea ng-model="privacystatement"
+                          tos-autosize
+                          readonly
+                          class="tos-text"
+                          flex-tos-height="50"
+                          flex-sm="90"
+                          flex-gt-sm="90"
+                          flex-md="90"
+                          flex-gt-md="70"
+                          flex-lg="70"
+                          flex-gt-lg="40"
+                          flex="40">
+                          </textarea>
+            </div>
+            <div layout="row" layout-align="center" class="button">
+                <ui-button size="large" alignment="horiz-center" ng-click="back()">Back</ui-button>
+            </div>
+        </div>
+    </div>
+    <div class="tos-foot">
+        <div layout="row" layout-align="space-between" class="tos-foot-wrapper">
+            <div class="sap-logo" title="SAP">&copy; Copyright SAP SE 2015</div>
+            <div class="tos-foot-right">
+                <a href="mailto:contact.build@sap.com">Contact</a>
+            </div>
+        </div>
+    </div>
+</div>

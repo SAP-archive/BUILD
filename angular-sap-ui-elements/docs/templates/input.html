@@ -1,0 +1,68 @@
+<ui-toolbar layout="column" class="left-nav-title">
+    <h1 class="ui-toolbar-tools" flex layout="column">Directives > ui-input</h1>
+</ui-toolbar>
+<ui-content flex ui-scroll-y >
+    <ui-content flex class="doc-content">
+        <div layout="row"><a name="Directives-ui-input"><h2 class="item-name">ui-input</h2></a></div>
+
+        <div layout="row"><a name="Directives-Input-Light"><h2 class="item-name">Input Light</h2></a></div>
+        <div layout="row">
+            <div class="item" flex="20" flex-sm="20">
+                <ui-input type="email" name="email" ng-model="user.email" required="" tabindex="1"></ui-input>
+            </div>
+            <div class="code" flex="80" flex-sm="80">
+                <pre><code>
+&lt;ui-input&gt;&lt;/ui-input&gt;
+                </code></pre>
+            </div>
+        </div>
+
+        <div layout="row"><a name="Directives-Input-Dark"><h2 class="item-name">Input Dark</h2></a></div>
+        <div layout="row">
+            <div class="item dark" flex="20" flex-sm="20">
+                <ui-input dark style="margin: 20px;"></ui-input>
+            </div>
+            <div class="code" flex="80" flex-sm="80">
+                <pre><code>
+&lt;ui-input dark&gt;&lt;/ui-input&gt;
+                </code></pre>
+            </div>
+        </div>
+
+        <div layout="row"><a name="Directives-Input-Light"><h2 class="item-name">Input with focus</h2></a></div>
+        <div layout="row">
+            <div class="item" flex="20" flex-sm="20">
+                <ui-input nn-focus="true"></ui-input>
+            </div>
+            <div class="code" flex="80" flex-sm="80">
+                <pre><code>
+&lt;ui-input nn-focus="true"&gt;&lt;/ui-input&gt;
+                </code></pre>
+            </div>
+        </div>
+
+        <div layout="row"><a name="Directives-Input-Light"><h2 class="item-name">Input with callback</h2></a></div>
+        <div layout="row">
+            <div class="item" flex="20" flex-sm="20">
+                <ui-input nn-enter="enterFunction()"></ui-input>
+            </div>
+            <div class="code" flex="80" flex-sm="80">
+                <pre><code>
+&lt;ui-input nn-enter="enterFunction()"&gt;&lt;/ui-input&gt;
+                </code></pre>
+            </div>
+        </div>
+
+        <div layout="row"><a name="Directives-Input-Highlight"><h2 class="item-name">Input with highlight on click</h2></a></div>
+        <div layout="row">
+            <div class="item" flex="20" flex-sm="20">
+                <ui-input disabled click-highlight value="some text"></ui-input>
+            </div>
+            <div class="code" flex="80" flex-sm="80">
+                <pre><code>
+&lt;ui-input disabled click-highlight value="some text"&gt;&lt;/ui-input&gt;
+                </code></pre>
+            </div>
+        </div>
+    </ui-content>
+</ui-content>

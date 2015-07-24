@@ -1,0 +1,29 @@
+{
+  "name": "norman-user-research-server",
+  "version": "0.1.0",
+  "description": "Norman User Research module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SAP/BUILD.git"
+  },
+  "licenses": [
+    {
+      "type": "Apache License, Version 2.0",
+      "url": "https://github.com/SAP/BUILD/blob/master/LICENSE.txt"
+    }
+  ],
+      "maintainers": [
+        {
+            "name": "BUILD Team",
+            "email": "contact.build@sap.com"
+        }
+    ],
+  "peerDependencies": {
+    "norman-common-server": "*",
+    "norman-server-tp": "*"
+  },
+  "dependencies": {
+    "unzip2": "0.2.5",
+    "node-handlebars": "0.9.5"
+  }
+}

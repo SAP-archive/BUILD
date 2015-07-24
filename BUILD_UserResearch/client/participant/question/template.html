@@ -1,0 +1,149 @@
+<div ng-if="studyActive" class="participant-question {{action}}">
+    <ui-busy-indicator show-busy-indicator="showBusyIndicator" full-screen="true"></ui-busy-indicator>
+    <!-- Dialog to show the user the task mission / objectives
+   Should only appear for "Tasks  -->
+    <ui-dialog id="task-mission-dialog"
+           title="{{currentQuestion.name}}"
+           modal="true"
+           close-text="Start Task"
+           close-action="startTask()"
+           content="{{currentQuestion.text || (defaultTaskText)}}"
+           enable-timeout="5"
+           class = "task-dialog">
+    </ui-dialog>
+
+    <div class="question-panel">
+        <div class="progress-bar-wrapper" ng-if="progress !== undefined">
+            <div class="progress-bar-header" ng-style="{ 'width': 3.2 * progress + 'px' }"></div>
+        </div>
+        <div class="study-link" ng-class="{'leaving-feedback': feedbackMode && currentQuestion.type === 'Task'}" tracker>&#8592; <a ng-click="returnToStudy()">&#34;{{study.name}}&#34; study</a></div>
+
+         <!-- Next and Previous buttons.  Show for questions, and when a task has been completed. -->
+        <div class="action-buttons"
+             ng-if="currentQuestion.type !== 'Task' ||
+                    (currentQuestion.type === 'Task' && (currentAnswer.status === 'completed correctly' || currentAnswer.status ===  'completed incorrectly' || currentAnswer.status ===  'aborted'))">
+            <div class="action-buttons-wrapper">
+                <ui-button class="previous" size="small" ng-disabled="isFirstQuestion" ng-click="previous()">Previous</ui-button><ui-button ng-if="!isLastQuestion" class="next" size="small" ng-click="next()">Next</ui-button><ui-button ng-if="isLastQuestion" class="next" size="small" ng-click="goToList()" tracker>Done</ui-button>
+            </div>
+        </div>
+
+        <div calc-height class="question-answer-panels">
+            <div class="question" ng-class="{'leaving-feedback': feedbackMode && currentQuestion.type === 'Task'}">
+                <div ng-if="currentQuestion.type === 'Task'"><b>{{currentQuestion.name}}:</b></div>
+                {{currentQuestion.text || (
+                  currentQuestion.type === 'Annotation' ? 'Please provide any feedback you may have.' :
+                  currentQuestion.type === 'Task' ? 'Please explore this prototype and provide feedback.' : '')}}
+                <div ng-if="showHelperText()" class="helper-text">
+                    {{currentQuestion.type === 'Annotation' ? 'Please click the appropriate place on the image to respond.' :
+                      currentQuestion.type === 'Freeform' ? 'Please type your answer to the question in the box below then click "SAVE"':
+                      currentQuestion.type === 'MultipleChoice' && currentQuestion.allowMultipleAnswers ? 'Please choose one or more answers.':
+                      currentQuestion.type === 'MultipleChoice' && !currentQuestion.allowMultipleAnswers ? 'Please choose the appropriate answer.': ''}}
+                </div>
+                <div class="multiple-choice" ng-if="currentQuestion.type == 'MultipleChoice'">
+                    <div ng-repeat="answerOption in currentQuestion.answerOptions track by $index">
+                        <ui-radio ng-if="!currentQuestion.allowMultipleAnswers" dark ng-click="updateMultipleChoice($index, currentAnswer)" ng-model="selectedChoice" value="{{$index}}" name="multipleChoice" id="choice_{{$index}}"></ui-radio>
+                        <ui-checkbox ng-if="currentQuestion.allowMultipleAnswers" dark ng-checked="isMultipleChoiceSelected($index)" ng-click="updateMultipleChoice($index, currentAnswer)" value="{{$index}}" name="multipleChoice" id="choice_{{$index}}"></ui-checkbox>
+                        <label for="choice_{{$index}}" ng-bind="answerOption"></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="answer-panel">
+                <div class="freeform-answer" ng-if="currentQuestion.type === 'Freeform'">
+                   <sentiment-manager edit-mode="!currentAnswer._id || currentAnswer.isEditing" details="currentAnswer" comment-path="answer" on-edit="startEditFreeForm()" on-save="addOrUpdateAnswer(currentAnswer)"
+                   on-delete="deleteAnswer(currentAnswer)" delete-active edit-active dark />
+                </div>
+            </div>
+
+            <div class="task-actions" ng-show="currentQuestion.type === 'Task'">
+                <cursor-tooltip ng-if="feedbackMode" cursor-id="side-cursor"
+                                cursor="{{allowedToDropAnnotations() ? 'auto' : 'not-allowed'}}"
+                                ng-class="{'tooltip-not-allowed': !allowedToDropAnnotations(), 'click-prototype': allowedToDropAnnotations()}">
+                    {{allowedToDropAnnotations() ? 'Click on the prototype' : 'No more comments allowed'}}
+                </cursor-tooltip>
+
+                <div class="feedback-panel">
+                <ui-button ng-click="changeFeedbackMode($event);" class="task-action-btn"
+                           ng-bind="!feedbackMode ? 'Provide and View Feedback' : 'Done'"></ui-button>
+                </div>
+
+                <div ng-if="currentAnswer.status === 'completed correctly' || currentAnswer.status ===  'completed incorrectly'" class="congratulations">
+                    <div class="congrats-image"></div>
+                    <div>Congratulations!</div>
+                    <p>You have completed the task!</p>
+                </div>
+
+                <!-- Buttons for Tasks -->
+                <ui-button green ng-if="currentAnswer.status === 'in progress'" ng-disabled="feedbackMode"
+                class="task-action-btn" ng-click="endTask(true)">I HAVE FINISHED THIS TASK</ui-button>
+
+                <div class="abandon-task" ng-if="currentAnswer.status === 'in progress'" ng-class="{'leaving-feedback': feedbackMode && currentQuestion.type === 'Task'}" ng-click="abandon(false)">
+                    <div class="abandon-icon"></div><div class="abandon-text">I want to abandon this task</div>
+                </div>
+
+                <p ng-if="currentAnswer.status === 'aborted'" class="abandoned-text">Task Abandoned</p>
+            </div>
+        </div>
+
+    </div>
+
+    <ui-dialog id="abandon-dialog" modal="true" cancel-text="Cancel" close-text="YES, ABANDON" close-action="endTask(false)">
+        <div class="abandon-dialog"><p>Are you sure you want to abandon the task?</p></div>
+    </ui-dialog>
+
+    <div class="screen-wrapper"
+        style="overflow: {{ blockScroll ? 'hidden' : 'auto'}};">
+
+        <div class="screen-container" ng-class="{'dragging': draggingAnnotation, 'interactive': !feedbackMode}"
+        toggle-image-size="{{currentQuestion.type === 'Task' ? '' : participantUrl}}" on-image-resize="onImageResize">
+
+            <div id="overlay" class='overlay'
+                ng-mousemove="drag($event)"
+                ng-mouseup="draggingAnnotation ? stopDrag(): add($event)"
+                ng-class="{'enabled': feedbackMode, 'dragging': draggingAnnotation}"
+                ng-style="currentQuestion.type === 'Task' ? {width: defaultIframeSize.width + 'px', height: defaultIframeSize.height + 'px'} : {}">
+                <cursor-tooltip
+                    cursor="{{allowedToDropAnnotations() ? 'crosshair' : 'not-allowed'}}"
+                    ng-class="{'tooltip-not-allowed': !allowedToDropAnnotations()}">
+                    {{allowedToDropAnnotations() ? 'Click to add comment' : 'No more comments allowed'}}
+                </cursor-tooltip>
+            </div>
+
+            <div
+                id="annotation-{{annotation._id}}"
+                class="annotation-icon"
+                ng-class="{dragging: draggingAnnotation === annotation, 'disable': !feedbackMode, 'taskAnnotation': currentQuestion.type === 'Task'}"
+                ng-style="{ 'left': annotation.positionX + 'px', 'top': annotation.positionY + 'px' }"
+                ng-repeat="annotation in annotations"
+                ng-show="annotation.isVisible"
+                ui-popup-open="currentAnnotation"
+                ng-mousedown="startDrag(annotation)">
+            </div>
+
+            <ui-popup
+                id="currentAnnotation"
+                focus-input
+                placement="right"
+                pass-through="true"
+                offset-y="-8"
+                class="annotation-popup-participant"
+                on-open="lockScroll()"
+                on-fully-open="lockScroll()"
+                on-close="closeAnnotation()">
+
+                    <div class="delete-icon annotation-delete" ng-click="delete(currentAnnotation)"></div>
+
+                    <sentiment-manager
+                        edit-mode="displayWithEditBox"
+                        details="currentAnnotation"
+                        on-save="update(currentAnnotation)"
+                        on-edit="startEdit()" edit-active />
+            </ui-popup>
+            <iframe-message-listener message-received="handleMessage(event)"></iframe-message-listener>
+            <iframe ng-if="currentQuestion.type === 'Task'" id="prototype-iframe"
+                ng-src="{{currentUrl}}" ng-attr-sandbox="{{currentQuestion.snapshotUILang === 'UI5' ? 'allow-scripts allow-same-origin' : 'allow-scripts'}}" frameborder="0"
+                ng-style="{ 'width': defaultIframeSize.width  +'px', 'height': defaultIframeSize.height + 'px' }">
+            </iframe>
+        </div>
+    </div>
+</div>

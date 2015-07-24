@@ -1,0 +1,89 @@
+@import (reference) "./styles/base.less";
+
+body[class*="page-shell-project-UserResearch"] * { box-sizing: border-box; }
+body[class*="page-shell-project-UserResearch"] .main-content { min-width: 980px; }
+
+
+/*** UR COMMON ************************************************************************************/
+#norman-user-research {
+
+    * {
+        box-sizing: border-box;
+    }
+    .heading .ui-button-large {
+        float: right;
+        margin-left: 50px;
+        text-transform: uppercase;
+    }
+    .ui-button-wrapper {
+        overflow: hidden;
+        .ui-button {
+            float: left;
+            margin-right: 1px;
+        }
+    }
+    .ui-button {
+        -webkit-user-select: none;
+        user-select: none;
+    }
+}
+.ur-action-icons {
+    float: right;
+    .ur-action-icon {
+        float: right;
+        margin-left: 50px;
+        width: 28px;
+        height: 40px;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-position: center center;
+        input {
+            margin: 0;
+            cursor: pointer;
+        }
+    }
+    .icon-assets {
+        background-image: url("../resources/norman-user-research-client/assets/ico-assets-small.svg");
+    }
+    .icon-cloud {
+        background-image: url("../resources/norman-user-research-client/assets/ico-cloud-upload-small.svg");
+    }
+    .icon-eye {
+        background-image: url("../resources/norman-user-research-client/assets/ico-eye-small.svg");
+    }
+    .icon-link {
+        background-image: url("../resources/norman-user-research-client/assets/link-blue.svg");
+    }
+}
+.ur-info-icons {
+    display: block;
+    color: @PickledBluewood-900;
+    overflow: hidden;
+    .icon {
+        float: left;
+        height: 26px;
+        padding: 0 0 0 25px;
+        margin-right: 20px;
+        font-size: 20px;
+        font-weight: 600;
+        background-position: 0 4px;
+        background-repeat: no-repeat;
+        &.participants {
+            background-image: url('../resources/norman-user-research-client/assets/user.svg');
+        }
+        &.annotations {
+            background-image: url('../resources/norman-user-research-client/assets/annotation.svg');
+            background-position: 2px 4px;
+        }
+        &.comments {
+            background-image: url('../resources/norman-user-research-client/assets/chat.svg');
+            padding-left: 27px;
+        }
+        &.link {
+            background-image: url('../resources/norman-user-research-client/assets/link.svg');
+            background-position: right 4px;
+            float: right;
+            margin-right: 0;
+        }
+    }
+}

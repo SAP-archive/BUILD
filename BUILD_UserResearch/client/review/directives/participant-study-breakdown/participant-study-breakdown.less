@@ -1,0 +1,141 @@
+@import (reference) '../node_modules/norman-client-tp/node_modules/angular-sap-ui-elements/styles/base';
+
+.fixed-table-container {
+    width: 100%;
+    margin: 10px auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: @White;
+    position: relative;
+    padding-top: 30px;
+
+    .fixed-table-container-inner {
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 100%;
+    }
+    .ui-participant-grid {
+        width: 100%;
+        overflow: hidden;
+        border-collapse: collapse;
+        cursor: pointer;
+
+        .span-txt {
+            line-height: 40px;
+        }
+        .first {
+            margin-left: 10px;
+        }
+        thead, thead:hover {
+            background: @White;
+            cursor: default;
+        }
+        th {
+            padding: 0px;
+            text-align: left;
+            font-weight: 700;
+        }
+        tbody > tr:nth-child(even) {
+            background: @White;
+        }
+        tbody > tr:nth-child(odd) {
+            background: #ecf0f1;
+        }
+        tbody >tr {
+        }
+        tbody >tr:hover {
+            background-color: #e4f3fd;
+        }
+        tbody >tr.expend {
+            border-top: 1px solid @CuriousBlue-500;
+            border-bottom: 1px solid @CuriousBlue-500;
+            border-left: 2px solid @CuriousBlue-500;
+            border-right: 2px solid @CuriousBlue-500;
+        }
+        tr>td {
+            padding: 0px;
+            vertical-align: top;
+        }
+        tr>th.xs {
+            width: 60px;
+        }
+        tr>th.sm {
+            width: 80px;
+        }
+        tr>th.md {
+            width: 120px;
+        }
+        tr>th.mlg {
+            width: 160px;
+        }
+        tr>th.lg {
+            width: 200px;
+        }
+        tr>th.xlg {
+            width: 150px;
+        }
+        tr>th.xxlg {
+            width: 300px;
+        }
+        tr>th.w60 {
+            width: 60px;
+        }
+        tr>th.w100 {
+            width: 100px;
+        }
+        tr>th.w140 {
+            width: 140px;
+        }
+        tr>th.w150 {
+            width: 150px;
+        }
+        tr>th.w180 {
+            width: 180px;
+        }
+        tr>th.w300 {
+            width: 300px;
+        }
+        tr>td {
+            &.success {
+                > span {
+                    color: @Shamrock-500;
+                }
+            }
+            &.abandon {
+                > span {
+                    color: @SilverSand-900;
+                }
+            }
+            &.fail {
+                > span {
+                    color: @Cinnabar-500;
+                }
+            }
+        }
+        tr>td a.participant {
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: underline;
+            color: @CuriousBlue-500;
+        }
+    }
+    .ui-participant-grid .nested-grid {
+        display: none;
+    }
+    .ui-participant-grid .nested-grid.expend {
+        display: block;
+        background-color: @White;
+    }
+    .grid-sub-header {
+        line-height: 40px;
+        min-height: 40px;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        &.sub-tasks {
+            line-height: 40px;
+            min-height: 40px;
+        }
+    }
+}

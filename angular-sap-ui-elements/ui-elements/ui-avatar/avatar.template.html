@@ -1,0 +1,6 @@
+<div class="ui-avatar" ng-class="avatarState === 'active' ? 'ui-avatar-active' : (avatarState === 'inactive' ? 'ui-avatar-inactive' : 'ui-avatar-none')">
+   <div ng-if="avatarImage" class="ui-avatar-image" ng-style="{'background-image' : avatarImage}">
+        <img ng-src="{{avatarImage}}" class="ui-avatar-image" >
+    </div>
+    <div ng-if="!avatarImage" class="ui-avatar-initials" ng-bind="avatarName | avatarInitials"></div>
+</div>

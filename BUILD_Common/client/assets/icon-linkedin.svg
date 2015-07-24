@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2 (9961) - http://www.bohemiancoding.com/sketch -->
+    <title>in</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="SIGN-UP" sketch:type="MSArtboardGroup" transform="translate(-914.000000, -537.000000)">
+            <g id="IN-Button" sketch:type="MSLayerGroup" transform="translate(905.000000, 527.000000)">
+                <g id="in" transform="translate(9.000000, 10.000000)" sketch:type="MSShapeGroup">
+                    <rect id="Rectangle-770" fill="#0077B5" x="0" y="0" width="23" height="23" rx="2"></rect>
+                    <rect id="Rectangle-771" fill="#F5F5F5" x="4" y="9" width="3" height="10"></rect>
+                    <path d="M12,13.2929866 L12,19 L9,19 L9,9 L12,9 L12,10.1968693 C12.8268979,9.5945747 14.088516,9 16,9 C18.5719548,9 19,12.0795805 19,12.0795805 L19,19 L16,19 C16,19 16,16.1634991 16,14 C16,11.7930655 13.449319,12.4280603 12,13.2929866 Z" id="Rectangle-772" fill="#F5F5F5"></path>
+                    <ellipse id="Oval-91" fill="#F5F5F5" cx="5.5" cy="6" rx="2.5" ry="2"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

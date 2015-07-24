@@ -1,0 +1,72 @@
+@import (reference) '../node_modules/norman-client-tp/node_modules/angular-sap-ui-elements/styles/variables';
+
+#selectAssetsModal { width: 720px; min-height: 480px;
+
+	.image-total { text-align: left; color: white; margin-left: 20px; }
+
+	.selected-counter {
+        position: absolute;
+        right: 20px;
+        top: 25px;
+		background-color: @Shamrock-500;
+		min-width: 26px;
+        height: 25px;
+        border-radius: 20px;
+
+        font-size: 19px;
+        line-height: 1;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 3px 11px 0;
+        font-weight: bold;
+        white-space: nowrap;
+	}
+
+	.content { padding: 20px 0;
+
+		.list { overflow-y: auto; height: 300px; padding: 0 0 0 20px; }
+		.asset { float: left; margin: 20px 20px 0 0; position: relative;
+
+			.asset-thumbnail { float: left; transition: all 0.3s ease-out; }
+
+			.complete-tick {
+				z-index: 2;
+				transition: all 0.3s ease-out;
+				opacity: 0;
+				width: 30px;
+				height: 30px;
+				position: absolute;
+                top: calc(~'50% - 15px');
+                left: calc(~'50% - 15px');
+                background: @White url("/resources/norman-user-research-client/assets/ico-tick.svg") center center no-repeat;
+                border-radius: 50%;
+			}
+		}
+
+		.selected {
+			.asset-thumbnail {
+              opacity: 0.5;
+              background-color: rgba(51,152,219,0.60);
+              background-clip: content-box;
+            }
+			.complete-tick { opacity: 1; }
+		}
+
+		.file-upload-button {
+          width: 150px;
+          height: 112px;
+			border: 1px dashed;
+			background: transparent url("/resources/norman-user-research-client/assets/ico-cloud-upload.svg") center 30px no-repeat;
+			position: relative;
+            cursor: pointer;
+
+			div {
+				position: absolute;
+				bottom: 25px;
+				text-align: center;
+				width: 100%;
+
+			}
+		}
+	}
+}

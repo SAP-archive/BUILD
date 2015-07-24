@@ -1,0 +1,10 @@
+{
+    "removeNavProperty": [
+    ],
+    "readOnlyEntity": [
+        {
+            "name": "Product",
+            "id": ""
+        }
+    ]
+}

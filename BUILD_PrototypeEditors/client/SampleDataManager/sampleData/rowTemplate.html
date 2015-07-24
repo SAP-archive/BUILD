@@ -1,0 +1,7 @@
+<div class="sd-row-header-wrapper" ng-controller="rowTemplateController">
+    <ui-button id="btn-{{row.entity.$$hashKey}}" class="sd-row-header-btn"
+               ng-class="{'sd-row-header-btn-selected': row.isSelected}" ng-click="rowHeaderClicked($event,row)"
+               ng-blur="rowHeaderLostFocus(row)">{{row.grid.rowHashMap['object:'+row.entity.$$hashKey].i+1}}</ui-button>
+</div>
+
+

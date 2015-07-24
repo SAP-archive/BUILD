@@ -1,0 +1,39 @@
+@import (reference) "../../styles/base.less";
+.ui-thumbnail {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-origin: content-box;
+    &.light {
+        border: 1px solid #DBDFE1;
+        &.selected {
+            border: 1px solid #3398DB;
+            box-shadow: 0px 0px 5px 0px rgba(51, 152, 219, 0.60);
+        }
+    }
+    &.dark {
+        border: 1px solid #4E6276;
+        &.selected {
+            border: 1px solid #3398DB;
+            box-shadow: 0px 0px 5px 0px rgba(51, 152, 219, 0.60);
+        }
+    }
+    &.small {
+        width: 60px;
+        height: 45px;
+        padding: 1px;
+    }
+    &.medium {
+        width: 150px;
+        height: 112px;
+        padding: 4px;
+    }
+    &.large {
+        width: 240px;
+        height: 180px;
+        padding: 6px;
+    }
+    &.pill {
+        margin: 14px 5px 6px 5px;
+    }
+}

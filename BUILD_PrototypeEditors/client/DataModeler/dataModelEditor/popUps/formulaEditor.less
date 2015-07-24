@@ -1,0 +1,329 @@
+@import (reference) '../node_modules/norman-client-tp/node_modules/angular-sap-ui-elements/styles/variables';
+
+.dmfe-formulaEditor {
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  .formulaContainer {
+    height: 480px;
+    overflow: auto;
+    width: ~'calc(100% - 18px)';
+    padding: 4px 4px 4px 8px;
+    margin: 0;
+    border: 1px dashed @Cascade-500;
+    border-radius: 5px;
+  }
+
+  .dmfe-operandInline {
+    overflow: visible;
+    position: relative;
+  }
+
+  .dmfe-delete {
+    position: absolute;
+    left: -9px;
+    margin: 0;
+    top: ~'calc(50% - 7px)';
+    cursor: pointer;
+  }
+
+  .dmfe-emptyFormula {
+    height: 480px!important;
+    width: 978px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+
+    span {
+      color: @CuriousBlue-500;
+    }
+  }
+
+  .dmfe-valueDiv {
+    position: relative;
+
+    input {
+      width: 50px;
+      height: 34px;
+    }
+  }
+
+  .dmfe-propertyDiv {
+    position: relative;
+  }
+
+  .dmfe-grabDiv {
+    position: absolute!important;
+    left: 0;
+    top: 0;
+    z-index: 5!important;
+    width: 100%!important;
+    height: 100%!important;
+    cursor: move!important;
+  }
+
+  .dmfe-valueGrabDiv {
+    cursor: text!important;
+  }
+
+  .dmfe-elementInput {
+    position: relative;
+    z-index: 4;
+
+    .dmfe-operatorDropWrapper {
+      float: left;
+      position: relative;
+      z-index: 3;
+    }
+    select {
+      margin: 0;
+      min-width: 80px;
+      max-width: 160px;
+      vertical-align: middle;
+      height: 36px;
+      display: block;
+      float: left;
+    }
+  }
+
+  .dmfe-condition {
+
+    min-width: 200px;
+    width: 100%;
+
+    .dmfe-conditionContainer {
+      min-height: 46px;
+      cursor: default;
+      background-color: @PickledBluewood-500;
+      border-left: 1px dashed @Cascade-500;
+      border-right: 1px dashed @Cascade-500;
+      padding: 8px;
+      position: relative;
+
+      div {
+        position: relative;
+        z-index: 2;
+      }
+    }
+    .dmfe-else {
+      border-bottom: 1px dashed @Cascade-500;
+      border-radius: 0 0 3px 3px;
+    }
+  }
+  .dmfe-dropZone {
+    border: 1px dashed grey;
+    border-radius: 3px;
+    height: 34px;
+    vertical-align: middle;
+    display: none;
+    float: left;
+    margin: 5px 5px 5px 0;
+  }
+  .dmfe-valueDiv .dmfe-dropZone {
+    margin: 0 5px 0 0!important;
+  }
+  .dmfe-droppableDiv {
+    height: 36px;
+    cursor: default;
+  }
+  .dmfe-droppableDiv:not(.dmfe-emptyCondition) {
+    background-color: @PickledBluewood-1100;
+    border: 1px dashed @Cascade-500;
+    border-radius: 5px;
+  }
+
+  .dmfe-emptyContainer {
+    min-width: 80px;
+  }
+  .dmfe-inlineElement {
+    vertical-align: middle;
+    float: left;
+
+    .dmfe-contentDiv {
+      padding: 0 10px;
+      border: 1px solid @Porcelain-500;
+      border-radius: 5px;
+      background-color: @SilverSand-500;
+    }
+    .dmfe-droppableDiv {
+      width: 33px;
+      display: none;
+    }
+    div:not(.dmfe-dropZone, .dmfe-brackets) {
+       vertical-align: middle;
+       float: left;
+     }
+    a, input {
+      color: @Porcelain-900;
+      height: 34px;
+      vertical-align: middle;
+    }
+  }
+  .dmfe-addOperand{
+    width: 33px;
+  }
+  .dmfe-addElement .dmfe-droppableDiv {
+    display: none;
+  }
+  .dmfe-contentDiv {
+    padding: 0;
+    margin: 0;
+  }
+  .dmfe-nonDropInlineElement {
+    padding: 0 10px;
+    border: 1px solid @Porcelain-500;
+    background-color: @PickledBluewood-1100;
+    height: 36px;
+    line-height: 36px;
+  }
+  .dmfe-clearer {
+    width: 100%;
+    clear: both;
+    content: '';
+    float: none;
+  }
+  .dmfe-elementButton {
+    width: 100px;
+    cursor: move;
+    margin-right: 6px;
+    position: relative;
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    background-color: @PickledBluewood-600;
+    color: @Porcelain-500;
+    border-radius: 4px;
+    .dmfe-elementButton-img {
+      position: absolute;
+      left: 4px;
+      top: ~'calc(50% - 6px)';
+    }
+    .dmfe-elementButton-label {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      text-align: center;
+    }
+  }
+  .dmfe-deleteButton {
+    background-color: @PickledBluewood-500;
+    width: 978px;
+    border: 1px dashed @Cascade-500;
+  }
+  .dmfe-condition {
+    vertical-align: middle;
+    margin: 5px 5px 5px 0;
+  }
+  .dmfe-conditionHeader h5 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 240px;
+
+    .dmfe-formulaPreview {
+      margin-left: 20px;
+    }
+  }
+  .is-expanded > .dmfe-conditionHeader div h5 .dmfe-formulaPreview {
+    display: none;
+  }
+  .dmfe-operatorSelect, .dmfe-valueDiv {
+     vertical-align: middle;
+     float: left;
+     margin: 5px 5px 5px 0;
+   }
+  .dmfe-propertyDiv {
+    vertical-align: middle;
+    float: left;
+
+    select {
+      margin: 5px 5px 5px 0;
+    }
+  }
+  .dmfe-overDropZone {
+    background-color: @PickledBluewood-600!important;
+  }
+  .dmfe-overInline {
+    padding-left: 60px!important;
+  }
+  .dmfe-over-block {
+    padding-top: 60px!important;
+  }
+  .dmfe-conditionLayout {
+    width: ~'calc(100% - 4px)!important';
+    float: none!important;
+    clear: both;
+  }
+  .dmfe-operatorSubElement {
+    float: none!important;
+    clear: both;
+  }
+  .dmfe-operatorHandle {
+    height: 36px;
+  }
+  .dmfe-operand {
+    margin-left: 0;
+    padding-left: 10px;
+    border-left: 1px solid @Buttercup-900;
+    border-radius: 5px;
+    min-height: 46px;
+  }
+  .dmfe-twoLevels {
+    border-width: 2.5px!important;
+  }
+  .dmfe-threeLevels {
+    border-width: 4px!important;
+    border-radius: 8px!important;
+  }
+  .dmfe-fourOrMoreLevels {
+    border-width: 5.5px!important;
+    border-radius: 8px!important;
+  }
+  .dmfe-operandInline:not(.dmfe-operand) {
+    float: left;
+  }
+  .dmfe-endOfOperand {
+    float: none;
+    clear: both;
+    content: '';
+  }
+  .dmfe-repeatedDiv {
+    float: left;
+    position: relative;
+  }
+  #dmfe-formulaElementsToolbar {
+    height: 36px;
+    white-space: nowrap;
+    margin: 0;
+    margin-bottom: 10px;
+    position: relative;
+
+    .dmfe-rubbish {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      height: 15px;
+      padding-left: 24px;
+      line-height: 18px;
+      .dm-white_bin {
+        position: absolute;
+        left: 0;
+        top: ~'calc(50% - 10px)';
+      }
+    }
+  }
+  h5 {
+    line-height: 50px;
+    font-weight: bold;
+  }
+  .dmfe-grabbedElement {
+    opacity: 0.5;
+  }
+}

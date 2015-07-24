@@ -1,0 +1,104 @@
+<ui-dialog id="editQuestionModal" modal="true" class="edit-question-modal" on-open="setQuestion()">
+    <div class="left-side" layout="column" layout-align="space-between start">
+        <ui-toolbar class="title" flex>
+            <span ng-if="currentQuestion.type !== 'Task'">Create a Question</span>
+            <span ng-if="currentQuestion.type === 'Task'">Define the Task</span>
+        </ui-toolbar>
+        <ui-content class="content" flex>
+            <img ng-if="currentQuestion.type !== 'Task'" ng-src="{{currentUrl}}" id="ui-preview-image-id" ng-class="{hidden: isImage}" class="animated">
+            <div ng-if="currentQuestion.type === 'Task'" class="animated fadeIn">
+                <h2 ng-if="currentQuestion.isTargetable === true">Click on the <em class="em-start">Start</em> label to define the first page that participants see when they enter the task.<br>
+                    If you want them to try and reach a particular page to complete the task successfully, click on the
+                    <em class="em-target">Target</em> label on that page.
+                </h2>
+
+                <div class="edit-task-thumbnail" ng-repeat="page in pages">
+                    <a ng-if="currentQuestion.isTargetable === true" href="#" class="edit-task-thumbnail-btn btn-start" ng-class="{active: isStart(page)}" ng-click="setStart(page);saveTask()">Start</a>
+                    <a ng-if="currentQuestion.isTargetable === true" href="#" class="edit-task-thumbnail-btn btn-target" ng-class="{active: isTarget(page)}" ng-click="setTarget(page);saveTask()">Target</a>
+                    <ui-thumbnail size="medium" thumbnail-src="{{page.thumbnail}}"></ui-thumbnail>
+                    <span class="edit-task-thumbnail-name">{{page.name}}</span>
+                </div>
+            </div>
+        </ui-content>
+
+
+        <div class="footer" flex layout-align="start start">
+            <ui-toolbar>
+                <div class="delete-question" ui-dialog-open="delete-document-confirm">
+                    <div class="action icon-delete"></div>
+                    <span>Delete {{currentQuestion.type === 'Task' ? 'task' : 'Image from study' }}</span>
+                </div>
+            </ui-toolbar>
+            <ui-dialog id="delete-document-confirm"
+               cancel-text="Cancel"
+               close-text="Delete"
+               close-action="deleteAll()"
+               modal="true"
+               content="Are you sure you want to delete this {{currentQuestion.type === 'Task' ? 'task' : 'screen and all it\'s questions' }} ?">
+            </ui-dialog>
+        </div>
+    </div>
+
+
+    <div class="right-side" layout="column">
+
+        <ui-toolbar class="header actions" layout="row" layout-align="end center">
+            <div class="header-btn">
+                <ui-button class="first" ng-click="moveTo('prev')" size="small" ng-show="showNavButton()">PREVIOUS</ui-button>
+                <ui-button class="last" ng-click="moveTo('next')" size="small" ng-show="showNavButton()">NEXT</ui-button>
+                <ui-button class="close" ng-click="done()" size="small">DONE</ui-button>
+            </div>
+        </ui-toolbar>
+
+        <div class="separator" ng-class="{ 'edit-task-separator': currentQuestion.type === 'Task'}"></div>
+
+        <div ng-if="currentQuestion.type === 'Task'" class="content edit-task-sidebar">
+            <ui-content class="questions-list">
+                <div class="questions animated fadeIn">
+                    <div class="item">
+                        <div layout="row" flex="100">
+                            <label for="edit-task-task-name">Name the Task</label>
+                        </div>
+                        <div layout="row" flex="100">
+                            <ui-input dark
+                                id="edit-task-task-name"
+                                maxlength="45"
+                                ng-change="questionChange()"
+                                ng-blur="saveTask()"
+                                ng-focus="selectInput($event)"
+                                ng-model="currentQuestion.name"></ui-input>
+                        </div>
+                        <div layout="row" flex="100">
+                            <h3>Provide a clear guidance &amp; message to the user about the target they should reach.</h3>
+                        </div>
+                        <div layout="row" flex="100">
+                            <div class="task-guidance-wrapper">
+                                <label for="edit-task-task-guidance">User guidance:</label>
+                                <div class="numbers" ng-class="{'warning': remainingCharacters < warningLevel}">{{remainingCharacters}}</div>
+                            </div>
+                        </div>
+                        <div layout="row" flex="100">
+                            <ui-textarea dark
+                                id="edit-task-task-guidance"
+                                maxlength="{{maxlength}}"
+                                ng-change="updateTextCount();questionChange()"
+                                ng-blur="saveTask()"
+                                ng-model="currentQuestion.text"
+                                ng-focus="selectInput($event)"
+                                ng-trim="false"></ui-textarea>
+                        </div>
+                    </div>
+                </div>
+            </ui-content>
+        </div>
+
+
+        <div ng-if="currentQuestion.type !== 'Task'" class="content">
+            <ui-content class="questions-list">
+                <edit-question class="questions" study="study" question-ordinal="ordinal" question-id="questionId" question-document-id="documentId" question-document-version="documentVersion"></edit-question>
+            </ui-content>
+        </div>
+
+
+    </div>
+</ui-dialog>

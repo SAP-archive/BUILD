@@ -1,0 +1,54 @@
+<div ng-class="{'ui-project-tile-new-project' : newProject, 'ui-project-tile' : !newProject, 'showFooter' : showFooter == 'true'}">
+	<div ng-if="showFooter" class="ui-project-invite-container">
+		<div>
+			<div class="ui-project-invite-title">New project invitation!</div>
+			<ui-button ng-click="acceptProject()" size="small" class="ui-project-tile-invite-accept-btn">ACCEPT</ui-button>
+            <ui-button ng-click="rejectProject()" size="small" class="ui-project-tile-invite-reject-btn">REJECT</ui-button>
+		</div>
+	</div>
+	<div ng-if="showOwner" class="ui-project-tile-owner-icon">
+	</div>
+    <div ng-if="showCancel" ng-click="cancelProject()" class="ui-project-tile-cancel-icon">
+	</div>
+    <div class="ui-project-tile-top-box">
+        <div ng-if="!projectImage">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="100%" height="100%" viewBox="0 0 330 171">
+                <line x1="0" y1="0" x2="330" y2="171" ng-class="newProject ? 'ui-project-tile-new-project-cross-line_l' : 'ui-project-tile-cross-line_l'"/>
+                <line x1="0" y1="171" x2="330" y2="0" ng-class="newProject ? 'ui-project-tile-new-project-cross-line_r' : 'ui-project-tile-cross-line_r'"/>
+            </svg>
+        </div>
+        <div ng-if="projectImage" class="ui-project-tile-image">
+            <div class="ui-project-tile-image" ng-style="{'background-image' : projectImage}"></div>
+        </div>
+    </div>
+    <div class="ui-project-tile-user-list">
+        <div ng-repeat="projectUser in projectUsers | filter: '!' + filterBy | limitTo: 5 track by $index" class="ui-project-tile-user">
+            <ui-avatar avatar-name="{{projectUser.name || projectUser.email}}" avatar-image="{{projectUser.avatar_url}}" avatar-state="{{projectUser.state}}"></ui-avatar>
+        </div>
+        <div ng-if="projectUsers.length > 5" class="ui-project-tile-user-count" ng-bind="remainingUsers"></div>
+    </div>
+    <div ng-class="newProject ? 'ui-project-tile-new-project-bottom-box' : 'ui-project-tile-bottom-box'">
+        <div ng-if="newProject">
+            <form name="newProject">
+                <ui-input-container>
+                    <input class="ui-input ui-project-tile-new-project-input"
+                           type="text"
+                           name="projectName"
+                           ng-model="projectModel[inputField]"
+                           placeholder="Untitled Project"
+                           ui-maxlength="50"
+                           nn-focus="true"
+                           maxlength="50">
+                    <div ng-messages="newProject.projectName.$error" ng-if='newProject.projectName.$dirty'>
+                        <div ng-message="ui-maxlength">That's too long!</div>
+                    </div>
+                </ui-input-container>
+            </form>
+        </div>
+
+        <div ng-if="!newProject" style="display: inline-block; width: 310px; max-width: 310px; height: 50px;">
+            <span class="project-name" ng-bind="projectName"></span>
+        </div>
+    </div>
+</div>

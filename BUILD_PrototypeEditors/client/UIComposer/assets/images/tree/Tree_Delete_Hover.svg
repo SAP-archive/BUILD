@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="34px" height="16px" viewBox="0 0 34 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Tree_Delete_Hover</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Tree-Behavior" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Story-#" sketch:type="MSArtboardGroup" transform="translate(-214.000000, -214.000000)">
+            <g id="Tree---List-State" sketch:type="MSLayerGroup" transform="translate(12.000000, 18.000000)">
+                <g id="Tree_Delete_Hover" transform="translate(202.000000, 196.000000)" sketch:type="MSShapeGroup">
+                    <rect id="Rectangle-204" fill="#2C3E50" x="0" y="0" width="34" height="16"></rect>
+                    <path d="M10,14 C13.3137085,14 16,11.3137085 16,8 C16,4.6862915 13.3137085,2 10,2 C6.6862915,2 4,4.6862915 4,8 C4,11.3137085 6.6862915,14 10,14 Z M7,10.0400391 L8.96142578,8.04052734 L7,6.04101562 L8.09179688,5 L10.0151367,6.96777344 L11.9448242,5 L13.0366211,6.04101562 L11.0751953,8.04052734 L13.0366211,10.0400391 L11.9448242,11.0810547 L10.0151367,9.11962891 L8.09179688,11.0810547 L7,10.0400391 Z" id="Oval-14" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

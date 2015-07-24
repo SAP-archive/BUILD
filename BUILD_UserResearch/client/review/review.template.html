@@ -1,0 +1,45 @@
+<div id="study-review" layout="column" layout-fill class="animated fadeIn">
+    <div layout="row" class="header">
+        <div flex="50" flex-sm="50">
+            <ui-toolbar layout="row" layout-align="start start" class="actions first-row">
+                <div class="action icon-link" ui-popup-open="study-link-popup1"></div>
+                <ui-popup id="study-link-popup1" placement="bottom" on-fully-open="selectLink()">
+                    <label>Participant Link</label><br>
+                    <ui-input id="study-link-input" ng-readonly="true" value="{{studyURL}}" click-highlight></ui-input>
+                </ui-popup>
+                <h1>{{study.name}}</h1>
+            </ui-toolbar>
+        </div>
+        <div flex="50" flex-sm="50">
+            <ui-toolbar layout="row" layout-align="end start" class="first-row">
+                <div id="reviewPreview" class="actions" ui-tooltip ui-tooltip-content="Preview" ui-tooltip-side="bottom"
+                     class="reviewPreview" ng-click="preview()">
+                    <div class="action icon-preview"></div>
+                    <div class="action-txt">Preview</div>
+                </div>
+            </ui-toolbar>
+        </div>
+    </div>
+
+    <div layout="row" layout-align="start start" class="content">
+        <div layout="column" class="side-menu" >
+            <div>
+                <ul>
+                    <li class="item" ui-sref-active="active"><a class="link" ui-sref="shell.project.UserResearch.review.overview"><span>Overview</span></a></li>
+                    <li class="item" ui-sref-active="active"><a class="link" ui-sref="shell.project.UserResearch.review.questions"><span>Tasks &amp; Questions</span></a></li>
+                  <li class="item" ui-sref-active="active">
+                     <a class="link" ui-sref="shell.project.UserResearch.review.participant-overview">
+                     <span>Participants</span></a></li>
+                 <li class="item" ui-sref-active="active">
+                     <a class="link" ui-sref="shell.project.UserResearch.review.participant-invitation">
+                     <span>Participant Invitation</span></a></li>
+                    <li class="item" ui-sref-active="active"><a class="link" ui-sref="shell.project.UserResearch.review.settings"><span>Settings</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div layout="column" class="side-content" layout-fill>
+            <div ui-view></div>
+        </div>
+    </div>
+</div>
+

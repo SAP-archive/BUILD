@@ -1,0 +1,110 @@
+@import (reference) "../../styles/base.less";
+@pane-header-border-color: #D8D8D8;
+@pane-header-expanded-border-color: #2196F3;
+@pane-header-icon-color: #2196F3;
+@pane-header-hover-color: #2196F3;
+@pane-expand-duration: 0.5s;
+@pane-hover-duration: 0.25s;
+@PickledBluewood-700: rgb(37, 50, 63);
+.ui-accordion {
+    height: 100%;
+    width: 100%;
+    .ui-accordion-paneHeader {
+        position: relative;
+        cursor: pointer;
+        text-decoration: none;
+        background-color: @PickledBluewood-700;
+        padding: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        transition: color @pane-hover-duration, border-color @pane-expand-duration;
+        &.is-expanded {
+            .ui-accordion-paneHeader-arrow {
+                background-color: @PickledBluewood-700;
+                &::after {
+                    transform: rotate(90deg);
+                    opacity: 0;
+                }
+                &::before {
+                    transform: rotate(90deg);
+                }
+            }
+        }
+        .ui-accordion-paneHeader-txt {
+            overflow: hidden;
+        }
+        .ui-accordion-paneHeader-arrow {
+            float: right;
+            width: 40px;
+            height: 43px;
+            //border-left: 1px solid rgba(255, 255, 255, 0.15);
+            &::after, &::before {
+                content: '';
+                position: absolute;
+                top: calc(~'50% - 4px');
+                left: calc(~'100% - 23px');
+                .common-accordian-arrow;
+                .common-accordian-arrow-dims;
+                transform-origin: 50% 50%;
+                transition: all @pane-hover-duration;
+            }
+            &::before {
+                transform: rotate(0deg);
+            }
+            &:hover {
+                color: @pane-header-hover-color;
+            }
+        }
+        > div {
+            h5 {
+                color: @White;
+                font-family: @roboto-font;
+                font-size: 12px;
+                font-weight: 700;
+                margin: 7px;
+                padding-left: 10px;
+                line-height: 30px;
+                text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.30);
+            }
+        }
+    }
+    .ui-accordion-paneContent {
+        position: relative;
+        overflow: hidden;
+        max-height: 0px;
+        background-color: @PickledBluewood-900;
+        > div {
+            will-change: transform, opacity;
+            transform: translate3d(0, 0, 0);
+            transition: transform @pane-expand-duration, opacity @pane-expand-duration;
+            opacity: 1;
+            transition: opacity @pane-expand-duration;
+        }
+        &.is-expanded > div {
+            transform: translate3d(0, 0, 0);
+            opacity: 1;
+        }
+        &.is-expanded-ended {
+            overflow: visible;
+        }
+        &.is-expanded-add, &.is-expanded-remove {
+            transition: max-height @pane-expand-duration;
+        }
+        .ui-accordion-content-entry {
+            font-family: @roboto-font;
+            font-size: 12px;
+            font-weight: 500;
+            color: @White;
+            line-height: 40px;
+            height: 40px;
+            padding-left: 15px;
+            border-bottom: 1px solid @PickledBluewood-700;
+            cursor: pointer;
+            &:hover {
+                background-color: @PickledBluewood-500;
+            }
+            &:active {
+                background-color: @PickledBluewood-500;
+            }
+        }
+    }
+}

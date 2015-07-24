@@ -1,0 +1,28 @@
+{
+  "name": "angular-sap-common-directives",
+  "description": "SAP Common BUILD angular utility directives",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SAP/BUILD.git"
+  },
+  "maintainers": [
+    {
+      "name": "BUILD Team",
+      "email": "contact.build@sap.com"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "Apache License, Version 2.0",
+      "url": "https://github.com/SAP/BUILD/angular-sap-common-directives/blob/master/LICENSE.md"
+    }
+  ],
+  "devDependencies": {
+    "gulp": "~3.8.11",
+    "del": "~1.1.1",
+    "gulp-eslint": "~0.9.0",
+    "gulp-util": "~3.0.4",
+    "node-sap-build": "~0.1.0"
+  }
+}

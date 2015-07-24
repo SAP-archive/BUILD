@@ -1,0 +1,227 @@
+@import (reference) 'node_modules/norman-client-tp/node_modules/angular-sap-ui-elements/styles/base';
+
+.app {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  font: normal 14px 'roboto', sans-serif;
+
+  .welcome-main {
+    .norman-gradient();
+
+    .welcome-wrapper {
+      box-sizing: border-box;
+      position: relative;
+      min-height: 1200px;
+      a {
+        color: #fff;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      .header {
+        height: 400px;
+        box-sizing: border-box;
+        overflow: hidden;
+        position: relative;
+      }
+      .welcome-video {
+        min-width: 100%;
+        min-height: 400px;
+        position: absolute;
+        z-index: 0;
+        top: 0;
+      }
+
+      .header-wrapper {
+        max-width: 1140px;
+        padding: 20px 0 120px 0;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+      }
+      .norman-logo {
+        float: left;
+
+        img {
+          height: 40px;
+        }
+      }
+
+      .btn-homecover {
+        display: block;
+        width: 150px;
+        height: 40px;
+        line-height: 39px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 3px;
+        border: none;
+        color: #fff;
+        padding: 0;
+        font-size: 15px;
+        font-weight: 700;
+        text-align: center;
+        box-sizing: border-box;
+        cursor: pointer;
+        text-decoration: none;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        transition: background .3s ease-out;
+
+        &::-moz-focus-inner {
+          border: 0;
+          padding: 0;
+        }
+        &:focus,
+        &:hover {
+          background: rgba(0, 0, 0, 0.8);
+        }
+        &:active {
+          background: rgba(0, 0, 0, 0.9);
+        }
+      }
+      .btn-right {
+        float: right;
+        margin-left: 20px;
+      }
+
+      .welcome-row {
+        color: #fff;
+      }
+      .welcome-content-wrapper {
+        max-width: 1140px;
+        margin: 0 auto;
+      }
+      .welcome-row-white {
+        background: #fff;
+        text-align: center;
+        color: #2C3E50;
+        height: 230px;
+        h1 {
+          font: 100 72px/95px @roboto-font;
+          margin: 0;
+          padding: 35px 0 0 0;
+          img {
+            height: 80px;
+            vertical-align: bottom;
+          }
+        }
+        h2 {
+          font: 500 36px/48px @roboto-font;
+          margin: 0;
+        }
+      }
+
+      .welcome-bubbles {
+        text-align: center;
+        padding: 75px 0;
+      }
+      .welcome-bubble {
+        display: inline-block;
+        vertical-align: top;
+        width: 150px;
+        margin-right: 30px;
+        &:last-child {
+          margin-right: 0;
+        }
+        img {
+          padding-bottom: 10px;
+        }
+        span {
+          font: 500 20px/26px @roboto-font;
+        }
+      }
+
+      .welcome-row-signup {
+        text-align: center;
+        height: 240px;
+      }
+
+      .btn-signup {
+        display: inline-block;
+        width: 330px;
+        height: 42px;
+        background: #fff;
+        border-radius: 3px;
+        color: #604281;
+        padding: 23px 7px 0 8px;
+        border: none;
+        line-height: 1;
+        text-decoration: none;
+        box-sizing: border-box;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+        text-transform: uppercase;
+        height: 66px;
+        font-weight: 700;
+        font-size: 20px;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        transition: background .3s ease-out;
+
+        &::-moz-focus-inner {
+          border: 0;
+          padding: 0;
+        }
+        &:focus,
+        &:hover {
+          background: #F7E6FF;
+        }
+        &:active {
+          background: #C2A4D0;
+        }
+      }
+
+      .signup-already {
+        font: 300 20px/26px @roboto-font;
+        padding: 14px 0 0;
+      }
+      .white {
+        color: @White;
+      }
+
+      .welcome-foot {
+        display: block;
+        clear: both;
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        .welcome-foot-right {
+          float: right;
+          padding-top: 3px;
+        }
+        .sap-logo img {
+          vertical-align: middle;
+        }
+        a {
+          padding-left: 20px;
+          color: #fff;
+        }
+      }
+      .welcome-btn-login {
+        width: 150px;
+        height: 42px;
+        background: #fff;
+        border-radius: 3px;
+        color: #604281;
+        padding: 7px 7px 0 8px;
+        font-size: 15px;
+        font-weight: 600;
+        border: none;
+        line-height: 1;
+        box-sizing: border-box;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+        -webkit-user-select: none;
+        user-select: none;
+        transition: background 0.3s ease-out;
+      }
+    }
+  }
+}

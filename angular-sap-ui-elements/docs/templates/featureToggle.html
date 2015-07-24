@@ -1,0 +1,42 @@
+<ui-toolbar layout="column" class="left-nav-title">
+    <h1 class="ui-toolbar-tools" flex layout="column">Services > featureToggle</h1>
+</ui-toolbar>
+<ui-content flex ui-scroll-y >
+    <ui-content flex class="doc-content">
+        <div layout="row"><a name="Service-featureToggle"><h2 class="item-name">featureToggle</h2></a></div>
+        <div layout="row">
+            <div class="item" flex>
+                Using the feature toggle service, you can determine if a particular feature is switched on/off in the current build.  The features toggle will search for the features.json file in the server to determine if the feature is enabled.
+            </div>
+        </div>
+
+        <div layout="row" class="row-top">
+            <div class="item" flex="20" flex-sm="20">
+                Include featureToggle as a dependency in your app module
+            </div>
+            <div class="code" flex="80" flex-sm="80">
+                <pre><code>
+var module = angular.module('myModule', ['featureToggle']);
+                </code></pre>
+            </div>
+        </div>
+
+        <div layout="row" class="row-top">
+            <div class="item" flex="20" flex-sm="20">
+                Use the feature toggle for determine if a feature is switched on:
+            </div>
+            <div class="code" flex="80" flex-sm="80">
+                <pre><code>
+featureToggle.isEnabled('some-feature').then(function(toggleResult) {
+    if (toggleResult == true) {
+        // feature is enabled
+    } else {
+        // feature is disabled
+    }
+    ...
+}
+                </code></pre>
+            </div>
+        </div>
+    </ui-content>
+</ui-content>

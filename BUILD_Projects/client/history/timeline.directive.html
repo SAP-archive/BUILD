@@ -1,0 +1,32 @@
+<section id="cd-timeline" class="cd-container">
+    <div id="time-line-links" class="time-line-links">
+        <div ng-repeat="event in tlevents | limitTo : 5">
+            <a href="#{{ event.date| date :'yyyyMMddHHmmss'}}"
+               ng-click="scrollTo(filter('date')(event.date,'yyyyMMddHHmmss'))">{{event.date | date :'MMM, yyyy HH:mm'}}</a>
+            <br/>
+        </div>
+    </div>
+    <div id="{{event.date | date :'yyyyMMddHHmmss'}}" class="cd-timeline-block cssanimations"
+         ng-repeat="event in tlevents | orderBy: 'date'">
+        <div class="cd-timeline-img cd-{{event.resource_type}} is-hidden">
+            <img ng-src="resources/norman-projects-client/assets/img/cd-icon-{{event.resource_type}}.svg" alt="Picture">
+        </div>
+        <!-- cd-timeline-img -->
+
+        <div class="cd-timeline-content is-hidden hs-timeline-content">
+            <h2 class="hs-timeline-content-h2">{{event.resource_name}}</h2>
+
+            <p>{{event.description}}</p>
+
+            <div class="hs-content-thumbnail" ng-if="event.thumbnail_url != null">
+                <img ng-src="{{event.thumbnail_url}}"/>
+            </div>
+            <div ng-if="event.resource_url != null">
+                <a href="{{event.resource_url}}" class="cd-read-more">open</a>
+            </div>
+            <span class="cd-date">{{event.date | date}}</span>
+        </div>
+        <!-- cd-timeline-content -->
+    </div>
+    <!-- cd-timeline-block -->
+</section> <!-- cd-timeline -->

@@ -1,0 +1,12 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.view.SimplePage" xmlns:m="sap.m" xmlns:layout="sap.ui.layout">
+    <m:Page id="RootControl" title="Simple Page">
+        <m:content>
+            <layout:VerticalLayout id="MyPatternSection" width="400px">
+                <layout:content>
+                    <m:Label id="Label1" text="VerticalLayout"/>
+                    <m:Button id="Button1" text="PatternButton" type="Back"/>
+                </layout:content>
+            </layout:VerticalLayout>
+        </m:content>
+    </m:Page>
+</mvc:View>

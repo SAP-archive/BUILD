@@ -1,0 +1,3 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.view.SimplePageWithEvent" xmlns:m="sap.m">
+    <m:Page id="Root-Control" title="Simple Page" navButtonPress="_onNavButtonPressRoot_Control"/>
+</mvc:View>

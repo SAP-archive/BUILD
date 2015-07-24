@@ -1,0 +1,30 @@
+<div ng-controller="StudyWidgetCtrl as studyHomeWidget" class="fadeIn" id="study-studyHomeWidget" ngCloak ng-show="studyHomeWidget.participates != undefined && studyHomeWidget.participates.length > 0 && !studyHomeWidget.loading">
+    <div class="study-header">
+        <div class="study-title">
+            <h1>Studies I participate in
+                <small><b ng-bind="studyHomeWidget.participates.length"></b><span class="study-count-text" ng-bind="studyHomeWidget.participates.length === 1 ? ' study' : ' studies'"></span></small>
+            </h1>
+        </div>
+    </div>
+    <div layout="row">
+        <div ng-class="{studyShowAll: studyHomeWidget.showAllStudies}" class="study-studies" more-less num-of-hidden="studyHomeWidget.numOfHidden">
+            <ui-study-tile ng-repeat="participate in studyHomeWidget.participates | orderBy: '-participatedAt'"
+                idx="{{$index}}"
+                name="{{participate.name}}"
+                comments="{{participate.comments}}"
+                date="{{participate.participatedAt}}"
+                annotations="{{participate.annotations}}"
+                thumb="{{participate.thumbnail}}"
+                id="{{participate._id}}"
+                on-select="studyHomeWidget.openStudy(participate.projectId, participate._id)"
+                url="{{studyHomeWidget.baseUrl}}/norman/projects/{{participate.projectId}}/research/participant/{{participate._id}}"
+		        status="{{participate.status}}"
+                type="participant">
+            </ui-study-tile>
+        </div>
+    </div>
+    <div class="study-more-less" ng-show="studyHomeWidget.participates.length > 0 && studyHomeWidget.numOfHidden > 0" layout="row">
+        <div ng-class="studyHomeWidget.showAllStudies ? 'study-all-link-less' : 'study-all-link-more'" ng-click="studyHomeWidget.showAllStudies = !studyHomeWidget.showAllStudies">&nbsp;</div>
+        <a class="study-all-link" href="" ng-click="studyHomeWidget.showAllStudies = !studyHomeWidget.showAllStudies" ng-bind="(studyHomeWidget.showAllStudies == true ? 'Hide '+studyHomeWidget.numOfHidden : 'Show '+studyHomeWidget.numOfHidden)+(studyHomeWidget.numOfHidden > 1 ? ' more studies' : ' more study')"></a>
+    </div>
+</div>

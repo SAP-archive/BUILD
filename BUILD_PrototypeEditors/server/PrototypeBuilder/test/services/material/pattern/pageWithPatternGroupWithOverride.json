@@ -1,0 +1,85 @@
+{
+  "name": "SimplePage",
+  "mainEntityId": "",
+  "rootControlId": "RootControl",
+  "controls": [
+    {
+      "controlId": "RootControl",
+      "parentControlId": null,
+      "controlName": "sap_m_Page",
+      "catalogControlName": "sap_m_Page",
+      "properties": [
+        {
+          "name": "title",
+          "value": "Simple Page"
+        }
+      ],
+      "groups": [
+        {
+          "groupId": "content",
+          "children": ["MyPatternSection"]
+        }
+      ]
+    },
+    {
+      "controlId": "MyPatternSection",
+      "parentControlId": "RootControl",
+      "controlName": "sap.my.PatternSection",
+      "catalogControlName": "sap.my.PatternSection",
+      "groups": [
+        {
+          "children": [
+            "Label1",
+            "Button1",
+            "Button2"
+          ],
+          "groupId": "content"
+        }
+      ]
+    },
+    {
+      "controlId": "Label1",
+      "controlName": "sap_m_Label",
+      "parentControlId": "RootControl",
+      "catalogControlName": "sap_m_Label",
+      "properties": [
+        {
+          "name": "text",
+          "value": "VerticalLayout"
+        }
+      ]
+    },
+    {
+      "controlId": "Button1",
+      "controlName": "sap_m_Button",
+      "parentControlId": "RootControl",
+      "catalogControlName": "sap_m_Button",
+      "properties": [
+        {
+          "name": "text",
+          "value": "Not Bacl"
+        },
+        {
+          "name": "type",
+          "value": "Back"
+        }
+      ]
+    },
+    {
+      "controlId": "Button2",
+      "controlName": "sap_m_Button",
+      "parentControlId": "RootControl",
+      "catalogControlName": "sap_m_Button",
+      "properties": [
+        {
+          "name": "text",
+          "value": "Back"
+        },
+        {
+          "name": "type",
+          "value": "Back"
+        }
+      ]
+    }
+  ]
+}

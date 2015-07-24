@@ -1,0 +1,20 @@
+{
+    "target": {
+        "hostname": "my.norman.sap.corp",
+        "port": 9443,
+        "ca": "../tls/cacerts/SAPNetCA.pem"
+    },
+    "user" : {
+        "dir": "../tls/usercerts",
+        "default": "Alice",
+        "header": "ssl_client_cert"
+    },
+    "http": {
+        "hostname": "my.norman.sap.corp",
+        "port": 8443,
+        "tls": {
+            "key": "../tls/my.norman.sap.corp.key",
+            "cert": "../tls/my.norman.sap.corp.cer"
+        }
+    }
+}

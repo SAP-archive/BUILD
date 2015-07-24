@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="27px" height="24px" viewBox="0 0 27 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Clock 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="UI-TOOLKIT" sketch:type="MSArtboardGroup" transform="translate(-2437.000000, -740.000000)" fill="#2980B9">
+            <g id="Clock-2" sketch:type="MSLayerGroup" transform="translate(2437.000000, 740.000000)">
+                <path d="M3.04107378,13 C3.01387133,12.6702666 3,12.3367532 3,12 C3,5.372583 8.372583,0 15,0 C21.627417,0 27,5.372583 27,12 C27,18.627417 21.627417,24 15,24 C10.865933,24 7.22012782,21.909503 5.06203072,18.7279553 L6.29789528,16.9303341 C8.01680869,19.9577176 11.269904,22 15,22 C20.5228475,22 25,17.5228475 25,12 C25,6.4771525 20.5228475,2 15,2 C9.4771525,2 5,6.4771525 5,12 C5,12.3374994 5.01671944,12.6710938 5.04937524,13 L3.04107378,13 Z" id="Oval-1" sketch:type="MSShapeGroup"></path>
+                <path d="M0,11 L8,11 L4,17 L0,11 Z" id="Triangle-2" sketch:type="MSShapeGroup"></path>
+                <path d="M16,11 L16,3 L14,3 L14,12 L14,13 L20,13 L20,11 L16,11 L16,11 Z" id="Rectangle-1" sketch:type="MSShapeGroup"></path>
+                <rect id="Rectangle-4" sketch:type="MSShapeGroup" x="14" y="19" width="2" height="2"></rect>
+                <rect id="Rectangle-6" sketch:type="MSShapeGroup" x="11" y="18" width="1" height="1"></rect>
+                <rect id="Rectangle-7" sketch:type="MSShapeGroup" x="8" y="15" width="1" height="1"></rect>
+                <rect id="Rectangle-8" sketch:type="MSShapeGroup" x="8" y="8" width="1" height="1"></rect>
+                <rect id="Rectangle-9" sketch:type="MSShapeGroup" x="11" y="5" width="1" height="1"></rect>
+                <rect id="Rectangle-10" sketch:type="MSShapeGroup" x="18" y="5" width="1" height="1"></rect>
+                <rect id="Rectangle-11" sketch:type="MSShapeGroup" x="21" y="8" width="1" height="1"></rect>
+                <rect id="Rectangle-12" sketch:type="MSShapeGroup" x="21" y="15" width="1" height="1"></rect>
+                <rect id="Rectangle-13" sketch:type="MSShapeGroup" x="18" y="18" width="1" height="1"></rect>
+                <rect id="Rectangle-5" sketch:type="MSShapeGroup" x="22" y="11" width="2" height="2"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

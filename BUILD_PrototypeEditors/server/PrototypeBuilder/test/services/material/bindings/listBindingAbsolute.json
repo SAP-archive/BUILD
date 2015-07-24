@@ -1,0 +1,56 @@
+{
+  "name": "SimplePage",
+  "mainEntityId": "",
+  "rootControlId": "RootControl",
+  "controls": [
+    {
+      "controlId": "RootControl",
+      "parentControlId": null,
+      "catalogControlName": "sap_m_Page",
+      "controlName": "sap_m_Page",
+      "properties": [
+        {
+          "name": "title",
+          "value": "Simple Page"
+        }
+      ],
+      "groups": [
+        {
+          "groupId": "content",
+          "children": ["MyList"]
+        }
+      ]
+    },
+    {
+      "controlId": "MyList",
+      "parentControlId": "RootControl",
+      "catalogControlName": "sap_m_List",
+      "controlName": "sap_m_List",
+      "groups": [
+        {
+          "groupId": "items",
+          "children": ["MyListItem"],
+          "binding": {
+              "isRelative": false,
+              "paths": [{
+                  "entityId": "Entity1",
+                  "propertyId": ""
+              }]
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "MyListItem",
+      "parentControlId": "MyList",
+      "controlName": "sap_m_StandardListItem",
+      "catalogControlName": "sap_m_StandardListItem",
+      "properties": [
+        {
+          "name": "title",
+          "value": "My Item Title"
+        }
+      ]
+    }
+  ]
+}

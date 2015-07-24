@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="25px" height="17px" viewBox="0 0 25 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2 (9961) - http://www.bohemiancoding.com/sketch -->
+    <title>chat</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="UI-TOOLKIT" sketch:type="MSArtboardGroup" transform="translate(-2440.000000, -349.000000)" fill="#2980B9">
+            <g id="LEFT-MENU-HOVER" sketch:type="MSLayerGroup" transform="translate(2418.000000, 113.000000)">
+                <g id="ICONS" transform="translate(21.000000, 22.000000)" sketch:type="MSShapeGroup">
+                    <path d="M19.8369269,216.444016 C23.4374947,217.439491 26,219.999244 26,223 C26,224.816281 25.061208,226.470997 23.5216639,227.715066 C23.8931062,228.809093 24.6120115,230.068549 26,231 C24.0012284,231 22.1276493,230.206238 20.6414136,229.301612 C19.3897225,229.749063 17.9846319,230 16.5,230 C14.771982,230 13.1517225,229.660044 11.7556844,229.065946 C17.3133087,228.606286 21.6333333,225.131896 21.6333333,220.914035 C21.6333333,219.265183 20.9731494,217.729948 19.8369269,216.444016 L19.8369269,216.444016 Z M3.47833608,225.715066 C1.93879202,224.470997 1,222.816281 1,221 C1,217.134007 5.25329488,214 10.5,214 C15.7467051,214 20,217.134007 20,221 C20,224.865993 15.7467051,228 10.5,228 C9.01536807,228 7.61027748,227.749063 6.35858642,227.301612 C4.87235067,228.206238 2.99877156,229 1,229 C2.38798854,228.068549 3.10689383,226.809093 3.47833608,225.715066 Z" id="chat"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

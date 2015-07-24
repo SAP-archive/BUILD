@@ -1,0 +1,181 @@
+/* -------------------------------------------------- */
+/* Norman project ui editor styling - library panel   */
+/* np: norman project                                 */
+/* e: ui editor                                       */
+/* -------------------------------------------------- */
+@import (reference) '../node_modules/norman-client-tp/node_modules/angular-sap-ui-elements/styles/variables';
+
+/*
+ * namespace for ui-editor styles
+ */
+
+.np-e {
+    /*
+     * sidebar styles
+     */
+    &-sidebar {
+        height: 100%;
+
+        &-tabs {
+            height: 100%;
+            width: 100%;
+        }
+
+        &-tab--controls {
+            .ui-tab-content {
+                display: flex !important;
+                flex-direction: column;
+            }
+
+            .np-e-library-control-palette {
+                overflow: auto;
+                flex-grow: 1;
+            }
+        }
+
+        &-groupname {
+            padding-left: 5px;
+
+        }
+
+        .ui-tabs .ui-tab-option {
+            padding-left: 16px;
+            > span {
+                font-size: 12px;
+            }
+        }
+
+        &-search {
+            position: relative;
+            flex-shrink: 0;
+
+            &-filter-icon {
+                position: absolute;
+                z-index: 1;
+                top: 4px;
+                left: 203px;
+            }
+
+            &-inner {
+                display: block;
+                width: 199px;
+                margin: 12px;
+                font-size: 12px;
+                line-height: 25px;
+            }
+        }
+
+        &-data-tab-title {
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+            padding: 10px 0px 10px 16px;
+            background-color: #43596f;
+        }
+
+        .ui-accordion {
+            overflow: auto;
+            height: calc(~"100% - 100px");
+
+            &-paneHeader {
+                span {
+                    padding: 0 10px;
+                }
+                > div h5 {
+                    padding-left: 5px;
+                }
+            }
+        }
+        .ui-accordion.np-e-data-accordion {
+            height: 100%;
+        }
+
+        np-component-library-item {
+            display: block;
+            box-sizing: border-box;
+            /*border needed because of accordion bug*/
+            border: 1px solid transparent;
+            width: 100%;
+            position: relative;
+        }
+    }
+
+    &-library {
+        flex-shrink: 0;
+
+        &-inner {
+            display: inline-block;
+            padding-left: 16px;
+            padding-top: 5px;
+            &-img {
+                float: right;
+                padding-right: 16px;
+                margin-top: 15px;
+                cursor: pointer;
+            }
+        }
+
+        &-accordion-pane-content > div {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin: 5px 0;
+        }
+
+        &-header > h5 {
+            background-color: rgba(19, 34, 50, 0.52);
+            font-family: @roboto-font;
+            font-size: 12px;
+            color: @White;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding-left: 16px;
+        }
+        &-item-header {
+            width: 100%;
+            .np-component-library-item {
+                background: transparent;
+                border-bottom:0;
+            }
+        }
+    }
+
+    &-dropdown-menu {
+        &-listitem {
+            display: block;
+            color: @White;
+            font-family: @roboto-font;
+            padding-bottom: 10px;
+            padding-top: 8px;
+            font-size: 12px;
+        }
+
+        &-link {
+            color: @White;
+            font-family: @roboto-font;
+            text-decoration: none;
+        }
+
+        &-separator {
+            padding-top: 10px;
+            border-bottom: solid 1px @PickledBluewood-700;
+        }
+
+        .ui-popup.dark {
+            background-color: white;
+        }
+
+    }
+
+    &-library-search {
+        &-text {
+            display: block;
+            width: 170px;
+            margin: 10px auto;
+            font-size: 12px;
+
+        }
+    }
+}

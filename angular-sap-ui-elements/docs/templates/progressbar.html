@@ -1,0 +1,27 @@
+<ui-toolbar layout="column" class="left-nav-title">
+    <h1 class="ui-toolbar-tools" flex layout="column">Directives > ui-pie-chart</h1>
+</ui-toolbar>
+<ui-content flex ui-scroll-y>
+    <ui-content flex class="doc-content">
+        <div layout="row"><a name="Directives-ui-pie-chart"><h2 class="item-name">ui-pie-chart</h2></a></div>
+
+        <div layout="row"><a name="Directives-ui-pie"><h2 class="item-name">Pie Chart</h2></a></div>
+        <div layout="row">
+            <div class="item" flex="20" flex-sm="20">
+                <ui-progress-bar current-value="{{pbValue}}"></ui-progress-bar>
+
+                <br>
+                <br>
+                <ui-button style="margin-bottom: 10px;" size="small" ng-click="pb0()">set value to 0</ui-button>
+                <ui-button style="margin-bottom: 10px;" size="small" ng-click="pb75()">set value to 75%</ui-button>
+                <ui-button style="margin-bottom: 10px;" size="small" ng-click="pb100()">set value to 100%</ui-button>
+            </div>
+            <div class="code" flex="80" flex-sm="80">
+                <pre><code>
+&lt;ui-progress-bar current-value="50"&gt;&lt;/ui-progress-bar&gt;
+                </code></pre>
+            </div>
+        </div>
+
+    </ui-content>
+</ui-content>

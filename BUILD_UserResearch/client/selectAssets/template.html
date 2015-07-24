@@ -1,0 +1,44 @@
+<ui-dialog id="selectAssetsModal"
+           modal="true"
+           title="Select Images"
+           cancel-text="Cancel"
+           cancel-action="onDialogCancel()"
+           close-text="Done"
+           close-action="create()"
+           disable-close="isDisabled()">
+
+    <ui-file-upload
+        is-dialog=true
+        project-id="projectId"
+        upload-button-id="studyModalUploadButton"
+        success="addAfterUpload(responseDetails, sequence)"
+        invalid-files="rejectFiles(res)"
+        completed="updateAllAssets()"
+        keep-upload-items-on-complete="true"
+        acceptFileExtensions="jpg,jpeg,png,gif,bmp"
+        accept="image/jpg,image/jpeg,image/png,image/gif,image/bmp">
+
+        <div class="content">
+            <div ng-if="assets.length > 0" class="image-total">{{assets.length}} available images</div>
+            <div class="list">
+                <div id="studyModalUploadButton" class="asset file-upload-button"><div>Upload Images</div></div>
+
+                <ui-file-upload-items style-class="asset" thumbnail-size="medium"></ui-file-upload-items>
+
+                <div ng-repeat="asset in assets"
+                    class="asset"
+                    ng-class="{selected: asset.selected}"
+                    ng-click="selectAsset($index)">
+
+                    <div class="complete-tick"></div>
+
+                    <ui-thumbnail dark
+                        thumbnail-src="api/projects/{{projectId}}/document/{{asset._id}}/render/{{asset.metadata.hasThumb ? '?thumbOnly=true' : ''}}"
+                        size="medium"
+                        class="asset-thumbnail"></ui-thumbnail>
+
+                </div>
+            </div>
+        </div>
+    </ui-file-upload>
+</ui-dialog>

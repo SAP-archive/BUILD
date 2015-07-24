@@ -1,0 +1,21 @@
+"use strict";
+sap.ui.controller("generated.app.view.PageWithAsset",
+{
+    onInit: function() {
+        this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+        this.oRouter.attachRouteMatched(jQuery.proxy(this.handleRouteMatched, this));
+    },
+    handleRouteMatched: function(oEvent) {
+        this.sRoute = oEvent.getParameter("name");
+        this.sContext;
+
+        if (this.sRoute === "PageWithAsset") {
+            if (oEvent.mParameters.arguments.context != null && oEvent.mParameters.arguments.context != "") {
+                this.sContext = oEvent.mParameters.arguments.context;
+                var params = {}
+                this.getView().bindElement("/" + this.sContext, params);
+            }
+        }
+
+    }
+});

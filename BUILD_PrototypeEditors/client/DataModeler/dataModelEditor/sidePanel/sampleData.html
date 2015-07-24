@@ -1,0 +1,89 @@
+<div ng-controller="SampleDataController as controller">
+
+    <!-- Open editor -->
+    <div class="dm-sample-container">
+        <ui-button size="large" ng-click="controller.openSampleData()">
+            Open Editor
+        </ui-button>
+    </div>
+    <div ng-include="anyPathName"></div>
+
+
+    <ui-accordion>
+
+        <!-- Import -->
+        <ui-accordion-pane>
+
+            <ui-accordion-pane-header>
+                <h5>Import</h5>
+            </ui-accordion-pane-header>
+
+            <ui-accordion-pane-content>
+
+                <div class="dm-sample-container">
+
+                    <div class="dm-drop-zone" id="dm-upload-dropZone">
+                        <div class="dm-upload-icon"></div>
+                        Drop File here
+                    </div>
+
+                    <H4 class="dm-btn  "> OR </H4>
+
+                    <!--temporary workaround to avoid error with ui-button and ui-fileUpload-->
+                    <div id="dm-upload-excel" class="dm-button-upload ui-button ui-button-large">
+                        CHOOSE FILE
+                    </div>
+                    <ui-file-upload dropzone-id="dm-upload-dropZone"
+                                    is-dialog="false"
+                                    success="controller.importSuccess(fileId)"
+                                    upload-button-id="dm-upload-excel"
+                                    upload-url="{{controller.getImportUrl()}}">
+                    </ui-file-upload>
+                </div>
+
+            </ui-accordion-pane-content>
+
+        </ui-accordion-pane>
+
+        <!-- Export -->
+        <ui-accordion-pane>
+
+            <ui-accordion-pane-header>
+                <h5>Export</h5>
+            </ui-accordion-pane-header>
+
+            <ui-accordion-pane-content>
+                <div class="dm-choose-type-container">
+                    <ui-radio dark ng-model="controller.exportType" value="{{controller.EXPORT_TYPES[0]}}"
+                              id="dm-choose-export-type-object"></ui-radio>
+                    <label for="dm-choose-export-type-object" class="dm-label">
+                        <span>{{controller.selectedEntity.name}}</span>
+                        <span>Selected object</span>
+                    </label>
+                </div>
+                <div class="dm-choose-type-container" ng-show="controller.checkModelHasMultipleEntities(model)">
+                    <ui-radio dark ng-model="controller.exportType" value="{{controller.EXPORT_TYPES[1]}}"
+                              id="dm-choose-export-type-all"></ui-radio>
+                    <label for="dm-choose-export-type-all" class="dm-label">
+                        <span>Data Model </span>
+                        <span>Entire model</span>
+                    </label>
+                </div>
+
+                <div class="dm-export-manage-relations">
+                    <label for="dm-export-table-toggle" class="dm-label">Relations with Tables</label>
+                    <ui-toggle class="dm-export-table-toggle" ng-model="controller.exportUseTable"
+                               id="dm-export-table-toggle"></ui-toggle>
+                </div>
+
+                <div class="dm-sample-container">
+                    <ui-button size="large" ng-click="controller.exportInExcel()">
+                        Export
+                    </ui-button>
+                </div>
+
+            </ui-accordion-pane-content>
+        </ui-accordion-pane>
+    </ui-accordion>
+
+</div>

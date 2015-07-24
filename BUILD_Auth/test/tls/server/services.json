@@ -1,0 +1,51 @@
+{
+    "filters": {
+        "auth": {
+            "module": "norman-auth-server",
+            "filter": "auth"
+        },
+        "jwt": {
+            "module": "norman-auth-server",
+            "filter": "jwt"
+        },
+        "x509": {
+            "module": "norman-auth-server",
+            "filter": "x509",
+            "options": {
+                "principalPropagation": {
+                    "header": "ssl_client_cert",
+                    "trust": [
+                        {
+                            "subject": {
+                                "CN": "my.norman.sap.corp"
+                            },
+                            "issuer": {
+                                "CN": "SAPNetCA"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "xsrf": {
+            "module": "norman-auth-server",
+            "filter": "xsrf",
+            "options": {
+                "headerName": "X-CSRF-Token",
+                "cookieName": "X-CSRF-Token"
+            }
+        }
+    },
+    "locations": [
+        {
+            "/api": [ "jwt", "x509", "auth" ]
+        }
+    ],
+    "handlers": {
+        "norman-auth-server": {
+            "users": "/api/users",
+            "auth": "/auth"
+        },
+        "norman-audit-server": {}
+    }
+}

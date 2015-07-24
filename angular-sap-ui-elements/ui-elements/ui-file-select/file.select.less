@@ -1,0 +1,277 @@
+@import (reference) "../ui-elements";
+@import (reference) "../../styles/base.less";
+
+.file-select {
+    width: 750px;
+
+    .file-select-content {
+        height: 550px;
+        overflow: auto;
+        color: @White;
+        font-size: 15px;
+
+        .loading-file-list {
+            margin: 202px 0;
+            text-align: center;
+            a {
+                color: @CuriousBlue-300;
+                font-weight: bolder;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+            h1 {
+                color: @White;
+            }
+        }
+
+        .top-menu {
+
+            float: left;
+            width: 100%;
+            border-bottom: 1px @PickledBluewood-700 solid;
+            .files-menu {
+
+                .files-available {
+                    padding-left: 30px;
+                    line-height: 60px;
+                    font-weight: bold;
+                    float: left;
+                }
+
+                .options {
+                    float: right;
+                    padding-right: 30px;
+
+                    .sort-options {
+                        font-weight: bold;
+                        float: left;
+                        line-height: 60px;
+
+                        .ui-select {
+                            margin-left: 10px;
+                        }
+                    }
+
+                    .view-options {
+                        padding-left: 30px;
+                        float: left;
+                        margin-top: 20px;
+                        .view-tiles {
+                            width: 26px;
+                            height: 20px;
+                            cursor: pointer;
+                            position: relative;
+                            float: left;
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                .common-ico-view-type-tile-off;
+                                .common-ico-view-type-tile-off-dims;
+                            }
+                            &.selected {
+                                &::after {
+                                    .common-ico-view-type-tile-on;
+                                    .common-ico-view-type-tile-on-dims;
+                                }
+                            }
+                        }
+                        .view-list {
+                            width: 26px;
+                            height: 20px;
+                            cursor: pointer;
+                            position: relative;
+                            float: left;
+                            margin-left: 30px;
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                .common-ico-view-type-list-off;
+                                .common-ico-view-type-list-off-dims;
+                            }
+                            &.selected {
+                                &::after {
+                                    .common-ico-view-type-list-on;
+                                    .common-ico-view-type-list-on-dims;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .upload-link {
+                float: left;
+                clear: both;
+                margin-left: 30px;
+                margin-bottom: 20px;
+                color: @CuriousBlue-300;
+                cursor: pointer;
+                position: relative;
+                padding-left: 30px;
+                &:hover {
+                    text-decoration: underline;
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    .common-ico-cloud-upload;
+                    .common-ico-cloud-upload-dims;
+                }
+            }
+        }
+
+        .files-tile-view {
+            float: left;
+            padding-top: 20px;
+            padding-left: 30px;
+            width: calc(~'100% - 60px');
+
+            .file-tile-view {
+                cursor: pointer;
+                float: left;
+
+                &.selected {
+                    .file-image {
+                        background-color: @CuriousBlue-500-Opacity-60;
+                        .ui-thumbnail {
+                            opacity: 0.5;
+                            background-clip: content-box;
+                        }
+                        .complete-tick {
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                .file-image {
+                    float: left;
+                    border: 1px @PickledBluewood-600 solid;
+                    background-color: @PickledBluewood-900;
+                    position: relative;
+                    margin-right: 30px;
+                    width: 158px;
+                    height: 120px;
+                    transition: all 0.3s ease-out;
+
+                    .complete-tick {
+                        z-index: 2;
+                        transition: all 0.3s ease-out;
+                        opacity: 0;
+                        width: 30px;
+                        height: 30px;
+                        position: absolute;
+                        top: calc(~'50% - 15px');
+                        left: calc(~'50% - 15px');
+                        background-color: @White;
+                        border-radius: 50%;
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            top: calc(~'50% - 10px');
+                            left: calc(~'50% - 11px');
+                            .common-ico-tick;
+                            .common-ico-tick-dims;
+                        }
+                    }
+                }
+
+                .ui-thumbnail.pill {
+                    position: absolute;
+                    top: calc(~'50% - 20px');
+                    left: calc(~'50% - 30px');
+                }
+
+                .ui-thumbnail.light {
+                    border: none;
+                }
+            }
+        }
+
+        .files-list-view {
+            width: 100%;
+            float: left;
+            padding-top: 20px;
+
+            .file-list-view {
+                cursor: pointer;
+                float: left;
+                clear: both;
+                width: calc(~'100% - 30px');
+                height: 45px;
+                margin-bottom: 10px;
+                padding-left: 30px;
+                padding-top: 2px;
+                padding-bottom: 4px;
+
+                &:hover {
+                    background-color: @PickledBluewood-700;
+                }
+
+                &.selected {
+                    .file-image {
+                        background-color: @CuriousBlue-500-Opacity-60;
+                        .ui-thumbnail {
+                            opacity: 0.5;
+                            background-clip: content-box;
+                        }
+                        .complete-tick {
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                .file-image {
+                    float: left;
+                    height: 45px;
+                    width: 62px;
+                    border: 1px @PickledBluewood-600 solid;
+                    background-color: @PickledBluewood-900;
+                    position: relative;
+                    transition: all 0.3s ease-out;
+
+                    .complete-tick {
+                        z-index: 2;
+                        transition: all 0.3s ease-out;
+                        opacity: 0;
+                        width: 30px;
+                        height: 30px;
+                        position: absolute;
+                        top: calc(~'50% - 15px');
+                        left: calc(~'50% - 15px');
+                        background-color: @White;
+                        border-radius: 50%;
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            top: calc(~'50% - 10px');
+                            left: calc(~'50% - 11px');
+                            .common-ico-tick;
+                            .common-ico-tick-dims;
+                        }
+                    }
+
+                    .ui-thumbnail.light {
+                        border: none;
+                    }
+                }
+                .file-name {
+                    float: left;
+                    line-height: 45px;
+                    margin-left: 30px;
+                }
+                .file-date {
+                    float: right;
+                    line-height: 45px;
+                    margin-right: 30px;
+                }
+            }
+
+        }
+    }
+}

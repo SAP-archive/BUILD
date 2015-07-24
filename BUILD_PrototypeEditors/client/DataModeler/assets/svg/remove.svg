@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Delete 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="UI-TOOLKIT" sketch:type="MSArtboardGroup" transform="translate(-2053.000000, -70.000000)">
+            <g id="PROTOTYPE-SCREENS" sketch:type="MSLayerGroup" transform="translate(1824.000000, 24.000000)">
+                <g id="PROTOTYPE-SCREEN-FULL" transform="translate(0.000000, 46.000000)" sketch:type="MSShapeGroup">
+                    <g id="Delete-2" transform="translate(229.000000, 0.000000)">
+                        <ellipse id="Oval-3" fill="#E74C3C" cx="10.5" cy="10.5" rx="10.5" ry="10.5"></ellipse>
+                        <path d="M15,8 L8,15 L6.10723305,13.107233 L13.107233,6.10723305 L15,8 L15,8 Z" id="Rectangle-386" fill="#FFFFFF"></path>
+                        <path d="M8,6.10723305 L15,13.107233 L13.107233,15 L6.10723305,8 L8,6.10723305 L8,6.10723305 Z" id="Rectangle-387" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

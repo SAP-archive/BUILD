@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>ico-face-smile</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="02-OVERVIEW" sketch:type="MSArtboardGroup" transform="translate(-766.000000, -425.000000)">
+            <g id="ico-face-smile" sketch:type="MSLayerGroup" transform="translate(766.000000, 424.000000)">
+                <rect id="Rectangle-15" stroke="#27AE60" fill="#FFFFFF" sketch:type="MSShapeGroup" x="0" y="0.996629246" width="35" height="35" rx="3"></rect>
+                <circle id="Oval-289" stroke="#27AE60" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="17.5" cy="18.4966292" r="10.5"></circle>
+                <ellipse id="Oval-290" fill="#27AE60" sketch:type="MSShapeGroup" cx="14.5" cy="15.9966292" rx="1.5" ry="3"></ellipse>
+                <ellipse id="Oval-291" fill="#27AE60" sketch:type="MSShapeGroup" cx="20.5" cy="15.9966292" rx="1.5" ry="3"></ellipse>
+                <path d="M23.9427258,18.9966292 C23.9805008,19.2275497 24,19.463176 24,19.7025116 C24,22.626372 21.0898509,24.9966292 17.5,24.9966292 C13.9101491,24.9966292 11,22.626372 11,19.7025116 C11,19.463176 11.0194992,19.2275497 11.0572742,18.9966292 C11.4809808,21.5867653 14.2040001,23.5848645 17.5,23.5848645 C20.7959999,23.5848645 23.5190192,21.5867653 23.9427258,18.9966292 Z" id="Oval-292" fill="#27AE60" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

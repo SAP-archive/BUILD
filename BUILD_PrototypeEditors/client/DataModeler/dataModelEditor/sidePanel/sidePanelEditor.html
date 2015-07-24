@@ -1,0 +1,65 @@
+<div class='dm-sidePanel-main'>
+
+    <ui-tabs selected-tab="dm-properties-tab" class="dm-tabProperty" ng-hide="!selectedEntity">
+
+        <ui-tab-option id="dm-properties-tab" title="PROPERTIES">
+            <div class="dm-property-scrollContainer">
+                <div class="dm-entity-selected" ng-class="{'dm-detail-highlited': controller.entity!=null}">
+                    <div class="dm-entity-selected-label"
+                         ng-click="controller.openEntityEditorModal(selectedEntity, $event)">
+                        {{selectedEntity.name}}
+                    </div>
+                    <div class="dm-entity-selected-img dmsvg-remove"
+                         ng-class="{'dm-delete-hidden': controller.entity==null}"
+                         ng-click="controller.removeEntity()"></div>
+                </div>
+                <div ng-show="selectedEntity">
+
+                    <div ng-include="'resources/norman-prototype-editors-client/DataModeler/dataModelEditor/sidePanel/properties.html'"></div>
+                    <div ng-hide="controller.groupDisabled"
+                         ng-include="'resources/norman-prototype-editors-client/DataModeler/dataModelEditor/sidePanel/groups.html'"></div>
+
+                </div>
+            </div>
+
+            <div ng-hide="controller.groupDisabled" class="dm-add-group" ng-click="controller.openAddGroupModal()">
+                + Add Group
+            </div>
+
+        </ui-tab-option>
+
+        <ui-tab-option id="dm-relations-tab" title="RELATIONS">
+
+            <div class="dm-entity-selected dm-tabEditor" ng-class="{'dm-detail-highlited': controller.entity!=null}">
+                <div class="dm-entity-selected-label"
+                     ng-click="controller.openEntityEditorModal(selectedEntity, $event)">
+                    {{selectedEntity.name}}
+                </div>
+                <div class="dm-entity-selected-img dmsvg-remove"
+                     ng-class="{'dm-delete-hidden': controller.entity==null}"
+                     ng-click="controller.removeEntity()"></div>
+            </div>
+
+
+            <div ng-include="'resources/norman-prototype-editors-client/DataModeler/dataModelEditor/sidePanel/relations.html'"></div>
+        </ui-tab-option>
+
+
+        <ui-tab-option id="dm-sample-tab" title="SAMPLES">
+
+            <div class="dm-entity-selected" ng-class="{'dm-detail-highlited': controller.entity!=null}">
+                <div class="dm-entity-selected-label"
+                     ng-click="controller.openEntityEditorModal(selectedEntity, $event)">
+                    {{selectedEntity.name}}
+                </div>
+                <div class="dm-entity-selected-img dmsvg-remove"
+                     ng-class="{'dm-delete-hidden': controller.entity==null}"
+                     ng-click="controller.removeEntity()"></div>
+            </div>
+
+            <div ng-include="'resources/norman-prototype-editors-client/DataModeler/dataModelEditor/sidePanel/sampleData.html'"></div>
+        </ui-tab-option>
+    </ui-tabs>
+
+    <!-- properties panel of selected entity -->
+</div>

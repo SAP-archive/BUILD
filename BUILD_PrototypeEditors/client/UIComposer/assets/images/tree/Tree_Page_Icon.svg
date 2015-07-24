@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="9px" height="11px" viewBox="0 0 9 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Page Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Tree---List-State" sketch:type="MSLayerGroup" transform="translate(-46.000000, -45.000000)" fill="#DBDFE1">
+            <g id="Select-Suppliers-Pag-+-Open" transform="translate(32.000000, 43.000000)" sketch:type="MSShapeGroup">
+                <path d="M22.5714286,6.85714286 L22.5714286,12.2142857 C22.5714286,12.392858 22.5089292,12.5446422 22.3839286,12.6696429 C22.2589279,12.7946435 22.1071437,12.8571429 21.9285714,12.8571429 L14.6428571,12.8571429 C14.4642848,12.8571429 14.3125006,12.7946435 14.1875,12.6696429 C14.0624994,12.5446422 14,12.392858 14,12.2142857 L14,3.21428571 C14,3.03571339 14.0624994,2.8839292 14.1875,2.75892857 C14.3125006,2.63392795 14.4642848,2.57142857 14.6428571,2.57142857 L18.2857143,2.57142857 L18.2857143,6.21428571 C18.2857143,6.39285804 18.3482137,6.54464223 18.4732143,6.66964286 C18.5982149,6.79464348 18.7499991,6.85714286 18.9285714,6.85714286 L22.5714286,6.85714286 Z M22.5513393,6 L19.1428571,6 L19.1428571,2.59151786 C19.5089304,2.65848248 19.8035703,2.80357031 20.0267857,3.02678571 L22.1160714,5.11607143 C22.3392868,5.33928683 22.4843747,5.63392674 22.5513393,6 L22.5513393,6 Z" id="Page-Icon"></path>
+            </g>
+        </g>
+    </g>
+</svg>

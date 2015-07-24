@@ -1,0 +1,33 @@
+{
+  "name": "norman-ui-catalog-manager-test",
+  "version": "0.1.0",
+  "description": "UI Catalog Manager Test Module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SAP/BUILD.git"
+  },
+  "maintainers": [
+        {
+            "name": "BUILD Team",
+           "email": "contact.build@sap.com"
+        }
+  ],
+  "licenses": [
+    {
+      "type": "Apache License, Version 2.0",
+      "url": "https://github.com/SAP/BUILD/blob/master/LICENSE.txt"
+    }
+  ],
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "peerDependencies": {
+    "node-sap-app-server": "~0.1.0",
+    "norman-audit-server": "*",
+    "norman-auth-server": "*",
+    "norman-projects-server": "*",
+    "norman-testing-server": "*",
+    "norman-testing-tp": "*"
+  },
+  "dependencies": {}
+}

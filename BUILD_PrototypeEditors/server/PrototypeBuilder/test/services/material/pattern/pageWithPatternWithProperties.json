@@ -1,0 +1,49 @@
+{
+  "name": "SimplePage",
+  "mainEntityId": "",
+  "rootControlId": "RootControl",
+  "controls": [
+    {
+      "controlId": "RootControl",
+      "parentControlId": null,
+      "controlName": "sap_m_Page",
+      "catalogControlName": "sap_m_Page",
+      "properties": [
+        {
+          "name": "title",
+          "value": "Simple Page"
+        }
+      ],
+      "groups": [
+        {
+          "groupId": "content",
+          "children": ["MyHeader"]
+        }
+      ]
+    },
+    {
+      "controlId": "MyHeader",
+      "parentControlId": "RootControl",
+      "controlName": "sap.my.Header",
+      "catalogControlName": "sap.my.Header",
+      "properties": [
+        {
+          "name": "width",
+          "value": "200px"
+        },
+        {
+          "name": "height",
+          "value": "350px"
+        },
+        {
+          "name": "visible",
+          "value": "true"
+        },
+        {
+          "name": "badProperty",
+          "value": "badValue"
+        }
+      ]
+    }
+  ]
+}

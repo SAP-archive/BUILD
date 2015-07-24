@@ -1,0 +1,4 @@
+<div class="sd-editor-cell-wrapper" ng-controller="editableCellTemplateController">
+    <input ng-class="'colt' + col.index" ng-input="row.entity[col.field]" ng-model="row.entity[col.field]" ng-change="validateCellData(row, col.field);removeHighlight(row,col.field)" ng-show="row.entity.errorText[col.field]" show-focus="true" ui-tooltip ui-tooltip-class="ui-tooltip-white" ui-tooltip-content="{{row.entity.errorText[col.field]}}" ui-tooltip-side="bottom" />
+    <input ng-class="'colt' + col.index" ng-input="row.entity[col.field]" ng-model="row.entity[col.field]" ng-change="validateCellData(row, col.field);removeHighlight(row,col.field)" ng-hide="row.entity.errorText[col.field]" show-focus="true" />
+</div>

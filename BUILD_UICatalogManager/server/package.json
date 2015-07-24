@@ -1,0 +1,35 @@
+{
+  "name": "norman-ui-catalog-manager-server",
+  "version": "0.1.0",
+  "description": "UI Catalog Manager Server",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SAP/BUILD.git"
+  },
+  "maintainers": [
+        {
+            "name": "BUILD Team",
+           "email": "contact.build@sap.com"
+        }
+  ],
+  "licenses": [
+    {
+      "type": "Apache License, Version 2.0",
+      "url": "https://github.com/SAP/BUILD/blob/master/LICENSE.txt"
+    }
+  ],
+  "main": "index.js",
+  "peerDependencies": {
+    "norman-common-server": "*",
+    "norman-server-tp": "*",
+    "node-sap-app-server": "~0.1.0",
+    "norman-auth-server": "*",
+    "norman-promise": "*"
+  },
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "gridfs-stream": "0.5.3",
+    "jszip": "2.4.0",
+    "replacestream": "2.1.0"
+  }
+}

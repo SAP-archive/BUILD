@@ -1,0 +1,46 @@
+{
+  "name": "SimplePage",
+  "mainEntityId": "",
+  "rootControlId": "RootControl",
+  "controls": [
+    {
+      "controlId": "RootControl",
+      "parentControlId": null,
+      "catalogControlName": "sap_m_Page",
+      "properties": [
+        {
+          "name": "title",
+          "value": "Simple Page"
+        }
+      ],
+      "groups": [
+        {
+          "groupId": "content",
+          "children": ["MyLabel2", "MyOtherLabel"]
+        }
+      ]
+    },
+    {
+      "controlId": "MyLabel",
+      "parentControlId": "RootControl",
+      "catalogControlName": "sap_m_Label",
+      "properties": [
+        {
+          "name": "text",
+          "value": "My Label"
+        }
+      ]
+    },
+    {
+      "controlId": "MyOtherLabel",
+      "parentControlId": "RootControl",
+      "catalogControlName": "sap_m_Label",
+      "properties": [
+        {
+          "name": "text",
+          "value": "My Other Label"
+        }
+      ]
+    }
+  ]
+}

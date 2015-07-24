@@ -1,0 +1,21 @@
+<div ng-controller="MessageInformationController as controller">
+    <ui-dialog class="dm-errorDialog-text" id="messagesModal" modal="true"
+               title="Error while importing excel file" close-text="Close"
+               close-action="controller.clearMessages()">
+        <div class="dm-errorDialog-text-content">
+            <span>The import did not succeed. {{controller.messages.length}} problem(s) occurred during the import</span>
+            <br>
+            <span ng-click="controller.expandMessages()"> + See details</span>
+
+            <div class="dm-errorDialog-expand" ng-show="controller.expand">
+                <ul>
+                    <li ng-repeat="msg in controller.messages track by $index"
+                        class="dm-errorDialog-msg">{{msg.description}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </ui-dialog>
+</div>
+
+

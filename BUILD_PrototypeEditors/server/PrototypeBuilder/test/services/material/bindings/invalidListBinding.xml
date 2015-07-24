@@ -1,0 +1,11 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.view.SimplePage" xmlns:m="sap.m">
+    <m:Page id="RootControl" title="Simple Page">
+        <m:content>
+            <m:List id="MyList">
+                <m:items>
+                    <m:StandardListItem id="MyListItem" title="My Item Title"/>
+                </m:items>
+            </m:List>
+        </m:content>
+    </m:Page>
+</mvc:View>

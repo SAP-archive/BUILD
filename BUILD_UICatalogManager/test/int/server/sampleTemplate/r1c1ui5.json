@@ -1,0 +1,2935 @@
+{
+  "catalogLang": "openui5",
+  "catalogName": "r1c1ui5",
+  "catalogVersion": "1_0",
+  "controls": {
+    "sap_m_ActionListItem": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "aggregations": {},
+        "associations": {},
+        "controlTemplate": "",
+        "defaultAggregation": "",
+        "deprecated": false,
+        "events": {},
+        "isStructuralElement": false,
+        "parent": "sap_m_ActionListItem",
+        "properties": {
+          "text": {
+            "defaultValue": "Action Items",
+            "deprecated": false,
+            "displayName": "Text",
+            "displayToUser": true,
+            "groupName": "Misc",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "text",
+            "possibleValues": null,
+            "type": "string"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_ActionListItem",
+      "displayName": "ActionListItem",
+      "displayToUser": true,
+      "groupName": "Standard Controls",
+      "name": "sap_m_ActionListItem"
+    },
+    "sap_m_ActionSelect": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "aggregations": {},
+        "associations": {
+          "buttons": {
+            "isDataDriven": false,
+            "multiple": true,
+            "name": "buttons",
+            "singularName": "button",
+            "type": "sap_m_Button"
+          }
+        },
+        "controlTemplate": "",
+        "defaultAggregation": "items",
+        "deprecated": false,
+        "events": {},
+        "isStructuralElement": false,
+        "parent": "sap_m_ActionSelect",
+        "properties": {},
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_ActionSelect",
+      "displayName": "ActionSelect",
+      "displayToUser": true,
+      "groupName": "Standard Controls",
+      "name": "sap_m_ActionSelect"
+    },
+    "sap_m_Button": {
+      "additionalMetadata": {
+        "defaultProperty": "text",
+        "controlTemplate": "",
+        "defaultAggregation": "",
+        "deprecated": false,
+        "events": {
+          "press": {
+            "displayName": "Press",
+            "displayToUser": true,
+            "name": "press"
+          }
+        },
+        "isStructuralElement": false,
+        "parent": "sap_m_Button",
+        "properties": {
+          "activeIcon": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "ActiveIcon",
+            "displayToUser": true,
+            "groupName": "Misc",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "activeIcon",
+            "possibleValues": null,
+            "type": "URI"
+          },
+          "enabled": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "Enabled",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "enabled",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "icon": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "Icon",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "icon",
+            "possibleValues": null,
+            "type": "URI"
+          },
+          "iconDensityAware": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "IconDensityAware",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "iconDensityAware",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "iconFirst": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "IconFirst",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "iconFirst",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "text": {
+            "defaultValue": "Button Text",
+            "deprecated": false,
+            "displayName": "Text",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "text",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "type": {
+            "defaultValue": "Default",
+            "deprecated": false,
+            "displayName": "Type",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "type",
+            "possibleValues": [
+              "Default",
+              "Back",
+              "Accept",
+              "Reject",
+              "Transparent",
+              "Up",
+              "Unstyled",
+              "Emphasized"
+            ],
+            "type": "sap_m_ButtonType"
+          },
+          "width": {
+            "defaultValue": "200px",
+            "deprecated": false,
+            "displayName": "Width",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "width",
+            "possibleValues": null,
+            "type": "CSSSize"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_Button",
+      "displayName": "Button",
+      "displayToUser": true,
+      "groupName": "Standard Controls",
+      "name": "sap_m_Button"
+    },
+    "sap_m_ObjectAttribute": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "aggregations": {},
+        "associations": {},
+        "controlTemplate": "",
+        "defaultAggregation": "",
+        "deprecated": false,
+        "events": {
+          "press": {
+            "displayName": "Press",
+            "displayToUser": true,
+            "name": "press"
+          }
+        },
+        "isStructuralElement": false,
+        "parent": "sap_m_ObjectAttribute",
+        "patternData": {},
+        "properties": {
+          "active": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "Active",
+            "displayToUser": true,
+            "group": "Misc",
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "active",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "text": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "Text",
+            "displayToUser": true,
+            "group": "Misc",
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "text",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "title": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "Title",
+            "displayToUser": true,
+            "group": "Misc",
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "title",
+            "possibleValues": null,
+            "type": "string"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_ObjectAttribute",
+      "displayName": "ObjectAttribute",
+      "displayToUser": true,
+      "groupName": "Standard Controls",
+      "name": "sap_m_ObjectAttribute"
+    },
+    "sap_m_CheckBox": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "aggregations": {},
+        "associations": {},
+        "controlTemplate": "",
+        "defaultAggregation": "",
+        "deprecated": false,
+        "events": {
+          "select": {
+            "displayName": "Select",
+            "displayToUser": true,
+            "name": "select"
+          }
+        },
+        "isStructuralElement": false,
+        "parent": "sap_m_CheckBox",
+        "properties": {
+          "editable": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "Editable",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "editable",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "enabled": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "Enabled",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "enabled",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "name": {
+            "defaultValue": "Checkbox Name",
+            "deprecated": false,
+            "displayName": "Name",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "name",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "text": {
+            "defaultValue": "Checkbox Text",
+            "deprecated": false,
+            "displayName": "Text",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "text",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "textDirection": {
+            "defaultValue": "Inherit",
+            "deprecated": false,
+            "displayName": "TextDirection",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "textDirection",
+            "possibleValues": [
+              "LTR",
+              "RTL",
+              "Inherit"
+            ],
+            "type": "string"
+          },
+          "width": {
+            "defaultValue": "150px",
+            "deprecated": false,
+            "displayName": "Width",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "width",
+            "possibleValues": null,
+            "type": "CSSSize"
+          }
+        },
+        "readOnlyPropertyName": "editable",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_CheckBox",
+      "displayName": "CheckBox",
+      "displayToUser": true,
+      "groupName": "Standard Controls",
+      "name": "sap_m_CheckBox"
+    },
+    "sap_m_ColumnListItem": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "aggregations": {
+          "cells": {
+            "aggregationTemplate": {},
+            "bindable": "bindable",
+            "deprecated": false,
+            "displayName": "Cells",
+            "displayToUser": true,
+            "isDataDriven": false,
+            "multiple": true,
+            "name": "cells",
+            "renderAction": "",
+            "singularName": "cell",
+            "type": "sap_ui_core_Control",
+            "visibility": "public"
+          }
+        },
+        "associations": {},
+        "controlTemplate": "",
+        "defaultAggregation": "cells",
+        "deprecated": false,
+        "events": {},
+        "isStructuralElement": false,
+        "parent": "sap_m_ColumnListItem",
+        "properties": {
+          "vAlign": {
+            "defaultValue": "Inherit",
+            "deprecated": false,
+            "displayName": "VAlign",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "vAlign",
+            "possibleValues": [
+              "Bottom",
+              "Middle",
+              "Top",
+              "Inherit"
+            ],
+            "type": "sap_ui_core_VerticalAlign"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_ColumnListItem",
+      "displayName": "ColumnListItem",
+      "displayToUser": true,
+      "groupName": "Standard Controls",
+      "name": "sap_m_ColumnListItem"
+    },
+    "sap_m_ComboBox": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "aggregations": {},
+        "associations": {
+          "selectedItem": {
+            "isDataDriven": false,
+            "multiple": false,
+            "name": "selectedItem",
+            "type": "sap_ui_core_Item"
+          }
+        },
+        "controlTemplate": "",
+        "defaultAggregation": "items",
+        "deprecated": false,
+        "events": {
+          "selectionChange": {
+            "displayName": "SelectionChange",
+            "displayToUser": true,
+            "name": "selectionChange"
+          }
+        },
+        "isStructuralElement": false,
+        "parent": "sap_m_ComboBox",
+        "properties": {
+          "selectedItemId": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "SelectedItemId",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "selectedItemId",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "selectedKey": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "SelectedKey",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "selectedKey",
+            "possibleValues": null,
+            "type": "string"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_ComboBox",
+      "displayName": "ComboBox",
+      "displayToUser": true,
+      "groupName": "Standard Controls",
+      "name": "sap_m_ComboBox"
+    },
+    "sap_m_CustomListItem": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "aggregations": {
+          "content": {
+            "aggregationTemplate": {},
+            "bindable": "bindable",
+            "deprecated": false,
+            "displayName": "Content",
+            "displayToUser": true,
+            "isDataDriven": false,
+            "multiple": true,
+            "name": "content",
+            "renderAction": "",
+            "singularName": "content",
+            "type": "sap_ui_core_Control",
+            "visibility": "public"
+          }
+        },
+        "associations": {},
+        "controlTemplate": "",
+        "defaultAggregation": "content",
+        "deprecated": false,
+        "events": {},
+        "isStructuralElement": false,
+        "parent": "sap_m_CustomListItem",
+        "properties": {},
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_CustomListItem",
+      "displayName": "CustomListItem",
+      "displayToUser": true,
+      "groupName": "Standard Controls",
+      "name": "sap_m_CustomListItem"
+    },
+    "sap_m_DatePicker": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "aggregations": {},
+        "associations": {},
+        "controlTemplate": "",
+        "defaultAggregation": "",
+        "deprecated": false,
+        "events": {},
+        "isStructuralElement": false,
+        "parent": "sap_m_DatePicker",
+        "properties": {
+          "dateValue": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "DateValue",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "dateValue",
+            "possibleValues": null,
+            "type": "object"
+          },
+          "displayFormat": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "DisplayFormat",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "displayFormat",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "valueFormat": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "ValueFormat",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "valueFormat",
+            "possibleValues": null,
+            "type": "string"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_DatePicker",
+      "displayName": "DatePicker",
+      "displayToUser": true,
+      "groupName": "Standard Controls",
+      "name": "sap_m_DatePicker"
+    },
+    "sap_m_DateRangeSelection": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "aggregations": {},
+        "associations": {},
+        "controlTemplate": "",
+        "defaultAggregation": "",
+        "deprecated": false,
+        "events": {
+          "change": {
+            "displayName": "Change",
+            "displayToUser": true,
+            "name": "change"
+          }
+        },
+        "isStructuralElement": false,
+        "parent": "sap_m_DateRangeSelection",
+        "properties": {
+          "delimiter": {
+            "defaultValue": "-",
+            "deprecated": false,
+            "displayName": "Delimiter",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "delimiter",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "from": {
+            "defaultValue": null,
+            "deprecated": true,
+            "displayName": "From",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "from",
+            "possibleValues": null,
+            "type": "object"
+          },
+          "secondDateValue": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "SecondDateValue",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "secondDateValue",
+            "possibleValues": null,
+            "type": "object"
+          },
+          "to": {
+            "defaultValue": null,
+            "deprecated": true,
+            "displayName": "To",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "to",
+            "possibleValues": null,
+            "type": "object"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_DateRangeSelection",
+      "displayName": "DateRangeSelection",
+      "displayToUser": true,
+      "groupName": "Standard Controls",
+      "name": "sap_m_DateRangeSelection"
+    },
+    "sap_m_DateTimeInput": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "aggregations": {},
+        "associations": {},
+        "controlTemplate": "",
+        "defaultAggregation": "",
+        "deprecated": false,
+        "events": {
+          "change": {
+            "displayName": "Change",
+            "displayToUser": true,
+            "name": "change"
+          }
+        },
+        "isStructuralElement": false,
+        "parent": "sap_m_DateTimeInput",
+        "properties": {
+          "dateValue": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "DateValue",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "dateValue",
+            "possibleValues": null,
+            "type": "object"
+          },
+          "displayFormat": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "DisplayFormat",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "displayFormat",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "type": {
+            "defaultValue": "Date",
+            "deprecated": false,
+            "displayName": "Type",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "type",
+            "possibleValues": [
+              "Date",
+              "DateTime",
+              "Time"
+            ],
+            "type": "sap_m_DateTimeInputType"
+          },
+          "valueFormat": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "ValueFormat",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "valueFormat",
+            "possibleValues": null,
+            "type": "string"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_DateTimeInput",
+      "displayName": "DateTimeInput",
+      "displayToUser": true,
+      "groupName": "Standard Controls",
+      "name": "sap_m_DateTimeInput"
+    },
+    "sap_m_DisplayListItem": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "aggregations": {},
+        "associations": {},
+        "controlTemplate": "",
+        "defaultAggregation": "",
+        "deprecated": false,
+        "events": {},
+        "isStructuralElement": false,
+        "parent": "sap_m_DisplayListItem",
+        "properties": {
+          "label": {
+            "defaultValue": "Item Label",
+            "deprecated": false,
+            "displayName": "Label",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "label",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "value": {
+            "defaultValue": "Item Label",
+            "deprecated": false,
+            "displayName": "Value",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "value",
+            "possibleValues": null,
+            "type": "string"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_DisplayListItem",
+      "displayName": "DisplayListItem",
+      "displayToUser": true,
+      "groupName": "Standard Controls",
+      "name": "sap_m_DisplayListItem"
+    },
+    "sap_m_FeedInput": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "aggregations": {},
+        "associations": {},
+        "controlTemplate": "",
+        "defaultAggregation": "",
+        "deprecated": false,
+        "events": {
+          "post": {
+            "displayName": "Post",
+            "displayToUser": true,
+            "name": "post"
+          }
+        },
+        "isStructuralElement": false,
+        "parent": "sap_m_FeedInput",
+        "properties": {
+          "enabled": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "Enabled",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "enabled",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "icon": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "Icon",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "icon",
+            "possibleValues": null,
+            "type": "URI"
+          },
+          "iconDensityAware": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "IconDensityAware",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "iconDensityAware",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "maxLength": {
+            "defaultValue": 0,
+            "deprecated": false,
+            "displayName": "MaxLength",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "maxLength",
+            "possibleValues": null,
+            "type": "int"
+          },
+          "placeholder": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "Placeholder",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "placeholder",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "showIcon": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "ShowIcon",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "showIcon",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "value": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "Value",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "value",
+            "possibleValues": null,
+            "type": "string"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_FeedInput",
+      "displayName": "FeedInput",
+      "displayToUser": true,
+      "groupName": "Standard Controls",
+      "name": "sap_m_FeedInput"
+    },
+    "sap_m_FeedListItem": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "aggregations": {},
+        "associations": {},
+        "controlTemplate": "",
+        "defaultAggregation": "",
+        "deprecated": false,
+        "events": {
+          "iconPress": {
+            "displayName": "IconPress",
+            "displayToUser": true,
+            "name": "iconPress"
+          },
+          "senderPress": {
+            "displayName": "SenderPress",
+            "displayToUser": true,
+            "name": "senderPress"
+          }
+        },
+        "isStructuralElement": false,
+        "parent": "sap_m_FeedListItem",
+        "properties": {
+          "activeIcon": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "ActiveIcon",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "activeIcon",
+            "possibleValues": null,
+            "type": "URI"
+          },
+          "icon": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "Icon",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "icon",
+            "possibleValues": null,
+            "type": "URI"
+          },
+          "iconActive": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "IconActive",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "iconActive",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "iconDensityAware": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "IconDensityAware",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "iconDensityAware",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "info": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "Info",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "info",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "maxCharacters": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "MaxCharacters",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "maxCharacters",
+            "possibleValues": null,
+            "type": "int"
+          },
+          "sender": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "Sender",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "sender",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "senderActive": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "SenderActive",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "senderActive",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "showIcon": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "ShowIcon",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "showIcon",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "text": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "Text",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "text",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "timestamp": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "Timestamp",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "timestamp",
+            "possibleValues": null,
+            "type": "string"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_FeedListItem",
+      "displayName": "FeedListItem",
+      "displayToUser": true,
+      "groupName": "Standard Controls",
+      "name": "sap_m_FeedListItem"
+    },
+    "sap_m_GroupHeaderListItem": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "aggregations": {},
+        "associations": {},
+        "controlTemplate": "",
+        "defaultAggregation": "",
+        "deprecated": false,
+        "events": {},
+        "isStructuralElement": false,
+        "parent": "sap_m_GroupHeaderListItem",
+        "properties": {
+          "count": {
+            "defaultValue": 5,
+            "deprecated": false,
+            "displayName": "Count",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "count",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "title": {
+            "defaultValue": "Group Header List Item",
+            "deprecated": false,
+            "displayName": "Title",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "title",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "upperCase": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "UpperCase",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "upperCase",
+            "possibleValues": null,
+            "type": "boolean"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_GroupHeaderListItem",
+      "displayName": "GroupHeaderListItem",
+      "displayToUser": true,
+      "groupName": "Standard Controls",
+      "name": "sap_m_GroupHeaderListItem"
+    },
+    "sap_m_IconTabHeader": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "aggregations": {
+          "items": {
+            "aggregationTemplate": {},
+            "deprecated": false,
+            "displayName": "Items",
+            "displayToUser": true,
+            "isDataDriven": false,
+            "multiple": true,
+            "name": "items",
+            "renderAction": "",
+            "singularName": "item",
+            "type": "sap_m_IconTab",
+            "visibility": "public"
+          }
+        },
+        "associations": {},
+        "controlTemplate": "",
+        "defaultAggregation": "",
+        "deprecated": false,
+        "events": {
+          "select": {
+            "displayName": "Select",
+            "displayToUser": true,
+            "name": "select"
+          }
+        },
+        "isStructuralElement": false,
+        "parent": "sap_m_IconTabHeader",
+        "properties": {
+          "enabled": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "Enabled",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "enabled",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "selectedKey": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "SelectedKey",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "selectedKey",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "showSelection": {
+            "defaultValue": true,
+            "deprecated": true,
+            "displayName": "ShowSelection",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "showSelection",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "visible": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "Visible",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "visible",
+            "possibleValues": null,
+            "type": "boolean"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_IconTabHeader",
+      "displayName": "IconTabHeader",
+      "displayToUser": true,
+      "groupName": "Standard Controls",
+      "name": "sap_m_IconTabHeader"
+    },
+    "sap_m_Image": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "aggregations": {},
+        "associations": {},
+        "controlTemplate": "",
+        "defaultAggregation": "",
+        "deprecated": false,
+        "events": {
+          "press": {
+            "displayName": "Press",
+            "displayToUser": true,
+            "name": "press"
+          },
+          "tap": {
+            "displayName": "Tap",
+            "displayToUser": true,
+            "name": "tap"
+          }
+        },
+        "isStructuralElement": false,
+        "parent": "sap_m_Image",
+        "properties": {
+          "activeSrc": {
+            "defaultValue": "",
+            "deprecated": false,
+            "displayName": "ActiveSrc",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "activeSrc",
+            "possibleValues": null,
+            "type": "URI"
+          },
+          "alt": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "Alt",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "alt",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "decorative": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "Decorative",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "decorative",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "densityAware": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "DensityAware",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "densityAware",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "height": {
+            "defaultValue": "auto",
+            "deprecated": false,
+            "displayName": "Height",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "height",
+            "possibleValues": null,
+            "type": "CSSSize"
+          },
+          "src": {
+            "defaultValue": " /resources/norman-common-client/assets/icon-norman.svg",
+            "deprecated": false,
+            "displayName": "Src",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "src",
+            "possibleValues": null,
+            "type": "URI"
+          },
+          "useMap": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "UseMap",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "useMap",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "width": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "Width",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "width",
+            "possibleValues": null,
+            "type": "CSSSize"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_Image",
+      "displayName": "Image",
+      "displayToUser": true,
+      "groupName": "Standard Controls",
+      "name": "sap_m_Image"
+    },
+    "sap_m_Input": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "aggregations": {
+          "suggestionColumns": {
+            "aggregationTemplate": {},
+            "bindable": "bindable",
+            "deprecated": false,
+            "displayName": "SuggestionColumns",
+            "displayToUser": true,
+            "isDataDriven": false,
+            "multiple": true,
+            "name": "suggestionColumns",
+            "renderAction": "",
+            "singularName": "suggestionColumn",
+            "type": "sap_m_Column",
+            "visibility": "public"
+          },
+          "suggestionItems": {
+            "aggregationTemplate": {},
+            "deprecated": false,
+            "displayName": "SuggestionItems",
+            "displayToUser": true,
+            "isDataDriven": false,
+            "multiple": true,
+            "name": "suggestionItems",
+            "renderAction": "",
+            "singularName": "suggestionItem",
+            "type": "sap_ui_core_Item",
+            "visibility": "public"
+          },
+          "suggestionRows": {
+            "aggregationTemplate": {},
+            "bindable": "bindable",
+            "deprecated": false,
+            "displayName": "SuggestionRows",
+            "displayToUser": true,
+            "isDataDriven": false,
+            "multiple": true,
+            "name": "suggestionRows",
+            "renderAction": "",
+            "singularName": "suggestionRow",
+            "type": "sap_m_ColumnListItem",
+            "visibility": "public"
+          }
+        },
+        "associations": {},
+        "controlTemplate": "",
+        "defaultAggregation": "suggestionItems",
+        "deprecated": false,
+        "events": {
+          "liveChange": {
+            "displayName": "LiveChange",
+            "displayToUser": true,
+            "name": "liveChange"
+          },
+          "suggest": {
+            "displayName": "Suggest",
+            "displayToUser": true,
+            "name": "suggest"
+          },
+          "suggestionItemSelected": {
+            "displayName": "SuggestionItemSelected",
+            "displayToUser": true,
+            "name": "suggestionItemSelected"
+          },
+          "valueHelpRequest": {
+            "displayName": "ValueHelpRequest",
+            "displayToUser": true,
+            "name": "valueHelpRequest"
+          }
+        },
+        "isStructuralElement": false,
+        "parent": "sap_m_Input",
+        "properties": {
+          "dateFormat": {
+            "defaultValue": "YYYY-MM-dd",
+            "deprecated": true,
+            "displayName": "DateFormat",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "dateFormat",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "description": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "Description",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "description",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "fieldWidth": {
+            "defaultValue": "50%",
+            "deprecated": false,
+            "displayName": "FieldWidth",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "fieldWidth",
+            "possibleValues": null,
+            "type": "CSSSize"
+          },
+          "filterSuggests": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "FilterSuggests",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "filterSuggests",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "maxLength": {
+            "defaultValue": 0,
+            "deprecated": false,
+            "displayName": "MaxLength",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "maxLength",
+            "possibleValues": null,
+            "type": "int"
+          },
+          "maxSuggestionWidth": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "MaxSuggestionWidth",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "maxSuggestionWidth",
+            "possibleValues": null,
+            "type": "CSSSize"
+          },
+          "showSuggestion": {
+            "defaultValue": false,
+            "deprecated": false,
+            "displayName": "ShowSuggestion",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "showSuggestion",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "showTableSuggestionValueHelp": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "ShowTableSuggestionValueHelp",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "showTableSuggestionValueHelp",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "showValueHelp": {
+            "defaultValue": false,
+            "deprecated": false,
+            "displayName": "ShowValueHelp",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "showValueHelp",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "startSuggestion": {
+            "defaultValue": 1,
+            "deprecated": false,
+            "displayName": "StartSuggestion",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "startSuggestion",
+            "possibleValues": null,
+            "type": "int"
+          },
+          "type": {
+            "defaultValue": "Text",
+            "deprecated": false,
+            "displayName": "Type",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "type",
+            "possibleValues": [
+              "Text",
+              "Date",
+              "Datetime",
+              "DatetimeLocale",
+              "Email",
+              "Month",
+              "Number",
+              "Tel",
+              "Time",
+              "Url",
+              "Week",
+              "Password"
+            ],
+            "type": "sap_m_InputType"
+          },
+          "valueHelpOnly": {
+            "defaultValue": false,
+            "deprecated": false,
+            "displayName": "ValueHelpOnly",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "valueHelpOnly",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "valueLiveUpdate": {
+            "defaultValue": false,
+            "deprecated": false,
+            "displayName": "ValueLiveUpdate",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "valueLiveUpdate",
+            "possibleValues": null,
+            "type": "boolean"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_Input",
+      "displayName": "Input",
+      "displayToUser": true,
+      "groupName": "Standard Controls",
+      "name": "sap_m_Input"
+    },
+    "sap_m_InputListItem": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "aggregations": {
+          "content": {
+            "aggregationTemplate": {},
+            "bindable": "bindable",
+            "deprecated": false,
+            "displayName": "Content",
+            "displayToUser": true,
+            "isDataDriven": false,
+            "multiple": true,
+            "name": "content",
+            "renderAction": "",
+            "singularName": "content",
+            "type": "sap_ui_core_Control",
+            "visibility": "public"
+          }
+        },
+        "associations": {},
+        "controlTemplate": "",
+        "defaultAggregation": "content",
+        "deprecated": false,
+        "events": {},
+        "isStructuralElement": false,
+        "parent": "sap_m_InputListItem",
+        "properties": {
+          "label": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "Label",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "label",
+            "possibleValues": null,
+            "type": "string"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_InputListItem",
+      "displayName": "InputListItem",
+      "displayToUser": true,
+      "groupName": "Standard Controls",
+      "name": "sap_m_InputListItem"
+    },
+    "sap_m_Label": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "aggregations": {},
+        "associations": {
+          "labelFor": {
+            "isDataDriven": false,
+            "multiple": false,
+            "name": "labelFor",
+            "type": "sap_ui_core_Control"
+          }
+        },
+        "controlTemplate": "",
+        "defaultAggregation": "",
+        "deprecated": false,
+        "events": {},
+        "isStructuralElement": false,
+        "parent": "sap_m_Label",
+        "properties": {
+          "design": {
+            "defaultValue": "Standard",
+            "deprecated": false,
+            "displayName": "Design",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "design",
+            "possibleValues": [
+              "Bold",
+              "Standard"
+            ],
+            "type": "sap_m_LabelDesign"
+          },
+          "required": {
+            "defaultValue": false,
+            "deprecated": false,
+            "displayName": "Required",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "required",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "text": {
+            "defaultValue": "Label",
+            "deprecated": false,
+            "displayName": "Text",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "text",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "textAlign": {
+            "defaultValue": "Begin",
+            "deprecated": false,
+            "displayName": "TextAlign",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "textAlign",
+            "possibleValues": [
+              "Begin",
+              "End",
+              "Left",
+              "Right",
+              "Center",
+              "Initial"
+            ],
+            "type": "sap_ui_core_TextAlign"
+          },
+          "textDirection": {
+            "defaultValue": "Inherit",
+            "deprecated": false,
+            "displayName": "TextDirection",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "textDirection",
+            "possibleValues": [
+              "LTR",
+              "RTL",
+              "Inherit"
+            ],
+            "type": "sap_ui_core_TextDirection"
+          },
+          "width": {
+            "defaultValue": "",
+            "deprecated": false,
+            "displayName": "Width",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "width",
+            "possibleValues": null,
+            "type": "CSSSize"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_Label",
+      "displayName": "Label",
+      "displayToUser": true,
+      "groupName": "Standard Controls",
+      "name": "sap_m_Label"
+    },
+    "sap_m_Link": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "aggregations": {},
+        "associations": {},
+        "controlTemplate": "",
+        "defaultAggregation": "",
+        "deprecated": false,
+        "events": {
+          "press": {
+            "displayName": "Press",
+            "displayToUser": true,
+            "name": "press"
+          }
+        },
+        "isStructuralElement": false,
+        "parent": "sap_m_Link",
+        "properties": {
+          "emphasized": {
+            "defaultValue": false,
+            "deprecated": false,
+            "displayName": "Emphasized",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "emphasized",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "enabled": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "Enabled",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "enabled",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "href": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "Href",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "href",
+            "possibleValues": null,
+            "type": "URI"
+          },
+          "subtle": {
+            "defaultValue": false,
+            "deprecated": false,
+            "displayName": "Subtle",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "subtle",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "target": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "Target",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "target",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "text": {
+            "defaultValue": "Linked Text",
+            "deprecated": false,
+            "displayName": "Text",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "text",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "width": {
+            "defaultValue": "200px",
+            "deprecated": false,
+            "displayName": "Width",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "width",
+            "possibleValues": null,
+            "type": "CSSSize"
+          },
+          "wrapping": {
+            "defaultValue": false,
+            "deprecated": false,
+            "displayName": "Wrapping",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "wrapping",
+            "possibleValues": null,
+            "type": "boolean"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_Link",
+      "displayName": "Link",
+      "displayToUser": true,
+      "groupName": "Standard Controls",
+      "name": "sap_m_Link"
+    },
+    "sap_m_List": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "aggregations": {
+          "items": {
+            "aggregationTemplate": {},
+            "bindable": "bindable",
+            "deprecated": false,
+            "displayName": "Items",
+            "displayToUser": true,
+            "isDataDriven": false,
+            "multiple": true,
+            "name": "items",
+            "renderAction": "",
+            "singularName": "item",
+            "types": [
+              "sap_m_ActionListItem",
+              "sap_m_ObjectListItem"
+            ],
+            "visibility": "public",
+            "defaultValue": [
+              {
+                "name": "sap_m_ActionListItem",
+                "properties": {
+                  "text": "Item1"
+                }
+              },
+              {
+                "name": "sap_m_ActionListItem",
+                "properties": {
+                  "text": "Item2"
+                }
+              },
+              {
+                "name": "sap_m_ObjectListItem",
+                "properties": {
+                  "title": "Item3 with two attribute objects"
+                }
+              },
+              {
+                "name": "sap_m_ActionListItem",
+                "properties": {
+                  "text": "Item4"
+                }
+              }
+            ]
+          }
+        },
+        "associations": {},
+        "controlTemplate": "",
+        "defaultAggregation": "items",
+        "deprecated": false,
+        "events": {
+          "selectionChange": {
+            "displayName": "SelectionChange",
+            "displayToUser": true,
+            "name": "selectionChange"
+          },
+          "delete": {
+            "displayName": "Delete",
+            "displayToUser": true,
+            "name": "delete"
+          },
+          "itemPress": {
+            "displayName": "ItemPress",
+            "displayToUser": true,
+            "name": "itemPress"
+          }
+        },
+        "isStructuralElement": false,
+        "parent": "sap_m_List",
+        "properties": {
+          "backgroundDesign": {
+            "defaultValue": "Solid",
+            "deprecated": false,
+            "displayName": "BackgroundDesign",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "backgroundDesign",
+            "possibleValues": [
+              "Solid",
+              "Transparent",
+              "Translucent"
+            ],
+            "type": "sap_m_BackgroundDesign"
+          },
+          "footerText": {
+            "defaultValue": "footer",
+            "deprecated": false,
+            "displayName": "FooterText",
+            "displayToUser": true,
+            "group": "Misc",
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "footerText",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "headerText": {
+            "defaultValue": "header",
+            "deprecated": false,
+            "displayName": "HeaderText",
+            "displayToUser": true,
+            "group": "Misc",
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "headerText",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "width": {
+            "defaultValue": "350px",
+            "deprecated": false,
+            "displayName": "Width",
+            "displayToUser": true,
+            "group": "Dimension",
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "width",
+            "possibleValues": null,
+            "type": "sap_ui_core_CSSSize"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_List",
+      "displayName": "Action List",
+      "displayToUser": true,
+      "groupName": "Patterns",
+      "name": "sap_m_List"
+    },
+    "sap_m_MultiComboBox": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "aggregations": {},
+        "associations": {
+          "selectedItems": {
+            "isDataDriven": false,
+            "multiple": true,
+            "name": "selectedItems",
+            "singularName": "selectedItem",
+            "type": "sap_ui_core_Item"
+          }
+        },
+        "controlTemplate": "",
+        "defaultAggregation": "items",
+        "deprecated": false,
+        "events": {
+          "selectionChange": {
+            "displayName": "SelectionChange",
+            "displayToUser": true,
+            "name": "selectionChange"
+          },
+          "selectionFinish": {
+            "displayName": "SelectionFinish",
+            "displayToUser": true,
+            "name": "selectionFinish"
+          }
+        },
+        "isStructuralElement": false,
+        "parent": "sap_m_MultiComboBox",
+        "properties": {
+          "selectedKeys": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "SelectedKeys",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "selectedKeys",
+            "possibleValues": null,
+            "type": "string[]"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_MultiComboBox",
+      "displayName": "MultiComboBox",
+      "displayToUser": true,
+      "groupName": "Standard Controls",
+      "name": "sap_m_MultiComboBox"
+    },
+    "sap_m_MultiInput": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "aggregations": {
+          "tokens": {
+            "aggregationTemplate": {},
+            "deprecated": false,
+            "displayName": "Tokens",
+            "displayToUser": true,
+            "isDataDriven": false,
+            "multiple": true,
+            "name": "tokens",
+            "renderAction": "",
+            "singularName": "token",
+            "type": "sap_m_Token",
+            "visibility": "public"
+          }
+        },
+        "associations": {},
+        "controlTemplate": "",
+        "defaultAggregation": "suggestionItems",
+        "deprecated": false,
+        "events": {
+          "tokenChange": {
+            "displayName": "TokenChange",
+            "displayToUser": true,
+            "name": "tokenChange"
+          }
+        },
+        "isStructuralElement": false,
+        "parent": "sap_m_MultiInput",
+        "properties": {},
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_MultiInput",
+      "displayName": "MultiInput",
+      "displayToUser": true,
+      "groupName": "Standard Controls",
+      "name": "sap_m_MultiInput"
+    },
+    "sap_m_SegmentedButton": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "aggregations": {
+          "buttons": {
+            "aggregationTemplate": {},
+            "deprecated": false,
+            "displayName": "Buttons",
+            "displayToUser": true,
+            "isDataDriven": false,
+            "multiple": true,
+            "name": "buttons",
+            "renderAction": "",
+            "singularName": "button",
+            "type": "sap_m_Button",
+            "visibility": "public"
+          }
+        },
+        "associations": {
+          "selectedButton": {
+            "isDataDriven": false,
+            "multiple": false,
+            "name": "selectedButton",
+            "type": "sap_m_Button"
+          }
+        },
+        "controlTemplate": "",
+        "defaultAggregation": "buttons",
+        "deprecated": false,
+        "events": {
+          "select": {
+            "displayName": "Select",
+            "displayToUser": true,
+            "name": "select"
+          }
+        },
+        "isStructuralElement": false,
+        "parent": "sap_m_SegmentedButton",
+        "properties": {
+          "enabled": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "Enabled",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "enabled",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "width": {
+            "defaultValue": "200px",
+            "deprecated": false,
+            "displayName": "Width",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "width",
+            "possibleValues": null,
+            "type": "CSSSize"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_SegmentedButton",
+      "displayName": "SegmentedButton",
+      "displayToUser": true,
+      "groupName": "Standard Controls",
+      "name": "sap_m_SegmentedButton"
+    },
+    "sap_m_Text": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "aggregations": {},
+        "associations": {},
+        "controlTemplate": "",
+        "defaultAggregation": "",
+        "deprecated": false,
+        "events": {},
+        "isStructuralElement": false,
+        "parent": "sap_m_Text",
+        "properties": {
+          "maxLines": {
+            "defaultValue": 1,
+            "deprecated": false,
+            "displayName": "MaxLines",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "maxLines",
+            "possibleValues": null,
+            "type": "int"
+          },
+          "text": {
+            "bindable": "bindable",
+            "defaultValue": "Text",
+            "deprecated": false,
+            "displayName": "Text",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "text",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "textAlign": {
+            "defaultValue": "Begin",
+            "deprecated": false,
+            "displayName": "TextAlign",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "textAlign",
+            "possibleValues": [
+              "Begin",
+              "End",
+              "Left",
+              "Right",
+              "Center",
+              "Initial"
+            ],
+            "type": "sap_ui_core_TextAlign"
+          },
+          "textDirection": {
+            "defaultValue": "Inherit",
+            "deprecated": false,
+            "displayName": "TextDirection",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "textDirection",
+            "possibleValues": [
+              "LTR",
+              "RTL",
+              "Inherit"
+            ],
+            "type": "sap_ui_core_TextDirection"
+          },
+          "width": {
+            "defaultValue": "300px",
+            "deprecated": false,
+            "displayName": "Width",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "width",
+            "possibleValues": null,
+            "type": "CSSSize"
+          },
+          "wrapping": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "Wrapping",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "wrapping",
+            "possibleValues": null,
+            "type": "boolean"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_Text",
+      "displayName": "Text",
+      "displayToUser": true,
+      "groupName": "Standard Controls",
+      "name": "sap_m_Text"
+    },
+    "sap_m_TextArea": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "aggregations": {},
+        "associations": {},
+        "controlTemplate": "",
+        "defaultAggregation": "",
+        "deprecated": false,
+        "events": {
+          "liveChange": {
+            "displayName": "LiveChange",
+            "displayToUser": true,
+            "name": "liveChange"
+          }
+        },
+        "isStructuralElement": false,
+        "parent": "sap_m_TextArea",
+        "properties": {
+          "cols": {
+            "defaultValue": 20,
+            "deprecated": false,
+            "displayName": "Cols",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "cols",
+            "possibleValues": null,
+            "type": "int"
+          },
+          "height": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "Height",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "height",
+            "possibleValues": null,
+            "type": "CSSSize"
+          },
+          "maxLength": {
+            "defaultValue": 0,
+            "deprecated": false,
+            "displayName": "MaxLength",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "maxLength",
+            "possibleValues": null,
+            "type": "int"
+          },
+          "rows": {
+            "defaultValue": 2,
+            "deprecated": false,
+            "displayName": "Rows",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "rows",
+            "possibleValues": null,
+            "type": "int"
+          },
+          "wrapping": {
+            "defaultValue": "none",
+            "deprecated": false,
+            "displayName": "Wrapping",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "wrapping",
+            "possibleValues": [
+              "None",
+              "Soft",
+              "Hard",
+              "Off"
+            ],
+            "type": "sap_ui_core_Wrapping"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_TextArea",
+      "displayName": "TextArea",
+      "displayToUser": true,
+      "groupName": "Standard Controls",
+      "name": "sap_m_TextArea"
+    },
+    "sap_m_Toolbar": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "aggregations": {
+          "content": {
+            "aggregationTemplate": {},
+            "deprecated": false,
+            "displayName": "Content",
+            "displayToUser": true,
+            "isDataDriven": false,
+            "multiple": true,
+            "name": "content",
+            "renderAction": "",
+            "singularName": "content",
+            "type": "sap_ui_core_Control",
+            "visibility": "public"
+          }
+        },
+        "associations": {},
+        "controlTemplate": "",
+        "defaultAggregation": "content",
+        "deprecated": false,
+        "events": {
+          "press": {
+            "displayName": "Press",
+            "displayToUser": true,
+            "name": "press"
+          }
+        },
+        "isStructuralElement": false,
+        "parent": "sap_m_Toolbar",
+        "properties": {
+          "active": {
+            "defaultValue": false,
+            "deprecated": false,
+            "displayName": "Active",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "active",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "design": {
+            "defaultValue": "Info",
+            "deprecated": false,
+            "displayName": "Design",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "design",
+            "possibleValues": [
+              "Auto",
+              "Transparent",
+              "Info",
+              "Solid"
+            ],
+            "type": "sap_m_ToolbarDesign"
+          },
+          "enabled": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "Enabled",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "enabled",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "height": {
+            "defaultValue": "50px",
+            "deprecated": false,
+            "displayName": "Height",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "height",
+            "possibleValues": null,
+            "type": "CSSSize"
+          },
+          "visible": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "Visible",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "visible",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "width": {
+            "defaultValue": "500px",
+            "deprecated": false,
+            "displayName": "Width",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "width",
+            "possibleValues": null,
+            "type": "CSSSize"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_Toolbar",
+      "displayName": "Toolbar",
+      "displayToUser": true,
+      "groupName": "Standard Controls",
+      "name": "sap_m_Toolbar"
+    },
+    "sap_m_ToolbarSpacer": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "aggregations": {},
+        "associations": {},
+        "controlTemplate": "",
+        "defaultAggregation": "",
+        "deprecated": false,
+        "events": {},
+        "isStructuralElement": false,
+        "parent": "sap_m_ToolbarSpacer",
+        "properties": {
+          "width": {
+            "defaultValue": "",
+            "deprecated": false,
+            "displayName": "Width",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "width",
+            "possibleValues": null,
+            "type": "CSSSize"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_ToolbarSpacer",
+      "displayName": "ToolbarSpacer",
+      "displayToUser": true,
+      "groupName": "Standard Controls",
+      "name": "sap_m_ToolbarSpacer"
+    },
+    "sap_ui_commons_layout_AbsoluteLayout": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "parent": "sap_ui_commons_layout_AbsoluteLayout",
+        "properties": {
+          "verticalScrolling": {
+            "defaultValue": "Auto",
+            "deprecated": false,
+            "displayName": "verticalScrolling",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "verticalScrolling",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "horizontalScrolling": {
+            "defaultValue": "Auto",
+            "deprecated": false,
+            "displayName": "horizontalScrolling",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "horizontalScrolling",
+            "possibleValues": null,
+            "type": "string"
+          }
+        },
+        "aggregations": {
+          "positions": {
+            "name": "positions",
+            "displayName": "Positions",
+            "multiple": true,
+            "types": [
+              "sap_ui_commons_layout_PositionContainer"
+            ]
+          }
+        }
+      },
+      "description": "needed for ABSOLUTE floorplan",
+      "displayName": "AbsoluteLayout",
+      "displayToUser": false,
+      "groupName": "floorplan controls",
+      "name": "sap_ui_commons_layout_AbsoluteLayout"
+    },
+    "sap_ui_commons_layout_PositionContainer": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "parent": "sap_ui_commons_layout_PositionContainer",
+        "properties": {
+          "top": {
+            "name": "top",
+            "displayName": "Top",
+            "type": "CSSSize",
+            "defaultValue": 0
+          },
+          "left": {
+            "name": "left",
+            "type": "CSSSize",
+            "displayName": "Left",
+            "defaultValue": 0
+          }
+        },
+        "aggregations": {
+          "control": {
+            "name": "control",
+            "displayName": "Control",
+            "multiple": false,
+            "types": [
+              "sap_ui_core_Control"
+            ]
+          }
+        }
+      },
+      "description": "needed for ABSOLUTE floorplan",
+      "displayName": "PositionContainer",
+      "displayToUser": false,
+      "groupName": "floorplan controls",
+      "name": "sap_ui_commons_layout_PositionContainer"
+    },
+    "sap_ui_commons_Area": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "parent": "sap_ui_commons_Area",
+        "properties": {
+          "coords": {
+            "name": "coords",
+            "displayName": "Coords",
+            "type": "string"
+          },
+          "href": {
+            "name": "href",
+            "type": "URI",
+            "displayName": "Href"
+          }
+        }
+      },
+      "description": "needed for hotspots",
+      "displayName": "Area",
+      "displayToUser": false,
+      "groupName": "norman controls",
+      "name": "sap_ui_commons_Area"
+    },
+    "sap_m_Page": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "aggregations": {
+          "content": {
+            "aggregationTemplate": {},
+            "deprecated": false,
+            "displayName": "Content",
+            "displayToUser": false,
+            "isDataDriven": false,
+            "multiple": true,
+            "name": "content",
+            "renderAction": "",
+            "singularName": "content",
+            "types": [
+              "sap_ui_core_Control"
+            ],
+            "visibility": "public",
+            "defaultValue": [
+              {
+                "name": "sap_ui_commons_layout_AbsoluteLayout"
+              }
+            ]
+          }
+        },
+        "associations": {},
+        "controlTemplate": "",
+        "defaultAggregation": "content",
+        "deprecated": false,
+        "events": {},
+        "isStructuralElement": false,
+        "parent": "sap_m_Page",
+        "properties": {
+          "enableScrolling": {
+            "defaultValue": false,
+            "deprecated": false,
+            "displayName": "EnableScrolling",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "enableScrolling",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "showFooter": {
+            "defaultValue": false,
+            "deprecated": false,
+            "displayName": "ShowFooter",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "showFooter",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "showHeader": {
+            "defaultValue": false,
+            "deprecated": false,
+            "displayName": "ShowHeader",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "showHeader",
+            "possibleValues": null,
+            "type": "boolean"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_Page",
+      "displayName": "Page",
+      "displayToUser": true,
+      "groupName": "Standard Controls",
+      "name": "sap_m_Page"
+    },
+    "sap_m_ObjectListItem": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "aggregations": {
+          "attributes": {
+            "aggregationTemplate": {},
+            "deprecated": false,
+            "displayName": "Attributes",
+            "displayToUser": true,
+            "isDataDriven": false,
+            "multiple": true,
+            "name": "attributes",
+            "renderAction": "",
+            "singularName": "attribute",
+            "types": [
+              "sap_m_ObjectAttribute"
+            ],
+            "visibility": "public",
+            "defaultValue": [
+              {
+                "name": "sap_m_ObjectAttribute",
+                "properties": {
+                  "text": "Object 1"
+                }
+              },
+              {
+                "name": "sap_m_ObjectAttribute",
+                "properties": {
+                  "text": "Object 2"
+                }
+              }
+            ]
+          }
+        },
+        "associations": {},
+        "controlTemplate": "",
+        "defaultAggregation": "attributes",
+        "deprecated": false,
+        "events": {},
+        "isStructuralElement": false,
+        "parent": "sap_m_ObjectListItem",
+        "patternData": {},
+        "properties": {
+          "intro": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "Intro",
+            "displayToUser": true,
+            "group": "Misc",
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "intro",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "number": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "Number",
+            "displayToUser": true,
+            "group": "Misc",
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "number",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "numberState": {
+            "defaultValue": "None",
+            "deprecated": false,
+            "displayName": "NumberState",
+            "displayToUser": true,
+            "group": "Misc",
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "numberState",
+            "possibleValues": [
+              "Error",
+              "Warning",
+              "Success",
+              "None"
+            ],
+            "type": "sap_ui_core_ValueState"
+          },
+          "numberUnit": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "NumberUnit",
+            "displayToUser": true,
+            "group": "Misc",
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "numberUnit",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "title": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "Title",
+            "displayToUser": true,
+            "group": "Misc",
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "title",
+            "possibleValues": null,
+            "type": "string"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_ObjectListItem",
+      "displayName": "ObjectListItem",
+      "displayToUser": true,
+      "groupName": "Standard Controls",
+      "name": "sap_m_ObjectListItem"
+    },
+    "sap_norman_controls_HotspotImage": {
+      "additionalMetadata": {
+        "defaultProperty": null,
+        "parent": "sap_norman_controls_HotspotImage",
+        "properties": {
+          "src": {
+            "name": "src",
+            "displayName": "Source",
+            "type": "URI"
+          },
+          "width": {
+            "defaultValue": "",
+            "deprecated": false,
+            "displayName": "Width",
+            "displayToUser": true,
+            "groupName": "Appearance",
+            "name": "width",
+            "possibleValues": null,
+            "type": "CSSSize"
+          },
+          "height": {
+            "defaultValue": "",
+            "deprecated": false,
+            "displayName": "Height",
+            "displayToUser": true,
+            "groupName": "Appearance",
+            "name": "height",
+            "possibleValues": null,
+            "type": "CSSSize"
+          }
+        },
+        "aggregations": {
+          "areas": {
+            "name": "areas",
+            "displayName": "areas",
+            "multiple": true,
+            "types": [
+              "sap_ui_commons_Area"
+            ]
+          }
+        }
+      },
+      "description": "needed for Hotspots",
+      "displayName": "Hotspot Image",
+      "displayToUser": false,
+      "groupName": "Not displayed",
+      "name": "sap_norman_controls_HotspotImage"
+    }
+  },
+  "description": "r1c1ui5",
+  "displayName": "Open UI5",
+  "floorPlans": {
+    "ABSOLUTE": {
+      "control": "sap_m_Page",
+      "name": "ABSOLUTE",
+      "thumbnail": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABQAAAAQAAQMAAACEXWYAAAAAA1BMVEX///+nxBvIAAAAtElEQVQYGe3BAQEAAACAkP6v7ggKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGIQeAAHYiJ6XAAAAAElFTkSuQmCC"
+    }
+  },
+  "isRootCatalog": false,
+  "libraryObjectId": "",
+  "libraryPublicURL": "",
+  "libraryURL": "/resources/sap-ui-core.js",
+  "libraryVersion": "1_26_6",
+  "rootCatalogId": null
+}

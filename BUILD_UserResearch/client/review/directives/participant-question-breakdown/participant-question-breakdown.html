@@ -1,0 +1,27 @@
+  <div class="fixed-table-container">
+      <div class="fixed-table-container-inner extrawrap">
+        <table cellspacing="0" class="ui-participant-grid">
+          <thead>
+            <tr>
+              <th class="xs"><div>#</div></th>
+              <th class="xlg"><div>PARTICIPANT</div></th>
+              <th class="md"><div>TIME ON PAGE</div> </th>
+              <th class="md"><div >ANNOTATIONS</div></th>
+              <th class="md" ng-if="questionType !== 'Annotation'"><div class="th-inner">ANSWER</div></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="n in bindModel track by $index">
+              <td ng-bind="$index + 1" class="small"></td>
+              <td ng-bind="n.participant"></td>
+              <td ng-bind-html="n.timeOnPage | AverageDurationFilter"></td>
+              <td ng-bind="n.annotations.length"></td>
+              <td ng-if="questionType !== 'Annotation'  && questionType !== 'MultipleChoice'" ng-bind='n.answers[0].answer'></td>
+              <td ng-if="questionType === 'MultipleChoice'" ng-bind='n.answers[0].answerText'></td>
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+

@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <script src="/sapui5/resources/sap-ui-core.js" id="sap-ui-bootstrap"
+            data-sap-ui-libs="sap.m, sap.ui.unified, sap.ui.commons"
+            data-sap-ui-theme="sap_bluecrystal"
+            data-sap-ui-xx-bindingSyntax="complex"
+            data-sap-ui-preload="async"
+            data-sap-ui-resourceroots='{
+            "generated.app": "./"
+        }'>
+    </script>
+<script src="/iframeMessaging.js"></script>
+    <script>
+        "use strict";
+
+        sap.ui.getCore().attachInit(function () {
+            new sap.ui.core.ComponentContainer({
+                name: "generated.app",
+                width: "100%",
+                height: "100%"
+            }).placeAt("app");
+        });
+    </script>
+</head>
+<body class="sapUiBody" id="app">
+</body>
+</html>

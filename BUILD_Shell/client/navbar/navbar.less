@@ -1,0 +1,233 @@
+@import (reference) '../node_modules/norman-client-tp/node_modules/angular-sap-ui-elements/styles/base';
+
+.navbar {
+    height: 60px;
+    overflow: hidden;
+    background-image: url('@{client-assets-dir}/build-hero-pic.jpg');
+    background-size: cover;
+    text-align: center;
+    display: block;
+    z-index: 10;
+
+    &.navbar-hidden { display: none; height: 0;
+
+        .navbar-content { height: 0;
+            .blue-background { transform: translateY(-60px); }
+            .floating-elements { transform: translateY(-60px); }
+        }
+    }
+    &.navbar-hidden.navbar-animate {
+        height: 0;
+        display: block;
+        transition: height .5s;
+
+        .navbar-content { height: 0; transition: height .5s;
+
+            .blue-background { transition: transform .5s; transform: translateY(-60px); }
+            .floating-elements { transition: transform .5s; transform: translateY(-60px); }
+        }
+    }
+    &.navbar-animate { height: 60px; display: block; transition: height .5s; }
+
+    .navbar-content { height: 100%;
+
+        .blue-background {
+            width: 100%;
+            background-color: @PickledBluewood-900;
+            position: absolute;
+            height: 60px;
+            z-index: 20;
+        }
+
+        .floating-elements {
+            width: 100%;
+            height: 60px;
+            position: absolute;
+            top: 0;
+            z-index: 21;
+            padding: 10px;
+            overflow: hidden;
+
+            .fe-left { height: 100%; margin-left: 17px;
+
+                .navbar-logo { margin-right: 10px; }
+
+                .navbar-title { font: 700 24px @roboto-font; color: #fff; margin-left: 10px; margin-right: 10px; }
+
+                .navbar-save { width: 200px; font-size: 12px; color: white; margin-left: 10px; margin-right: 10px; }
+            }
+
+            .fe-right { margin-right: 30px;
+
+                .help-circle { margin-left: 20px; cursor: pointer;
+
+                    .help-ico {
+                        .common-ico-help-invert;
+                        .common-ico-help-invert-dims;
+                    }
+                }
+            }
+        }
+
+        .hero-banner { position: relative; top: 0; height: 100%;
+
+            .hero-logo {
+                top: 33%;
+                position: relative;
+                color: white;
+                text-transform: uppercase;
+                font-size: 22px;
+                font-weight: bold;
+
+                .build-logo { margin-left: auto; margin-right: auto;
+                    .common-build-logo-392-90;
+                    .common-build-logo-392-90-dims;
+                }
+            }
+
+        }
+    }
+
+    &.navbar-hero { height: 305px; transition: background-position 1s;
+        .blue-background { transform: translateY(-60px); }
+
+        .floating-elements { height: 60px;
+            .fe-left { transform: translateY(-60px); }
+        }
+    }
+
+    &.navbar-hero-project { transition: background-position 1s; background-position: bottom;
+
+        .hero-banner { top: -100%; transition: top 1s; }
+
+        .floating-elements { height: 60px;
+            .fe-left { transition: transform 1s; transform: translateY(0px); }
+        }
+    }
+
+    &.navbar-hero-project-remove {
+        .hero-banner { top: 0; transition: top 1s; }
+
+        .floating-elements { height: 60px;
+
+            .fe-left { transition: transform 1s; transform: translateY(-60px); }
+        }
+    }
+
+    &.navbar-collapsed-add.navbar-hero {
+        .blue-background { transform: translateY(0); transition: transform .5s; }
+
+        .floating-elements { height: 60px;
+            .fe-left { transition: transform .5s; transform: translateY(0px); }
+        }
+    }
+
+    &.navbar-collapsed-remove.navbar-hero {
+        .blue-background { transform: translateY(-60px); transition: transform .5s; }
+
+        .floating-elements { height: 60px;
+
+            .fe-left { transition: transform .5s; transform: translateY(-60px); }
+        }
+    }
+
+    &.navbar-collapsed.navbar-hero {
+        .blue-background { transform: translateY(0); }
+
+        .floating-elements { height: 60px;
+            .fe-left { transform: translateY(0); }
+        }
+    }
+
+    &.navbar-collapsed-remove.navbar-hero.navbar-hero-project {
+
+        .floating-elements { height: 60px;
+            .fe-left { transition: none; transform: translateY(0); }
+        }
+    }
+
+    &.navbar-project { transition: none; background-position: bottom;
+
+        .hero-banner { top: -100%; transition: none; }
+
+        .floating-elements { height: 60px;
+            .fe-left { transform: translateY(0px); transition: none; }
+            .navbar-save { visibility: hidden; }
+        }
+    }
+}
+
+
+.shell-help-overlay{
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    height: 78%;
+    background-color: #ecf0f1;
+    z-index: 99;
+    box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.3);
+    padding-bottom: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.shell-help-overlay-modal{
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: .7;
+    z-index: 98;
+}
+
+.shell-help-overlay-videolist { display: flex; justify-content: space-around; }
+
+.shell-help-overlay-close {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #007cc0;
+  z-index: 100;
+  border-radius: 50%;
+  border: 6px solid #007cc0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:before {
+    .common-x;
+    .common-x-dims;
+    content:'';
+    transform: scale(2.7);
+    display: flex;
+    }
+}
+
+.shell-help-overlay-close-checkbox-label { 
+    color: @CuriousBlue-500;
+    margin: 0 0 25px 25px;
+}
+
+.shell-helpTooltip { padding: 10px;
+
+    h4 { margin-bottom: 10px; }
+}
+
+.shell-header-video { margin-bottom: 15px; }
+
+
+
+#na-help-popover { min-width: 140px; padding: 15px;
+
+    .na-avatar-section-link { margin: 0; }
+
+    .na-avatar-link { font: 700 14px/28px @roboto-font; color: @CuriousBlue-500; text-decoration: underline;
+
+        &:hover { text-decoration: none; }
+    }
+}

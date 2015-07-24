@@ -1,0 +1,42 @@
+<div class="fixed-table-container">
+    <div class="fixed-table-container-inner extrawrap">
+        <table cellspacing="0" class="ui-participant-grid">
+            <thead>
+                <tr class="head">
+                    <th class="w60">
+                        <div class="first">#</div>
+                    </th>
+                    <th class="w150">
+                        <div>PARTICIPANT</div>
+                    </th>
+                    <th class="w150">
+                        <div>TIME ON STUDY</div>
+                    </th>
+                    <th class="w150">
+                        <div>TASK COMPLETED</div>
+                    </th>
+                    <th class="w150">
+                        <div>QUESTION COMPLETED</div>
+                    </th>
+                    <th class="w140">
+                        <div>ANNOTATIONS</div>
+                    </th>
+                    <th class="w300">
+                        <div>COMMENTS</div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="n in bindModel track by $index" ng-click="setSelected($index)">
+                    <td><span ng-bind="$index + 1"></span></td>
+                    <td><span ng-bind="n.name"></span></td>
+                    <td><span ng-bind-html="n.timeInStudy| AverageDurationFilter"></span></td>
+                    <td><span ng-bind="n.completedTasks"></span></td>
+                    <td><span ng-bind="n.answers"></span></td>
+                    <td><span ng-bind="n.annotations"></span></td>
+                    <td><span ng-bind="n.comments"></span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,565 @@
+/* -------------------------------------------------- */
+/* Norman project ui editor styling                   */
+/* np: norman project                                 */
+/* e: ui editor                                       */
+/* -------------------------------------------------- */
+@import (reference) '../node_modules/norman-client-tp/node_modules/angular-sap-ui-elements/styles/variables';
+
+@keyframes darken_header {
+    from { background-color: @PickledBluewood-600; }
+    to { background-color: @PickledBluewood-1100; }
+}
+
+@keyframes brighten_header {
+    from { background-color: @PickledBluewood-1100; }
+    to { background-color: @PickledBluewood-600; }
+}
+
+@composer-min-width: 1200px;
+
+/*
+ * namespace for ui-editor styles
+ */
+.np-e {
+    /*
+     * header styles
+     */
+    &-header {
+        height: 40px;
+        min-width: @composer-min-width;
+        background-color: @PickledBluewood-600;
+        position: relative;
+        animation: brighten_header 0.5s;
+
+        &-dimensions {
+            width: 30px;
+            height: 30px;
+            margin: 0 0.3rem;
+            cursor: pointer;
+        }
+
+        &-save {
+            position: absolute;
+            top: 12px;
+        }
+
+        &--dark {
+            background-color: @PickledBluewood-1100;
+            animation: darken_header 0.5s;
+        }
+
+        np-svg-icon {
+            cursor: pointer;
+            position: relative;
+            top: 2px;
+            padding: 0 5px;
+        }
+
+        &-icons-center {
+            height: 100%;
+            width: 750px;
+            justify-content: space-around;
+            margin: 0px auto;
+        }
+
+        &-icon-active {
+            fill: @White;
+        }
+
+        &-icon-inactive {
+            fill: @PickledBluewood-900;
+        }
+
+        
+
+        &-icon-invis {
+            visibility: hidden;
+            display: none;
+        }
+
+        &-saved-notification {
+            margin-left: 15px;
+            width: 200px;
+            font-size: 12px;
+            color: white;
+        }
+
+        &-separator {
+            height: 20px;
+            border-left: 1px solid white;
+            opacity: 0.5;
+            margin: 0px 15px;
+            &-panel {
+                margin: 0 20px 0 15px;
+            }
+        }
+
+        &-button {
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-left: 15px;
+            width: 95px;
+            height: 28px;
+            border-radius: 2px;
+            font-weight: 600;
+            border: 1px solid #ccc;
+            outline: none;
+            box-shadow: 0px 0px 31px 3px rgba(44, 62, 80, 0.5);
+            border: none;
+            background: white;
+            color: @PickledBluewood-900;
+            letter-spacing: 1px;
+            font-size: 10px;
+            -webkit-appearance: button;
+            cursor: pointer;
+            transition-duration: .5s;
+
+            &:hover {
+                background-color: darken(white, 15%)
+            }
+        }
+    }
+
+    &-side-panel {
+        box-sizing: border-box;
+        height: 100%;
+        position: relative;
+        background-color: @PickledBluewood-1100;
+        transition-duration: .5s;
+
+        &-left {
+          @base-width: 271px;
+            flex: 0 0 @base-width;
+
+            &--hidden {
+                margin-left: -@base-width;
+            }
+        }
+
+        &-right {
+            @base-width: 271px;
+            flex: 0 0 @base-width;
+
+            &--hidden {
+                margin-right: -@base-width;
+            }
+        }
+
+        &-heading {
+            box-sizing: border-box;
+            background-color: @PickledBluewood-700;
+            text-align: left;
+            width: 100%;
+            padding: 10px 0px 10px 12px;
+
+            > span {
+                font-family: @roboto-font;
+                font-weight: 700;
+                font-size: 12px;
+                color: @White;
+                line-height: 30px;
+                text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.30);
+            }
+        }
+    }
+
+    &-library-panel {
+        .np-e-side-panel-left-full & {
+            height: 100%;
+        }
+        height: calc(~"65% - 16px");
+    }
+
+    &-tree-panel {
+        height: 35%;
+        max-height: 35%;
+        background-color: #132232;
+        border-bottom: 12px solid rgba(37, 50, 63, 0.28);
+    }
+
+    &-property-panel {
+        height: 100%;
+        overflow: auto;
+    }
+
+    &-content {
+        position: absolute;
+        top: 40px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: calc(~"100% - 40px");
+        min-width: @composer-min-width;
+        overflow-x: hidden;
+        font-size: 12px;
+    }
+
+    &-toolbar {
+
+        font-weight: 400;
+        background-color: #566a7e;
+        min-height: 40px;
+        min-width: 1200px;
+
+        & np-svg-icon {
+            cursor: pointer;
+            padding: 0px 15px;
+
+            & > svg {
+                vertical-align: middle;
+            }
+        }
+
+        &-left {
+            margin-left: 15px;
+        }
+        &-right {
+            margin-right: 15px;
+        }
+
+    }
+
+    &-interactive-mode {
+        background-color: black;
+        opacity: 0;
+        transition-duration: 1s;
+        pointer-events: none;
+        z-index: 50;
+
+        &--active {
+            opacity: .8;
+            pointer-events: auto;
+        }
+
+        &-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background-color: black;
+            opacity: 0;
+            transition-duration: .5s;
+            pointer-events: none;
+            z-index: 50;
+
+            &--active {
+                opacity: 0.5;
+                pointer-events: auto;
+            }
+        }
+
+        &-footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 70px;
+            background-color: white;
+            opacity: 0;
+            transition-duration: .5s;
+            pointer-events: none;
+            z-index: 120;
+
+            &--active {
+                opacity: 1;
+                pointer-events: auto;
+            }
+
+            &-icon {
+                cursor: pointer;
+                position: absolute;
+                right: 10px;
+                top: -10px;
+            }
+
+            &-content {
+                display: flex;
+                height: 70px;
+                align-items: center;
+                justify-content: center;
+
+                &-span {
+                    font-family: @roboto-font;
+                    font-weight: 500;
+                    font-size: 14px;
+
+                    &-left {
+                        margin-right: 10px;
+                    }
+
+                    &-right {
+                        margin-left: 10px;
+                        color: @SilverSand-900;
+                    }
+                }
+            }
+        }
+    }
+
+    &-canvas-scale-container {
+        position: relative;
+        overflow: hidden;
+        flex: 1;
+        width: 100%;
+        height: 100%;
+    }
+
+    &-canvas-container {
+        overflow: auto;
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        &-inner {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            padding: 35px 0px 0px 5px;
+
+            &-view-interactive-mode {
+                z-index: 70;
+            }
+
+            &-view-editor-mode {
+                z-index: 0;
+                transition-delay: 1s;
+                -moz-perspective: 1px;
+                -webkit-perspective: 1px;
+                perspective: 1px;
+            }
+        }
+    }
+
+    &-disable-user-select {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    &-right-click-menu {
+        position: fixed;
+        border: 1px solid black;
+        padding: 10px 0;
+        background-color: @White;
+        z-index: 9999;
+
+        > div {
+            padding: 3px 10px;
+        }
+
+        > div:hover {
+            background-color: @PickledBluewood-900;
+            color: @White;
+            cursor: pointer;
+        }
+    }
+    /*Scale*/
+    &-canvas-yscale, &-canvas-xscale {
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch;
+        background-color: @Porcelain-500;
+        z-index: 30;
+        -webkit-transition:all .5s ease;
+        transition: all .5s ease;
+    }
+
+    &-canvas-xscale {
+        height: 0px;
+        width: 100%;
+        border-bottom: 1px solid @SilverSand-500;
+
+        &--show {
+            height: 20px;
+        }
+    }
+
+    &-g-xscale {
+        transform: translate(0, 20px);
+    }
+
+    &-canvas-yscale {
+        width: 0px;
+        height: 100%;
+        border-right: 1px solid @SilverSand-500;
+
+        &--show {
+            width: 20px;
+        }
+    }
+
+    &-g-yscale {
+        transform: translate(20px, 0);
+    }
+
+    &-axis {
+        text {
+            font: 9.5px sans-serif;
+            font-weight: 700;
+            fill: @PickledBluewood-900;
+        }
+
+        path {
+            shape-rendering: crispEdges;
+            display: inherit;
+        }
+
+        line {
+            fill: none;
+            stroke: @SilverSand-500;
+            stroke-width: 1px;
+        }
+    }
+
+    &-bg-color {
+        &-standard {
+            fill: @PickledBluewood-700;
+            fill-opacity: 0.2;
+        }
+
+        &-white {
+            fill: @White;
+        }
+    }
+
+    &-preview-image {
+        z-index: 9999;
+        position: absolute;
+        max-width: 300px;
+        max-height: 300px;
+        border: 2px solid @PickledBluewood-900;
+    }
+    &-publish {
+
+
+       width: 436px;
+        height: 120px;
+        align: right;
+        margin: 10px 20px 20px 20px;
+
+
+        &-popup{
+            border-radius: 2px;
+        }
+
+        &-msgTxt {
+            font-size: 11px;
+            float: right;
+            color: #373635;
+        }
+
+        &-urlTxt{
+            width: 415px;
+            padding: 0px 10px;
+            margin-top : 10px;
+        }
+
+        &-urlTxt-italic{
+            font-style:italic;
+        }
+
+        &-accessTxt{
+            font-size: 11px;
+            color: #373635;
+        }
+
+        &-pubBtn{
+            float: right;
+            width: 190px;
+        }
+
+    }
+    &-snapshot-modal {
+        width: 400px;
+        padding: 20px;
+
+        span {
+            display: block;
+            font-family: @roboto-font;
+            font-weight: 500;
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+
+        &-content {
+            margin: 10px 0px;
+
+            > input {
+                box-sizing: border-box;
+                width: 360px;
+            }
+
+            > textarea {
+                box-sizing: border-box;
+                width: 360px;
+            }
+        }
+
+        &-create-study {
+            margin: 20px 0px 10px 0px;
+
+            &--active {
+                color: @CuriousBlue-500;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+            &-content {
+                > input {
+                    box-sizing: border-box;
+                    margin-right: 10px;
+                    width: 210px;
+                }
+
+                > button {
+                    width: 130px;
+                }
+
+            }
+        }
+    }
+
+    &-applicationTypeName {
+      color: white;
+    }
+
+    &-applicationType {
+      padding: 10px;
+    }
+
+    &-applicationTypeWarning {
+      color: white;
+      text-align: center;
+      padding: 15px 0 10px 0;
+    }
+}
+
+// end np-e namespace
+
+.ui-zoom {
+    height: auto;
+}
+
+// Temp Fix for Map Icon
+.np-e-header-page-map-icon > svg {
+    width: 18px;
+    g {
+        fill: white;
+    }
+
+}
+
+// Disabled (faded) icons in toolbar 
+np-svg-icon.np-e-header-icon-disabled, np-svg-icon.np-e-header-icon-disabled g {
+    fill: fade(@PickledBluewood-500, 50%);
+    cursor: auto;
+}
+

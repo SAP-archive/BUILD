@@ -1,0 +1,30 @@
+{
+  "floorplan": "ABSOLUTE",
+  "rootControlId": "page",
+  "controls": [
+    {
+      "controlId": "page",
+      "groups": [
+        {
+          "groupId": "content",
+          "children": [
+            "button0",
+            "button1"
+          ]
+        }
+      ]
+    },
+    {
+      "controlId": "button0",
+      "parentControlId": "page",
+      "parentGroupId": "content",
+      "parentGroupIndex": 0
+    },
+    {
+      "controlId": "button1",
+      "parentControlId": "page",
+      "parentGroupId": "content",
+      "parentGroupIndex": 1
+    }
+  ]
+}

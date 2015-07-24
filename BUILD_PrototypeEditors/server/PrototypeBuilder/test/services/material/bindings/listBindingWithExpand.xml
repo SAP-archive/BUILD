@@ -1,0 +1,15 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.view.SimplePage" xmlns:m="sap.m">
+    <m:Page id="RootControl" title="Simple Page">
+        <m:content>
+            <m:List id="MyList" items="{path:'/SalesOrderSet', parameters:{expand:'NavToSalesOrderSet,NavToSalesOrderSet/ProductSet'}}">
+                <m:items>
+                    <m:ObjectListItem id="MyListItem" title="{ID}" attributes="{NavToSalesOrderSet}">
+                        <m:attributes>
+                            <m:ObjectAttribute id="MyObjectAttribute" title="{ID}" text="{ProductSet/Description}"/>
+                        </m:attributes>
+                    </m:ObjectListItem>
+                </m:items>
+            </m:List>
+        </m:content>
+    </m:Page>
+</mvc:View>

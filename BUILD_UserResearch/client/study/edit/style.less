@@ -1,0 +1,267 @@
+@import (reference) "../../styles/base.less";
+
+body.page-shell-project-UserResearch-edit-screens{
+    position: fixed;
+}
+body[class*="page-shell-project-UserResearch-edit-screens"] * {
+    box-sizing: border-box;
+}
+#study-edit {
+    padding: 30px 0 0 30px;
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+
+    .hidden {
+        display: none !important;
+    }
+    .header {
+        width: 100%;
+        margin: 0 0 20px 0;
+
+        .title-icon {
+            width: 830px;
+            min-width: 830px;
+        }
+        .title-wrapper {
+            flex-grow: 1;
+            -webkit-flex-grow: 1;
+            margin: 0;
+
+            .edit-name-actions {
+                float: left;
+                margin: 10px 5px 10px 0;
+                width: 31px;
+                height: 33px;
+                cursor: pointer;
+                position: relative;
+
+                &.icon-pen {
+                    padding: 0px;
+                    width: 31px;
+                    height: 31px;
+                    float: left;
+
+                    &:before {
+                        content: '';
+                        line-height: 20px;
+                        cursor: pointer;
+                        position: absolute;
+                        top: calc(~'50% - 10px');
+                        left: 1px;
+                        .user-research-pen;
+                        .user-research-pen-dims;
+                    }
+                }
+            }
+            .title {
+                word-break: break-word;
+                font-size: 36px;
+                font-weight: 300;
+                font-family: @roboto-font;
+                color: @PickledBluewood-1100;
+                padding: 0;
+            }
+        }
+        .ur-action-btn {
+            padding: 0 50px;
+            margin-left: 20px;
+            margin-right: 30px;
+
+            span {
+                text-overflow: ellipsis;
+                display: block;
+                overflow: hidden
+            }
+        }
+        .ur-action-block {
+            display: inline-block;
+            padding: 0 20px;
+            height: 40px;
+
+            .ur-action-text {
+                padding-left: 10px;
+                font-weight: bold;
+                cursor: pointer;
+                line-height: 40px;
+                color: @CuriousBlue-500;
+                text-decoration: underline;
+                height: 40px;
+                text-overflow: ellipsis;
+                display: block;
+                overflow: hidden
+            }
+            .ur-action-icon {
+                float: Left;
+                padding-right: 10px;
+                width: 28px;
+                height: 40px;
+                cursor: pointer;
+                background-repeat: no-repeat;
+                background-position: center center;
+
+                input {
+                    margin: 0;
+                    cursor: pointer;
+                }
+            }
+            .icon-assets {
+                background-image: url("../resources/norman-user-research-client/assets/ico-assets-small.svg");
+            }
+            .icon-cloud {
+                background-image: url("../resources/norman-user-research-client/assets/ico-cloud-upload-small.svg");
+            }
+            .icon-eye {
+                background-image: url("../resources/norman-user-research-client/assets/ico-eye-small.svg");
+            }
+            .icon-link {
+                background-image: url("../resources/norman-user-research-client/assets/link-blue.svg");
+            }
+            .icon-annotation-blue {
+                background-image: url("../resources/norman-user-research-client/assets/ico-annotation-blue.svg");
+            }
+        }
+    }
+    .content {
+        flex-grow: 1;
+        -webkit-flex-grow: 1;
+        overflow-y: auto;
+        width: 100%;
+    }
+    .footer {
+        min-height: 100px;
+        width: 100%;
+        bottom: 0;
+        padding: 0;
+        margin: 0;
+
+        .delete-question {
+            text-align: left;
+            font-family: @roboto-font;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 38px;
+            width: 180px;
+            color: @Cinnabar-500;
+            cursor: pointer;
+
+            > span {
+                text-align: left;
+                font-family: @roboto-font;
+                font-weight: 500;
+                font-size: 14px;
+                color: @Cinnabar-500;
+                margin-left: 10px;
+                line-height: 32px;
+                height: 30px;
+                float: left;
+                text-decoration: underline;
+            }
+            > span:hover {
+                text-decoration: none;
+            }
+            &.hidden {
+                display: none;
+            }
+        }
+        .action {
+            &.icon-delete {
+                padding: 0px;
+                border-radius: 50%;
+                background-color: @Cinnabar-500;
+                width: 31px;
+                height: 31px;
+                float: left;
+
+                &:before {
+                    content: '';
+                    line-height: 20px;
+                    cursor: pointer;
+                    position: absolute;
+                    top: calc(~'50% - 10px');
+                    left: 7px;
+                    .user-research-ico-white-trash;
+                    .user-research-ico-white-trash-dims;
+                }
+            }
+        }
+    }
+}
+.ui-popup.name-desc-popover {
+    width: 330px;
+    height: auto;
+
+    .ui-popup-arrow {
+        box-shadow: -0.8px -1px 2px 0px rgba(0, 0, 0, 0.2);
+    }
+    p {
+        padding: 10px 5px;
+    }
+    .name-label {
+        margin-top: 0px;
+        display: block;
+    }
+    input {
+        width: 310px;
+    }
+    .desc-label {
+        padding-top: 6px;
+        display: block;
+    }
+    .desc {
+        width: 310px;
+        margin-bottom: 5px;
+        height: 110px;
+    }
+    .save-cancel-div {
+        margin-top: 6px;
+        border-top: 1px solid @Porcelain-900;
+        margin-left: -10px;
+        margin-right: -10px;
+        padding-top: 15px;
+    }
+    .name-description-form {
+        padding: 5px;
+
+        .flex-div {
+            display: inline-flex;
+
+            .numbers {
+                right: 10px;
+                position: absolute;
+                float: right;
+                color: @Shamrock-500;
+                &.warning{
+                    color: @Cinnabar-500;
+                }
+                &.desc-number-margin{
+                    margin-top: 16px;
+                }
+            }
+        }
+
+        .subtext {
+            color: @Cascade-900;
+        }
+    }
+    .pt15 {
+        padding-top: 15px;
+        display: block;
+    }
+    .cancel-text {
+        line-height: 31px;
+        font-size: 15px;
+        cursor: pointer;
+        font-weight: 700;
+        padding-left: 10px;
+    }
+    .save-btn {
+        float: right;
+        width: 85px;
+        cursor: pointer;
+        right: 10px;
+    }
+}
+#publishPopup {
+    width: 450px;
+}

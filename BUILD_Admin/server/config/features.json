@@ -1,0 +1,6 @@
+{
+	"disable-ui-catalog-manager-client":{
+		"name": "client for ui catalog manager",
+        "enabled": false
+	}
+}

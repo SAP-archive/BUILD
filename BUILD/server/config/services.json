@@ -1,0 +1,55 @@
+{
+    "filters" : {
+        "auth" : {
+            "module" : "norman-auth-server",
+            "filter" : "auth",
+            "options" : {}
+        },
+        "jwt" : {
+            "module" : "norman-auth-server",
+            "filter" : "jwt",
+            "options" : {}
+        },
+        "xsrf" : {
+            "module" : "norman-auth-server",
+            "filter" : "xsrf",
+            "options" : {"headerName":"X-CSRF-Token", "cookieName":"X-CSRF-Token"}
+        }
+    },
+    "locations" : [{
+        "/api" : [ "jwt", "auth", "xsrf" ]
+    }],
+    "handlers" : {
+        "norman-prototype-editors-server": {
+            "snapshot": "/api/projects",
+            "public": "/deploy",
+            "lock": "/api/projects",
+            "artifact": "/api/projects",
+            "page": "/api/projects",
+            "prototype": "/api/projects",
+            "models": "/api/models",
+            "sampledata": "/api/sampledata"
+        },
+        "norman-auth-server" : {
+            "users" : "/api/users",
+            "auth" : "/auth",
+            "internal" : "/internal"
+        },
+        "norman-projects-server": {
+            "projects": "/api/projects"
+        },
+        "norman-business-catalog-manager-server": "/api/catalogs",
+        "norman-ui-catalog-manager-server":"/api/uicatalogs",
+        "norman-user-research-server": {
+            "studies": "/api/projects/:projectId",
+            "review": "/api/projects/:projectId",
+            "questions": "/api/projects/:projectId",
+            "annotations": "/api/projects/:projectId",
+            "prototypes": "/api/projects/:projectId",
+            "participants": "/api/participant",
+            "userStudies": "/api/projects/studies/",
+            "studyprototypes": "/api/projects/:projectId"
+        },
+        "norman-audit-server": "/audit"
+    }
+}

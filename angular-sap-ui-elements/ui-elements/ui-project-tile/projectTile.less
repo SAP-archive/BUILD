@@ -1,0 +1,241 @@
+/* -------------------------------------------------- */
+/* Norman project dashboard styling */
+/* np: norman project */
+/* d:dashboard */
+/* -------------------------------------------------- */
+
+@import (reference) "../../styles/base.less";
+@new-project-box-color-background: @Portafino-500;
+@new-project-box-color-border: @Buttercup-500;
+@new-project-input-color: @CuriousBlue-900;
+@new-project-input-placeholder-color: @Buttercup-500;
+@new-project-creation-link-color: @CuriousBlue-900;
+@tile-project-box-color-background: @White;
+@tile-project-box-color-border: @Porcelain-900;
+
+
+/* Apply the ellipsis on the second line only */
+.line-clamp(@numLines) {
+    overflow: hidden;
+    text-overflow: -o-ellipsis-lastline;
+    text-overflow: ellipsis;
+    display: block; /* autoprefixer: off */
+    display:-webkit-box;
+    -webkit-line-clamp: @numLines;
+    -webkit-box-orient: vertical;
+    max-height: 50px;
+}
+.ui-project-tile-new-project, .ui-project-tile {
+    width: 330px;
+    height: 270px;
+    position: relative;
+    cursor: pointer;
+}
+.ui-project-tile.ui-project-tile-hover {
+    background: @White;
+    border: 1px solid @CuriousBlue-500;
+    box-shadow: 0px 0px 10px 0px rgba(51, 152, 219, 0.50);
+}
+.ui-project-tile-new-project-top-box, .ui-project-tile-top-box {
+    height: 171px;
+}
+
+/* New project */
+.ui-project-tile-new-project {
+    background: @new-project-box-color-background;
+    border: 1px solid @new-project-box-color-border;
+    float: left;
+    margin: 20px 20px 10px 0;
+    .ui-project-tile-new-project-bottom-box {
+        border-top: 1px solid @new-project-box-color-border;
+    }
+    .ui-project-tile-new-project-cross-line_l, .ui-project-tile-new-project-cross-line_r {
+        stroke: @new-project-box-color-border;
+        stroke-width: 1px;
+    }
+    .ui-project-tile-new-project-bottom-form {
+        margin: 26px 9px;
+    }
+    .ui-project-tile-new-project-input {
+        font-family: @roboto-font;
+        font-size: 26px;
+        font-weight: 300;
+        font-style: italic;
+        color: @new-project-input-color;
+        border: transparent;
+        border-radius: 0;
+        line-height: 45px;
+        transition: none;
+        padding: 0 10px;
+        width: 310px;
+        height: 45px;
+        margin: 26px 0;
+        background: transparent;
+        &:focus {
+            outline: none;
+        }
+        &::-webkit-input-placeholder {
+            color: @new-project-input-placeholder-color;
+            font-family: @roboto-font;
+            line-height: 45px;
+            font-size: 26px;
+            opacity: 1;
+        }
+    }
+    ui-input-container {
+        padding: 0;
+    }
+    ui-input-container.ui-input-focused .ui-input, ui-input-container .ui-input.ng-invalid.ng-dirty {
+        box-shadow: none;
+        border: 0;
+    }
+    .ui-char-counter {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-family: @roboto-font;
+        font-size: 14px;
+        font-weight: 700;
+        font-style: normal;
+    }
+    .red {
+        color: red;
+    }
+}
+
+/* existing project tile */
+.ui-project-tile {
+    transition: all 0.3s ease-out;
+    background: @tile-project-box-color-background;
+    border: 1px solid @tile-project-box-color-border;
+    float: left;
+    margin: 20px 20px 10px 0;
+}
+.ui-project-tile-ghost {
+    transition: all 0.3s ease-out;
+    background: @tile-project-box-color-background;
+    border: 2px dashed @tile-project-box-color-border;
+    float: left;
+    margin: 20px 20px 10px 0;
+    box-shadow: none;
+}
+.ui-project-tile-ghost .ui-project-tile-bottom-box .project-name {
+    color: @tile-project-box-color-border;
+}
+.ui-project-tile.showInviteHeader {
+    height: 325px;
+}
+.ui-project-footer-container {
+    padding-top: 18px;
+}
+.ui-project-tile-image {
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+}
+.ui-project-tile-bottom-box {
+    border-top: 1px solid @tile-project-box-color-border;
+    padding: 36px 20px 0px;
+}
+.ui-project-tile-cross-line_l, .ui-project-tile-cross-line_r {
+    stroke: @tile-project-box-color-border;
+    stroke-width: 1px;
+}
+.ui-project-tile-bottom-box .project-name {
+    font-family: @roboto-font;
+    font-size: 22px;
+    color: @PickledBluewood-900;
+    line-height: normal;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    float: left;
+    max-height: 50px;
+    .line-clamp(2);
+}
+.ui-project-tile-user-list {
+    height: 44px;
+    width: 100%;
+    position: absolute;
+    background: transparent;
+    top: 150px;
+    padding-left: 15px;
+}
+.ui-project-tile-user-list > .ui-project-tile-user {
+    display: inline-block;
+    width: 48px;
+    margin-left: 5px;
+    vertical-align: top;
+}
+.ui-project-tile-user-count {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    position: absolute;
+    padding-top: 10px;
+    font-family: @roboto-font;
+    font-weight: 100;
+    color: @PickledBluewood-900;
+    font-size: 14px;
+    line-height: 25px;
+    padding: 5px;
+    background-color: @White;
+    letter-spacing: 0px;
+    border: 1px solid @Porcelain-900;
+    margin-top: 3px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.ui-project-invite-container {
+    height: 112px;
+    background-color: @White;
+    border: 1px solid @Porcelain-900;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+.ui-project-invite-title {
+    font: 500 20px 'Roboto';
+    color: @PickledBluewood-900;
+    padding: 16px;
+}
+.ui-project-tile-invite-reject-btn {
+    background-color: @Cinnabar-500;
+}
+.ui-project-tile-invite-reject-btn:hover {
+    background-color: @Cinnabar-900;
+}
+.ui-project-tile-invite-accept-btn {
+    margin-right: 10px;
+}
+.ui-project-tile-owner-icon {
+    .common-ico-crown;
+    .common-ico-crown-dims;
+    position: absolute;
+    top: -20px;
+}
+.ui-project-tile-cancel-icon {
+    padding: 0px;
+    border-radius: 50%;
+    background-color: @Cinnabar-500;
+    border: 2px solid @White;
+    width: 34px;
+    height: 34px;
+    float: right;
+    position: absolute;
+    top: -16px;
+    right: -16px;
+    &:before {
+        content: '';
+        line-height: 20px;
+        cursor: pointer;
+        position: absolute;
+        top: calc(~'50% - 11px');
+        left: 6px;
+        .common-ico-white-trash;
+        .common-ico-white-trash-dims;
+    }
+}

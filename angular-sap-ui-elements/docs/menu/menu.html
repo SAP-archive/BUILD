@@ -1,0 +1,10 @@
+<ui-accordion control="menuAccordion">
+    <ui-accordion-pane ng-repeat="section in menu.sections">
+        <ui-accordion-pane-header>
+            <h5>{{ section.header }}</h5>
+        </ui-accordion-pane-header>
+        <ui-accordion-pane-content>
+            <div class="ui-accordion-content-entry" ng-repeat="page in section.content.pages | orderBy: 'id'" ng-click="stateGo(page.url, page.id)">{{page.name}}</div>
+        </ui-accordion-pane-content>
+    </ui-accordion-pane>
+</ui-accordion>

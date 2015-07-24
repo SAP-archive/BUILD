@@ -1,0 +1,24 @@
+{
+  "name": "norman-business-catalog-manager-client",
+  "version": "0.1.0",
+  "description": "Business Catalog Manager Client",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SAP/BUILD.git"
+  },
+    "maintainers": [
+        {
+            "name": "BUILD Team",
+            "email": "contact.build@sap.com"
+        }
+    ],
+  "licenses": [
+    {
+      "type": "Apache License, Version 2.0",
+      "url": "https://github.com/SAP/BUILD/blob/master/LICENSE.txt"
+    }
+  ],
+  "peerDependencies": {
+    "norman-client-tp": "*"
+  }
+}

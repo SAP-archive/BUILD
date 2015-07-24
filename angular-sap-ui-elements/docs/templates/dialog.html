@@ -1,0 +1,81 @@
+<ui-toolbar layout="column" class="left-nav-title">
+    <h1 class="ui-toolbar-tools" flex layout="column">Directives > ui-dialog</h1>
+</ui-toolbar>
+<ui-content flex ui-scroll-y >
+    <ui-content flex class="doc-content">
+        <div layout="row"><a name="Directives-Dialog-Small"><h2 class="item-name">Small Dialog</h2></a></div>
+        <div layout="row">
+            <div class="item" flex="20" flex-sm="20">
+                <ui-button size="large" ui-dialog-open="some-id">Click me</ui-button>
+                <ui-dialog id="some-id" 
+                           cancel-text="Cancel" 
+                           close-text="Delete" 
+                           close-action="clicked()" 
+                           content="Are you sure you want to delete this project?">
+                </ui-dialog>
+            </div>
+            <div class="code" flex="80" flex-sm="80">
+                <pre><code>
+&lt;ui-dialog id="some-id" 
+           cancel-text="Cancel" 
+           close-text="Delete" 
+           close-action="clicked()" 
+           content="Are you sure you want to delete this project?"&gt;
+&lt;/ui-dialog&gt;
+                </code></pre>
+            </div>
+        </div>
+
+        <div layout="row"><a name="Directives-Dialog-Large"><h2 class="item-name">Large Dialog, custom HTML with title</h2></a></div>
+        <div layout="row">
+            <div class="item" flex="20" flex-sm="20">
+                <ui-button size="large" ui-dialog-open="some-id2">Click me</ui-button>
+                <ui-dialog id="some-id2" title="My Dialog Title" cancel-text="Cancel" close-text="Delete" close-action="clicked()">
+                    <div style="padding: 20px; height: 150px;">This is the content of my div!!
+                        <p>
+                            <ui-button size="small" ng-click="clicked()">some small button</ui-button>
+                        </p>
+                    </div>
+                </ui-dialog>
+            </div>
+            <div class="code" flex="80" flex-sm="80">
+                <pre><code>
+&lt;ui-button size="large" ui-dialog-open="some-id2"&gt;Click me&lt;/ui-button&gt;
+&lt;ui-dialog id="some-id2" title="My Dialog Title" cancel-text="Cancel" close-text="Delete" close-action="clicked()"&gt;
+    &lt;div style="padding: 20px; height: 150px;"&gt;This is the content of my div!!
+        &lt;p&gt;
+            &lt;ui-button size="small" ng-click="clicked()"&gt;some small button&lt;/ui-button&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/ui-dialog&gt;
+                </code></pre>
+            </div>
+        </div>
+
+        <div layout="row"><a name="Directives-Dialog-Modal"><h2 class="item-name">Dialog, with Modal</h2></a></div>
+        <div layout="row">
+            <div class="item" flex="20" flex-sm="20">
+                <ui-button size="large" ui-dialog-open="some-id3">Click me</ui-button>
+                <ui-dialog id="some-id3" modal="true" title="My Modal Dialog" cancel-text="Cancel" close-text="Delete" close-action="clicked()">
+                    <div style="padding: 20px; height: 150px;">This dialog is modal
+                        <p>
+                            <ui-button size="small" ng-click="clicked()">some small button</ui-button>
+                        </p>
+                    </div>
+                </ui-dialog>
+            </div>
+            <div class="code" flex="80" flex-sm="80">
+                <pre><code>
+&lt;ui-button size="large" ui-dialog-open="some-id3"&gt;Click me&lt;/ui-button&gt;
+&lt;ui-dialog id="some-id3" modal="true" title="My Modal Dialog" cancel-text="Cancel" close-text="Delete" close-action="clicked()"&gt;
+    &lt;div style="padding: 20px; height: 150px;"&gt;This dialog is modal
+        &lt;p&gt;
+            &lt;ui-button size="small" ng-click="clicked()"&gt;some small button&lt;/ui-button&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/ui-dialog&gt;
+                </code></pre>
+            </div>
+        </div>
+    </ui-content>
+</ui-content>

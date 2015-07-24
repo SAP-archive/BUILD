@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>New Page</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.21 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="APP-COMPOSER" sketch:type="MSArtboardGroup" transform="translate(-143.000000, -402.000000)">
+            <g id="Pages" sketch:type="MSLayerGroup" transform="translate(109.000000, 100.000000)">
+                <g id="New-Page" transform="translate(34.000000, 302.000000)" sketch:type="MSShapeGroup">
+                    <circle id="Oval-25" fill="#007CC0" cx="11" cy="11" r="11"></circle>
+                    <path d="M10,12 L6,12 L6,10 L10,10 L10,6 L12,6 L12,10 L16,10 L16,12 L12,12 L12,16 L10,16 L10,12 Z" id="Rectangle-60" fill="#FFFFFF" filter="url(#filter-1)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="25px" height="24px" viewBox="0 0 25 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12002) - http://www.bohemiancoding.com/sketch -->
+    <title>80 - UI Catalog icon </title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="80---UI-Catalog-icon-" sketch:type="MSArtboardGroup">
+            <path d="M23,12 L23,1.00246167 C23,0.43945834 22.55091,0 21.9969294,0 L1.00307055,0 C0.438917756,0 0,0.448817378 0,1.00246167 L0,20.9975383 C0,21.5605417 0.449089982,22 1.00307055,22 L13,22 L15,20 L9.34471078,20 C8.79176768,20 8.34351872,19.5562834 8.34351872,19.0001925 L8.34351872,15.9998075 C8.34351872,15.4476291 8.79762497,15 9.34471078,15 L20,15 L23,12 Z M2,9.00247329 C2,8.44882258 2.44371665,8 2.99980749,8 L6.00019251,8 C6.55237094,8 7,8.45576096 7,9.00247329 L7,18.9975267 C7,19.5511774 6.55628335,20 6.00019251,20 L2.99980749,20 C2.44762906,20 2,19.544239 2,18.9975267 L2,9.00247329 Z M8.34351872,8.99980749 C8.34351872,8.44762906 8.79762497,8 9.34471078,8 L20.1015144,8 C20.6544575,8 21.1027064,8.44371665 21.1027064,8.99980749 L21.1027064,12.0001925 C21.1027064,12.5523709 20.6486002,13 20.1015144,13 L9.34471078,13 C8.79176768,13 8.34351872,12.5562834 8.34351872,12.0001925 L8.34351872,8.99980749 Z M2,3.0093689 C2,2.45190985 2.44725458,2 2.99670216,2 L20.0052288,2 C20.5546258,2 21,2.44335318 21,3.0093689 L21,4.9906311 C21,5.54809015 20.5490746,6 20.0052288,6 L2.99477117,6 C2.44537422,6 2,5.55664682 2,4.9906311 L2,3.0093689 Z" id="Rectangle-1-Copy-3" fill="#D8D8D8" sketch:type="MSShapeGroup"></path>
+            <g id="Edit-icon" sketch:type="MSLayerGroup" transform="translate(15.000000, 13.000000)"></g>
+            <g id="Imported-Layers" sketch:type="MSLayerGroup" transform="translate(14.000000, 13.000000)" fill="#D8D8D8">
+                <path d="M10.448,2.2728 L8.5328,0.36 L7.5752,1.3128 L8.5352,2.2704 L9.4928,3.228 L10.448,2.2728" id="Fill-1" sketch:type="MSShapeGroup"></path>
+                <path d="M0.1256,8.7624 L0.2,10.6032 L2.0408,10.6776 L0.1256,8.7624" id="Fill-2" sketch:type="MSShapeGroup"></path>
+                <path d="M9.1856,3.5328 L7.2704,1.6176 L0.4496,8.4384 L1.4384,9.4104 L2.36,10.356 L9.1856,3.5328" id="Fill-3" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,21 @@
+<div ng-class="{'ui-screen-tile-new-screen' : newScreen, 'ui-screen-tile' : !newScreen}">
+
+    <div ng-if="showRemove" ng-click="remove($event)" class="ui-screen-tile-remove-icon">
+    </div>
+
+    <div class="top-box">
+        <div ng-if="!screenImage" class="tile-no-image"></div>
+        <div ng-if="screenImage" class="tile-with-image">
+            <img class="tile-image" ng-src="{{screenImage}}" />
+        </div>
+    </div>
+
+    <div class="bottom-box">
+        <div ng-if="newScreen">
+            <input type="text" class="new-screen-input" placeholder="Untitled page" ng-model="screenModel[inputField]" nn-focus="{{focusInput}}"/>
+        </div>
+        <div ng-if="!newScreen">
+            <span class="screen-name" ng-bind="screenName"></span>
+        </div>
+    </div>
+</div>

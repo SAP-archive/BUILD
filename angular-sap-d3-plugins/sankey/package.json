@@ -1,0 +1,25 @@
+{
+  "title": "angular-sap-d3-sankey",
+  "name": "angular-sap-d3-sankey",
+  "version": "0.1.0",
+  "description": "Repository for norman d3 plugins-Sankey, original URL is https://github.com/d3/d3-plugins/tree/master/sankey",
+  "author": {
+    "name": "Mike Bostock",
+    "url": "http://bost.ocks.org/mike"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SAP/BUILD.git"
+  },
+  "keywords": [
+    "sankey diagram"
+  ],
+  "main": "sankey.js",
+  "license": [
+    {
+      "type": "BSD",
+      "url": "https://github.com/d3/d3-plugins/blob/master/LICENSE"
+    }
+  ],
+  "readmeFilename": "README.md"
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="28px" height="37px" viewBox="0 0 28 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>the-pointer</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50%" id="radialGradient-1">
+            <stop stop-color="#000000" stop-opacity="0.3" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="the-pointer" sketch:type="MSLayerGroup" transform="translate(0.000000, 1.000000)">
+            <ellipse id="Oval-68" fill="url(#radialGradient-1)" sketch:type="MSShapeGroup" cx="14" cy="32" rx="14" ry="4"></ellipse>
+            <path d="M13.9799639,30.9034506 C13.9799639,30.9034506 23.9599277,15.4917457 23.9599277,9.97996387 C23.9599277,4.46818202 19.4917457,-5.68434189e-14 13.9799639,-5.68434189e-14 C8.46818202,-5.68434189e-14 4,4.46818202 4,9.97996387 C4,15.4917457 13.9799639,30.9034506 13.9799639,30.9034506 Z M13.9517253,12.9034506 C16.134203,12.9034506 17.9034506,11.134203 17.9034506,8.95172532 C17.9034506,6.76924769 16.134203,5 13.9517253,5 C11.7692477,5 10,6.76924769 10,8.95172532 C10,11.134203 11.7692477,12.9034506 13.9517253,12.9034506 Z" id="Oval-31" stroke="#1F8B4C" fill="#27AE60" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

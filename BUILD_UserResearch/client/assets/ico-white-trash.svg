@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="18px" viewBox="0 0 16 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>ico-white-trash</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="05-THE-STUDY" sketch:type="MSArtboardGroup" transform="translate(-872.000000, -211.000000)" fill="#FFFFFF">
+            <path d="M884,214 L886.999128,214 C887.551894,214 888,214.443865 888,215 C888,215.552285 887.555369,216 886.999128,216 L886,216 L886,226.994141 C886,228.101946 885.09805,229 883.99147,229 L876.00853,229 C874.89925,229 874,228.10294 874,226.994141 L874,216 L873.000872,216 C872.448106,216 872,215.556135 872,215 C872,214.447715 872.444631,214 873.000872,214 L876,214 L876,213.5 C876,212.119288 877.112366,211 878.5093,211 L881.4907,211 C882.876548,211 884,212.109662 884,213.5 L884,214 Z M881.968797,214 L878.03107,214 C878.141121,213.424995 878.531535,213 879.009369,213 L880.990631,213 C881.461795,213 881.857558,213.421625 881.968797,214 Z M878,217 L878,227 L877,227 C876.447715,227 876,226.544336 876,226.004602 L876,217 L878,217 Z M884,217 L884,226.004602 C884,226.554345 883.556135,227 883,227 L882,227 L882,217 L884,217 Z M879,217 L881,217 L881,227 L879,227 L879,217 Z" id="ico-white-trash" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

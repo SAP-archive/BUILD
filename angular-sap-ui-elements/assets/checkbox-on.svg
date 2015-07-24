@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2 (9961) - http://www.bohemiancoding.com/sketch -->
+    <title>checkbox</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="UI-TOOLKIT" sketch:type="MSArtboardGroup" transform="translate(-2443.000000, -416.000000)" fill="#2980B9">
+            <g id="LEFT-MENU-HOVER" sketch:type="MSLayerGroup" transform="translate(2418.000000, 113.000000)">
+                <g id="ICONS" transform="translate(21.000000, 22.000000)" sketch:type="MSShapeGroup">
+                    <path d="M6.99420208,281 C5.34054993,281 4,282.343312 4,283.994202 L4,298.005798 C4,299.65945 5.34331197,301 6.99420208,301 L21.0057979,301 C22.6594501,301 24,299.656688 24,298.005798 L24,283.994202 C24,282.34055 22.656688,281 21.0057979,281 L6.99420208,281 Z M7.24450301,291.616872 L8.47824634,290.232672 L11.7943077,293.157546 C11.7943077,293.157546 15.8956316,287.810443 20.2138536,284.756055 C20.5751899,285.51893 20.2138536,284.756055 20.755497,285.899525 C16.072087,290.591842 12.450298,297.243945 12.450298,297.243945 L7.24450301,291.616872 Z" id="checkbox"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

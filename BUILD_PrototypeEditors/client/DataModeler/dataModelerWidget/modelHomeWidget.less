@@ -1,0 +1,47 @@
+@import (reference) '../node_modules/norman-client-tp/node_modules/angular-sap-ui-elements/styles/variables';
+
+/* -------------------------------------------------- */
+/* Norman project dashboard styling */
+/* np: norman project */
+/* d:prototype */
+/* -------------------------------------------------- */
+
+@heading-font-color: #2C3E50;
+@sub-heading-h2-font-color: #000000;
+@sub-heading-font-color: #7F8C8D;
+
+#model-home {
+
+  [layout="row"] {
+    margin-top: 20px;
+  }
+
+  .np-p {
+
+    &-separator {
+      width: 800px;
+      height: 1px;
+      background-color: #4A4A4A;
+      opacity: 0.2;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    &-line {
+      height: 100px;
+      line-height: 100px;
+
+      &-title {
+        color: #4A4A4A;
+        font-size: 14px;
+        font-family: @roboto-font;
+        text-transform: uppercase;
+        padding-right: 20px;
+
+        &-data-modeler-disabled {
+          text-transform: none;
+        }
+      }
+    }
+  }
+}

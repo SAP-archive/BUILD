@@ -1,0 +1,27 @@
+<div layout-fill class="inner-container dm-main-container">
+    <div class="dm-header-bar-container"
+         ng-include="'resources/norman-prototype-editors-client/DataModeler/dataModelEditor/header/headerBar.html'"
+         include-replace></div>
+
+    <div class="dm-main-container-content">
+
+        <div class="dataModelDesigner">
+            <!-- layout -->
+            <div class="dm-dataModel-Outer"  ng-include="'resources/norman-prototype-editors-client/DataModeler/dataModelEditor/dataModelDesigner/dataModelDesigner.html'"
+                 include-replace></div>
+        </div>
+
+        <div class="dataModelSidePanel" ng-controller="SidePanelController as controller"  data-ng-show="controller.showSidePanel && !!selectedEntity">
+            <!-- side-panel -->
+            <div class="dm-sidePanel-Outer" ng-include="'resources/norman-prototype-editors-client/DataModeler/dataModelEditor/sidePanel/sidePanelEditor.html'" include-replace></div>
+
+            <div ng-include="'resources/norman-prototype-editors-client/DataModeler/dataModelEditor/popUps/entityEditor.html'"></div>
+            <div ng-include="'resources/norman-prototype-editors-client/DataModeler/dataModelEditor/popUps/messageInformation.html'"></div>
+            <div ng-include="'resources/norman-prototype-editors-client/DataModeler/dataModelEditor/popUps/addGroupModal.html'"></div>
+        </div>
+
+        <div ng-include="'resources/norman-prototype-editors-client/DataModeler/dataModelEditor/popUps/searchCatalog.html'"></div>
+
+    </div>
+</div>
+

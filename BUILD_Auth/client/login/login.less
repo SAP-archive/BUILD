@@ -1,0 +1,433 @@
+@import (reference) '../node_modules/norman-client-tp/node_modules/angular-sap-ui-elements/styles/base';
+@import (reference) '../node_modules/norman-client-tp/node_modules/angular-sap-ui-elements/styles/sprite';
+
+html.page-login, html.page-eula, html.page-signup, html.page-verifyemail, html.page-forgot-password, html.page-reset-password {
+  * {
+    box-sizing: border-box;
+  }
+}
+
+body.page-login, body.page-eula, body.page-signup, body.page-verifyemail, body.page-forgot-password, body.page-reset-password {
+  color: #fff;
+  font: normal 14px 'roboto', sans-serif;
+  overflow: hidden;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 875px;
+  .app {
+    height: 100%;
+    .norman-gradient();
+  }
+  h1, label {
+    color: #fff;
+  }
+}
+
+.login-wrapper {
+  min-height: 875px;
+  margin: auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+  position: relative;
+  height: 100%;
+  a {
+    color: #fff;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  h1 {
+    font: 100 68px 'roboto', sans-serif;
+    text-align: center;
+    margin: 0 0 80px;
+    letter-spacing: -1px;
+    img {
+      height: 80px;
+      vertical-align: bottom;
+    }
+  }
+  label {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    display: block;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  .login-field-wrap {
+    &.password {
+      margin-top: 30px;
+    }
+    &.submit {
+      margin-top: 30px;
+    }
+    position: relative;
+    input {
+      margin-bottom: 20px;
+      box-sizing: border-box;
+    }
+    input[type="email"], input[type="password"], input[type="text"] {
+      width: 100%;
+      padding: 0 10px;
+      height: 42px;
+      font: inherit;
+      font-size: 15px;
+      line-height: 1.4;
+      background: rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(0, 0, 0, 0.25);
+      color: #fff;
+      border-radius: 3px;
+      margin-bottom: 5px;
+      transition: background .3s ease-out, box-shadow .5s ease-out;
+      -moz-animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      -moz-animation-iteration-count: 1;
+      -webkit-animation-iteration-count: 1;
+      &:hover {
+        background: rgba(0, 0, 0, 0.35);
+      }
+      &:focus {
+        background: rgba(0, 0, 0, 0.4);
+        box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.2);
+      }
+    }
+    .info-block {
+      opacity: 0.69;
+      font-size: 13px;
+      color: #FFFFFF;
+      line-height: 18px;
+      margin-bottom: 25px;
+    }
+  }
+  .has-error {
+    input[type="email"], input[type="password"], input[type="text"] {
+      border-color: #C0392B;
+    }
+  }
+  .label-checkbox {
+    text-transform: none;
+    font-size: 16px;
+    cursor: pointer;
+    input {
+      margin-right: 10px;
+    }
+  }
+}
+
+.forgot-pass {
+  float: right;
+  line-height: 1;
+}
+
+.login-head {
+  overflow: hidden;
+  padding: 30px 0 70px;
+  max-width: 1050px;
+  margin: 0 auto;
+  .login-signup {
+    float: right;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 20px 0 0;
+    a {
+      font-weight: 400;
+    }
+  }
+  .norman-logo {
+    float: left;
+    height: 60px;
+
+    .build-mascot {
+      position: relative;
+      float: left;
+
+      transform: scale(1.5,1.5);
+      &:before {
+        position: absolute;
+        content: '';
+        .common-build-mascot();
+        .common-build-mascot-dims();
+      }
+    }
+    .build-type {
+      position: relative;
+      float: left;
+      transform: scale(1.5,1.5);
+      padding-left: 50px;
+      &:before {
+        position: absolute;
+        content: '';
+        .common-build-type();
+        .common-build-type-dims();
+      }
+    }
+    .build-type-ffffff {
+      position: relative;
+      float: left;
+      transform: scale(1.5,1.5);
+      padding-left: 50px;
+      &:before {
+        position: absolute;
+        content: '';
+        .common-build-type-ffffff();
+        .common-build-type-ffffff-dims();
+      }
+    }
+  }
+}
+
+.login-foot {
+  display: block;
+  position: absolute;
+  bottom: 40px;
+  left: 10px;
+  right: 10px;
+  .login-foot-wrapper {
+    display: block;
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+  .login-foot-right {
+    float: right;
+  }
+  .sap-logo {
+    padding-left: 85px;
+    width: 250px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    vertical-align: middle;
+    position:relative;
+    &:before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 20px;
+      .common-icon-sap-white();
+      .common-icon-sap-white-dims()
+    }
+  }
+  a {
+    padding-left: 20px;
+  }
+}
+
+.login-btn {
+  display: block;
+  width: 240px;
+  height: 42px;
+  background: #fff;
+  border-radius: 3px;
+  color: #604281;
+  padding: 7px 7px 0 8px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  line-height: 1;
+  box-sizing: border-box;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  transition: background .3s ease-out;
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+  &:focus, &:hover {
+    background: #F7E6FF;
+  }
+  &:active {
+    background: #C2A4D0;
+  }
+}
+
+.login-form-wrapper {
+  max-width: 690px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  clear: both;
+}
+
+.login-form {
+  width: 390px;
+  box-sizing: border-box;
+  float: left;
+  padding-right: 60px;
+  border-right: 1px solid #80679B;
+  .login-btn-submit {
+    text-transform: uppercase;
+    padding: 0;
+    height: 66px;
+    font-weight: 600;
+    font-size: 18px;
+    width: 100%;
+  }
+}
+
+.social-buttons {
+  width: 300px;
+  box-sizing: border-box;
+  float: right;
+  padding-left: 60px;
+  .login-btn {
+    margin-bottom: 20px;
+    padding-left: 43px;
+    padding-top: 13px;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: 8px 9px;
+  }
+  .login-btn-fb {
+    color: #4F6AA3;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '';
+      top: calc(~'50% - 12.5px');
+      left: 9px;
+      .common-icon-facebook();
+      .common-icon-facebook-dims();
+    }
+  }
+  .login-btn-gl {
+    color: #D0021B;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '';
+      top: calc(~'50% - 12.5px');
+      left: 9px;
+      .common-icon-googleplus();
+      .common-icon-googleplus-dims();
+    }
+  }
+  .login-btn-li {
+    color: #262626;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '';
+      top: calc(~'50% - 11.5px');
+      left: 9px;
+      .common-icon-linkedin();
+      .common-icon-linkedin-dims();
+    }
+  }
+}
+
+.login-form-error {
+  position: relative;
+  border-radius: 3px;
+  padding: 5px 10px 5px 70px;
+  margin-bottom: 40px;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1;
+  background-color: rgba(255, 255, 255, 0.3);
+  p {
+    margin: 10px 0;
+  }
+}
+
+.login-form-error-icon:after {
+  position: absolute;
+  content: '';
+  .common-icon-login-error();
+  .common-icon-login-error-dims();
+  Left: 25px;
+  top: calc(~'50% - 16.5px');
+}
+
+.login-form-success {
+  position: relative;
+  border-radius: 3px;
+  padding: 5px 10px 5px 70px;
+  margin-bottom: 40px;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1;
+  background-color: rgba(255, 255, 255, 0.3);
+  p {
+    margin: 20px 0;
+  }
+}
+
+.login-form-success-icon:before {
+  position: absolute;
+  content: '';
+  .common-icon-login-success();
+  .common-icon-login-success-dims();
+  Left: 25px;
+  top: calc(~'50% - 16.5px');
+}
+
+.login-error-tooltip {
+  position: absolute;
+  right: 105%;
+  white-space: nowrap;
+  background: #C0392B;
+  color: #fff;
+  border-radius: 3px;
+  padding: 10px 12px 0;
+  height: 42px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  box-sizing: border-box;
+  &:before {
+    content: '';
+    position: absolute;
+    right: -14px;
+    top: 15px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent transparent rgba(0, 0, 0, 0.3);
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    right: -12px;
+    top: 15px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent transparent #C0392B;
+  }
+  &.password-tooltip {
+    top: 33%;
+  }
+}
+
+.login-field-checkbox {
+  height: 50px;
+  padding-top: 20px;
+  .login-error-tooltip {
+    top: -12px;
+  }
+  .ui-checkbox.light + label:hover:before, .ui-checkbox.light + label:before {
+    vertical-align: sub;
+    border: none;
+    background: rgba(0, 0, 0, 0.25);
+    transition: background-color .3s ease-out;
+  }
+  .ui-checkbox.light:checked + label:hover:before, .ui-checkbox.light:checked + label:before {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.25);
+    background-image: url(../resources/norman-auth-client/assets/login-checkbox.svg);
+    background-position: center center;
+  }
+  .ui-checkbox.light.has-error + label:before {
+    background: #C0392B;
+    border-color: #C0392B;
+  }
+}
+
+.build-logo {
+  margin: 0 5px;
+}

@@ -1,0 +1,117 @@
+<div id="admin-access" ng-controller="AdminAccessCtrl">
+    <div layout="row">
+        <div flex="50" flex-sm="50">
+            <div layout="row" layout-align="start start">
+                <h1>Access List</h1>
+            </div>
+        </div>
+        <div flex="50" flex-sm="50">
+            <ui-toolbar layout="row" layout-align="end start" class="actions">
+                <ui-button ng-click="onClickAddDomain()">NEW DOMAIN</ui-button>
+            </ui-toolbar>
+        </div>
+    </div>
+    <div flex layout="row" layout-align="start start">
+        <div class="level-information" layout="column" ng-class="{collapsed: infoCollapsed()}">
+           <ui-accordion>
+                <ui-accordion-pane id="access-accordion-pane">
+                    <ui-accordion-pane-header ng-droppable class="information-header"  ng-class="{collapsed: infoCollapsed()}">
+                        <span class="icon-information"></span><span class="title-information">Access Level Information</span>
+                    </ui-accordion-pane-header>
+                    <ui-accordion-pane-content>
+                        <div class="information-content">
+                            <div class="information-item"  ng-repeat="item in accessLevelItems">
+                                <div class="information-item-name">{{item | accessLevelNameFilter}}:</div>
+                                <div class="information-item-description" >{{item | accessLevelDescriptionFilter}}</div>
+                            </div>
+                        </div>
+                    </ui-accordion-pane-content>
+                </ui-accordion-pane>
+            </ui-accordion>
+         </div>
+        <form name="accessForm" novalidate>
+             <div layout="column" class="access-list">
+            <div layout="row" layout-align="start start" class="row-access header">
+                <div class="row-domain">DOMAIN</div>
+                <div class="row-accessLevel">ACCESS LEVEL</div>
+                <div class="row-icon action-icon"></div>
+            </div>
+
+            <div layout="row" layout-align="start start" class="animated fadeIn row-access">
+                <div class="row-domain">Default</div>
+                <div class="row-accessLevel">
+                    <ui-select name="default" light
+                               ng-model="defaultSecurityPolicy.accessLevel"
+                               ng-change="onSave(defaultSecurityPolicy)"
+                               access-level-restricted="true"
+                               access-level-items="{{accessLevelItems}}"
+                               security-policies="allSecurityPolicies"
+                               class="select-level"
+                               access-toast-message="{{defaultLevelErrorMessage}}"
+                               access-show-error="{{accessForm.default.$invalid}}"
+                               ng-class="{error: accessForm.default.$invalid}">
+                            <option value="{{levelDefault}}" ng-repeat="levelDefault in accessLevelItems" ng-selected="levelDefault === defaultSecurityPolicy.accessLevel">{{levelDefault | accessLevelNameFilter}}</option>
+                    </ui-select>
+                </div>
+                <div class="row-icon action-icon"></div>
+            </div>
+            <div layout="row" layout-align="start start" class="animated fadeIn row-access" ng-repeat="securityPolicy in securityPolicies">
+                <div class="row-error icon-error" ng-if="securityPolicy.invalidAccessLevel"></div>
+                <div class="row-domain" ng-class="{withError: securityPolicy.invalidAccessLevel}">{{securityPolicy.Domain | accessDomainFilter}}</div>
+                <div class="row-accessLevel">
+                    <ui-select light ng-model="securityPolicy.accessLevel" ng-change="onSave(securityPolicy, true)" class="select-level" ng-class="{error: securityPolicy.invalidAccessLevel}">
+                     <option value="{{level}}" ng-repeat="level in accessLevelItems" ng-if="levelOptionEnabled(securityPolicy, level)" ng-selected="level === securityPolicy.accessLevel">{{level | accessLevelNameFilter}}</option>
+                    </ui-select>
+                </div>
+                <div class="row-icon action-icon icon-trash" ng-click="onDeleteClick(securityPolicy.Domain)"></div>
+            </div>
+            <div layout="row" layout-align="start start" class="row-access" ng-if="displayAddMode || newSecurityPolicy.cachedNewRow">
+                <div class="row-error icon-error" ng-if="newSecurityPolicy.cachedNewRow && newSecurityPolicy.invalidAccessLevel"></div>
+                <div class="row-domain" ng-if="newSecurityPolicy.cachedNewRow" ng-class="{withError: newSecurityPolicy.invalidAccessLevel}">{{newSecurityPolicy.Domain | accessDomainFilter}}</div>
+                <div class="row-domain row-input" ng-if="!newSecurityPolicy.cachedNewRow">
+                    <input class="ui-input light"
+                           access-auto-focus="true"
+                           type="text"
+                           name="domain"
+                           ng-model="newSecurityPolicy.Domain"
+                           placeholder="Type Domain e.g. domain.com"
+                           required
+                           ng-pattern="/^([a-z0-9\-]+\.)+[a-z]{2,}$/i"
+                           access-duplicated="true"
+                           security-policies="securityPolicies"
+                           access-error-popup="access-error-domain-popover"
+                           access-show-error="{{accessForm.domain.$invalid && accessForm.domain.$dirty}}"
+                           ng-trim="true"
+                           ng-keypress="onEnterPressDomain($event, newSecurityPolicy)">
+                </div>
+                <div class="row-accessLevel">
+                    <ui-select light ng-model="newSecurityPolicy.accessLevel" ng-change="onSave(newSecurityPolicy, newSecurityPolicy.cachedNewRow)"
+                               ng-keypress="onEnterPressDomain($event, newSecurityPolicy)"
+                               class="select-level"  ng-class="{error: newSecurityPolicy.invalidAccessLevel}">
+                    <option  value="{{levelNew}}" ng-repeat="levelNew in accessLevelItems" ng-if="levelOptionEnabled(newSecurityPolicy, levelNew)"
+                             ng-selected="levelNew === newSecurityPolicy.accessLevel">{{levelNew | accessLevelNameFilter}}</option>
+                    </ui-select>
+                </div>
+                <div class="row-icon action-icon icon-trash" ng-class="{visible: !newSecurityPolicy.cachedNewRow}" ng-click="onDeleteNewDomain(newSecurityPolicy.cachedNewRow)"></div>
+            </div>
+        </div>
+        </form>
+        <ui-dialog id="delete-confirm-domain" cancel-text="Cancel" close-text="Delete" close-action="deleteSecurityPolicy(domainToDelete)" modal="true">
+            <div class="ui-dialog-content">
+                <p>Are you sure you want to delete the domain {{domainToDelete | accessDomainFilter}}?<p/>
+            </div>
+        </ui-dialog>
+        <ui-dialog id="delete-confirm-cachedNewRow" cancel-text="Cancel" close-text="Delete" close-action="onDeleteCachedNewRow(newSecurityPolicy)" modal="true">
+            <div class="ui-dialog-content">
+                <p>Are you sure you want to delete the domain {{newSecurityPolicy.Domain | accessDomainFilter}}?<p/>
+            </div>
+        </ui-dialog>
+        <ui-popup id="access-error-domain-popover" placement="left" arrow-color="#E74C3C"  offset-x="-20" offset-y="0">
+            <div class="access-error-content" layout="row" layout-align="center center">
+                <span ng-if="accessForm.domain.$error.required" class="access-animate-if">The domain name is required</span>
+                <span ng-if="accessForm.domain.$error.pattern" class="access-animate-if">The domain name is not valid</span>
+                <span ng-if="accessForm.domain.$error.accessDuplicated" class="access-animate-if">The domain already exists</span>
+            </div>
+        </ui-popup>
+    </div>
+ </div>

@@ -1,0 +1,755 @@
+{
+  "catalogLang": "openui5",
+  "catalogName": "r1dt1",
+  "catalogVersion": "1_0",
+  "controls": {
+    "Header": {
+      "additionalMetadata": {
+        "aggregations": [
+          {
+            "altTypes": ["string"],
+            "isDataDriven": false,
+            "multiple": false,
+            "name": "actionButtons",
+            "type": "ActionButton",
+            "visibility": "public"
+          },
+          {
+            "altTypes": ["string"],
+            "isDataDriven": false,
+            "multiple": false,
+            "name": "kpis",
+            "type": "KPI",
+            "visibility": "public"
+          }
+        ],
+        "associations": [],
+        "defaultAggregation": "",
+        "properties": [
+          {
+            "displayName": "Image",
+            "name": "Image",
+            "type": "sap_ui_core_URI"
+          },
+          {
+            "displayName": "ObjectType",
+            "name": "ObjectType",
+            "type": "string"
+          },
+          {
+            "displayName": "Title",
+            "name": "Title",
+            "type": "string"
+          },
+          {
+            "displayName": "Description",
+            "name": "Description",
+            "type": "string"
+          }
+        ]
+      },
+      "description": "Header",
+      "displayToUser": false,
+      "groupName": "Header Controls",
+      "name": "Header"
+    },
+    "ActionButton": {
+      "additionalMetadata": {
+        "properties": [
+          {
+            "displayName": "Action",
+            "name": "Action",
+            "type": "string"
+          },
+          {
+            "displayName": "Label",
+            "name": "Label",
+            "type": "string"
+          }
+        ]
+      },
+      "description": "ActionButton",
+      "displayToUser": false,
+      "groupName": "Header Controls",
+      "name": "ActionButton"
+    },
+    "NumericKPI": {
+      "additionalMetadata": {
+        "properties": [
+          {
+            "displayName": "Value",
+            "name": "Value",
+            "type": "int"
+          },
+          {
+            "displayName": "Label",
+            "name": "Label",
+            "type": "string"
+          },
+          {
+            "displayName": "Currency",
+            "name": "Currency",
+            "type": "string"
+          }
+        ]
+      },
+      "description": "NumericKPI",
+      "displayToUser": false,
+      "groupName": "Header Controls",
+      "name": "NumericKPI"
+    },
+    "TextKPI": {
+      "additionalMetadata": {
+        "properties": [
+          {
+            "displayName": "Value",
+            "name": "Value",
+            "type": "int"
+          },
+          {
+            "displayName": "Label",
+            "name": "Label",
+            "type": "string"
+          }
+        ]
+      },
+      "description": "TextKPI",
+      "displayToUser": false,
+      "groupName": "Header Controls",
+      "name": "TextKPI"
+    },
+    "ObjectList": {
+      "additionalMetadata": {
+        "aggregations": [
+          {
+            "altTypes": ["string"],
+            "isDataDriven": false,
+            "multiple": false,
+            "name": "filters",
+            "type": "Filter",
+            "visibility": "public"
+          },
+          {
+            "altTypes": ["string"],
+            "isDataDriven": false,
+            "multiple": false,
+            "name": "tables",
+            "type": "Table",
+            "visibility": "public"
+          }
+        ],
+        "associations": [],
+        "defaultAggregation": ""
+      },
+      "description": "ObjectList",
+      "displayToUser": false,
+      "groupName": "ObjectList Controls",
+      "name": "ObjectList"
+    },
+    "Filter": {
+      "additionalMetadata": {
+        "aggregations": [],
+        "associations": [],
+        "defaultAggregation": "",
+        "properties": [
+          {
+            "displayName": "FilterProperty",
+            "name": "FilterProperty",
+            "type": "string"
+          }
+        ]
+      },
+      "description": "Filter",
+      "displayToUser": false,
+      "groupName": "ObjectList Controls",
+      "name": "Filter"
+    },
+    "Table": {
+      "additionalMetadata": {
+        "aggregations": [
+          {
+            "altTypes": ["string"],
+            "isDataDriven": false,
+            "multiple": false,
+            "name": "columns",
+            "type": "Column",
+            "visibility": "public"
+          },
+          {
+            "altTypes": ["string"],
+            "isDataDriven": false,
+            "multiple": false,
+            "name": "actionButtons",
+            "type": "ActionButton",
+            "visibility": "public"
+          }
+        ],
+        "associations": [],
+        "defaultAggregation": "",
+        "properties": [
+          {
+            "displayName": "header",
+            "name": "header",
+            "type": "string"
+          }
+        ]
+      },
+      "description": "Table",
+      "displayToUser": false,
+      "groupName": "ObjectList Controls",
+      "name": "Table"
+    },
+    "BoldColumn": {
+      "additionalMetadata": {
+        "associations": [],
+        "defaultAggregation": "",
+        "properties": [
+          {
+            "displayName": "Importance",
+            "name": "Importance",
+            "type": "string"
+          },
+          {
+            "displayName": "Label",
+            "name": "Label",
+            "type": "string"
+          },
+          {
+            "displayName": "Value",
+            "name": "Value",
+            "type": "string"
+          }
+        ]
+      },
+      "description": "BoldColumn",
+      "displayToUser": false,
+      "groupName": "ObjectList Controls",
+      "name": "BoldColumn"
+    },
+    "ClassicColumn": {
+      "additionalMetadata": {
+        "associations": [],
+        "defaultAggregation": "",
+        "properties": [
+          {
+            "displayName": "Importance",
+            "name": "Importance",
+            "type": "string"
+          },
+          {
+            "displayName": "Label",
+            "name": "Label",
+            "type": "string"
+          },
+          {
+            "displayName": "Value",
+            "name": "Value",
+            "type": "string"
+          }
+        ]
+      },
+      "description": "ClassicColumn",
+      "displayToUser": false,
+      "groupName": "ObjectList Controls",
+      "name": "ClassicColumn"
+    },
+    "ColumnWithLinks": {
+      "additionalMetadata": {
+        "associations": [],
+        "defaultAggregation": "",
+        "properties": [
+          {
+            "displayName": "Importance",
+            "name": "Importance",
+            "type": "string"
+          },
+          {
+            "displayName": "Label",
+            "name": "Label",
+            "type": "string"
+          },
+          {
+            "displayName": "Value",
+            "name": "Value",
+            "type": "string"
+          },
+          {
+            "displayName": "Url",
+            "name": "Url",
+            "type": "string"
+          }
+        ]
+      },
+      "description": "ColumnWithLinks",
+      "displayToUser": false,
+      "groupName": "ObjectList Controls",
+      "name": "ColumnWithLinks"
+    }
+  },
+  "description": "r1dt1",
+  "displayName": "Open UI5",
+  "floorPlans": {
+    "OBJECTLIST": {
+      "control": "sap_m_Page",
+      "name": "OBJECTLIST",
+      "isSmart": true,
+      "controls": {
+        "name": "SimpleObjectPage",
+        "rootControlId": "ObjectList",
+        "controls": [
+          {
+            "controlId": "ObjectList",
+            "controlName": "ObjectList",
+            "parentControlId": null,
+            "catalogControlName": "ObjectList",
+            "properties": [
+            ],
+            "groups": [
+              {
+                "groupId": "tables",
+                "children": [
+                  "Table1"
+                ]
+              }
+            ]
+          },
+          {
+            "controlId": "ActionButton1",
+            "controlName": "ActionButton",
+            "parentControlId": null,
+            "catalogControlName": "ActionButton",
+            "properties": [
+              {
+                "name": "Label",
+                "value": "My Label"
+              },
+              {
+                "name": "Action",
+                "value": "My Action"
+              }
+            ]
+          },
+          {
+            "controlId": "Table1",
+            "controlName": "Table",
+            "parentControlId": null,
+            "catalogControlName": "Table",
+            "properties": [
+              {
+                "name": "header",
+                "value": "My Label"
+              }
+            ],
+            "groups": [
+              {
+                "groupId": "columns",
+                "children": [
+                  "Column1",
+                  "Column2"
+                ]
+              },
+              {
+                "groupId": "actionButtons",
+                "children": [
+                  "ActionButton1"
+                ]
+              }
+            ]
+          },
+          {
+            "controlId": "Column1",
+            "controlName": "BoldColumn",
+            "parentControlId": null,
+            "catalogControlName": "BoldColumn",
+            "properties": [
+              {
+                "name": "Importance",
+                "value": "High"
+              },
+              {
+                "name": "Label",
+                "value": "MyCol"
+              },
+              {
+                "name": "Value",
+                "value": "MyVal"
+              }
+            ]
+          },
+          {
+            "controlId": "Column2",
+            "controlName": "ColumnWithLinks",
+            "parentControlId": null,
+            "catalogControlName": "ColumnWithLinks",
+            "properties": [
+              {
+                "name": "Importance",
+                "value": "High"
+              },
+              {
+                "name": "Label",
+                "value": "MyCol2"
+              },
+              {
+                "name": "Value",
+                "value": "MyVal2"
+              },
+              {
+                "name": "Url",
+                "value": "MyUrl"
+              }
+            ]
+          }
+        ]
+      },
+      "designTemplate": [
+        {
+          "type": "ObjectList",
+          "groups": {
+            "filters": {
+              "type": "Filter",
+              "template": {
+                "var": {
+                  "selectionField": "repeat"
+                },
+                "repeat": "com.sap.vocabularies.UI.v1.SelectionFields"
+              },
+              "properties": {
+                "FilterProperty": {
+                  "path": "PropertyPath",
+                  "model": "selectionField"
+                }
+              }
+            },
+            "tables": {
+              "type": "Table",
+              "template": {
+                "var": {
+                  "header": "com.sap.vocabularies.UI.v1.HeaderInfo"
+                }
+              },
+              "properties": {
+                "header": {
+                  "formatter": "sap.ui.model.odata.AnnotationHelper.format",
+                  "model": "header",
+                  "path": "TypeNamePlural"
+                }
+              },
+              "groups": {
+                "actionButtons": {
+                  "type": "ActionButton",
+                  "template": {
+                    "var": {
+                      "datafield": "repeat",
+                      "function": "sap.ui.generic.app.js.AnnotationHelper.gotoFunction(datafield>Action)"
+                    },
+                    "repeat": "com.sap.vocabularies.UI.v1.LineItem",
+                    "conditions": [],
+                    "repeatType": "com.sap.vocabularies.UI.v1.DataFieldForAction"
+                  },
+                  "properties": {
+                    "Label": {
+                      "formatter": "sap.ui.model.odata.AnnotationHelper.format",
+                      "model": "datafield",
+                      "path": "Label"
+                    },
+                    "Action": {
+                      "formatter": "sap.ui.model.odata.AnnotationHelper.format",
+                      "model": "datafield",
+                      "path": "Action"
+                    }
+                  }
+                },
+                "columns": {
+                  "type": "Column",
+                  "template": {
+                    "var": {
+                      "datafield": "repeat",
+                      "target": "sap.ui.model.odata.AnnotationHelper.resolvePath(datafield>)",
+                      "datafieldValue": "sap.ui.model.odata.AnnotationHelper.resolvePath(datafield>Value)",
+                      "listEntitySet": "entitySet>",
+                      "collection": "com.sap.vocabularies.UI.v1.LineItem"
+                    },
+                    "repeat": "collection>",
+                    "repeatType": "com.sap.vocabularies.UI.v1.DataField",
+                    "conditions": [
+                      {
+                        "type": "if",
+                        "test": "{target>com.sap.vocabularies.UI.v1.Importance}"
+                      }
+                    ]
+                  },
+                  "properties": {
+                    "Importance": {
+                      "model": "datafield",
+                      "path": "com.sap.vocabularies.UI.v1.Importance/EnumMember"
+                    },
+                    "Label": {
+                      "formatter": "sap.ui.model.odata.AnnotationHelper.format",
+                      "model": "datafield",
+                      "path": "Label"
+                    }
+                  },
+                  "isAbstract": true,
+                  "instanceChoice": [
+                    {
+                      "type": "BoldColumn",
+                      "template": {
+                        "var": {
+                          "target": "sap.ui.model.odata.AnnotationHelper.resolvePath(datafield>Value)"
+                        }
+                      },
+                      "properties": {
+                        "Value": {
+                          "formatter": "sap.ui.model.odata.AnnotationHelper.format",
+                          "model": "target",
+                          "path": "com.sap.vocabularies.Common.v1.Text"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ColumnWithLinks",
+                      "template": {
+                        "var": {
+                          "target": "sap.ui.model.odata.AnnotationHelper.resolvePath(datafield>Value)"
+                        },
+                        "conditions": [],
+                        "repeatType": "com.sap.vocabularies.UI.v1.DataFieldWithUrl"
+                      },
+                      "properties": {
+                        "Value": {
+                          "formatter": "sap.ui.model.odata.AnnotationHelper.format",
+                          "model": "datafield",
+                          "path": "Value"
+                        },
+                        "Url": {
+                          "formatter": "sap.ui.model.odata.AnnotationHelper.format",
+                          "model": "datafield",
+                          "path": "Url"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ClassicColumn",
+                      "template": {
+                        "var": {
+                          "target": "sap.ui.model.odata.AnnotationHelper.resolvePath(datafield>Value)"
+                        }
+                      },
+                      "properties": {
+                        "Value": {
+                          "formatter": "sap.ui.model.odata.AnnotationHelper.format",
+                          "model": "datafield",
+                          "path": "Value"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ],
+      "templateName": "sap.ui.generic.suite.ObjectList",
+      "description": "Object List",
+      "thumbnail": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABQAAAAQAAQMAAACEXWYAAAAAA1BMVEX///+nxBvIAAAAtElEQVQYGe3BAQEAAACAkP6v7ggKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGIQeAAHYiJ6XAAAAAElFTkSuQmCC"
+    },
+    "OBJECTPAGE": {
+      "name": "OBJECTPAGE",
+      "control": "sap_m_Page",
+      "isSmart": true,
+      "designTemplate": [
+        {
+          "type": "Header",
+          "properties": {
+            "Title": {
+              "model": "",
+              "path": "com.sap.vocabularies.UI.v1.HeaderInfo/Title/Value"
+            },
+            "Description": {
+              "model": "",
+              "path": "com.sap.vocabularies.UI.v1.HeaderInfo/Description/Value"
+            },
+            "ObjectType": {
+              "model": "",
+              "path": "com.sap.vocabularies.UI.v1.HeaderInfo/TypeName"
+            }
+          },
+          "groups": {
+            "kpis": {
+              "type": "KPI",
+              "isAbstract": true,
+              "template": {
+                "repeat": "Collection(com.sap.vocabularies.UI.v1.DataPoint)",
+                "repeatType": "com.sap.vocabularies.UI.v1.DataPointType",
+                "var": {
+                  "data_point": "repeat",
+                  "target": "sap.ui.model.odata.AnnotationHelper.resolvePath(data_point>Value)"
+                }
+              },
+              "properties": {
+                "Label": "data_point>Title"
+              },
+              "instanceChoice": [
+                {
+                  "type": "NumericKPI",
+                  "template": {
+                    "default": {
+                      "{{data_point}}/Value/EdmType": "Edm.Decimal"
+                    }
+                  },
+                  "properties": {
+                    "Value": {
+                      "model": "data_point",
+                      "path": "Value"
+                    },
+                    "Currency": {
+                      "model": "target",
+                      "path": "Org.OData.Measures.V1.ISOCurrency"
+                    }
+                  }
+                },
+                {
+                  "type": "TextKPI",
+                  "properties": {
+                    "Value": {
+                      "model": "data_point",
+                    "path" : "fn"
+                  },
+                  "Title" : {
+                    "formatter" : "sap.ui.model.odata.AnnotationHelper.format",
+                    "model" : "contact",
+                    "path" : "title"
+                  },
+                  "Department" : {
+                    "formatter" : "sap.ui.model.odata.AnnotationHelper.format",
+                    "model" : "contact",
+                    "path" : "org"
+                  }
+                }
+              },
+              "multiGroupForms" : {
+                "type" : "ObjectPage-MultiGroupForm",
+                "template" : {
+                  "var" : {
+                    "groupFacet" : "repeat"
+                  },
+                  "repeat" : "facet>Facets",
+                  "conditions" : [
+                    {
+                      "type" : "unless",
+                      "test" : "{path: 'facet>Target', formatter: 'sap.ui.model.odata.AnnotationHelper.isMultiple'}"
+                    }
+                  ]
+                },
+                "groups" : {
+                  "formGroups" : {
+                    "type" : "ObjectPage-FormGroup",
+                    "template" : {
+                      "conditions" : [],
+                      "repeatType" : "com.sap.vocabularies.UI.v1.FieldGroup"
+                    },
+                    "properties" : {
+                      "Title" : {
+                        "model" : "groupFacet",
+                        "path" : "Label"
+                      }
+                    },
+                    "groups" : {
+                      "formElements" : {
+                        "type" : "ObjectPage-FormElement",
+                        "properties" : {
+                          "Label" : {
+                            "path" : "Label",
+                            "model" : "dataField"
+                          },
+                          "Value" : {
+                            "path" : "Value",
+                            "model" : "dataField"
+                          },
+                          "Url" : {
+                            "path" : "Url",
+                            "model" : "dataField"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "simpleForms" : {
+                "type" : "ObjectPage-SimpleForm",
+                "template" : {
+                  "var" : {
+                    "target" : "sap.ui.model.odata.AnnotationHelper.resolvePath(facet>Target)"
+                  },
+                  "conditions" : [
+                    {
+                      "type" : "unless",
+                      "test" : "{path: 'facet>Target', formatter: 'sap.ui.model.odata.AnnotationHelper.isMultiple'}"
+                    }
+                  ],
+                  "repeatType" : "com.sap.vocabularies.UI.v1.FieldGroup"
+                },
+                "groups" : {
+                  "formElements" : {
+                    "type" : "ObjectPage-FormElement",
+                    "properties" : {
+                      "Label" : {
+                        "path" : "Label",
+                        "model" : "dataField"
+                      },
+                      "Value" : {
+                        "path" : "Value",
+                        "model" : "dataField"
+                      },
+                      "Url" : {
+                        "path" : "Url",
+                        "model" : "dataField"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "templateName" : "sap.suite.ui.generic.template.ObjectPage",
+      "thumbnail" : "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABQAAAAQAAQMAAACEXWYAAAAAA1BMVEX///+nxBvIAAAAtElEQVQYGe3BAQEAAACAkP6v7ggKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGIQeAAHYiJ6XAAAAAElFTkSuQmCC",
+      "controls" : {
+        "name" : "ObjectPage",
+        "rootControlId" : "root-ObjectPage-ObjectPage-Id",
+        "controls" : [
+          {
+            "controlId" : "root-ObjectPage-ObjectPage-Id",
+            "controlName" : "ObjectPage-ObjectPage",
+            "parentControlId" : null,
+            "catalogControlName" : "ObjectPage-ObjectPage",
+            "properties" : [],
+            "groups" : [
+              {
+                "groupId" : "objectPageHeaders",
+                "children" : []
+              },
+              {
+                "groupId" : "sections",
+                "children" : []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "isRootCatalog": true,
+  "isDefault": false,
+  "libraryObjectId": "",
+  "libraryPublicURL": "",
+  "libraryURL": "/resources/sap-ui-core.js",
+  "libraryVersion": "1_26_6",
+  "rootCatalogId": "designCatalog",
+  "_id": "designCatalog",
+  "catalogId": "designCatalog"
+}

@@ -1,0 +1,62 @@
+@import "../ui-elements";
+@import (inline) "../node_modules/angular-awesome-slider/dist/css/angular-awesome-slider.min.css";
+
+
+/*
+    Start of overrides for jslider
+*/
+
+.jslider_round .jslider-pointer:not(.jslider-pointer-hover) {
+    transition: all 0.5s ease-out;
+}
+
+
+// Hiding the to and from labels and the text appearing above the slider 'handle'
+.jslider .jslider-value {
+    display: none;
+}
+
+.jslider .jslider-label {
+    display: none;
+}
+
+.jslider.sliderCSS div.jslider-bg i.left {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.jslider.sliderCSS div.jslider-bg i.right {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.jslider.sliderCSS.vertical div.jslider-bg i.left {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.jslider.sliderCSS.vertical div.jslider-bg i.right {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.jslider_round.vertical.sliderCSS .jslider-pointer {
+    left: 14px;
+    background-color: #615959 !important; // !important is necessary as inline element-styling is being used by the control
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.jslider_round.sliderCSS .jslider-pointer {
+    z-index: 3;
+    background-color: #615959 !important; // !important is necessary as inline element-styling is being used by the control
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: -5px;
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="21px" viewBox="0 0 24 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>camera</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.21 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="APP-COMPOSER" sketch:type="MSArtboardGroup" transform="translate(-1511.000000, -70.000000)" filter="url(#filter-1)">
+            <g id="UI-Bar" sketch:type="MSLayerGroup" transform="translate(70.000000, 60.000000)">
+                <path d="M1462.00306,13 C1463.10517,13 1463.99869,13.8939839 1463.99879,14.9928791 L1463.99983,26.9976433 C1463.99992,28.09828 1463.11038,28.9909057 1462.00897,28.9913802 L1443.99242,28.9991422 C1442.8928,28.999616 1442.00131,28.1060161 1442.00121,27.0071209 L1442.00017,15.0023567 C1442.00008,13.90172 1442.89354,13.0080175 1443.99603,13.006216 L1447.8,13 L1448.07026,12.3243475 C1448.5856,11.0360032 1450.12345,10 1451.5093,10 L1454.4907,10 C1455.88763,10 1457.41626,11.0406458 1457.92974,12.3243475 L1458.2,13 L1462.00306,13 Z M1453,27 C1456.31371,27 1459,24.3137085 1459,21 C1459,17.6862915 1456.31371,15 1453,15 C1449.68629,15 1447,17.6862915 1447,21 C1447,24.3137085 1449.68629,27 1453,27 Z M1453,25 C1455.20914,25 1457,23.209139 1457,21 C1457,18.790861 1455.20914,17 1453,17 C1450.79086,17 1449,18.790861 1449,21 C1449,23.209139 1450.79086,25 1453,25 Z" id="camera" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

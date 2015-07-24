@@ -1,0 +1,67 @@
+<ui-popup dark id="relationEditorModal" placement="left" offset-x="-20" offset-y="145"
+          class="dark dm-propertyEditor" pass-through="true" on-close="controller.onClose()">
+
+    <div class="dm-propertyEditor-content"
+         ng-class="controller.selectedTab">
+        <ui-tabs selected-tab="dm-rel-info" class="dm-propEditorEditor-popup">
+            <ui-tab-option id="dm-rel-info" title="Info">
+                <table class="dm-popup-table">
+                    <tr>
+                        <td> Name</td>
+                        <td>
+                            <ui-input size="small" dark type="text" id="name"
+                                      ng-change="controller.needToUpdateNavProperty = true"
+                                      ng-model="controller.navProperty.name">
+                            </ui-input>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Target</td>
+                        <td>
+                            <ui-select size="small" id="target" dark
+                                       ng-model="controller.navProperty.toEntityId"
+                                       value="controller.navProperty.toEntityId"
+                                       ng-change="controller.needDeleteAndCreateNavProperty = true"
+                                       ng-options="entity._id as entity.name for entity in controller.model.entities | orderBy:['name']">
+                            </ui-select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> Foreign Key</td>
+                        <td>
+                            <div class="dm-ellipsis"
+                                 title="{{controller.source+'.'+controller.navProperty.name+'.'+controller.target}}">
+                                {{controller.source+'.'+controller.navProperty.name+'.'+controller.target}}
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> Cardinality</td>
+                        <td>
+                            <ui-radio dark ng-model="controller.multiplicityType"
+                                      value="{{controller.MULTIPLICITY_TYPE[0]}}"
+                                      ng-click="controller.onNavPropertyChange('multiplicity', !controller.navProperty.multiplicity)"
+                                      id="dm-relation-cardinality-1"></ui-radio>
+                            <label for="dm-relation-cardinality-1" class="dm-label">1</label>
+                            <ui-radio dark ng-model="controller.multiplicityType" value="{{controller.MULTIPLICITY_TYPE[1]}}"
+                                      ng-click="controller.onNavPropertyChange('multiplicity', !controller.navProperty.multiplicity)"
+                                      id="dm-relation-cardinality-n"></ui-radio>
+                            <label for="dm-relation-cardinality-n" class="dm-label">n</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Read-Only</td>
+                        <td>
+                            <ui-toggle ng-change="controller.needToUpdateNavProperty=true;"
+                                       ng-model="controller.navProperty.isReadOnly"></ui-toggle>
+                        </td>
+                    </tr>
+                </table>
+            </ui-tab-option>
+        </ui-tabs>
+    </div>
+</ui-popup>
+
+

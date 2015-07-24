@@ -1,0 +1,32 @@
+{
+  "name": "norman-testing-server",
+  "version": "0.1.0",
+  "description": "Norman testing server",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SAP/BUILD.git"
+  },
+  "licenses": [
+    {
+      "type": "Apache License, Version 2.0",
+      "url": "https://github.com/SAP/BUILD/blob/master/LICENSE.txt"
+    }
+  ],
+   "maintainers": [
+        {
+            "name": "BUILD Team",
+            "email": "contact.build@sap.com"
+        }
+    ],
+  "dependencies": {
+    "supertest": "0.15.0"
+  },
+  "devDependencies": {
+    "chai": "2.2.0",
+    "mocha": "^2.0.1"
+  },
+  "peerDependencies": {
+    "node-sap-app-server": "0.1.0",
+    "norman-common-server": "*"
+  }
+}

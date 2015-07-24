@@ -1,0 +1,8 @@
+<!-- Template for upload progress bar.  Will show for an item while that item is in the uploadQueue -->
+<div ng-repeat="item in uploadQueueArray()" ng-if="item" ng-class="styleClass">
+    <ui-thumbnail size="{{size}}" ui-file-upload-image-thumbnail="{item: item }">
+        <div class="ui-file-upload-progress-bar-outer" ng-if="item">
+            <div class="ui-file-upload-progress-bar" ng-style="{ 'width': item.progress + '%' }"></div>
+        </div>
+    </ui-thumbnail>
+</div>

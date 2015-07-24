@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="5px" height="8px" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Tree_Closed_Arrow_Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="AppComposer_NavOFF" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="APP-COMPOSER-2" sketch:type="MSArtboardGroup" transform="translate(-59.000000, -742.000000)" fill="#DBDFE1">
+            <g id="LIBRARY-+-Tree" sketch:type="MSLayerGroup" transform="translate(-1.000000, 100.000000)">
+                <g id="Tree" transform="translate(0.000000, 551.000000)" sketch:type="MSShapeGroup">
+                    <path d="M64.5,95 C64.5,95.1354173 64.4505213,95.2526037 64.3515625,95.3515625 L60.8515625,98.8515625 C60.7526037,98.9505213 60.6354173,99 60.5,99 C60.3645827,99 60.2473963,98.9505213 60.1484375,98.8515625 C60.0494787,98.7526037 60,98.6354173 60,98.5 L60,91.5 C60,91.3645827 60.0494787,91.2473963 60.1484375,91.1484375 C60.2473963,91.0494787 60.3645827,91 60.5,91 C60.6354173,91 60.7526037,91.0494787 60.8515625,91.1484375 L64.3515625,94.6484375 C64.4505213,94.7473963 64.5,94.8645827 64.5,95 L64.5,95 Z" id="Tree_Closed_Arrow_Icon"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

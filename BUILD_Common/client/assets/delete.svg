@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>delete</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" sketch:type="MSPage">
+        <g id="delete" sketch:type="MSLayerGroup">
+            <ellipse id="Oval-3" fill="#E74C3C" sketch:type="MSShapeGroup" cx="9.5" cy="9.5" rx="9.5" ry="9.5"></ellipse>
+            <rect id="Rectangle-386" fill="#FFFFFF" sketch:type="MSShapeGroup" transform="translate(9.553617, 9.553617) scale(-1, 1) rotate(-45.000000) translate(-9.553617, -9.553617) " x="8.21522818" y="4.60386906" width="2.6767767" height="9.89949494"></rect>
+            <rect id="Rectangle-387" fill="#FFFFFF" sketch:type="MSShapeGroup" transform="translate(9.553617, 9.553617) scale(-1, 1) rotate(-315.000000) translate(-9.553617, -9.553617) " x="8.21522818" y="4.60386906" width="2.6767767" height="9.89949494"></rect>
+        </g>
+    </g>
+</svg>

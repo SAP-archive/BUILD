@@ -1,0 +1,67 @@
+@import (reference) "../styles/base.less";
+.delete-icon {
+    border-radius: 50%;
+    border: 2px @White solid;
+    cursor: pointer;
+    background-color: @Cinnabar-500;
+    &:before {
+        content: '';
+        position: absolute;
+        top: calc(~'50% - 10px');
+        left: 5px;
+        .user-research-ico-white-trash;
+        .user-research-ico-white-trash-dims;
+    }
+}
+.question-panel .question {
+    background-color: @PickledBluewood-900;
+    border-bottom: 0px @PickledBluewood-900;
+}
+.answer-panel {
+    color: @White;
+    text-align: left;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    .freeform-answer {
+        margin: 15px;
+    }
+}
+.answer-panel .hint {
+    padding: 0px 15px 15px;
+    line-height: 20px;
+    font-style: italic;
+}
+.answer-panel strong {
+    color: @White;
+    padding: 15px;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+#norman-user-research .participant-question .answer-panel {
+    border-bottom: 1px @PickledBluewood-700 solid;
+}
+#norman-user-research .participant-question .answer-panel   .toolbar-buttons {
+    padding: 0px 15px 15px 15px;
+}
+.answer-panel .existing-answer {
+    padding: 15px;
+}
+.answer-panel .existing-answer .answer-text {
+    padding-bottom: 15px;
+}
+.answer-panel .existing-answer .answer-action .btn {
+    padding-right: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.answer-panel .existing-answer .answer-action .btn.edit {
+    color: @CuriousBlue-500;
+}
+.answer-panel .existing-answer .answer-action .btn.delete {
+    color: @Cinnabar-500;
+}

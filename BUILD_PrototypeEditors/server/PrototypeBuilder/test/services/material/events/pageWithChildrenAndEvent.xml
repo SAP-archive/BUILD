@@ -1,0 +1,8 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.view.SimplePageWithChildrenAndEvent" xmlns:m="sap.m">
+    <m:Page id="RootControl" title="Simple Page">
+        <m:content>
+            <m:Button id="MyButton" text="My Button" press="_onPressMyButton"/>
+            <m:Button id="MyOtherButton" text="My Other Button" press="_onPressMyOtherButton"/>
+        </m:content>
+    </m:Page>
+</mvc:View>

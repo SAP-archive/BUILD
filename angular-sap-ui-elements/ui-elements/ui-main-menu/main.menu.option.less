@@ -1,0 +1,202 @@
+@import (reference) "../../styles/base.less";
+.ui-menu-option {
+    width: 70px;
+    background-color: @Porcelain-500;
+    height: 70px;
+    font-family: @roboto-font;
+    font-size: 12px;
+    color: #2C3E50;
+    line-height: 16px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.ui-menu-option.hidden {
+    display: none;
+}
+.ui-menu-option:after {
+    position: absolute;
+    content: "";
+}
+.ui-menu-option.users:after {
+  top: calc(~'50% - 19px');
+  left: calc(~'50% - 8px');
+  .common-Users;
+  .common-Users-dims;
+}
+.ui-menu-option.users:not(.on):hover:after {
+  .common-Users;
+}
+.ui-menu-option.audit:after {
+  top: calc(~'50% - 19px');
+  left: calc(~'50% - 7.5px');
+  .common-Audit_Sheet;
+  .common-Audit_Sheet-dims;
+}
+.ui-menu-option.audit:not(.on):hover:after {
+  .common-Audit_Sheet;
+}
+
+.ui-menu-option.uicatalog:after {
+  top: calc(~'50% - 19px');
+  left: calc(~'50% - 7.5px');
+  .common-uicatalog;
+  .common-uicatalog-dims;
+}
+.ui-menu-option.uicatalog:not(.on):hover:after {
+  .common-uicatalog;
+}
+.ui-menu-option.projects:after {
+    top: calc(~'50% - 19px');
+    left: calc(~'50% - 11.5px');
+    .common-book;
+    .common-book-dims;
+}
+.ui-menu-option.projects:not(.on):hover:after {
+    .common-book-on;
+}
+.ui-menu-option.home:after {
+    top: calc(~'50% - 19px');
+    left: calc(~'50% - 11.5px');
+    .common-ico-home;
+    .common-ico-home-dims;
+}
+.ui-menu-option.home:not(.on):hover:after {
+    .common-ico-home-hover;
+}
+.ui-menu-option.research:after {
+    top: calc(~'50% - 19px');
+    left: calc(~'50% - 11.5px');
+    .common-flask;
+    .common-flask-dims;
+}
+.ui-menu-option.research:not(.on):hover:after {
+    .common-flask-on;
+}
+.ui-menu-option.project:after {
+  top: calc(~'50% - 19px');
+  left: calc(~'50% - 11.5px');
+  .common-book;
+  .common-book-dims;
+}
+.ui-menu-option.project:not(.on):hover:after {
+  .common-book-on;
+}
+.ui-menu-option.prototype:after {
+  top: calc(~'50% - 19px');
+  left: calc(~'50% - 14px');
+  .common-prototype;
+  .common-prototype-dims;
+}
+.ui-menu-option.prototype:not(.on):hover:after {
+  .common-prototype-on;
+}
+.ui-menu-option.assets:after {
+    top: calc(~'50% - 19px');
+    left: calc(~'50% - 12px');
+    .common-picture;
+    .common-picture-dims;
+}
+.ui-menu-option.assets:not(.on):hover:after {
+    .common-picture-on;
+}
+.ui-menu-option.forum:after {
+    top: calc(~'50% - 12.5px');
+    left: calc(~'50% - 8.5px');
+    .common-chat;
+    .common-chat-dims;
+}
+.ui-menu-option.forum:not(.on):hover:after {
+    .common-chat-on;
+}
+.ui-menu-option.checklist:after {
+    top: calc(~'50% - 19px');
+    left: calc(~'50% - 10px');
+    .common-checkbox;
+    .common-checkbox-dims;
+}
+.ui-menu-option.checklist:not(.on):hover:after {
+    .common-checkbox-on;
+}
+.ui-menu-option.team:after {
+    top: calc(~'50% - 19px');
+    left: calc(~'50% - 12.5px');
+    .common-people;
+    .common-people-dims;
+}
+.ui-menu-option.team:not(.on):hover:after {
+    .common-people-on;
+}
+
+
+.ui-menu-option.docs:after {
+    top: calc(~'50% - 19px');
+    left: calc(~'50% - 10.5px');
+    .common-picture;
+    .common-picture-dims;
+}
+.ui-menu-option.docs:not(.on):hover:after {
+    .common-picture-on;
+}
+
+.ui-menu-option.chat:after {
+    top: calc(~'50% - 15px');
+    left: calc(~'50% - 13.5px');
+    .common-chat;
+    .common-chat-dims;
+}
+.ui-menu-option.chat:not(.on):hover:after {
+    .common-chat-on;
+}
+
+
+.ui-menu-option.admin:after, .ui-menu-option.settings:after {
+    top: calc(~'50% - 19px');
+    left: calc(~'50% - 13.5px');
+    .common-cogs;
+    .common-cogs-dims;
+}
+.ui-menu-option.admin:not(.on):hover:after, .ui-menu-option.settings:not(.on):hover:after {
+    .common-cogs-on;
+}
+.ui-menu-option.help:after {
+    top: calc(~'50% - 19px');
+    left: calc(~'50% - 12px');
+    .common-help;
+    .common-help-dims;
+}
+.ui-menu-option.help:not(.on):hover:after {
+    .common-help-on;
+}
+
+.ui-menu-option.on {
+    background-color: @White;
+}
+.ui-menu-option span.menu-badge {
+    background-color: @Cinnabar-500;
+    position: absolute;
+    width: auto;
+    top: 5px;
+    right: 5px;
+    height: 20px;
+    padding-left: 7px;
+    padding-right: 6px;
+    font-weight: 700;
+    font-family: @roboto-font;
+    font-size: 12px;
+    color: @White;
+    line-height: 18px;
+    border-radius: 40px;
+    border: 2px solid @Porcelain-500;
+    box-sizing: content-box;
+    z-index: 10;
+}
+.ui-menu-option.on span.menu-badge {
+    border: 2px solid @White;
+}
+.ui-menu-option span {
+    position: absolute;
+    bottom: 12px;
+    text-align: center;
+    width: 100%;
+}

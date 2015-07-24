@@ -1,0 +1,74 @@
+/* -------------------------------------------------- */
+/* Norman project ui editor styling - tree panel      */
+/* np: norman project                                 */
+/* e: ui editor                                       */
+/* -------------------------------------------------- */
+@import (reference) '../node_modules/norman-client-tp/node_modules/angular-sap-ui-elements/styles/variables';
+
+/*
+ * namespace for ui-editor styles
+ */
+.np-e-tree {
+
+    &-handle:hover .np-e-tree-handle-page-img {
+        opacity: .7;
+    }
+    &-handle-page {
+        &-img {
+            margin: 0 5px;
+            height: 14px;
+            width: 14px;
+            -moz-transform:scale(0.75);
+            -moz-transform-origin: 0 0;
+            background-repeat: no-repeat;
+            opacity: .2;
+            background-size: 14px;
+
+            &-delete {
+                background-image: url('../resources/norman-prototype-editors-client/UIComposer/assets/images/Delete_White_Normal.svg');
+                
+                &:hover {
+                    background-image: url('../resources/norman-prototype-editors-client/UIComposer/assets/images/Delete_WhiteRed_Hover.svg');
+                    opacity: .9 !important;
+                }
+            }
+
+            &-edit {
+                background-image: url('../resources/norman-prototype-editors-client/UIComposer/assets/images/header/edit-icon.svg');
+                &:hover {
+                    opacity: .9 !important;
+                }
+            }
+        }
+
+
+        &-name {
+            background-color: transparent;
+            flex-grow: 1;
+            border: none;
+            font-size: 12px;
+            color: @White;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            cursor: pointer;
+    
+        }
+        &-edit{
+            background-color: white;
+            width: 160px;
+            border-radius: 1px;
+            cursor: text;
+            color: black;
+            flex-grow: 0;
+        }
+    }
+}
+
+np-ui-tree-modify {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    > input {
+        max-width: 200px;
+    }
+}

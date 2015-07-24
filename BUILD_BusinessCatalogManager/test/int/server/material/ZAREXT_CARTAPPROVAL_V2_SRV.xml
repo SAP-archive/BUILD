@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+           xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+           xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="ZAREXT_CARTAPPROVAL_V2_SRV" xml:lang="en" sap:schema-version="1"
+                xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityType Name="Subscription" sap:semantics="subscriptions" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" Nullable="false" MaxLength="32" sap:label="Sub. ID"
+                          sap:creatable="false" sap:updatable="false" sap:filterable="false"/>
+                <Property Name="user" Type="Edm.String" MaxLength="12" m:FC_TargetPath="SyndicationAuthorName"
+                          m:FC_KeepInContent="false" sap:label="User Name" sap:creatable="false"
+                          sap:filterable="false"/>
+                <Property Name="updated" Type="Edm.DateTime" Precision="0" m:FC_TargetPath="SyndicationUpdated"
+                          m:FC_KeepInContent="false" sap:label="Time Stamp" sap:creatable="false"
+                          sap:filterable="false"/>
+                <Property Name="title" Type="Edm.String" MaxLength="255" m:FC_TargetPath="SyndicationTitle"
+                          m:FC_KeepInContent="false" sap:label="Title" sap:filterable="false"/>
+                <Property Name="deliveryAddress" Type="Edm.String" sap:label="Delivery Address" sap:filterable="false"/>
+                <Property Name="persistNotifications" Type="Edm.Boolean" sap:label="Persist Notification"
+                          sap:filterable="false"/>
+                <Property Name="collection" Type="Edm.String" MaxLength="40" sap:label="Collection"
+                          sap:filterable="false"/>
+                <Property Name="filter" Type="Edm.String" sap:label="Filter" sap:filterable="false"/>
+                <Property Name="select" Type="Edm.String" MaxLength="255" sap:label="Select" sap:filterable="false"/>
+                <Property Name="changeType" Type="Edm.String" MaxLength="30" sap:label="Change Type"/>
+            </EntityType>
+            <EntityType Name="Notification" sap:semantics="notifications" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" Nullable="false" MaxLength="32" sap:label="Notification ID"/>
+                <Property Name="collection" Type="Edm.String" MaxLength="40" sap:label="Collection"/>
+                <Property Name="title" Type="Edm.String" m:FC_TargetPath="SyndicationTitle" m:FC_KeepInContent="false"
+                          sap:label="Notif. Text"/>
+                <Property Name="updated" Type="Edm.DateTime" Precision="0" m:FC_TargetPath="SyndicationUpdated"
+                          m:FC_KeepInContent="false" sap:label="Time Stamp"/>
+                <Property Name="changeType" Type="Edm.String" MaxLength="30" sap:label="Change Type"/>
+                <Property Name="entriesOfInterest" Type="Edm.Int32" sap:label="No. of Entries"/>
+                <Property Name="recipient" Type="Edm.String" MaxLength="112" sap:label="Recipient" sap:creatable="false"
+                          sap:updatable="false"/>
+            </EntityType>
+            <EntityType Name="Task" m:HasStream="true" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="InstanceID"/>
+                </Key>
+                <Property Name="TaskSupports" Type="ZAREXT_CARTAPPROVAL_V2_SRV.TaskSupports" Nullable="false"/>
+                <Property Name="InstanceID" Type="Edm.String" Nullable="false" sap:label="Instance ID"/>
+                <Property Name="TaskDefinitionID" Type="Edm.String" sap:label="Task definition ID"
+                          sap:updatable="false"/>
+                <Property Name="TaskDefinitionName" Type="Edm.String" sap:label="Task definition name"
+                          sap:updatable="false"/>
+                <Property Name="TaskTitle" Type="Edm.String" sap:label="Task Title" sap:updatable="false"/>
+                <Property Name="Priority" Type="Edm.String" sap:label="Priority" sap:updatable="false"/>
+                <Property Name="Status" Type="Edm.String" sap:label="Status" sap:updatable="false"/>
+                <Property Name="StatusText" Type="Edm.String" sap:label="Status Text" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="CreatedOn" Type="Edm.DateTime" Precision="0" sap:label="Created on"
+                          sap:updatable="false"/>
+                <Property Name="CreatedBy" Type="Edm.String" sap:label="Created by" sap:updatable="false"/>
+                <Property Name="CreatedByName" Type="Edm.String" sap:label="Created by Name" sap:updatable="false"
+                          sap:semantics="name"/>
+                <Property Name="Processor" Type="Edm.String" sap:label="Processor" sap:updatable="false"/>
+                <Property Name="ProcessorName" Type="Edm.String" sap:label="Processor Name" sap:updatable="false"
+                          sap:semantics="name"/>
+                <Property Name="SubstitutedUser" Type="Edm.String" sap:label="Substituted User" sap:updatable="false"
+                          sap:semantics="name"/>
+                <Property Name="SubstitutedUserName" Type="Edm.String" sap:label="Substituted User Name"
+                          sap:updatable="false" sap:semantics="name"/>
+                <Property Name="StartDeadLine" Type="Edm.DateTime" Precision="0" sap:label="Start Deadline"
+                          sap:updatable="false"/>
+                <Property Name="CompletionDeadLine" Type="Edm.DateTime" Precision="0" sap:label="Completion Deadline"
+                          sap:updatable="false"/>
+                <Property Name="ExpiryDate" Type="Edm.DateTime" Precision="0" sap:label="Expiry Date"
+                          sap:updatable="false"/>
+                <Property Name="IsEscalated" Type="Edm.Boolean" sap:label="Is Escalated" sap:updatable="false"/>
+                <Property Name="SupportsComments" Type="Edm.Boolean" sap:label="Supports Comments"
+                          sap:updatable="false"/>
+                <Property Name="HasComments" Type="Edm.Boolean" sap:label="Has Comments" sap:updatable="false"/>
+                <Property Name="SupportsAttachments" Type="Edm.Boolean" sap:label="Supports Attachments"
+                          sap:updatable="false"/>
+                <Property Name="HasAttachments" Type="Edm.Boolean" sap:label="Has Attachments" sap:updatable="false"/>
+                <Property Name="HasPotentialOwners" Type="Edm.Boolean" sap:label="Has Potential Owners"
+                          sap:updatable="false"/>
+                <Property Name="SupportsClaim" Type="Edm.Boolean" sap:label="Supports Claim" sap:updatable="false"/>
+                <Property Name="SupportsRelease" Type="Edm.Boolean" sap:label="Supports Release" sap:updatable="false"/>
+                <Property Name="SupportsForward" Type="Edm.Boolean" sap:updatable="false"/>
+                <Property Name="mime_type" Type="Edm.String" MaxLength="128" sap:label="MIME Type" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="PriorityNumber" Type="Edm.Int16" sap:label="Priority Number" sap:updatable="false"/>
+                <Property Name="ScenarioID" Type="Edm.String" sap:label="Scenario ID" sap:updatable="false"/>
+                <Property Name="ForwardingUser" Type="Edm.String" sap:label="Forwarding User" sap:updatable="false"
+                          sap:semantics="name"/>
+                <Property Name="ForwardingUserName" Type="Edm.String" sap:label="Forwarding User Name"
+                          sap:updatable="false" sap:semantics="name"/>
+                <Property Name="Value" Type="Edm.Decimal" Precision="15" Scale="2" sap:unit="Currency"
+                          sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Currency" Type="Edm.String" sap:creatable="false" sap:updatable="false"
+                          sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ApprovalOnItemlevel" Type="Edm.Boolean" sap:label="Indicator" sap:creatable="false"
+                          sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ScNumber" Type="Edm.String" sap:creatable="false" sap:updatable="false"
+                          sap:sortable="false" sap:filterable="false"/>
+                <Property Name="DeliveryDate" Type="Edm.DateTime" Precision="0" sap:label="Time Stamp"
+                          sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <NavigationProperty Name="TaskDefinitionData"
+                                    Relationship="ZAREXT_CARTAPPROVAL_V2_SRV.TaskDefinitionData"
+                                    FromRole="FromRole_TaskDefinitionData" ToRole="ToRole_TaskDefinitionData"/>
+                <NavigationProperty Name="Description" Relationship="ZAREXT_CARTAPPROVAL_V2_SRV.Description"
+                                    FromRole="FromRole_Description" ToRole="ToRole_Description"/>
+                <NavigationProperty Name="UIExecutionLink" Relationship="ZAREXT_CARTAPPROVAL_V2_SRV.UIExecutionLink"
+                                    FromRole="FromRole_UIExecutionLink" ToRole="ToRole_UIExecutionLink"/>
+                <NavigationProperty Name="CustomAttributeData"
+                                    Relationship="ZAREXT_CARTAPPROVAL_V2_SRV.CustomAttributeData"
+                                    FromRole="FromRole_CustomAttributeData" ToRole="ToRole_CustomAttributeData"/>
+                <NavigationProperty Name="Comments" Relationship="ZAREXT_CARTAPPROVAL_V2_SRV.Comments"
+                                    FromRole="FromRole_Comments" ToRole="ToRole_Comments"/>
+                <NavigationProperty Name="Attachments" Relationship="ZAREXT_CARTAPPROVAL_V2_SRV.Attachments"
+                                    FromRole="FromRole_Attachments" ToRole="ToRole_Attachments"/>
+                <NavigationProperty Name="CreatedByDetails" Relationship="ZAREXT_CARTAPPROVAL_V2_SRV.TaskCreatedBy"
+                                    FromRole="FromRole_TaskCreatedBy" ToRole="ToRole_TaskCreatedBy"/>
+                <NavigationProperty Name="ProcessorDetails" Relationship="ZAREXT_CARTAPPROVAL_V2_SRV.TaskProcessor"
+                                    FromRole="FromRole_TaskProcessor" ToRole="ToRole_TaskProcessor"/>
+                <NavigationProperty Name="PossibleAgents" Relationship="ZAREXT_CARTAPPROVAL_V2_SRV.PossibleAgents"
+                                    FromRole="FromRole_PossibleAgents" ToRole="ToRole_PossibleAgents"/>
+                <NavigationProperty Name="PotentialOwners" Relationship="ZAREXT_CARTAPPROVAL_V2_SRV.PotentialOwners"
+                                    FromRole="FromRole_PotentialOwners" ToRole="ToRole_PotentialOwners"/>
+                <NavigationProperty Name="ProcessingLogs" Relationship="ZAREXT_CARTAPPROVAL_V2_SRV.ProcessingLogs"
+                                    FromRole="FromRole_ProcessingLogs" ToRole="ToRole_ProcessingLogs"/>
+                <NavigationProperty Name="TaskObjects" Relationship="ZAREXT_CARTAPPROVAL_V2_SRV.TaskObjects"
+                                    FromRole="FromRole_TaskObjects" ToRole="ToRole_TaskObjects"/>
+                <NavigationProperty Name="SCAApproversHeader"
+                                    Relationship="ZAREXT_CARTAPPROVAL_V2_SRV.SCAApproversHeader"
+                                    FromRole="FromRole_SCAApproversHeader" ToRole="ToRole_SCAApproversHeader"/>
+                <NavigationProperty Name="SCAItems" Relationship="ZAREXT_CARTAPPROVAL_V2_SRV.SCAItems"
+                                    FromRole="FromRole_SCAItems" ToRole="ToRole_SCAItems"/>
+            </EntityType>
+            <EntityType Name="TaskDefinition" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="TaskDefinitionID"/>
+                </Key>
+                <Property Name="TaskDefinitionID" Type="Edm.String" Nullable="false"/>
+                <Property Name="TaskName" Type="Edm.String" Nullable="false" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="Category" Type="Edm.String" sap:sortable="false" sap:filterable="false"/>
+                <NavigationProperty Name="CustomAttributeDefinitionData"
+                                    Relationship="ZAREXT_CARTAPPROVAL_V2_SRV.CustomAttributeDefinitionData"
+                                    FromRole="FromRole_CustomAttributeDefinitionData"
+                                    ToRole="ToRole_CustomAttributeDefinitionData"/>
+            </EntityType>
+            <EntityType Name="TaskDescription" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="InstanceID"/>
+                </Key>
+                <Property Name="InstanceID" Type="Edm.String" Nullable="false" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="Description" Type="Edm.String" Nullable="false" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="DescriptionAsHtml" Type="Edm.String" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="UIExecution" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="InstanceID"/>
+                </Key>
+                <Property Name="InstanceID" Type="Edm.String" Nullable="false" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="GUI_Link" Type="Edm.String" Nullable="false" sap:sortable="false"
+                          sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="FilterOption" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Type"/>
+                    <PropertyRef Name="TechnicalName"/>
+                </Key>
+                <Property Name="Type" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="Filter Type"/>
+                <Property Name="TechnicalName" Type="Edm.String" Nullable="false" MaxLength="50"
+                          sap:label="Technical Name"/>
+                <Property Name="DisplayName" Type="Edm.String" MaxLength="32" sap:label="Displayed Name"
+                          sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="CustomAttributeDefinition" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="TaskDefinitionID"/>
+                    <PropertyRef Name="Name"/>
+                </Key>
+                <Property Name="TaskDefinitionID" Type="Edm.String" Nullable="false" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="Name" Type="Edm.String" Nullable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Type" Type="Edm.String" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Label" Type="Edm.String" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="CustomAttribute" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="InstanceID"/>
+                    <PropertyRef Name="Name"/>
+                </Key>
+                <Property Name="InstanceID" Type="Edm.String" Nullable="false" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="Name" Type="Edm.String" Nullable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Value" Type="Edm.String" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="SubstitutionRule" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="SubstitutionRuleID"/>
+                </Key>
+                <Property Name="SubstitutionRuleID" Type="Edm.String" Nullable="false"/>
+                <Property Name="User" Type="Edm.String" Nullable="false"/>
+                <Property Name="BeginDate" Type="Edm.DateTime" Nullable="false" Precision="0" sap:label="Time Stamp"/>
+                <Property Name="EndDate" Type="Edm.DateTime" Nullable="false" Precision="0" sap:label="Time Stamp"/>
+                <Property Name="FullName" Type="Edm.String" sap:sortable="false" sap:filterable="false"
+                          sap:semantics="name"/>
+                <Property Name="IsEnabled" Type="Edm.Boolean" sap:sortable="false"/>
+                <Property Name="SupportsDeleteSubstitutionRule" Type="Edm.Boolean" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="SupportsEnableSubstitutionRule" Type="Edm.Boolean" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="Mode" Type="Edm.String" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Profile" Type="Edm.String" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ProfileText" Type="Edm.String" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="SubstitutionProfile" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Profile"/>
+                </Key>
+                <Property Name="Profile" Type="Edm.String" Nullable="false" MaxLength="12"
+                          sap:label="Substitute Profile" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ProfileText" Type="Edm.String" MaxLength="25" sap:label="Substitute Profile"
+                          sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="Comment" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="InstanceID"/>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="InstanceID" Type="Edm.String" Nullable="false" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="ID" Type="Edm.String" Nullable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CreatedAt" Type="Edm.DateTime" Precision="0" sap:label="Time Stamp" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="CreatedBy" Type="Edm.String" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CreatedByName" Type="Edm.String" sap:sortable="false" sap:filterable="false"
+                          sap:semantics="name"/>
+                <Property Name="Text" Type="Edm.String" sap:sortable="false" sap:filterable="false"/>
+                <NavigationProperty Name="CreatedByDetails" Relationship="ZAREXT_CARTAPPROVAL_V2_SRV.CommentCreatedBy"
+                                    FromRole="FromRole_CommentCreatedBy" ToRole="ToRole_CommentCreatedBy"/>
+            </EntityType>
+            <EntityType Name="Attachment" m:HasStream="true" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="InstanceID"/>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="AttachmentSupports" Type="ZAREXT_CARTAPPROVAL_V2_SRV.AttachmentSupports"
+                          Nullable="false"/>
+                <Property Name="InstanceID" Type="Edm.String" Nullable="false" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="ID" Type="Edm.String" Nullable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="FileName" Type="Edm.String" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CreatedAt" Type="Edm.DateTime" Precision="0" sap:label="Time Stamp" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="CreatedBy" Type="Edm.String" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CreatedByName" Type="Edm.String" sap:sortable="false" sap:filterable="false"
+                          sap:semantics="name"/>
+                <Property Name="mime_type" Type="Edm.String" MaxLength="128" sap:label="MIME Type"/>
+                <Property Name="FileSize" Type="Edm.Int32" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="FileDisplayName" Type="Edm.String" sap:sortable="false" sap:filterable="false"/>
+                <NavigationProperty Name="CreatedByDetails"
+                                    Relationship="ZAREXT_CARTAPPROVAL_V2_SRV.AttachmentCreatedBy"
+                                    FromRole="FromRole_AttachmentCreatedBy" ToRole="ToRole_AttachmentCreatedBy"/>
+            </EntityType>
+            <EntityType Name="UserInfo" m:HasStream="true" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="UniqueName"/>
+                </Key>
+                <Property Name="Address" Type="ZAREXT_CARTAPPROVAL_V2_SRV.Address" Nullable="false"/>
+                <Property Name="UniqueName" Type="Edm.String" Nullable="false" MaxLength="12" sap:filterable="false"/>
+                <Property Name="DisplayName" Type="Edm.String" sap:sortable="false" sap:filterable="false"
+                          sap:semantics="name"/>
+                <Property Name="FirstName" Type="Edm.String" sap:sortable="false" sap:filterable="false"
+                          sap:semantics="givenname"/>
+                <Property Name="LastName" Type="Edm.String" sap:sortable="false" sap:filterable="false"
+                          sap:semantics="familyname"/>
+                <Property Name="Company" Type="Edm.String" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Department" Type="Edm.String" sap:sortable="false" sap:filterable="false"
+                          sap:semantics="org-unit"/>
+                <Property Name="Email" Type="Edm.String" sap:sortable="false" sap:filterable="false"
+                          sap:semantics="email"/>
+                <Property Name="WorkPhone" Type="Edm.String" sap:sortable="false" sap:filterable="false"
+                          sap:semantics="tel;type=work"/>
+                <Property Name="MobilePhone" Type="Edm.String" sap:sortable="false" sap:filterable="false"
+                          sap:semantics="tel;type=cell"/>
+                <Property Name="HomePhone" Type="Edm.String" sap:sortable="false" sap:filterable="false"
+                          sap:semantics="tel"/>
+                <Property Name="mime_type" Type="Edm.String" MaxLength="128"/>
+            </EntityType>
+            <EntityType Name="ConsumerScenario" m:HasStream="true" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="ConsumerType"/>
+                    <PropertyRef Name="UniqueName"/>
+                </Key>
+                <Property Name="ConsumerType" Type="Edm.String" Nullable="false" MaxLength="32"
+                          sap:label="Consumer Type"/>
+                <Property Name="UniqueName" Type="Edm.String" Nullable="false" MaxLength="32"
+                          sap:label="Scenario Identifier"/>
+                <Property Name="DisplayName" Type="Edm.String" MaxLength="255" sap:label="Scenario Name"
+                          sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TotalItems" Type="Edm.Int32" sap:label="Number" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="OrderNumber" Type="Edm.Int32" sap:label="Scenario Order" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="SortBy" Type="Edm.String" MaxLength="40" sap:label="Sort by Property"
+                          sap:sortable="false" sap:filterable="false"/>
+                <Property Name="IsMassActionEnabled" Type="Edm.Boolean" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="IsQuickActionEnabled" Type="Edm.Boolean" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ApplicationUrl" Type="Edm.String" MaxLength="255" sap:label="Application URL"
+                          sap:sortable="false" sap:filterable="false"/>
+                <Property Name="IconUrl" Type="Edm.String" MaxLength="128" sap:label="Icon URL" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="Extension1" Type="Edm.String" MaxLength="32" sap:label="Extension1" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="Extension2" Type="Edm.String" MaxLength="64" sap:label="Extension2" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="Extension3" Type="Edm.String" MaxLength="128" sap:label="Extension3"
+                          sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ScenarioServiceURL" Type="Edm.String"/>
+                <Property Name="mime_type" Type="Edm.String" MaxLength="128" sap:label="MIME Type"/>
+                <NavigationProperty Name="Tasks" Relationship="ZAREXT_CARTAPPROVAL_V2_SRV.Tasks"
+                                    FromRole="FromRole_Tasks" ToRole="ToRole_Tasks"/>
+            </EntityType>
+            <EntityType Name="Scenario" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="key"/>
+                </Key>
+                <Property Name="key" Type="Edm.String" Nullable="false" MaxLength="32" sap:label="Scenario Identifier"/>
+                <Property Name="number" Type="Edm.Int32" sap:label="Number" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="title" Type="Edm.String" MaxLength="255" sap:label="Scenario Name" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="targetParams" Type="Edm.String" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="ProcessingLog" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="InstanceID"/>
+                    <PropertyRef Name="OrderID"/>
+                </Key>
+                <Property Name="InstanceID" Type="Edm.String" Nullable="false" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="OrderID" Type="Edm.Int32" Nullable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Timestamp" Type="Edm.DateTime" Precision="0" sap:label="Time Stamp" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="ActionName" Type="Edm.String" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PerformedBy" Type="Edm.String" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PerformedByName" Type="Edm.String" sap:sortable="false" sap:filterable="false"
+                          sap:semantics="name"/>
+                <Property Name="Comments" Type="Edm.String" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TaskStatus" Type="Edm.String" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="SystemInfo" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="SystemAlias"/>
+                </Key>
+                <Property Name="SystemAlias" Type="Edm.String" Nullable="false" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="SystemType" Type="Edm.String" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="TaskObject" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="InstanceID"/>
+                    <PropertyRef Name="ObjectId"/>
+                </Key>
+                <Property Name="InstanceID" Type="Edm.String" Nullable="false" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="ObjectId" Type="Edm.String" Nullable="false" sap:sortable="false"
+                          sap:filterable="false"/>
+                <Property Name="ObjectLink" Type="Edm.String" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Label" Type="Edm.String" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="SCAItem" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="InstanceID"/>
+                    <PropertyRef Name="ItemNumber"/>
+                </Key>
+                <Property Name="InstanceID" Type="Edm.String" Nullable="false" sap:creatable="false"
+                          sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ItemNumber" Type="Edm.String" Nullable="false" MaxLength="10" sap:creatable="false"
+                          sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Description" Type="Edm.String" MaxLength="40" sap:creatable="false"
+                          sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="VendorId" Type="Edm.String" MaxLength="10" sap:creatable="false" sap:updatable="false"
+                          sap:sortable="false" sap:filterable="false"/>
+                <Property Name="VendorName" Type="Edm.String" MaxLength="40" sap:creatable="false" sap:updatable="false"
+                          sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Unit" Type="Edm.String" MaxLength="3" sap:creatable="false" sap:updatable="false"
+                          sap:sortable="false" sap:filterable="false"/>
+                <Property Name="UnitText" Type="Edm.String" MaxLength="10" sap:creatable="false" sap:updatable="false"
+                          sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Quantity" Type="Edm.String" sap:creatable="false" sap:updatable="false"
+                          sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Value" Type="Edm.Decimal" Precision="15" Scale="2" sap:unit="Currency"
+                          sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Currency" Type="Edm.String" MaxLength="5" sap:creatable="false" sap:updatable="false"
+                          sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Price" Type="Edm.Decimal" Precision="13" Scale="2" sap:unit="PriceUnit"
+                          sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PriceUnit" Type="Edm.Decimal" Precision="31" Scale="0" sap:creatable="false"
+                          sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="DeliveryDate" Type="Edm.DateTime" Precision="0" sap:label="Time Stamp"
+                          sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CategoryDescription" Type="Edm.String" MaxLength="40" sap:creatable="false"
+                          sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="SCAItemApproval" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="WorkitemID"/>
+                    <PropertyRef Name="ItemNumber"/>
+                </Key>
+                <Property Name="WorkitemID" Type="Edm.String" Nullable="false" sap:creatable="false"
+                          sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ItemNumber" Type="Edm.String" Nullable="false" sap:creatable="false"
+                          sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ItemApproved" Type="Edm.String" Nullable="false" sap:creatable="false"
+                          sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="SCAApprover" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="InstanceID"/>
+                    <PropertyRef Name="ApproverID"/>
+                    <PropertyRef Name="ApproverSequence"/>
+                </Key>
+                <Property Name="InstanceID" Type="Edm.String" Nullable="false" sap:creatable="false"
+                          sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ApproverID" Type="Edm.String" Nullable="false" MaxLength="12" sap:creatable="false"
+                          sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ApproverSequence" Type="Edm.Int16" Nullable="false" sap:label="Signed INT2 / int16"
+                          sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ApproverFirstName" Type="Edm.String" MaxLength="40" sap:creatable="false"
+                          sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ApproverLastName" Type="Edm.String" MaxLength="40" sap:creatable="false"
+                          sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ApproverFullName" Type="Edm.String" MaxLength="80" sap:creatable="false"
+                          sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ApproverRole" Type="Edm.String" MaxLength="40" sap:creatable="false"
+                          sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ApprovalStatus" Type="Edm.String" MaxLength="60" sap:creatable="false"
+                          sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ApprovalStatusCode" Type="Edm.String" MaxLength="8" sap:creatable="false"
+                          sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="SCAHeaderApproval" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="WorkitemID"/>
+                </Key>
+                <Property Name="WorkitemID" Type="Edm.String" Nullable="false" sap:creatable="false"
+                          sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ScNumber" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false"
+                          sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Comment" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false"
+                          sap:sortable="false" sap:filterable="false"/>
+                <NavigationProperty Name="SCAApprovalItems" Relationship="ZAREXT_CARTAPPROVAL_V2_SRV.SCAApprovalItems"
+                                    FromRole="FromRole_SCAApprovalItems" ToRole="ToRole_SCAApprovalItems"/>
+            </EntityType>
+            <ComplexType Name="TaskSupports">
+                <Property Name="AddAttachments" Type="Edm.Boolean" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="AddComments" Type="Edm.Boolean" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Attachments" Type="Edm.Boolean" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Comments" Type="Edm.Boolean" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CreatedByDetails" Type="Edm.Boolean" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CustomAttributeData" Type="Edm.Boolean" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Description" Type="Edm.Boolean" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PossibleAgents" Type="Edm.Boolean" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PotentialOwners" Type="Edm.Boolean" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ProcessingLogs" Type="Edm.Boolean" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ProcessorDetails" Type="Edm.Boolean" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TaskDefinitionData" Type="Edm.Boolean" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TaskObject" Type="Edm.Boolean" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="UIExecutionLink" Type="Edm.Boolean" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CancelResubmission" Type="Edm.Boolean" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Confirm" Type="Edm.Boolean" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Claim" Type="Edm.Boolean" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Forward" Type="Edm.Boolean" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Release" Type="Edm.Boolean" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Resubmit" Type="Edm.Boolean" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="SetPriority" Type="Edm.Boolean" sap:sortable="false" sap:filterable="false"/>
+            </ComplexType>
+            <ComplexType Name="AttachmentSupports">
+                <Property Name="Delete" Type="Edm.Boolean" sap:sortable="false" sap:filterable="false"/>
+            </ComplexType>
+            <ComplexType Name="Address">
+                <Property Name="Street" Type="Edm.String" sap:sortable="false" sap:filterable="false"
+                          sap:semantics="street"/>
+                <Property Name="StreetNumber" Type="Edm.String" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="City" Type="Edm.String" sap:sortable="false" sap:filterable="false"
+                          sap:semantics="city"/>
+                <Property Name="PostalCode" Type="Edm.String" sap:sortable="false" sap:filterable="false"
+                          sap:semantics="zip"/>
+                <Property Name="State" Type="Edm.String" sap:sortable="false" sap:filterable="false"
+                          sap:semantics="region"/>
+                <Property Name="Country" Type="Edm.String" sap:sortable="false" sap:filterable="false"
+                          sap:semantics="country"/>
+            </ComplexType>
+            <ComplexType Name="DecisionOption">
+                <Property Name="InstanceID" Type="Edm.String"/>
+                <Property Name="DecisionKey" Type="Edm.String"/>
+                <Property Name="DecisionText" Type="Edm.String"/>
+                <Property Name="CommentMandatory" Type="Edm.Boolean"/>
+                <Property Name="Nature" Type="Edm.String"/>
+            </ComplexType>
+            <ComplexType Name="SubstitutionRuleReturn">
+                <Property Name="Deleted" Type="Edm.Boolean"/>
+            </ComplexType>
+            <Association Name="TaskDefinitionData" sap:content-version="1">
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.Task" Multiplicity="*" Role="FromRole_TaskDefinitionData"/>
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.TaskDefinition" Multiplicity="1"
+                     Role="ToRole_TaskDefinitionData"/>
+            </Association>
+            <Association Name="Description" sap:content-version="1">
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.Task" Multiplicity="1" Role="FromRole_Description"/>
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.TaskDescription" Multiplicity="0..1" Role="ToRole_Description"/>
+            </Association>
+            <Association Name="UIExecutionLink" sap:content-version="1">
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.Task" Multiplicity="1" Role="FromRole_UIExecutionLink"/>
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.UIExecution" Multiplicity="1" Role="ToRole_UIExecutionLink"/>
+            </Association>
+            <Association Name="CustomAttributeData" sap:content-version="1">
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.Task" Multiplicity="1" Role="FromRole_CustomAttributeData"/>
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.CustomAttribute" Multiplicity="*"
+                     Role="ToRole_CustomAttributeData"/>
+            </Association>
+            <Association Name="Comments" sap:content-version="1">
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.Task" Multiplicity="1" Role="FromRole_Comments"/>
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.Comment" Multiplicity="*" Role="ToRole_Comments"/>
+            </Association>
+            <Association Name="Attachments" sap:content-version="1">
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.Task" Multiplicity="1" Role="FromRole_Attachments"/>
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.Attachment" Multiplicity="*" Role="ToRole_Attachments"/>
+            </Association>
+            <Association Name="TaskCreatedBy" sap:content-version="1">
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.Task" Multiplicity="*" Role="FromRole_TaskCreatedBy"/>
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.UserInfo" Multiplicity="0..1" Role="ToRole_TaskCreatedBy"/>
+            </Association>
+            <Association Name="TaskProcessor" sap:content-version="1">
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.Task" Multiplicity="*" Role="FromRole_TaskProcessor"/>
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.UserInfo" Multiplicity="0..1" Role="ToRole_TaskProcessor"/>
+            </Association>
+            <Association Name="PossibleAgents" sap:content-version="1">
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.Task" Multiplicity="1" Role="FromRole_PossibleAgents"/>
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.UserInfo" Multiplicity="*" Role="ToRole_PossibleAgents"/>
+            </Association>
+            <Association Name="PotentialOwners" sap:content-version="1">
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.Task" Multiplicity="1" Role="FromRole_PotentialOwners"/>
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.UserInfo" Multiplicity="*" Role="ToRole_PotentialOwners"/>
+            </Association>
+            <Association Name="ProcessingLogs" sap:content-version="1">
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.Task" Multiplicity="1" Role="FromRole_ProcessingLogs"/>
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.ProcessingLog" Multiplicity="*" Role="ToRole_ProcessingLogs"/>
+            </Association>
+            <Association Name="TaskObjects" sap:content-version="1">
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.Task" Multiplicity="1" Role="FromRole_TaskObjects"/>
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.TaskObject" Multiplicity="*" Role="ToRole_TaskObjects"/>
+            </Association>
+            <Association Name="SCAApproversHeader" sap:content-version="1">
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.Task" Multiplicity="1" Role="FromRole_SCAApproversHeader"/>
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.SCAApprover" Multiplicity="*" Role="ToRole_SCAApproversHeader"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_SCAApproversHeader">
+                        <PropertyRef Name="InstanceID"/>
+                    </Principal>
+                    <Dependent Role="ToRole_SCAApproversHeader">
+                        <PropertyRef Name="InstanceID"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="SCAItems" sap:content-version="1">
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.Task" Multiplicity="1" Role="FromRole_SCAItems"/>
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.SCAItem" Multiplicity="*" Role="ToRole_SCAItems"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_SCAItems">
+                        <PropertyRef Name="InstanceID"/>
+                    </Principal>
+                    <Dependent Role="ToRole_SCAItems">
+                        <PropertyRef Name="InstanceID"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="Tasks" sap:content-version="1">
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.ConsumerScenario" Multiplicity="1" Role="FromRole_Tasks"/>
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.Task" Multiplicity="*" Role="ToRole_Tasks"/>
+            </Association>
+            <Association Name="SCAApprovalItems" sap:content-version="1">
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.SCAHeaderApproval" Multiplicity="1"
+                     Role="FromRole_SCAApprovalItems"/>
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.SCAItemApproval" Multiplicity="*" Role="ToRole_SCAApprovalItems"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_SCAApprovalItems">
+                        <PropertyRef Name="WorkitemID"/>
+                    </Principal>
+                    <Dependent Role="ToRole_SCAApprovalItems">
+                        <PropertyRef Name="WorkitemID"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="CommentCreatedBy" sap:content-version="1">
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.Comment" Multiplicity="*" Role="FromRole_CommentCreatedBy"/>
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.UserInfo" Multiplicity="0..1" Role="ToRole_CommentCreatedBy"/>
+            </Association>
+            <Association Name="AttachmentCreatedBy" sap:content-version="1">
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.Attachment" Multiplicity="*" Role="FromRole_AttachmentCreatedBy"/>
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.UserInfo" Multiplicity="0..1" Role="ToRole_AttachmentCreatedBy"/>
+            </Association>
+            <Association Name="CustomAttributeDefinitionData" sap:content-version="1">
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.TaskDefinition" Multiplicity="1"
+                     Role="FromRole_CustomAttributeDefinitionData"/>
+                <End Type="ZAREXT_CARTAPPROVAL_V2_SRV.CustomAttributeDefinition" Multiplicity="*"
+                     Role="ToRole_CustomAttributeDefinitionData"/>
+            </Association>
+            <EntityContainer Name="ZAREXT_CARTAPPROVAL_V2_SRV_Entities" m:IsDefaultEntityContainer="true"
+                             sap:supported-formats="atom json">
+                <EntitySet Name="TaskDefinitionCollection" EntityType="ZAREXT_CARTAPPROVAL_V2_SRV.TaskDefinition"
+                           sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+                <EntitySet Name="TaskDescriptionCollection" EntityType="ZAREXT_CARTAPPROVAL_V2_SRV.TaskDescription"
+                           sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false"
+                           sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="UIExecutionCollection" EntityType="ZAREXT_CARTAPPROVAL_V2_SRV.UIExecution"
+                           sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false"
+                           sap:content-version="1"/>
+                <EntitySet Name="FilterOptionCollection" EntityType="ZAREXT_CARTAPPROVAL_V2_SRV.FilterOption"
+                           sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+                <EntitySet Name="CustomAttributeDefinitionCollection"
+                           EntityType="ZAREXT_CARTAPPROVAL_V2_SRV.CustomAttributeDefinition" sap:creatable="false"
+                           sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false"
+                           sap:content-version="1"/>
+                <EntitySet Name="CustomAttributeCollection" EntityType="ZAREXT_CARTAPPROVAL_V2_SRV.CustomAttribute"
+                           sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false"
+                           sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="SubstitutionRuleCollection" EntityType="ZAREXT_CARTAPPROVAL_V2_SRV.SubstitutionRule"
+                           sap:content-version="1"/>
+                <EntitySet Name="SubstitutesRuleCollection" EntityType="ZAREXT_CARTAPPROVAL_V2_SRV.SubstitutionRule"
+                           sap:content-version="1"/>
+                <EntitySet Name="SubstitutionProfileCollection"
+                           EntityType="ZAREXT_CARTAPPROVAL_V2_SRV.SubstitutionProfile" sap:creatable="false"
+                           sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+                <EntitySet Name="CommentCollection" EntityType="ZAREXT_CARTAPPROVAL_V2_SRV.Comment"
+                           sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false"
+                           sap:content-version="1"/>
+                <EntitySet Name="AttachmentCollection" EntityType="ZAREXT_CARTAPPROVAL_V2_SRV.Attachment"
+                           sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="UserInfoCollection" EntityType="ZAREXT_CARTAPPROVAL_V2_SRV.UserInfo"
+                           sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:addressable="false"
+                           sap:content-version="1"/>
+                <EntitySet Name="SubstitutedUsersCollection" EntityType="ZAREXT_CARTAPPROVAL_V2_SRV.UserInfo"
+                           sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:addressable="false"
+                           sap:content-version="1"/>
+                <EntitySet Name="ConsumerScenarioCollection" EntityType="ZAREXT_CARTAPPROVAL_V2_SRV.ConsumerScenario"
+                           sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:requires-filter="true"
+                           sap:content-version="1"/>
+                <EntitySet Name="ScenarioCollection" EntityType="ZAREXT_CARTAPPROVAL_V2_SRV.Scenario"
+                           sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:requires-filter="true"
+                           sap:content-version="1"/>
+                <EntitySet Name="ProcessingLogCollection" EntityType="ZAREXT_CARTAPPROVAL_V2_SRV.ProcessingLog"
+                           sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false"
+                           sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="SystemInfoCollection" EntityType="ZAREXT_CARTAPPROVAL_V2_SRV.SystemInfo"
+                           sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+                <EntitySet Name="TaskObjectCollection" EntityType="ZAREXT_CARTAPPROVAL_V2_SRV.TaskObject"
+                           sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false"
+                           sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="SCAItemCollection" EntityType="ZAREXT_CARTAPPROVAL_V2_SRV.SCAItem"
+                           sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false"
+                           sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="SCAItemApprovalCollection" EntityType="ZAREXT_CARTAPPROVAL_V2_SRV.SCAItemApproval"
+                           sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false"
+                           sap:content-version="1"/>
+                <EntitySet Name="SCAApproverCollection" EntityType="ZAREXT_CARTAPPROVAL_V2_SRV.SCAApprover"
+                           sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false"
+                           sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="SCAHeaderApprovalCollection" EntityType="ZAREXT_CARTAPPROVAL_V2_SRV.SCAHeaderApproval"
+                           sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false"
+                           sap:content-version="1"/>
+                <EntitySet Name="SubscriptionCollection" EntityType="ZAREXT_CARTAPPROVAL_V2_SRV.Subscription"
+                           sap:content-version="1"/>
+                <EntitySet Name="NotificationCollection" EntityType="ZAREXT_CARTAPPROVAL_V2_SRV.Notification"
+                           sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:addressable="false"
+                           sap:content-version="1"/>
+                <EntitySet Name="TaskCollection" EntityType="ZAREXT_CARTAPPROVAL_V2_SRV.Task" sap:creatable="false"
+                           sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+                <AssociationSet Name="UIExecutionLink_AssocSet" Association="ZAREXT_CARTAPPROVAL_V2_SRV.UIExecutionLink"
+                                sap:creatable="false" sap:updatable="false" sap:deletable="false"
+                                sap:content-version="1">
+                    <End EntitySet="TaskCollection" Role="FromRole_UIExecutionLink"/>
+                    <End EntitySet="UIExecutionCollection" Role="ToRole_UIExecutionLink"/>
+                </AssociationSet>
+                <AssociationSet Name="CustomAttributeDefinitionData_AssocSet"
+                                Association="ZAREXT_CARTAPPROVAL_V2_SRV.CustomAttributeDefinitionData"
+                                sap:creatable="false" sap:updatable="false" sap:deletable="false"
+                                sap:content-version="1">
+                    <End EntitySet="TaskDefinitionCollection" Role="FromRole_CustomAttributeDefinitionData"/>
+                    <End EntitySet="CustomAttributeDefinitionCollection" Role="ToRole_CustomAttributeDefinitionData"/>
+                </AssociationSet>
+                <AssociationSet Name="CommentCreatedBy_AssocSet"
+                                Association="ZAREXT_CARTAPPROVAL_V2_SRV.CommentCreatedBy" sap:creatable="false"
+                                sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="CommentCollection" Role="FromRole_CommentCreatedBy"/>
+                    <End EntitySet="UserInfoCollection" Role="ToRole_CommentCreatedBy"/>
+                </AssociationSet>
+                <AssociationSet Name="AttachmentCreatedBy_AssocSet"
+                                Association="ZAREXT_CARTAPPROVAL_V2_SRV.AttachmentCreatedBy" sap:creatable="false"
+                                sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="AttachmentCollection" Role="FromRole_AttachmentCreatedBy"/>
+                    <End EntitySet="UserInfoCollection" Role="ToRole_AttachmentCreatedBy"/>
+                </AssociationSet>
+                <AssociationSet Name="Attachments_AssocSet" Association="ZAREXT_CARTAPPROVAL_V2_SRV.Attachments"
+                                sap:creatable="false" sap:updatable="false" sap:deletable="false"
+                                sap:content-version="1">
+                    <End EntitySet="TaskCollection" Role="FromRole_Attachments"/>
+                    <End EntitySet="AttachmentCollection" Role="ToRole_Attachments"/>
+                </AssociationSet>
+                <AssociationSet Name="SCAItemsSet" Association="ZAREXT_CARTAPPROVAL_V2_SRV.SCAItems"
+                                sap:creatable="false" sap:updatable="false" sap:deletable="false"
+                                sap:content-version="1">
+                    <End EntitySet="TaskCollection" Role="FromRole_SCAItems"/>
+                    <End EntitySet="SCAItemCollection" Role="ToRole_SCAItems"/>
+                </AssociationSet>
+                <AssociationSet Name="ProcessingLogs_AssocSet" Association="ZAREXT_CARTAPPROVAL_V2_SRV.ProcessingLogs"
+                                sap:creatable="false" sap:updatable="false" sap:deletable="false"
+                                sap:content-version="1">
+                    <End EntitySet="TaskCollection" Role="FromRole_ProcessingLogs"/>
+                    <End EntitySet="ProcessingLogCollection" Role="ToRole_ProcessingLogs"/>
+                </AssociationSet>
+                <AssociationSet Name="SCAApproversHeaderSet" Association="ZAREXT_CARTAPPROVAL_V2_SRV.SCAApproversHeader"
+                                sap:creatable="false" sap:updatable="false" sap:deletable="false"
+                                sap:content-version="1">
+                    <End EntitySet="TaskCollection" Role="FromRole_SCAApproversHeader"/>
+                    <End EntitySet="SCAApproverCollection" Role="ToRole_SCAApproversHeader"/>
+                </AssociationSet>
+                <AssociationSet Name="Comments_AssocSet" Association="ZAREXT_CARTAPPROVAL_V2_SRV.Comments"
+                                sap:creatable="false" sap:updatable="false" sap:deletable="false"
+                                sap:content-version="1">
+                    <End EntitySet="TaskCollection" Role="FromRole_Comments"/>
+                    <End EntitySet="CommentCollection" Role="ToRole_Comments"/>
+                </AssociationSet>
+                <AssociationSet Name="Tasks_AssocSet" Association="ZAREXT_CARTAPPROVAL_V2_SRV.Tasks"
+                                sap:creatable="false" sap:updatable="false" sap:deletable="false"
+                                sap:content-version="1">
+                    <End EntitySet="ConsumerScenarioCollection" Role="FromRole_Tasks"/>
+                    <End EntitySet="TaskCollection" Role="ToRole_Tasks"/>
+                </AssociationSet>
+                <AssociationSet Name="PotentialOwners_AssocSet" Association="ZAREXT_CARTAPPROVAL_V2_SRV.PotentialOwners"
+                                sap:creatable="false" sap:updatable="false" sap:deletable="false"
+                                sap:content-version="1">
+                    <End EntitySet="TaskCollection" Role="FromRole_PotentialOwners"/>
+                    <End EntitySet="UserInfoCollection" Role="ToRole_PotentialOwners"/>
+                </AssociationSet>
+                <AssociationSet Name="TaskDefinitionData_AssocSet"
+                                Association="ZAREXT_CARTAPPROVAL_V2_SRV.TaskDefinitionData" sap:creatable="false"
+                                sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="TaskCollection" Role="FromRole_TaskDefinitionData"/>
+                    <End EntitySet="TaskDefinitionCollection" Role="ToRole_TaskDefinitionData"/>
+                </AssociationSet>
+                <AssociationSet Name="Description_AssocSet" Association="ZAREXT_CARTAPPROVAL_V2_SRV.Description"
+                                sap:creatable="false" sap:updatable="false" sap:deletable="false"
+                                sap:content-version="1">
+                    <End EntitySet="TaskCollection" Role="FromRole_Description"/>
+                    <End EntitySet="TaskDescriptionCollection" Role="ToRole_Description"/>
+                </AssociationSet>
+                <AssociationSet Name="TaskProcessor_AssocSet" Association="ZAREXT_CARTAPPROVAL_V2_SRV.TaskProcessor"
+                                sap:creatable="false" sap:updatable="false" sap:deletable="false"
+                                sap:content-version="1">
+                    <End EntitySet="TaskCollection" Role="FromRole_TaskProcessor"/>
+                    <End EntitySet="UserInfoCollection" Role="ToRole_TaskProcessor"/>
+                </AssociationSet>
+                <AssociationSet Name="TaskCreatedBy_AssocSet" Association="ZAREXT_CARTAPPROVAL_V2_SRV.TaskCreatedBy"
+                                sap:creatable="false" sap:updatable="false" sap:deletable="false"
+                                sap:content-version="1">
+                    <End EntitySet="TaskCollection" Role="FromRole_TaskCreatedBy"/>
+                    <End EntitySet="UserInfoCollection" Role="ToRole_TaskCreatedBy"/>
+                </AssociationSet>
+                <AssociationSet Name="SCAApprovalItemsSet" Association="ZAREXT_CARTAPPROVAL_V2_SRV.SCAApprovalItems"
+                                sap:creatable="false" sap:updatable="false" sap:deletable="false"
+                                sap:content-version="1">
+                    <End EntitySet="SCAHeaderApprovalCollection" Role="FromRole_SCAApprovalItems"/>
+                    <End EntitySet="SCAItemApprovalCollection" Role="ToRole_SCAApprovalItems"/>
+                </AssociationSet>
+                <AssociationSet Name="PossibleAgents_AssocSet" Association="ZAREXT_CARTAPPROVAL_V2_SRV.PossibleAgents"
+                                sap:creatable="false" sap:updatable="false" sap:deletable="false"
+                                sap:content-version="1">
+                    <End EntitySet="TaskCollection" Role="FromRole_PossibleAgents"/>
+                    <End EntitySet="UserInfoCollection" Role="ToRole_PossibleAgents"/>
+                </AssociationSet>
+                <AssociationSet Name="TaskObjects_AssocSet" Association="ZAREXT_CARTAPPROVAL_V2_SRV.TaskObjects"
+                                sap:creatable="false" sap:updatable="false" sap:deletable="false"
+                                sap:content-version="1">
+                    <End EntitySet="TaskCollection" Role="FromRole_TaskObjects"/>
+                    <End EntitySet="TaskObjectCollection" Role="ToRole_TaskObjects"/>
+                </AssociationSet>
+                <AssociationSet Name="CustomAttributeData_AssocSet"
+                                Association="ZAREXT_CARTAPPROVAL_V2_SRV.CustomAttributeData" sap:creatable="false"
+                                sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="TaskCollection" Role="FromRole_CustomAttributeData"/>
+                    <End EntitySet="CustomAttributeCollection" Role="ToRole_CustomAttributeData"/>
+                </AssociationSet>
+                <FunctionImport Name="Claim" ReturnType="ZAREXT_CARTAPPROVAL_V2_SRV.Task" EntitySet="TaskCollection"
+                                m:HttpMethod="POST" sap:action-for="ZAREXT_CARTAPPROVAL_V2_SRV.Task">
+                    <Parameter Name="InstanceID" Type="Edm.String" Mode="In" Nullable="false"/>
+                    <Parameter Name="Comments" Type="Edm.String" Mode="In" Nullable="true"/>
+                </FunctionImport>
+                <FunctionImport Name="Release" ReturnType="ZAREXT_CARTAPPROVAL_V2_SRV.Task" EntitySet="TaskCollection"
+                                m:HttpMethod="POST" sap:action-for="ZAREXT_CARTAPPROVAL_V2_SRV.Task">
+                    <Parameter Name="InstanceID" Type="Edm.String" Mode="In" Nullable="false"/>
+                </FunctionImport>
+                <FunctionImport Name="Forward" ReturnType="ZAREXT_CARTAPPROVAL_V2_SRV.Task" EntitySet="TaskCollection"
+                                m:HttpMethod="POST" sap:action-for="ZAREXT_CARTAPPROVAL_V2_SRV.Task">
+                    <Parameter Name="InstanceID" Type="Edm.String" Mode="In" Nullable="false"/>
+                    <Parameter Name="ForwardTo" Type="Edm.String" Mode="In" Nullable="false"/>
+                    <Parameter Name="Comments" Type="Edm.String" Mode="In" Nullable="true"/>
+                </FunctionImport>
+                <FunctionImport Name="Decision" ReturnType="ZAREXT_CARTAPPROVAL_V2_SRV.Task" EntitySet="TaskCollection"
+                                m:HttpMethod="POST" sap:action-for="ZAREXT_CARTAPPROVAL_V2_SRV.Task">
+                    <Parameter Name="InstanceID" Type="Edm.String" Mode="In" Nullable="false"/>
+                    <Parameter Name="DecisionKey" Type="Edm.String" Mode="In" Nullable="false"/>
+                    <Parameter Name="Comments" Type="Edm.String" Mode="In" Nullable="true"/>
+                </FunctionImport>
+                <FunctionImport Name="DecisionOptions"
+                                ReturnType="Collection(ZAREXT_CARTAPPROVAL_V2_SRV.DecisionOption)" m:HttpMethod="GET"
+                                sap:action-for="ZAREXT_CARTAPPROVAL_V2_SRV.Task">
+                    <Parameter Name="InstanceID" Type="Edm.String" Mode="In" Nullable="false"/>
+                </FunctionImport>
+                <FunctionImport Name="SetPriority" ReturnType="ZAREXT_CARTAPPROVAL_V2_SRV.Task"
+                                EntitySet="TaskCollection" m:HttpMethod="POST"
+                                sap:action-for="ZAREXT_CARTAPPROVAL_V2_SRV.Task">
+                    <Parameter Name="InstanceID" Type="Edm.String" Mode="In" Nullable="false"/>
+                    <Parameter Name="Priority" Type="Edm.String" Mode="In" Nullable="false"/>
+                </FunctionImport>
+                <FunctionImport Name="EnableSubstitutionRule" ReturnType="ZAREXT_CARTAPPROVAL_V2_SRV.SubstitutionRule"
+                                EntitySet="SubstitutionRuleCollection" m:HttpMethod="POST"
+                                sap:action-for="ZAREXT_CARTAPPROVAL_V2_SRV.SubstitutionRule">
+                    <Parameter Name="SubstitutionRuleID" Type="Edm.String" Mode="In" Nullable="false"/>
+                    <Parameter Name="Enabled" Type="Edm.Boolean" Mode="In" Nullable="false"/>
+                </FunctionImport>
+                <FunctionImport Name="DeleteSubstitutionRule"
+                                ReturnType="ZAREXT_CARTAPPROVAL_V2_SRV.SubstitutionRuleReturn" m:HttpMethod="POST"
+                                sap:action-for="ZAREXT_CARTAPPROVAL_V2_SRV.SubstitutionRule">
+                    <Parameter Name="SubstitutionRuleID" Type="Edm.String" Mode="In" Nullable="false"/>
+                </FunctionImport>
+                <FunctionImport Name="AddComment" ReturnType="ZAREXT_CARTAPPROVAL_V2_SRV.Comment"
+                                EntitySet="CommentCollection" m:HttpMethod="POST"
+                                sap:action-for="ZAREXT_CARTAPPROVAL_V2_SRV.Comment">
+                    <Parameter Name="InstanceID" Type="Edm.String" Mode="In" Nullable="false"/>
+                    <Parameter Name="Text" Type="Edm.String" Mode="In" Nullable="false"/>
+                </FunctionImport>
+                <FunctionImport Name="SearchUsers" ReturnType="Collection(ZAREXT_CARTAPPROVAL_V2_SRV.UserInfo)"
+                                EntitySet="UserInfoCollection" m:HttpMethod="GET"
+                                sap:action-for="ZAREXT_CARTAPPROVAL_V2_SRV.UserInfo">
+                    <Parameter Name="SearchPattern" Type="Edm.String" Mode="In" Nullable="true"/>
+                    <Parameter Name="MaxResults" Type="Edm.Int16" Mode="In" Nullable="true"/>
+                </FunctionImport>
+                <FunctionImport Name="Resubmit" ReturnType="ZAREXT_CARTAPPROVAL_V2_SRV.Task" EntitySet="TaskCollection"
+                                m:HttpMethod="POST" sap:action-for="ZAREXT_CARTAPPROVAL_V2_SRV.Task">
+                    <Parameter Name="InstanceID" Type="Edm.String" Mode="In" Nullable="false"/>
+                    <Parameter Name="ResubmissionDate" Type="Edm.DateTime" Mode="In" Precision="0" Nullable="false"/>
+                </FunctionImport>
+                <FunctionImport Name="CancelResubmission" ReturnType="ZAREXT_CARTAPPROVAL_V2_SRV.Task"
+                                EntitySet="TaskCollection" m:HttpMethod="POST"
+                                sap:action-for="ZAREXT_CARTAPPROVAL_V2_SRV.Task">
+                    <Parameter Name="InstanceID" Type="Edm.String" Mode="In" Nullable="false"/>
+                </FunctionImport>
+            </EntityContainer>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

@@ -1,0 +1,114 @@
+<ui-popup dark id="propertyEditorModal" placement="left" offset-x="-20" offset-y="145"
+          class="dark dm-propertyEditor" pass-through="true" on-close="controller.onClose()"
+          ng-hide="controller.editingFormula">
+
+    <div class="dm-propertyEditor-content"
+         ng-class="controller.selectedPropTab">
+
+        <script type="text/ng-template" id="value_viewer.html">
+            "{{ data.value }}"
+        </script>
+
+        <script type="text/ng-template" id="property_viewer.html">
+            <span ng-show="data.navPropOp && data.navPropMultiplicity"><span
+                    ng-bind="controller.getOpLabel(data.navPropOp)"></span> ( </span>
+            {{ data.navPropName }}<span ng-show="data.navPropName.length">.</span>{{ data.propertyName }}
+            <span ng-show="data.navPropOp && data.navPropMultiplicity"> )</span>
+        </script>
+
+        <script type="text/ng-template" id="condition_viewer.html">
+            {{ data.label }}
+            <span class="dm-returns"><br/></span>
+            <span ng-repeat="data in data.condition" ng-include="controller.getTemplate(data.type)"></span>
+            <span class="dm-returns"><br/></span>
+            THEN
+            <span class="dm-returns"><br/></span>
+            <span ng-repeat="data in data.then" ng-include="controller.getTemplate(data.type)"></span>
+            <span class="dm-returns"><br/></span>
+            ELSE
+            <span class="dm-returns"><br/></span>
+            <span ng-repeat="data in data.else" ng-include="controller.getTemplate(data.type)"></span>
+        </script>
+
+        <script type="text/ng-template" id="operator_viewer.html">
+            (<span ng-repeat="data in data.left" ng-include="controller.getTemplate(data.type)"></span>
+            {{ data.label }}
+            <span ng-repeat="data in data.right" ng-include="controller.getTemplate(data.type)"></span>)
+        </script>
+
+        <ui-tabs class="dm-propEditorEditor-popup" tab-on="tab.active">
+            <ui-tab-option id="informations" title="Info">
+
+                <table class="dm-popup-table">
+                    <tr>
+                        <td> Name</td>
+                        <td>
+                            <ui-input size="small" dark type="text" id="name"
+                                      placeholder="Name"
+                                      ng-change="controller.needToUpdateProperty=true;"
+                                      ng-model="controller.editedProperty.name">
+                            </ui-input>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Type</td>
+                        <td>
+                            <ui-select size="small" id="types" dark
+                                       ng-change="controller.needToUpdateProperty=true;"
+                                       ng-model="controller.editedProperty.propertyType">
+                                <option ng-repeat="type in controller.dataTypes"
+                                        value="{{ type.code }}">{{type.label}}
+                                </option>
+                            </ui-select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Mandatory</td>
+                        <td>
+                            <ui-toggle id="mandatory" ng-model="controller.editedProperty.isMandatory"
+                                       ng-change="controller.needToUpdateProperty=true;">
+                            </ui-toggle>
+                        </td>
+                    </tr>
+                    <tr ng-hide="controller.editedProperty.calculated && controller.editedProperty.calculated.calculation.length">
+                        <td> Read-Only</td>
+                        <td>
+                            <ui-toggle id='creatable'
+                                       ng-change="controller.needToUpdateProperty=true;"
+                                       ng-model="controller.editedProperty.isReadOnly">
+                            </ui-toggle>
+                        </td>
+                    </tr>
+                </table>
+            </ui-tab-option>
+            <ui-tab-option id="formula" title="Formula">
+                <div>
+                    <div ng-show="controller.editedProperty.calculated.calculation.length && controller.validFormula"
+                         ng-click="controller.showFullFormula = !controller.showFullFormula" class="dm-formulaPreview"
+                         ng-class="{'dm-showFullFormula': controller.showFullFormula}">
+                        <span ng-repeat="data in controller.editedProperty.calculated.calculation"
+                              ng-include="controller.getTemplate(data.type)"></span>
+
+                        <div ng-click="controller.removeFormula()"
+                             class="dm-removeFormula dmsvg-remove"></div>
+                    </div>
+                    <div ng-hide="controller.editedProperty.calculated.calculation.length" class="dm-emptyFormula">
+                        Create your Formula by dropping <br/>Property, Value, Operator and <br/>Condition <br/><br/>
+
+                        <div class="dm-formulaInstruction dmsvg-formula_instruction"></div>
+                    </div>
+                    <div ng-hide="controller.validFormula" class="dm-errorFormula"><br/>
+
+                        <div class="dm-formulaWarning dmsvg-warning"></div>
+                        <br/><br/>The formula contains error(s) <br/>Click on Edit to fix the formula
+                    </div>
+                    <br/>
+                    <ui-button size="large" ui-dialog-open="formulaEditorModal" ng-click="controller.editFormula();"
+                               class="dm-editFormula" ng-bind="controller.editFormulaLabel()"></ui-button>
+                    <div ng-include="'resources/norman-prototype-editors-client/DataModeler/dataModelEditor/popUps/formulaEditor.html'"></div>
+                </div>
+            </ui-tab-option>
+        </ui-tabs>
+    </div>
+</ui-popup>
+

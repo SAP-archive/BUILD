@@ -1,0 +1,45 @@
+{
+  "filters": {
+    "auth": {
+      "module": "norman-auth-server",
+      "filter": "auth",
+      "options": {}
+    },
+    "jwt": {
+      "module": "norman-auth-server",
+      "filter": "jwt",
+      "options": {}
+    },
+    "xsrf": {
+      "module": "norman-auth-server",
+      "filter": "xsrf",
+      "options": {
+        "headerName": "X-CSRF-Token",
+        "cookieName": "X-CSRF-Token"
+      }
+    }
+  },
+  "locations": [
+    {
+      "/api": [
+        "jwt",
+        "auth",
+        "xsrf"
+      ]
+    }
+  ],
+  "handlers": {
+    "norman-auth-server": {
+      "users": "/api/users",
+      "auth": "/auth"
+    },
+      "norman-audit-server": "/audit",
+      "norman-admin-audit-server": "/api/admin/audit/",
+      "norman-admin-users-server": {
+          "users": "/api/admin/users/",
+          "access": "/api/admin/access/"
+      },
+
+      "norman-ui-catalog-manager-server": "/api/uicatalogs"
+  }
+}

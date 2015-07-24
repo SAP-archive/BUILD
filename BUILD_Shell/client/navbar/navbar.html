@@ -1,0 +1,86 @@
+<div ng-controller="NavBarCtrl" class="navbar-content">
+    <div class="blue-background"></div>
+    <div id="hero" class="hero-banner">
+        <div id="logo-text" class="hero-logo">
+            Welcome To
+            <div class="build-logo" alt="Build"></div>
+        </div>
+    </div>
+    <div id="floatingElements" class="floating-elements" layout="row" layout-align="space-between start">
+        <div class="fe-left" layout="row" layout-align="start center">
+            <img class="build-text navbar-logo"
+                 src="resources/norman-common-client/assets/build-small-logo.svg"
+                 alt="Build"
+                 ng-hide="isAdminConsole"/>
+            <img
+                    class="build-text" src="resources/norman-common-client/assets/build-type.svg" alt="Build"
+                    ng-show="isAdminConsole"/>
+
+            <div class="navbar-title" ng-bind="navbarService.heading"></div>
+            <div class="navbar-save" ng-cloak ng-bind="navbarService.saveMessage"></div>
+        </div>
+        <div class="fe-right" layout="row" layout-align="end center">
+            <ui-avatar avatar-name="{{currentUser.name}}" avatar-image="{{currentUser.avatar_url}}"
+                       ui-popup-open="na-avatar-popover" avatar-state=""></ui-avatar>
+            <div class="help-circle" ui-popup-open="na-help-popover" tabindex="1" ng-click="showHelpMenu=true">
+                <div class="help-ico"></div>
+            </div>
+        </div>
+    </div>
+    <ui-popup id="na-avatar-popover" placement="bottom" offset-x="-5" offset-y="10" style="width: 120px;"
+              ng-hide="hideAvatarPopover">
+        <section class="na-avatar-section-link" ng-hide="isAdminConsole">
+            <a ui-popup-close settings-dialog-open class="na-avatar-link" href=""><span
+                    class="na-settings-link">Profile</span></a>
+        </section>
+        <section class="na-avatar-section-link" ng-show="showLogout()">
+            <a ui-popup-close href="" ng-click="logout()" class="na-avatar-link"><span
+                    class="na-logout-link">Sign Out</span></a>
+        </section>
+    </ui-popup>
+
+    <ui-popup id="na-help-popover" placement="bottom" offset-x="-5" offset-y="10">
+        <div ng-show="showHelpMenu">
+            <section class="na-avatar-section-link">
+                <a ui-popup-close href="" class="na-avatar-link" ng-click="goHelp()">Help</a>
+            </section>
+
+            <section class="na-avatar-section-link">
+                <a ui-popup-close class="na-avatar-link" href="/tos">Terms of Use</a>
+            </section>
+
+            <section class="na-avatar-section-link">
+                <a ui-popup-close class="na-avatar-link" href="/privacystatement" ng-show="showPrivacyStmt">Privacy statement</a>
+            </section>
+        </div>
+
+        <div ng-hide="showHelpMenu" class="shell-helpTooltip">
+            <h4>You can find all the help information here!</h4>
+        </div>
+
+    </ui-popup>
+
+
+    <settings-dialog></settings-dialog>
+    <div class="shell-help-overlay-modal" ng-if="!hideFTUOverlay && isLandingPage"></div>
+    <div class="shell-help-overlay" ng-if="!hideFTUOverlay && isLandingPage">
+        <ui-video class="shell-header-video"
+                  title="{{overlayActiveTitle}}"
+                  tile-width="100%"
+                  tile-height="500px"
+                  title-within="true"
+                  src="{{overlayActiveVideo}}"
+                  allow-play="true">
+        </ui-video>
+
+        <ui-video-slider data-items="aVideoSliderItems" on-video-clicked="sliderVideoSelected(video)">
+        </ui-video-slider>
+
+        <ui-checkbox id="shell-dismissHelp" ng-model="$parent.disableHelp"></ui-checkbox>
+        <label for="shell-dismissHelp" class="shell-help-overlay-close-checkbox-label">Don't show this again.</label>
+
+        <div class="shell-help-overlay-close" ng-click="closeHelpOverlay()">
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+    <!-- put any version of ui5 here in bootstrap -->
+    <script src='/sapui5/resources/sap-ui-core.js' id='sap-ui-bootstrap'
+            data-sap-ui-libs='sap.m, sap.ui.commons'
+            data-sap-ui-theme='sap_bluecrystal'
+            data-sap-ui-xx-bindingSyntax='complex'
+            data-sap-ui-resourceroots='{
+            "sap.norman": "./"
+        }'>
+
+    </script>
+    <!-- only load the mobile lib 'sap.m' and the 'sap_bluecrystal' theme -->
+
+    <script>
+        'use strict';
+        sap.ui.localResources('sap.norman.controls');
+        jQuery.sap.require('sap.norman.controls.HotspotImage');
+
+        sap.ui.getCore().attachInit(function () {
+            new sap.ui.core.ComponentContainer({
+                name: 'sap.norman',
+                width: '100%',
+                height: '100%'
+            }).placeAt('content');
+        });
+    </script>
+</head>
+<body class='sapUiBody' id='content'>
+</body>
+</html>

@@ -1,0 +1,42 @@
+{
+  "name": "node-sap-mongo-config",
+  "version": "0.1.0",
+  "description": "Applicative configuration in Mongo DB",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SAP/BUILD.git"
+  },
+  "maintainers": [
+    {
+      "name": "BUILD Team",
+      "email": "contact.build@sap.com"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "Apache License, Version 2.0",
+      "url": "https://github.com/SAP/BUILD/node-sap-mongo-config/blob/master/LICENSE.md"
+    }
+  ],
+  "engines": {
+    "node": ">=0.10.33"
+  },
+  "dependencies": {
+    "node-sap-logging": "~0.1.0",
+    "node-sap-promise": "~0.1.0",
+    "node-sap-common": "~0.1.0"
+  },
+  "devDependencies": {
+    "chai": "~2.2.0",
+    "del": "~1.2.0",
+    "gulp": "~3.9.0",
+    "gulp-concat": "~2.6.0",
+    "gulp-eslint": "~0.15.0",
+    "gulp-istanbul": "~0.10.0",
+    "gulp-jsdoc-to-markdown": "~1.1.1",
+    "gulp-mocha": "~2.1.2",
+    "gulp-util": "~3.0.5",
+    "mongodb": "~1.4.12",
+    "node-sap-build": "~0.1.0"
+  }
+}

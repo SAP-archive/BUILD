@@ -1,0 +1,4348 @@
+{
+  "catalogName": "r1c1ui5",
+  "catalogVersion": "1_0",
+  "catalogLang": "openui5",
+  "controls": {
+    "sap_m_IconTabSeparator": {
+      "additionalMetadata": {
+        "icon": "/resources/norman-ui-catalog-manager-client/assets/separator.svg",
+        "defaultProperty": null,
+        "controlTemplate": "",
+        "defaultAggregation": "",
+        "deprecated": false,
+        "isStructuralElement": false,
+        "parent": "sap_m_IconTabSeparator",
+        "properties": {
+          "iconDensityAware": {
+            "defaultValue": false,
+            "deprecated": false,
+            "displayName": "Icon Density Aware",
+            "displayToUser": false,
+            "group": "Appearance",
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "iconDensityAware",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "icon": {
+            "defaultValue": "",
+            "deprecated": false,
+            "displayName": "Icon",
+            "displayToUser": true,
+            "group": "Misc",
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "icon",
+            "possibleValues": null,
+            "type": "sap_ui_core_URI"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_IconTabSeparator",
+      "displayName": "Tab Separator",
+      "displayToUser": true,
+      "groupName": "Container",
+      "name": "sap_m_IconTabSeparator"
+    },
+    "sap_m_IconTabFilter": {
+      "additionalMetadata": {
+        "icon": "/resources/norman-ui-catalog-manager-client/assets/icon-tab.svg",
+        "defaultProperty": null,
+        "aggregations": {
+          "content": {
+            "deprecated": false,
+            "displayName": "Content",
+            "displayToUser": true,
+            "isDataDriven": false,
+            "multiple": true,
+            "name": "content",
+            "renderAction": "",
+            "singularName": "content",
+            "types": [
+              "sap_m_Button",
+              "sap_m_Image",
+              "sap_m_Input",
+              "sap_m_Label",
+              "sap_m_Link",
+              "sap_m_List",
+              "sap_m_Text"
+            ],
+            "visibility": "public",
+            "defaultValue": [
+              {
+                "name": "sap_m_Text",
+                "properties": {
+                  "text": "Content goes here ..."
+                }
+              }
+            ]
+          }
+        },
+        "controlTemplate": "",
+        "defaultAggregation": "content",
+        "deprecated": false,
+        "isStructuralElement": false,
+        "parent": "sap_m_IconTabFilter",
+        "properties": {
+          "iconDensityAware": {
+            "defaultValue": false,
+            "deprecated": false,
+            "displayName": "Icon Density Aware",
+            "displayToUser": false,
+            "group": "Appearance",
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "iconDensityAware",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "key": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "Key",
+            "displayToUser": false,
+            "group": "Data",
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "key",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "visible": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "Visible",
+            "displayToUser": true,
+            "group": "Behavior",
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "visible",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "textDirection": {
+            "defaultValue": "Inherit",
+            "deprecated": false,
+            "displayName": "Text Direction",
+            "displayToUser": true,
+            "group": "Misc",
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "textDirection",
+            "possibleValues": [
+              "LTR",
+              "RTL",
+              "Inherit"
+            ],
+            "type": "sap_ui_core_TextDirection"
+          },
+          "text": {
+            "defaultValue": "",
+            "deprecated": false,
+            "displayName": "Text",
+            "displayToUser": true,
+            "group": "Misc",
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "text",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "showAll": {
+            "defaultValue": false,
+            "deprecated": false,
+            "displayName": "ShowAll",
+            "displayToUser": true,
+            "group": "Misc",
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "showAll",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "iconColor": {
+            "defaultValue": "Default",
+            "deprecated": false,
+            "displayName": "Icon Color",
+            "displayToUser": true,
+            "group": "Appearance",
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "iconColor",
+            "possibleValues": [
+              "Default",
+              "Positive",
+              "Negative",
+              "Critical",
+              "Neutral"
+            ],
+            "type": "sap_ui_core_IconColor"
+          },
+          "icon": {
+            "defaultValue": "",
+            "deprecated": false,
+            "displayName": "Icon",
+            "displayToUser": true,
+            "group": "Misc",
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "icon",
+            "possibleValues": null,
+            "type": "sap_ui_core_URI"
+          },
+          "enabled": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "Enabled",
+            "displayToUser": true,
+            "group": "Misc",
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "enabled",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "design": {
+            "defaultValue": "Vertical",
+            "deprecated": false,
+            "displayName": "Design",
+            "displayToUser": true,
+            "group": "Appearance",
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "design",
+            "possibleValues": [
+              "Horizontal",
+              "Vertical"
+            ],
+            "type": "sap_m_IconTabFilterDesign"
+          },
+          "count": {
+            "defaultValue": "",
+            "deprecated": false,
+            "displayName": "Count",
+            "displayToUser": true,
+            "group": "Data",
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "count",
+            "possibleValues": null,
+            "type": "string"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_IconTabFilter",
+      "displayName": "Icon Tab",
+      "displayToUser": true,
+      "groupName": "Container",
+      "name": "sap_m_IconTabFilter"
+    },
+    "sap_m_IconTabBar": {
+      "additionalMetadata": {
+        "icon": "/resources/norman-ui-catalog-manager-client/assets/icon-tab-bar.svg",
+        "defaultProperty": null,
+        "aggregations": {
+          "items": {
+            "deprecated": false,
+            "displayName": "Items",
+            "displayToUser": true,
+            "isDataDriven": false,
+            "multiple": true,
+            "name": "items",
+            "renderAction": "",
+            "singularName": "item",
+            "types": [
+              "sap_m_IconTabFilter",
+              "sap_m_IconTabSeparator"
+            ],
+            "visibility": "public",
+            "defaultValue": [
+              {
+                "name": "sap_m_IconTabFilter",
+                "properties": {
+                  "icon": "sap-icon://hint",
+                  "iconColor": "Positive",
+                  "text": "Ok",
+                  "selectedKey": "Ok"
+                }
+              },
+              {
+                "name": "sap_m_IconTabSeparator"
+              },
+              {
+                "name": "sap_m_IconTabFilter",
+                "properties": {
+                  "icon": "sap-icon://attachment",
+                  "iconColor": "Neutral",
+                  "count": "3",
+                  "selectedKey": "Attachment"
+                }
+              },
+              {
+                "name": "sap_m_IconTabSeparator"
+              },
+              {
+                "name": "sap_m_IconTabFilter",
+                "properties": {
+                  "icon": "sap-icon://notes",
+                  "iconColor": "Negative",
+                  "selectedKey": "Notes"
+                }
+              }
+            ]
+          },
+          "content": {
+            "deprecated": false,
+            "displayName": "Content",
+            "displayToUser": true,
+            "isDataDriven": false,
+            "multiple": true,
+            "name": "content",
+            "renderAction": "",
+            "singularName": "content",
+            "types": [
+              "sap_m_Text",
+              "sap_m_List"
+            ],
+            "visibility": "public",
+            "defaultValue": [
+              {
+                "name": "sap_m_Text",
+                "properties": {
+                  "text": "Tab Bar Content goes here ..."
+                }
+              }
+            ]
+          }
+        },
+        "controlTemplate": "",
+        "defaultAggregation": "",
+        "deprecated": false,
+        "events": {
+          "select": {
+            "displayName": "onSelect",
+            "displayToUser": true,
+            "name": "select"
+          },
+          "expand": {
+            "displayName": "onExpand",
+            "displayToUser": true,
+            "name": "expand"
+          }
+        },
+        "isStructuralElement": false,
+        "parent": "sap_m_IconTabBar",
+        "properties": {
+          "visible": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "Visible",
+            "displayToUser": true,
+            "group": "Appearance",
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "visible",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "upperCase": {
+            "defaultValue": false,
+            "deprecated": false,
+            "displayName": "Icon Tab Text Upper Case",
+            "displayToUser": true,
+            "group": "Appearance",
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "upperCase",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "stretchContentHeight": {
+            "defaultValue": false,
+            "deprecated": false,
+            "displayName": "Stretch Content Height",
+            "displayToUser": true,
+            "group": "Appearance",
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "stretchContentHeight",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "selectedKey": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "Selected Key",
+            "displayToUser": true,
+            "group": "Data",
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "Selected Key",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "expanded": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "Expanded",
+            "displayToUser": true,
+            "group": "Misc",
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "expanded",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "expandable": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "Expandable",
+            "displayToUser": true,
+            "group": "Misc",
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "expandable",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "backgroundDesign": {
+            "defaultValue": "Solid",
+            "deprecated": false,
+            "displayName": "Background Design",
+            "displayToUser": true,
+            "group": "Appearance",
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "backgroundDesign",
+            "possibleValues": [
+              "Solid",
+              "Transparent",
+              "Translucent"
+            ],
+            "type": "sap_m_BackgroundDesign"
+          },
+          "applyContentPadding": {
+            "defaultValue": false,
+            "deprecated": false,
+            "displayName": "Apply Content Padding",
+            "displayToUser": true,
+            "group": "Appearance",
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "applyContentPadding",
+            "possibleValues": null,
+            "type": "boolean"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_IconTabBar",
+      "displayName": "Icon Tab Bar",
+      "displayToUser": true,
+      "groupName": "Container",
+      "name": "sap_m_IconTabBar"
+    },
+    "sap_ui_layout_form_FormElement": {
+      "name": "sap_ui_layout_form_FormElement",
+      "groupName": "Display",
+      "displayToUser": false,
+      "displayName": "Form Element",
+      "description": "sap_ui_layout_form_FormElement",
+      "additionalMetadata": {
+        "tagname": "",
+        "structuralType": "",
+        "readOnlyPropertyName": "na",
+        "properties": {
+          "visible": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "Visible",
+            "displayToUser": true,
+            "group": "Misc",
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "visible",
+            "possibleValues": null,
+            "type": "boolean"
+          }
+        },
+        "parent": "sap_ui_layout_form_FormElement",
+        "isStructuralElement": false,
+        "deprecated": false,
+        "defaultAggregation": "fields",
+        "controlTemplate": "",
+        "aggregations": {
+          "label": {
+            "deprecated": false,
+            "displayName": "Label",
+            "displayToUser": true,
+            "isDataDriven": false,
+            "multiple": false,
+            "name": "label",
+            "renderAction": "",
+            "types": [
+              "sap_m_Label"
+            ],
+            "visibility": "public",
+            "defaultValue": [
+              {
+                "name": "sap_m_Label",
+                "properties": {
+                  "text": "Label"
+                }
+              }
+            ]
+          },
+          "fields": {
+            "defaultValue": [
+              {
+                "name": "sap_m_Text",
+                "properties": {
+                  "text": "Field"
+                }
+              }
+            ],
+            "visibility": "public",
+            "types": [
+              "sap_m_Text"
+            ],
+            "singularName": "field",
+            "renderAction": "",
+            "name": "fields",
+            "multiple": true,
+            "isDataDriven": false,
+            "displayToUser": true,
+            "displayName": "Fields",
+            "deprecated": false
+          }
+        },
+        "defaultProperty": null,
+        "icon": ""
+      }
+    },
+    "sap_ui_layout_form_FormContainer": {
+      "additionalMetadata": {
+        "icon": "",
+        "defaultProperty": null,
+        "aggregations": {
+          "formElements": {
+            "deprecated": false,
+            "displayName": "Form Elements",
+            "displayToUser": true,
+            "isDataDriven": false,
+            "multiple": true,
+            "name": "formElements",
+            "renderAction": "",
+            "singularName": "formElement",
+            "types": [
+              "sap_ui_layout_form_FormElement"
+            ],
+            "visibility": "public",
+            "defaultValue": [
+              {
+                "name": "sap_ui_layout_form_FormElement"
+              },
+              {
+                "name": "sap_ui_layout_form_FormElement"
+              },
+              {
+                "name": "sap_ui_layout_form_FormElement"
+              },
+              {
+                "name": "sap_ui_layout_form_FormElement"
+              }
+            ]
+          }
+        },
+        "controlTemplate": "",
+        "defaultAggregation": "formElements",
+        "deprecated": false,
+        "isStructuralElement": false,
+        "parent": "sap_ui_layout_form_FormContainer",
+        "properties": {
+          "visible": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "Visible",
+            "displayToUser": true,
+            "group": "Misc",
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "visible",
+            "possibleValues": null,
+            "type": "boolean"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_ui_layout_form_FormContainer",
+      "displayName": "Form Container",
+      "displayToUser": false,
+      "groupName": "Display",
+      "name": "sap_ui_layout_form_FormContainer"
+    },
+    "sap_ui_layout_form_Form": {
+      "additionalMetadata": {
+        "icon": "/resources/norman-ui-catalog-manager-client/assets/form.svg",
+        "defaultProperty": null,
+        "aggregations": {
+          "title": {
+            "defaultValue": [
+              {
+                "properties": {
+                  "text": "Form Title"
+                },
+                "name": "sap_ui_core_Title"
+              }
+            ],
+            "deprecated": false,
+            "displayName": "Title",
+            "displayToUser": true,
+            "isDataDriven": false,
+            "multiple": false,
+            "name": "title",
+            "renderAction": "",
+            "types": [
+              "string",
+              "sap_ui_core_Title"
+            ],
+            "visibility": "public"
+          },
+          "layout": {
+            "defaultValue": [
+              {
+                "name": "sap_ui_layout_form_ResponsiveGridLayout"
+              }
+            ],
+            "deprecated": false,
+            "displayName": "Layout",
+            "displayToUser": true,
+            "isDataDriven": false,
+            "multiple": false,
+            "name": "layout",
+            "renderAction": "",
+            "types": [
+              "sap_ui_layout_form_ResponsiveGridLayout"
+            ],
+            "visibility": "public"
+          },
+          "formContainers": {
+            "defaultValue": [
+              {
+                "name": "sap_ui_layout_form_FormContainer"
+              }
+            ],
+            "deprecated": false,
+            "displayName": "Form Containers",
+            "displayToUser": true,
+            "isDataDriven": false,
+            "multiple": true,
+            "name": "formContainers",
+            "renderAction": "",
+            "singularName": "formContainer",
+            "types": [
+              "sap_ui_layout_form_FormContainer"
+            ],
+            "visibility": "public"
+          }
+        },
+        "controlTemplate": "",
+        "defaultAggregation": "formContainers",
+        "deprecated": false,
+        "isStructuralElement": false,
+        "parent": "sap_ui_layout_form_Form",
+        "properties": {
+          "width": {
+            "defaultValue": "880px",
+            "deprecated": false,
+            "displayName": "Width",
+            "displayToUser": true,
+            "group": "Dimension",
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "width",
+            "possibleValues": null,
+            "type": "sap_ui_core_CSSSize"
+          },
+          "visible": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "Visible",
+            "displayToUser": true,
+            "group": "Appearance",
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "visible",
+            "possibleValues": null,
+            "type": "boolean"
+          }
+        },
+        "readOnlyPropertyName": "editable",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_ui_layout_form_Form",
+      "displayName": "Form",
+      "displayToUser": true,
+      "groupName": "Pattern",
+      "name": "sap_ui_layout_form_Form"
+    },
+    "sap_norman_Hotspot": {
+      "additionalMetadata": {
+        "icon": "/resources/norman-ui-catalog-manager-client/assets/hotspot.svg",
+        "controlTemplate": "",
+        "defaultAggregation": "",
+        "deprecated": false,
+        "events": {
+          "press": {
+            "displayName": "Press",
+            "displayToUser": true,
+            "name": "press"
+          }
+        },
+        "isStructuralElement": false,
+        "parent": "sap_ui_core_Icon",
+        "properties": {
+          "backgroundColor": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "BackgroundColor",
+            "displayToUser": false,
+            "group": "Appearance",
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "backgroundColor",
+            "possibleValues": null,
+            "type": "sap_ui_core_CSSColor"
+          },
+          "height": {
+            "defaultValue": "100px",
+            "deprecated": false,
+            "displayName": "Height",
+            "displayToUser": true,
+            "group": "Dimension",
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "height",
+            "possibleValues": null,
+            "type": "sap_ui_core_CSSSize"
+          },
+          "width": {
+            "defaultValue": "100px",
+            "deprecated": false,
+            "displayName": "Width",
+            "displayToUser": true,
+            "group": "Dimension",
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "width",
+            "possibleValues": null,
+            "type": "sap_ui_core_CSSSize"
+          }
+        },
+        "designProperties": {
+          "backgroundColor": {
+            "defaultValue": "rgba(0,255,0,0.1)",
+            "displayName": "BackgroundColor",
+            "displayToUser": true,
+            "isEditable": true,
+            "name": "backgroundColor",
+            "possibleValues": null,
+            "type": "CSSColor"
+          },
+          "lockAspectRatio": {
+            "defaultValue": false,
+            "displayName": "LockAspectRatio",
+            "displayToUser": true,
+            "isEditable": true,
+            "name": "lockAspectRatio",
+            "possibleValues": null,
+            "type": "boolean"
+          }
+        },
+        "container": "sap_m_Page",
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_ui_core_Icon",
+      "displayName": "Hotspot",
+      "displayToUser": true,
+      "groupName": "Action",
+      "name": "sap_norman_Hotspot"
+    },
+    "sap_m_Text": {
+      "name": "sap_m_Text",
+      "groupName": "Display",
+      "displayToUser": true,
+      "displayName": "Text",
+      "description": "sap_m_Text",
+      "additionalMetadata": {
+        "icon": "/resources/norman-ui-catalog-manager-client/assets/text.svg",
+        "defaultProperty": null,
+        "tagname": "",
+        "structuralType": "",
+        "readOnlyPropertyName": "na",
+        "properties": {
+          "wrapping": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "wrapping",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "Wrapping",
+            "deprecated": false,
+            "defaultValue": true
+          },
+          "width": {
+            "type": "CSSSize",
+            "possibleValues": null,
+            "name": "width",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "Width",
+            "deprecated": false,
+            "defaultValue": "300px"
+          },
+          "textDirection": {
+            "type": "sap_ui_core_TextDirection",
+            "possibleValues": [
+              "LTR",
+              "RTL",
+              "Inherit"
+            ],
+            "name": "textDirection",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "TextDirection",
+            "deprecated": false,
+            "defaultValue": "Inherit"
+          },
+          "textAlign": {
+            "type": "sap_ui_core_TextAlign",
+            "possibleValues": [
+              "Begin",
+              "End",
+              "Left",
+              "Right",
+              "Center",
+              "Initial"
+            ],
+            "name": "textAlign",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "TextAlign",
+            "deprecated": false,
+            "defaultValue": "Begin"
+          },
+          "text": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "text",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "Text",
+            "deprecated": false,
+            "defaultValue": "Text",
+            "bindable": "bindable"
+          },
+          "maxLines": {
+            "type": "int",
+            "possibleValues": null,
+            "name": "maxLines",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "MaxLines",
+            "deprecated": false,
+            "defaultValue": 1
+          }
+        },
+        "parent": "sap_m_Text",
+        "isStructuralElement": false,
+        "deprecated": false,
+        "defaultAggregation": "",
+        "controlTemplate": ""
+      }
+    },
+    "sap_m_Link": {
+      "name": "sap_m_Link",
+      "groupName": "Action",
+      "displayToUser": true,
+      "displayName": "Link",
+      "description": "sap_m_Link",
+      "additionalMetadata": {
+        "icon": "/resources/norman-ui-catalog-manager-client/assets/link.svg",
+        "defaultProperty": null,
+        "tagname": "",
+        "structuralType": "",
+        "readOnlyPropertyName": "na",
+        "properties": {
+          "wrapping": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "wrapping",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "Wrapping",
+            "deprecated": false,
+            "defaultValue": false
+          },
+          "width": {
+            "type": "CSSSize",
+            "possibleValues": null,
+            "name": "width",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "",
+            "displayToUser": true,
+            "displayName": "Width",
+            "deprecated": false,
+            "defaultValue": "200px"
+          },
+          "text": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "text",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "",
+            "displayToUser": true,
+            "displayName": "Text",
+            "deprecated": false,
+            "defaultValue": "Linked Text"
+          },
+          "target": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "target",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "Target",
+            "deprecated": false,
+            "defaultValue": null
+          },
+          "subtle": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "subtle",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "Subtle",
+            "deprecated": false,
+            "defaultValue": false
+          },
+          "href": {
+            "type": "URI",
+            "possibleValues": null,
+            "name": "href",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "Href",
+            "deprecated": false,
+            "defaultValue": null
+          },
+          "enabled": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "enabled",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "Enabled",
+            "deprecated": false,
+            "defaultValue": true
+          },
+          "emphasized": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "emphasized",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "Emphasized",
+            "deprecated": false,
+            "defaultValue": false
+          }
+        },
+        "parent": "sap_m_Link",
+        "isStructuralElement": false,
+        "events": {
+          "press": {
+            "name": "press",
+            "displayToUser": true,
+            "displayName": "Press"
+          }
+        },
+        "deprecated": false,
+        "defaultAggregation": "",
+        "controlTemplate": ""
+      }
+    },
+    "sap_m_Label": {
+      "name": "sap_m_Label",
+      "groupName": "Display",
+      "displayToUser": true,
+      "displayName": "Label",
+      "description": "sap_m_Label",
+      "additionalMetadata": {
+        "icon": "/resources/norman-ui-catalog-manager-client/assets/label.svg",
+        "defaultProperty": null,
+        "tagname": "",
+        "structuralType": "",
+        "readOnlyPropertyName": "na",
+        "properties": {
+          "width": {
+            "type": "CSSSize",
+            "possibleValues": null,
+            "name": "width",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "Width",
+            "deprecated": false,
+            "defaultValue": ""
+          },
+          "textDirection": {
+            "type": "sap_ui_core_TextDirection",
+            "possibleValues": [
+              "LTR",
+              "RTL",
+              "Inherit"
+            ],
+            "name": "textDirection",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "TextDirection",
+            "deprecated": false,
+            "defaultValue": "Inherit"
+          },
+          "textAlign": {
+            "type": "sap_ui_core_TextAlign",
+            "possibleValues": [
+              "Begin",
+              "End",
+              "Left",
+              "Right",
+              "Center",
+              "Initial"
+            ],
+            "name": "textAlign",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "TextAlign",
+            "deprecated": false,
+            "defaultValue": "Begin"
+          },
+          "text": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "text",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "Text",
+            "deprecated": false,
+            "defaultValue": "Label"
+          },
+          "required": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "required",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "Required",
+            "deprecated": false,
+            "defaultValue": false
+          },
+          "design": {
+            "type": "sap_m_LabelDesign",
+            "possibleValues": [
+              "Bold",
+              "Standard"
+            ],
+            "name": "design",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "Design",
+            "deprecated": false,
+            "defaultValue": "Standard"
+          }
+        },
+        "parent": "sap_m_Label",
+        "isStructuralElement": false,
+        "deprecated": false,
+        "defaultAggregation": "",
+        "controlTemplate": "",
+        "associations": {
+          "labelFor": {
+            "type": "sap_ui_core_Control",
+            "name": "labelFor",
+            "multiple": false,
+            "isDataDriven": false
+          }
+        }
+      }
+    },
+    "sap_m_Input": {
+      "name": "sap_m_Input",
+      "groupName": "User Input",
+      "displayToUser": true,
+      "displayName": "Input",
+      "description": "sap_m_Input",
+      "additionalMetadata": {
+        "icon": "/resources/norman-ui-catalog-manager-client/assets/input.svg",
+        "defaultProperty": null,
+        "tagname": "",
+        "structuralType": "",
+        "readOnlyPropertyName": "na",
+        "properties": {
+          "valueLiveUpdate": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "valueLiveUpdate",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "ValueLiveUpdate",
+            "deprecated": false,
+            "defaultValue": false
+          },
+          "valueHelpOnly": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "valueHelpOnly",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "ValueHelpOnly",
+            "deprecated": false,
+            "defaultValue": false
+          },
+          "type": {
+            "type": "sap_m_InputType",
+            "possibleValues": [
+              "Text",
+              "Date",
+              "Datetime",
+              "DatetimeLocale",
+              "Email",
+              "Month",
+              "Number",
+              "Tel",
+              "Time",
+              "Url",
+              "Week",
+              "Password"
+            ],
+            "name": "type",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "Type",
+            "deprecated": false,
+            "defaultValue": "Text"
+          },
+          "startSuggestion": {
+            "type": "int",
+            "possibleValues": null,
+            "name": "startSuggestion",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "StartSuggestion",
+            "deprecated": false,
+            "defaultValue": 1
+          },
+          "showValueHelp": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "showValueHelp",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "ShowValueHelp",
+            "deprecated": false,
+            "defaultValue": false
+          },
+          "showTableSuggestionValueHelp": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "showTableSuggestionValueHelp",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "ShowTableSuggestionValueHelp",
+            "deprecated": false,
+            "defaultValue": true
+          },
+          "showSuggestion": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "showSuggestion",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "ShowSuggestion",
+            "deprecated": false,
+            "defaultValue": false
+          },
+          "maxSuggestionWidth": {
+            "type": "CSSSize",
+            "possibleValues": null,
+            "name": "maxSuggestionWidth",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "MaxSuggestionWidth",
+            "deprecated": false,
+            "defaultValue": null
+          },
+          "maxLength": {
+            "type": "int",
+            "possibleValues": null,
+            "name": "maxLength",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "MaxLength",
+            "deprecated": false,
+            "defaultValue": 0
+          },
+          "filterSuggests": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "filterSuggests",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "FilterSuggests",
+            "deprecated": false,
+            "defaultValue": true
+          },
+          "fieldWidth": {
+            "type": "CSSSize",
+            "possibleValues": null,
+            "name": "fieldWidth",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "FieldWidth",
+            "deprecated": false,
+            "defaultValue": "50%"
+          },
+          "description": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "description",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "Description",
+            "deprecated": false,
+            "defaultValue": null
+          },
+          "dateFormat": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "dateFormat",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "DateFormat",
+            "deprecated": true,
+            "defaultValue": "YYYY-MM-dd"
+          }
+        },
+        "parent": "sap_m_Input",
+        "isStructuralElement": false,
+        "events": {
+          "valueHelpRequest": {
+            "name": "valueHelpRequest",
+            "displayToUser": true,
+            "displayName": "ValueHelpRequest"
+          },
+          "suggestionItemSelected": {
+            "name": "suggestionItemSelected",
+            "displayToUser": true,
+            "displayName": "SuggestionItemSelected"
+          },
+          "suggest": {
+            "name": "suggest",
+            "displayToUser": true,
+            "displayName": "Suggest"
+          },
+          "liveChange": {
+            "name": "liveChange",
+            "displayToUser": true,
+            "displayName": "LiveChange"
+          }
+        },
+        "deprecated": false,
+        "defaultAggregation": "suggestionItems",
+        "controlTemplate": "",
+        "aggregations": {
+          "suggestionRows": {
+            "visibility": "public",
+            "type": "sap_m_ColumnListItem",
+            "singularName": "suggestionRow",
+            "renderAction": "",
+            "name": "suggestionRows",
+            "multiple": true,
+            "isDataDriven": false,
+            "displayToUser": true,
+            "displayName": "SuggestionRows",
+            "deprecated": false,
+            "bindable": "bindable"
+          },
+          "suggestionItems": {
+            "visibility": "public",
+            "type": "sap_ui_core_Item",
+            "singularName": "suggestionItem",
+            "renderAction": "",
+            "name": "suggestionItems",
+            "multiple": true,
+            "isDataDriven": false,
+            "displayToUser": true,
+            "displayName": "SuggestionItems",
+            "deprecated": false
+          },
+          "suggestionColumns": {
+            "visibility": "public",
+            "type": "sap_m_Column",
+            "singularName": "suggestionColumn",
+            "renderAction": "",
+            "name": "suggestionColumns",
+            "multiple": true,
+            "isDataDriven": false,
+            "displayToUser": true,
+            "displayName": "SuggestionColumns",
+            "deprecated": false,
+            "bindable": "bindable"
+          }
+        }
+      }
+    },
+    "sap_m_Image": {
+      "name": "sap_m_Image",
+      "groupName": "Display",
+      "displayToUser": true,
+      "displayName": "Image",
+      "description": "sap_m_Image",
+      "additionalMetadata": {
+        "icon": "/resources/norman-ui-catalog-manager-client/assets/image.svg",
+        "defaultProperty": null,
+        "tagname": "",
+        "structuralType": "",
+        "readOnlyPropertyName": "na",
+        "properties": {
+          "width": {
+            "type": "CSSSize",
+            "possibleValues": null,
+            "name": "width",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "Width",
+            "deprecated": false,
+            "defaultValue": null
+          },
+          "useMap": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "useMap",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "UseMap",
+            "deprecated": false,
+            "defaultValue": null
+          },
+          "src": {
+            "type": "URI",
+            "possibleValues": null,
+            "name": "src",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "Src",
+            "deprecated": false,
+            "defaultValue": " /resources/norman-common-client/assets/icon-norman.svg"
+          },
+          "height": {
+            "type": "CSSSize",
+            "possibleValues": null,
+            "name": "height",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "Height",
+            "deprecated": false,
+            "defaultValue": "auto"
+          },
+          "densityAware": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "densityAware",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "DensityAware",
+            "deprecated": false,
+            "defaultValue": false
+          },
+          "decorative": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "decorative",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "Decorative",
+            "deprecated": false,
+            "defaultValue": true
+          },
+          "alt": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "alt",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "Alt",
+            "deprecated": false,
+            "defaultValue": null
+          },
+          "activeSrc": {
+            "type": "URI",
+            "possibleValues": null,
+            "name": "activeSrc",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "ActiveSrc",
+            "deprecated": false,
+            "defaultValue": ""
+          }
+        },
+        "designProperties": {
+          "lockAspectRatio": {
+            "defaultValue": true,
+            "displayName": "LockAspectRatio",
+            "displayToUser": true,
+            "isEditable": true,
+            "name": "lockAspectRatio",
+            "possibleValues": null,
+            "type": "boolean"
+          }
+        },
+        "parent": "sap_m_Image",
+        "isStructuralElement": false,
+        "events": {
+          "tap": {
+            "name": "tap",
+            "displayToUser": true,
+            "displayName": "Tap"
+          },
+          "press": {
+            "name": "press",
+            "displayToUser": true,
+            "displayName": "Press"
+          }
+        },
+        "deprecated": false,
+        "defaultAggregation": "",
+        "controlTemplate": ""
+      }
+    },
+    "sap_m_DateTimeInput": {
+      "name": "sap_m_DateTimeInput",
+      "groupName": "User Input",
+      "displayToUser": true,
+      "displayName": "Date Time Input",
+      "description": "sap_m_DateTimeInput",
+      "additionalMetadata": {
+        "icon": "/resources/norman-ui-catalog-manager-client/assets/date-time-input.svg",
+        "defaultProperty": null,
+        "tagname": "",
+        "structuralType": "",
+        "readOnlyPropertyName": "na",
+        "properties": {
+          "valueFormat": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "valueFormat",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "ValueFormat",
+            "deprecated": false,
+            "defaultValue": null
+          },
+          "type": {
+            "type": "sap_m_DateTimeInputType",
+            "possibleValues": [
+              "Date",
+              "DateTime",
+              "Time"
+            ],
+            "name": "type",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "Type",
+            "deprecated": false,
+            "defaultValue": "Date"
+          },
+          "displayFormat": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "displayFormat",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "DisplayFormat",
+            "deprecated": false,
+            "defaultValue": null
+          },
+          "dateValue": {
+            "type": "object",
+            "possibleValues": null,
+            "name": "dateValue",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "DateValue",
+            "deprecated": false,
+            "defaultValue": null
+          }
+        },
+        "parent": "sap_m_DateTimeInput",
+        "isStructuralElement": false,
+        "events": {
+          "change": {
+            "name": "change",
+            "displayToUser": true,
+            "displayName": "Change"
+          }
+        },
+        "deprecated": false,
+        "defaultAggregation": "",
+        "controlTemplate": ""
+      }
+    },
+    "sap_m_DatePicker": {
+      "name": "sap_m_DatePicker",
+      "groupName": "User Input",
+      "displayToUser": true,
+      "displayName": "Date Picker",
+      "description": "sap_m_DatePicker",
+      "additionalMetadata": {
+        "icon": "/resources/norman-ui-catalog-manager-client/assets/date-picker.svg",
+        "defaultProperty": null,
+        "tagname": "",
+        "structuralType": "",
+        "readOnlyPropertyName": "na",
+        "properties": {
+          "valueFormat": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "valueFormat",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "ValueFormat",
+            "deprecated": false,
+            "defaultValue": null
+          },
+          "displayFormat": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "displayFormat",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "DisplayFormat",
+            "deprecated": false,
+            "defaultValue": null
+          },
+          "dateValue": {
+            "type": "object",
+            "possibleValues": null,
+            "name": "dateValue",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "DateValue",
+            "deprecated": false,
+            "defaultValue": null
+          }
+        },
+        "parent": "sap_m_DatePicker",
+        "isStructuralElement": false,
+        "deprecated": false,
+        "defaultAggregation": "",
+        "controlTemplate": ""
+      }
+    },
+    "sap_m_ComboBox": {
+      "name": "sap_m_ComboBox",
+      "groupName": "User Input",
+      "displayToUser": true,
+      "displayName": "Combo Box",
+      "description": "sap_m_ComboBox",
+      "additionalMetadata": {
+        "icon": "/resources/norman-ui-catalog-manager-client/assets/combo-box.svg",
+        "defaultProperty": null,
+        "tagname": "",
+        "structuralType": "",
+        "readOnlyPropertyName": "na",
+        "properties": {
+          "selectedKey": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "selectedKey",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "SelectedKey",
+            "deprecated": false,
+            "defaultValue": null
+          },
+          "selectedItemId": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "selectedItemId",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "SelectedItemId",
+            "deprecated": false,
+            "defaultValue": null
+          }
+        },
+        "parent": "sap_m_ComboBox",
+        "isStructuralElement": false,
+        "events": {
+          "selectionChange": {
+            "name": "selectionChange",
+            "displayToUser": true,
+            "displayName": "SelectionChange"
+          }
+        },
+        "deprecated": false,
+        "defaultAggregation": "items",
+        "controlTemplate": "",
+        "associations": {
+          "selectedItem": {
+            "type": "sap_ui_core_Item",
+            "name": "selectedItem",
+            "multiple": false,
+            "isDataDriven": false
+          }
+        }
+      }
+    },
+    "sap_m_CheckBox": {
+      "name": "sap_m_CheckBox",
+      "groupName": "User Input",
+      "displayToUser": true,
+      "displayName": "Check Box",
+      "description": "sap_m_CheckBox",
+      "additionalMetadata": {
+        "icon": "/resources/norman-ui-catalog-manager-client/assets/check-box.svg",
+        "defaultProperty": null,
+        "tagname": "",
+        "structuralType": "",
+        "readOnlyPropertyName": "editable",
+        "properties": {
+          "width": {
+            "type": "CSSSize",
+            "possibleValues": null,
+            "name": "width",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "Width",
+            "deprecated": false,
+            "defaultValue": "150px"
+          },
+          "textDirection": {
+            "type": "string",
+            "possibleValues": [
+              "LTR",
+              "RTL",
+              "Inherit"
+            ],
+            "name": "textDirection",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "TextDirection",
+            "deprecated": false,
+            "defaultValue": "Inherit"
+          },
+          "text": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "text",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "",
+            "displayToUser": true,
+            "displayName": "Text",
+            "deprecated": false,
+            "defaultValue": "Checkbox Text"
+          },
+          "name": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "name",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "Name",
+            "deprecated": false,
+            "defaultValue": "Checkbox Name"
+          },
+          "enabled": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "enabled",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "Enabled",
+            "deprecated": false,
+            "defaultValue": true
+          },
+          "editable": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "editable",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "Editable",
+            "deprecated": false,
+            "defaultValue": true
+          }
+        },
+        "parent": "sap_m_CheckBox",
+        "isStructuralElement": false,
+        "events": {
+          "select": {
+            "name": "select",
+            "displayToUser": true,
+            "displayName": "Select"
+          }
+        },
+        "deprecated": false,
+        "defaultAggregation": "",
+        "controlTemplate": ""
+      }
+    },
+    "sap_m_ObjectAttribute": {
+      "additionalMetadata": {
+        "icon": "/resources/norman-ui-catalog-manager-client/assets/item-attribute.svg",
+        "defaultProperty": null,
+        "controlTemplate": "",
+        "defaultAggregation": "",
+        "deprecated": false,
+        "events": {
+          "press": {
+            "displayName": "Press",
+            "displayToUser": true,
+            "name": "press"
+          }
+        },
+        "isStructuralElement": false,
+        "parent": "sap_m_ObjectAttribute",
+        "properties": {
+          "active": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "Active",
+            "displayToUser": true,
+            "group": "Misc",
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "active",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "text": {
+            "defaultValue": "Item Attribute",
+            "deprecated": false,
+            "displayName": "Text",
+            "displayToUser": true,
+            "group": "Misc",
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "text",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "title": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "Title",
+            "displayToUser": true,
+            "group": "Misc",
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "title",
+            "possibleValues": null,
+            "type": "string"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_ObjectAttribute",
+      "displayName": "Item Attribute",
+      "displayToUser": true,
+      "groupName": "Display",
+      "name": "sap_m_ObjectAttribute"
+    },
+    "sap_m_Button": {
+      "name": "sap_m_Button",
+      "groupName": "Action",
+      "displayToUser": true,
+      "displayName": "Button",
+      "description": "sap_m_Button",
+      "additionalMetadata": {
+        "icon": "/resources/norman-ui-catalog-manager-client/assets/button.svg",
+        "defaultProperty": "text",
+        "tagname": "",
+        "structuralType": "",
+        "readOnlyPropertyName": "na",
+        "properties": {
+          "width": {
+            "type": "CSSSize",
+            "name": "width",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "Width",
+            "deprecated": false,
+            "defaultValue": "auto"
+          },
+          "type": {
+            "type": "sap_m_ButtonType",
+            "possibleValues": [
+              "Default",
+              "Back",
+              "Accept",
+              "Reject",
+              "Transparent",
+              "Up",
+              "Unstyled",
+              "Emphasized"
+            ],
+            "name": "type",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "Type",
+            "deprecated": false,
+            "defaultValue": "Default"
+          },
+          "text": {
+            "type": "string",
+            "name": "text",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "Text",
+            "deprecated": false,
+            "defaultValue": "Button"
+          },
+          "iconFirst": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "iconFirst",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "Show icon first",
+            "deprecated": false,
+            "defaultValue": false
+          },
+          "iconDensityAware": {
+            "type": "boolean",
+            "name": "iconDensityAware",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": false,
+            "displayName": "IconDensityAware",
+            "deprecated": false,
+            "defaultValue": false
+          },
+          "icon": {
+            "type": "URI",
+            "possibleValues": null,
+            "name": "icon",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "Icon",
+            "deprecated": false,
+            "defaultValue": null
+          },
+          "enabled": {
+            "type": "boolean",
+            "name": "enabled",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "Enabled",
+            "deprecated": false,
+            "defaultValue": true
+          }
+        },
+        "parent": "sap_m_Button",
+        "isStructuralElement": false,
+        "events": {
+          "press": {
+            "name": "press",
+            "displayToUser": true,
+            "displayName": "OnClick"
+          }
+        },
+        "deprecated": false,
+        "defaultAggregation": "",
+        "controlTemplate": ""
+      }
+    },
+    "sap_m_ObjectStatus": {
+      "name": "sap_m_ObjectStatus",
+      "groupName": "Display",
+      "displayToUser": true,
+      "displayName": "Item Status",
+      "description": "sap_m_ObjectStatus",
+      "additionalMetadata": {
+        "icon": "/resources/norman-ui-catalog-manager-client/assets/item-status.svg",
+        "defaultProperty": null,
+        "tagname": "",
+        "structuralType": "",
+        "readOnlyPropertyName": "na",
+        "properties": {
+          "icon": {
+            "type": "sap_ui_core_URI",
+            "possibleValues": null,
+            "name": "icon",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "Icon",
+            "deprecated": false,
+            "defaultValue": null
+          },
+          "state": {
+            "type": "sap_ui_core_ValueState",
+            "possibleValues": [
+              "Error",
+              "Warning",
+              "Success",
+              "None"
+            ],
+            "name": "state",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "State",
+            "deprecated": false,
+            "defaultValue": "None"
+          },
+          "title": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "title",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "Title",
+            "deprecated": false,
+            "defaultValue": null
+          },
+          "text": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "text",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "Text",
+            "deprecated": false,
+            "defaultValue": "Item Status"
+          },
+          "iconDensityAware": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "iconDensityAware",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Appearance",
+            "displayToUser": true,
+            "displayName": "IconDensityAware",
+            "deprecated": false,
+            "defaultValue": true
+          }
+        },
+        "parent": "sap_m_ObjectStatus",
+        "isStructuralElement": false,
+        "deprecated": false,
+        "defaultAggregation": "",
+        "controlTemplate": ""
+      }
+    },
+    "sap_ui_unified_Calendar": {
+      "name": "sap_ui_unified_Calendar",
+      "groupName": "User Input",
+      "displayToUser": true,
+      "displayName": "Calendar",
+      "description": "sap_ui_unified_Calendar",
+      "additionalMetadata": {
+        "icon": "/resources/norman-ui-catalog-manager-client/assets/calendar.svg",
+        "defaultProperty": null,
+        "tagname": "",
+        "structuralType": "",
+        "readOnlyPropertyName": "na",
+        "properties": {
+          "intervalSelection": {
+            "type": "boolean",
+            "name": "intervalSelection",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "Interval selection",
+            "deprecated": false,
+            "defaultValue": false
+          },
+          "singleSelection": {
+            "type": "boolean",
+            "name": "singleSelection",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "Single selection",
+            "deprecated": false,
+            "defaultValue": true
+          },
+          "visible": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "visible",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Appearance",
+            "displayToUser": true,
+            "displayName": "Visible",
+            "deprecated": false,
+            "defaultValue": true
+          }
+        },
+        "parent": "sap_ui_unified_Calendar",
+        "isStructuralElement": false,
+        "events": {
+          "cancel": {
+            "name": "cancel",
+            "displayToUser": true,
+            "displayName": "Cancel"
+          },
+          "select": {
+            "name": "select",
+            "displayToUser": true,
+            "displayName": "Select"
+          }
+        },
+        "deprecated": false,
+        "defaultAggregation": "",
+        "controlTemplate": "",
+        "aggregations": {
+          "selectedDates": {
+            "visibility": "public",
+            "types": [
+              "sap_ui_unified_DateRange"
+            ],
+            "singularName": "selectedDate",
+            "renderAction": "",
+            "name": "selectedDates",
+            "multiple": true,
+            "isDataDriven": false,
+            "displayToUser": true,
+            "displayName": "Selected dates",
+            "deprecated": false
+          },
+          "specialDates": {
+            "visibility": "public",
+            "types": [
+              "sap_ui_unified_DateTypeRange"
+            ],
+            "singularName": "specialDate",
+            "renderAction": "",
+            "name": "specialDates",
+            "multiple": true,
+            "isDataDriven": false,
+            "displayToUser": true,
+            "displayName": "Special dates",
+            "deprecated": false
+          }
+        }
+      }
+    },
+    "sap_m_SearchField": {
+      "additionalMetadata": {
+        "icon": "",
+        "defaultProperty": null,
+        "controlTemplate": "",
+        "defaultAggregation": "",
+        "deprecated": false,
+        "events": {
+          "search": {
+            "displayName": "Search",
+            "displayToUser": true,
+            "name": "search"
+          },
+          "liveChange": {
+            "displayName": "LiveChange",
+            "displayToUser": true,
+            "name": "liveChange"
+          }
+        },
+        "isStructuralElement": false,
+        "parent": "sap_m_SearchField",
+        "properties": {
+          "width": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "Width",
+            "displayToUser": true,
+            "group": "Appearance",
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "width",
+            "possibleValues": null,
+            "type": "sap_ui_core_CSSSize"
+          },
+          "visible": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "Visible",
+            "displayToUser": true,
+            "group": "Appearance",
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "visible",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "value": {
+            "bindable": "bindable",
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "Value",
+            "displayToUser": true,
+            "group": "Data",
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "value",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "showSearchButton": {
+            "defaultValue": true,
+            "deprecated": false,
+            "displayName": "ShowSearchButton",
+            "displayToUser": true,
+            "group": "Behavior",
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "showSearchButton",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "placeholder": {
+            "defaultValue": null,
+            "deprecated": false,
+            "displayName": "Placeholder",
+            "displayToUser": true,
+            "group": "Misc",
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "placeholder",
+            "possibleValues": null,
+            "type": "string"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_SearchField",
+      "displayName": "Search Field",
+      "displayToUser": false,
+      "groupName": "User Input",
+      "name": "sap_m_SearchField"
+    },
+    "sap_m_ObjectListItem": {
+      "name": "sap_m_ObjectListItem",
+      "groupName": "List",
+      "displayToUser": true,
+      "displayName": "List Item",
+      "description": "sap_m_ObjectListItem",
+      "additionalMetadata": {
+        "icon": "/resources/norman-ui-catalog-manager-client/assets/list-item.svg",
+        "defaultProperty": null,
+        "tagname": "",
+        "structuralType": "",
+        "readOnlyPropertyName": "na",
+        "properties": {
+          "title": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "title",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "Title",
+            "deprecated": false,
+            "defaultValue": "Title"
+          },
+          "numberUnit": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "numberUnit",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "Number unit",
+            "deprecated": false,
+            "defaultValue": "USD"
+          },
+          "numberState": {
+            "type": "sap_ui_core_ValueState",
+            "possibleValues": [
+              "Error",
+              "Warning",
+              "Success",
+              "None"
+            ],
+            "name": "numberState",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "Number state",
+            "deprecated": false,
+            "defaultValue": "Success"
+          },
+          "number": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "number",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "Number",
+            "deprecated": false,
+            "defaultValue": "1,000"
+          },
+          "intro": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "intro",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "Intro",
+            "deprecated": false,
+            "defaultValue": "Intro."
+          },
+          "icon": {
+            "type": "sap_ui_core_URI",
+            "possibleValues": null,
+            "name": "icon",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "Icon",
+            "deprecated": false,
+            "defaultValue": null
+          },
+          "markFlagged": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "markFlagged",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": false,
+            "displayName": "MarkFlagged",
+            "deprecated": false,
+            "defaultValue": null
+          },
+          "markFavorite": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "markFavorite",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": false,
+            "displayName": "MarkFavorite",
+            "deprecated": false,
+            "defaultValue": null
+          },
+          "showMarkers": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "showMarkers",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": false,
+            "displayName": "ShowMarkers",
+            "deprecated": false,
+            "defaultValue": false
+          },
+          "type": {
+            "type": "sap_m_ListType",
+            "possibleValues": [
+              "Inactive",
+              "Detail",
+              "Navigation",
+              "Active",
+              "DetailAndActive"
+            ],
+            "name": "type",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "Type",
+            "deprecated": false,
+            "defaultValue": "Active"
+          },
+          "unread": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "unread",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": false,
+            "displayName": "Unread",
+            "deprecated": false,
+            "defaultValue": false
+          }
+        },
+        "parent": "sap_m_ObjectListItem",
+        "isStructuralElement": false,
+        "deprecated": false,
+        "defaultAggregation": "attributes",
+        "controlTemplate": "",
+        "aggregations": {
+          "secondStatus": {
+            "defaultValue": [
+              {
+                "properties": {
+                  "text": "Status 2"
+                },
+                "name": "sap_m_ObjectStatus"
+              }
+            ],
+            "visibility": "public",
+            "types": [
+              "sap_m_ObjectStatus"
+            ],
+            "renderAction": "",
+            "name": "secondStatus",
+            "multiple": false,
+            "isDataDriven": false,
+            "displayToUser": true,
+            "displayName": "SecondStatus",
+            "deprecated": false
+          },
+          "firstStatus": {
+            "defaultValue": [
+              {
+                "properties": {
+                  "text": "Status 1"
+                },
+                "name": "sap_m_ObjectStatus"
+              }
+            ],
+            "visibility": "public",
+            "types": [
+              "sap_m_ObjectStatus"
+            ],
+            "renderAction": "",
+            "name": "firstStatus",
+            "multiple": false,
+            "isDataDriven": false,
+            "displayToUser": true,
+            "displayName": "FirstStatus",
+            "deprecated": false
+          },
+          "attributes": {
+            "defaultValue": [
+              {
+                "properties": {
+                  "text": "Attribute 1"
+                },
+                "name": "sap_m_ObjectAttribute"
+              },
+              {
+                "properties": {
+                  "text": "Attribute 2"
+                },
+                "name": "sap_m_ObjectAttribute"
+              }
+            ],
+            "visibility": "public",
+            "types": [
+              "sap_m_ObjectAttribute"
+            ],
+            "singularName": "attribute",
+            "renderAction": "",
+            "name": "attributes",
+            "multiple": true,
+            "isDataDriven": false,
+            "displayToUser": true,
+            "displayName": "Attributes",
+            "deprecated": false
+          }
+        }
+      }
+    },
+    "sap_m_ActionListItem": {
+      "additionalMetadata": {
+        "icon": "",
+        "defaultProperty": null,
+        "controlTemplate": "",
+        "defaultAggregation": "",
+        "deprecated": false,
+        "isStructuralElement": false,
+        "parent": "sap_m_ActionListItem",
+        "properties": {
+          "text": {
+            "defaultValue": "Action Items",
+            "deprecated": false,
+            "displayName": "Text",
+            "displayToUser": true,
+            "groupName": "Misc",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "text",
+            "possibleValues": null,
+            "type": "string"
+          }
+        },
+        "readOnlyPropertyName": "na",
+        "structuralType": "",
+        "tagname": ""
+      },
+      "description": "sap_m_ActionListItem",
+      "displayName": "Action List Item",
+      "displayToUser": false,
+      "groupName": "List",
+      "name": "sap_m_ActionListItem"
+    },
+    "sap_m_List": {
+      "name": "sap_m_List",
+      "groupName": "Pattern",
+      "displayToUser": true,
+      "displayName": "List",
+      "description": "sap_m_List",
+      "additionalMetadata": {
+        "icon": "/resources/norman-ui-catalog-manager-client/assets/list.svg",
+        "defaultProperty": null,
+        "tagname": "",
+        "structuralType": "",
+        "readOnlyPropertyName": "na",
+        "properties": {
+          "width": {
+            "type": "sap_ui_core_CSSSize",
+            "possibleValues": null,
+            "name": "width",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Dimension",
+            "displayToUser": true,
+            "displayName": "Width",
+            "deprecated": false,
+            "defaultValue": "350px"
+          },
+          "headerText": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "headerText",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "HeaderText",
+            "deprecated": false,
+            "defaultValue": "Header"
+          },
+          "footerText": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "footerText",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "FooterText",
+            "deprecated": false,
+            "defaultValue": "Footer"
+          },
+          "backgroundDesign": {
+            "type": "sap_m_BackgroundDesign",
+            "possibleValues": [
+              "Solid",
+              "Transparent",
+              "Translucent"
+            ],
+            "name": "backgroundDesign",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "displayToUser": true,
+            "displayName": "Background Design",
+            "deprecated": false,
+            "defaultValue": "Solid"
+          },
+          "growing": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "growing",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Behavior",
+            "displayToUser": true,
+            "displayName": "Growing",
+            "deprecated": false,
+            "defaultValue": false
+          },
+          "growingScrollToLoad": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "growingScrollToLoad",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Behavior",
+            "displayToUser": true,
+            "displayName": "Growing Scroll To Load",
+            "deprecated": false,
+            "defaultValue": false
+          },
+          "growingThreshold": {
+            "type": "int",
+            "possibleValues": null,
+            "name": "growingThreshold",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "Growing Threshold",
+            "deprecated": false,
+            "defaultValue": 20
+          }
+        },
+        "parent": "sap_m_List",
+        "isStructuralElement": false,
+        "deprecated": false,
+        "defaultAggregation": "items",
+        "controlTemplate": "",
+        "aggregations": {
+          "headerToolbar": {
+            "deprecated": false,
+            "displayName": "Header tool bar",
+            "displayToUser": true,
+            "isDataDriven": false,
+            "multiple": false,
+            "name": "headerToolbar",
+            "renderAction": "",
+            "types": [
+              "sap_m_Toolbar_2"
+            ],
+            "visibility": "public",
+            "defaultValue": [
+              {
+                "name": "sap_m_Toolbar_2"
+              }
+            ]
+          },
+          "items": {
+            "defaultValue": [
+              {
+                "properties": {
+                  "title": "Item 1"
+                },
+                "name": "sap_m_ObjectListItem"
+              },
+              {
+                "properties": {
+                  "title": "Item 2",
+                  "number": "2,000"
+                },
+                "name": "sap_m_ObjectListItem"
+              },
+              {
+                "properties": {
+                  "title": "Item 3",
+                  "number": "3,000"
+                },
+                "name": "sap_m_ObjectListItem"
+              },
+              {
+                "properties": {
+                  "title": "Item 4",
+                  "number": "4,000"
+                },
+                "name": "sap_m_ObjectListItem"
+              }
+            ],
+            "visibility": "public",
+            "types": [
+              "sap_m_ObjectListItem"
+            ],
+            "singularName": "item",
+            "renderAction": "",
+            "name": "items",
+            "multiple": true,
+            "isDataDriven": false,
+            "displayToUser": true,
+            "displayName": "Items",
+            "deprecated": false,
+            "bindable": "bindable"
+          }
+        },
+        "events": {
+          "itemPress": {
+            "name": "itemPress",
+            "displayToUser": true,
+            "displayName": "onItemPress"
+          },
+          "delete": {
+            "name": "delete",
+            "displayToUser": true,
+            "displayName": "onDelete"
+          },
+          "selectionChange": {
+            "name": "selectionChange",
+            "displayToUser": true,
+            "displayName": "onSelectionChange"
+          }
+        }
+      }
+    },
+    "sap_ui_commons_layout_AbsoluteLayout": {
+      "additionalMetadata": {
+        "parent": "sap_ui_commons_layout_AbsoluteLayout",
+        "properties": {
+          "verticalScrolling": {
+            "defaultValue": "Auto",
+            "deprecated": false,
+            "displayName": "verticalScrolling",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "verticalScrolling",
+            "possibleValues": null,
+            "type": "string"
+          },
+          "horizontalScrolling": {
+            "defaultValue": "Auto",
+            "deprecated": false,
+            "displayName": "horizontalScrolling",
+            "displayToUser": true,
+            "groupName": "",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "horizontalScrolling",
+            "possibleValues": null,
+            "type": "string"
+          }
+        },
+        "aggregations": {
+          "positions": {
+            "name": "positions",
+            "displayName": "Positions",
+            "multiple": true,
+            "types": ["sap_ui_commons_layout_PositionContainer"]
+          }
+        }
+      },
+      "description": "needed for ABSOLUTE floorplan",
+      "displayName": "AbsoluteLayout",
+      "displayToUser": false,
+      "groupName": "floorplan controls",
+      "name": "sap_ui_commons_layout_AbsoluteLayout"
+    },
+    "sap_ui_commons_layout_PositionContainer": {
+      "additionalMetadata": {
+        "parent": "sap_ui_commons_layout_PositionContainer",
+        "properties": {
+          "top": {
+            "name": "top",
+            "displayName": "Top",
+            "type": "CSSSize",
+            "defaultValue": 0
+          },
+          "left": {
+            "name": "left",
+            "type": "CSSSize",
+            "displayName": "Left",
+            "defaultValue": 0
+          }
+        },
+        "aggregations": {
+          "control": {
+            "name": "control",
+            "displayName": "Control",
+            "multiple": false,
+            "types": ["sap_ui_core_Control"]
+          }
+        }
+      },
+      "description": "needed for ABSOLUTE floorplan",
+      "displayName": "PositionContainer",
+      "displayToUser": false,
+      "groupName": "floorplan controls",
+      "name": "sap_ui_commons_layout_PositionContainer"
+    },
+    "sap_m_Page": {
+      "name": "sap_m_Page",
+      "groupName": "Container",
+      "displayToUser": false,
+      "displayName": "Page",
+      "description": "sap_m_Page",
+      "additionalMetadata": {
+        "tagname": "",
+        "structuralType": "",
+        "readOnlyPropertyName": "na",
+        "properties": {
+          "enableScrolling": {
+            "defaultValue": false,
+            "deprecated": false,
+            "displayName": "EnableScrolling",
+            "displayToUser": false,
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "enableScrolling",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "showFooter": {
+            "defaultValue": false,
+            "deprecated": false,
+            "displayName": "ShowFooter",
+            "displayToUser": false,
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "showFooter",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "showHeader": {
+            "defaultValue": false,
+            "deprecated": false,
+            "displayName": "ShowHeader",
+            "displayToUser": false,
+            "groupName": "No Data",
+            "isDataDriven": false,
+            "isEditable": true,
+            "name": "showHeader",
+            "possibleValues": null,
+            "type": "boolean"
+          },
+          "title": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "title",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Data",
+            "displayToUser": false,
+            "displayName": "Page Header",
+            "deprecated": false,
+            "defaultValue": ""
+          }
+        },
+        "parent": "sap_m_Page",
+        "isStructuralElement": false,
+        "deprecated": false,
+        "defaultAggregation": "content",
+        "controlTemplate": "",
+        "aggregations": {
+          "content": {
+            "deprecated": false,
+            "displayName": "Content",
+            "displayToUser": false,
+            "isDataDriven": false,
+            "multiple": true,
+            "name": "content",
+            "renderAction": "",
+            "singularName": "content",
+            "types": [
+              "sap_ui_core_Control"
+            ],
+            "visibility": "public"
+          }
+        },
+        "defaultProperty": null,
+        "icon": ""
+      }
+    },
+    "sap_m_Toolbar_3": {
+      "name": "sap_m_Toolbar_3",
+      "groupName": "Pattern",
+      "displayToUser": true,
+      "displayName": "Header",
+      "description": "sap_m_Toolbar",
+      "additionalMetadata": {
+        "icon": "/resources/norman-ui-catalog-manager-client/assets/header.svg",
+        "defaultProperty": null,
+        "tagname": "",
+        "structuralType": "",
+        "readOnlyPropertyName": "na",
+        "properties": {
+          "design": {
+            "type": "sap_m_ToolbarDesign",
+            "possibleValues": [
+              "Auto",
+              "Transparent",
+              "Info",
+              "Solid"
+            ],
+            "name": "design",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Appearance",
+            "displayToUser": true,
+            "displayName": "Background Color",
+            "deprecated": false,
+            "defaultValue": "Solid"
+          },
+          "height": {
+            "type": "sap_ui_core_CSSSize",
+            "possibleValues": null,
+            "name": "height",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Appearance",
+            "displayToUser": true,
+            "displayName": "Height",
+            "deprecated": false,
+            "defaultValue": "46px"
+          },
+          "width": {
+            "type": "sap_ui_core_CSSSize",
+            "possibleValues": null,
+            "name": "width",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Appearance",
+            "displayToUser": true,
+            "displayName": "Width",
+            "deprecated": false,
+            "defaultValue": "880px"
+          },
+          "enabled": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "enabled",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Behavior",
+            "displayToUser": true,
+            "displayName": "Enabled",
+            "deprecated": false,
+            "defaultValue": true
+          },
+          "visible": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "visible",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Appearance",
+            "displayToUser": true,
+            "displayName": "Visible",
+            "deprecated": false,
+            "defaultValue": true
+          }
+        },
+        "parent": "sap_m_Toolbar",
+        "isStructuralElement": false,
+        "deprecated": false,
+        "defaultAggregation": "content",
+        "controlTemplate": "",
+        "aggregations": {
+          "content": {
+            "visibility": "public",
+            "types": [
+              "sap_m_Button",
+              "sap_m_ToolbarSpacer",
+              "sap_m_Text"
+            ],
+            "singularName": "content",
+            "renderAction": "",
+            "name": "content",
+            "multiple": true,
+            "isDataDriven": false,
+            "displayToUser": true,
+            "displayName": "Content",
+            "deprecated": false,
+            "defaultValue": [
+              {
+                "name": "sap_m_ToolbarSpacer"
+              },
+              {
+                "name": "sap_m_Text",
+                "properties": {
+                  "text": "Header Text"
+                }
+              },
+              {
+                "name": "sap_m_ToolbarSpacer"
+              }
+            ]
+          },
+          "tooltip": {
+            "visibility": "public",
+            "types": [
+              "string",
+              "sap_ui_core_TooltipBase"
+            ],
+            "renderAction": "",
+            "name": "tooltip",
+            "multiple": false,
+            "isDataDriven": false,
+            "displayToUser": true,
+            "displayName": "Tooltip",
+            "deprecated": false
+          }
+        }
+      }
+    },
+    "sap_m_Toolbar_2": {
+      "name": "sap_m_Toolbar_2",
+      "groupName": "Standard",
+      "displayToUser": false,
+      "displayName": "Search Field",
+      "description": "sap_m_Toolbar",
+      "additionalMetadata": {
+        "icon": "/resources/norman-ui-catalog-manager-client/assets/search.svg",
+        "defaultProperty": null,
+        "tagname": "",
+        "structuralType": "",
+        "readOnlyPropertyName": "na",
+        "properties": {
+          "design": {
+            "type": "sap_m_ToolbarDesign",
+            "possibleValues": [
+              "Auto",
+              "Transparent",
+              "Info",
+              "Solid"
+            ],
+            "name": "design",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Appearance",
+            "displayToUser": true,
+            "displayName": "Background color",
+            "deprecated": false,
+            "defaultValue": "Solid"
+          },
+          "height": {
+            "type": "sap_ui_core_CSSSize",
+            "possibleValues": null,
+            "name": "height",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Appearance",
+            "displayToUser": true,
+            "displayName": "Height",
+            "deprecated": false,
+            "defaultValue": ""
+          },
+          "width": {
+            "type": "sap_ui_core_CSSSize",
+            "possibleValues": null,
+            "name": "width",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "",
+            "group": "Appearance",
+            "displayToUser": true,
+            "displayName": "Width",
+            "deprecated": false,
+            "defaultValue": ""
+          },
+          "enabled": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "enabled",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Behavior",
+            "displayToUser": true,
+            "displayName": "Enabled",
+            "deprecated": false,
+            "defaultValue": true
+          },
+          "visible": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "visible",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Appearance",
+            "displayToUser": true,
+            "displayName": "Visible",
+            "deprecated": false,
+            "defaultValue": true
+          }
+        },
+        "parent": "sap_m_Toolbar",
+        "isStructuralElement": false,
+        "deprecated": false,
+        "defaultAggregation": "content",
+        "controlTemplate": "",
+        "aggregations": {
+          "content": {
+            "visibility": "public",
+            "types": [
+              "sap_ui_core_Control"
+            ],
+            "singularName": "content",
+            "renderAction": "",
+            "name": "content",
+            "multiple": true,
+            "isDataDriven": false,
+            "displayToUser": true,
+            "displayName": "Content",
+            "deprecated": false,
+            "defaultValue": [
+              {
+                "name": "sap_m_SearchField"
+              }
+            ]
+          },
+          "tooltip": {
+            "visibility": "public",
+            "types": [
+              "string",
+              "sap_ui_core_TooltipBase"
+            ],
+            "renderAction": "",
+            "name": "tooltip",
+            "multiple": false,
+            "isDataDriven": false,
+            "displayToUser": true,
+            "displayName": "Tooltip",
+            "deprecated": false
+          }
+        }
+      }
+    },
+    "sap_m_Toolbar": {
+      "name": "sap_m_Toolbar",
+      "groupName": "Pattern",
+      "displayToUser": true,
+      "displayName": "Footer",
+      "description": "sap_m_Toolbar",
+      "additionalMetadata": {
+        "icon": "/resources/norman-ui-catalog-manager-client/assets/footer.svg",
+        "defaultProperty": null,
+        "tagname": "",
+        "structuralType": "",
+        "readOnlyPropertyName": "na",
+        "properties": {
+          "design": {
+            "type": "sap_m_ToolbarDesign",
+            "possibleValues": [
+              "Auto",
+              "Transparent",
+              "Info",
+              "Solid"
+            ],
+            "name": "design",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Appearance",
+            "displayToUser": true,
+            "displayName": "Background color",
+            "deprecated": false,
+            "defaultValue": "Solid"
+          },
+          "height": {
+            "type": "sap_ui_core_CSSSize",
+            "possibleValues": null,
+            "name": "height",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Appearance",
+            "displayToUser": true,
+            "displayName": "Height",
+            "deprecated": false,
+            "defaultValue": "46px"
+          },
+          "width": {
+            "type": "sap_ui_core_CSSSize",
+            "possibleValues": null,
+            "name": "width",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Appearance",
+            "displayToUser": true,
+            "displayName": "Width",
+            "deprecated": false,
+            "defaultValue": "880px"
+          },
+          "enabled": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "enabled",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Behavior",
+            "displayToUser": true,
+            "displayName": "Enabled",
+            "deprecated": false,
+            "defaultValue": true
+          },
+          "visible": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "visible",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Appearance",
+            "displayToUser": true,
+            "displayName": "Visible",
+            "deprecated": false,
+            "defaultValue": true
+          }
+        },
+        "parent": "sap_m_Toolbar",
+        "isStructuralElement": false,
+        "deprecated": false,
+        "defaultAggregation": "content",
+        "controlTemplate": "",
+        "aggregations": {
+          "content": {
+            "visibility": "public",
+            "types": [
+              "sap_m_Button",
+              "sap_m_Text"
+            ],
+            "singularName": "content",
+            "renderAction": "",
+            "name": "content",
+            "multiple": true,
+            "isDataDriven": false,
+            "displayToUser": true,
+            "displayName": "Content",
+            "deprecated": false,
+            "defaultValue": [
+              {
+                "name": "sap_m_ToolbarSpacer"
+              },
+              {
+                "name": "sap_m_Button",
+                "properties": {
+                  "width": "200px",
+                  "text": "Accept",
+                  "type": "Accept"
+                }
+              },
+              {
+                "name": "sap_m_Button",
+                "properties": {
+                  "width": "200px",
+                  "text": "Cancel",
+                  "type": "Reject"
+                }
+              }
+            ]
+          },
+          "tooltip": {
+            "visibility": "public",
+            "types": [
+              "string",
+              "sap_ui_core_TooltipBase"
+            ],
+            "renderAction": "",
+            "name": "tooltip",
+            "multiple": false,
+            "isDataDriven": false,
+            "displayToUser": false,
+            "displayName": "Tooltip",
+            "deprecated": false
+          }
+        }
+      }
+    },
+    "sap_m_ToolbarSpacer": {
+      "name": "sap_m_ToolbarSpacer",
+      "groupName": "Standard",
+      "displayToUser": false,
+      "displayName": "ToolbarSpacer",
+      "description": "sap_m_ToolbarSpacer",
+      "additionalMetadata": {
+        "icon": "",
+        "defaultProperty": null,
+        "tagname": "",
+        "structuralType": "",
+        "readOnlyPropertyName": "na",
+        "properties": {
+          "width": {
+            "type": "sap_ui_core_CSSSize",
+            "possibleValues": null,
+            "name": "width",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Appearance",
+            "displayToUser": true,
+            "displayName": "Width",
+            "deprecated": false,
+            "defaultValue": ""
+          },
+          "visible": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "visible",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Appearance",
+            "displayToUser": true,
+            "displayName": "Visible",
+            "deprecated": false,
+            "defaultValue": true
+          }
+        },
+        "parent": "sap_m_ToolbarSpacer",
+        "isStructuralElement": false,
+        "deprecated": false,
+        "defaultAggregation": "",
+        "controlTemplate": ""
+      }
+    },
+    "sap_ui_layout_VerticalLayout": {
+      "name": "sap_ui_layout_VerticalLayout",
+      "groupName": "Pattern",
+      "displayToUser": true,
+      "displayName": "Item Header",
+      "description": "sap_ui_layout_VerticalLayout",
+      "additionalMetadata": {
+        "icon": "/resources/norman-ui-catalog-manager-client/assets/item-header.svg",
+        "defaultProperty": null,
+        "tagname": "",
+        "structuralType": "",
+        "readOnlyPropertyName": "na",
+        "properties": {
+          "visible": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "visible",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Appearance",
+            "displayToUser": true,
+            "displayName": "Visible",
+            "deprecated": false,
+            "defaultValue": true
+          },
+          "width": {
+            "type": "sap_ui_core_CSSSize",
+            "possibleValues": null,
+            "name": "width",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "",
+            "group": "Dimension",
+            "displayToUser": true,
+            "displayName": "Width",
+            "deprecated": false,
+            "defaultValue": "880px"
+          }
+        },
+        "parent": "sap_ui_layout_VerticalLayout",
+        "isStructuralElement": false,
+        "deprecated": false,
+        "defaultAggregation": "content",
+        "controlTemplate": "",
+        "aggregations": {
+          "content": {
+            "visibility": "public",
+            "types": [
+              "sap_ui_core_Control"
+            ],
+            "singularName": "content",
+            "renderAction": "",
+            "name": "content",
+            "multiple": true,
+            "isDataDriven": false,
+            "displayToUser": true,
+            "displayName": "Content",
+            "deprecated": false,
+            "defaultValue": [
+              {
+                "name": "sap_m_ObjectListItem",
+                "properties": {
+                  "icon": "sap-icon://iphone"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "sap_ui_layout_form_ResponsiveGridLayout": {
+      "name": "sap_ui_layout_form_ResponsiveGridLayout",
+      "groupName": "Layout",
+      "displayToUser": false,
+      "displayName": "Responsive Grid Layout",
+      "description": "sap_ui_layout_form_ResponsiveGridLayout",
+      "additionalMetadata": {
+        "tagname": "",
+        "structuralType": "",
+        "readOnlyPropertyName": "na",
+        "properties": {
+          "labelSpanL": {
+            "type": "int",
+            "possibleValues": null,
+            "name": "labelSpanL",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "LabelSpanL",
+            "deprecated": false,
+            "defaultValue": 4
+          },
+          "labelSpanM": {
+            "type": "int",
+            "possibleValues": null,
+            "name": "labelSpanM",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "LabelSpanM",
+            "deprecated": false,
+            "defaultValue": 2
+          },
+          "labelSpanS": {
+            "type": "int",
+            "possibleValues": null,
+            "name": "labelSpanS",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "LabelSpanS",
+            "deprecated": false,
+            "defaultValue": 12
+          },
+          "visible": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "visible",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Appearance",
+            "displayToUser": true,
+            "displayName": "Visible",
+            "deprecated": false,
+            "defaultValue": true
+          },
+          "emptySpanS": {
+            "type": "int",
+            "possibleValues": null,
+            "name": "emptySpanS",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "EmptySpanS",
+            "deprecated": false,
+            "defaultValue": 0
+          },
+          "emptySpanM": {
+            "type": "int",
+            "possibleValues": null,
+            "name": "emptySpanM",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "EmptySpanM",
+            "deprecated": false,
+            "defaultValue": 0
+          },
+          "emptySpanL": {
+            "type": "int",
+            "possibleValues": null,
+            "name": "emptySpanL",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "EmptySpanL",
+            "deprecated": false,
+            "defaultValue": 0
+          },
+          "columnsL": {
+            "type": "int",
+            "possibleValues": null,
+            "name": "columnsL",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "Columns for Large Screen",
+            "deprecated": false,
+            "defaultValue": 2
+          },
+          "columnsM": {
+            "type": "int",
+            "possibleValues": null,
+            "name": "columnsM",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "Columns for Mid-size Screen",
+            "deprecated": false,
+            "defaultValue": 1
+          }
+        },
+        "parent": "sap_ui_layout_form_ResponsiveGridLayout",
+        "isStructuralElement": false,
+        "deprecated": false,
+        "defaultAggregation": "",
+        "controlTemplate": "",
+        "defaultProperty": null,
+        "icon": ""
+      }
+    },
+    "sap_ui_core_Title": {
+      "name": "sap_ui_core_Title",
+      "groupName": "Display",
+      "displayToUser": "false",
+      "displayName": "Title",
+      "description": "sap_ui_core_Title",
+      "additionalMetadata": {
+        "tagname": "",
+        "structuralType": "",
+        "readOnlyPropertyName": "na",
+        "properties": {
+          "text": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "text",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Appearance",
+            "displayToUser": true,
+            "displayName": "Text",
+            "deprecated": false,
+            "defaultValue": null
+          },
+          "level": {
+            "type": "sap_ui_core_TitleLevel",
+            "possibleValues": [
+              "Auto",
+              "H1",
+              "H2",
+              "H3",
+              "H4",
+              "H5",
+              "H6"
+            ],
+            "name": "level",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Appearance",
+            "displayToUser": true,
+            "displayName": "Level",
+            "deprecated": false,
+            "defaultValue": "Auto"
+          },
+          "emphasized": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "emphasized",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Appearance",
+            "displayToUser": true,
+            "displayName": "Emphasized",
+            "deprecated": false,
+            "defaultValue": false
+          },
+          "icon": {
+            "type": "sap_ui_core_URI",
+            "possibleValues": null,
+            "name": "icon",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Appearance",
+            "displayToUser": true,
+            "displayName": "Icon",
+            "deprecated": false,
+            "defaultValue": null
+          }
+        },
+        "parent": "sap_ui_core_Title",
+        "isStructuralElement": false,
+        "deprecated": false,
+        "defaultAggregation": "",
+        "controlTemplate": "",
+        "defaultProperty": null,
+        "icon": "/resources/norman-ui-catalog-manager-client/assets/title.svg"
+      }
+    },
+    "sap_m_Table": {
+      "name": "sap_m_Table",
+      "groupName": "List",
+      "displayToUser": true,
+      "displayName": "Table",
+      "description": "sap_m_Table",
+      "additionalMetadata": {
+        "tagname": "",
+        "structuralType": "",
+        "readOnlyPropertyName": "na",
+        "properties": {
+          "fixedLayout": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "fixedLayout",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Behavior",
+            "displayToUser": true,
+            "displayName": "FixedLayout",
+            "deprecated": false,
+            "defaultValue": true
+          },
+          "footerText": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "footerText",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "FooterText",
+            "deprecated": false,
+            "defaultValue": null
+          },
+          "growing": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "growing",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Behavior",
+            "displayToUser": true,
+            "displayName": "Growing",
+            "deprecated": false,
+            "defaultValue": false
+          },
+          "growingScrollToLoad": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "growingScrollToLoad",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Behavior",
+            "displayToUser": true,
+            "displayName": "GrowingScrollToLoad",
+            "deprecated": false,
+            "defaultValue": false
+          },
+          "growingThreshold": {
+            "type": "int",
+            "possibleValues": null,
+            "name": "growingThreshold",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "GrowingThreshold",
+            "deprecated": false,
+            "defaultValue": 20
+          },
+          "growingTriggerText": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "growingTriggerText",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Appearance",
+            "displayToUser": true,
+            "displayName": "GrowingTriggerText",
+            "deprecated": false,
+            "defaultValue": null
+          },
+          "headerText": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "headerText",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "HeaderText",
+            "deprecated": false,
+            "defaultValue": null
+          },
+          "includeItemInSelection": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "includeItemInSelection",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Behavior",
+            "displayToUser": true,
+            "displayName": "IncludeItemInSelection",
+            "deprecated": false,
+            "defaultValue": false
+          },
+          "width": {
+            "type": "sap_ui_core_CSSSize",
+            "possibleValues": null,
+            "name": "width",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "",
+            "group": "Dimension",
+            "displayToUser": true,
+            "displayName": "Width",
+            "deprecated": false,
+            "defaultValue": "880px"
+          },
+          "visible": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "visible",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Appearance",
+            "displayToUser": true,
+            "displayName": "Visible",
+            "deprecated": false,
+            "defaultValue": true
+          },
+          "swipeDirection": {
+            "type": "sap_m_SwipeDirection",
+            "possibleValues": [
+              "LeftToRight",
+              "RightToLeft",
+              "Both"
+            ],
+            "name": "swipeDirection",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "SwipeDirection",
+            "deprecated": false,
+            "defaultValue": "Both"
+          },
+          "showUnread": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "showUnread",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "ShowUnread",
+            "deprecated": false,
+            "defaultValue": false
+          },
+          "showSeparators": {
+            "type": "sap_m_ListSeparators",
+            "possibleValues": [
+              "All",
+              "Inner",
+              "None"
+            ],
+            "name": "showSeparators",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Appearance",
+            "displayToUser": true,
+            "displayName": "ShowSeparators",
+            "deprecated": false,
+            "defaultValue": "All"
+          },
+          "showOverlay": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "showOverlay",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Appearance",
+            "displayToUser": true,
+            "displayName": "ShowOverlay",
+            "deprecated": false,
+            "defaultValue": false
+          },
+          "showNoData": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "showNoData",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "ShowNoData",
+            "deprecated": false,
+            "defaultValue": true
+          },
+          "rememberSelections": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "rememberSelections",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Behavior",
+            "displayToUser": true,
+            "displayName": "RememberSelections",
+            "deprecated": false,
+            "defaultValue": true
+          },
+          "noDataText": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "noDataText",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "NoDataText",
+            "deprecated": false,
+            "defaultValue": null
+          },
+          "modeAnimationOn": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "modeAnimationOn",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "ModeAnimationOn",
+            "deprecated": false,
+            "defaultValue": true
+          },
+          "mode": {
+            "type": "sap_m_ListMode",
+            "possibleValues": [
+              "None",
+              "SingleSelect",
+              "MultiSelect",
+              "Delete",
+              "SingleSelectMaster",
+              "SingleSelectLeft"
+            ],
+            "name": "mode",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Behavior",
+            "displayToUser": true,
+            "displayName": "Mode",
+            "deprecated": false,
+            "defaultValue": "None"
+          },
+          "inset": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "inset",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Appearance",
+            "displayToUser": true,
+            "displayName": "Inset",
+            "deprecated": false,
+            "defaultValue": false
+          },
+          "backgroundDesign": {
+            "type": "sap_m_BackgroundDesign",
+            "possibleValues": [
+              "Solid",
+              "Transparent",
+              "Translucent"
+            ],
+            "name": "backgroundDesign",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Appearance",
+            "displayToUser": true,
+            "displayName": "BackgroundDesign",
+            "deprecated": false,
+            "defaultValue": "Translucent"
+          }
+        },
+        "parent": "sap_m_Table",
+        "isStructuralElement": false,
+        "deprecated": false,
+        "defaultAggregation": "items",
+        "controlTemplate": "",
+        "aggregations": {
+          "columns": {
+            "visibility": "public",
+            "types": [
+              "sap_m_Column"
+            ],
+            "singularName": "column",
+            "renderAction": "",
+            "name": "columns",
+            "multiple": true,
+            "isDataDriven": false,
+            "displayToUser": true,
+            "displayName": "Columns",
+            "deprecated": false,
+            "defaultValue": [
+              {
+                "name": "sap_m_Column"
+              },
+              {
+                "name": "sap_m_Column"
+              },
+              {
+                "name": "sap_m_Column"
+              }
+            ]
+          },
+          "headerToolbar": {
+            "visibility": "public",
+            "types": [
+              "sap_m_Toolbar_3"
+            ],
+            "renderAction": "",
+            "name": "headerToolbar",
+            "multiple": false,
+            "isDataDriven": false,
+            "displayToUser": true,
+            "displayName": "HeaderToolbar",
+            "deprecated": false,
+            "defaultValue": [
+              {
+                "name": "sap_m_Toolbar_3"
+              }
+            ]
+          },
+          "infoToolbar": {
+            "visibility": "public",
+            "types": [
+              "sap_m_Toolbar"
+            ],
+            "renderAction": "",
+            "name": "infoToolbar",
+            "multiple": false,
+            "isDataDriven": false,
+            "displayToUser": true,
+            "displayName": "InfoToolbar",
+            "deprecated": false
+          },
+          "items": {
+            "visibility": "public",
+            "types": [
+              "sap_m_ListItemBase"
+            ],
+            "singularName": "item",
+            "renderAction": "",
+            "name": "items",
+            "multiple": true,
+            "isDataDriven": false,
+            "displayToUser": true,
+            "displayName": "Items",
+            "deprecated": false,
+            "bindable": "bindable"
+          },
+          "swipeContent": {
+            "visibility": "public",
+            "types": [
+              "sap_ui_core_Control"
+            ],
+            "renderAction": "",
+            "name": "swipeContent",
+            "multiple": false,
+            "isDataDriven": false,
+            "displayToUser": true,
+            "displayName": "SwipeContent",
+            "deprecated": false
+          }
+        },
+        "defaultProperty": null,
+        "icon": "/resources/norman-ui-catalog-manager-client/assets/table.svg",
+        "events": {
+          "delete": {
+            "name": "delete",
+            "displayToUser": true,
+            "displayName": "Delete"
+          },
+          "itemPress": {
+            "name": "itemPress",
+            "displayToUser": true,
+            "displayName": "ItemPress"
+          },
+          "selectionChange": {
+            "name": "selectionChange",
+            "displayToUser": true,
+            "displayName": "SelectionChange"
+          },
+          "swipe": {
+            "name": "swipe",
+            "displayToUser": true,
+            "displayName": "Swipe"
+          },
+          "updateFinished": {
+            "name": "updateFinished",
+            "displayToUser": true,
+            "displayName": "UpdateFinished"
+          },
+          "updateStarted": {
+            "name": "updateStarted",
+            "displayToUser": true,
+            "displayName": "UpdateStarted"
+          }
+        }
+      }
+    },
+    "sap_m_Column": {
+      "name": "sap_m_Column",
+      "groupName": "List",
+      "displayToUser": true,
+      "displayName": "Column",
+      "description": "sap_m_Column",
+      "additionalMetadata": {
+        "tagname": "",
+        "structuralType": "",
+        "readOnlyPropertyName": "na",
+        "properties": {
+          "demandPopin": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "demandPopin",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Behavior",
+            "displayToUser": true,
+            "displayName": "DemandPopin",
+            "deprecated": false,
+            "defaultValue": false
+          },
+          "hAlign": {
+            "type": "sap_ui_core_TextAlign",
+            "possibleValues": [
+              "Begin",
+              "End",
+              "Left",
+              "Right",
+              "Center",
+              "Initial"
+            ],
+            "name": "hAlign",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Appearance",
+            "displayToUser": true,
+            "displayName": "HAlign",
+            "deprecated": false,
+            "defaultValue": "Begin"
+          },
+          "mergeDuplicates": {
+            "type": "boolean",
+            "possibleValues": null,
+            "name": "mergeDuplicates",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Behavior",
+            "displayToUser": true,
+            "displayName": "MergeDuplicates",
+            "deprecated": false,
+            "defaultValue": false
+          },
+          "mergeFunctionName": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "mergeFunctionName",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Misc",
+            "displayToUser": true,
+            "displayName": "MergeFunctionName",
+            "deprecated": false,
+            "defaultValue": "getText"
+          },
+          "minScreenWidth": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "minScreenWidth",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Behavior",
+            "displayToUser": true,
+            "displayName": "MinScreenWidth",
+            "deprecated": false,
+            "defaultValue": "Tablet"
+          },
+          "popinDisplay": {
+            "type": "sap_m_PopinDisplay",
+            "possibleValues": [
+              "Block",
+              "Inline"
+            ],
+            "name": "popinDisplay",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Appearance",
+            "displayToUser": true,
+            "displayName": "PopinDisplay",
+            "deprecated": false,
+            "defaultValue": "Block"
+          },
+          "styleClass": {
+            "type": "string",
+            "possibleValues": null,
+            "name": "styleClass",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Appearance",
+            "displayToUser": true,
+            "displayName": "StyleClass",
+            "deprecated": false,
+            "defaultValue": null
+          },
+          "vAlign": {
+            "type": "sap_ui_core_VerticalAlign",
+            "possibleValues": [
+              "Bottom",
+              "Middle",
+              "Top",
+              "Inherit"
+            ],
+            "name": "vAlign",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "No Data",
+            "group": "Appearance",
+            "displayToUser": true,
+            "displayName": "VAlign",
+            "deprecated": false,
+            "defaultValue": "Inherit"
+          },
+          "width": {
+            "type": "sap_ui_core_CSSSize",
+            "possibleValues": null,
+            "name": "width",
+            "isEditable": true,
+            "isDataDriven": false,
+            "groupName": "",
+            "group": "Dimension",
+            "displayToUser": true,
+            "displayName": "Width",
+            "deprecated": false,
+            "defaultValue": null
+          }
+        },
+        "parent": "sap_m_Column",
+        "icon": "/resources/norman-ui-catalog-manager-client/assets/default.svg",
+        "isStructuralElement": false,
+        "deprecated": false,
+        "defaultAggregation": "header",
+        "controlTemplate": "",
+        "aggregations": {
+          "footer": {
+            "visibility": "public",
+            "types": [
+              "sap_ui_core_Control"
+            ],
+            "renderAction": "",
+            "name": "footer",
+            "multiple": false,
+            "isDataDriven": false,
+            "displayToUser": true,
+            "displayName": "Footer",
+            "deprecated": false
+          },
+          "header": {
+            "visibility": "public",
+            "types": [
+              "sap_ui_core_Control"
+            ],
+            "renderAction": "",
+            "name": "header",
+            "multiple": false,
+            "isDataDriven": false,
+            "displayToUser": true,
+            "displayName": "Header",
+            "deprecated": false,
+            "defaultValue": [
+              {
+                "name": "sap_m_Text",
+                "properties": {
+                  "text": "Column Header"
+                }
+              }
+            ]
+          }
+        },
+        "defaultProperty": null,
+        "icon": "",
+        "events": {}
+      }
+    }
+  },
+  "description": "r1c1ui5",
+  "displayName": "Open UI5",
+  "floorPlans": {
+    "ABSOLUTE": {
+      "name": "ABSOLUTE",
+      "rootControl": "sap_m_Page",
+      "description" : "Blank Page",
+      "controls": {
+        "AbsoluteLayout": "sap_ui_commons_layout_AbsoluteLayout",
+        "PositionContainer": "sap_ui_commons_layout_PositionContainer"
+      },
+      "thumbnail": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABQAAAAQAAQMAAACEXWYAAAAAA1BMVEX///+nxBvIAAAAtElEQVQYGe3BAQEAAACAkP6v7ggKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGIQeAAHYiJ6XAAAAAElFTkSuQmCC"
+    }
+  },
+  "isRootCatalog": false,
+  "isDefault": false,
+  "libraryPublicURL": "https://openui5.hana.ondemand.com/resources/sap-ui-core.js",
+  "libraryURL": "/api/uicatalogs/public/uilib/openui5/1.26.6/sap-ui-core.js",
+  "libraryVersion": "1_26_6",
+  "rootCatalogId": null
+}

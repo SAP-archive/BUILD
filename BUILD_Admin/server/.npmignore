@@ -1,0 +1,7 @@
+build/
+lib-cov/
+logs/
+test/
+.npmignore
+.eslintrc
+Gruntfile.js

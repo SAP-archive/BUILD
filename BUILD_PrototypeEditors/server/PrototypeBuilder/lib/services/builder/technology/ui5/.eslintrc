@@ -1,0 +1,12 @@
+{
+  "env": {
+	"browser": true
+  },
+  "globals" : {
+    "jQuery" : true,
+    "sap" : true
+  },
+  "rules": {
+    "quotes": [2, "double", "avoid-escape"],
+  }
+}

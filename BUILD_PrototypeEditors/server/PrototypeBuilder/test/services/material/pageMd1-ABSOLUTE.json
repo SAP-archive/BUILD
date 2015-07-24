@@ -1,0 +1,84 @@
+{
+  "floorplan": "ABSOLUTE",
+  "rootControlId": "page",
+  "controls": [
+    {
+      "controlId": "page",
+      "groups": [
+        {
+          "groupId": "content",
+          "children": ["ABSOLUTE-al"]
+        }
+      ]
+    },
+    {
+      "controlId": "button0",
+      "parentControlId": "ABSOLUTE-pc0",
+      "parentGroupId": "control",
+      "parentGroupIndex": 0
+    },
+    {
+      "controlId": "button1",
+      "parentControlId": "ABSOLUTE-pc1",
+      "parentGroupId": "control",
+      "parentGroupIndex": 0
+    },
+    {
+      "controlId": "ABSOLUTE-al",
+      "catalogControlName": "sap_ui_commons_layout_AbsoluteLayout",
+      "catalogId": "customCatalog",
+      "parentControlId": "page",
+      "parentGroupId": "content",
+      "parentGroupIndex": 0,
+      "properties": [
+        {
+          "name": "verticalScrolling",
+          "value": "Auto"
+        },
+        {
+          "name": "horizontalScrolling",
+          "value": "Auto"
+        }
+      ],
+      "groups": [
+        {
+          "groupId": "positions",
+          "children": [
+            "ABSOLUTE-pc0",
+            "ABSOLUTE-pc1"
+          ]
+        }
+      ]
+    },
+    {
+      "controlId": "ABSOLUTE-pc0",
+      "catalogControlName": "sap_ui_commons_layout_PositionContainer",
+      "catalogId": "customCatalog",
+      "parentControlId": "ABSOLUTE-al",
+      "parentGroupId": "positions",
+      "parentGroupIndex": 0,
+      "properties": [],
+      "groups": [
+        {
+          "groupId": "control",
+          "children": ["button0"]
+        }
+      ]
+    },
+    {
+      "controlId": "ABSOLUTE-pc1",
+      "catalogControlName": "sap_ui_commons_layout_PositionContainer",
+      "catalogId": "customCatalog",
+      "parentControlId": "ABSOLUTE-al",
+      "parentGroupId": "positions",
+      "parentGroupIndex": 1,
+      "properties": [],
+      "groups": [
+        {
+          "groupId": "control",
+          "children": ["button1"]
+        }
+      ]
+    }
+  ]
+}

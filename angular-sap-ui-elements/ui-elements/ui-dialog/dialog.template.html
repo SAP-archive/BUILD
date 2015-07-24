@@ -1,0 +1,13 @@
+<div class="ui-dialog" ng-class="{open: open}">
+    <div ng-if="title" class="ui-dialog-title" ng-bind="title"></div>
+    <div ng-if="content" class="ui-dialog-content" ng-bind="content"></div>
+    <div ng-if="!content" ng-transclude id="transclude-{{id}}"></div>
+    <div ng-if="cancelText || closeText" class="ui-dialog-actions">
+        <div ng-if="cancelText" class="ui-dialog-cancel" ng-click="cancelDialog()" ng-bind="cancelText">}</div>
+        <div ng-if="closeText" class="ui-dialog-close">
+            <div ng-if="currentTimeout > 0" class="dialog-timeout">(<span ng-bind="currentTimeout"></span>)</div>
+            <ui-button size="large" type="{{closeActionType}}" ng-class="{hideText : currentTimeout > 0}"
+                       ng-click="closeDialog();" ng-bind="closeText" ng-disabled="isDisabled()"></ui-button>
+        </div>
+    </div>
+</div>

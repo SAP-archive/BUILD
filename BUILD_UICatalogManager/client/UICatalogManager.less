@@ -1,0 +1,307 @@
+@import (reference) "./styles/base.less";
+@base-border-color: 1px solid rgba(0, 0, 0, 0.3);
+@search-color: #EEE8D5;
+
+@search-background: rgba(255, 255, 255, 0.4);
+
+@base-font-family: 'Bree Serif', 'serif';
+@search-h-color: '#FFF';
+
+@search-element-color: '#475B62';
+
+@search-element-border-radius: 10px;
+
+.ui-catalog-err-message {
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #e74c3c;
+  margin-top: 80px;
+}
+
+.uilib-icon-cloud-upload {
+  background-image: url("/resources/norman-ui-catalog-manager-client/assets/ico-cloud-upload.svg");
+}
+
+.norman-UICatalogManager {
+  color: #333;
+}
+
+.uiLibUploadLink {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  color: #3398db;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.action-icon {
+  float: right;
+  width: 28px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.ui-button-icon {
+  border: none;
+  background: transparent;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.search {
+  background: #363D3F;
+  color: @search-color;
+
+  width: 40%;
+  min-width: 320px;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 20px;
+  padding: 20px 30px;
+  z-index: 20;
+}
+
+.search h1 {
+  color: @search-h-color;
+
+  font-size: 1.75rem;
+  line-height: 100%;
+  margin-bottom: 10px;
+  float: left;
+  margin-right: 5%;
+}
+
+.search h4 {
+  color: @search-h-color;
+
+  float: left;
+  padding-top: 2%;
+  display: flex;
+  padding-bottom: 5%;
+  width: 100%;
+}
+
+.search label {
+  display: none;
+}
+
+.search input {
+  font-family: 'Droid Sans', sans-serif;
+  width: 100%;
+  padding: 10px 0 10px 15px;
+  font-size: 1rem;
+  color: @search-element-color;
+
+  background: @search-background;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: @search-element-border-radius;
+
+  outline: 0;
+}
+
+.search .formgroup input {
+  border: @base-border-color;
+
+  display: inline;
+  width: auto;
+}
+
+.search label.formgroup {
+  display: inline;
+  width: auto;
+}
+
+.search select {
+  display: inline;
+  padding: 10px 0 10px 15px;
+  font-size: 1rem;
+  color: #475B62;
+  background: @search-background;
+
+  border: @base-border-color;
+
+  border-radius: @search-element-border-radius;
+
+  outline: 0;
+}
+
+.downloadBtn {
+  valign: top;
+  float: left;
+  margin-right: 5%;
+  width: 100%;
+  background: none;
+  color: white;
+  text-shadow: none;
+}
+
+.uploadBtn {
+  cursor: pointer;
+  valign: top;
+  float: left;
+  margin-right: 1%;
+  width: 100%;
+  background: none;
+  color: white;
+  text-shadow: none;
+}
+
+.cataloglstItm input {
+  float: left;
+  margin-right: 0.875rem;
+}
+
+.cataloglstItm button {
+  float: right;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.5rem;
+}
+
+.cataloglstItm select {
+  margin-left: 30%;
+}
+
+/* service List Styles */
+
+.servicelist {
+  width: 38%;
+  min-width: 320px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border-radius: 0 0 20px 20px;
+  opacity: .95;
+  z-index: 10;
+  max-height: 450px;
+  overflow: auto;
+  border: #595A53 1px solid;
+  border-top: none;
+}
+
+.servicelist ul {
+  margin: 0;
+  padding: 0;
+  background: #FDF6E3;
+}
+
+.servicelist li {
+  margin: 0;
+  padding: 10px 10px 0 10px;
+}
+
+.servicelist li {
+  background: #CCC;
+}
+
+.servicelist li:nth-child(odd) {
+  background: #FFF;
+}
+
+.servicelist a {
+  text-decoration: none;
+}
+
+.servicelist li:hover {
+  background: #FDF6E3;
+}
+
+.service img {
+  display: block;
+  float: left;
+  width: 60px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.service info {
+  display: block;
+  float: left;
+  padding-left: 120px !important;
+}
+
+.service:last-child {
+  border-bottom: none;
+}
+
+.serviceinfo {
+  font-size: 1.1em;
+  line-height: 160%;
+  background: @search-color;
+
+  color: #0F4150;
+  width: 90%;
+  min-width: 320px;
+  max-width: 620px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  z-index: 20;
+}
+
+.serviceinfo h1 {
+  font-size: 1.8em;
+  margin-bottom: 0;
+}
+
+.serviceinfo img {
+  width: 40%;
+  max-width: 130px;
+  border-radius: 20px;
+}
+
+/************New UICatalogManager *****/
+
+.heading {
+  font-size: 36px;
+  font-weight: 300;
+  /* margin: 30px 0 30px 0; */
+  color: #2c3e50;
+}
+
+.sidebar {
+  margin-top: 3rem;
+}
+
+.searchBar {
+  border-radius: 20px;
+  padding: 4px 0 4px 20px;
+}
+
+.rightPane {
+  margin-left: 5rem;
+  margin-top: 4.8rem;
+}
+
+.copyText {
+  color: white;
+  margin-left: 2px;
+}
+
+.firstRow {
+  background: grey;
+}
+
+.displayDeprecated {
+  color: black;
+  text-decoration: line-through;
+  margin: 20px 20px;
+}
+
+.displayLabel {
+  color: white;
+  margin: 20px 20px;
+}
+
+.ucm-label {
+  color: white;
+  padding: 2px;
+}

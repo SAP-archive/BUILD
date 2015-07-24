@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19px" height="19px"
+	 viewBox="0 0 19 19" enable-background="new 0 0 19 19" xml:space="preserve">
+<title>Triangle 1 + Rectangle 19 + Rectangle 19 + Rectangle 19</title>
+<desc>Created with Sketch.</desc>
+<g id="TOOLKIT" sketch:type="MSPage">
+	<g id="Letter" transform="translate(-462.000000, -1196.000000)" sketch:type="MSArtboardGroup">
+		
+			<g id="Triangle-1-_x2B_-Rectangle-19-_x2B_-Rectangle-19-_x2B_-Rectangle-19" transform="translate(471.014719, 1206.692388) rotate(-315.000000) translate(-471.014719, -1206.692388) translate(468.514719, 1194.192388)" sketch:type="MSLayerGroup">
+			<polygon id="Triangle-1" sketch:type="MSShapeGroup" fill="#FFFFFF" points="2.221,24.435 0,20.944 4.443,20.944 			">
+			</polygon>
+			<path id="Rectangle-19" sketch:type="MSShapeGroup" fill="#FFFFFF" d="M0.001,5.818l4.442,0l0.001,13.963L0,19.781L0.001,5.818z"
+				/>
+			<g>
+				<path fill="#FFFFFF" d="M4.443,0.99l0-0.391c0,0.115,0,0.251,0,0.389C4.443,0.989,4.443,0.99,4.443,0.99z"/>
+				<path fill="#FFFFFF" d="M3.435,0H1.008C0.442,0,0,0.452,0,1.01L0,4.654l4.442,0c0,0,0-3.235,0.001-3.666
+					C4.442,0.448,3.991,0,3.435,0z"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

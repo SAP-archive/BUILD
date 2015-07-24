@@ -1,0 +1,49 @@
+<div layout="column" layout-fill layout-align="space-between" class="tos" >
+    <div class="tos-head">
+        <a href="/" class="norman-logo"><div class="build-mascot"></div><div class="build-type"></div></a>
+    </div>
+    <div layout="column">
+        <div layout="column" layout-align="center" class="tos-wrapper">
+            <div layout="row" layout-align="center">
+                <label class="tos-header">Terms of Use</label>
+            </div>
+            <div layout="row" layout-align="center">
+                <textarea ng-model="termOfUse"
+                          tos-autosize
+                          readonly
+                          class="tos-text"
+                          flex-tos-height="50"
+                          flex-sm="90"
+                          flex-gt-sm="90"
+                          flex-md="90"
+                          flex-gt-md="70"
+                          flex-lg="70"
+                          flex-gt-lg="40"
+                          flex="40">
+                        </textarea>
+            </div>
+            <div layout="row" layout-align="start" class="input" ng-show="displayTosAgree">
+                <input type="checkbox" ng-model="ticked">
+                <label class="label">Yes, I have read and understood the above terms and conditions</label>
+            </div>
+
+            <div layout="row" layout-align="space-around" class="button" ng-show="displayTosAgree">
+                <ui-button size="large" class="cancel" ng-disabled="false" ng-click="deny()">x I disagree</ui-button>
+                <ui-button size="large" ng-disabled="!ticked" ng-click="accept()">I agree</ui-button>
+            </div>
+
+            <div layout="row" layout-align="center" class="button" ng-hide="displayTosAgree">
+                <ui-button size="large" alignment="horiz-center" ng-click="back()">Back</ui-button>
+            </div>
+        </div>
+    </div>
+    <div class="tos-foot">
+        <div layout="row" layout-align="space-between" class="tos-foot-wrapper" >
+            <div class="sap-logo" title="SAP">&copy; Copyright SAP SE 2015</div>
+            <div class="tos-foot-right">
+                <a href="/privacystatement" ng-show="showPrivacyStmt">Privacy statement</a>
+                <a href="mailto:contact.build@sap.com">Contact</a>
+            </div>
+        </div>
+    </div>
+</div>

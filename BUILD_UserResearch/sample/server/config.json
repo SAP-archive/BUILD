@@ -1,0 +1,352 @@
+{
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "debug": {
+    "active": 1
+  },
+  "server": {
+    "workers": 0
+  },
+  "logging": {
+    "logDirectory": "logs",
+    "output": {
+      "stdout": {
+        "type": "console"
+      },
+      "logfile": {
+        "type": "file",
+        "path": "norman_{now:yyyyMMdd}_{pid}.log"
+      }
+    },
+    "loggers": {
+      "*": {
+        "stdout": "debug",
+        "logfile": "info"
+      }
+    },
+    "http": {
+
+      "port": 9000,
+        "proxy": {
+            "host": "proxy",
+            "port": 8080
+        },
+        "secureFlag": false,
+        "logMode": "response"
+    }
+  },
+  "mail": {
+        "sender":"do.not.reply@example.com",
+        "smtp": {
+            "host": "mail.example.com",
+            "port": 25,
+            "debug": true,
+            "tls": {
+                "rejectUnauthorized": false
+            }
+        }
+    },
+  "db": {
+    "hosts": "localhost",
+    "database": "norman-user-research-dev",
+    "options": {
+      "db": {
+          "w": 1
+      },
+      "server": {
+        "poolSize": 5,
+        "socketOptions": {
+          "keepAlive": 1
+        }
+      }
+    }
+  },
+  "deployment": {
+    "strategy": "single"
+  },
+  "http": {
+    "port": 9000,
+    "proxy": {
+      "host": "proxy",
+      "port": 8080
+    },
+    "secureFlag" : false
+  },
+  "session": {
+    "secret": "Dj23fVtahDYE3dfjCAHrJhzrUDosljxqVDDN9VNhRJDVf8TyD1F1nqYrjGYF",
+    "tokenExpirationMinutes": 5,
+    "tokenLength": 64,
+    "tokenExpirationDays" : 30
+  },
+  "facebook": {
+    "clientID": "942447102435121",
+    "clientSecret": "33a4514d7c42bea5f421219f7218c727",
+    "callbackURL": "/auth/facebook/callback",
+    "enable" : true
+  },
+  "google": {
+    "clientID": "328102506301-28sckgpg9joktt956jggl3c0liqub5jv.apps.googleusercontent.com",
+    "clientSecret": "Oc-BSCxlhvs3ayhcrDozlAGm",
+    "callbackURL": "/auth/google/callback",
+    "enable" : true
+  },
+  "linkedin": {
+    "clientID": "776t60krcb9nei",
+    "clientSecret": "nlmFC80g9Pv7Rlc1",
+    "callbackURL": "/auth/linkedin/callback",
+    "enable" : true
+  },
+  "account": {
+    "forgotPasswordTokenExpiryInDays": 1,
+    "autoResendEmailVerification" : true,
+    "emailVerifingTokenExpiryInDays" : 30,
+    "emailHasAlreadyVerified" : "The resource you are looking for is not available.",
+    "recoverAccountPasswordTokenExpiredMessage" : "The resource your are looking for hasbeen expired, please try again later.",
+    "recoverAccountPasswordTokenVerifiedMessage" :"Your email address has been verified."
+  },
+  "passport": {
+    "successRedirect": "/norman",
+    "successConnectRedirect": "/norman",
+    "successUnlinkeRedirect": "/norman"
+  },
+  "audit": {
+    "defaultCreatedBy" : "SYSTEM"
+  },
+  "access": {
+    "defaultPermissions": [
+        {"access": "standard"},
+        {"study": "participant"},
+        {"project": "collaborator"}
+    ]
+  },
+  "security":{
+    "maxLoginAttempts": 5,
+    "lockTimeInHours": 2,
+    "crypto" :{
+      "saltLenght" :128,
+      "keyLenght" :128,
+      "iterations" :10000,
+      "emailVerifingTokenLenght": 64
+    },
+    "failedLoginReasons" :{
+      "notFound" : "The email or password you entered is incorrect.",
+      "passwordIncorrect" : "The email or password you entered is incorrect.",
+      "maxAttempts" : "Your account has been temporarily locked, please try again later."
+    },
+    "passwordPolicy":{
+      "minLength":6,
+      "maxLength":13,
+      "digits":{
+        "allowed":true
+
+      },
+      "upperCase":{
+        "allowed":true
+      },
+      "lowerCase":{
+        "allowed":true
+      },
+      "specialCharacters":{
+        "allowed":true
+      },
+      "bannedPasswords":[
+
+      ],
+      "bannedCharacterCombination":["@sap.com"]
+
+    },
+    "scopes": [
+        {
+            "name": "access",
+            "permissions": {
+                "standard": ["standard"],
+                "guest": ["guest"]
+            }
+        },
+        {
+            "name": "project",
+            "permissions": {
+                "collaborator": ["standard"]
+            }
+        },
+        {
+            "name": "study",
+            "permissions": {
+                "participant": ["guest"]
+            }
+        }
+    ],
+    "errorMessage":"Password must be between 6 and 13 characters long\nIt must contain at least 1 number, 1 Upper case Letter, 1 lower case letter and a special character [ ! \" # $ % & ' ( ) * + , - . / : ; > < = ? @ [ ] \\ ^ _ ` { | } ~ ´ ]",
+      "roles":{
+          "projectRoles" : [
+              {
+                  "roles" : "owner-projectId",
+                  "allows" : [
+                      {
+                          "resources" : "/projectId",
+                          "permissions" : ["put", "post", "patch", "get", "delete"]
+                      },
+                      {
+                          "resources" : "/api/projects/projectId",
+                          "permissions" : ["put", "post", "patch", "get", "delete"]
+                      },
+                      {
+                          "resources" : "/api/projects/projectId/studies",
+                          "permissions" : ["put", "post", "patch", "get", "delete"]
+                      },
+                      {
+                          "resources" : "/api/projects/projectId/document",
+                          "permissions" : ["*"]
+                      },
+                      {
+                          "resources" : "/api/projects/projectId/settings",
+                          "permissions" : ["put", "patch", "delete"]
+                      },
+                      {
+                          "resources" : "/api/projects/projectId/owner",
+                          "permissions" : ["put"]
+                      },
+                      {
+                          "resources" : "/api/models/projectId",
+                          "permissions" : ["put", "post", "patch", "get", "delete"]
+                      },
+                      {
+                          "resources" : "/api/participant",
+                          "permissions" : ["put", "post", "patch", "get", "delete"]
+                      },
+                      {
+                          "resources" : "/api/uicatalogs",
+                          "permissions" : ["get"]
+                      }
+                  ]
+              },
+              {
+                  "roles" : "collaborator-projectId",
+                  "allows" : [
+                      {
+                          "resources" : "/projectId",
+                          "permissions" : ["put", "post", "patch", "get"]
+                      },
+                      {
+                          "resources" : "/api/projects/projectId",
+                          "permissions" : ["put", "post", "patch", "get"]
+                      },
+                      {
+                          "resources" : "/api/projects/projectId/studies",
+                          "permissions" : ["put", "post", "patch", "get", "delete"]
+                      },
+                      {
+                          "resources" : "/api/models/projectId",
+                          "permissions" : ["put", "post", "patch", "get", "delete"]
+                      },
+                      {
+                          "resources" : "/api/projects/projectId/document",
+                          "permissions" : ["*"]
+                      },
+                      {
+                          "resources" : "/api/participant",
+                          "permissions" : ["put", "post", "patch", "get", "delete"]
+                      },
+                      {
+                          "resources" : "/api/uicatalogs",
+                          "permissions" : ["get"]
+                      }
+                  ]
+              },
+              {
+                  "roles" : "spectator-projectId",
+                  "allows" : [
+                  ]
+              }
+          ],
+          "globalRoles" : [
+              {
+                  "roles" : "admin",
+                  "allows" : [
+                      {
+                          "resources" : "/api",
+                          "permissions" : ["*"]
+                      },
+                      {
+                          "resources" : "/api/uicatalogs",
+                          "permissions" : ["*"]
+                      },
+                      {
+                          "resources" : "/api/users",
+                          "permissions" : ["post"]
+                      }
+                  ]
+              },
+              {
+                  "roles" : "standard",
+                  "allows" : [
+                      {
+                          "resources" : "/api/participant",
+                          "permissions" : ["put", "post", "patch", "get", "delete"]
+                      },
+                      {
+                          "resources" : "/api/projects/",
+                          "permissions" : ["post"]
+                      },
+                      {
+                          "resources" : "/deploy/*",
+                          "permissions" : ["get"]
+                      },
+                      {
+                          "resources" : "/public/*",
+                          "permissions" : ["get"]
+                      },
+                      {
+                          "resources" : "/openui5/*",
+                          "permissions" : ["get"]
+                      },
+                      {
+                          "resources" : "/api/uicatalogs",
+                          "permissions" : ["get"]
+                      },
+                      {
+                          "resources" : "/api/users/avatar",
+                          "permissions" : ["post"]
+                      },
+                      {
+                          "resources" : "/api/users",
+                          "permissions" : ["get"]
+                      }
+                  ]
+              },
+              {
+                  "roles" : "guest",
+                  "allows" : [
+                  ]
+              }
+          ]
+      }
+  },
+  "web": {
+    "root": "../../dev",
+    "indexFallback": [
+      "/verifyemail",
+      "/auth",
+      "/auth/*",
+      "/login",
+      "/signup",
+     "/forgot-password",
+      "/reset-password/*",
+      "/norman"
+    ],
+    "compression": {
+      "threshold": 512
+    }
+  },
+  "services": "services.json",
+  "features": "features.json",
+  "fileUpload":{
+        "limits": {
+            "fields": 50,
+            "fileSize": 50.5e7,
+            "files": 500,
+            "parts": 500
+        }
+    }
+}

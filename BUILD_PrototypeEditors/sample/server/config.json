@@ -1,0 +1,152 @@
+{
+    "env": {
+        "NODE_ENV": "development"
+    },
+    "debug": {
+        "active": true,
+        "liveReload": [
+            "/norman"
+        ]
+    },
+    "server": {},
+    "logging": {
+        "logDirectory": "logs",
+        "output": {
+            "stdout": {
+                "type": "console"
+            },
+            "logfile": {
+                "type": "file",
+                "path": "norman_{now:yyyyMMdd}.log"
+            }
+        },
+        "loggers": {
+            "*": {
+                "stdout": "debug",
+                "logfile": "info"
+            }
+        }
+    },
+    "db": {
+        "hosts": "localhost",
+        "database": "norman-prototype-editors-sample",
+        "options": {
+            "db": {
+                "w": 1
+            },
+            "server": {
+                "poolSize": 5,
+                "socketOptions": {
+                    "keepAlive": 1
+                }
+            }
+        }
+    },
+    "deployment": {
+        "strategy": "single"
+    },
+    "http": {
+        "port": 9000,
+        "proxy": {
+            "host": "proxy",
+            "port": 8080
+        },
+        "secureFlag": false
+    },
+    "mail": {
+        "sender":"do.not.reply@example.com",
+        "smtp": {
+            "host": "mail.example.com",
+            "port": 25,
+            "debug": true,
+            "tls": {
+                "rejectUnauthorized": false
+            }
+        }
+    },
+    "services": "./config/services.json",
+    "features": "./config/features.json",
+    "security": "./config/security.json",
+    "web": {
+        "root": "../../dev",
+        "errors": {
+            "root": "errors"
+        },
+        "indexFallback": [
+            "/verifyemail",
+            "/auth",
+            "/auth/*",
+            "/login",
+            "/signup",
+            "/norman",
+            "/reset-password",
+            "/privacystatement",
+            "/tos"
+        ],
+        "compression": {
+            "threshold": 512
+        },
+        "body-parser": {
+            "json": {
+                "limit": "1mb"
+            }
+        }
+    },
+    "fileUpload":{
+        "limits": {
+            "fields": 50,
+            "fileSize": 50.5e7,
+            "files": 500,
+            "parts": 500
+        }
+    },
+    "session": {
+        "secret": "ccd4d99dac71175c5f59a37533c6e00aaa9718818c74b61763200a4622f4c198",
+        "tokenExpirationMinutes": 5,
+        "tokenLength": 64,
+        "tokenExpirationDays": 30
+    },
+    "facebook": {
+        "clientID": "942447102435121",
+        "clientSecret": "33a4514d7c42bea5f421219f7218c727",
+        "callbackURL": "/auth/facebook/callback",
+        "enable": true
+    },
+    "google": {
+        "clientID": "328102506301-28sckgpg9joktt956jggl3c0liqub5jv.apps.googleusercontent.com",
+        "clientSecret": "Oc-BSCxlhvs3ayhcrDozlAGm",
+        "callbackURL": "/auth/google/callback",
+        "enable": true
+    },
+    "linkedin": {
+        "clientID": "77jfov3s9ooaey",
+        "clientSecret": "nJKxCnNvHCdMPY67",
+        "callbackURL": "/auth/linkedin/callback",
+        "enable": true
+    },
+    "account": {
+        "accountNameMinlength": 3,
+        "accountNameMaxlength": 120,
+        "forgotPasswordTokenExpiryInDays": 1,
+        "autoResendEmailVerification": true,
+        "emailVerifingTokenExpiryInDays": 30,
+        "emailHasAlreadyVerified": "Your email address has been already verified.",
+        "recoverAccountPasswordTokenExpiredMessage": "The resource your are looking for hasbeen expired, please try again later.",
+        "recoverAccountPasswordTokenVerifiedMessage": "Your email address has been verified."
+    },
+    "passport": {
+        "successRedirect": "/norman",
+        "successConnectRedirect": "/norman",
+        "successUnlinkeRedirect": "/norman"
+    },
+    "audit": {
+        "defaultCreatedBy": "SYSTEM"
+    },
+    "access": {
+        "defaultPermissions": [
+            {"access": "standard"},
+            {"study": "participant"},
+            {"project": "collaborator"}
+        ]
+    }
+}

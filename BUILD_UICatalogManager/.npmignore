@@ -1,0 +1,9 @@
+node_modules
+public
+.tmp
+.idea
+dev
+dist
+.DS_Store
+*debug.log
+*.sublime-*

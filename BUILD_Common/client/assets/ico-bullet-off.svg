@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="17px" height="11px" viewBox="0 0 17 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Group Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Conversations-Zoom" sketch:type="MSArtboardGroup" transform="translate(-563.000000, -1619.000000)" fill="#2C3E50">
+            <g id="Group-Copy" sketch:type="MSLayerGroup" transform="translate(563.179688, 1619.000000)">
+                <rect id="Rectangle-44" sketch:type="MSShapeGroup" x="5" y="0" width="11.0011909" height="3"></rect>
+                <circle id="Oval-27" sketch:type="MSShapeGroup" cx="1.5" cy="1.5" r="1.5"></circle>
+                <circle id="Oval-27-Copy" sketch:type="MSShapeGroup" cx="1.5" cy="5.5" r="1.5"></circle>
+                <circle id="Oval-27-Copy-2" sketch:type="MSShapeGroup" cx="1.5" cy="9.5" r="1.5"></circle>
+                <rect id="Rectangle-44-Copy" sketch:type="MSShapeGroup" x="5" y="4" width="11.0011909" height="3"></rect>
+                <rect id="Rectangle-44-Copy-2" sketch:type="MSShapeGroup" x="5" y="8" width="11.0011909" height="3"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

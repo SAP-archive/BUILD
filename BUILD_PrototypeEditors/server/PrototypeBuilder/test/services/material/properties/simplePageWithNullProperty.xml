@@ -1,0 +1,3 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.view.SimplePage" xmlns:m="sap.m">
+    <m:Page id="RootControl"/>
+</mvc:View>

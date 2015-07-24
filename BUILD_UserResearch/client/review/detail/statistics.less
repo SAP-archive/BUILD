@@ -1,0 +1,185 @@
+@import (reference) "../../styles/base.less";
+
+#review-detail-statistics {
+    .stats-container {
+        .actions {
+            line-height: 90px;
+            position: relative;
+             [class*='icon-big'] {
+                  min-width: 75px;
+                }
+                span.big {
+                  min-width: 180px;
+                }
+
+                .actions div.big {
+                    margin: 0 60px 0 10px;
+                    min-width: 180px;
+                }
+               #stats-comments-count {
+                 padding-left: 10px;
+               }
+            &.big {
+                height: 230px;
+            }
+            &.medium {
+                height: 90px;
+                max-height: 90px;
+                min-height: 90px;
+            }
+            &.col {
+                margin-bottom: 30px;
+            }
+            .text {
+                line-height: 50px;
+                font-weight: 300;
+                font-size: 36px;
+                margin: 0 30px 0 60px;
+            }
+            .text-left {
+                line-height: 50px;
+                font-weight: 300;
+                font-size: 36px;
+                margin-left: 50px;
+
+                small {
+                    font-weight: 300;
+                    font-size: 20px;
+                }
+            }
+            .text-left-sentiment {
+                line-height: 40px;
+                padding-left: 10px;
+                font-weight: 300;
+                font-size: 36px;
+                margin-left: 40px;
+
+                small {
+                    font-weight: 300;
+                    font-size: 20px;
+                }
+            }
+            span {
+                margin: 0 60px 0 10px;
+
+                &.big {
+                    font-weight: 300;
+                    font-size: 64px;
+                    letter-spacing: -1px;
+                    max-height: 85px;
+
+                    .normal {
+                        font-weight: 300;
+                        font-size: 48px;
+                        margin: 0;
+                    }
+                }
+                &.small {
+                    margin-left: 55px;
+                }
+                &.tiny {
+                    font-weight: 300;
+                    font-size: 15px;
+                    margin-top: -10px;
+                    line-height: 15px;
+                }
+                &.medium {
+                    font-size: 36px;
+                    font-weight: 300;
+
+                    .normal {
+                        font-weight: 300;
+                        font-size: 24px;
+                        margin: 0;
+                    }
+                }
+                small {
+                    font-size: 36px;
+                    font-weight: 400;
+
+                    &.light {
+                        font-weight: 300;
+                    }
+                }
+            }
+            .smallCol {
+                .top {
+                    margin-top: 25px;
+                    max-height: 75px;
+                    line-height: 60px;
+                }
+            }
+        }
+    }
+    .export-data {
+        margin: 30px 0 0 50px;
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+        text-decoration: underline;
+        color: @CuriousBlue-500;
+        line-height: 40px;
+        position: relative;
+
+        &::before {
+            .user-research-ico-export;
+            .user-research-ico-export-dims;
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: -25px;
+        }
+    }
+    .ui-tab-content {
+        padding: 0 30px 50px 30px;
+
+        .chart-row {
+            margin-right: 55px;
+
+            .pie {
+                margin: 0 30px;
+            }
+            &.col {
+                margin-top: 30px;
+            }
+            .chart-data {
+                .tasks {
+                    &.col {
+                        min-height: 56px;
+                    }
+                }
+            }
+        }
+        .task-chart-row {
+            margin-top: -50px;
+        }
+        .statistics-chart-footer {
+            padding: 10px;
+            margin: 0;
+            font-weight: 300;
+            font-size: 15px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+    .actions {
+        .action {
+            &.icon-bunny.top, &.icon-turtle.top {
+                width: 50px;
+
+                &::before {
+                    top: 19px;
+                }
+            }
+            &.icon-bunny.top {
+                margin-left: 40px;
+            }
+        }
+        &.column-size{
+            width: 150px;
+        }
+        div.slice span {
+            margin: 0;
+        }
+    }
+}

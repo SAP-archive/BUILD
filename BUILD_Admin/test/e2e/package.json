@@ -1,0 +1,30 @@
+{
+    "name": "norman-admin-e2e",
+    "version": "0.1.0",
+    "description": "Norman Admin End2End tests",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SAP/BUILD.git"
+    },
+	"maintainers": [
+        {
+            "name": "BUILD Team",
+           "email": "contact.build@sap.com"
+        }
+	],
+    "licenses": [
+        {
+            "type": "Apache License, Version 2.0",
+            "url": "https://github.com/SAP/BUILD/blob/master/LICENSE.txt"
+        }
+    ],
+    "author": "",
+    "dependencies": {},
+    "peerDependencies": {
+        "grunt-protractor-runner": "^1.2.1",
+        "norman-testing-tp": "*",
+        "norman-testing-tp-client": "*",
+        "superagent": "^0.21.0"
+    },
+    "readmeFilename": "README.md"
+}

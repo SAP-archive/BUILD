@@ -1,0 +1,13 @@
+<div class="np-d-tile-user" ui-droppable="onDrop($event, $data, owner)" drop-channel="owner">
+    <div ui-draggable="{{(user.role == 'owner') && isCurrentUser}}" drag="owner" drag-channel="{{user.role}}"
+         on-drop-success="onDropSuccessHandler($event, $index, owner)" drag-hover-class
+         ng-class="{'ui-owner-icon' : user.role == 'owner', 'ui-owner' :true}">
+    </div>
+    <div class="np-d-tile-user-top-box">
+        <ui-avatar avatar-name="{{user.name || user.email}}" avatar-image="{{user.avatar_url}}"></ui-avatar>
+    </div>
+    <div class="np-d-tile-user-bottom-box">
+        <span class="np-d-tile-user-name" ng-bind="user.name || user.email"></span>
+        <span class="np-d-tile-user-description" ng-bind="user.description"></span>
+    </div>
+</div>

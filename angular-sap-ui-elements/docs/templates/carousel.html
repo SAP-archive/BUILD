@@ -1,0 +1,110 @@
+<ui-toolbar layout="column" class="left-nav-title">
+    <h1 class="ui-toolbar-tools" flex layout="column">Directives > ui-carousel</h1>
+</ui-toolbar>
+<ui-content flex ui-scroll-y >
+    <ui-content flex class="doc-content">
+        <div layout="row"><a name="Directives-ui-carousel"><h2 class="item-name">Horizontal carousel </h2></a></div>
+        <div layout="row">
+            <div class="item" layout="column" layout-align="start start" flex="20" flex-sm="20">
+                <div layout="row" layout-align="start center">
+                    <ui-button size="small" ng-click="carouselGo('prev')" style="margin-right: 20px">previous</ui-button>
+                    <ui-button size="small" ng-click="carouselGo('next')">next</ui-button>
+                </div>
+                <div layout="row" layout-align="start center">
+                    <h3 class="item-name" style="padding-left: 0">Current Item: {{oCarouselCurrentItem.name}}</h3>
+                </div>
+                <div layout="row" layout-align="start center">
+                    <img src="{{oCarouselCurrentItem.thumbnail}}">
+                </div>
+            </div>
+            <div class="code" flex="80" flex-sm="80">
+                <pre><code>
+&lt;ui-carousel horizontal data-items="aCarouselItems" data-current-item="oCarouselCurrentItem" /&gt;
+&lt;/ui-carousel&gt;
+                </code></pre>
+            </div>
+        </div>
+
+        <div layout="row"><a name="Directives-Event-Listeners"><h2 class="item-name">Events listner and emitter within the controller</h2></a></div>
+        <div layout="row" layout-align="start start">
+            <div flex class="code">
+                <pre style="margin-left: 0;"><code>
+$scope.$on("updateScreen", function(oEvent, oItem) {
+  $scope.oCarouselCurrentItem = oItem;
+});
+$scope.$broadcast("updateCarouselScroll", $scope.oCarouselCurrentItem);
+                </code></pre>
+            </div>
+        </div>
+
+        <div layout="row"><a name="Directives-options"><h2 class="item-name">ui-carousel Events</h2></a></div>
+        <div class="item" layout="row">
+            <div layout="row">
+                <div class="item">
+                    <div class="table-options">
+                        <table class="table-options-values">
+                            <thead>
+                                <tr>
+                                    <th style="width: 200px;">Name</th>
+                                    <th style="width: 100px;">type</th>
+                                    <th>description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>updateScreen</td>
+                                    <td>Emitted</td>
+                                    <td>This event is fired if there is a click on one of the element showed in the carousel bar.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>updateCarouselScroll</td>
+                                    <td>Listened</td>
+                                    <td>This event is listened by the directive, if the user wants to update the position of the scroll's carousel bar he should fire this event.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div layout="row"><a name="Directives-Tooltip-Top"><h2 class="item-name">ui-carousel Options</h2></a></div>
+        <div layout="row">
+            <div class="item">
+                <div class="table-options">
+                    <table class="table-options-values">
+                        <thead>
+                            <tr>
+                                <th style="width: 200px;">Name</th>
+                                <th style="width: 100px;">type</th>
+                                <th>description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>items</td>
+                                <td>Array</td>
+                                <td>The array that contains the element that will be showed in the carousel container</td>
+                            </tr>
+                            <tr>
+                                <td>currentItems</td>
+                                <td>object</td>
+                                <td>The current item showed on the screen</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </ui-content>
+</ui-content>
+
+<ui-toolbar layout="column" class="left-nav-title">
+    <div flex style="min-height: 152px;">
+        <ui-carousel class="customized-horizental-carousel-class" horizontal data-items="aCarouselItems" data-current-item="oCarouselCurrentItem" />
+        </ui-carousel>
+    </div>
+</ui-toolbar>

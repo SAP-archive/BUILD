@@ -1,0 +1,52 @@
+{
+    "env": {
+        "NODE_ENV": "development"
+    },
+    "debug": {
+        "active": 1
+    },
+    "server": {
+        "workers": 0
+    },
+    "logging": {
+        "output": {
+            "stdout": {
+                "type": "console"
+            }
+        },
+        "loggers": {
+            "*": {
+                "stdout": "debug"
+            }
+        },
+        "http": {
+            "logMode": "response"
+        }
+    },
+    "db": {
+        "hosts": "localhost",
+        "database": "norman-test",
+        "options": {
+            "db": {
+                "w": 1
+            },
+            "server": {
+                "poolSize": 1,
+                "socketOptions": {
+                    "keepAlive": 1
+                }
+            }
+        }
+    },
+    "deployment": {
+        "strategy": "single"
+    },
+    "http": {
+        "port": 9080
+    },
+    "services": {},
+    "web": {},
+    "session": {
+        "secret": "e8515bf984b07302015faa7e40b2eb9c50c799e6331244489cdbd624372a6156"
+    }
+}

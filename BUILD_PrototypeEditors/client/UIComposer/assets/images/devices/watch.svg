@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>watch</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.21 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="TOOLKIT" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="UI-TOOLKIT" sketch:type="MSArtboardGroup" transform="translate(-426.000000, -1396.000000)" filter="url(#filter-1)" fill="#FFFFFF">
+            <g id="DEVICE-SWITCHER" sketch:type="MSLayerGroup" transform="translate(394.000000, 1348.000000)">
+                <path d="M35.9994225,48 C34.3428872,48 33,49.3443507 33,50.9994225 L33,60.0005775 C33,61.6571128 34.3443507,63 35.9994225,63 L45.0005775,63 C46.6571128,63 48,61.6556493 48,60.0005775 L48,50.9994225 C48,49.3428872 46.6556493,48 45.0005775,48 L35.9994225,48 Z M36.992017,50 C35.8918564,50 35,50.9001762 35,51.992017 L35,59.007983 C35,60.1081436 35.9001762,61 36.992017,61 L44.007983,61 C45.1081436,61 46,60.0998238 46,59.007983 L46,51.992017 C46,50.8918564 45.0998238,50 44.007983,50 L36.992017,50 Z M40,51 L40,56 L41,56 L41,51 L40,51 Z M41,55 L41,56 L43,56 L43,55 L41,55 Z" id="watch" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,228 @@
+@import (reference) '../node_modules/norman-client-tp/node_modules/angular-sap-ui-elements/styles/variables';
+
+.dmd-mainContainer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.dmd-main {
+  font-size: 80%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 99%;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+.dmd-scroll {
+  height: 100%;
+  overflow: auto;
+}
+
+.modelerlayout {
+  position: relative;
+  display: block;
+  overflow: visible;
+  margin:0;
+  padding:0;
+  width: 100%;
+  height: 100%;
+}
+
+.dmd-entity {
+  position: absolute;
+  width: 300px;
+  height: 50px;
+  z-index: 90;
+  > div {
+    background-color: #EDEDED;
+    height: 41px;
+    margin: 4px;
+  }
+  .dmd-entityName {
+    line-height: 41px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4A4A4A;
+    text-align: left;
+    margin-left: 1em;
+    margin-right: 1.5em;
+
+    word-wrap: normal;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+
+  }
+  .editable-text {
+    position: absolute;
+    top: 4px;
+    //right: 4px;
+    //left: 4px;
+    bottom: 4px;
+    z-index: 99;
+
+    .editable-input {
+      width: 80%;
+      height: 30px;
+      text-align: left;
+      margin: 3px;
+      font-size: 16px;
+      background-color: white;
+      color: #000000;
+    }
+  }
+
+  &._jsPlumb_target_hover {
+    box-shadow: 1px 1px 15px @SilverSand-900;
+    -o-box-shadow: 1px 1px 15px @SilverSand-900;
+    -webkit-box-shadow: 1px 1px 15px @SilverSand-900;
+    -moz-box-shadow: 1px 1px 15px @SilverSand-900;
+    -moz-border-radius: 0.5em;
+  }
+  &._jsPlumb_source_hover {
+    box-shadow: 1px 1px 15px @SilverSand-900;
+    -o-box-shadow: 1px 1px 15px @SilverSand-900;
+    -webkit-box-shadow: 1px 1px 15px @SilverSand-900;
+    -moz-box-shadow: 1px 1px 15px @SilverSand-900;
+    -moz-border-radius: 0.5em;
+  }
+  &.dmd-selectedEntity {
+    > div {
+      background-color: @PickledBluewood-900; //#2C3E50
+      box-shadow: 1px 1px 15px @SilverSand-900;
+      -o-box-shadow: 1px 1px 15px @SilverSand-900;
+      -webkit-box-shadow: 1px 1px 15px @SilverSand-900;
+      -moz-box-shadow: 1px 1px 15px @SilverSand-900;
+      -moz-border-radius: 0.5em;
+
+    }
+    .dmd-entityName {
+      color: #FFFFFF;
+    }
+    .dmd-linkIcon path {
+      fill: #FFFFFF;
+    }
+    .dmd-removeIcon path {
+      fill: @Cinnabar-500;
+
+    }
+    .dmd-removeIcon {
+      display: flex;
+      > div {
+        width: 20px;
+        height: 20px;
+        padding: 2px;
+      }
+
+    }
+  }
+
+  .dmd-linkIcon {
+    position: absolute;
+    height: 100%;
+    cursor: pointer;
+    z-index: 90;
+    top: 43px;
+    left: -4px;
+    border: solid 1px @CuriousBlue-500; // #3398DB
+    border-radius: 100%;
+    height: 5px;
+    width: 5px;
+    path {
+      fill: #4A4A4A;
+    }
+
+  }
+
+  .dmd-removeIcon {
+    position: absolute;
+    cursor: pointer;
+    z-index: 90;
+    top: 13px;
+    right: 8px;
+    display: none;
+    path {
+      fill: @Cinnabar-500;
+    }
+    > div {
+      width: 20px;
+      height: 20px;
+      padding: 2px;
+    }
+
+  }
+  &:hover {
+    .dmd-removeIcon {
+      display: flex;
+      > div {
+        width: 20px;
+        height: 20px;
+        padding: 2px;
+      }
+
+    }
+  }
+  &.jsplumb-drag-active.dragHover > div {
+    background-color: @SilverSand-500;
+  }
+
+}
+
+.dmd-edge-multiplicity {
+  background-color: white;
+  z-index: 99;
+  font: bold 12px sans-serif;
+  width: 1em;
+  height: 1.5em;
+  color: @CuriousBlue-500;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.removeConnection {
+
+  margin: auto;
+  font-size: 1.5em;
+  display: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px transparent;
+  -webkit-transition: -webkit-box-shadow 0.25s ease-in;
+  -moz-transition: -moz-box-shadow 0.25s ease-in;
+  transition: box-shadow 0.25s ease-in;
+  z-index: 99;
+}
+
+.removeConnection:hover {
+  box-shadow: 0px 0px 6px transparent;
+  font-size: 2em;
+}
+
+.removeConnection._jsPlumb_hover {
+  display: flex;
+}
+
+.dmd-layout-input {
+  color: white;
+  border-bottom: solid 1px gray;
+  margin: 1px;
+  text-align: left;
+  &:hover {
+    background-color: @CuriousBlue-500;
+  }
+  &:active {
+    background-color: @CuriousBlue-900;
+  }
+}
+
+.heading {
+  margin-top: 20%;
+}

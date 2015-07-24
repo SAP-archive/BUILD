@@ -1,0 +1,57 @@
+{
+  "name": "PageWithChildren",
+  "mainEntityId": "",
+  "rootControlId": "RootControl",
+  "controls": [
+    {
+      "controlId": "RootControl",
+      "parentControlId": null,
+      "controlName": "sap_m_Page",
+      "catalogControlName": "sap_m_Page",
+      "properties": [
+        {
+          "name": "title",
+          "value": "Simple Page"
+        }
+      ],
+      "groups": [
+        {
+          "groupId": "content",
+          "children": [
+            "MyLabel"
+          ]
+        },
+        {
+          "groupId": "notMyContent",
+          "children": [
+            "MyOtherLabel"
+          ]
+        }
+      ]
+    },
+    {
+      "controlId": "MyLabel",
+      "parentControlId": "RootControl",
+      "controlName": "sap_m_Label",
+      "catalogControlName": "sap_m_Label",
+      "properties": [
+        {
+          "name": "text",
+          "value": "My Label"
+        }
+      ]
+    },
+    {
+      "controlId": "MyOtherLabel",
+      "parentControlId": "RootControl",
+      "controlName": "sap_m_Label",
+      "catalogControlName": "sap_m_Label",
+      "properties": [
+        {
+          "name": "text",
+          "value": "My Other Label"
+        }
+      ]
+    }
+  ]
+}

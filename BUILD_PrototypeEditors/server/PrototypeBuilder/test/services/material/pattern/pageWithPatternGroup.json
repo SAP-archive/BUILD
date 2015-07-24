@@ -1,0 +1,31 @@
+{
+  "name": "SimplePage",
+  "mainEntityId": "",
+  "rootControlId": "RootControl",
+  "controls": [
+    {
+      "controlId": "RootControl",
+      "parentControlId": null,
+      "controlName": "sap_m_Page",
+      "catalogControlName": "sap_m_Page",
+      "properties": [
+        {
+          "name": "title",
+          "value": "Simple Page"
+        }
+      ],
+      "groups": [
+        {
+          "groupId": "content",
+          "children": ["MyPatternSection"]
+        }
+      ]
+    },
+    {
+      "controlId": "MyPatternSection",
+      "parentControlId": "RootControl",
+      "controlName": "sap_my_PatternSection",
+      "catalogControlName": "sap_my_PatternSection"
+    }
+  ]
+}

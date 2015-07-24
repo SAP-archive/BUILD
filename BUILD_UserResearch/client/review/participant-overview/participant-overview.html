@@ -1,0 +1,55 @@
+<div id="study-review-participant-overview" class="animated fadeIn">
+    <div layout="row" layout-align="start start" class="first-row">
+        <h1>Participant Overview</h1>
+    </div>
+    <div layout="row" class="no-margin">
+        <div layout="column">
+            <ui-toolbar layout="row" layout-align="start start" class="actions">
+                <div class="action icon-big-participant"  ui-tooltip ui-tooltip-title="Participants" ui-tooltip-side="bottom"></div>
+                <span class="big" ng-bind="overview.participantsCount"> </span>
+                <div class="action icon-big-clock" ui-tooltip ui-tooltip-title="Time" ui-tooltip-side="bottom"></div>
+                <div layout="column">
+                    <span class="big" ng-bind-html="overview.averageTimeInStudy | AverageDurationFilter"></span>
+                    <span class="tiny">AVERAGE</span>
+                </div>
+            </ui-toolbar>
+            <ui-toolbar layout="row" layout-align="start start" class="actions">
+                <div class="action icon-big-study"  ui-tooltip ui-tooltip-title="Tasks" ui-tooltip-side="bottom"></div>
+                <div layout="column">
+                    <div class="big">
+                        <span class="big-no-margin"  ng-bind="overview.averageCompletedTasks"></span>
+                        <span class="title">tasks</span>
+                    </div>
+                    <span class="tiny">AVERAGE</span>
+                </div>
+                <div  ui-tooltip ui-tooltip-title="Answers" ui-tooltip-side="bottom">
+                    <div class="action icon-big-question" ></div>
+                </div>
+                 <div layout="column">
+                    <div class="big"><span class="big-no-margin" ng-bind="overview.averageAnswers"></span>
+                    <span class="title">answers</span> </div>
+                    <span class="tiny">AVERAGE</span>
+                </div>
+
+                <div class="action icon-big-annotation"  ui-tooltip ui-tooltip-title="Annotations" ui-tooltip-side="bottom"></div>
+                 <div layout="column">
+                    <span class="big" ng-bind="overview.averageAnnotations"></span>
+                    <span class="tiny">AVERAGE</span>
+                </div>
+                <div class="action icon-big-comments"  ui-tooltip ui-tooltip-title="Comments" ui-tooltip-side="bottom"></div>
+                 <div layout="column">
+                    <span class="big" ng-bind="overview.averageComments"></span>
+                    <span class="tiny">AVERAGE</span>
+                </div>
+
+            </ui-toolbar>
+
+        </div>
+    </div>
+    <div layout="row" layout-fill>
+        <div layout="row"><h1>Participant breakdown</h1></div>
+    </div>
+
+<study-participant-breakdown ng-model="participantBreakdown" > </study-participant-breakdown>
+
+</div>

@@ -1,0 +1,5 @@
+lib-cov/
+test/
+.npmignore
+Gruntfile.js
+npm-debug.log

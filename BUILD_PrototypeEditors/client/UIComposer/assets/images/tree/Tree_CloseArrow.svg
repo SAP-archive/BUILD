@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="5px" height="8px" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Closed</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Tree-Behavior" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Story-#" sketch:type="MSArtboardGroup" transform="translate(-65.000000, -80.000000)" fill="#DBDFE1">
+            <g id="Tree---List-State" sketch:type="MSLayerGroup" transform="translate(12.000000, 18.000000)">
+                <path d="M57.5,66 C57.5,66.1354173 57.4505213,66.2526037 57.3515625,66.3515625 L53.8515625,69.8515625 C53.7526037,69.9505213 53.6354173,70 53.5,70 C53.3645827,70 53.2473963,69.9505213 53.1484375,69.8515625 C53.0494787,69.7526037 53,69.6354173 53,69.5 L53,62.5 C53,62.3645827 53.0494787,62.2473963 53.1484375,62.1484375 C53.2473963,62.0494787 53.3645827,62 53.5,62 C53.6354173,62 53.7526037,62.0494787 53.8515625,62.1484375 L57.3515625,65.6484375 C57.4505213,65.7473963 57.5,65.8645827 57.5,66 L57.5,66 Z" id="Closed" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Search</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="USE-CASE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="VD-SPECS" sketch:type="MSArtboardGroup" transform="translate(-785.000000, -1213.000000)" fill="#2C3E50">
+            <g id="Search" sketch:type="MSLayerGroup" transform="translate(785.000000, 1213.000000)">
+                <path d="M7.6,15.8333333 C11.7973641,15.8333333 15.2,12.2889209 15.2,7.91666667 C15.2,3.5444124 11.7973641,0 7.6,0 C3.4026359,0 0,3.5444124 0,7.91666667 C0,12.2889209 3.4026359,15.8333333 7.6,15.8333333 Z M7.6,13.3333333 C10.4718807,13.3333333 12.8,10.9082091 12.8,7.91666667 C12.8,4.92512427 10.4718807,2.5 7.6,2.5 C4.7281193,2.5 2.4,4.92512427 2.4,7.91666667 C2.4,10.9082091 4.7281193,13.3333333 7.6,13.3333333 Z" id="search" sketch:type="MSShapeGroup"></path>
+                <path d="M13.1816829,10.9972493 L19.3714923,17.1870586 C19.8581979,17.6737642 19.8604259,18.4606419 19.3688672,18.9522006 L19.3688672,18.9522006 C18.8807119,19.4403559 18.0845525,19.4356527 17.6037253,18.9548256 L11.413916,12.7650162 L13.1816829,10.9972493 L13.1816829,10.9972493 Z" id="Rectangle-74" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

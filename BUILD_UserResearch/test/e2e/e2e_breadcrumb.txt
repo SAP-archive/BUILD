@@ -1,0 +1,11 @@
+Gruntfile test:e2e       calls    protractor:e2e
+
+protractor:e2e           calls    protractor.conf
+
+protractor.conf          calls    "test/e2e/testcases/steps/*.steps.js", "norman-*-e2e/e2e/testcases/steps/*.steps.js", "test/e2e/testcases/*.feature"
+
+*steps                   call     *.po.js
+
+norman-aut../auth.steps  calls    "support/utility.js"
+
+utility                  calls    create user function

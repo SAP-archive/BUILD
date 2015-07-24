@@ -1,0 +1,203 @@
+{
+    "projectId": "MyTestProject",
+    "entities": [
+        {
+            "_id": "Entity1",
+            "name": "SalesOrder",
+            "nameSet": "SalesOrderSet",
+            "label": "SalesOrder",
+            "properties": [
+                {
+                    "_id": "Prop1",
+                    "isKey": true,
+                    "propertyType": "String",
+                    "label": "ID",
+                    "order": 0,
+                    "name": "ID"
+                },
+                {
+                    "_id": "Prop2",
+                    "isKey": false,
+                    "propertyType": "String",
+                    "label": "Name",
+                    "order": 1,
+                    "name": "Name"
+                },
+                {
+                    "_id": "Prop3",
+                    "isKey": false,
+                    "propertyType": "Decimal",
+                    "label": "Amount",
+                    "order": 3,
+                    "name": "Amount"
+                },
+                {
+                    "_id": "Prop4",
+                    "isKey": false,
+                    "propertyType": "DateTime",
+                    "label": "StartDate",
+                    "order": 4,
+                    "name": "StartDate"
+                },
+                {
+                    "_id": "Prop5",
+                    "isKey": false,
+                    "propertyType": "Time",
+                    "label": "EndTime",
+                    "order": 5,
+                    "name": "EndTime"
+                } ,
+                {
+                    "_id": "Prop6",
+                    "isKey": false,
+                    "propertyType": "String",
+                    "label": "ProductID",
+                    "order": 5,
+                    "name": "ProductID"
+                }
+
+            ],
+            "navigationProperties": [
+                {
+                    "_id": "NavProp1",
+                    "name": "NavToSalesOrderSet",
+                    "multiplicity": true,
+                    "toEntityId": "Entity3",
+                    "referentialConstraints": [
+                        {
+                            "entityId": "Entity1",
+                            "propertyRef": "Prop1"
+                        },
+                        {
+                            "entityId": "Entity3",
+                            "propertyRef": "Prop3"
+                        }
+                    ]
+                },
+                {
+                    "_id": "NavProp2",
+                    "name": "NavToProduct",
+                    "multiplicity": false,
+                    "toEntityId": "Entity2",
+                    "referentialConstraints": [
+                        {
+                            "entityId": "Entity1",
+                            "propertyRef": "Prop6"
+                        },
+                        {
+                            "entityId": "Entity2",
+                            "propertyRef": "Prop1"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "_id": "Entity3",
+            "name": "SalesOrderItem",
+            "nameSet": "SalesOrderItemSet",
+            "label": "SalesOrderItem",
+            "properties": [
+                {
+                    "_id": "Prop1",
+                    "isKey": true,
+                    "propertyType": "String",
+                    "label": "ID",
+                    "order": 0,
+                    "name": "ID"
+                },
+                {
+                    "_id": "Prop2",
+                    "isKey": false,
+                    "propertyType": "Decimal",
+                    "label": "Quantity",
+                    "order": 1,
+                    "name": "Quantity"
+                },
+                {
+                    "_id": "Prop3",
+                    "isKey": false,
+                    "propertyType": "String",
+                    "label": "SalesOrderID",
+                    "order": 2,
+                    "name": "SalesOrderID"
+                },
+                {
+                    "_id": "Prop4",
+                    "isKey": false,
+                    "propertyType": "String",
+                    "label": "ProductID",
+                    "order": 3,
+                    "name": "ProductID"
+                }
+            ],
+            "navigationProperties": [
+                {
+                    "_id": "NavProp1",
+                    "name": "ProductSet",
+                    "multiplicity": false,
+                    "toEntityId": "Entity2",
+                    "referentialConstraints": [
+                        {
+                            "entityId": "Entity3",
+                            "propertyRef": "Prop4"
+                        },
+                        {
+                            "entityId": "Entity2",
+                            "propertyRef": "Prop1"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "_id": "Entity2",
+            "name": "Product",
+            "nameSet": "ProductSet",
+            "label": "Product",
+            "properties": [
+                {
+                    "_id": "Prop1",
+                    "isKey": true,
+                    "propertyType": "String",
+                    "label": "ID",
+                    "order": 0,
+                    "name": "ID"
+                },
+                {
+                    "_id": "Prop2",
+                    "isKey": false,
+                    "propertyType": "String",
+                    "label": "Description",
+                    "order": 1,
+                    "name": "Description"
+                },
+                {
+                    "_id": "Prop3",
+                    "isKey": false,
+                    "propertyType": "Decimal",
+                    "label": "Amount",
+                    "order": 2,
+                    "name": "Amount"
+                },
+                {
+                    "_id": "Prop4",
+                    "isKey": false,
+                    "propertyType": "String",
+                    "label": "Currency",
+                    "order": 3,
+                    "name": "Currency"
+                },
+                {
+                    "_id": "Prop5",
+                    "isKey": false,
+                    "propertyType": "String",
+                    "label": "Picture",
+                    "order": 4,
+                    "name": "Picture"
+                }
+            ],
+            "navigationProperties": []
+        }
+    ]
+}

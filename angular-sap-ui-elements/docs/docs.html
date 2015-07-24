@@ -1,0 +1,344 @@
+<style type="text/css" media="screen">
+html, body, .app {
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+}
+a:hover, a:focus {
+    text-decoration: none;
+    outline: none;
+}
+.heading {
+    margin-top: 30px;
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: 700;
+    color: #2C3E50;
+    line-height: 32px;
+    padding-left: 20px;
+    clear: left;
+}
+.title {
+    margin: 20px 0 0 0;
+}
+.item-name, .item-options {
+    padding-top: 30px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 18px;
+    color: #2C3E50;
+    line-height: 24px;
+    padding-bottom: 20px;
+    clear: left;
+}
+.doc-content{
+    padding: 0 20px;
+}
+.item-options {
+    padding-left: 0;
+}
+.item {
+    min-height: 48px;
+}
+.extra-height-item {
+    height: 340px;
+}
+.item.dark {
+    background-color: #2c3e50;
+}
+.row-top {
+    margin-top: 20px;
+}
+pre {
+    background-color: #FFFCDA;
+    border: 0;
+    padding: 10px;
+    margin-left: 30px;
+}
+code {
+    font-family: DroidSansMono;
+    font-size: 13px;
+    color: #2C3E50;
+    line-height: 18px;
+    text-align: left;
+}
+
+kbd {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #fff;
+    background-color: #333;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.25);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.25)
+}
+
+kbd kbd {
+    padding: 0;
+    font-size: 100%;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+h1 {
+    padding: 10px;
+}
+.left-nav-title {
+    background-color: #2c3e50;
+}
+.left-nav-content {
+    background-color: #43596f;
+    padding-bottom: 20px;
+}
+.left-nav-content a:active > div {
+    background-color: #2c3e50;
+}
+.menu-title {
+    line-height: 40px;
+    text-indent: 10px;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 23px;
+}
+.menu-item {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 30px;
+    height: 30px;
+    padding-left: 10px;
+    transition: all 0.3s ease-out;
+}
+.menu-item a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.menu-item:hover {
+    background-color: #2c3e50;
+}
+.menu-item.on {
+    background-color: #2c3e50;
+}
+.code-item {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 20px 0 10px;
+}
+.sub-menu-item {
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 30px;
+    height: 30px;
+    padding-left: 25px;
+    transition: all 0.3s ease-out;
+}
+.menu-item:hover {
+    cursor: pointer;
+}
+.sub-menu-item:hover {
+    cursor: pointer;
+}
+.item-tooltip {
+    text-decoration: underline;
+}
+.item-tooltip:hover {
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+.sub-menu-item:hover {
+    background-color: #2c3e50;
+}
+.sub-menu-item.on {
+    background-color: #2c3e50;
+}
+.colourpalette {
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.colourpalette div {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    float: left;
+}
+.colourpalette div:nth-child(5n + 1) {
+    clear: left;
+}
+.colourpalette div:nth-child(n + 6) {
+    margin-top: 20px;
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+th {
+    font-weight: 700;
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.uploadElement {
+    width: 250px;
+    height: 250px;
+    border: 1px black solid;
+    background-color: gray;
+    position: relative;
+    float: left;
+    margin-right: 5px;
+}
+
+.table-options-values {
+    font-family: 'Roboto';
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.table-options-values>thead>tr>th, .table-options-values>tbody>tr>th, .table-options-values>tfoot>tr>th, .table-options-values>thead>tr>td, .table-options-values>tbody>tr>td, .table-options-values>tfoot>tr>td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    border: 1px solid #ddd;
+}
+.app {
+    height: 100%;
+}
+.ui-toolbar-tools {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    height: 64px;
+    min-height: 64px;
+    max-height: 64px;
+    font-size: inherit;
+    font-weight: normal;
+    padding: 0 10px;
+    margin: 0;
+    color: #fff;
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: 500;
+}
+.ui-toolbar-tools > * {
+    font-size: inherit;
+    margin: 0 8px;
+}
+.ui-toolbar-tools h2, .ui-toolbar-tools h3 {
+    font-weight: normal;
+}
+.ui-toolbar-tools a {
+    color: inherit;
+    text-decoration: none;
+}
+.tile-container-avatar {
+    width: 300px;
+    float: left;
+}
+.avatar-tile {
+    float: left;
+    display: block;
+    margin: 10px 20px 10px 0;
+    padding: 5px;
+}
+.avatar-tile-ghost {
+    opacity: 0.3;
+}
+.drag-hover-green {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 15px solid #2ECC71 !important;
+    transition: all 0.3s ease-out;
+}
+
+/* Colour palette */
+.colour-palette .colour-group {
+    float: left;
+    margin: 0 20px 20px 0;
+    display: block;
+    width: 180px;
+}
+.colour-palette .colour-group li.main-colour .name {
+    display: block;
+    margin-bottom: 60px;
+}
+.colour-palette .colour-group .light-strong {
+    color: #fff;
+}
+.colour-palette .colour-group .hex {
+    float: right;
+    text-transform: uppercase;
+}
+.row-left-docs {
+    padding-left: 20px;
+    float: left;
+    display: block;
+    max-width: 400px;
+    min-width: 400px;
+}
+#busyIndicatorContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+#busyIndicatorContainer .ui-busy-indicator-ball {
+    left: 50%;
+    top: 50%;
+}
+.ui-zoom {
+    color: black;
+    margin: 0 auto;
+}
+</style>
+
+<ui-toast></ui-toast>
+<div layout="row" layout-fill style="overflow: hidden; max-width: 100%; max-height: 100%;">
+    <ui-sidenav layout="column" style="overflow: hidden; display: flex;" class="ui-locked-open">
+        <ui-toolbar layout="column" class="left-nav-title">
+            <h1 class="ui-toolbar-tools" flex layout="column">
+            <a href="" layout="row" flex tabindex="0">
+                <img src="../resources/angular-sap-ui-elements/assets/logo.png" alt="norman">
+                <div flex class="menu-title">UI Elements</div>
+            </a>
+        </h1>
+        </ui-toolbar>
+        <ui-content flex class="left-nav-content" ng-controller="DocsMenuCtrl" ng-include="'resources/angular-sap-ui-elements/docs/menu/menu.html'" />
+    </ui-sidenav>
+
+    <div layout="column" layout-fill tabindex="-1" role="main" ng-controller="DocsCtrl" ui-view>
+        <ui-toolbar layout="column" class="left-nav-title">
+            <h1 class="ui-toolbar-tools" flex layout="column"></h1>
+        </ui-toolbar>
+        <ui-content flex ui-scroll-y >
+            <ui-content flex>
+                <div layout="row"><a><h2 class="item-name">Norman UI-elements</h2></a></div>
+            </ui-content>
+        </ui-content>
+    </div>
+</div>

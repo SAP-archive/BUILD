@@ -1,0 +1,6 @@
+{
+  "norman-auth-server": {
+        "users": "/api/users",
+        "auth": "/auth"
+    }
+}

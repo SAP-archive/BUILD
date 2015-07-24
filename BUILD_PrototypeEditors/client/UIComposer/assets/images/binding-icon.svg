@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="22px" height="10px" viewBox="0 0 22 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>links 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.21 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="UI-TOOLKIT" sketch:type="MSArtboardGroup" transform="translate(-206.000000, -1644.000000)" filter="url(#filter-1)" fill="#FFFFFF">
+            <g id="EXAMPLE-PROPERTY-POP" sketch:type="MSLayerGroup" transform="translate(55.000000, 1081.000000)">
+                <path d="M162.19819,565.734951 C161.732987,564.420877 162.067103,562.846584 163.176194,561.737493 L164.732018,560.181669 C166.235719,558.677968 168.594546,558.598813 170.000604,560.004871 C171.406662,561.410929 171.327507,563.769755 169.823806,565.273457 L168.267982,566.829281 C167.153334,567.943928 165.568813,568.275816 164.250794,567.800233 L163.797654,568.253374 C164.268986,569.569789 163.936184,571.150129 162.823806,572.262507 L161.267982,573.818331 C159.764281,575.322032 157.405454,575.401187 155.999396,573.995129 C154.593338,572.589071 154.672493,570.230245 156.176194,568.726543 L157.732018,567.170719 C158.843383,566.059354 160.421859,565.726146 161.737554,566.195586 L162.19819,565.734951 Z M164.273856,563.706678 C164.357778,563.521329 164.476941,563.346339 164.630991,563.192289 L166.186815,561.636465 C166.831258,560.992022 167.842184,560.958098 168.44478,561.560695 C169.047376,562.163291 169.013453,563.174217 168.369009,563.81866 L166.813185,565.374484 C166.650641,565.537028 166.464782,565.660733 166.268042,565.745181 C166.652134,565.17772 166.59662,564.404015 166.092345,563.89974 C165.599513,563.406908 164.838739,563.343786 164.273856,563.706678 Z M161.737684,570.26726 C161.653288,570.462263 161.530261,570.646459 161.369009,570.807711 L159.813185,572.363535 C159.168742,573.007978 158.157816,573.041902 157.55522,572.439305 C156.952624,571.836709 156.986547,570.825783 157.630991,570.18134 L159.186815,568.625516 C159.346355,568.465975 159.528356,568.343852 159.721063,568.259541 C159.35769,568.824188 159.419605,569.580661 159.915514,570.07657 C160.409417,570.570473 161.172428,570.632796 161.737684,570.26726 Z" id="links-2" sketch:type="MSShapeGroup" transform="translate(163.000000, 567.000000) rotate(-315.000000) translate(-163.000000, -567.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

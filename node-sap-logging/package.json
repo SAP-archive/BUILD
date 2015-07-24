@@ -1,0 +1,35 @@
+{
+  "name": "node-sap-logging",
+  "version": "0.1.0",
+  "description": "Logging library for node.js with a bunyan compatible output format",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SAP/BUILD.git"
+  },
+  "maintainers": [
+    {
+      "name": "BUILD Team",
+      "email": "contact.build@sap.com"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "Apache License, Version 2.0",
+      "url": "https://github.com/SAP/BUILD/node-sap-logging/blob/master/LICENSE.md"
+    }
+  ],
+  "dependencies": {
+    "on-finished": "2.2.0"
+  },
+  "devDependencies": {
+    "chai": "^2.2.0",
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-eslint": "^0.9.0",
+    "gulp-istanbul": "^0.8.1",
+    "gulp-jsdoc-to-markdown": "^1.0.2",
+    "gulp-mocha": "^2.0.1",
+    "gulp-util": "^3.0.4"
+  }
+}

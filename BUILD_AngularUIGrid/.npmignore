@@ -1,0 +1,5 @@
+.npmignore
+gulpfile.js
+bump-config.json
+make
+

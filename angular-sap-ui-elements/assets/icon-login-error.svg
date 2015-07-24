@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="39px" height="33px" viewBox="0 0 39 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2 (9961) - http://www.bohemiancoding.com/sketch -->
+    <title>error</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="SIGN-UP-ERRORS" sketch:type="MSArtboardGroup" transform="translate(-472.000000, -333.000000)">
+            <g id="error" sketch:type="MSLayerGroup" transform="translate(472.000000, 333.000000)">
+                <path d="M1.65501946,27.1678738 C-0.125554382,30.2275772 1.46444393,33 4.99884334,33 L34.0011567,33 C37.5350857,33 39.1240009,30.2249077 37.3449805,27.1678738 L22.8836221,2.31775665 C21.1048692,-0.738817875 17.8940817,-0.737015136 16.1163779,2.31775665 L1.65501946,27.1678738 Z" id="Path" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                <path d="M21.1550195,3.32370534 L35.6163779,28.1738225 C36.6205309,29.8993395 35.9903333,31 34.0011567,31 L4.99884334,31 C3.00840515,31 2.37831159,29.9013286 3.38362214,28.1738225 L17.8449805,3.32370534 C18.8516884,1.59379806 20.147888,1.59307029 21.1550195,3.32370534 Z" id="Path" fill="#C0392B" sketch:type="MSShapeGroup"></path>
+                <circle id="Oval-17" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="19.5" cy="25.5" r="2.5"></circle>
+                <path d="M19.5,21.2020674 C20.8807119,21.2020674 22,13.8807119 22,12.5 C22,11.1192881 20.8807119,10 19.5,10 C18.1192881,10 17,11.1192881 17,12.5 C17,13.8807119 18.1192881,21.2020674 19.5,21.2020674 Z" id="Oval-18" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

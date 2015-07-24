@@ -1,0 +1,144 @@
+{
+    "env": {
+        "NODE_ENV": "production"
+    },
+    "server": {
+        "workers": 4
+    },
+    "logging": {
+        "logDirectory": "logs",
+        "output": {
+            "logfile": {
+                "type": "file",
+                "path": "norman_{now:yyyyMMdd}_{pid}.log"
+            }
+        },
+        "loggers": {
+            "*": {
+                "logfile": "info"
+            }
+        }
+    },
+    "db": {
+        "hosts": "localhost",
+        "database": "norman",
+        "options": {
+            "db": {
+                "w": 1
+            },
+            "server": {
+                "poolSize": 20,
+                "socketOptions": {
+                    "keepAlive": 1
+                }
+            }
+        }
+    },
+    "deployment": {
+        "strategy": "single"
+    },
+    "http": {
+        "port": 9000,
+        "proxy": {
+            "host": "mail.example.com",
+            "port": 8080
+        },
+        "secureFlag" : false
+    },
+    "mail": {
+        "sender":"do.not.reply@example.com",
+        "smtp": {
+            "host": "mail.example.com",
+            "port": 25,
+            "debug": true,
+            "tls": {
+                "rejectUnauthorized": false
+            }
+        }
+    },
+    "facebook": {
+        "clientID": "942447102435121",
+        "clientSecret": "33a4514d7c42bea5f421219f7218c727",
+        "callbackURL": "/auth/facebook/callback",
+        "enable" : true
+    },
+    "session": {
+        "secret": "Dj23fVtahDYE3dfjCAHrJhzrUDosljxqVDDN9VNhRJDVf8TyD1F1nqYrjGYF",
+        "tokenExpirationMinutes": 5,
+        "tokenLength": 64,
+        "tokenExpirationDays" : 30
+    },
+    "google": {
+        "clientID": "328102506301-28sckgpg9joktt956jggl3c0liqub5jv.apps.googleusercontent.com",
+        "clientSecret": "Oc-BSCxlhvs3ayhcrDozlAGm",
+        "callbackURL": "/auth/google/callback",
+        "enable" : true
+    },
+    "linkedin": {
+        "clientID": "77jfov3s9ooaey",
+        "clientSecret": "nJKxCnNvHCdMPY67",
+        "callbackURL": "/auth/linkedin/callback",
+        "enable" : true
+    },
+    "account": {
+        "accountNameMinlength" : 3,
+        "accountNameMaxlength" : 120,
+        "forgotPasswordTokenExpiryInDays": 1,
+        "autoResendEmailVerification" : true,
+        "emailVerifingTokenExpiryInDays" : 30,
+        "emailHasAlreadyVerified" : "Your email address has been already verified.",
+        "recoverAccountPasswordTokenExpiredMessage" : "The resource your are looking for hasbeen expired, please try again later.",
+        "recoverAccountPasswordTokenVerifiedMessage" :"Your email address has been verified."
+    },
+    "passport": {
+        "successRedirect": "/norman",
+        "successConnectRedirect": "/norman",
+        "successUnlinkeRedirect": "/norman"
+    },
+    "audit": {
+        "defaultCreatedBy" : "SYSTEM"
+    },
+    "services": "./config/services.json",
+    "features": "./config/features.json",
+    "security": "./config/security.json",
+    "web": {
+        "root": "../public",
+        "errors": {
+            "root": "errors"
+        },
+        "indexFallback": [
+            "/verifyemail",
+            "/auth",
+            "/auth/*",
+            "/login",
+            "/signup",
+            "/norman",
+            "/forgot-password",
+            "/reset-password/*",
+            "/privacystatement",
+            "/tos"
+        ],
+        "options": {
+            "etag": false,
+            "maxAge": "5d"
+        },
+        "compression": {
+            "threshold": 512
+        },
+        "body-parser":{
+         "json":{
+         "limit":"1mb"
+         }
+        }
+    },
+    "fileUpload":{
+        "limits": {
+            "fields": 50,
+            "fileSize": 50.5e7,
+            "files": 500,
+            "parts": 500
+        }
+    },
+    "access": {
+     }
+}

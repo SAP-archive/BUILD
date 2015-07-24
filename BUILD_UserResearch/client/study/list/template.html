@@ -1,0 +1,65 @@
+<div layout="column" class="animated fadeIn" layout-fill id="study-list">
+
+    <div layout="row" class="first-row">
+        <div flex="50" flex-sm="50">
+            <h1>Research and Feedback
+                <small ng-if="activeStudiesSum() !== 0">
+                    <b>{{participantSum}}</b><ng-pluralize count="participantSum" when="{'one': ' participant', 'other': ' participants'}"></ng-pluralize>
+                </small>
+            </h1>
+        </div>
+        <div flex="50" flex-sm="50">
+            <ui-button class="new-study-button" size="large" ng-click="createStudy()">NEW STUDY</ui-button>
+        </div>
+    </div>
+
+    <div layout="row" ng-if="studies.length === 0">
+        <div flex class="heading">
+            <ui-blank-state>
+                You have no studies yet!
+                <br/>
+                Get some feedback from your users by creating a
+                <br/>
+                <span class="ui-blank-state-action" ng-click="createStudy()">new study</span>.
+            </ui-blank-state>
+        </div>
+    </div>
+
+    <div layout="row" layout-align="start start">
+        <div layout="column" class="side-menu">
+            <div ng-show="studies.length > 0">
+                <label class="ul-title">STUDIES</label>
+                <ul>
+                    <li class="item" ng-class="{'active': statusFilter === 'active'}" ng-click="statusFilter = 'active'">
+                        Active<span class="badge">{{(studies | filter: {'status': 'published'}).length + (studies | filter: {'status': 'paused'}).length}}</span>
+                    </li>
+                    <li class="item" ng-class="{'active': statusFilter === 'draft'}" ng-click="statusFilter = 'draft'">
+                        Draft<span class="badge">{{(studies | filter: {'status': 'draft'}).length}}</span>
+                    </li>
+                    <li class="item" ng-class="{'active': statusFilter === 'archived'}" ng-click="statusFilter = 'archived'">
+                        Archived<span class="badge">{{(studies | filter: {'status': 'archived'}).length}}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div layout="column" class="study-list">
+            <div layout="row" layout-align="start start" class="animated fadeIn studies-list" ng-if="studies.length > 0">
+                <div ui-tile-container>
+                    <ui-study-tile ng-repeat="study in studies | filter: filterByStatus  | orderBy :'createTime' : true"
+                        idx="{{$index}}"
+                        name="{{study.name}}"
+                        participants="{{study.participants}}"
+                        annotations="{{study.annotations}}"
+                        comments="{{study.comments}}"
+                        date="{{study.createTime}}"
+                        thumb="{{study.questions[0].thumbnail}}"
+                        id="{{study._id}}"
+                        on-select="studyClick(study)"
+                        status="{{study.status}}"
+                        url="{{baseUrl}}/norman/projects/{{study.projectId}}/research/participant/{{study._id}}">
+                    </ui-study-tile>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,106 @@
+<ui-toolbar layout="column" class="left-nav-title">
+<h1 class="ui-toolbar-tools" flex layout="column">Directives >
+	ui-sankey-diagram</h1>
+</ui-toolbar>
+<ui-content flex ui-scroll-y> <ui-content flex
+	class="doc-content">
+<div layout="row">
+	<h2 class="item-name">Sankey Diagram with flow weightage</h2>
+</div>
+<div layout="row">
+	<div class="item" flex="20" flex-sm="20">
+		<p id="chart">
+			<ui-sankey-diagram container-id="chart" data="graphData"
+				 domain="svgContainer"
+				 link-opacity=1 on-mouse-over="showToolTip"
+				on-mouse-out="dismissToolTip" on-click="clicked" node-align="steps"></ui-sankey-diagram>
+		<div class="tooltip"
+			style="z-index: 100; display: none; position: absolute; left: 0px; top: 0px; color: white; font-size: 14px; padding: 5px; line-height: 18px; background: rgba(0, 0, 0, 0.8);"></div>
+	</div>
+</div>
+<div layout="row">
+	<h2 class="item-name">Sankey Diagram without flow weightage</h2>
+</div>
+<div layout="row">
+	<div class="item" flex="20" flex-sm="20">
+		<p id="graph" style="width:1000px;height:600px;overflow:scroll">
+			<ui-sankey-diagram container-id="graph" data="graphData1"
+				domain="svgContainer1"
+				link-opacity=0.5 node-align="endPoints"></ui-sankey-diagram>
+	</div>
+</div>
+
+<div layout="row"><a name="Directives-options"><h2 class="item-name">ui-sankey-diagram options</h2></a></div>
+        <div class="item" layout="row">
+            <div layout="row">
+                <div class="item">
+                    <div class="table-options">
+                        <table class="table-options-values">
+                            <thead>
+                                <tr>
+                                    <th style="width: 200px;">Name</th>
+                                    <th style="width: 100px;">type</th>
+                                    <th>description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>container-id</td>
+                                    <td>string</td>
+                                    <td>DOM element where svg has to be appended
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>data</td>
+                                    <td>Object</td>
+                                    <td>Node and link data
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>domain</td>
+                                    <td>Object</td>
+                                    <td>svg container width & height data
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>link-opacity</td>
+                                    <td>number</td>
+                                    <td>opacity of link colors
+                                    </td>
+                                </tr>
+                                  <tr>
+                                    <td>node-align</td>
+                                    <td>string</td>
+                                    <td>possible values: steps / endPoints. If nodes have to be displayed based on user steps/levels or nodes without outgoing
+						            links should be aligned farthest.
+						            <br>Example1: has node-align as 'steps', the nodes without any outgoing links i,e UserResearch and DataModeler are in the same vertical as UIComposer,depicting steps taken.
+						            <br>Example2: has node-align as 'endPoints', the nodes without any outgoing links i,e UIComposer,Review Study and Generate App are displayed in the last vertical(farthest).
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>node-padding</td>
+                                    <td>number</td>
+                                    <td>The vertical padding between nodes. Default is 80.
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td>node-width</td>
+                                    <td>number</td>
+                                    <td>The width of a node. Default is 150.
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td>sankey-rerender</td>
+                                    <td>event</td>
+                                    <td>Allows consuming control to broadcast rerender event
+                                       enabling the sankey canvas to adopt the height and width of the
+                                       sankey diagram generated.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+		</div>
+</ui-content> </ui-content>

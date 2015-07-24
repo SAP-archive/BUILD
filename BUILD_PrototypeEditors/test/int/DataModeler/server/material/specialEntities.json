@@ -1,0 +1,18 @@
+[
+    {
+        "sendValue": {},
+        "descTest": "With empty property name value"
+    },
+    {
+        "sendValue": {
+            "nameS": "Worse"
+        },
+        "descTest": "With wrong json property name"
+    },
+    {
+        "sendValue": {
+            "name": null
+        },
+        "descTest": "With name value is null"
+    }
+]

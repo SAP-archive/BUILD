@@ -1,0 +1,48 @@
+<div ng-controller="GroupsController as controller">
+
+<ui-accordion control="groupAccordion">
+    <ui-accordion-pane ng-repeat="group in selectedEntity.groups"
+                       class="dm-sidePanel-groups">
+
+        <ui-accordion-pane-header>
+            <div class="dmsvg-folder_icon">
+            </div>
+            {{group.name}}
+        </ui-accordion-pane-header>
+
+        <ui-accordion-pane-content>
+            <div ng-repeat="role in group.roles">
+                <div class="dm-role-dropzone"
+                     ui-droppable="onDrop($event, $data, role, group)"
+                     drop-channel="propertyForRole"
+                     ng-click="controller.toggleSelectForRole($index)"
+                     ng-hide="selectedRoleIndex==$index || role.propertyId">
+                    <div>Set property for:</div>
+                    <div class="dm-roleLabel">{{role.id}}</div>
+                </div>
+                <div class="dm-role-filled"
+                     ui-droppable="onDrop($event, $data, role, group)"
+                     drop-channel="propertyForRole"
+                     ng-click="controller.toggleSelectForRole($index)"
+                     ng-show="selectedRoleIndex!==$index && role.propertyId">
+                    <div>{{controller.getPropertyName(role.propertyId)}}</div>
+                    <div class="dm-roleLabel">{{role.id}}</div>
+                    <div class="dm-delete dmsvg-remove"
+                         ng-click="controller.unbindRole(role, group, $event);">
+                    </div>
+                </div>
+
+                <ui-select ng-show="selectedRoleIndex==$index"
+                           dark
+                           ng-model="role.propertyId"
+                           value="role.propertyId"
+                           ng-options="property._id as property.name for property in selectedEntity.properties | filter:{ isForeignKey : 'false' }"
+                           ng-change="controller.updateGroup(group, groupAccordion); controller.resetRoleSelect()">
+                </ui-select>
+
+            </div>
+        </ui-accordion-pane-content>
+
+    </ui-accordion-pane>
+</ui-accordion>
+</div>

@@ -1,0 +1,14 @@
+<div ng-if="displaySimple" ng-repeat="user in users" class="simpleBox"
+     ng-mouseenter="setHoveredUser(user)"
+     ng-mouseleave="setHoveredUser(null)">
+
+    <div  ng-click="_openDialog($index)">
+        <ui-avatar avatar-image="{{user.avatar_url}}" avatar-name={{user.name}} class="profilePicture" ng-class="{hovered : hoveredUser.id == user.id}"></ui-avatar >
+        <div class="name">{{user.name}}</div>
+    </div>
+
+    <img ng-show="showDelete(user)"
+         src="resources/norman-admin-users-client/assets/icon_remove.svg"
+         class="closeIcon"
+         ng-click="_getInfoToDelete(user)">
+</div>

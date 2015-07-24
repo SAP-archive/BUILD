@@ -1,0 +1,103 @@
+/* -------------------------------------------------- */
+/* Norman screen dashboard styling */
+/* np: norman screen */
+/* d:dashboard */
+/* -------------------------------------------------- */
+
+@import (reference) "../ui-elements";
+@import (reference) '../../styles/variables';
+@import (reference) "../../styles/base.less";
+
+@new-screen-box-color-background: #FFFCB6;
+@new-screen-box-color-border: #EED68C;
+@new-screen-input-color: #CAB061;
+@screen-box-color-border: #DBDFE1;
+.ui-screen-tile-new-screen, .ui-screen-tile {
+    width: 240px;
+    height: 195px;
+    position: relative;
+    display: block;
+    float: left;
+    margin: 10px 20px 10px 0;
+    .top-box {
+        height: 160px;
+    }
+    .tile-no-image {
+        background: @new-screen-box-color-background;
+        border: 1px solid @new-screen-box-color-border;
+        float: left;
+        width: 238px;
+        height: 160px;
+    }
+    .tile-with-image {
+        border: 1px solid @screen-box-color-border;
+        float: left;
+        width: 238px;
+        height: 160px;
+        .tile-image {
+            margin: 3px;
+            width: 232px;
+            height: 154px;
+        }
+    }
+    .bottom-box {
+        height: 35px;
+        width: 240px;
+        display: block;
+        float: left;
+    }
+    .new-screen-input {
+        font-family: @roboto-font;
+        font-size: 14px;
+        font-weight: 700;
+        color: @new-screen-input-color;
+        border: transparent;
+        padding: 10px 20px 20px 20px;
+        background: transparent;
+        width: 200px;
+    }
+    .screen-name {
+        font-family: @roboto-font;
+        font-size: 14px;
+        font-weight: 700;
+        color: #2C3E50;
+        line-height: 19px;
+        padding: 10px 0 20px 0;
+        text-align: center;
+        display: block;
+    }
+}
+.ui-screen-tile-ghost {
+    opacity: 0.3;
+}
+.ui-screen-tile-hover {
+    .top-box {
+        box-shadow: 0px 0px 10px 0px rgba(51, 152, 219, 0.50);
+        .tile-with-image {
+            border: 1px solid #3398DB;
+        }
+    }
+}
+
+.ui-screen-tile-remove-icon {
+  padding: 0px;
+  border-radius: 50%;
+  background-color: @Cinnabar-500;
+  border: 2px solid @White;
+  width: 34px;
+  height: 34px;
+  float: right;
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  &:before {
+    content: '';
+    line-height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: calc(~'50% - 11px');
+    left: 6px;
+    .common-ico-white-trash;
+    .common-ico-white-trash-dims;
+  }
+}

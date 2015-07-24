@@ -1,0 +1,37 @@
+{
+  "name": "norman-ng-grid",
+  "version": "0.1.0",
+  "description": "Original ui-grid version is 3.0.0-RC.18, URL is https://github.com/angular-ui/ui-grid.info/tree/gh-pages/release/3.0.0-RC.18",
+  "main": "ui-grid.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SAP/BUILD.git"
+  },
+  "keywords": [
+    "angular",
+    "ng-grid",
+    "nggrid",
+    "grid",
+    "angularjs",
+    "slickgrid",
+    "kogrid",
+    "ui-grid",
+    "ui grid",
+    "data grid"
+  ],
+   "author": {
+    "name": "UI Grid Team"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/angular-ui/ng-grid/blob/master/LICENSE.md"
+    }
+  ],
+  "devDependencies": {
+    "object-assign": "~2.0.0",
+    "gulp": "~3.8.11",
+    "node-sap-build": "0.1.0"
+  },
+  "readmeFilename": "README.md"
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="276px" height="156px" viewBox="0 0 276 156" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>CONGRATS</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="13.9276573%" y1="9.03383574%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#EFEFEF" stop-opacity="0.3" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="84.79285%" y1="12.1349558%" x2="0%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#EFEFEF" stop-opacity="0.3" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="96.4386247%" y1="7.72575576%" x2="0%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#EFEFEF" stop-opacity="0.3" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="3.83732362%" y1="7.71697569%" x2="100%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#EFEFEF" stop-opacity="0.3" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#EFEFEF" stop-opacity="0.3" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="CONGRATS" sketch:type="MSLayerGroup" transform="translate(-3.000000, 0.000000)">
+            <path d="M28.3189521,45.5490648 L55.2108038,23.9403236 L140.666901,155.93713 L28.3189521,45.5490648 Z" id="Triangle-1" fill="url(#linearGradient-1)" sketch:type="MSShapeGroup"></path>
+            <path d="M253.12778,45.5490648 L226.235928,23.9403236 L140.779831,155.93713 L253.12778,45.5490648 Z" id="Triangle-2" fill="url(#linearGradient-2)" sketch:type="MSShapeGroup"></path>
+            <path d="M275.900322,74.4914729 L140.779831,155.956678 L281.555967,86.5892412 L275.900322,74.4914729 Z" id="Triangle-3" fill="url(#linearGradient-3)" sketch:type="MSShapeGroup"></path>
+            <path d="M6.09967753,74.4914729 L141.220169,155.956678 L0.444033405,86.5892412 L6.09967753,74.4914729 Z" id="Triangle-4" fill="url(#linearGradient-4)" sketch:type="MSShapeGroup"></path>
+            <path d="M140.779831,156.040968 L173.083423,0.095441826 L107.118914,0.095441826 L140.779831,156.040968 Z" id="Triangle-5" fill="url(#linearGradient-5)" sketch:type="MSShapeGroup"></path>
+            <polygon id="Star-3" stroke="#F3A629" fill="#FFCB00" sketch:type="MSShapeGroup" points="141.020132 96.3095397 129.014274 102.572743 131.307189 89.3070666 121.594244 79.9122627 135.017205 77.9768248 141.020132 65.9073154 147.023064 77.9768278 160.446023 79.9122724 150.733075 89.3070692 153.02599 102.572743 "></polygon>
+            <g id="Star-2-+-Star-2" transform="translate(78.301565, 38.724150)"></g>
+            <path d="M172.980168,100.841811 L179.752705,92.7564068 L176.879859,82.6366165 L186.722098,86.5295074 L195.533591,80.6911421 L194.843891,91.1824867 L203.162537,97.6939748 L192.894043,100.285083 L189.223756,110.147765 L183.567179,101.257819 L172.980168,100.841811 Z" id="Star-4" stroke="#F3A629" fill="#FFCB00" sketch:type="MSShapeGroup"></path>
+            <path d="M108.483934,100.841811 L101.711397,92.7564068 L104.584243,82.6366165 L94.7420046,86.5295074 L85.9305113,80.6911421 L86.620211,91.1824867 L78.301565,97.6939748 L88.5700595,100.285083 L92.2403464,110.147765 L97.8969235,101.257819 L108.483934,100.841811 Z" id="Star-5" stroke="#F3A629" fill="#FFCB00" sketch:type="MSShapeGroup"></path>
+            <path d="M110.252522,43.016229 L106.055848,48.1098971 L99.4480551,47.5671029 L103.033208,53.1016429 L100.471053,59.1698588 L106.88347,57.4967206 L111.907762,61.7898758 L112.285702,55.2212831 L117.953043,51.8063868 L111.774204,49.4199074 L110.252522,43.016229 Z" id="Star-6" stroke="#F3A629" fill="#FFCB00" sketch:type="MSShapeGroup"></path>
+            <path d="M185.480562,46.953303 L181.150403,47.6544408 L184.345152,50.6384423 L183.679063,54.9415911 L187.52629,52.8487294 L191.444783,54.8070824 L190.627753,50.5296234 L193.715606,47.4368052 L189.363424,46.8860494 L187.353329,43.016229 L185.480562,46.953303 Z" id="Star-7" stroke="#F3A629" fill="#FFCB00" sketch:type="MSShapeGroup"></path>
+            <path d="M31.4300577,69.5554279 L28.3189521,71.5045923 L31.7704754,72.7693142 L32.6772587,76.3076705 L34.9560005,73.4411985 L38.6275273,73.678858 L36.5843454,70.6425603 L37.9466934,67.2510861 L34.4051937,68.2410216 L31.5756436,65.9073154 L31.4300577,69.5554279 Z" id="Star-8" stroke="#F3A629" fill="#FFCB00" sketch:type="MSShapeGroup"></path>
+            <path d="M255.390612,53.0427572 L252.279506,54.9919216 L255.731029,56.2566435 L256.637813,59.7949998 L258.916555,56.9285278 L262.588081,57.1661873 L260.544899,54.1298896 L261.907247,50.7384154 L258.365748,51.7283509 L255.536198,49.3946447 L255.390612,53.0427572 Z" id="Star-2" stroke="#F3A629" fill="#FFCB00" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

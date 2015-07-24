@@ -1,0 +1,102 @@
+{
+    "env": {
+        "NODE_ENV": "development"
+    },
+    "debug": {
+        "active": true,
+        "liveReload": [
+            "/console"
+        ]
+    },
+    "server": {},
+    "logging": {
+        "logDirectory": "logs",
+        "output": {
+            "stdout": {
+                "type": "console"
+            },
+            "logfile": {
+                "type": "file",
+                "path": "admin_{now:yyyyMMdd}.log"
+            }
+        },
+        "loggers": {
+            "*": {
+                "stdout": "debug",
+                "logfile": "info"
+            }
+        },"http" : {
+          "logMode" : "both"
+        }
+    },
+    "db": {
+        "hosts": "localhost",
+        "database": "norman",
+        "options": {
+            "db": {
+                "w": 1
+            },
+            "server": {
+                "poolSize": 5,
+                "socketOptions": {
+                    "keepAlive": 1
+                }
+            }
+        }
+    },
+    "deployment": {
+        "strategy": "single"
+    },
+    "http": {
+        "port": 9001,
+        "proxy": {
+            "host": "proxy",
+            "port": 8080
+        },
+        "secureFlag": false
+    },
+    "web": {
+        "root": "../dev",
+        "errors": {
+            "root": "errors"
+        },
+		"indexFallback" : [
+			"/login",
+			"/console",
+			"/privacystatement",
+            "/tos"
+		],
+        "compression": {
+            "threshold": 512
+        },
+        "body-parser": {
+          "json": {
+            "limit": "1mb"
+          }
+      }
+    },
+      "fileUpload":{
+        "limits": {
+            "fields": 500,
+            "fileSize": 500.5e7,
+            "files": 5000,
+            "parts": 5000
+        }
+    },
+    "account": {
+        "accountNameMinlength": 3,
+        "accountNameMaxlength": 120,
+        "forgotPasswordTokenExpiryInDays": 1,
+        "autoResendEmailVerification": true,
+        "emailVerifingTokenExpiryInDays": 30,
+        "emailHasAlreadyVerified": "Your email address has been already verified.",
+        "recoverAccountPasswordTokenExpiredMessage": "The resource your are looking for has been expired, please try again later.",
+        "recoverAccountPasswordTokenVerifiedMessage": "Your email address has been verified."
+    },
+    "services": "./config/services.json",
+    "security": "./config/security.json",
+    "features": "./config/features.json",
+    "session": {
+        "secret": "ee90f2a1a33c460caae212ed9f3a1984271ff5eeea2268e54eb365d103669121"
+    }
+}

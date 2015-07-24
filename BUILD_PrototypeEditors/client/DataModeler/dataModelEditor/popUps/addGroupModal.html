@@ -1,0 +1,14 @@
+<ui-dialog id="addGroupModal" modal="true" title="Add Group" cancel-text="Cancel" close-text="Add" close-action="controller.createGroup()" class="dm-addGroupModal">
+    <div class="dm-addGroupModal-formElement">
+        <div>Group Name</div>
+        <ui-input dark type="text"
+                id="groupNameInput"
+                ng-model="controller.newGroup.name"></ui-input>
+    </div>
+    <div class="dm-addGroupModal-formElement">
+        <div>Group type</div>
+        <ui-select id="groupTypeSelect" dark
+                ng-model="controller.newGroup.type"
+              ng-options="type as type for type in controller.standardGroups | orderBy:'toString()'"></ui-select>
+    </div>
+</ui-dialog>

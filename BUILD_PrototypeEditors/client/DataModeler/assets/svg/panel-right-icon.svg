@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="21px" height="19px" viewBox="0 0 21 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>rightpanel</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.21 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="APP-COMPOSER" sketch:type="MSArtboardGroup" transform="translate(-1201.000000, -71.000000)" filter="url(#filter-1)">
+            <g id="UI-Bar" sketch:type="MSLayerGroup" transform="translate(70.000000, 60.000000)">
+                <path d="M1131.9997,25.9998001 C1131.99986,27.1044214 1132.89105,27.9998988 1133.99769,27.999905 L1149.00489,27.9999888 C1150.10818,27.999995 1151.00244,27.1099416 1151.00227,25.9998938 L1151.0003,13.0001062 C1151.00014,11.895478 1150.10895,11 1149.00231,11 L1133.99511,11 C1132.89182,11 1131.99756,11.8900529 1131.99773,13.0000937 L1131.9997,25.9998001 Z M1144.99773,13.8667587 L1144.99773,25.1332413 C1144.99773,25.6149108 1144.71006,26 1144.35233,26 L1134.64312,26 C1134.28562,26 1133.99773,25.6134292 1133.99773,25.1332413 L1133.99773,13.8667587 C1133.99773,13.3850892 1134.28539,13 1134.64312,13 L1144.35233,13 C1144.70983,13 1144.99773,13.3865708 1144.99773,13.8667587 Z" id="rightpanel" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

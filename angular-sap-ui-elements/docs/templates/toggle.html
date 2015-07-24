@@ -1,0 +1,59 @@
+<ui-toolbar layout="column" class="left-nav-title">
+    <h1 class="ui-toolbar-tools" flex layout="column">Directives > ui-toggle</h1>
+</ui-toolbar>
+<ui-content flex ui-scroll-y>
+    <ui-content flex class="doc-content">
+        <div layout="row"><a name="Directives-Toggle"><h2 class="item-name">ui-toggle</h1></a></div>
+
+        <div layout="row"><a name="Directives-Toggle-Light"><h2 class="item-name">Toggle Light</h2></a></div>
+        <div layout="row">
+            <div class="item" flex="20" flex-sm="20">
+                <ui-toggle ng-model="selectedOption" id="toggle1"></ui-toggle>
+            </div>
+            <div class="code" flex="80" flex-sm="80">
+                <pre><code>
+&lt;ui-toggle ng-model="selectedOption" id="toggle1"&gt;&lt;/ui-toggle&gt;
+                </code></pre>
+            </div>
+        </div>
+
+        <div layout="row"><a name="Directives-Toggle-Dark"><h2 class="item-name">Toggle Dark, multiple items</h2></a></div>
+        <div layout="row">
+            <div class="item dark" flex="20" flex-sm="20">
+                <div ng-repeat="item in items">
+                    <ui-toggle dark ng-model="item.selected" ng-change="changeItem(item)" style="margin: 10px;"></ui-toggle>
+                </div>
+            </div>
+            <div class="code" flex="80" flex-sm="80">
+                <pre><code>
+&lt;script&gt;
+$scope.items = [{
+    name: 'First Item 123456789',
+    selected: false
+}, {
+    name: 'Second Item 098765432',
+    selected: true
+}, {
+    name: 'Third Item 123456789',
+    selected: true
+}, {
+    name: 'Fourth Item 5555',
+    selected: false
+}, {
+    name: 'Fifth Item rrrr',
+    selected: true
+}];
+
+$scope.changeItem = function(item) {
+    console.log(item.name + ":" + item.selected);
+};
+&lt;/script&gt;
+
+&lt;div ng-repeat="item in items"&gt;
+    &lt;ui-toggle dark ng-model="item.selected" ng-change="changeItem(item)"&gt;&lt;/ui-toggle&gt;
+&lt;/div&gt;
+                </code></pre>
+            </div>
+        </div>
+    </ui-content>
+</ui-content>

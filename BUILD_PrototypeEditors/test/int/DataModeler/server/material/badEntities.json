@@ -1,0 +1,26 @@
+[
+    {
+        "sendValue": {
+            "name": "Uggly Entity"
+        },
+        "descTest": "With space in name"
+    },
+    {
+        "sendValue": {
+            "name": 2
+        },
+        "descTest": "With name is integer"
+    },
+    {
+        "sendValue": {
+            "name": "tt*tt"
+        },
+        "descTest": "With special carac in name"
+    },
+    {
+        "sendValue": {
+            "name": "_1234567890abcdefghijklmopqrstuvxyz_1234567890abcdefghijklmopqrstuvxyz_1234567890abcdefghijklmopqrstuvxyz_1234567890abcdefghijklm"
+        },
+        "descTest": "With name contained 1239 caracs "
+    }
+]

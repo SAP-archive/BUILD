@@ -1,0 +1,108 @@
+@import (reference) "../ui-elements";
+@import (reference) "../../styles/base.less";
+
+.ui-dialog {
+  background-color: #2b3e50;
+  color: #FFFFFF;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  z-index: -1;
+  transition: all 0.5s !important;
+  transition-timing-function: ease-out;
+  opacity: 0;
+  -webkit-transform: scale(0.9, 0.9);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.9);
+}
+
+.ui-dialog.open {
+  transition: transform 0.5s, opacity 0.5s !important;
+  transition-timing-function: ease-in;
+  opacity: 1;
+  z-index: 100;
+  -webkit-transform: scale(1, 1);
+  box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+.ui-dialog .ui-dialog-actions {
+  height: 82px;
+  width: 100%;
+  border-top: 1px #3f5160 solid;
+  background-color: #2b3e50;
+}
+
+.ui-dialog .ui-dialog-cancel {
+  font-weight: bold;
+  line-height: 82px;
+  padding-left: 20px;
+  cursor: pointer;
+  float: left;
+  font-size: 15px;
+  color: #FFFFFF;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.30);
+}
+
+.ui-dialog .ui-dialog-cancel:before {
+  content: '\00d7';
+  padding-right: 5px;
+}
+
+.ui-dialog .ui-dialog-close {
+  float: right;
+  line-height: 82px;
+  padding-right: 20px;
+
+  .hideText {
+    color: @CuriousBlue-500;
+  }
+  .dialog-timeout {
+    left: 50%;
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+  }
+}
+
+.ui-dialog .ui-dialog-content {
+  text-align: center;
+  min-height: 80px;
+  font-size: 20px;
+  color: #FFFFFF;
+  padding: 20px;
+  line-height: 26px;
+}
+
+.ui-dialog .ui-dialog-title {
+  height: 80px;
+  padding-left: 19px;
+  background: #FFFFFF;
+  font-weight: bold;
+  font-size: 26px;
+  color: #2C3E50;
+  line-height: 80px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#ui-dialog-modal-backdrop {
+  transition: visibility 0s 0.3s, opacity 0.3s !important;
+  transition-timing-function: ease-out;
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  background-color: white;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  z-index: 90;
+}
+
+#ui-dialog-modal-backdrop.open {
+  transition: visibility 0s 0s, opacity 0.3s !important;
+  transition-timing-function: ease-in;
+  opacity: 0.7;
+  visibility: visible;
+}

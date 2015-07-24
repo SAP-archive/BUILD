@@ -1,0 +1,73 @@
+@import (reference) "../ui-elements";
+@import (reference) "../../styles/sprite.less";
+
+.ui-checkbox {
+  display: none;
+}
+
+.ui-checkbox + label {
+  position: relative;
+  float: left;
+  clear: both;
+  padding-left: 30px;
+}
+
+.ui-checkbox + label:before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  left: 0;
+  transition: opacity 0.3s ease-out;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+
+.ui-checkbox.light + label:before {
+  background: #ECF0F1;
+  border: 1px solid #95A5A6;
+}
+
+.ui-checkbox.dark + label:before {
+  background: #4E6276;
+  border: 1px solid #95A5A6;
+}
+
+.ui-checkbox.dark:checked + label:before, .ui-checkbox.light:checked + label:before {
+  background: #2ECC71;
+  border: 1px solid #2ECC71;
+}
+
+.ui-checkbox.light:checked + label:hover:after, .ui-checkbox.dark:checked + label:hover:after {
+  .common-checkbox-light-checked-hover;
+  .common-checkbox-light-checked-hover-dims;
+  top: 4px;
+}
+
+.ui-checkbox + label:after {
+  position: absolute;
+  content: "";
+  top: 3px;
+  left: 3px;
+}
+
+.ui-checkbox.light + label:hover:after {
+  .common-checkbox-light-over;
+  .common-checkbox-light-over-dims;
+}
+
+.ui-checkbox.dark + label:hover:after {
+  .common-checkbox-dark-over;
+  .common-checkbox-dark-over-dims;
+}
+
+.ui-checkbox.light:checked + label:after, .ui-checkbox.dark:checked + label:after {
+  .common-checkbox-light-checked;
+  .common-checkbox-light-checked-dims;
+}
+
+.ui-checkbox.light:checked + label:hover:before, .ui-checkbox.dark:checked + label:hover:before {
+  border: 1px solid #2ECC71;
+}

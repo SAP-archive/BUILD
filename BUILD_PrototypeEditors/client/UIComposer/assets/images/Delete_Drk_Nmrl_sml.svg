@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Delete_Drk_Nmrl_sml</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="TOOLKIT" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="UI-TOOLKIT" sketch:type="MSArtboardGroup" transform="translate(-165.000000, -312.000000)">
+            <g id="DELETE-BUTTONS" sketch:type="MSLayerGroup" transform="translate(1.000000, 249.000000)">
+                <g id="Delete-small-2" transform="translate(164.000000, 63.000000)" sketch:type="MSShapeGroup">
+                    <g id="Delete_Drk_Nmrl_sml">
+                        <circle id="Oval-3" stroke="#2C3E50" stroke-width="2" fill="#E74C3C" cx="9.5" cy="9.5" r="9.5"></circle>
+                        <path d="M6,11.0400391 L7.96142578,9.04052734 L6,7.04101562 L7.09179688,6 L9.01513672,7.96777344 L10.9448242,6 L12.0366211,7.04101562 L10.0751953,9.04052734 L12.0366211,11.0400391 L10.9448242,12.0810547 L9.01513672,10.1196289 L7.09179688,12.0810547 L6,11.0400391 Z" id="×" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

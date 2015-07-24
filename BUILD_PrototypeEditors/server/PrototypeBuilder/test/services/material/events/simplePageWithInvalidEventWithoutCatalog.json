@@ -1,0 +1,30 @@
+{
+  "id": "SimplePageWithInvalidEventWithoutCatalog",
+  "name": "SimplePage",
+  "mainEntityId": "",
+  "rootControlId": "RootControl",
+  "controls": [
+    {
+      "controlId": "RootControl",
+      "parentControlId": null,
+      "catalogControlName": "sap_m_Page",
+      "controlName": "sap_m_Page",
+      "properties": [
+        {
+          "name": "title",
+          "value": "Simple Page"
+        }
+      ],
+      "events": [
+        {
+          "eventId": "navButtonPress",
+          "actionId": "NAVBACKORNOT"
+        },
+        {
+          "eventId": "navButtonPressOrNot",
+          "actionId": "NAVBACK"
+        }
+      ]
+    }
+  ]
+}

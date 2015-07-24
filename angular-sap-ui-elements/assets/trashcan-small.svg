@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="18px" viewBox="0 0 16 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.1 (9971) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 68</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="UI-TOOLKIT" sketch:type="MSArtboardGroup" transform="translate(-1669.000000, -1702.000000)" fill="#E74C3C">
+            <g id="Project-1" sketch:type="MSLayerGroup" transform="translate(1375.000000, 1431.000000)">
+                <path d="M306,274 L308.999128,274 C309.551894,274 310,274.443865 310,275 C310,275.552285 309.555369,276 308.999128,276 L308,276 L308,286.994141 C308,288.101946 307.09805,289 305.99147,289 L298.00853,289 C296.89925,289 296,288.10294 296,286.994141 L296,276 L295.000872,276 C294.448106,276 294,275.556135 294,275 C294,274.447715 294.444631,274 295.000872,274 L298,274 L298,273.5 C298,272.119288 299.112366,271 300.5093,271 L303.4907,271 C304.876548,271 306,272.109662 306,273.5 L306,274 Z M303.968797,274 L300.03107,274 C300.141121,273.424995 300.531535,273 301.009369,273 L302.990631,273 C303.461795,273 303.857558,273.421625 303.968797,274 Z M300,277 L300,287 L299,287 C298.447715,287 298,286.544336 298,286.004602 L298,277 L300,277 Z M306,277 L306,286.004602 C306,286.554345 305.556135,287 305,287 L304,287 L304,277 L306,277 Z M301,277 L303,277 L303,287 L301,287 L301,277 Z" id="Rectangle-68" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

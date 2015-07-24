@@ -1,0 +1,55 @@
+<div class="np-r-selectbox"
+     np-can-drop-binding-property-name="{{ npPropertyName }}"
+     np-can-drop-binding
+     np-can-drop-binding-smart-app="{{ npIsSmartApp }}"
+     np-can-drop-binding-main-entity="{{ npMainEntity }}"
+     droppable="true">
+    <div href ng-attr-id="{{::select.instanceId}}" class="np-r-selectbox-toggle" ng-click="toggleList()" ng-class="{active: select.show}">
+        <div class="np-r-selectbox-bind-indicator" ng-class="{'np-r-selectbox-bind-indicator-active': npPropertyIsBound}"></div>
+        <input id="property-input-{{ select.instanceId }}" placeholder="Enter a Value" ng-show="!npPropertyIsBound" type="text" ng-blur="changePropertyValue()" ng-keydown="addCustomValue($event)" ng-model="npValue" title="{{ npValue ? npValue : 'Enter a Value' }}" />
+        <span title="Bound with {{ npValue }}" ng-click="$event.stopPropagation();toggleList()" ng-show="npPropertyIsBound">{{ npValue }}</span>
+    </div>
+    <div class="np-r-selectbox-dropdown" ng-show="select.show">
+        <ul>
+            <li class="np-r-selectbox-item-li" ng-click="unbindProp()" title="Enter Custom Value">
+                <span class="np-r-selectbox-item">
+                    Custom Value
+                </span>
+            </li>
+            <li class="np-r-selectbox-group-li" ng-if="(select.selected && select.selected.group) || currentEntity" ng-click="$event.stopPropagation()" title="{{ select.selected.group }}">
+                <span class="np-r-selectbox-group np-r-first-group">
+                    {{ select.selected ? select.selected.group : currentEntity }}
+                </span>
+            </li>
+            <li class ="np-r-selectbox-item-li" ng-repeat="(key, value) in items">
+                <div class="np-r-selectbox-item-bind-indicator"></div>
+                <a href class="np-r-selectbox-item" title="Bind with {{ value[listItemField] || value }}" ng-click="selectItem(value.index ? value.index : key)">
+                    <span class="np-r-selectbox-item-li-value"> {{ value[listItemField] || value }}</span>
+                </a>
+            </li>
+        </ul>
+        <ul ng-repeat="(key, value) in moreItems | groupBy: 'group'">
+            <li class="np-r-selectbox-group-li" ng-click="$event.stopPropagation()" ng-if="displayMoreItems"  title="{{ key }}">
+                <span class="np-r-selectbox-group">
+                    {{ key }}
+                </span>
+            </li>
+            <li class ="np-r-selectbox-item-li" ng-repeat="item in value" ng-show="displayMoreItems">
+                <div class="np-r-selectbox-item-bind-indicator"></div>
+                <a href class="np-r-selectbox-item" title="Bind with {{ item[listItemField] || item }}" ng-click="selectItem(item.index)">
+                    <span class="np-r-selectbox-item-li-value">{{ item[listItemField] }}</span>
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li class="np-r-selectbox-item-li" ng-if="moreItems.length">
+                <a href class="np-r-selectbox-item np-r-more-items" title="Show {{ displayMoreItems ? 'Less' : 'More' }} Objects..." ng-click="toggleMoreItems($event)">
+                    <span class="np-r-selectbox-item-li-value">{{ displayMoreItems ? 'Less' : 'More' }} Objects...</span>
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li class="np-r-selectbox-item-li" ng-if="(items.length === 0 || items === undefined) && (moreItems.length === 0 || moreItems === undefined)">the list is empty</li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,73 @@
+<header class="np-e-toolbar" style="min-width:400px;" layout="row" layout-align="space-between center">
+    <div class="np-e-toolbar-left" layout="row" layout-align="start center">
+
+            <span id="np-e-toggle-nav-icon"
+                  class="np-e-header-toggle-nav-icon prototype-assets--images--header--panel-left-icon np-e-header-dimensions"
+                  ui-tooltip-content="Show/Hide Sidebar" ui-tooltip-side="top"
+                  ui-tooltip ui-tooltip-class="ui-tooltip-white"
+                  ng-class="{'prototype-assets--images--header--panel-left-icon-off': ctrl.toggleNavigationBar.toggled, 'prototype-assets--images--header--panel-left-icon' : !ctrl.toggleNavigationBar.toggled}"
+                  ng-click="ctrl.toggleNavigationBar()">
+            </span>
+
+        <span class="np-e-header-separator"></span>
+            
+            <span class="np-e-header-icon-active prototype-assets--images--header--brush np-e-header-dimensions"
+                  ui-tooltip-content="UI Composer" ui-tooltip-side="top" ui-tooltip
+                  ui-tooltip-class="ui-tooltip-white" ng-show="true" ng-click="ctrl.goToUIComposer()">
+            </span>
+
+            <span class="np-e-header-icon-disabled prototype-assets--images--header--data-binding-icon-off np-e-header-dimensions"
+                  ui-tooltip-content="Data Modeler" ui-tooltip-side="top" ui-tooltip
+                  ui-tooltip-class="ui-tooltip-white">
+            </span>
+    </div>
+
+        <div class="np-e-toolbar-right" layout="row" layout-align="start center">
+
+            <div class="dm-header-svg-imag dmsvg-plus-square-icon"
+                 data-toggle="tooltip" ui-popup-open="add-panel"
+                 ui-tooltip ui-tooltip-class="ui-tooltip-white" ui-tooltip-content="Add" ui-tooltip-side="top">
+            </div>
+
+            <div class="dm-header-ui-zoom">
+                <ui-zoom offset-x="-3" offset-y="10"></ui-zoom>
+            </div>
+
+            <div class="dm-header-svg-imag dmsvg-panel-right-icon-white"
+                 ui-tooltip
+                 ui-tooltip-content="Show/Hide right panel"
+                 ui-tooltip-side="left"
+                 ui-tooltip-class="ui-tooltip-white"
+                 ng-click="ctrl.toggleShowHideSidePanel()">
+            </div>
+
+        </div>
+
+    <ui-popup placement="bottom" id="add-panel" class="dm-add-panel" offset-x="-10" offset-y="10">
+        <div ui-popup-close>
+            <div class="dm-add-panel-option" ng-click="ctrl.addNewEntity()">
+                <div class="dmsvg-add-icon"></div>
+                <span>Manual </span>
+            </div>
+            <div class="dm-add-panel-option" id="dm-header-import-excel">
+                <div class="dmsvg-importXLS-icon"></div>
+                <span>Import xls</span>
+            </div>
+            <div class="dm-add-panel-option" ng-click="ctrl.openSearch()">
+                <div class="dmsvg-Search-icon"></div>
+                <span>From Search </span>
+            </div>
+        </div>
+        <ui-file-upload is-dialog="false"
+                        dropzone-id="dm-header-import-excel"
+                        upload-button-id="dm-header-import-excel"
+                        success="ctrl.importSuccess(fileId)"
+                        upload-url="{{ctrl.getImportUrl()}}">
+        </ui-file-upload>
+    </ui-popup>
+
+</header>
+
+
+
+

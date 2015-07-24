@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12005) - http://www.bohemiancoding.com/sketch -->
+    <title>hide-annotation</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="hide-annotation" sketch:type="MSLayerGroup">
+            <ellipse id="Oval-27" fill="#3398DB" sketch:type="MSShapeGroup" cx="12" cy="12" rx="12" ry="12"></ellipse>
+            <path d="M12,19 C12,19 17,12.7614237 17,10 C17,7.23857625 14.7614237,5 12,5 C9.23857625,5 7,7.23857625 7,10 C7,12.7614237 12,19 12,19 Z" id="Oval-591" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <circle id="Oval-592" fill="#3398DB" sketch:type="MSShapeGroup" cx="12" cy="9" r="2"></circle>
+            <rect id="Rectangle-407-Copy-2" stroke="#3398DB" fill="#FFFFFF" sketch:type="MSShapeGroup" transform="translate(12.058013, 11.966506) rotate(-30.000000) translate(-12.058013, -11.966506) " x="3.91089838" y="10.7699993" width="16.2942286" height="2.39301409"></rect>
+        </g>
+    </g>
+</svg>

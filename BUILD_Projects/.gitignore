@@ -1,0 +1,39 @@
+node_modules
+# .gitignore
+.tmp
+dev
+dist
+.DS_Store
+npm-debug.log
+client/requires.js
+server/requires.js
+coverage
+uploads/
+doc/
+reports/
+bin/server/logs
+test/results
+
+# Node.js #
+###########
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# IDE #
+#######
+*.iml
+.idea
+.vagrant
+.project
+.grunt
+*.sublime*
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed

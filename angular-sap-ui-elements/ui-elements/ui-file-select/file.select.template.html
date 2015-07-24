@@ -1,0 +1,56 @@
+<ui-dialog id="file-select-id" class="file-select" title="Select From Documents" cancel-text="Cancel"
+           close-text="Select" modal="true" close-action="selectFiles()">
+    <div class="file-select-content" class="loading-file-list">
+        <div ng-if="loading" class="loading-file-list">
+            <h1>Loading...</h1>
+        </div>
+        <div ng-if="!loading">
+            <div class="top-menu">
+                <div class="files-menu">
+                    <div class="files-available">
+                        <ng-pluralize count="files.length"
+                                      when="{'0': 'No files available',
+                     'one': '1 available file',
+                     'other': '{} available files'}">
+                        </ng-pluralize>
+                    </div>
+                    <div class="options">
+                            <div class="sort-options">
+                            Sort by:
+                            <ui-select dark ng-model="selectedItem"
+                                       ng-options="item.name for item in sortedItems"></ui-select>
+                        </div>
+                        <div class="view-options" ng-show="!disableViewToggle">
+                            <div class="view-tiles" ng-class="{selected: viewType == 'tile'}" ng-click="viewType = 'tile'"></div>
+                            <div class="view-list" ng-class="{selected: viewType == 'list'}" ng-click="viewType = 'list'"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="upload-link" ng-if="!disableUpload">Upload from your computer</div>
+            </div>
+            <div class="files-list-view fade" ng-if="viewType === 'list'">
+                <div class="file-list-view" ng-class="{selected: file.selected}" ng-repeat="file in files | orderBy:selectedItem.value"
+                     ng-click="file.selected = !file.selected">
+                    <div class="file-image">
+                        <div class="complete-tick"></div>
+                        <ui-thumbnail size="small" light thumbnail-src="{{file.url}}"
+                                      doc-type="{{file.ext}}"></ui-thumbnail>
+                    </div>
+                    <div class="file-name" ng-bind="file.name"></div>
+                    <div class="file-date"><span ng-bind="file.date | date:'dd MMM'"></span>. '<span ng-bind="file.date | date:'yy HH:mm'"></span></div>
+                </div>
+            </div>
+            <div class="files-tile-view fade" ng-if="viewType === 'tile'">
+                <div class="file-tile-view" ng-class="{selected: file.selected}" ng-repeat="file in files | orderBy:selectedItem.value"
+                     ng-click="file.selected = !file.selected">
+                    <div class="file-image">
+                        <div class="complete-tick"></div>
+                        <ui-thumbnail size="medium" light thumbnail-src="{{file.url}}"
+                                      doc-type="{{file.ext}}"></ui-thumbnail>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</ui-dialog>

@@ -1,0 +1,214 @@
+{
+	"registration" : {
+		"self" : false,
+		"social" : false
+	},
+	"provider" : {
+		"local" : true
+	},
+	"application" : {
+		"admin" : true
+	},
+    "failedLoginReasons" : {
+        "notFound" : "The email or password you entered is incorrect. Please try again.",
+        "passwordIncorrect" : "The email or password you entered is incorrect. Please try again.",
+        "maxAttempts" : "Your account has been temporarily locked, please try again later."
+    },
+    "roles" : {
+        "projectRoles" : [
+            {
+                "roles" : "owner-projectId",
+                "allows" : [
+                    {
+                        "resources" : "/projectId",
+                        "permissions" : ["put", "post", "patch", "get", "delete"]
+                    },
+                    {
+                        "resources" : "/api/projects/projectId",
+                        "permissions" : ["put", "post", "patch", "get", "delete"]
+                    },
+                    {
+                        "resources" : "/api/projects/projectId/prototype",
+                        "permissions" : ["put", "post", "patch", "get", "delete"]
+                    },
+                    {
+                        "resources" : "/api/projects/projectId/studies",
+                        "permissions" : ["put", "post", "patch", "get", "delete"]
+                    },
+                    {
+                        "resources" : "/api/projects/projectId/document",
+                        "permissions" : ["*"]
+                    },
+                    {
+                        "resources" : "/api/projects/projectId/settings",
+                        "permissions" : ["put", "patch", "delete"]
+                    },
+                    {
+                        "resources" : "/api/projects/projectId/owner",
+                        "permissions" : ["put"]
+                    },
+                    {
+                        "resources" : "/api/models/projectId",
+                        "permissions" : ["put", "post", "patch", "get", "delete"]
+                    },
+                    {
+                        "resources" : "/api/sampledata/projectId",
+                        "permissions" : ["put", "get"]
+                    },
+                    {
+                        "resources" : "/api/participant",
+                        "permissions" : ["put", "post", "patch", "get", "delete"]
+                    },
+                    {
+                        "resources" : "/api/uicatalogs",
+                        "permissions" : ["get","post","delete"]
+                    }
+                ]
+            },
+            {
+                "roles" : "collaborator-projectId",
+                "allows" : [
+                    {
+                        "resources" : "/projectId",
+                        "permissions" : ["put", "post", "patch", "get"]
+                    },
+                    {
+                        "resources" : "/api/projects/projectId",
+                        "permissions" : ["put", "post", "patch", "get"]
+                    },
+                    {
+                        "resources" : "/api/projects/projectId/studies",
+                        "permissions" : ["put", "post", "patch", "get", "delete"]
+                    },
+                    {
+                        "resources" : "/api/models/projectId",
+                        "permissions" : ["put", "post", "patch", "get", "delete"]
+                    },
+                    {
+                        "resources" : "/api/projects/projectId/prototype",
+                        "permissions" : ["put", "post", "patch", "get", "delete"]
+                    },
+                    {
+                        "resources" : "/api/projects/projectId/document",
+                        "permissions" : ["*"]
+                    },
+                    {
+                        "resources" : "/api/sampledata/projectId",
+                        "permissions" : ["put", "get"]
+                    },
+                    {
+                        "resources" : "/api/participant",
+                        "permissions" : ["put", "post", "patch", "get", "delete"]
+                    },
+                    {
+                        "resources" : "/api/uicatalogs",
+                        "permissions" : ["get","post","delete"]
+                    }
+                ]
+            },
+            {
+                "roles" : "spectator-projectId",
+                "allows" : [
+                ]
+            }
+        ],
+        "defaultGlobalRole" : "standard",
+        "globalRoles" : [
+            {
+                "roles" : "admin",
+                "allows" : [
+                    {
+                        "resources" : "/api",
+                        "permissions" : ["*"]
+                    },
+                    {
+                        "resources" : "/api/catalogs",
+                        "permissions" : ["*"]
+                    },
+                    {
+                        "resources" : "/api/catalogs/import",
+                        "permissions" : ["*"]
+                    },
+                    {
+                        "resources" : "/api/uicatalogs",
+                        "permissions" : ["*"]
+                    },
+                    {
+                        "resources" : "/api/users",
+                        "permissions" : ["post"]
+                    }
+                ]
+            },
+            {
+                "roles" : "standard",
+                "allows" : [
+                    {
+                        "resources" : "/api/participant",
+                        "permissions" : ["put", "post", "patch", "get", "delete"]
+                    },
+                    {
+                        "resources" : "/api/projects/",
+                        "permissions" : ["post"]
+                    },
+                    {
+                        "resources" : "/api/catalogs",
+                        "permissions" : ["get"]
+                    },
+                    {
+                        "resources" : "/api/catalogs/search",
+                        "permissions" : ["post"]
+                    },
+                    {
+                        "resources" : "/api/catalogs/entities",
+                        "permissions" : ["post"]
+                    },
+                    {
+                        "resources" : "/deploy/*",
+                        "permissions" : ["get"]
+                    },
+                    {
+                        "resources" : "/public/*",
+                        "permissions" : ["get"]
+                    },
+                    {
+                        "resources" : "/openui5/*",
+                        "permissions" : ["get"]
+                    },
+                    {
+                        "resources" : "/api/uicatalogs",
+                        "permissions" : ["get","post","delete"]
+                    },
+                    {
+                        "resources" : "/api/users/avatar",
+                        "permissions" : ["post"]
+                    }
+                ]
+            },
+            {
+                "roles" : "guest",
+                "allows" : [
+                    {
+                        "resources" : "/api/participant",
+                        "permissions" : ["put", "post", "patch", "get", "delete"]
+                    },
+                    {
+                        "resources" : "/deploy/*",
+                        "permissions" : ["get"]
+                    },
+                    {
+                        "resources" : "/public/*",
+                        "permissions" : ["get"]
+                    },
+                    {
+                        "resources" : "/openui5/*",
+                        "permissions" : ["get"]
+                    },
+                    {
+                        "resources" : "/api/uicatalogs",
+                        "permissions" : ["get"]
+                    }
+                ]
+            }
+        ]
+    }
+}

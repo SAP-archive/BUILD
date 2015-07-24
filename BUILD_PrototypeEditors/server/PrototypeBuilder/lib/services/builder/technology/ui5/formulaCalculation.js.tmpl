@@ -1,0 +1,754 @@
+var formulaCalculation = function() {
+
+    'use strict';
+
+    var formulaCalculation = function () {
+    };
+
+    formulaCalculation.findToEntity = function (entityType, modelHelper) {
+
+        var schema = modelHelper.find("Schema")[0];
+        var entityTypes = modelHelper.find("EntityType");
+        var entitySets = modelHelper.find("EntitySet");
+        var result = {};
+        var i;
+
+        for (i = 0; i < entityTypes.length; i++) {
+            if (modelHelper.getAttribute("Namespace", schema) + "." + modelHelper.getAttribute("Name", entityTypes[i]) === entityType) {
+                result.entity = entityTypes[i];
+                break;
+            }
+        }
+
+        for (i = 0; i < entitySets.length; i++) {
+            if (modelHelper.getAttribute("EntityType", entitySets[i]) === entityType) {
+                result.entitySet = entitySets[i];
+                break;
+            }
+        }
+
+        return result;
+    };
+
+    formulaCalculation.getNavPropValues = function (data, dataPoint, formulaObj, navigationProperty, modelHelper) {
+
+        var associations = modelHelper.find("Association");
+        var schema = modelHelper.find("Schema")[0];
+        var schemaNameSpace = modelHelper.getAttribute("Namespace", schema);
+        var association;
+        var i;
+
+        for (i = 0; i < associations.length; i++) {
+            var name = schemaNameSpace + "." + modelHelper.getAttribute("Name", associations[i]);
+            var relationship = modelHelper.getAttribute("Relationship", navigationProperty);
+            if (name && relationship && name.toLowerCase() === relationship.toLowerCase()) {
+                association = associations[i];
+                break;
+            }
+        }
+
+        var ends = modelHelper.find("End", association);
+        var multiplicity = false;
+        var entityType;
+
+        for (i = 0; i < ends.length; i++) {
+            var role = modelHelper.getAttribute("Role", ends[i]);
+            var toRole = modelHelper.getAttribute("ToRole", navigationProperty);
+            if (role && toRole && role.toLowerCase() === toRole.toLowerCase()) {
+                if (modelHelper.getAttribute("Multiplicity", ends[i]) === "*") {
+                    multiplicity = true;
+                }
+                entityType = modelHelper.getAttribute("Type", ends[i]);
+                break;
+            }
+        }
+
+        var result = multiplicity ? [] : null;
+
+        if (navigationProperty && entityType) {
+
+            var entity = formulaCalculation.findToEntity(entityType, modelHelper);
+            var property1;
+            var property2;
+            var res;
+
+            var navPropData = data[modelHelper.getAttribute("Name", entity.entitySet)];
+            var referentialConstraints = modelHelper.find("ReferentialConstraint", association);
+
+            navPropData.forEach(function (dataPt) {
+                res = true;
+
+                for (i = 0; i < referentialConstraints.length; i++) {
+
+                    property1 = modelHelper.find("Principal", referentialConstraints[i])[0];
+                    property1 = modelHelper.getAttribute("Name", modelHelper.find("PropertyRef", property1)[0]);
+                    property2 = modelHelper.find("Dependent", referentialConstraints[i])[0];
+                    property2 = modelHelper.getAttribute("Name", modelHelper.find("PropertyRef", property2)[0]);
+
+                    if (dataPoint[property1] !== dataPt[property2]) {
+                        res = false;
+                    }
+                }
+
+                if (res && formulaObj.propertyName) {
+                    if (multiplicity) {
+                        result.push(dataPt[formulaObj.propertyName]);
+                    }
+                    else {
+                        result = dataPt[formulaObj.propertyName];
+                    }
+                }
+            });
+
+        }
+
+        if (formulaObj.propertyName) {
+            result = formulaCalculation.removeNull(result);
+
+            if (Array.isArray(result)) {
+                if (formulaObj.navPropOp === "sum") {
+                    var sum;
+                    var number = true;
+                    if (formulaCalculation.allNumeric(result)) {
+                        sum = 0;
+                    }
+                    else {
+                        sum = "";
+                        number = !number;
+                    }
+                    for (i = 0; i < result.length; i++) {
+                        if (number) {
+                            sum += parseFloat(result[i]);
+                        }
+                        else {
+                            sum += result[i];
+                        }
+                    }
+                    result = sum;
+                }
+                else if (formulaObj.navPropOp === "count") {
+                    var count = 0;
+                    for (i = 0; i < result.length; i++) {
+                        if (result[i] != null) {
+                            count++;
+                        }
+                    }
+                    result = count;
+                }
+                else if (formulaObj.navPropOp === "mean") {
+                    if (formulaCalculation.allNumeric(result)) {
+                        var total = 0;
+                        for (i = 0; i < result.length; i++) {
+                            total += parseFloat(result[i]);
+                        }
+                        result = total / result.length;
+                    }
+                    else {
+                        result = null;
+                    }
+                }
+                else {
+                    result = null;
+                }
+            }
+        }
+        else {
+            result = null;
+        }
+
+        return result;
+    };
+
+    formulaCalculation.getEntity = function (name, modelHelper) {
+        var result;
+        var entities = modelHelper.find("EntityType");
+        for (var i = 0; i < entities.length; i++) {
+            var entName = modelHelper.getAttribute("Name", entities[i]);
+            if (entName && name && entName.toLowerCase() === name.toLowerCase()) {
+                result = entities[i];
+                break;
+            }
+        }
+        return result;
+    };
+
+    formulaCalculation.getProperty = function (name, entity, modelHelper) {
+        var result;
+        var properties = modelHelper.find("Property", entity);
+        for (var i = 0; i < properties.length; i++) {
+            var propName = modelHelper.getAttribute("Name", properties[i]);
+            if (propName && name && propName.toLowerCase() === name.toLowerCase()) {
+                result = properties[i];
+                break;
+            }
+        }
+        return result;
+    };
+
+    formulaCalculation.getCalculatedProperties = function (entity, property, data, calculatedProperties, modelHelper) {
+
+        var properties = [];
+        var addedProp = null;
+        var currentProperty = null;
+
+        if (calculatedProperties.filter(function (calculatedProperty) {
+                var nameCalc = modelHelper.getAttribute("Name", calculatedProperty);
+                var name = modelHelper.getAttribute("Name", property);
+                var parentCalcName = modelHelper.getAttribute("Name", calculatedProperty.parentElement);
+                var parentName = modelHelper.getAttribute("Name", property.parentElement);
+                return name && nameCalc && nameCalc.toLowerCase() === name.toLowerCase() && parentName && parentCalcName && parentCalcName.toLowerCase() === parentName.toLowerCase();
+            }).length === 0 && !property.done) {
+            currentProperty = property;
+            calculatedProperties.push(currentProperty);
+        }
+
+        var calculated = modelHelper.getAttribute("sap:calculated", property);
+        var inputEntity = null;
+        var subInputProperty = null;
+
+        if (calculated) {
+            calculated.inputProperties.forEach(function (inputProperty) {
+
+                inputEntity = formulaCalculation.getEntity(inputProperty.entityId, modelHelper);
+
+                subInputProperty = formulaCalculation.getProperty(inputProperty.propertyId, inputEntity, modelHelper);
+
+                var subPropCalc = modelHelper.getAttribute("sap:calculated", subInputProperty);
+
+                if (!inputProperty.done && subPropCalc && subPropCalc.calculation) {
+                    properties.push(inputProperty);
+                }
+            });
+        }
+
+        properties.forEach(function (calculatedProperty) {
+
+            inputEntity = formulaCalculation.getEntity(calculatedProperty.entityId, modelHelper);
+
+            addedProp = formulaCalculation.getProperty(calculatedProperty.propertyId, inputEntity, modelHelper);
+
+            var propCalc = modelHelper.getAttribute("sap:calculated", addedProp);
+
+            if (calculatedProperties.filter(function (theProperty) {
+                    var thePropName = modelHelper.getAttribute("Name", theProperty);
+                    var addedPropName = modelHelper.getAttribute("Name", addedProp);
+                    var thePropParent = modelHelper.getAttribute("Name", theProperty.parentElement);
+                    var addedPropParent = modelHelper.getAttribute("Name", addedProp.parentElement);
+                    return thePropName && thePropName.toLowerCase() === addedPropName && addedPropName.toLowerCase() && thePropParent && thePropParent.toLowerCase() === addedPropParent && addedPropParent.toLowerCase();
+                }).length === 0) {
+                if (propCalc && propCalc.calculation) {
+                    calculatedProperties.push(addedProp);
+                    propCalc.inputProperties.forEach(function (inputProperty) {
+                        entity = formulaCalculation.getEntity(inputProperty.entityId, modelHelper);
+                        property = formulaCalculation.getProperty(inputProperty.propertyId, entity, modelHelper);
+                        var subPropCalc = modelHelper.getAttribute("sap:calculated", property);
+                        if (subPropCalc && subPropCalc.calculation) {
+                            calculatedProperties = formulaCalculation.getCalculatedProperties(entity, property, data, calculatedProperties, modelHelper);
+                        }
+                    });
+                }
+            }
+
+        });
+
+        return calculatedProperties;
+    };
+
+    formulaCalculation.allNumeric = function (array) {
+        var numTest = new RegExp("^-?[0-9]+\\.?[0-9]*$|^-?[0-9]*\\.[0-9]+$");
+        var result = true;
+        if (Array.isArray(array)) {
+            for (var i = 0; i < array.length; i++) {
+                if (!numTest.test(array[i]) && array[i] !== null && array[i] !== undefined) {
+                    result = false;
+                }
+            }
+        }
+        else {
+            result = !(!numTest.test(array) && array !== null && array !== undefined);
+        }
+        return result;
+    };
+
+    formulaCalculation.removeNull = function (array) {
+
+        var numeric = formulaCalculation.allNumeric(array);
+
+        if (Array.isArray(array)) {
+            for (var i = 0; i < array.length; i++) {
+                if (array[i] === null || array[i] === undefined) {
+                    if (numeric) {
+                        array[i] = 0;
+                    }
+                    else {
+                        array[i] = "";
+                    }
+                }
+            }
+        }
+        else {
+            if (array === null || array === undefined) {
+                array = 0;
+            }
+        }
+
+        return array;
+    };
+
+    formulaCalculation.generateResult = function (formulaObj, data, dataPoint, entity, modelHelper) {
+        var result;
+        switch (formulaObj[0].type) {
+            case "condition":
+                if (formulaCalculation.generateResult(formulaObj[0].condition, data, dataPoint, entity, modelHelper)) {
+                    result = formulaCalculation.generateResult(formulaObj[0].then, data, dataPoint, entity, modelHelper);
+                }
+                else {
+                    result = formulaCalculation.generateResult(formulaObj[0].else, data, dataPoint, entity, modelHelper);
+                }
+                break;
+            case "operator":
+
+                var left = null;
+
+                if (formulaObj[0].hasOwnProperty("left")) {
+                    left = formulaCalculation.generateResult(formulaObj[0].left, data, dataPoint, entity, modelHelper);
+                }
+
+                var right = formulaCalculation.generateResult(formulaObj[0].right, data, dataPoint, entity, modelHelper);
+
+                left = formulaCalculation.removeNull(left);
+                right = formulaCalculation.removeNull(right);
+
+                if (!left && typeof right === "string") {
+                    left = "";
+                }
+                else if (!right && typeof left === "string") {
+                    right = "";
+                }
+
+                if (!Array.isArray(right) && !Array.isArray(left)) {
+
+                    if (formulaCalculation.allNumeric(left)) {
+                        left = parseFloat(left);
+                    }
+                    if (formulaCalculation.allNumeric(right)) {
+                        right = parseFloat(right);
+                    }
+
+                    switch (formulaObj[0].name) {
+                        case "plus":
+                            result = left + right;
+                            break;
+                        case "minus":
+                            result = left - right;
+                            break;
+                        case "times":
+                            result = left * right;
+                            break;
+                        case "divide":
+                            result = left / right;
+                            break;
+                        case "ltoe":
+                            result = left <= right;
+                            break;
+                        case "lt":
+                            result = left < right;
+                            break;
+                        case "gtoe":
+                            result = left >= right;
+                            break;
+                        case "gt":
+                            result = left > right;
+                            break;
+                        case "and":
+                            result = left && right;
+                            break;
+                        case "or":
+                            result = left || right;
+                            break;
+                        case "equals":
+                            result = left === right;
+                            break;
+                        case "different":
+                            result = left !== right;
+                            break;
+                        case "isNull":
+                            result = !right;
+                            break;
+                        default:
+                            result = null;
+                    }
+                }
+                else {
+                    result = null;
+                }
+                break;
+            case "property":
+                var entName = modelHelper.getAttribute("Name", entity);
+                if (formulaObj[0].entityName && entName && formulaObj[0].entityName.toLowerCase() === entName.toLowerCase()) {
+                    if (!(formulaCalculation.allNumeric(dataPoint[formulaObj[0].propertyName]))) {
+                        result = dataPoint[formulaObj[0].propertyName];
+                    }
+                    else {
+                        result = parseFloat(dataPoint[formulaObj[0].propertyName]);
+                    }
+                }
+                else if (formulaObj[0].navPropName) {
+                    var navigationProperty;
+                    var navProperties = modelHelper.find("NavigationProperty", entity);
+
+                    for (var i = 0; i < navProperties.length; i++) {
+                        var navPropName = modelHelper.getAttribute("Name", navProperties[i]);
+                        if (formulaObj[0].navPropName && navPropName && navPropName.toLowerCase() === formulaObj[0].navPropName.toLowerCase()) {
+                            navigationProperty = navProperties[i];
+                            break;
+                        }
+                    }
+                    result = null || (navigationProperty && formulaCalculation.getNavPropValues(data, dataPoint, formulaObj[0], navigationProperty, modelHelper));
+                }
+                break;
+            case "value":
+                if (isNaN(parseFloat(formulaObj[0].value))) {
+                    result = formulaObj[0].value;
+                }
+                else {
+                    result = parseFloat(formulaObj[0].value);
+                }
+                break;
+            default:
+                result = null || formulaObj[0];
+        }
+
+        result = formulaCalculation.removeNull(result);
+
+        return result;
+    };
+
+    formulaCalculation.getNameSet = function (entityName, modelHelper) {
+
+        var result;
+
+        var schema = modelHelper.getAttribute("Namespace", modelHelper.find("Schema")[0]);
+
+        var entitySets = modelHelper.find("EntitySet");
+
+        for (var i = 0; i < entitySets.length; i++) {
+            if (modelHelper.getAttribute("EntityType", entitySets[i]) === schema + "." + entityName) {
+                result = modelHelper.getAttribute("Name", entitySets[i]);
+                break;
+            }
+        }
+
+        return result;
+
+    };
+
+    formulaCalculation.calcLeft = function (props) {
+        var result = 0;
+
+        for (var i = 0; i < props.length; i++) {
+            if (!props[i].done) {
+                result++;
+            }
+        }
+
+        return result;
+    };
+
+    formulaCalculation.calculateValues = function (entity, data, calculatedProperties, modelHelper) {
+
+        var entityData = data[formulaCalculation.getNameSet(modelHelper.getAttribute("Name", entity), modelHelper)];
+
+        if (calculatedProperties.length > 0) {
+
+            for (var i = 0; i < calculatedProperties.length; i++) {
+                if (!calculatedProperties[i].done) {
+
+                    var propCalc = modelHelper.getAttribute("sap:calculated", calculatedProperties[i]);
+                    var inputPropertiesXml = modelHelper.getAttribute("sap:calculated", calculatedProperties[i]).inputProperties; // Done twice to create a copy
+                    var j;
+
+                    for (j = 0; j < inputPropertiesXml.length; j++) {
+                        var ent = formulaCalculation.getEntity(inputPropertiesXml[j].entityId, modelHelper);
+                        inputPropertiesXml[j] = formulaCalculation.getProperty(inputPropertiesXml[j].propertyId, ent, modelHelper);
+                    }
+
+                    if (propCalc.inputProperties.length === 0 || formulaCalculation.noCalcProp(propCalc.inputProperties, calculatedProperties, modelHelper)) {
+
+                        for (j = 0; j < entityData.length; j++) {
+
+                            var value;
+                            try {
+                                // TODO if there are error flags, property takes the value of the prop that has errors
+                                value = formulaCalculation.generateResult(propCalc.calculation, data, entityData[j], entity, modelHelper);
+                                if (typeof value !== "string" && isNaN(value)) {
+                                    value = null;
+                                }
+                                calculatedProperties[i].done = true;
+                            }
+                            catch (err) {
+                                if (jQuery && jQuery.sap && jQuery.sap.log) {
+                                    jQuery.sap.log.error(err);
+                                }
+                                value = null;
+                            }
+
+                            entityData[j][modelHelper.getAttribute("Name", calculatedProperties[i])] = value;
+
+                        }
+
+                        if (!j) {
+                            calculatedProperties[i].done = true;
+                        }
+
+                    }
+                    else if (formulaCalculation.calcLeft(inputPropertiesXml)) {
+                        if (!calculatedProperties[i].beenThrough && !calculatedProperties[i].circular) {
+                            calculatedProperties[i].beenThrough = true;
+                            propCalc.inputProperties.forEach(function (inputProp) {
+                                var ent = formulaCalculation.getEntity(inputProp.entityId, modelHelper);
+
+                                var prop = formulaCalculation.getProperty(inputProp.propertyId, ent, modelHelper);
+
+                                if (modelHelper.getAttribute("sap:calculated", prop)) {
+                                    var newProps = formulaCalculation.getCalculatedProperties(ent, prop, data, [], modelHelper);
+
+                                    formulaCalculation.calculateValues(ent, data, newProps, modelHelper);
+                                }
+
+                            });
+                        }
+                        else {
+                            calculatedProperties[i].done = true;
+                            calculatedProperties[i].circular = true;
+                            var errPropName = modelHelper.getAttribute("Name", calculatedProperties[i]);
+
+                            for (j = 0; j < entityData.length; j++) {
+                                entityData[j][errPropName] = "Circularity Error in " + errPropName;
+                            }
+                        }
+                    }
+                    if (formulaCalculation.calcLeft(calculatedProperties)) {
+                        formulaCalculation.calculateValues(calculatedProperties[i].parentElement, data, calculatedProperties, modelHelper);
+                    }
+
+                }
+
+            }
+
+        }
+
+        return entityData;
+
+    };
+
+    formulaCalculation.noCalcProp = function (properties, calculatedProperties, modelHelper) {
+        var result = true;
+
+        properties.forEach(function (inputProperty) {
+            for (var i = 0; i < calculatedProperties.length; i++) {
+                var calcName = modelHelper.getAttribute("Name", calculatedProperties[i]);
+                var calcParentName = modelHelper.getAttribute("Name", calculatedProperties[i].parentElement);
+                if (calcName && inputProperty.propertyId && calcName.toLowerCase() === inputProperty.propertyId.toLowerCase() && calcParentName && inputProperty.entityId && calcParentName.toLowerCase() === inputProperty.entityId.toLowerCase() && !calculatedProperties[i].done) {
+                    result = false;
+                }
+            }
+        });
+
+        return result;
+    };
+
+    formulaCalculation.eraseCalculatedValues = function (data, modelHelper) {
+        var entities = modelHelper.find("EntityType");
+        var properties;
+        for (var i = 0; i < entities.length; i++) {
+            properties = modelHelper.find("Property", entities[i]);
+            for (var j = 0; j < properties.length; j++) {
+                if (properties[j].done) {
+                    properties[j].done = false;
+                }
+                var propCalc = modelHelper.getAttribute("sap:calculated", properties[j]);
+                data[formulaCalculation.getNameSet(modelHelper.getAttribute("Name", entities[i]), modelHelper)].forEach(function (dataPoint) {
+                    if (propCalc && propCalc.calculation && dataPoint.hasOwnProperty(modelHelper.getAttribute("Name", properties[j]))) {
+                        delete dataPoint[modelHelper.getAttribute("Name", properties[j])];
+                    }
+                });
+            }
+        }
+    };
+
+    formulaCalculation.resetCircularity = function (properties) {
+        for (var i = 0; i < properties.length; i++) {
+            if (properties[i].beenThrough) {
+                properties[i].beenThrough = false;
+            }
+        }
+    };
+
+    formulaCalculation.calculateData = function (entity, data, modelHelper) {
+
+        var calculatedProperties = [];
+        var properties = modelHelper.find("Property", entity);
+
+        for (var i = 0; i < properties.length; i++) {
+            var calcProp = modelHelper.getAttribute("sap:calculated", properties[i]);
+            if (calcProp && calcProp.calculation) {
+                calculatedProperties = formulaCalculation.getCalculatedProperties(entity, properties[i], data, calculatedProperties, modelHelper);
+            }
+        }
+
+        formulaCalculation.resetCircularity(calculatedProperties);
+
+        return formulaCalculation.calculateValues(entity, data, calculatedProperties, modelHelper);
+
+    };
+
+    formulaCalculation.getEntityData = function (data, modelHelper) {
+        var entities = modelHelper.find("EntityType");
+
+        formulaCalculation.eraseCalculatedValues(data, modelHelper);
+
+        for (var i = 0; i < entities.length; i++) {
+            formulaCalculation.calculateData(entities[i], data, modelHelper);
+        }
+    };
+
+    formulaCalculation.patchRequester = function (oMockServer, modelHelper) {
+
+        var aRequests = [], isFirst = true, that = oMockServer;
+        oMockServer.getRequests().forEach(function (oRequest) {
+            if (oRequest.method === "POST") {
+                if (isFirst) {
+                    isFirst = false;
+                    aRequests.push(oRequest);
+                }
+                else {
+                    aRequests.push({
+                        method: oRequest.method,
+                        path: oRequest.path,
+                        response: function (oXhr, sEntitySetName, group2, sKeys, sNavName) {
+
+                            if (oXhr.requestHeaders["x-http-method"] === "MERGE") {
+                                return modelHelper.sap.sjax({
+                                    type: "MERGE",
+                                    url: oXhr.url,
+                                    data: oXhr.requestBody
+                                });
+                            }
+
+                            var oXhrCopy = jQuery.extend({}, oXhr);
+
+                            oXhrCopy.respond = function () {
+                                formulaCalculation.getEntityData(that._oMockdata, modelHelper);
+                                oXhr.respond.apply(oXhr, arguments);
+                            };
+
+                            oRequest.response(oXhrCopy, sEntitySetName, group2, sKeys, sNavName);
+                        }
+                    });
+                }
+            }
+            else if (oRequest.method === "MERGE") {
+                aRequests.push({
+                    method: oRequest.method,
+                    path: oRequest.path,
+                    response: function (oXhr, sEntitySetName, sKeys, sNavName) {
+
+                        var oXhrCopy = jQuery.extend({}, oXhr);
+
+                        oXhrCopy.respond = function () {
+                            formulaCalculation.getEntityData(that._oMockdata, modelHelper);
+                            oXhr.respond.apply(oXhr, arguments);
+                        };
+
+                        oRequest.response(oXhrCopy, sEntitySetName, sKeys, sNavName);
+                    }
+                });
+            }
+            else if (oRequest.method === "PUT") {
+                aRequests.push({
+                    method: oRequest.method,
+                    path: oRequest.path,
+                    response: function (oXhr, sEntitySetName, sKeys, sNavName) {
+
+                        var oXhrCopy = jQuery.extend({}, oXhr);
+
+                        oXhrCopy.respond = function () {
+                            formulaCalculation.getEntityData(that._oMockdata, modelHelper);
+                            oXhr.respond.apply(oXhr, arguments);
+                        };
+
+                        oRequest.response(oXhrCopy, sEntitySetName, sKeys, sNavName);
+                    }
+                });
+            }
+            else if (oRequest.method === "DELETE") {
+                aRequests.push({
+                    method: oRequest.method,
+                    path: oRequest.path,
+                    response: function (oXhr, sEntitySetName, sKeys, sUrlParams) {
+
+                        var oXhrCopy = jQuery.extend({}, oXhr);
+
+                        oXhrCopy.respond = function () {
+                            formulaCalculation.getEntityData(that._oMockdata, modelHelper);
+                            oXhr.respond.apply(oXhr, arguments);
+                        };
+
+                        oRequest.response(oXhrCopy, sEntitySetName, sKeys, sUrlParams);
+                    }
+                });
+            }
+            else {
+                aRequests.push(oRequest);
+            }
+        });
+        oMockServer.setRequests(aRequests);
+    };
+
+    formulaCalculation.patchMockServer = function (oMockServer) {
+
+        var modelHelper = {
+            data: oMockServer._oMetadata,
+            find: function (element, container) {
+                if (typeof container === "undefined") {
+                    container = this.data;
+                }
+                return jQuery(container).find(element);
+            },
+            getAttribute: function (attribute, element) {
+                var result;
+                if (attribute === "sap:calculated") {
+                    result = element.getAttribute("sap:calculated");
+                    if (result) {
+                        result = JSON.parse(element.getAttribute("sap:calculated"));
+                        if (result.calculation) {
+                            result.calculation = JSON.parse(result.calculation);
+                        }
+                    }
+                }
+                else {
+                    result = element.getAttribute(attribute);
+                }
+                return result;
+            }
+        };
+
+        formulaCalculation.getEntityData(oMockServer._oMockdata, modelHelper);
+
+        formulaCalculation.patchRequester(oMockServer, modelHelper);
+
+    };
+
+    try {
+        if (module && module.exports) { // Server-side usage for automated test only, this is never true in standard usage
+            module.exports = formulaCalculation;
+        }
+    }
+    catch (err) {
+        jQuery.sap.log.debug(err);
+    }
+
+    return formulaCalculation;
+
+}();

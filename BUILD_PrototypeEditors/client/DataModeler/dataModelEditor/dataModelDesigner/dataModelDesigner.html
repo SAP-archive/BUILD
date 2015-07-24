@@ -1,0 +1,37 @@
+<div class="dmd-mainContainer" ng-controller="DataModelDesignerCtrl as dataModelDesigner">
+
+
+    <dmd-designer-layout
+            class="dmd-main"
+            selected-item="dataModelDesigner.selectedEntity"
+            select-item="dataModelDesigner.selectEntity"
+            update-item="dataModelDesigner.renameEntity"
+            drag-item-stop="dataModelDesigner.dragEntityStop(item)"
+            remove-item="dataModelDesigner.removeEntity()"
+            remove-navigation="dataModelDesigner.removeNavigation"
+            add-navigation="dataModelDesigner.addNavigation(newNavigationTarget)">
+
+        <div layout="row" ng-if="dataModelDesigner.model.entities.length === 0">
+            <div flex class="heading">
+                <ui-blank-state>
+                    <p>You have no data yet!</p>
+                    To manage great data for your prototype you can <a href="javascript:;" class="ui-blank-state-action" ng-click="dataModelDesigner.addNewEntity()">create new </a> objects,
+                    <a href='javascript:;' class="ui-blank-state-action" ng-click="dataModelDesigner.openSearch()">search</a> objects in Business Catalogs or
+                    <a id="dmd-import-excel" class="ui-blank-state-action" href="javascript:;">import</a> objects and data from Excel <br />
+
+                    <ui-file-upload is-dialog="false"
+                                    dropzone-id="dmd-import-excel"
+                                    upload-button-id="dmd-import-excel"
+                                    success="dataModelDesigner.importSuccess(fileId)"
+                                    upload-url="{{dataModelDesigner.getImportUrl()}}"
+                            >
+                    </ui-file-upload>
+                </ui-blank-state>
+            </div>
+        </div>
+
+    </dmd-designer-layout>
+
+
+</div>
+

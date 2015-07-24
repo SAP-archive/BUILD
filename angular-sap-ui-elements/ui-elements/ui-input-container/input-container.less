@@ -1,0 +1,145 @@
+@import (reference) "../../styles/base.less";
+
+@input-container-padding: 2px;
+@input-label-default-offset: 24px;
+@input-label-default-scale: 1.0;
+@input-label-float-offset: 4px;
+@input-label-float-scale: 0.75;
+@input-placeholder-offset: @input-label-default-offset;
+@input-border-width-default: 1px;
+@input-border-width-focused: 2px;
+@input-line-height: 26px;
+@input-padding-top: 2px;
+@input-error-font-size: 12px;
+@input-error-height: 24px;
+
+@baseline-grid: 8px;
+
+@swift-ease-out-duration: 0.4s;
+@swift-ease-out-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+@swift-ease-out: all @swift-ease-out-duration @swift-ease-out-timing-function;
+@swift-ease-in-duration: 0.1s;
+@swift-ease-in-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+@swift-ease-in: all @swift-ease-in-duration @swift-ease-in-timing-function;
+@swift-ease-in-out-duration: 0.5s;
+@swift-ease-in-out-timing-function: cubic-bezier(0.35, 0, 0.25, 1);
+@swift-ease-in-out: all @swift-ease-in-out-duration @swift-ease-in-out-timing-function;
+
+ui-input-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: @input-container-padding;
+  padding-bottom: @input-container-padding + @input-error-height;
+  textarea,
+  input[type="text"],
+  input[type="password"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="date"],
+  input[type="month"],
+  input[type="time"],
+  input[type="week"],
+  input[type="number"],
+  input[type="email"],
+  input[type="url"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="color"] {
+    /* remove default appearance from all input/textarea */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+  }
+  textarea {
+    resize: none;
+    overflow: hidden;
+  }
+  label {
+    order: 1;
+    pointer-events: none;
+    -webkit-font-smoothing: antialiased;
+    padding-left: @input-container-padding;
+    z-index: 1;
+    font-family: @roboto-font;
+    font-weight: 700;
+    font-size: 14px;
+    color: #2C3E50;
+    line-height: 19px;
+    margin-bottom: 5px;
+    &.dark {
+      color: @White;
+    }
+  }
+  .ui-input::-webkit-input-placeholder {
+    opacity: 0.5;
+    font-family: @roboto-font;
+    font-style: italic;
+    font-size: 15px;
+    color: #2C3E50;
+    line-height: 20px;
+  }
+  .ui-input.dark::-webkit-input-placeholder {
+    opacity: 0.5;
+    font-family: @roboto-font;
+    font-style: italic;
+    font-size: 15px;
+    color: #fff;
+    line-height: 20px;
+  }
+  /*
+  * The .ui-input class is added to the input/textarea
+  */
+  .ui-input {
+    flex: 1;
+    order: 2;
+    display: block;
+    &:focus {
+      outline: none;
+    }
+    &:invalid {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  ng-messages, data-ng-messages, x-ng-messages, [ng-messages], [data-ng-messages], [x-ng-messages] {
+    order: 3;
+    position: relative;
+  }
+  ng-message, data-ng-message, x-ng-message, [ng-message], [data-ng-message], [x-ng-message] {
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    font-family: @roboto-font;
+    font-weight: 500;;
+    font-size: 12px;
+    color: @Cinnabar-500;
+    line-height: 16px;
+    margin-top: 5px;
+    &.ng-enter {
+      transition: @swift-ease-out;
+      transition-delay: 0.1s;
+    }
+    &.ng-leave {
+      transition: @swift-ease-in;
+    }
+    &.ng-enter, &.ng-leave.ng-leave-active {
+      opacity: 0;
+      transform: translate3d(0, -20%, 0);
+    }
+    &.ng-leave, &.ng-enter.ng-enter-active {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  &.ui-input-focused .ui-input, .ui-input.ng-invalid.ng-dirty {
+    box-shadow: 0px 0px 6px 0px rgba(231, 76, 60, 0.50);
+    border: 1px solid @Cinnabar-500;
+  }
+  &.ui-input-invalid {
+    label {
+      color: @Cinnabar-500;;
+    }
+  }
+  .ui-input[disabled] {
+  }
+}

@@ -1,0 +1,64 @@
+<ui-busy-indicator show-busy-indicator="indicator_show" full-screen="indicator_fullScreen"></ui-busy-indicator>
+
+<ui-toolbar layout="column" class="left-nav-title">
+    <h1 class="ui-toolbar-tools" flex layout="column">Directives > ui-busy-indicator</h1>
+</ui-toolbar>
+<ui-content flex ui-scroll-y >
+    <ui-content flex class="doc-content">
+
+        <div layout="row"><a name="Directives-busy-indicator"><h2 class="item-name">busy indicator - Full screen</h2></a></div>
+        <div layout="row">
+            <div class="item" flex="20" flex-sm="20">
+                <ui-button style="margin-bottom: 10px;" size="small" ng-click="busyIndicatorfullScreen()">Show</ui-button>
+            </div>
+            <div class="code" flex="80" flex-sm="80">
+                <pre><code>
+&lt;ui-busy-indicator show-busy-indicator="showBusyIndicator" full-screen="fullScreen"&gt;&lt;/ui-busy-indicator&gt;
+                </code></pre>
+            </div>
+        </div>
+
+        <div layout="row"><a name="Directives-busy-indicator"><h2 class="item-name">busy indicator - Inside a container</h2></a></div>
+        <div layout="row">
+            <div class="item" flex="20" flex-sm="20">
+                <ui-button style="margin-bottom: 10px;" size="small" ng-click="busyIndicatorContainer('show')">show</ui-button>
+                <ui-button style="margin-bottom: 10px;" size="small" ng-click="busyIndicatorContainer('hide')">hide</ui-button>
+            </div>
+            <div class="code" flex="80" flex-sm="80" style="position: relative;">
+                <ui-busy-indicator show-busy-indicator="indicator_show_1" id="busyIndicatorContainer"></ui-busy-indicator>
+                <pre><code>
+&lt;ui-busy-indicator show-busy-indicator="showBusyIndicator"&gt;&lt;/ui-busy-indicator&gt;
+                </code></pre>
+            </div>
+        </div>
+
+        <div layout="row"><a name="Directives-Tooltip-Top"><h2 class="item-name">busy-indicator Options</h2></a></div>
+        <div layout="row">
+            <div class="item">
+                <div class="table-options">
+                    <table class="table-options-values">
+                        <thead>
+                            <tr>
+                                <th style="width: 200px;">Name</th>
+                                <th style="width: 100px;">type</th>
+                                <th>description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>showBusyIndicator</td>
+                                <td>boolean</td>
+                                <td>Show/Hide the busy indicator.</td>
+                            </tr>
+                            <tr>
+                                <td>fullScreen</td>
+                                <td>boolean</td>
+                                <td>Show the busy indicator in full screen mode.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </ui-content>
+</ui-content>

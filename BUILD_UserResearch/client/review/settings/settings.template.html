@@ -1,0 +1,43 @@
+<div id="study-review-settings" class="animated fadeIn">
+    <div layout="row" layout-align="start start" class="first-row">
+        <h1>Study Settings</h1>
+    </div>
+
+    <div layout="column" class="published-checkbox-row" ng-if="isStudyPublished" layout-align="start start">
+        <div layout="row">Study is active. Participants are able to take part in the study.</div>
+        <div layout="row">
+            <ui-checkbox id="chb-pause" ng-model="enablePauseButton" ng-disabled="!isStudyPublished"></ui-checkbox>
+            <label for="chb-pause">I want to pause this study</label>
+        </div>
+        <div layout="row">
+            <ui-button class="btn-pause" size="large" ng-disabled="!enablePauseButton" ng-click="updateStatus('paused')">PAUSE</ui-button>
+        </div>
+    </div>
+
+    <div layout="column" class="paused-checkbox-row" ng-if="isStudyPaused" layout-align="start start">
+        <div layout="row">Study is active but paused. Participants will not be able to take part in the study.</div>
+        <div layout="row">
+            <ui-radio id="chb-restart" ng-model="selectedItem" ng-disabled="!isStudyPaused" value="restart" ng-change="updateSelectedItem('restart')"></ui-radio>
+            <label for="chb-restart">I want to restart this study</label>
+        </div>
+        <div>
+            <ui-radio id="chb-archive" ng-model="selectedItem" ng-disabled="!isStudyPaused" value="archive" ng-change="updateSelectedItem('archive')"></ui-radio>
+            <label for="chb-archive">I want to archive this study</label>
+        </div>
+        <div layout="row">
+            <ui-button id="study-settings-archive-restart" class="btn-restart" size="large" ng-disabled="!selectedItem" ng-click="updateStatus()" ng-bind="selectedItem === 'archive' ? 'ARCHIVE' : 'RESTART'"></ui-button>
+        </div>
+    </div>
+
+    <div layout="column" class="paused-checkbox-row" ng-if="isStudyArchived" layout-align="start start">
+        <div layout="row">Study is archived. Participants will not be able to take part in this study.</div>
+        <div layout="row">
+            <ui-checkbox id="chb-unarchive" ng-model="enableRestartButton" ng-disabled="!isStudyArchived"></ui-checkbox>
+            <label for="chb-unarchive">I want to unarchive and restart this study</label>
+        </div>
+        <div layout="row">
+            <ui-button class="btn-restart" size="large" ng-disabled="!enableRestartButton" ng-click="updateStatus('published')">RESTART</ui-button>
+        </div>
+    </div>
+
+</div>

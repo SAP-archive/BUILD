@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="56px" height="28px" viewBox="0 0 56 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>Fit With button </title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Fit-width-button" sketch:type="MSArtboardGroup" transform="translate(-25.000000, -31.000000)">
+            <g id="Fit-With-button-" sketch:type="MSLayerGroup" transform="translate(25.000000, 31.000000)">
+                <path d="M40.5570913,4.15530584 L37.7640195,6.93706392 L42.8191259,11.9751997 L33.5857256,11.9751997 L33.5857256,15.9166129 L42.8933721,15.9498469 L37.7710906,21.0466726 L40.5775974,23.8446942 L50.4042604,14.0053033 L40.5570913,4.15530584 Z" id="Fill-1-Copy-2" fill="#C2C7CA" sketch:type="MSShapeGroup"></path>
+                <path d="M5.58237468,13.983383 L15.4486356,4.1510632 L18.2091805,6.93282128 L13.1767015,11.9497439 L22.483641,11.9935845 L22.483641,15.9349977 L13.2148853,16.009951 L18.2374647,21.0480868 L15.4634848,23.8489368 L5.58308178,14.0010607 L5.59085996,13.9932825 L5.58237468,13.983383" id="Fill-2-Copy-2" fill="#C2C7CA" sketch:type="MSShapeGroup"></path>
+                <path d="M1.5,1 L1.5,27" id="Line-Copy" stroke="#C2C7CA" stroke-width="2" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <path d="M54.5,1 L54.5,27" id="Line-Copy-9" stroke="#C2C7CA" stroke-width="2" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,92 @@
+{
+    "entityData": {
+        "salesorder": [
+            {
+                "Amount": 697500,
+                "Author": "Sophie Defin",
+                "Currency": "USD",
+                "Date": "2015-01-23T00:00:00.000Z",
+                "ID": "SO0001",
+                "Name": "Colgate toothpaste"
+            },
+            {
+                "Amount": 600000,
+                "Author": "Sophie Defin",
+                "Currency": "USD",
+                "Date": "2015-01-24T00:00:00.000Z",
+                "ID": "SO0002",
+                "Name": "Colgate toothpaste complement"
+            },
+            {
+                "Amount": 380000,
+                "Author": "Sophie Defin",
+                "Currency": "USD",
+                "Date": "2015-01-25T00:00:00.000Z",
+                "ID": "SO0003",
+                "Name": "Danone yogurt"
+            },
+            {
+                "Amount": 106500,
+                "Author": "Sophie Defin",
+                "Currency": "USD",
+                "Date": "2015-01-26T00:00:00.000Z",
+                "ID": "SO0004",
+                "Name": "Coca Cola drinks "
+            }
+        ]
+    },
+    "model": {
+        "entities": [
+            {
+                "label": "salesorder",
+                "name": "salesorder",
+                "nameSet": "salesorderSet",
+                "navigationProperties": [],
+                "properties": [
+                    {
+                        "isKey": true,
+                        "label": "ID",
+                        "name": "ID",
+                        "order": 0,
+                        "propertyType": "String"
+                    },
+                    {
+                        "isKey": false,
+                        "label": "Name",
+                        "name": "Name",
+                        "order": 1,
+                        "propertyType": "String"
+                    },
+                    {
+                        "isKey": false,
+                        "label": "Author",
+                        "name": "Author",
+                        "order": 2,
+                        "propertyType": "String"
+                    },
+                    {
+                        "isKey": false,
+                        "label": "Amount",
+                        "name": "Amount",
+                        "order": 3,
+                        "propertyType": "Decimal"
+                    },
+                    {
+                        "isKey": false,
+                        "label": "Currency",
+                        "name": "Currency",
+                        "order": 4,
+                        "propertyType": "String"
+                    },
+                    {
+                        "isKey": false,
+                        "label": "Date",
+                        "name": "Date",
+                        "order": 5,
+                        "propertyType": "DateTime"
+                    }
+                ]
+            }
+        ]
+    }
+}

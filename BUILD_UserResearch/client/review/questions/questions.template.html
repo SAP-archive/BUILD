@@ -1,0 +1,216 @@
+<div id="study-review-questions" class="animated fadeIn">
+    <div layout="row" class="first-row">
+        <div flex="50" flex-sm="50">
+            <div layout="row" layout-align="start start" class="first-row">
+                <h1>Tasks and Questions
+                    <small>
+                        <b ng-bind="nb_tasks" ng-show="nb_tasks > 0"></b>
+                        <span ng-if="nb_tasks > 0"><ng-pluralize count="nb_tasks" when="{'one':'Task', 'other': 'Tasks'}"></ng-pluralize></span>
+                        <span ng-if="nb_tasks > 0 && nb_questions > 0">, </span>
+                        <b ng-bind="nb_questions" ng-if="nb_questions > 0"></b>
+                        <span ng-if="nb_questions > 0"><ng-pluralize count="nb_questions" when="{'one':'Question', 'other': 'Questions'}"></ng-pluralize></span>
+                    </small>
+                </h1>
+            </div>
+        </div>
+        <div flex="50" flex-sm="50">
+            <ui-toolbar layout="row" layout-align="end start" class="filterActions" ng-show="nb_tasks > 0">
+                <div class="filterOptions">Show:</div>
+                <div class="filterOption" ng-class="{'on': filterValue === ''}" ng-click="filterValue = ''">Everything</div>
+                <div class="filterOption" ng-class="{'on': filterValue === 'Task'}" ng-click="filterValue = 'Task'">Tasks</div>
+                <div class="filterOption last" ng-class="{'on': filterValue === '!Task'}" ng-click="filterValue = '!Task'">Questions</div>
+            </ui-toolbar>
+        </div>
+    </div>
+    <div layout="column" layout-align="start start" class="animated fadeIn" ng-if="study.questions.length > 0">
+        <div layout="row" layout-fill class="entries" ng-repeat="question in questions | filter: {type: filterValue}">
+
+            <div layout="row" layout-fill class="item tasks no-margin" ng-if="question.type === 'Task'">
+                <div layout="column" class="thumbnail" ng-class="{showOver: hover}" ng-mouseover="hover = true" ng-mouseleave="hover = false">
+                    <ui-thumbnail class="thumbnail" light size="large" ng-click="goToQuestions(question._id)" ng-class="{'task-thumbnail': question.type === 'Task' }" thumbnail-src="{{question.thumbnail}}"></ui-thumbnail>
+                    <div ng-class="{'task-name': question.type === 'Task'}"><h2 ng-bind="question.name" id="question-name" title="{{question.name}}"></h2></div>
+                </div>
+                <div layout="column" class="actions">
+                    <div layout="row">
+                        <span class="action-txt no-icon" ng-click="goToQuestions(question._id)">{{question.name || 'Please explore this prototype and provide feedback.'}}</span>
+                        <span class="action-small-txt">&nbsp;<ng-pluralize count="question.pages" when="{'one': '(1 page total)', 'other': '({} pages total)'}"></ng-pluralize></span>
+                    </div>
+                    <div layout="row">
+                        <div layout="column" class="information-column">
+                            <ui-toolbar layout="row" layout-align="start start" class="result">
+                                <div class="action icon-small-participant" ui-tooltip ui-tooltip-title="Participants" ui-tooltip-side="bottom"></div>
+                                <div class="text" id="question-participants">{{question.participants}}</div>
+                                <div class="action icon-small-clock" ui-tooltip ui-tooltip-title="Time" ui-tooltip-side="bottom"></div>
+                                <div class="text avg-time" ng-bind-html="question.medianDurationPage  | AverageDurationFilter: 'avg.' "></div>
+                            </ui-toolbar>
+                            <ui-toolbar layout="row" layout-align="start start" class="result secondRow">
+                                <div class="action icon-small-average"></div>
+                                <div class="text" id="question-averagePagesVisited">{{question.averagePagesVisited}} <small>pages avg.</small></div>
+                            </ui-toolbar>
+                        </div>
+                        <div layout="column">
+                            <div layout="row" layout-align="center start" class="question-chart" ng-if="(question.successful.total > 0 || question.failed.total > 0 || question.abandoned.total > 0) && question.hasTarget">
+                                <div layout="column" class="chart tasks">
+                                    <ui-pie-chart values-set="question.chart" color-list="tasksChartColor" small></ui-pie-chart>
+                                </div>
+                                <div layout="column" layout-align="center start" class="chart-data tasks">
+                                    <ui-toolbar layout="column" class="actions">
+                                        <div class="tasks">
+                                            <div class="action icon-small-green-tick small overview-tasks"></div>
+                                            <div class="text-left-sentiment" id="question-successful-total">{{question.successful.total}} <small id="question-successful-percentage">{{question.successful.percentage}}%</small></div>
+                                        </div>
+                                        <div class="tasks">
+                                            <div class="action icon-small-red-cross small overview-tasks"></div>
+                                            <div class="text-left-sentiment" id="question-failed-total">{{question.failed.total}} <small id="question-failed-percentage">{{question.failed.percentage}}%</small></div>
+                                        </div>
+                                        <div class="tasks">
+                                            <div class="action icon-small-trash small overview-tasks"></div>
+                                            <div class="text-left-sentiment" id="question-abandoned-total">{{question.abandoned.total}} <small id="question-abandoned-percentage">{{question.abandoned.percentage}}%</small></div>
+                                        </div>
+                                    </ui-toolbar>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div layout="row" layout-fill class="item annotation" ng-if="question.type === 'Annotation'">
+                <div layout="column" class="thumbnail" ng-class="{showOver: hover}" ng-mouseover="hover = true" ng-mouseleave="hover = false">
+                    <ui-thumbnail class="thumbnail" light size="large" ng-click="goToQuestions(question._id)" thumbnail-src="{{question.thumbnail}}"></ui-thumbnail>
+                    <div ng-class="{'task-name': question.type === 'Task', 'question-name': question.type !== 'Task'}"><h2 ng-bind="question.name" id="question-name" title="{{question.name}}"></h2></div>
+                </div>
+                <div layout="column" class="actions">
+                    <div layout="row" class="action icon-review-small-annotation">
+                        <span class="action-txt" ng-click="goToQuestions(question._id)" id="question-text">{{question.text || 'Please click the appropriate place on the image to respond.'}}</span>
+                    </div>
+                    <div layout="row">
+                        <div layout="column" class="information-column">
+                            <ui-toolbar layout="row" layout-align="start start" class="result">
+                                <div class="action icon-small-participant" ui-tooltip ui-tooltip-title="Participants" ui-tooltip-side="bottom"></div>
+                                <div class="text" id="question-participants">{{question.participants}}</div>
+                            </ui-toolbar>
+                            <ui-toolbar layout="row" layout-align="start start" class="result secondRow">
+                                <div class="action icon-small-annotation" ui-tooltip ui-tooltip-title="Annotations" ui-tooltip-side="bottom"></div>
+                                <div class="text" id="question-annotations">{{question.annotations}}</div>
+                                <div class="action icon-small-comments" ui-tooltip ui-tooltip-title="Comments" ui-tooltip-side="bottom"></div>
+                                <div class="text" id="question-comments">{{question.comments}}</div>
+                            </ui-toolbar>
+                        </div>
+                        <div layout="column">
+                            <div layout="row" layout-align="center start" class="question-chart annotations-chart" ng-if="question.sentiments.positive.total > 0 || question.sentiments.neutral.total > 0 || question.sentiments.negative.total > 0">
+                                <div layout="column" layout-align="center center" class="chart">
+                                    <ui-pie-chart values-set="question.sentiments.chart" color-list="sentimentChartColor" small></ui-pie-chart>
+                                    <div layout="row" class="statistics-chart-footer">Annotation Sentiment</div>
+                                </div>
+                                <div layout="column" layout-align="center start" class="chart-data">
+                                    <ui-toolbar layout="column">
+                                        <div class="tasks">
+                                            <div class="action icon-face-smile small"></div>
+                                            <div class="text-left-sentiment" id="question-sentiments-positive-total">{{question.sentiments.positive.total}} <small id="question-sentiments-positive-percentage">{{question.sentiments.positive.percentage}}%</small></div>
+                                        </div>
+                                        <div class="tasks">
+                                            <div class="action icon-face-normal small"></div>
+                                            <div class="text-left-sentiment" id="question-sentiments-nuetral-total">{{question.sentiments.neutral.total}} <small id="question-sentiments-nuetral-percentage">{{question.sentiments.neutral.percentage}}%</small></div>
+                                        </div>
+                                        <div class="tasks">
+                                            <div class="action icon-face-sad small"></div>
+                                            <div class="text-left-sentiment" id="question-sentiments-negative-total">{{question.sentiments.negative.total}} <small id="question-sentiments-negative-percentage">{{question.sentiments.negative.percentage}}%</small></div>
+                                        </div>
+                                    </ui-toolbar>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div layout="row" layout-fill class="item multichoice" ng-if="question.type === 'MultipleChoice'">
+                <div layout="column" class="thumbnail" ng-class="{showOver: hover}" ng-mouseover="hover = true" ng-mouseleave="hover = false">
+                    <ui-thumbnail class="thumbnail" light size="large" ng-click="goToQuestions(question._id)" thumbnail-src="{{question.thumbnail}}"></ui-thumbnail>
+                    <div ng-class="{'task-name': question.type === 'Task', 'question-name': question.type !== 'Task'}"><h2 ng-bind="question.name" id="question-name" title="{{question.name}}"></h2></div>
+                </div>
+                <div layout="column" class="actions">
+                    <div layout="row" class="action icon-review-small-multichoice">
+                        <span class="action-txt" ng-click="goToQuestions(question._id)">{{question.text || 'Please choose the appropriate option.'}}</span>
+                    </div>
+                    <div layout="row">
+                        <div layout="column" class="information-column">
+                            <ui-toolbar layout="row" layout-align="start start" class="result">
+                                <div class="action icon-small-participant" ui-tooltip ui-tooltip-title="Participants" ui-tooltip-side="bottom"></div>
+                                <div class="text" id="question-participants">{{question.participants}}</div>
+                            </ui-toolbar>
+                            <ui-toolbar layout="row" layout-align="start start" class="result secondRow">
+                                <div class="action icon-small-annotation" ui-tooltip ui-tooltip-title="Annotations" ui-tooltip-side="bottom"></div>
+                                <div class="text" id="question-annotations">{{question.annotations}}</div>
+                                <div class="action icon-small-comments" ui-tooltip ui-tooltip-title="Comments" ui-tooltip-side="bottom"></div>
+                                <div class="text" id="question-comments">{{question.comments}}</div>
+                            </ui-toolbar>
+                        </div>
+                        <div layout="column">
+                            <ui-toolbar layout="column" layout-align="start start" layout-fill class="result secondRow">
+                                <div ng-repeat="response in question.answers.choices" layout="column" class="progress">
+                                    <div class="tiny" id="multichoice-question-text">{{response.text}}</div>
+                                    <div class="bar" layout="row">
+                                        <ui-progress-bar current-value="{{response.percentage}}" style="margin-right: 10px;" id="multichoice-progress-bar"></ui-progress-bar>
+                                        <div class="tiny" id="multichoice-question-text-repsone"> {{response.total}} ({{response.percentage}}%)</div>
+                                    </div>
+                                </div>
+                            </ui-toolbar>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div layout="row" layout-fill class="item freeform" ng-if="question.type === 'Freeform'">
+                <div layout="column" class="thumbnail" ng-class="{showOver: hover}" ng-mouseover="hover = true" ng-mouseleave="hover = false">
+                    <ui-thumbnail class="thumbnail" light size="large" ng-click="goToQuestions(question._id)" thumbnail-src="{{question.thumbnail}}"></ui-thumbnail>
+                    <div ng-class="{'task-name': question.type === 'Task', 'question-name': question.type !== 'Task'}"><h2 ng-bind="question.name" id="question-name" title="{{question.name}}"></h2></div>
+                </div>
+                <div layout="column" class="actions">
+                    <div layout="row" class="action icon-review-small-freeform">
+                        <span class="action-txt" ng-click="goToQuestions(question._id)">{{question.text || 'Please type your answer below.'}}</span>
+                    </div>
+                    <div layout="row">
+                        <div layout="column" class="information-column">
+                            <ui-toolbar layout="row" layout-align="start start" class="result">
+                                <div class="action icon-small-participant" ui-tooltip ui-tooltip-title="Participants" ui-tooltip-side="bottom"></div>
+                                <div class="text" id="question-participants">{{question.participants}}</div>
+                            </ui-toolbar>
+                            <ui-toolbar layout="row" layout-align="start start" class="result secondRow">
+                                <div class="action icon-small-annotation" ui-tooltip ui-tooltip-title="Annotations" ui-tooltip-side="bottom"></div>
+                                <div class="text" id="question-annotations">{{question.annotations}}</div>
+                                <div class="action icon-small-comments" ui-tooltip ui-tooltip-title="Comments" ui-tooltip-side="bottom"></div>
+                                <div class="text" id="question-comments">{{question.comments}}</div>
+                            </ui-toolbar>
+                        </div>
+                         <div layout="column">
+                            <div layout="row" layout-align="center start" class="question-chart" ng-if="question.freeformSentiment.positive.total > 0 || question.freeformSentiment.neutral.total > 0 || question.freeformSentiment.negative.total > 0">
+                                <div layout="column" class="chart" layout-align="center center">
+                                    <ui-pie-chart values-set="question.freeformSentiment.chart" color-list="sentimentChartColor" small></ui-pie-chart>
+                                    <div layout="row" class="statistics-chart-footer">Answer Sentiment</div>
+                                </div>
+                                <div layout="column" layout-align="center start" class="chart-data">
+                                    <ui-toolbar layout="column">
+                                        <div class="tasks">
+                                            <div class="action icon-face-smile small"></div>
+                                            <div class="text-left-sentiment" id="question-freeformSentiment-positive-total">{{question.freeformSentiment.positive.total}} <small id="question-freeformSentiment-positive-percentage">{{question.freeformSentiment.positive.percentage}}%</small></div>
+                                        </div>
+                                        <div class="tasks">
+                                            <div class="action icon-face-normal small"></div>
+                                            <div class="text-left-sentiment" id="question-freeformSentiment-nuetral-total">{{question.freeformSentiment.neutral.total}} <small id="question-freeformSentiment-nuetral-percentage">{{question.freeformSentiment.neutral.percentage}}%</small></div>
+                                        </div>
+                                        <div class="tasks">
+                                            <div class="action icon-face-sad small"></div>
+                                            <div class="text-left-sentiment" id="question-freeformSentiment-negative-total">{{question.sentifreeformSentimentments.negative.total}} <small id="question-freeformSentiment-negative-percentage">{{question.freeformSentiment.negative.percentage}}%</small></div>
+                                        </div>
+                                    </ui-toolbar>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

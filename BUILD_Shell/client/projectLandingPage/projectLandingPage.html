@@ -1,0 +1,5 @@
+<div class="shell-projectLandingPage" ng-controller="projectLandingPageCtrl">
+    <div ng-repeat="widget in projectLandingPageService.widgets | orderBy:'priority'">
+        <div ng-include="widget.template" class="landingPageWidget"></div>
+    </div>
+</div>

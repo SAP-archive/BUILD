@@ -1,0 +1,28 @@
+<div class="np-c-container np-c-container-js" ng-class="{'np-c-container-interactive-mode': uieditor.showInteractiveMode, 'np-c-container-editor-mode': !uieditor.showInteractiveMode}">
+
+    <np-busy-indicator show-busy-indicator="uieditor.showBusyIndicator"></np-busy-indicator>
+    <iframe id="canvas-runtime" class="np-c-canvas-runtime" ng-src="{{canvas.canvasUrl}}" scrolling="no" np-ui-canvas-runtime ng-style="{'height': uieditor.selectedFormFactor.height}" ng-class="{'np-c-canvas-runtime--interactive': uieditor.showInteractiveMode}">
+    </iframe>
+    <div id="imageDropZone" class="np-image-drag-zone"></div>
+    <div id="canvasOverlay" ng-if="!uieditor.showInteractiveMode" class="np-c-canvas-overlay np-c-canvas-overlay-js" ng-style="{'height': uieditor.selectedFormFactor.height}"
+         np-ui-canvas-overlay np-canvas-interaction-handler np-canvas-element-move np-copy-paste np-canvas-element-delete
+         np-canvas-element-select np-canvas-element-resizable np-canvas-inline-edit np-canvas-scroll>
+        <div class="np-c-grid np-c-multi-select-js" ng-class="{'np-c-grid--hidden': !uieditor.gridVisible, 'np-c-grid--transitioning': uieditor.pageTransitionInProgress}">
+            <div class="np-c-horizontal-guide" ng-repeat="guide in canvas.horizontalGuides" ng-style="guide.style"></div>
+            <div class="np-c-vertical-guide" ng-repeat="guide in canvas.verticalGuides" ng-style="guide.style"></div>
+            <div class="np-c-element-highlight" ng-repeat="highlight in canvas.elementHighlights" ng-style="highlight.style"></div>
+            <div class="selectionBox"></div>
+            <div class="np-c-grid-element" ng-repeat="(elementId, element) in canvas.gridElements" data-element-id="{{::elementId}}"
+                 np-selected="{{element._selected}}" ng-style="element.style">
+                <div ng-if="element._selected">
+                    <div class="np-c-e-resize" ng-if="::element.resizableWidth"></div>
+                    <div class="np-c-s-resize" ng-if="::element.resizableHeight"></div>
+                    <div class="np-c-se-resize" ng-if="::(element.resizableWidth && element.resizableHeight)"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ui-file-upload dropzone-id="imageDropZone" project-id="uieditor.currentProject" success="canvas.onSuccessImageDrop(response)"
+                    failure="canvas.handleFileUploadError(response)" is-dialog="false" accept="image/*">
+    </ui-file-upload>
+</div>

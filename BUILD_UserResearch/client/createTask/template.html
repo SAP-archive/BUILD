@@ -1,0 +1,95 @@
+<ui-dialog id="task-dialog"
+    modal="true"
+    title="{{select ? 'Create a task' : 'Select a Prototype'}}"
+    cancel-text="Cancel"
+    close-text="{{select ? 'Done' : 'Next'}}"
+    disable-close="($scope.selectedCount === 0 && $scope.pages.length > 0) || (task.name.length < 1)"
+    cancel-action="onDialogCancel()"
+    close-action="onDialogClose()">
+
+    <div ng-show="!processing && !select">
+        <div class="snapshots-header" ng-show="snapshots.length > 0">
+            <h3>{{snapshots.length}} available&nbsp;<ng-pluralize count="snapshots.length"
+                when="{1: 'prototype', other: 'prototypes'}"></ng-pluralize>
+            </h3>
+            <div id="zipUploadButton">Upload a ZIP file containing your HTML prototype.</div>
+        </div>
+        <div ng-if="snapshots === null" class="no-snapshots">
+            <h1>Loading...</h1>
+        </div>
+        <div ng-show="snapshots.length === 0" class="no-snapshots">
+            <h1>There are no available prototypes. You can <a href="#" id="zipUploadButtonNoSnapshots">upload</a> a zip
+                file containing your prototype.</h1>
+        </div>
+        <div ng-if="snapshots.length > 0">
+            <div class="snapshots-list">
+                <div ng-repeat="snapshot in snapshots | orderBy: 'stats.created_at': true">
+                    <ui-radio dark
+                        id="snapshot{{$index}}"
+                        name="snapshot"
+                        ng-model="selected.snapshot"
+                        ng-value="snapshot"></ui-radio>
+
+                    <label for="snapshot{{$index}}">Prototype {{snapshots.length - $index}}
+                        <span class="small">Created {{snapshot.stats.created_at | amCalendar}}</span>
+
+                        <div class="thumbnails">
+                            <ui-thumbnail dark
+                                size="small"
+                                ng-repeat="deepLink in snapshot.deepLinks"
+                                thumbnail-src="{{deepLink.thumbnail}}"></ui-thumbnail>
+                        </div>
+                    </label>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div ng-show="processing" class="prototype-upload-progress">
+        <h1>Processing ZIP File...</h1>
+
+        <div class="ui-file-upload-progress-bar-outer">
+            <div class="ui-file-upload-progress-bar" ng-style="{ 'width': progress + '%' }"></div>
+        </div>
+    </div>
+
+
+    <div class="snapshot-screen-list" ng-show="select">
+        <label>Name the Task</label>
+        <ui-input dark ng-model="task.name" id="taskName" maxlength="45" size="50"></ui-input>
+
+        <h3>Pages available in your prototype:</h3>
+
+        <div class="snapshot-screen-wrapper">
+            <div
+                class="snapshot-screen"
+                ng-if="select"
+                ng-repeat="page in pages"
+                ng-class="{selected: page.selected}">
+                <div class="snapshot-selected-tick"></div>
+
+                <ui-thumbnail dark
+                    size="medium"
+                    class="snapshot-screen-thumbnail"
+                    thumbnail-src="{{page.thumbnailImage || page.thumbnail}}"></ui-thumbnail>
+            </div>
+        </div>
+    </div>
+
+    <div id="thumbs" style="display: none"></div>
+</ui-dialog>
+
+
+<ui-file-upload
+    upload-button-id="zipUploadButton zipUploadButtonNoSnapshots"
+    upload-url="{{serviceUrl}}"
+    success="uploadSuccess(res)"
+    failure="uploadFailure(err)"
+    is-dialog="true"
+    multiple="false"
+    accept="application/zip,application/x-zip-compressed"
+    acceptFileExtensions="zip"
+    invalid-files="invalidFilesSelected(res)"
+    file-start="fileInputChange(file)"></ui-file-upload>

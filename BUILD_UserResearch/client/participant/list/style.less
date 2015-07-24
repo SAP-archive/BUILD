@@ -1,0 +1,180 @@
+@import (reference) '../node_modules/norman-client-tp/node_modules/angular-sap-ui-elements/styles/variables';
+@import (reference) "../../styles/base.less";
+
+#norman-user-research .ng-enter #participant-list{
+    -webkit-animation: fadeIn 1s;
+}
+
+#norman-user-research .ng-leave #participant-list {
+    -webkit-animation: fadeOut 1s;
+}
+
+.ui-tooltip-yellow {
+    background-color: @Portafino-500 !important;
+    color: black !important;
+    width: 300px;
+    word-break: normal !important;
+    text-align: center;
+
+    .ui-tooltip-caret:before {
+        border-color: @Portafino-500;
+    }
+}
+
+#participant-list { max-width: 1050px; margin: auto; padding-top: 90px;
+    h1 {
+        font: 700 50px/1 @roboto-font;
+        color: @PickledBluewood-900;
+        text-align: center;
+        margin: 20px 0 25px;
+    }
+    h2 {
+        font: 400 15px/1 @roboto-font;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        color: @Cascade-900;
+        text-align: center;
+    }
+    h3 {
+        color: @PickledBluewood-900;
+        text-align: center;
+        font: 500 16px/1 @roboto-font;
+    }
+    .separator {
+        border: none;
+        border-bottom: 2px solid @Cinnabar-500;
+        margin: 30px auto;
+        width: 230px;
+    }
+
+    .description-wrapper {
+        text-align: center;
+        .description {
+            width: 600px;
+            display: inline-block;
+            font: 500 15px/23px @roboto-font;
+            color: @PickledBluewood-900;
+            text-align: center;
+            word-wrap: break-word;
+            white-space: pre-wrap;
+            margin: 0px 0 40px 0;
+        }
+    }
+
+    .study-progress {
+        text-align: center;
+        margin-bottom: 75px;
+
+        .study-progress-text {
+            font: 300 30px/1 @roboto-font;
+            color: @PickledBluewood-900;
+            margin-bottom: 20px;
+        }
+
+        .progress-bar-outer {
+            width: 510px;
+            display: inline-block;
+            position: relative;
+            background-color: @Porcelain-500;
+            border-radius: 10px;
+            height: 24px;
+
+            .progress-bar-inner {
+                height: 14px;
+                margin: 5px;
+                box-sizing: border-box;
+                position: relative;
+                background-color: @Shamrock-500;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .button-wrapper {
+        text-align: center;
+
+        button {
+            margin: 0 auto;
+        }
+    }
+
+    .anon-wrapper { text-align: center; margin-top: 20px;
+        .ui-checkbox + label { position: relative; margin-right: 6px; float: none; }
+        .question-mark-icon {
+            color: white;
+            font-weight: bold;
+            background: @CuriousBlue-500;
+            width: 20px;
+            position: relative;
+            height: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            cursor: pointer;
+        }
+    }
+
+    .done-message{
+        text-align: center;
+        margin-bottom: 65px;
+
+        .congrats-image{
+            width: 491px;
+            height: 272px;
+            position: relative;
+            display: inline-block;
+            top: 130px;
+            right: 110px;
+            &:after {
+                position: absolute;
+                content: "";
+                top: calc(~'50% - 245.5px');
+                left: calc(~'50% - 136px');
+                .user-research-congrats;
+                .user-research-congrats-dims;
+            }
+        }
+        div {
+            color: @PickledBluewood-900;
+            font: 700 35px/1 @roboto-font;
+            bottom: 40px;
+            position: relative;
+        }
+        .done-label {
+            font: 500 22px/1 @roboto-font;
+            color: @PickledBluewood-900;
+            display: inline-block;
+            text-align: center;
+            width: 300px;
+            margin-top: -8px;
+            line-height: 30px;
+        }
+    }
+
+
+    .ui-button-xlarge { font: 700 20px/27px @roboto-font; color: @White; height: 60px; width: 330px; }
+
+
+    .message { max-width: 690px; padding: 20px; margin: 120px auto 0; position: relative; background: @Porcelain-500; }
+
+    .message-text {
+      font-size: 16px; line-height: 1.6; color: @PickledBluewood-900;
+      img {
+        height: 25px;
+        vertical-align: bottom;
+      }
+    }
+
+    .message-foot { font: italic 300 22px/1 @roboto-font; margin: 25px 0 10px; color: @PickledBluewood-900; }
+
+    .message-delete-icon { position: absolute; display: block; top: -11px; right: -11px; }
+
+    .message-link { font-weight: 500; color: @CuriousBlue-500;
+        &:hover { text-decoration: none; }
+    }
+
+    .login-foot { background: @White; bottom: 30px; left: 0; right: 0; margin-top: 30px; margin-bottom: 10px;
+        &.static { position: relative; }
+        a { color: @CuriousBlue-500; }
+        .sap-logo { padding-left: 0; }
+    }
+}

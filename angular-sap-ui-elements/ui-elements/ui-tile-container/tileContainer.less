@@ -1,0 +1,54 @@
+@import (reference) "../../styles/base.less";
+[draggable] {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none; /* Required to make elements draggable in old WebKit */
+    -khtml-user-drag: element;
+    -webkit-user-drag: element;
+}
+.dragPointer {
+    cursor: move;
+}
+.dragInset {
+    border: 1px #d8d8d8 solid;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 1) inset;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.ui-sortable-backdrop {
+    -moz-box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2);
+    background-color: @White;
+    width: 240px;
+    height: 180px;
+    padding: 6px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    visibility: hidden;
+}
+.ui-sortable-helper {
+    position: absolute;
+    pointer-events: none;
+    background-color: @White;
+    transition: transform .2s;
+    -webkit-transition: -webkit-transform .3s;
+    -moz-transition: transform .3s;
+    -ms-transition: transform .3s;
+    -o-transition: transform .3s;
+    background-color: @White;
+    width: 240px;
+    height: 180px;
+    opacity: 1;
+}
+.ui-sortable-helper-animation {
+    -webkit-transform: rotate(8deg) translate3d(0, 0, 0);
+    transform: rotate(8deg) translate3d(0, 0, 0);
+}
+.ui-sortable-helper-drag-image {
+    width: 0px;
+    height: 0px;
+    background: transparent;
+}

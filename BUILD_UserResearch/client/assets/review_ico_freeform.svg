@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="15px" viewBox="0 0 18 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>review_ico_freeform</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="review_ico_freeform" sketch:type="MSArtboardGroup" transform="translate(-548.000000, -882.000000)" fill="#2C3E50">
+            <path d="M565.032,884.610547 L565.032,891.434176 C565.032,892.137019 564.776631,892.739447 564.265886,893.241478 C563.75514,893.743509 563.14793,893.99452 562.444236,893.99452 L557.756235,893.99452 C557.722186,893.99452 557.079041,894.18051 554.059968,896.96957 L554.059968,894.011255 L550.619764,894.011255 C549.91607,894.011255 549.30886,893.760243 548.798114,893.258212 C548.287369,892.733869 548.032,892.125863 548.032,891.434176 L548.032,884.610547 C548.032,883.874235 548.298719,883.255073 548.832164,882.753042 C549.365609,882.251012 549.96147,882 550.619764,882 L562.444236,882 C563.17063,882 563.77784,882.251012 564.265886,882.753042 C564.776631,883.266229 565.032,883.885391 565.032,884.610547 Z" id="-7" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

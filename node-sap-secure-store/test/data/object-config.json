@@ -1,0 +1,10 @@
+{
+  "algorithm": "aes-256-cbc",
+  "keyLength": 32,
+  "ivLength": 16,
+  "digest": "sha1",
+  "salt": "Vy7frmWVyca4geuyin1ZfNu1iz7AP6NommBIw47431dmXwlLFpxhRydttOcosaUd",
+  "iterationCount": 10000,
+  "type": "object",
+  "data": "dsDuUA+sDoPtMbsx3tSR/rctzZEuBtzhABuLnq+bdmK0AaSJgwQFLQsZj/BEi//J"
+}

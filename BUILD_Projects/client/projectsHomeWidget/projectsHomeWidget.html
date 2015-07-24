@@ -1,0 +1,70 @@
+<div ng-controller="ProjectsWidgetCtrl as projectsHomeWidget" layout="column" class="fadeIn project-widget" layout-fill id="project-projectsHomeWidget" ngCloak>
+    <div layout="row" class="project-header" ng-show="projectsHomeWidget.canCreate">
+        <div class="project-title">
+            <h1>Projects</h1>
+        </div>
+        <div ng-if="projectsHomeWidget.inviteProjects.length > 0" class="project-invitation">
+            <div class="project-invitation-text" layout="row">
+                <div ng-bind="projectsHomeWidget.inviteProjects.length === 1 ? 'You have '+projectsHomeWidget.inviteProjects.length+' project invitation. ' : 'You have '+projectsHomeWidget.inviteProjects.length+' project invitations. '"></div>
+                &nbsp;
+                <a href="" ng-click="projectsHomeWidget.showInvitation = !projectsHomeWidget.showInvitation" class="project-invite-link" ng-bind="projectsHomeWidget.showInvitation == true ? 'Hide' : 'Show'"></a>
+            </div>
+        </div>
+        <div ng-if="projectsHomeWidget.inviteProjects.length == 0" class="project-invitation"></div>
+        <div class="project-new">
+            <ui-button class="new-project-button" size="large" ng-show="projectsHomeWidget.canCreate" ng-click="projectsHomeWidget.showNewProjectForm()" style="float: right;">NEW PROJECT</ui-button>
+        </div>
+    </div>
+    <div layout="row" class="project-subtitle" ng-show="projectsHomeWidget.canCreate">
+        <h1>
+            <small>
+                <b ng-bind="projectsHomeWidget.activeProjects.length" ng-show="projectsHomeWidget.activeProjects.length > 0"></b>
+                <span class="project-count-text" ng-show="projectsHomeWidget.activeProjects.length > 0">
+                    <ng-pluralize count="projectsHomeWidget.activeProjects.length"when="{'one':'active project','other':'active projects'}"/>
+                </span>
+                <span ng-if="projectsHomeWidget.archivedProjects.length >0 && projectsHomeWidget.activeProjects.length > 0">,&nbsp;</span>
+                <span ng-if="projectsHomeWidget.archivedProjects.length >0" ng-bind="projectsHomeWidget.archivedProjects.length"></span>
+                <a href="" ui-popup-open="archived-pop-up" class="archived-project-count-text"><ng-pluralize count="projectsHomeWidget.archivedProjects.length" when="{'0':'','one':'archived','other':'archived'}"/></a>
+            </small>
+        </h1>
+        <ui-popup id="archived-pop-up" placement="bottom">
+            <div class="archived-projects-container">
+                <div ng-repeat="archivedPoject in projectsHomeWidget.archivedProjects track by $index | orderBy:projectsHomeWidget.predicate" class="archived-project">
+                    <div class="project-name">
+                        <a herf="" ng-bind="archivedPoject.name" ng-click="projectsHomeWidget.openProject(archivedPoject._id, archivedPoject.name, archivedPoject.isOwner)" class="project-name"> </a>
+                    </div>
+                    <div class="project-dates">
+                        <span ng-bind="archivedPoject.stats.created_at | date:'d MMM &#145;yy'"></span>
+                        <span> - </span>
+                        <span ng-bind="archivedPoject.stats.updated_at | date:'d MMM &#145;yy'"></span>
+                    </div>
+                </div>
+            </div>
+        </ui-popup>
+    </div>
+    <div layout="row" ng-show="projectsHomeWidget.showInvitation">
+        <div ui-tile-container class="project-projects">
+            <ui-project-tile hover-class="ui-project-tile-hover" class="animated fadeIn project-tile-margin" ng-repeat="project in projectsHomeWidget.inviteProjects track by $index" project-users="project.user_list" project-user-filter="projectsHomeWidget.user.email" show-footer="true" accept-action="projectsHomeWidget.acceptProject(project._id)" reject-action="projectsHomeWidget.rejectProject(project._id)" project-name="{{project.name}}"></ui-project-tile>
+        </div>
+    </div>
+    <div layout="row" ng-show="projectsHomeWidget.canCreate" ng-if="projectsHomeWidget.activeProjects.length === 0 && !projectsHomeWidget.newProject.showForm && !projectsHomeWidget.loading" class="project-no-project">
+        <div ng-show="projectsHomeWidget.lucyBlockShow">
+            <ui-onboarding greeting="Hey," message="Looks like you&rsquo;re new here. Let&rsquo;s start by creating your first project."></ui-onboarding>
+        </div>
+        <div ng-hide="projectsHomeWidget.lucyBlockShow">
+            <ui-blank-state>
+                You do not have any projects in which you participate.<br/>
+                <a class="new_project-creation-link" ng-click="projectsHomeWidget.showNewProjectForm()">Create</a> your first one!
+            </ui-blank-state>
+        </div>
+    </div>
+    <div layout="row" ng-show="projectsHomeWidget.canCreate" ng-if="projectsHomeWidget.activeProjects.length > 0">
+        <div ng-class="{projectShowAll: projectsHomeWidget.showAllProjects}" class="project-projects" more-less num-of-hidden="projectsHomeWidget.numOfHidden">
+            <ui-project-tile ng-repeat="project in projectsHomeWidget.activeProjects | orderBy:projectsHomeWidget.predicate " hover-class="ui-project-tile-hover" class="animated fadeIn project-tile-margin" project-users="project.user_list" project-user-filter="projectsHomeWidget.user.email" project-name="{{project.name}}" ng-mousedown="projectsHomeWidget.openProject(project._id, project.name, project.isOwner)" project-model="project" input-field="name" focus-input="{{project.isNew}}" ng-keyup="$event.keyCode === 27 ? projectsHomeWidget.cancelNewProject() : ''" nn-enter="projectsHomeWidget.createProject()" new-project="{{project.isNew}}" show-owner="{{project.isOwner}}" cancel-action="projectsHomeWidget.cancelNewProject()" create-action="projectsHomeWidget.createProject()" show-cancel="{{project.isNew}}"></ui-project-tile>
+        </div>
+    </div>
+    <div layout="row" class="project-more-less" ng-show="projectsHomeWidget.activeProjects.length > 0 && projectsHomeWidget.numOfHidden > 0">
+        <div ng-class="projectsHomeWidget.showAllProjects ? 'project-all-link-less' : 'project-all-link-more'" ng-click="projectsHomeWidget.showAllProjects = !projectsHomeWidget.showAllProjects">&nbsp;</div>
+        <a class="project-all-link" href="" ng-click="projectsHomeWidget.showAllProjects = !projectsHomeWidget.showAllProjects" ng-bind="(projectsHomeWidget.showAllProjects == true ? 'Hide '+projectsHomeWidget.numOfHidden+' more project' : 'Show '+projectsHomeWidget.numOfHidden+' more project')+(projectsHomeWidget.numOfHidden > 1 ? 's' : '')"></a>
+    </div>
+</div>

@@ -1,0 +1,353 @@
+{"model": {
+    "entities": [
+        {
+            "name": "SalesOrder",
+            "nameSet": "SalesOrderSet",
+            "label": "SalesOrder",
+            "properties": [
+                {
+                    "isKey": true,
+                    "propertyType": "String",
+                    "label": "ID",
+                    "order": 0,
+                    "name": "ID"
+                },
+                {
+                    "isKey": false,
+                    "propertyType": "String",
+                    "label": "Name",
+                    "order": 1,
+                    "name": "Name"
+                },
+                {
+                    "isKey": false,
+                    "propertyType": "String",
+                    "label": "Author",
+                    "order": 2,
+                    "name": "Author"
+                },
+                {
+                    "isKey": false,
+                    "propertyType": "Decimal",
+                    "label": "Amount",
+                    "order": 3,
+                    "name": "Amount"
+                },
+                {
+                    "isKey": false,
+                    "propertyType": "String",
+                    "label": "Currency",
+                    "order": 4,
+                    "name": "Currency"
+                },
+                {
+                    "isKey": false,
+                    "propertyType": "DateTime",
+                    "label": "Date",
+                    "order": 5,
+                    "name": "Date"
+                }
+            ],
+            "navigationProperties": [
+                {
+                    "name": "SalesOrderItemSet",
+                    "multiplicity": true,
+                    "toEntityId": "SalesOrderItem",
+                    "referentialConstraints": [
+                        {
+                            "entityId": "SalesOrder",
+                            "propertyRef": "ID"
+                        },
+                        {
+                            "entityId": "SalesOrderItem",
+                            "propertyRef": "___SalesOrder_SalesOrderItemSet_ID"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "SalesOrderItem",
+            "nameSet": "SalesOrderItemSet",
+            "label": "SalesOrderItem",
+            "properties": [
+                {
+                    "isKey": true,
+                    "propertyType": "String",
+                    "label": "ID",
+                    "order": 0,
+                    "name": "ID"
+                },
+                {
+                    "isKey": false,
+                    "propertyType": "Decimal",
+                    "label": "Quantity",
+                    "order": 1,
+                    "name": "Quantity"
+                },
+                {
+                    "isKey": false,
+                    "propertyType": "String",
+                    "label": "From.SalesOrder",
+                    "order": 2,
+                    "name": "___SalesOrder_SalesOrderItemSet_ID"
+                },
+                {
+                    "isKey": false,
+                    "propertyType": "String",
+                    "label": "From.SalesOrderItem",
+                    "order": 3,
+                    "name": "___SalesOrderItem_ProductSet_ID"
+                }
+            ],
+            "navigationProperties": [
+                {
+                    "name": "ProductSet",
+                    "multiplicity": false,
+                    "toEntityId": "Product",
+                    "referentialConstraints": [
+                        {
+                            "entityId": "SalesOrderItem",
+                            "propertyRef": "___SalesOrderItem_ProductSet_ID"
+                        },
+                        {
+                            "entityId": "Product",
+                            "propertyRef": "ID"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Product",
+            "nameSet": "ProductSet",
+            "label": "Product",
+            "properties": [
+                {
+                    "isKey": true,
+                    "propertyType": "String",
+                    "label": "ID",
+                    "order": 0,
+                    "name": "ID"
+                },
+                {
+                    "isKey": false,
+                    "propertyType": "String",
+                    "label": "Description",
+                    "order": 1,
+                    "name": "Description"
+                },
+                {
+                    "isKey": false,
+                    "propertyType": "Decimal",
+                    "label": "Amount",
+                    "order": 2,
+                    "name": "Amount"
+                },
+                {
+                    "isKey": false,
+                    "propertyType": "String",
+                    "label": "Currency",
+                    "order": 3,
+                    "name": "Currency"
+                },
+                {
+                    "isKey": false,
+                    "propertyType": "String",
+                    "label": "Picture",
+                    "order": 4,
+                    "name": "Picture"
+                }
+            ],
+            "navigationProperties": [ ]
+        }
+    ]
+}, "entityData": {
+    "SalesOrder": [
+        {
+            "ID": "SO0001",
+            "Name": "Colgate toothpaste",
+            "Author": "Sophie Defin",
+            "Amount": 697500,
+            "Currency": "USD",
+            "Date": "2015-01-23T00:00:00.000Z"
+        },
+        {
+            "ID": "SO0002",
+            "Name": "Colgate toothpaste complement",
+            "Author": "Sophie Defin",
+            "Amount": 600000,
+            "Currency": "USD",
+            "Date": "2015-01-24T00:00:00.000Z"
+        },
+        {
+            "ID": "SO0003",
+            "Name": "Danone yogurt",
+            "Author": "Sophie Defin",
+            "Amount": 380000,
+            "Currency": "USD",
+            "Date": "2015-01-25T00:00:00.000Z"
+        },
+        {
+            "ID": "SO0004",
+            "Name": "Coca Cola drinks ",
+            "Author": "Sophie Defin",
+            "Amount": 106500,
+            "Currency": "USD",
+            "Date": "2015-01-26T00:00:00.000Z"
+        }
+    ],
+    "SalesOrderItem": [
+        {
+            "ID": "D0",
+            "Quantity": 100,
+            "___SalesOrder_SalesOrderItemSet_ID": "SO0001",
+            "___SalesOrderItem_ProductSet_ID": "P0"
+        },
+        {
+            "ID": "D1",
+            "Quantity": 400,
+            "___SalesOrder_SalesOrderItemSet_ID": "SO0001",
+            "___SalesOrderItem_ProductSet_ID": "P1"
+        },
+        {
+            "ID": "D2",
+            "Quantity": 50,
+            "___SalesOrder_SalesOrderItemSet_ID": "SO0001",
+            "___SalesOrderItem_ProductSet_ID": "P2"
+        },
+        {
+            "ID": "D3",
+            "Quantity": 4000,
+            "___SalesOrder_SalesOrderItemSet_ID": "SO0002",
+            "___SalesOrderItem_ProductSet_ID": "P2"
+        },
+        {
+            "ID": "D4",
+            "Quantity": 1500,
+            "___SalesOrder_SalesOrderItemSet_ID": "SO0003",
+            "___SalesOrderItem_ProductSet_ID": "P3"
+        },
+        {
+            "ID": "D5",
+            "Quantity": 2000,
+            "___SalesOrder_SalesOrderItemSet_ID": "SO0003",
+            "___SalesOrderItem_ProductSet_ID": "P4"
+        },
+        {
+            "ID": "D6",
+            "Quantity": 150,
+            "___SalesOrder_SalesOrderItemSet_ID": "SO0004",
+            "___SalesOrderItem_ProductSet_ID": "P5"
+        },
+        {
+            "ID": "D7",
+            "Quantity": 150,
+            "___SalesOrder_SalesOrderItemSet_ID": "SO0004",
+            "___SalesOrderItem_ProductSet_ID": "P6"
+        },
+        {
+            "ID": "D8",
+            "Quantity": 150,
+            "___SalesOrder_SalesOrderItemSet_ID": "SO0004",
+            "___SalesOrderItem_ProductSet_ID": "P7"
+        },
+        {
+            "ID": "D9",
+            "Quantity": 150,
+            "___SalesOrder_SalesOrderItemSet_ID": "SO0004",
+            "___SalesOrderItem_ProductSet_ID": "P8"
+        },
+        {
+            "ID": "D10",
+            "Quantity": 150,
+            "___SalesOrder_SalesOrderItemSet_ID": "SO0004",
+            "___SalesOrderItem_ProductSet_ID": "P9"
+        },
+        {
+            "ID": "D11",
+            "Quantity": 150,
+            "___SalesOrder_SalesOrderItemSet_ID": "SO0004",
+            "___SalesOrderItem_ProductSet_ID": "P10"
+        }
+    ],
+    "Product": [
+        {
+            "ID": "P0",
+            "Description": "Colgate Total ",
+            "Amount": 500,
+            "Currency": "USD",
+            "Picture": "Assets\\Pic1.jpg"
+        },
+        {
+            "ID": "P1",
+            "Description": "Colgate white",
+            "Amount": 1600,
+            "Currency": "USD",
+            "Picture": "Assets\\Pic2.jpg"
+        },
+        {
+            "ID": "P2",
+            "Description": "Colgate Fresh",
+            "Amount": 150,
+            "Currency": "USD",
+            "Picture": "Assets\\Pic3.jpg"
+        },
+        {
+            "ID": "P3",
+            "Description": "Bifidus ",
+            "Amount": 120,
+            "Currency": "USD",
+            "Picture": "Assets\\Pic4.jpg"
+        },
+        {
+            "ID": "P4",
+            "Description": "Biolait",
+            "Amount": 100,
+            "Currency": "USD",
+            "Picture": "Assets\\Pic5.jpg"
+        },
+        {
+            "ID": "P5",
+            "Description": "Coca Light",
+            "Amount": 90,
+            "Currency": "USD",
+            "Picture": "Assets\\Pic6.jpg"
+        },
+        {
+            "ID": "P6",
+            "Description": "Coca Zero",
+            "Amount": 90,
+            "Currency": "USD",
+            "Picture": "Assets\\Pic7.jpg"
+        },
+        {
+            "ID": "P7",
+            "Description": "Coca no caf",
+            "Amount": 90,
+            "Currency": "USD",
+            "Picture": "Assets\\Pic8.jpg"
+        },
+        {
+            "ID": "P8",
+            "Description": "Coca Lemon",
+            "Amount": 90,
+            "Currency": "USD",
+            "Picture": "Assets\\Pic9.jpg"
+        },
+        {
+            "ID": "P9",
+            "Description": "Coca Red Bull",
+            "Amount": 150,
+            "Currency": "USD",
+            "Picture": "Assets\\Pic10.jpg"
+        },
+        {
+            "ID": "P10",
+            "Description": "Coca Rhun",
+            "Amount": 200,
+            "Currency": "USD",
+            "Picture": "Assets\\Pic11.jpg"
+        }
+    ]
+}}

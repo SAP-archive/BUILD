@@ -1,0 +1,59 @@
+<div ng-controller="RelationsController as controller">
+    <div ng-show="selectedEntity.navigationProperties.length">
+        <div ng-include="'resources/norman-prototype-editors-client/DataModeler/dataModelEditor/popUps/relationEditor.html'"></div>
+
+        <div ng-repeat="navProperty in selectedEntity.navigationProperties
+                                       | orderBy:controller.navSortPredicate:controller.navSortReverse
+                                       | filter: searchNavigation"
+             class="dm-navigationDetail"
+             ng-class="{'dm-detail-highlited': controller.selectedNavProperty==navProperty.name}">
+            <div>
+                            <span ng-click="controller.openRelationEditorModal(navProperty, selectedEntity, $event)">
+                                <!-- navigation name -->
+                                <div class="dm-navigationDetail-Name">
+                                    {{navProperty.name}}
+                                </div>
+                                <!-- navigation 1..n -->
+                                <div
+                                        class="dm-navigationDetail-Multiplicity">
+                                    {{ navProperty.multiplicity && "n" || "1" }}
+                                </div>
+                            </span>
+                <div class="dm-delete dmsvg-remove"
+                     ng-click="controller.removeNavigation(navProperty)"
+                     ng-class="{'dm-delete-hidden': controller.selectedNavProperty!==navProperty.name}">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div ng-hide="selectedEntity.navigationProperties.length" class="dm-navigation-noData">
+        No navigation properties
+    </div>
+    <!--New Navigation-->
+    <div class="dm-navigationDetail dm-newNavigation" ng-show="controller.navigationInCreation">
+        <div>
+            <!-- property name -->
+            <ui-input class="dm-navigationDetail-Name"
+                      id="newNavigationNameInput"
+                      ng-keypress="($event.which === 13) ? controller.saveNavigation() : 0"
+                      dark ng-model="controller.newNavigation.name"></ui-input>
+            <!--target-->
+            <ui-select class="dm-navigationDetail-Target" dark
+                       ng-model="controller.newNavigation.toEntityId"
+                       value="controller.newNavigation.toEntityId"
+                       ng-options="entity._id as entity.name for entity in model.entities | orderBy:['name']">
+            </ui-select>
+            <!-- navigation multiplicity -->
+            <ui-select class="dm-navigationDetail-Multiplicity"
+                       dark ng-model="controller.newNavigation.multiplicity"
+                       ng-options="type.value as type.label for type in [{value:false, label:'1'},{value:true, label:'n'}]">
+            </ui-select>
+        </div>
+    </div>
+    <div class="dm-entity-add" ng-click="controller.startNavigationCreation()">
+        + New Relation
+    </div>
+
+</div>

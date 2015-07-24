@@ -1,0 +1,23 @@
+<div class="ui-zoom"  ui-popup-open="{{popupId}}">
+    <span ng-bind="sliderModel.value"></span>%
+    <ui-popup offset-x={{offsetX}} offset-y={{offsetY}} class="popup" id="{{popupId}}" placement="bottom">
+        <div class="upper-part">
+            <div class="upper-box">
+                <div ui-popup-close ng-click="defaultWidth()" class="img-wrapper default-width"></div>
+                <span>Size</span>
+            </div>
+            <div class="vertical-separator"></div>
+            <div class="upper-box">
+                <div ui-popup-close ng-click="fitWidth()" class="img-wrapper fit-width"></div>
+                <span>Fit Width</span>
+            </div>
+        </div>
+        <div class="horizontal-separator"></div>
+        <div class="lower-part">
+            <div ng-click="decrement()" class="sign minus"></div>
+            <div class="slider"><ui-slider slider-model="sliderModel" real-time="true" slider-to="{{max}}" slider-from="{{min}}"></ui-slider></div>
+            <div ng-click="increment()" class="sign plus"></div>
+        </div>
+        <span>Zoom</span>
+    </ui-popup>
+</div>

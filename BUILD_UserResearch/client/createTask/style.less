@@ -1,0 +1,81 @@
+@import (reference) "../styles/base.less";
+@inner-height: 478px;
+
+#task-dialog { width: 701px; min-height: 640px;
+    h1 { color: white; font-size: 28px; margin: 30px 50px 30px 50px }
+    label { color: white; width: 100%; padding: 2px 0; }
+
+    .no-snapshots { margin: 202px 0; text-align: center;
+        a { color: @CuriousBlue-300; font-weight: bolder;
+            &:hover { text-decoration: none; }
+        }
+    }
+
+    .snapshots-header { padding: 10px 20px 0; height: 90px; width: 100%; border-bottom: 1px #3f5160 solid;
+        h3 { padding: 5px 0; font-size: 21px; font-weight: 300; }
+        #zipUploadButton { color: @CuriousBlue-300; font-weight: bolder; font-size: 15px;
+            text-decoration: underline; cursor: pointer; position: relative;
+            padding-left: 30px;
+            height: 22px;
+            line-height: 22px;
+            &:hover { text-decoration: none; }
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                .user-research-ico-zip;
+                .user-research-ico-zip-dims;
+            }
+        }
+    }
+
+    .snapshots-list { padding: 20px; height: (@inner-height - 90px); overflow-y: auto;
+        label { font-size: 18px; font-weight: bolder; margin-right: 20px;
+            span.small { display: block; font-size: 13px; color: #95A5A6; margin-top: 0; padding-left: 30px; }
+        }
+        .thumbnails { padding: 5px 10px 0px 30px;
+            > * { display: inline-block; margin-right: 10px; }
+        }
+    }
+
+
+    .snapshot-screen-list { overflow-y: auto; height: @inner-height; padding: 20px 0 0 20px;
+        label { display: inline-block; margin: 0 0 6px 0; }
+        h3 { padding: 20px 0 0; }
+    }
+    .snapshot-screen-wrapper {
+        float: left;
+        margin-bottom: 20px;
+    }
+
+    .snapshot-screen { float: left; margin: 20px 20px 0 0; position: relative; }
+    .snapshot-screen-thumbnail { float: left; transition: all 0.3s ease-out; }
+    .snapshot-selected-tick {
+        z-index: 2;
+        transition: all 0.3s ease-out;
+        opacity: 0;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: calc(~'50% - 15px');
+        left: calc(~'50% - 15px');
+        background: @White url("/resources/norman-user-research-client/assets/ico-tick.svg") center center no-repeat;
+        border-radius: 50%;
+    }
+    .snapshot-screen.selected {
+      .snapshot-screen-thumbnail {
+        opacity: 0.5;
+        background-color: rgba(51,152,219,0.60);
+        background-clip: content-box;
+      }
+      .snapshot-selected-tick {
+        opacity: 1;
+      }
+    }
+
+    .prototype-upload-progress { height: @inner-height; width: 70%; margin: auto; position: relative;
+        h1 { margin: 0; padding-top: 180px; text-align: center; }
+    }
+
+}

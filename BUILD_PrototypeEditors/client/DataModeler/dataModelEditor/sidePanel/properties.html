@@ -1,0 +1,66 @@
+<div ng-controller="PropertiesController as controller">
+    <div ng-hide="selectedEntity.properties.length" class="dm-navigation-noData">
+        No properties
+    </div>
+    <div ng-include="'resources/norman-prototype-editors-client/DataModeler/dataModelEditor/popUps/propertyEditor.html'"></div>
+
+    <div ng-show="selectedEntity.properties.length">
+        <div ng-repeat="property in selectedEntity.properties | filter: {isForeignKey: false}"
+             class="dm-propertyDetail"
+             ng-class="{'dm-detail-highlited': controller.selectedProperty==property.name}"
+             ui-draggable="true"
+             drag="property"
+             drag-channel="propertyForRole">
+            <div>
+                                <span ng-click="controller.openPropertyEditorModal(property, $event)"
+                                        >
+                                    <!-- property name -->
+                                    <!--<div class="dm-propertyDetail-Name" ng-drag="{{property._id}}"> comment for readonly-->
+	                                <div class="dm-propertyDetail-Name">
+                                        {{property.name}}
+                                    </div>
+                                    <!-- property type -->
+                                    <div class="dm-propertyDetail-Type" ng-hide="property.isKey">
+                                            {{controller.getDataTypeLabel(property.propertyType)}}
+                                    </div>
+                                     <!-- property key -->
+                                     <div ng-show="property.isKey"
+                                          class ="dm-propertyDetail-Key dmsvg-key-o-icon"
+                                          onmousedown="return false;">
+                                    </div>
+                                    </span>
+                <div class="dm-delete dmsvg-remove"
+                     ng-hide="property.isKey"
+                     ng-click="controller.removeProperty(property)"
+                     ng-class="{'dm-delete-hidden': controller.selectedProperty!==property.name}">
+                </div>
+            </div>
+
+        </div>
+        <!--New Property-->
+        <div class="dm-propertyDetail dm-newProperty" ng-show="controller.propertyInCreation">
+            <div>
+                <!-- property name -->
+                <ui-input id="newPropertyNameInput"
+                          class="dm-propertyDetail-Name"
+                          ng-keypress="($event.which === 13) ? controller.savePropertyCreation() : 0"
+                          dark ng-model="controller.newProperty.name"></ui-input>
+                <!-- property type -->
+                <ui-select class="dm-propertyDetail-Type"
+                           id="dataTypeSelect"
+                           dark ng-model="controller.newProperty.propertyType"
+                           ng-change="controller.onTypeChange(controller.newProperty.propertyType)">
+
+                    <option ng-repeat="type in controller.dataTypes | shortList:controller.isShort"
+                            value="{{ type.code }}" >{{type.label}}</option>
+                    <option ng-show="controller.isShort" >{{ controller.moreLabel }}</option>
+                </ui-select>
+            </div>
+
+        </div>
+
+        <div class="dm-entity-add" ng-click="controller.startPropertyCreation()">
+            + New Property
+        </div>
+    </div>
+</div>

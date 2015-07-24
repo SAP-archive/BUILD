@@ -1,0 +1,88 @@
+{
+	"env": {
+		"NODE_ENV": "production"
+	},
+	"server": {
+		"workers": 4
+	},
+	"logging": {
+		"logDirectory": "logs",
+		"output": {
+			"logfile": {
+				"type": "file",
+				"path": "admin_{now:yyyyMMdd}_{pid}.log"
+			}
+		},
+		"loggers": {
+			"*": {
+				"logfile": "info"
+			}
+		}
+	},
+	"db": {
+		"hosts": "localhost",
+		"database": "norman",
+		"options": {
+			"db": {
+				"w": 1
+			},
+			"server": {
+				"poolSize": 20,
+				"socketOptions": {
+					"keepAlive": 1
+				}
+			}
+		}
+	},
+	"deployment": {
+		"strategy": "single"
+	},
+	"http": {
+        "port": 9001,
+		"proxy": {
+			"host": "example.com",
+			"port": 8080
+		},
+		"secureFlag" : false
+	},
+	"web": {
+		"root": "../public",
+		"errors": {
+			"root": "errors"
+		},
+		"indexFallback": [
+			"/login",
+			"/console",
+			"/privacystatement",
+            "/tos"
+		],
+		"options": {
+			"etag": false,
+			"maxAge": "5d"
+		},
+		"compression": {
+			"threshold": 512
+		}
+	},
+        "fileUpload":{
+          "limits": {
+            "fields": 500,
+            "fileSize": 500.5e7,
+            "files": 5000,
+            "parts": 5000
+          }
+        },
+    "account": {
+        "accountNameMinlength": 3,
+        "accountNameMaxlength": 120,
+        "forgotPasswordTokenExpiryInDays": 1,
+        "autoResendEmailVerification": true,
+        "emailVerifingTokenExpiryInDays": 30,
+        "emailHasAlreadyVerified": "Your email address has been already verified.",
+        "recoverAccountPasswordTokenExpiredMessage": "The resource your are looking for has been expired, please try again later.",
+        "recoverAccountPasswordTokenVerifiedMessage": "Your email address has been verified."
+    },
+    "services": "./config/services.json",
+    "security": "./config/security.json",
+    "features": "./config/features.json"
+}

@@ -1,0 +1,18 @@
+<div class="dmd-scroll" >
+    <div class="dmd-main" >
+
+        <div ng-transclude></div>
+        <div id="modelerlayout" class="modelerlayout" >
+           <!-- modeler -->
+            <dmd-item dmd-draggable
+                      ng-repeat="item in model.entities"
+                      item="item"
+                      selected-item="selectedItem"
+                      select-item="selectItem()"
+                      update-item="updateItem()"
+                      drag-item-stop="dragItemStop(item)"
+                      remove-item="removeItem()">
+            </dmd-item>
+       </div>
+    </div>
+</div>

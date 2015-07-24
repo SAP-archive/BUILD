@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>ico-smile-on</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="03-COMMENT" sketch:type="MSArtboardGroup" transform="translate(-1381.000000, -1025.000000)">
+            <g id="ico-smile-on" sketch:type="MSLayerGroup" transform="translate(1381.000000, 1025.000000)">
+                <circle id="Oval-289" fill="#27AE60" sketch:type="MSShapeGroup" cx="10.5" cy="10.5" r="10.5"></circle>
+                <ellipse id="Oval-290" fill="#ffffff" sketch:type="MSShapeGroup" cx="7.5" cy="8" rx="1.5" ry="3"></ellipse>
+                <ellipse id="Oval-291" fill="#ffffff" sketch:type="MSShapeGroup" cx="13.5" cy="8" rx="1.5" ry="3"></ellipse>
+                <path d="M16.9427258,11 C16.9805008,11.2309205 17,11.4665467 17,11.7058824 C17,14.6297428 14.0898509,17 10.5,17 C6.91014913,17 4,14.6297428 4,11.7058824 C4,11.4665467 4.01949919,11.2309205 4.05727424,11 C4.4809808,13.5901361 7.20400007,15.5882353 10.5,15.5882353 C13.7959999,15.5882353 16.5190192,13.5901361 16.9427258,11 Z" id="Oval-292" fill="#ffffff" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

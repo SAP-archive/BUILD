@@ -1,0 +1,26 @@
+<div ng-controller="AvatarCtrl">
+    <div class="na-avatar setting-switch-content" ng-hide="showCropScreen">
+        <ui-avatar class="na-user-avatar" avatar-state="none" avatar-name="{{currentUser.name}}" avatar-image="{{avatar_url}}"></ui-avatar>
+        <input type="file" id="fileInput" accept="image/*" class="na-avatar-file-input"/>
+        <div class="na-photo-actions">
+            <div class="na-upload-photo" ng-click="performFileInputClick()">
+                <img class="na-upload-photo-icon" src="resources/norman-auth-client/assets/ico-camera-blue.svg"/>
+                <div class="na-upload-photo-text">Upload photo</div>
+            </div>
+            <div ng-if="avatar_url" class="na-delete-photo" ng-click="deleteUserAvatar()">
+                <div class="na-delete-photo-text">Delete photo</div>
+            </div>
+        </div>
+    </div>
+    <div class="cropArea" ng-show="showCropScreen">
+        <div class="cropper"></div>
+        <div class="zoomSlider">
+            <div class="sliderMinus">-</div><ui-slider slider-model="zoomObject"
+            dark id="avatarCropSlider" real-time="true" css-before="#FFFFFF" css-after="#FFFFFF" css-pointer="#FFFFFF" css-background="#FFFFFF"></ui-slider><div class="sliderPlus">+</div>
+        </div>
+        <div class="crop-link-container" ng-click="UploadImage()">Crop and use</div>
+    </div>
+
+</div>
+
+

@@ -1,0 +1,32 @@
+{
+  "name": "norman-audit-server",
+  "version": "0.1.0",
+  "description": "Norman Audit Service",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SAP/BUILD.git"
+  },
+  "licenses": [
+    {
+      "type": "Apache License, Version 2.0",
+      "url": "https://github.com/SAP/BUILD/blob/master/LICENSE.txt"
+    }
+  ],
+   "maintainers": [
+        {
+            "name": "BUILD Team",
+            "email": "contact.build@sap.com"
+        }
+    ],
+  "dependencies": {},
+  "peerDependencies": {
+    "norman-common-server": "*"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "grunt": "^0.4.5",
+    "grunt-eslint": "^2.1.0",
+    "grunt-mocha-test": "^0.12.4",
+    "mocha": "^2.0.1"
+  }
+}

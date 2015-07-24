@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12005) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval 6 + × 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Interactive-Mode---Concurent-Access---#983-Copy" sketch:type="MSArtboardGroup" transform="translate(-1558.000000, -1345.000000)">
+            <g id="MODAL" sketch:type="MSLayerGroup" transform="translate(-1.000000, 1345.000000)">
+                <g id="Oval-6-+-×-5" transform="translate(1559.000000, 0.000000)">
+                    <ellipse id="Oval-6" stroke="#2C3E50" stroke-width="3" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="12.5" cy="12.5" rx="12.5" ry="12.5"></ellipse>
+                    <text id="×-5" sketch:type="MSTextLayer" font-family="Roboto" font-size="20" font-weight="bold" sketch:alignment="middle" fill="#2C3E50">
+                        <tspan x="7.1875" y="21">×</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

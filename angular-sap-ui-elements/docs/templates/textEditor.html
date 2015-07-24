@@ -1,0 +1,23 @@
+<ui-toolbar layout="column" class="left-nav-title">
+    <h1 class="ui-toolbar-tools" flex layout="column">Directives > ui-text-editor</h1>
+</ui-toolbar>
+<ui-content flex ui-scroll-y>
+    <ui-content flex class="doc-content">
+        <div layout="row"><a name="Directives-ui-pill"><h2 class="item-name">ui-text-editor</h2></a></div>
+
+        <div layout="row">
+            <div class="item" flex="50" flex-sm="50">
+                <ui-text-editor html-variable="someHtmlVariable"></ui-text-editor>
+                <div style="padding-top: 20px;">
+                    <b>Output HTML:</b><br/>
+                    <textarea style="border: 1px gray solid; width: 510px; height: 150px;" ng-bind="someHtmlVariable"></textarea>
+                </div>
+            </div>
+            <div class="code" flex="50" flex-sm="50">
+                <pre><code>
+                    &lt;ui-text-editor html-variable="someHtmlVariable" &gt;&lt;/ui-text-editor&gt;
+                </code></pre>
+            </div>
+        </div>
+    </ui-content>
+</ui-content>

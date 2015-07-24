@@ -1,0 +1,11 @@
+{
+  "algorithm": "aes-256-cbc",
+  "keyLength": 32,
+  "ivLength": 16,
+  "digest": "sha1",
+  "salt": "Jxhc3mUEhjERYFolK1uXgU71bfZJjP/WFs5G0EeEWY4OHG467mjEQzW12xT3AMgg",
+  "iterationCount": 10000,
+  "type": "string",
+  "encoding": "utf-8",
+  "data": "KFecIZP49mq/c9uV+0C7ZSbvDmiY6Y91NFbWVBXdm90="
+}

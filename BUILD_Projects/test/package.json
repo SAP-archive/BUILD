@@ -1,0 +1,31 @@
+{
+  "name": "norman-projects-e2e",
+  "version": "0.1.0",
+  "description": "Norman Projects End2End tests",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SAP/BUILD.git"
+  },
+  "author": "",
+  "licenses": [
+    {
+      "type": "Apache License, Version 2.0",
+      "url": "https://github.com/SAP/BUILD/blob/master/LICENSE.txt"
+    }
+  ],
+  "devDependencies": {
+    "request": "^2.51.0"
+  },
+  "peerDependencies": {
+    "norman-testing-server": "*",
+    "norman-common-server": "*",
+    "norman-promise": "*",
+    "node-sap-app-server": "*",
+    "norman-testing-tp": "*",
+    "norman-client-tp": "*"
+  }
+}

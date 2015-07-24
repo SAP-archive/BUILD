@@ -1,0 +1,71 @@
+@import (reference) "../../styles/base.less";
+
+.ui-button {
+    border: none;
+    font-family: @roboto-font;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: @White;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: @CuriousBlue-500;
+    border-radius: 4px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    &:hover:enabled {
+        background: @CuriousBlue-900;
+    }
+    &:disabled {
+        opacity: 0.3;
+        cursor: default;
+    }
+
+    &[green] {
+        background: @Shamrock-500;
+        &:hover:enabled {
+            background: @Shamrock-900;
+        }
+    }
+
+    &[red] {
+        background: @Cinnabar-500;
+        &:hover:enabled {
+            background: @Cinnabar-900;
+        }
+    }
+}
+
+.ui-button-small {
+    line-height: 35px;
+    height: 35px;
+    font-size: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.ui-button-large {
+    font-size: 15px;
+    line-height: 41px;
+    height: 41px;
+    padding-left: 21px;
+    padding-right: 21px;
+}
+
+.ui-button-icon {
+    border: none;
+    background: transparent;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    &:hover:enabled {
+        background: transparent;
+    }
+    &:disabled {
+        .icon {
+            opacity: 0.3;
+            cursor: default;
+        }
+    }
+}

@@ -1,0 +1,289 @@
+@import (reference) '../node_modules/norman-client-tp/node_modules/angular-sap-ui-elements/styles/variables';
+
+.trash {
+  color: rgb(209, 91, 71);
+}
+
+.dm-header-svg-imag {
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.dm-header-bar-container .dm-header-svg-imag:last-child {
+    margin-right: 0px;
+}
+
+.nscroll {
+  position: relative;
+  overflow: scroll;
+}
+
+.editable-empty {
+  color: #000;
+}
+
+.editable-empty, .editable-empty:hover, .editable-empty:focus, a.editable-empty, a.editable-empty:hover, a.editable-empty:focus {
+  font-style: normal;
+}
+
+.dm-addEntityDialog {
+  width: 1000px;
+  .list-group {
+    overflow: scroll;
+    height: 300px;
+  }
+}
+
+.dm-main-container-content {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-flex;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.editable-input {
+  color: #000000;
+}
+
+.dm-add-entity-input {
+  display: flex;
+}
+
+.dm-selectExportOption {
+  text-align: left;
+}
+
+.dm-exportOptionText {
+  line-height: normal;
+
+}
+
+.dm-exportOptiondesc {
+  display: flex;
+
+}
+
+.dataModelDesigner {
+  position: relative;
+  overflow: hidden;
+  -webkit-flex: 1;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.dm-dataModel-Outer {
+  width: 100%;
+  height: 100%;
+}
+
+.dm-sidePanel-Outer {
+  width: 100%;
+  height: 100%;
+}
+
+.dataModelSidePanel {
+  height: 100%;
+  -webkit-flex: 0 0 260px;
+  flex: 0 0 260px;
+  position: relative;
+}
+
+.dm-search-in-editor-layout {
+  padding: 12px 12px 40px 12px;
+}
+
+.dm-search-in-editor {
+  border-radius: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.dm-choose-type-title {
+  padding: 12px 12px 12px 12px;
+  .dm-label {
+    color: lightgrey;
+  }
+}
+
+.dm-choose-type-container {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 5px;
+  line-height: 20px;
+  padding-bottom: 8px;
+  .dm-label {
+    > span {
+      font-weight: 400; //fix for bad css of ui-tabs
+      font-size: 14px;
+      &:first-child {
+        display: inline-block;
+        width: 205px;
+      }
+      &:last-child {
+        padding-left: 35px;
+        color: @Cascade-900;
+      }
+    }
+  }
+}
+
+/** HEADER **/
+
+.dm-header-saved-notification {
+  padding-right: 15px;
+  width: 200px;
+  font-size: 12px;
+  color: @White;
+}
+
+.dm-header-icon-active {
+  fill: @White;
+}
+
+.dm-header-icon-inactive {
+  fill: @PickledBluewood-900;
+}
+
+.dm-tabProperty.ui-tabs .ui-tab-option {
+  padding-left: 10px;
+  padding-right: 10px;
+  > span {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}
+
+.dm-header {
+  background-color: @PickledBluewood-600;
+  height: 40px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  .dm-header-left, .dm-header-center, .dm-header-right {
+    position: absolute;
+    height: 100%;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    .ui-zoom {
+      height: auto;
+    }
+
+    .dm-header-svg-imag, .dm-header-ui-zoom {
+      margin-right: 7px;
+      margin-left: 7px;
+      cursor: pointer;
+    }
+  }
+
+  .dm-header-left {
+    left: 15px;
+  }
+  .dm-header-center {
+    left: 320px;
+  }
+  .dm-header-right {
+    right: 15px;
+  }
+}
+
+.ui-popup.open.dm-add-panel {
+  width: 120px;
+  font-size: 12px;
+  color: @PickledBluewood-900;
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.40);
+  padding: 0;
+  &.bottom .ui-popup-arrow {
+    top: -5px;
+    left: 45%;
+  }
+  .dm-add-panel-option {
+    display: -webkit-inline-flex;
+    border-bottom: 1px solid @Porcelain-500;
+    height: 30px;
+    width:100%;
+    line-height: 30px;
+    cursor: pointer;
+    margin-left: 5px;
+    > div {
+      margin-top: 5px;
+      margin-right: 5px;
+    }
+    > span {
+      vertical-align: top;
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+    &:hover {
+      color: #3498DB;
+    }
+  }
+}
+
+.dm-search-catalog-dialog {
+  width: 530px;
+  height: 520px;
+  .ui-dialog-title {
+    text-transform: uppercase;
+  }
+  > div:nth-child(2) {
+    height: 360px;
+  }
+  .dm-catalog-search-in-editor {
+    height: 270px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    &::-webkit-input-placeholder {
+      color: #FFF;
+    }
+    .dm-catalog-search-in-editor-container {
+      > :nth-child(even) {
+        background-color: #192835;
+      }
+      .dm-catalog-search-in-editor-content {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(155, 155, 155, 0.3);
+        height: 70px;
+        cursor: pointer;
+        .dm-catalog-search-in-editor-content-entity {
+          font-size: 14px;
+          font-weight: bold;
+          display: flex;
+        }
+
+        .dm-catalog-search-in-editor-content-catalog {
+          font-size: 12px;
+          padding-top: 5px;
+        }
+      }
+    }
+  }
+}
+
+.dm-search-match {
+  color: yellow;
+}
+
+.dm-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 10em;
+}
+

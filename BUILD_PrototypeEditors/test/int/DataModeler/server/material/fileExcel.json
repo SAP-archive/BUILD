@@ -1,0 +1,234 @@
+{
+  "complexTypes": [],
+  "entities": [
+    {
+      "name": "SalesOrder",
+      "nameSet": "SalesOrderSet",
+      "label": "SalesOrder",
+      "navigationProperties": [
+        {
+          "name": "SalesOrderItemSet",
+         
+          "isReadOnly": false,
+          
+          "multiplicity": true
+        }
+      ],
+      "properties": [
+        {
+          "name": "ID",
+          "label": "ID",
+          "order": 1,
+          "isForeignKey": false,
+          "calculated": {"inputProperties": []},
+          "isNullable": true,
+          "isKey": true,
+          "isReadOnly": false,
+          
+          "propertyType": "String"
+        },
+        {
+          "name": "Name",
+          "label": "Name",
+          "order": 2,
+          "isForeignKey": false,
+          "calculated": {"inputProperties": []},
+          "isNullable": true,
+          "isKey": false,
+          "isReadOnly": false,
+          
+          "propertyType": "String"
+        },
+        {
+          "name": "Author",
+          "label": "Author",
+          "order": 3,
+          "isForeignKey": false,
+          "calculated": {"inputProperties": []},
+          "isNullable": true,
+          "isKey": false,
+          "isReadOnly": false,
+          
+          "propertyType": "String"
+        },
+        {
+          "name": "Amount",
+          "label": "Amount",
+          "order": 4,
+          "isForeignKey": false,
+          "calculated": {"inputProperties": []},
+          "isNullable": true,
+          "isKey": false,
+          "isReadOnly": false,
+          
+          "propertyType": "Decimal"
+        },
+        {
+          "name": "Currency",
+          "label": "Currency",
+          "order": 5,
+          "isForeignKey": false,
+          "calculated": {"inputProperties": []},
+          "isNullable": true,
+          "isKey": false,
+          "isReadOnly": false,
+          
+          "propertyType": "String"
+        },
+        {
+          "name": "Date",
+          "label": "Date",
+          "order": 6,
+          "isForeignKey": false,
+          "calculated": {"inputProperties": []},
+          "isNullable": true,
+          "isKey": false,
+          "isReadOnly": false,
+          
+          "propertyType": "DateTime"
+        }
+      ],
+     
+      "isReadOnly": false
+      
+    },
+    {
+      "name": "SalesOrderItem",
+      "nameSet": "SalesOrderItemSet",
+      "label": "SalesOrderItem",
+      "navigationProperties": [
+        {
+          "name": "ProductSet",
+         
+          "isReadOnly": false,
+          
+          "multiplicity": false
+        }
+      ],
+      "properties": [
+        {
+          "name": "ID",
+          "label": "ID",
+          "order": 1,
+          "isForeignKey": false,
+          "calculated": {"inputProperties": []},
+          "isNullable": true,
+          "isKey": true,
+          "isReadOnly": false,
+          
+          "propertyType": "String"
+        },
+        {
+          "name": "Quantity",
+          "label": "Quantity",
+          "order": 2,
+          "isForeignKey": false,
+          "calculated": {"inputProperties": []},
+          "isNullable": true,
+          "isKey": false,
+          "isReadOnly": false,
+          
+          "propertyType": "Decimal"
+        },
+        {
+          "name": "___SalesOrder_SalesOrderItemSet_ID",
+          "label": "___SalesOrder_SalesOrderItemSet_ID",
+          "order": 3,
+          "isForeignKey": true,
+          "calculated": {"inputProperties": []},
+          "isNullable": false,
+          "isKey": false,
+          "isReadOnly": false,
+          
+          "propertyType": "String"
+        },
+        {
+          "name": "___SalesOrderItem_ProductSet_ID",
+          "label": "___SalesOrderItem_ProductSet_ID",
+          "order": 4,
+          "isForeignKey": true,
+          "calculated": {"inputProperties": []},
+          "isNullable": false,
+          "isKey": false,
+          "isReadOnly": false,
+          
+          "propertyType": "String"
+        }
+      ],
+     
+      "isReadOnly": false
+      
+    },
+    {
+      "name": "Product",
+      "nameSet": "ProductSet",
+      "label": "Product",
+      "navigationProperties": [],
+      "properties": [
+        {
+          "name": "ID",
+          "label": "ID",
+          "order": 1,
+          "isForeignKey": false,
+          "calculated": {"inputProperties": []},
+          "isNullable": true,
+          "isKey": true,
+          "isReadOnly": false,
+          
+          "propertyType": "String"
+        },
+        {
+          "name": "Description",
+          "label": "Description",
+          "order": 2,
+          "isForeignKey": false,
+          "calculated": {"inputProperties": []},
+          "isNullable": true,
+          "isKey": false,
+          "isReadOnly": false,
+          
+          "propertyType": "String"
+        },
+        {
+          "name": "Amount",
+          "label": "Amount",
+          "order": 3,
+          "isForeignKey": false,
+          "calculated": {"inputProperties": []},
+          "isNullable": true,
+          "isKey": false,
+          "isReadOnly": false,
+          
+          "propertyType": "Decimal"
+        },
+        {
+          "name": "Currency",
+          "label": "Currency",
+          "order": 4,
+          "isForeignKey": false,
+          "calculated": {"inputProperties": []},
+          "isNullable": true,
+          "isKey": false,
+          "isReadOnly": false,
+          
+          "propertyType": "String"
+        },
+        {
+          "name": "Picture",
+          "label": "Picture",
+          "order": 5,
+          "isForeignKey": false,
+          "calculated": {"inputProperties": []},
+          "isNullable": true,
+          "isKey": false,
+          "isReadOnly": false,
+          
+          "propertyType": "String"
+        }
+      ],
+     
+      "isReadOnly": false
+      
+    }
+  ]
+}

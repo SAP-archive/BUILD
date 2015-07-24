@@ -1,0 +1,81 @@
+<div class="fixed-table-container">
+    <div class="fixed-table-container-inner extrawrap">
+        <table cellspacing="0" class="ui-participant-grid">
+            <thead>
+            <tr class="head">
+                <th  class="xs">
+                    <div >#</div>
+                </th>
+                <th  class="xlg">
+                    <div >PARTICIPANT</div>
+                </th>
+                <th class="md">
+                    <div >RESULT</div>
+                </th>
+                <th class="md">
+                    <div >PAGES VISITED</div>
+                </th>
+                <th class="md">
+                    <div >TOTAL DURATION</div>
+                </th>
+                <th class="md">
+                    <div >ANNOTATIONS</div>
+                </th>
+                <th>
+                    <div >COMMENTS</div>
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="n in bindModel track by $index" ng-click="setSelected($index)">
+                <td><span ng-bind="$index + 1"></span></td>
+                <td><span ng-bind="n.participant"></span></td>
+                <td ng-class="{'success': n.result == 'Success', 'fail': n.result == 'Fail', 'abandon': n.result == 'Abandon'}">
+                    <span ng-bind="n.result"></span>
+                </td>
+                <td>
+                    <span ng-bind="n.totalPagesVisited || 0"></span>
+
+                    <div class="nested-grid" ng-class="{expend: (isSelectedIndex === $index)}" ng-if="n.tasks.length >0">
+                        <div class="sub-header grid-sub-header">Pages (Time Visited)</div>
+                        <div ng-repeat="k in n.tasks  track by $index">
+                            <span ng-bind="k.pages"></span>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <span ng-bind-html="n.totalDuration | AverageDurationFilter "></span>
+
+
+                    <div class="nested-grid" ng-class="{expend: (isSelectedIndex === $index)}" ng-if="n.tasks.length >0">
+                        <div class="sub-header grid-sub-header">Duration</div>
+                        <div ng-repeat="k in n.tasks  track by $index">
+                            <span ng-bind-html="k.duration | AverageDurationFilter "></span>
+                        </div>
+                    </div>
+                </td>
+                <td><span ng-bind="n.totalAnnotation || 0"></span>
+
+                    <div class="nested-grid" ng-class="{expend: (isSelectedIndex === $index)}" ng-if="n.tasks.length >0">
+                        <div class="sub-header grid-sub-header">Annotations</div>
+                        <div ng-repeat="k in n.tasks  track by $index">
+                            <span ng-bind="k.annotation"></span>
+                        </div>
+                    </div>
+                </td>
+                <td><span ng-bind="n.totalComments || 0"></span>
+
+                    <div class="nested-grid" ng-class="{expend: (isSelectedIndex === $index)}" ng-if="n.tasks.length >0">
+                        <div class="sub-header grid-sub-header">Comments</div>
+                        <div ng-repeat="k in n.tasks  track by $index">
+                            <span ng-bind="k.comments"></span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+

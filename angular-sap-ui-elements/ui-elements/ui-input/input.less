@@ -1,0 +1,41 @@
+@import (reference) "../../styles/base.less";
+.ui-input {
+  transition: all 0.3s ease-out;
+  border-radius: 3px;
+  height: 35px;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-family: @roboto-font;
+  font-size: 15px;
+  line-height: 20px;
+  outline: none;
+  &.light {
+    background: @Porcelain-500;
+    border: 1px solid @Cascade-500;
+    color: @PickledBluewood-900;
+    &:focus {
+      background: @White;
+      box-shadow: 0px 0px 6px 0px rgba(51, 152, 219, 0.50);
+      border: 1px solid @CuriousBlue-500;
+    }
+    &:hover {
+      background: @White;
+      border: 1px solid @CuriousBlue-500;
+    }
+  }
+  &.dark {
+    background: @PickledBluewood-500;
+    border: 1px solid @Cascade-500;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.30);
+    color: @White;
+    &:focus {
+      background: @PickledBluewood-1100;
+      border: 1px solid @Porcelain-900;
+      box-shadow: 0px 0px 6px 0px rgba(41, 128, 185, 1);
+    }
+    &:hover {
+      background: @PickledBluewood-600;
+      border: 1px solid @Cascade-500;
+    }
+  }
+}

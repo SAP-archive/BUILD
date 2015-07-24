@@ -1,0 +1,143 @@
+<ui-toolbar layout="column" class="left-nav-title">
+    <h1 class="ui-toolbar-tools" flex layout="column">Directives > ui-draggable/ui-droppable</h1>
+</ui-toolbar>
+<ui-content flex ui-scroll-y >
+    <ui-content flex class="doc-content">
+        <div layout="row"><a name="DragDrop-Droppable"><h2 class="item-name">ui-draggable</h2></a></div>
+        <div layout="row">
+            <div class="item" flex="20" flex-sm="20">
+                <ul style="border: 1px solid gray; padding: 5px; width: 250px; height: 200px; display: block; float: left; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;">
+                    <li ui-draggable="true" drag="pop" on-drop-success="dropSuccessHandler($event, $index, popLegend)" drag-channel="pop" ng-repeat="pop in popLegend">{{pop}}</li>
+                </ul>
+            </div>
+            <div class="code" flex="80" flex-sm="80">
+                <pre><code>
+&lt;ul&gt;
+    &lt;li ui-draggable="true" 
+        drag="pop" 
+        on-drop-success="dropSuccessHandler($event, $index, pop)" 
+        drag-channel="pop" 
+        ng-repeat="pop in popLegend"&gt;{{pop}}&lt;/li&gt;
+&lt;/ul&gt;
+                </code></pre>
+            </div>
+        </div>
+
+        <div layout="row"><a name="Directives-Tooltip-Top"><h2 class="item-name">ui-draggable options</h2></a></div>
+        <div layout="row">
+            <div class="item">
+                <div class="table-options">
+                    <table class="table-options-values">
+                        <thead>
+                            <tr>
+                                <th style="width: 100px;">Name</th>
+                                <th style="width: 100px;">type</th>
+                                <th>description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ui-draggable</td>
+                                <td>expression</td>
+                                <td>Expression that should be evaluated. The given expression should resolve to true or false.</td>
+                            </tr>
+                            <tr>
+                                <td>drag</td>
+                                <td>variable</td>
+                                <td>Takes any JSON convertable $scope variable.</td>
+                            </tr>
+                            <tr>
+                                <td>drag-handle-class</td>
+                                <td>string</td>
+                                <td>
+                                    Class name used to mark child elements of draggable object to be used as drag handle.
+                                    <br /> If attribute is not present drag handle feature is not used.
+                                    <br /> If attribute is present but have no value drag-handle used as default.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>on-drop-success</td>
+                                <td>function</td>
+                                <td>Takes any $scope function. Can also pass $event.</td>
+                            </tr>
+                            <tr>
+                                <td>on-drop-failure</td>
+                                <td>function</td>
+                                <td>Takes any $scope function. Can also pass $event.</td>
+                            </tr>
+                            <tr>
+                                <td>drag-channel</td>
+                                <td>string</td>
+                                <td>Takes a string that can be used as the channel name for the dragging operation. Default channel is "defaultchannel".</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div layout="row"><a name="DragDrop-Droppable"><h2 class="item-name">ui-droppable</h2></a></div>
+        <div layout="row">
+            <div class="item" flex="20" flex-sm="20">
+                <ul ui-droppable="onDrop($event, $data, rockLegend)" drop-channel="rock, pop" style="border: 1px solid gray; padding: 5px; width: 250px; height: 200px; display: block; float: left; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;">
+                    <li ng-repeat="rock in rockLegend">{{rock}}</li>
+                </ul>
+            </div>
+            <div class="code" flex="80" flex-sm="80">
+                <pre><code>
+&lt;ul ui-droppable="onDrop($event, $data, rockLegend)" drop-channel="rock, pop"&gt;
+    &lt;li ng-repeat="rock in rockLegend"&gt;{{rock}}&lt;/li&gt;
+&lt;/ul&gt;
+                </code></pre>
+            </div>
+        </div>
+
+        <div layout="row"><a name="Directives-Tooltip-Top"><h2 class="item-name">ui-droppable options</h2></a></div>
+        <div layout="row">
+            <div class="item">
+                <div class="table-options">
+                    <table class="table-options-values">
+                        <thead>
+                            <tr>
+                                <th style="width: 100px;">Name</th>
+                                <th style="width: 100px;">type</th>
+                                <th>description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ui-droppable</td>
+                                <td>function</td>
+                                <td>Takes any $scope function. Can also pass $event, $data and $channel.</td>
+                            </tr>
+                            <tr>
+                                <td>drop-channel</td>
+                                <td>expression</td>
+                                <td>
+                                    The channel on which the drop has to listen for drag events.
+                                    <br /> Single value, comma separated list or special value * are possible.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>drag-enter-class</td>
+                                <td>string</td>
+                                <td>
+                                    A class name that will be put on the droppable element when the dragged objects enters its boundaries.
+                                    <br /> Default class name is on-drag-enter.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>drag-hover-class</td>
+                                <td>string</td>
+                                <td>
+                                    A class name that will be put on the drop area when an element is dragged onto it.
+                                    <br /> Default class name is on-drag-hover.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </ui-content>
+</ui-content>

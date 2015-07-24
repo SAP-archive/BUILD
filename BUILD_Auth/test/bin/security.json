@@ -1,0 +1,135 @@
+{
+    "registration": {
+        "self": true,
+        "social": true
+    },
+    "provider": {
+        "local": true
+    },
+    "maxLoginAttempts": 5,
+    "lockTimeInHours": 2,
+    "crypto": {
+        "saltLength": 32,
+        "keyLength": 32,
+        "iterations": 10000,
+        "emailVerifyingTokenLength": 64
+    },
+    "failedLoginReasons": {
+        "notFound": "The email or password you entered is incorrect. Please try again.",
+        "passwordIncorrect": "The email or password you entered is incorrect. Please try again.",
+        "maxAttempts": "Your account has been temporarily locked, please try again later."
+    },
+    "passwordPolicy": {
+        "minLength": 6,
+        "maxLength": 13,
+        "digits": {
+            "allowed": true
+        },
+        "upperCase": {
+            "allowed": true
+        },
+        "lowerCase": {
+            "allowed": true
+        },
+        "specialCharacters": {
+            "allowed": true
+        },
+        "bannedPasswords": [
+        ],
+        "bannedCharacterCombination": ["@sap.com"]
+    },
+    "errorMessage": "Validation error",
+    "scopes": [
+        {
+            "name": "access",
+            "permissions": {
+                "standard": ["standard"],
+                "guest": ["guest"]
+            }
+        },
+        {
+            "name": "project",
+            "permissions": {
+                "collaborator": ["standard"]
+            }
+        },
+        {
+            "name": "study",
+            "permissions": {
+                "participant": ["guest"]
+            }
+        }
+     ],
+    "roles": {
+        "projectRoles" : [
+            {
+                "roles" : "owner-projectId",
+                "allows" : [
+                    {
+                        "resources" : "/projectId",
+                        "permissions" : ["*"]
+                    },
+                    {
+                        "resources" : "/api/projects/projectId",
+                        "permissions" : ["*"]
+                    }
+                ]
+            },
+            {
+                "roles" : "collaborator-projectId",
+                "allows" : [
+                    {
+                        "resources" : "/projectId",
+                        "permissions" : ["put", "post", "patch", "get"]
+                    },
+                    {
+                        "resources" : "/api/projects/projectId",
+                        "permissions" : ["put", "post", "patch", "get"]
+                    }
+                ]
+            },
+            {
+                "roles" : "spectator-projectId",
+                "allows" : [
+                    {
+                        "resources" : "/projectId",
+                        "permissions" : ["get"]
+                    },
+                    {
+                        "resources" : "/api/projects/projectId",
+                        "permissions" : ["get"]
+                    }
+                ]
+            }
+        ],
+        "defaultGlobalRole": "standard",
+        "globalRoles": [
+            {
+                "roles": "admin",
+                "allows": [
+                    {
+                        "resources": "/api",
+                        "permissions": ["*"]
+                    },
+                    {
+                        "resources": "/api/users",
+                        "permissions": ["post"]
+                    }
+                ]
+            },
+            {
+                "roles": "standard",
+                "allows": [
+                    {
+                        "resources": "/api",
+                        "permissions": ["get"]
+                    },
+                    {
+                        "resources": "/api/users/avatar",
+                        "permissions": ["post"]
+                    }
+                ]
+            }
+        ]
+    }
+}

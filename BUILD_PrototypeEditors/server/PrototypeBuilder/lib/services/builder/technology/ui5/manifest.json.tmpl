@@ -1,0 +1,142 @@
+{
+	"_version": "1.1.0",
+	"sap.app": {
+		"_version": "1.1.0",
+		"id": "generated.app",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0"
+		},
+		"title": "{{title}}",
+		"description": "{{description}}",
+		"tags": {
+			"keywords": []
+		},
+		"ach": "SD-SO",
+		"dataSources": {
+			"main": {
+				"uri": "/sap/opu/odata/sap/S_PROTOTYPE_MDS_SRV/",
+				"type": "OData",
+				"settings": {
+					"annotations": ["mainAnnotations"],
+					"localUri": "models/metadata.xml"
+				}
+			},
+			"mainAnnotations": {
+				"uri": "models/annotations.xml",
+				"type": "ODataAnnotation"
+			}
+		},
+		"offline": false,
+		"resources": "resources.json"
+	},
+
+	"sap.ui": {
+		"_version": "1.1.0",
+
+		"technology": "UI5",
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+            "sap_hcb",
+            "sap_bluecrystal"
+        ]
+	},
+
+	"sap.ui5": {
+		"_version": "1.1.0",
+
+		"resources": {
+			"js": [
+				{}
+            ],
+			"css": []
+		},
+
+		"dependencies": {
+			"minUI5Version": "1.29.0",
+			"libs": {
+				"sap.ui.core": {
+					"minVersion": "1.29.0"
+				},
+				"sap.m": {
+					"minVersion": "1.29.0"
+				},
+				"sap.ui.comp": {
+					"minVersion": "1.29.0"
+				},
+				"sap.uxap": {
+					"minVersion": "1.29.0"
+				},
+				"sap.ui.commons": {
+					"minVersion": "1.28.0"
+				}
+			},
+			"components": {
+                "sap.suite.ui.generic.template.ListReport": {
+                    "minVersion": "1.1.0"
+                },
+                "sap.suite.ui.generic.template.ObjectPage": {
+                    "minVersion": "1.1.0"
+                }
+            }
+		},
+
+		"models": {
+			"": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "dataSource": "main",
+                "settings": {
+                    "loadMetadataAsync": false,
+                    "json": true,
+                    "bJSON": true,
+                    "defaultBindingMode": "TwoWay",
+                    "useBatch": true,
+                    "refreshAfterChange": false
+                }
+            },
+            "i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"uri": "i18n/i18n.properties"
+			}
+		},
+
+		"config": {},
+
+		"routing": {
+			"_comment_": "We keep the routing in the config section above until we figure out how to do it differently"
+		},
+
+		"extends": {
+			"component": "sap.ui.generic.app",
+			"minVersion": "1.0.0",
+			"extensions": {}
+		},
+
+		"contentDensities": {
+            "compact": true,
+            "cozy": true
+        }
+	},
+	"sap.ui.generic.app": <%=smartAppConfig%>,
+	"sap.platform.abap": {
+		"_version": "1.1.0",
+		"uri": ""
+	},
+
+	"sap.platform.hcp": {
+		"_version": "1.1.0",
+		"uri": ""
+	},
+
+	"sap.fiori": {
+		"_version": "1.1.0",
+		"registrationIds": [""],
+		"archeType": "transactional"
+	}
+
+}

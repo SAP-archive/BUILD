@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>check</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="check" sketch:type="MSLayerGroup">
+            <circle id="o2" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="16.5" cy="16.5" r="16.5"></circle>
+            <circle id="o" fill="#27AE60" sketch:type="MSShapeGroup" cx="16.5" cy="16.5" r="14.5"></circle>
+            <path d="M8,17.7622568 L9.57566899,15.9944331 L13.8107598,19.7299215 C13.8107598,19.7299215 19.0487447,12.9008952 24.5637399,9 C25.0252187,9.97430147 24.5637399,9 25.255497,10.4603761 C19.2741038,16.4531449 14.6485545,24.9488447 14.6485545,24.9488447 L8,17.7622568" id="c" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

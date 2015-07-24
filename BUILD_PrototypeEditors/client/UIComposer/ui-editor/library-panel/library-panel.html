@@ -1,0 +1,105 @@
+<div class="np-e-sidebar np-e-sidebar-js">
+    <ui-tabs class="np-e-sidebar-tabs" selected-tab="tab-uibuilder" tab-on="library.tabOn">
+        <ui-tab-option id="tab-uibuilder" title="CONTROLS" class="np-e-sidebar-tab--controls">
+            <div class="np-e-library" ng-if="library.library.technologies.length > 1">
+                <div class="np-e-library-inner">Library: {{library.library.technology.displayName}}</div>
+                <img src="resources/norman-prototype-editors-client/UIComposer/assets/images/settings.svg" class="np-e-library-inner-img"
+                     ui-popup-open="libraryDropdown"/>
+            </div>
+            <ui-popup id="libraryDropdown" class="np-e-dropdown-menu" placement="left" dark on-open="library.resetSearch()">
+                <li class="np-e-dropdown-menu-listitem">
+                    <a class="np-e-dropdown-menu-link" href="#">Choose a library</a>
+                </li>
+                <div class="np-e-library-search">
+                    <ui-input dark class="np-e-library-search-text" type="search" placeholder="Search library"
+                              ng-model="library.library.technology.search.displayName" results="0"></ui-input>
+                </div>
+                <li class="np-e-dropdown-menu-listitem"
+                    ng-repeat="technology in library.library.technologies | filter:library.library.technology.search track by $index"
+                    ng-click="library.selectLibrary(technology)">
+                    <a ui-popup-close class="np-e-dropdown-menu-link" href="#">{{technology.displayName}}</a>
+
+                    <div class="np-e-dropdown-menu-separator"></div>
+                </li>
+            </ui-popup>
+            <div class="np-e-sidebar-search">
+                <ui-input dark class="np-e-sidebar-search-inner" placeholder="Find UI Element"
+                          ng-model="library.library.search.displayName" results="0"></ui-input>
+                <np-svg-icon ng-if="library.library.search.displayName.length > 0" class="np-e-sidebar-search-filter-icon"
+                             src="resources/norman-prototype-editors-client/UIComposer/assets/images/palette-search-filter.svg"></np-svg-icon>
+            </div>
+            <div class="np-e-library-control-palette">
+                <div class="np-e-library-header" ng-repeat="(groupName, controls) in library.library.catalog">
+                    <h5>{{groupName}}</h5>
+                    <np-component-library-item ng-repeat="component in controls | filter:library.library.search"
+                                               display-name="{{::component.displayName}}"
+                                               icon-src="{{::component.iconSrc}}"
+                                               type="control"
+                                               drag-data="{
+                                                    catalogControlName: '{{::component.name}}',
+                                                    catalogId: '{{::component.catalogId}}'
+                                                  }">
+                    </np-component-library-item>
+                </div>
+            </div>
+        </ui-tab-option>
+        <ui-tab-option id="tab-assets" title="ASSETS">
+            <div class="np-e-sidebar-search">
+                <ui-input dark class="np-e-sidebar-search-inner" placeholder="Find Asset" ng-model="library.library.assets.search.title"
+                          results="0"></ui-input>
+                <np-svg-icon ng-if="library.library.assets.search.title.length >0" class="np-e-sidebar-search-filter-icon"
+                             src="resources/norman-prototype-editors-client/UIComposer/assets/images/palette-search-filter.svg"></np-svg-icon>
+            </div>
+            <ui-accordion allow-multiple>
+                <ui-accordion-pane expanded="library.library.assetsOpen" ng-show="(library.library.assets | filter:library.library.assets.search).length>0">
+                    <ui-accordion-pane-header>
+                        <h5>Images</h5>
+                    </ui-accordion-pane-header>
+                    <ui-accordion-pane-content class="np-e-library-accordion-pane-content" layout="row" layout-align="start start" layout-wrap>
+                        <np-component-library-item
+                                                   ng-repeat="component in library.library.assets | filter:library.library.assets.search"
+                                                   display-name="{{::component.title | limitTo: 30}}"
+                                                   icon-src="resources/norman-prototype-editors-client/UIComposer/assets/images/palette/asset.svg"
+                                                   type="asset"
+                                                   drag-data="{
+                                                        assetSrc:'/api/projects/{{::uieditor.currentProject}}/document/{{::component.assetId}}/render'
+                                                        }"
+                                                   np-preview-image-on-hover>
+                        </np-component-library-item>
+                    </ui-accordion-pane-content>
+                </ui-accordion-pane>
+            </ui-accordion>
+        </ui-tab-option>
+        <ui-tab-option id="tab-data" title="DATA">
+            <ui-accordion class="np-e-data-accordion">
+                <ui-accordion-pane ng-repeat="entity in library.allEntities">
+                    <ui-accordion-pane-header>
+                        <np-component-library-item class="np-e-library-item-header"
+                                               display-name="{{ entity.name }}"
+                                               type="binding"
+                                               drag-data="{
+                                                   isBinding: true,
+                                                   entityId: '{{::entity._id}}',
+                                                   entityName: '{{::entity.name}}'
+                                               }">
+                        </np-component-library-item>
+                    </ui-accordion-pane-header>
+                    <ui-accordion-pane-content class="np-e-library-accordion-pane-content droppable-data-modeler-elements" layout="row" layout-align="start start" layout-wrap>
+                        <np-component-library-item
+                                                   ng-repeat="property in entity.properties | filter: {isForeignKey: false}"
+                                                   display-name="{{ property.name }}"
+                                                   type="binding"
+                                                   drag-data="{
+                                                       isBinding: true,
+                                                       entityId: '{{::entity._id}}',
+                                                       entityName: '{{::entity.name}}',
+                                                       propertyId: '{{::property._id}}',
+                                                       propertyName: '{{::property.name}}'
+                                                   }">
+                        </np-component-library-item>
+                    </ui-accordion-pane-content>
+                </ui-accordion-pane>
+            </ui-accordion>
+        </ui-tab-option>
+    </ui-tabs>
+</div>

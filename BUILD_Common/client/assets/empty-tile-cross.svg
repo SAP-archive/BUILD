@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 330 171">
+    <line x1="0" y1="0" x2="330" y2="171"
+         style="stroke:rgb(219,223,225);stroke-width:1"/>
+    <line x1="0" y1="171" x2="330" y2="0"
+          style="stroke:rgb(219,223,225);stroke-width:1" />
+</svg>

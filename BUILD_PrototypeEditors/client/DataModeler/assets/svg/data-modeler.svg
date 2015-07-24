@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="23px" viewBox="0 0 20 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Type something</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="USE-CASE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="15" sketch:type="MSArtboardGroup" transform="translate(-68.000000, -70.000000)" filter="url(#filter-1)" fill="#FFFFFF">
+            <g id="BLUE-BAR-for-DM-0" sketch:type="MSLayerGroup" transform="translate(0.000000, 60.000000)">
+                <path d="M78.0000107,18.9999893 C74.4726628,18.9999893 70.9335961,18.367176 69,17.0077994 L69,18.9999893 C69,20.652335 73.0312548,21.9999928 78.0000107,21.9999928 C82.9687667,21.9999928 87.0000215,20.652335 87.0000215,18.9999893 L87.0000215,17.0077994 C85.0664254,18.367176 81.5273587,18.9999893 78.0000107,18.9999893 L78.0000107,18.9999893 Z M78.0000107,28 C74.4726628,28 70.9335961,27.3671867 69,26.0078101 L69,28 C69,29.6523457 73.0312548,31.0000036 78.0000107,31.0000036 C82.9687667,31.0000036 87.0000215,29.6523457 87.0000215,28 L87.0000215,26.0078101 C85.0664254,27.3671867 81.5273587,28 78.0000107,28 L78.0000107,28 Z M78.0000107,23.4999946 C74.4726628,23.4999946 70.9335961,22.8671814 69,21.5078048 L69,23.4999946 C69,25.1523404 73.0312548,26.4999982 78.0000107,26.4999982 C82.9687667,26.4999982 87.0000215,25.1523404 87.0000215,23.4999946 L87.0000215,21.5078048 C85.0664254,22.8671814 81.5273587,23.4999946 78.0000107,23.4999946 L78.0000107,23.4999946 Z M78.0000107,9.99997854 C73.0312548,9.99997854 69,11.3476364 69,12.9999821 L69,14.4999839 C69,16.1523296 73.0312548,17.4999875 78.0000107,17.4999875 C82.9687667,17.4999875 87.0000215,16.1523296 87.0000215,14.4999839 L87.0000215,12.9999821 C87.0000215,11.3476364 82.9687667,9.99997854 78.0000107,9.99997854 L78.0000107,9.99997854 Z" id="Type-something" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

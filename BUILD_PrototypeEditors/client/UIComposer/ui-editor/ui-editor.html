@@ -1,0 +1,175 @@
+<div layout-fill class="ui-editor">
+    <header class="np-e-toolbar" ng-class="{'np-e-header--dark': uieditor.showInteractiveMode}" layout="row" layout-align="space-between center">
+        <div class="np-e-toolbar-left" layout="row" layout-align="start center">
+            <span id="np-e-toggle-nav-icon" class="np-e-header-toggle-nav-icon prototype-assets--images--header--panel-left-icon np-e-header-dimensions" ui-tooltip-content="Show/Hide Sidebar"
+                  ui-tooltip-side="top"
+                  ui-tooltip ui-tooltip-class="ui-tooltip-white"
+                  ng-class="{'prototype-assets--images--header--panel-left-icon-off': uieditor.toggleNavigationBar.toggled, 'prototype-assets--images--header--panel-left-icon' : !uieditor.toggleNavigationBar.toggled, 'np-e-header-icon-invis': uieditor.showInteractiveMode}"
+                  ng-click="uieditor.toggleNavigationBar()"></span>
+            <span ng-if="uieditor.dataModelerEnabled || uieditor.generationVisible" class="np-e-header-separator"
+                  ng-class="{'np-e-header-icon-invis': uieditor.showInteractiveMode}"></span>
+            <span ng-if="uieditor.dataModelerEnabled"
+                  class="np-e-header-generate-icon np-e-header-icon-disabled prototype-assets--images--header--brush-off np-e-header-dimensions"
+                  ui-tooltip-content="UI Composer" ui-tooltip-side="top"
+                  ui-tooltip
+                  ui-tooltip-class="ui-tooltip-white" ng-show="true"
+                  ng-class="{'np-e-header-icon-invis': uieditor.showInteractiveMode}"></span>
+            <span ng-if="uieditor.dataModelerEnabled" id="np-e-data-modeler-icon"
+                  class="np-e-header-icon-active prototype-assets--images--header--data-binding-icon np-e-header-dimensions"
+                  ui-tooltip-content="Data Modeler" ui-tooltip-side="top" ui-tooltip
+                  ui-tooltip-class="ui-tooltip-white" ng-click="uieditor.openDataModeler()"
+                  ng-class="{'np-e-header-icon-invis': uieditor.showInteractiveMode}"></span>
+            <span class="np-e-header-generate-icon prototype-assets--images--header--brush-icon np-e-header-dimensions" ui-tooltip-content="Generate Prototype..." ui-tooltip-side="top" ui-tooltip
+                  ui-tooltip-class="ui-tooltip-white" ng-show="uieditor.generationVisible" ui-dialog-open="generateDialog" ng-click="uieditor.dialogOpen()"
+                  ng-class="np-e-header-icon-inactive"></span>
+        </div>
+        <div class="np-e-toolbar-right" layout="row" layout-align="start center">
+            <span id="np-e-form-factor-{{::formFactor.type}}-icon" ng-repeat="formFactor in ::uieditor.canvasFormFactors"
+                  class="np-e-header-icon-devices {{::formFactor.icon}} np-e-header-dimensions" ui-tooltip-content="{{::formFactor.name}}" ui-tooltip-side="top" ui-tooltip
+                  ui-tooltip-class="ui-tooltip-white"
+                  ng-class="{'{{::formFactor.icon}}': uieditor.selectedFormFactor === formFactor, '{{::formFactor.icon}}-off': uieditor.selectedFormFactor !== formFactor}"
+                  ng-click="uieditor.setCanvasFormFactor(formFactor)"></span>
+            <span class="np-e-header-separator" ng-class="{'np-e-header-icon-invis': uieditor.showInteractiveMode}"></span>
+            <span id="np-e-ruler-icon" class="np-e-header-ruler-icon prototype-assets--images--header--ruler-icon np-e-header-dimensions" ui-tooltip-content="Show/Hide Ruler" ui-tooltip-side="top"
+                  ui-tooltip
+                  ui-tooltip-class="ui-tooltip-white"
+                  ng-class="{'prototype-assets--images--header--ruler-icon-off':uieditor.rulerHidden === true, 'prototype-assets--images--header--ruler-icon' : uieditor.rulerHidden === false, 'np-e-header-icon-invis': uieditor.showInteractiveMode}"
+                  ng-click="uieditor.rulerHidden = !uieditor.rulerHidden"></span>
+            <span id="np-e-grid-icon" class="np-e-header-grid-icon prototype-assets--images--header--grid np-e-header-dimensions" ui-tooltip-content="Show/Hide Grid" ui-tooltip-side="top" ui-tooltip
+                  ui-tooltip-class="ui-tooltip-white"
+                  ng-class="{'prototype-assets--images--header--grid':uieditor.gridVisible === true, 'prototype-assets--images--header--grid-off' : uieditor.gridVisible === false, 'np-e-header-icon-invis': uieditor.showInteractiveMode}"
+                  ng-click="uieditor.gridVisible = !uieditor.gridVisible"></span>
+            <span id="np-e-snapping-icon" class="np-e-header-snap-icon prototype-assets--images--header--snap-icon np-e-header-dimensions" ui-tooltip-content="Enable/Disable Snap"
+                  ui-tooltip-side="top" ui-tooltip
+                  ui-tooltip-class="ui-tooltip-white"
+                  ng-class="{'prototype-assets--images--header--snap-icon':uieditor.snappingEnabled === true, 'prototype-assets--images--header--snap-icon-off' : uieditor.snappingEnabled === false, 'np-e-header-icon-invis': uieditor.showInteractiveMode}"
+                  ng-click="uieditor.snapIconClicked()"></span>
+            <span id="np-e-page-map-icon" class="np-e-header-page-map-icon prototype-assets--images--header--map np-e-header-dimensions" ui-tooltip-content="To Page Map" ui-tooltip-side="top"
+                  ui-tooltip
+                  ui-tooltip-class="ui-tooltip-white"
+                  ng-class="{'np-e-header-icon-invis': uieditor.showInteractiveMode}"
+                  ng-click="uieditor.openPageMapView()"></span>
+            <span class="np-e-header-separator" ng-class="{'np-e-header-icon-invis': uieditor.showInteractiveMode}"></span>
+            <ui-zoom ng-class="{'np-e-header-icon-invis': uieditor.showInteractiveMode}"></ui-zoom>
+            <span id="np-e-toggle-siderbar-left-icon" class="np-e-header-toggle-sidebar-left-icon prototype-assets--images--header--panel-left-icon np-e-header-dimensions"
+                  ui-tooltip-content="Show/Hide Sidebar" ui-tooltip-side="top"
+                  ui-tooltip ui-tooltip-class="ui-tooltip-white"
+                  ng-class="{'prototype-assets--images--header--panel-left-icon-off': uieditor.toggleSideBarLeft.toggled, 'prototype-assets--images--header--panel-left-icon' : !uieditor.toggleSideBarLeft.toggled, 'np-e-header-icon-invis': uieditor.showInteractiveMode}"
+                  ng-click="uieditor.toggleSideBarLeft()"></span>
+            <span id="np-e-toggle-siderbar-right-icon" class="np-e-header-toggle-sidebar-right-icon prototype-assets--images--header--panel-right-icon np-e-header-dimensions"
+                  ui-tooltip-content="Show/Hide Sidebar" ui-tooltip-side="top"
+                  ui-tooltip ui-tooltip-class="ui-tooltip-white"
+                  ng-class="{'prototype-assets--images--header--panel-right-icon-off': uieditor.toggleSideBarRight.toggled, 'prototype-assets--images--header--panel-right-icon' : !uieditor.toggleSideBarRight.toggled, 'np-e-header-icon-invis': uieditor.showInteractiveMode}"
+                  ng-click="uieditor.toggleSideBarRight()"></span>
+            <span id="np-e-undo-icon" ui-tooltip-content="Undo" ui-tooltip-side="top" ui-tooltip
+                  ui-tooltip-class="ui-tooltip-white"
+                  ng-class="{'np-e-header-icon-invis': uieditor.showInteractiveMode, 'prototype-assets--images--header--undo-icon': uieditor.commandManager.hasUndoCommands(), 'prototype-assets--images--header--undo-icon-off': !uieditor.commandManager.hasUndoCommands()}"
+                  ng-click="uieditor.commandManager.undo()" class="prototype-assets--images--header--undo-icon-off np-e-header-dimensions"></span>
+            <span id="np-e-redo-icon" ui-tooltip-content="Redo" ui-tooltip-side="top" ui-tooltip
+                  ui-tooltip-class="ui-tooltip-white"
+                  ng-class="{'np-e-header-icon-invis': uieditor.showInteractiveMode, 'prototype-assets--images--header--redo-icon': uieditor.commandManager.hasRedoCommands(), 'prototype-assets--images--header--redo-icon-off': !uieditor.commandManager.hasRedoCommands()}"
+                  ng-click="uieditor.commandManager.redo()" class="prototype-assets--images--header--redo-icon-off np-e-header-dimensions"></span>
+            <span class="np-e-header-separator np-e-header-separator-panel" ng-class="{'np-e-header-icon-invis': uieditor.showInteractiveMode}"></span>
+            <span id="np-e-create-research-study-icon" class="np-e-header-icon-active prototype-assets--images--header--research np-e-header-dimensions" ui-tooltip-content="Create Study"
+                  ui-tooltip-side="top"
+                  ui-tooltip ui-tooltip-class="ui-tooltip-white" ui-dialog-open="study-create-modal" ng-show="!uieditor.prototypeLocked && !uieditor.showInteractiveMode"
+                  ng-click="uieditor.dialogOpen()"></span>
+            <span id="np-e-publish-icon" class="np-e-header-icon-active np-e-header-share-icon prototype-assets--images--header--share-icon np-e-header-dimensions" ui-tooltip-content="Publish"
+                  ui-tooltip-side="top" ui-tooltip
+                  ui-tooltip-class="ui-tooltip-white" ui-popup-open="np-e-publish-popup" ng-show="!uieditor.prototypeLocked && !uieditor.showInteractiveMode" ng-click="uieditor.dialogOpen()"></span>
+            <button id="np-e-preview-icon" class="np-e-header-button" ng-show="!uieditor.showInteractiveMode"
+                    ui-tooltip-content="Preview" ui-tooltip-side="top" ui-tooltip ui-tooltip-class="ui-tooltip-white"
+                    ng-click="uieditor.toggleInteractiveMode()">PREVIEW
+            </button>
+            <button id="np-e-edit-icon" class="np-e-header-button" ng-show="uieditor.showInteractiveMode && !uieditor.prototypeLocked"
+                    ui-tooltip-content="Editor" ui-tooltip-side="top" ui-tooltip ui-tooltip-class="ui-tooltip-white"
+                    ng-click="uieditor.toggleInteractiveMode()">EDITOR
+            </button>
+        </div>
+    </header>
+
+    <div class="np-e-content" layout="row">
+        <aside class="np-e-side-panel np-e-side-panel-left"
+               ng-class="{'np-e-side-panel-left--hidden': uieditor.showInteractiveMode || uieditor.toggleSideBarLeft.toggled, 'np-e-side-panel-left-full' : uieditor.isSmartApplication}">
+            <div class="np-e-tree-panel" ui-view="tree-panel" ng-if="!uieditor.isSmartApplication"></div>
+            <div class="np-e-library-panel" ui-view="library-panel"></div>
+        </aside>
+        <aside class="np-e-side-panel np-e-side-panel-left" ng-if="uieditor.isSmartApplication" ng-class="{'np-e-side-panel-left--hidden': uieditor.showInteractiveMode}">
+            <div class="np-e-outline-panel" ui-view="outline-panel"></div>
+        </aside>
+        <div class="np-e-canvas-scale-container" np-zoom-handler np-scrollable-scale>
+            <div class="np-e-canvas-container np-e-disable-user-select np-e-canvas-container-js">
+                <div class="np-e-canvas-container-inner np-e-canvas-container-inner-js"
+                     ng-class="{'np-e-canvas-container-inner-view-interactive-mode': uieditor.showInteractiveMode, 'np-e-canvas-container-inner-view-editor-mode': uieditor.applyLeaveAnimation}"
+                     ng-style="{'width': uieditor.canvasZoomContainerWidth, 'height': uieditor.canvasZoomContainerHeight}">
+                    <div ui-view="ui-canvas" ng-style="{'transform': 'scale(' + uieditor.zoom + ')', 'min-width': uieditor.selectedFormFactor.adjustedWidth}"></div>
+                </div>
+            </div>
+            <div np-scale type="yscale" id="np-e-yscale" class="np-e-canvas-yscale" ng-class="{'np-e-canvas-yscale--show': !uieditor.rulerHidden}"></div>
+            <div np-scale type="xscale" id="np-e-xscale" class="np-e-canvas-xscale" ng-class="{'np-e-canvas-xscale--show': !uieditor.rulerHidden}"></div>
+            <div class="np-e-right-click-menu" ng-show="uieditor.rightclickMenu.show" ng-style="uieditor.rightclickMenu.styles" np-prevent-context-menu>
+                <div ng-repeat="element in uieditor.rightclickMenu.elements" ng-click="uieditor.rightclickMenu.selectElement(element)">{{element.name}}</div>
+            </div>
+        </div>
+        <aside class="np-e-side-panel np-e-side-panel-right" ng-class="{'np-e-side-panel-right--hidden': uieditor.showInteractiveMode || uieditor.toggleSideBarRight.toggled}"
+               ng-if="!uieditor.isSmartApplication">
+            <div class="np-e-property-panel" ui-view="property-panel"></div>
+        </aside>
+    </div>
+    <div class="np-e-interactive-mode-header" ng-class="{'np-e-interactive-mode-header--active': uieditor.showInteractiveMode}"></div>
+    <div class="np-e-content np-e-interactive-mode" ng-class="{'np-e-interactive-mode--active': uieditor.showInteractiveMode}"></div>
+    <div class="np-e-interactive-mode-footer" ng-class="{'np-e-interactive-mode-footer--active': uieditor.showInteractiveMode && uieditor.prototypeLocked && uieditor.showLockedFooter}">
+        <div class="np-e-interactive-mode-footer-content">
+            <span class="np-e-interactive-mode-footer-content-span np-e-interactive-mode-footer-content-span-left">Prototype Locked</span>
+            <ui-avatar avatar-name="{{uieditor.currentAvatar.name}}" avatar-state="active" avatar-image="{{uieditor.currentAvatar.image}}"></ui-avatar>
+            <span class="np-e-interactive-mode-footer-content-span np-e-interactive-mode-footer-content-span-right">{{uieditor.currentAvatar.name}},&nbsp;</span>
+            <span class="np-e-interactive-mode-footer-content-span">Editing</span>
+        </div>
+        <span id="np-e-interactive-footer-icon" class="np-e-interactive-mode-footer-icon prototype-assets--images--x-close-icon np-e-header-dimensions"
+              ui-tooltip-class="ui-tooltip-white"
+              ng-click="uieditor.hideLockedFooter()"></span>
+    </div>
+</div>
+<ui-dialog id="study-create-modal" modal="true" title="Create Study" cancel-text="Cancel" close-text="Create and Go to Research"
+           close-action="uieditor.createSnapshotAndStudy()" cancel-action="uieditor.dialogClose()">
+    <div class="np-e-snapshot-modal">
+        <div class="np-e-snapshot-modal-content">
+            <span>Name:</span>
+            <ui-input dark ng-model="uieditor.userResearch.studyName" placeholder="{{uieditor.userResearch.untitled}}" maxlength="45"></ui-input>
+        </div>
+        <div class="np-e-snapshot-modal-content">
+            <span>Description:</span>
+            <ui-textarea dark resize="none" ng-model="uieditor.userResearch.description" maxlength="300"></ui-textarea>
+        </div>
+    </div>
+</ui-dialog>
+
+<!-- ApplicationType Dialog -->
+<ui-dialog id="generateDialog" title="Select your Design Template" close-text="Generate" cancel-text="Cancel" close-action="uieditor.runAppFlow()" cancel-action="uieditor.dialogClose()">
+    <div ng-repeat="choice in ::uieditor.choices" class="np-e-applicationType">
+        <ui-radio dark ng-model="uieditor.applicationType.selected" ng-value="choice.value" id="{{choice.value}}"></ui-radio>
+        <label for="{{choice.value}}" class="np-e-applicationTypeName">{{choice.text}}</label>
+        <br>
+    </div>
+    <div class="np-e-applicationTypeWarning">
+        Warning: Existing pages will be removed.
+    </div>
+</ui-dialog>
+
+
+<ui-popup id="np-e-publish-popup" class="np-e-publish-popup" placement="bottom" on-open="uieditor.getLastPubProj" on-close="uieditor.dialogClose()">
+    <div class="np-e-publish">
+        <span class="np-e-publish-msgTxt" ng-bind="uieditor.latestSnapShot.lastPublishedDate"></span>
+        <br>
+        <div>
+            <ui-input id="np-e-publish-urltxt" class="np-e-publish-urlTxt"
+                      ng-class="{'np-e-publish-urlTxt-italic':uieditor.latestSnapShot.italicizeURLTxt === true}" click-highlight
+                      value={{uieditor.latestSnapShot.URL}} ng-readonly="true"></ui-input>
+        </div>
+        <br>
+        <span class="np-e-publish-accessTxt" ng-bind="uieditor.latestSnapShot.accessMsg"></span>
+        <ui-button type="button" class="np-e-publish-pubBtn" ng-disabled="uieditor.latestSnapShot.disablePublishing"
+                   ng-bind="uieditor.latestSnapShot.publishButtonLabel" ng-click="uieditor.publishProj()">
+        </ui-button>
+    </div>
+</ui-popup>

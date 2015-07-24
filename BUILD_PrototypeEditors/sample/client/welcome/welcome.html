@@ -1,0 +1,60 @@
+<div class="welcome-main animated fadeIn" ng-controller="WelcomeCtrl">
+	<div class="welcome-wrapper" flex>
+		<div class="header">
+			<div class="header-wrapper">
+				<a href="/" class="norman-logo"><img src="resources/norman-common-client/assets/build-mascot.svg"
+				                                     alt="Build Logo"/><img hspace="5px"
+				                                                            src="resources/norman-common-client/assets/build-type-ffffff.svg"
+				                                                            alt="Build"/></a>
+
+				<a ng-click="login()" class="btn-homecover btn-right" ng-hide="isLoggedIn()"
+				   ng-class="{active: isActive('/login')}">SIGN IN</a>
+				<a href="/signup" class="btn-homecover btn-right" ng-hide="hideSignup()"
+				   ng-class="{active: isActive('/signup')}">SIGN UP</a>
+				<a href="#" class="btn-homecover btn-right" ng-show="showLogout()"
+				   ng-class="{active: isActive('/logout')}" ng-click="logout()">LOG OUT</a>
+			</div>
+
+			<video class="welcome-video" autoplay loop>
+				<source src="assets/Norman_Video.mp4" type="video/mp4"/>
+				<source src="assets/Norman_Video.ogg" type="video/ogg"/>
+				<source src="assets/Norman_Video.webm" type="video/webm"/>
+			</video>
+		</div>
+
+
+		<div class="welcome-row welcome-row-white">
+			<h1>BUILD</h1>
+
+			<h2>Create prototypes in a blink of an eye</h2>
+		</div>
+
+		<div class="welcome-content-row">
+			<div class="welcome-content-wrapper welcome-bubbles white">
+				<div class="welcome-bubble"><img src="assets/welcome-plan.png"><span>Plan</span></div>
+				<div class="welcome-bubble"><img src="assets/welcome-build.png"><span>Build</span></div>
+				<div class="welcome-bubble"><img src="assets/welcome-test.png"><span>Test</span></div>
+				<div class="welcome-bubble"><img src="assets/welcome-share.png"><span>Share</span></div>
+			</div>
+		</div>
+
+		<div class="welcome-content-row welcome-row-signup">
+			<a href="/signup" class="btn-signup" ng-hide="hideSignup()">SIGN UP, IT'S FREE</a>
+
+			<p class="signup-already white" ng-hide="hideSignup()">Already got an account? <a ng-click="login()">Sign In</a>.
+			</p>
+			<button class="welcome-btn-login" ng-show="hideSignup()" ng-click="login()">LOG IN</button>
+		</div>
+
+		<div class="welcome-content-row welcome-foot">
+			<div class="welcome-content-wrapper">
+				<div class="welcome-foot-right">
+					<a href="mailto:contact.build@sap.com">Contact</a>
+				</div>
+				<a class="sap-logo" href="#"><img src="resources/norman-common-client/assets/icon-sap-white.svg"
+				                                  alt="SAP"/></a>
+				<span class="white">&copy; Copyright SAP Ltd. 2015</span>
+			</div>
+		</div>
+	</div>
+</div>

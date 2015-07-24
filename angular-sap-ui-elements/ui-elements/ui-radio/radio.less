@@ -1,0 +1,47 @@
+@import (reference) "../ui-elements";
+
+.ui-radio {
+  display: none;
+}
+
+.ui-radio + label:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  left: 0;
+  border-radius: 20px;
+  transition: opacity 0.3s ease-out;
+  box-sizing: content-box;
+  vertical-align: middle;
+}
+
+.ui-radio.light + label:before {
+  background-color: #ecf0f1;
+  border: 1px #99a8a9 solid;
+}
+
+.ui-radio.dark + label:before {
+  background-color: #4e6276;
+  border: 1px #90a0a2 solid;
+}
+
+.ui-radio.light + label:hover:before {
+  background: url('@{client-assets-dir}/radio-light-over.png') #ecf0f1 no-repeat center center;
+}
+
+.ui-radio.dark + label:hover:before {
+  background: url('@{client-assets-dir}/radio-dark-over.png') #4e6276 no-repeat center center;
+}
+
+.ui-radio.light:checked + label:before, .ui-radio.dark:checked + label:before {
+  border: 3px #2ecc71 solid;
+  background-color: white;
+  height: 12px;
+  width: 12px;
+}
+
+.ui-radio.light:checked + label:hover:before, .ui-radio.dark:checked + label:hover:before {
+  background: #96e5b8;
+}

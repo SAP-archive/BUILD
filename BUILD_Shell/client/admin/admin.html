@@ -1,0 +1,15 @@
+<div class="shell-admin animated fadeIn">
+    <div class="heading"><h1>Admin</h1></div>
+
+    <!-- <label>Admin Settings</label> -->
+    <ul class="shell-admin-settings-list">
+        <li ng-repeat="item in items" ui-sref-active="active">
+            <a ui-sref="{{item.state}}" href="#">{{item.name}}</a>
+        </li>
+    </ul>
+
+    <div class="shell-admin-settings-content">
+        <div ui-view class="animated fadeIn"></div>
+    </div>
+</div>
+

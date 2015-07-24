@@ -1,0 +1,180 @@
+@import (reference) '../node_modules/norman-client-tp/node_modules/angular-sap-ui-elements/styles/variables';
+
+.dm-propertyEditor {
+  .ui-tab-content {
+    font-size: 12px;
+  }
+  &.ui-popup {
+    padding: 0;
+    padding-top: 5px;
+    &.left .ui-popup-arrow {
+      top: 12px;
+    }
+  }
+  .dm-propertyEditor-content {
+    width: 240px;
+    .dm-propEditorEditor-popup {
+      height: 300px;
+      width: 240px;
+      z-index: 100;
+    }
+    table.dm-popup-table {
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-top: 15px;
+      border-spacing: 0px;
+      tr {
+        height: 45px;
+      }
+      .ui-input {
+        font-size: 12px;
+        width: 100%;
+        padding-left: 10px;
+        box-sizing: border-box;
+      }
+      .ui-select {
+        width: 100%;
+        margin-bottom: 0px; //fix for ui-compser overwrite of common style
+        padding-left: 10px;
+        padding-right: 10px; //fix for bad style in ui-select
+        font-size: 12px; //fix for change of style in common
+        box-sizing: border-box;
+      }
+
+      td {
+        text-align: left;
+        vertical-align: middle;
+        white-space: nowrap;
+      }
+
+      td:first-child {
+        padding-right: 10%;
+      }
+
+      .ui-toggle + label {
+        margin: 0;
+        height: 24px;
+        display: block !important;
+        position: relative;
+      }
+
+      .ui-toggle + label::after {
+        top: 0;
+      }
+    }
+    .dm-popup-groupList {
+      > div:first-child {
+        padding-left: 10px;
+      }
+      .dm-popup-groupItem {
+        padding-left:10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        .dm-delete {
+          visibility: hidden;
+          right:10px;
+        }
+        .ui-input {
+          font-size: 12px;
+          width: 110px;
+          padding-left: 10px;
+        }
+      }
+      .dm-popup-groupItem:hover {
+        background-color: rgb(19, 34, 50);
+        > .dm-delete {
+          visibility: visible;
+        }
+      }
+    }
+  }
+
+  .ui-popup.open.dark {
+    padding: 0;
+    padding-top: 5px;
+    background-color: #132232;
+    &.left .ui-popup-arrow {
+      top: 12px;
+      background-color: #132232;
+    }
+  }
+
+  .dm-emptyFormula, .dm-errorFormula {
+    text-align: center;
+    line-height: 16px;
+    color: @Porcelain-500;
+    min-height: 130px;
+    max-height: 130px;
+    margin-top: 25px;
+
+    .dm-formulaWarning {
+      margin: auto;
+    }
+    .dm-formulaInstruction {
+      margin: auto;
+    }
+  }
+
+  .dm-editFormula {
+    width: ~'calc(100% - 30px)';
+    margin: 0 15px;
+  }
+
+  .dm-formulaPreview {
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 20px;
+    position: relative;
+    margin-top: 15px;
+    padding: 10px;
+    min-height: 130px;
+    max-height: 130px;
+    line-height: 16px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    .dm-returns, .dm-removeFormula {
+      display: none;
+    }
+    .dm-removeFormula {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      height: 18px;
+      width: 18px;
+    }
+  }
+
+  .dm-showFullFormula {
+    height: auto !important;
+    overflow-y: auto !important;
+    white-space: normal !important;
+    background-color: @PickledBluewood-1100;
+    padding: 10px 25px 10px 10px !important;
+
+    .dm-returns, .dm-removeFormula {
+      display: inherit !important;
+    }
+  }
+}
+
+.dm-formula-tab {
+  display: table;
+  padding-top: 150px;
+  padding-left: 70px;
+  padding-right: 70px;
+  line-height: normal;
+}
+
+.dm-formula-tab-text {
+  display: table-cell;
+  text-align: center;
+  color: grey;
+}

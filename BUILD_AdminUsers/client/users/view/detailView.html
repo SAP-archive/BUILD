@@ -1,0 +1,21 @@
+<div ng-if="!displaySimple" ng-repeat="user in users" class="box"
+     ng-mouseenter="setHoveredUser(user)"
+     ng-mouseleave="setHoveredUser(null)">
+
+	<div ng-click="_openDialog($index)">
+		<div class="line">
+			<ui-avatar avatar-image="{{user.avatar_url}}" avatar-name={{user.name}}  class="avatarDetail"></ui-avatar>
+			<div class="name detail">{{user.name}}</div>
+		</div>
+		<div class="role" contentEditable=true>{{user.roles[0]}}</div>
+		<div class="email" contentEditable=true>{{user.email}}</div>
+
+	</div>
+    <img ng-show="showDelete(user)"
+         src="resources/norman-admin-users-client/assets/icon_remove.svg"
+         class="closeIcon"
+         ng-click="_getInfoToDelete(user)">
+</div>
+
+
+

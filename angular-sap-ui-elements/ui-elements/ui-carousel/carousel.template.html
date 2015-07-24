@@ -1,0 +1,9 @@
+<div ng-class="{'ui-carousel-container': true, 'ui-carousel-container-vertical': verticalClassEnabled} " class="{{customizedCalssContainer}}">
+    <button ng-class="{leftDisabled: buttonLeftClassDisabled, bLeft: true, 'ui-button': true}" ng-click="onLeftClick()"></button>
+    <div class="gradientLeft"></div>
+    <div ng-swipe-right="onRightClick()" ng-swipe-left='onLeftClick()' class="animate ui-carousel" style="-webkit-transform: translate3d({{currentScroll}}px, 0, 0);">
+        <ui-thumbnail data-ng-repeat="item in items" data-thumbnail-src="{{item.thumbnail}}" data-ng-click="onItemClick(item)" data-size="medium" data-selected="isSelected($index)" class="iThumbnail" />
+    </div>
+    <div class="gradientRight"></div>
+    <button ng-class="{rightDisabled: buttonRightClassDisabled, bRight: true, 'ui-button': true}" ng-click="onRightClick()"></button>
+</div>

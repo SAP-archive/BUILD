@@ -1,0 +1,202 @@
+						BUILD Privacy Statement
+						#######################
+
+
+The BUILD Privacy Statement (this "Privacy Statement") applies to the use of this website,
+https://buildbeta-ac658fc70.dispatcher.hana.ondemand.com/ (the "Website") and any 
+other webpages which reference this Privacy Statement (collectively, the "Services"). 
+Some SAP entities, programs and/or sites may have their own, possibly different, 
+privacy statements. We encourage you to read the privacy statements of each of the SAP
+websites or program information you visit or review. This Privacy Statement does not 
+apply to websites and services that are owned and operated by third parties. 
+Capitalized Terms not defined in the Privacy Statement have the meaning ascribed to them
+in the Terms of Use.
+
+The Services allows Account Holders to create accounts allowing Users to request feedback
+and information from Guest Participants. This Privacy Statement explains how SAP collects
+and uses your personal data in its capacity as the provider of the Services, as well as 
+when an Account Holder or User represent SAP.
+
+SAP is not responsible for third party Account Holders' or Users' collection and use 
+of your personal data through the Service. Please ensure that you read and agree with 
+any additional disclosures that Users provide. 
+
+Consent
+-------
+
+By consenting to this Privacy Statement, you consent to the collection and use of your
+information as described here. If the conditions under which we process your personal data
+change, we will post the changes on this site and ask for your consent to the updated
+Privacy Statement. All other, non-material, changes to this Privacy Statement will only be
+posted to this Website. 
+
+By providing us with any personal data under this Privacy Statement, you consent, agree
+and confirm SAP may process any personal data that you provide in connection with the
+Services outside the European Economic Area, including within the United States.  Please
+note that, although granting any consent is at your sole discretion, if you do not grant
+consent, you will not be able to use the Services. 
+
+Information We Collect
+----------------------
+
+As you use our Services, we may collect, store, process, export and use the following
+types of information about you: 
+	* When SAP is acting as a Service Provider: 
+		o Personal information you provide in your profile as an Account Holder, User or
+		Guest Participant;
+		o Personal information (that can be used to directly or indirectly identify you),
+		such as within comments or feedback you provide to other Users as a Guest
+		participant, but in this case in order to aggregate the information;
+		o Through emails sent to us (depending on how your e-mail application is set up,
+		information about you may also be transmitted automatically when you send e-mail);
+		o Information collected automatically about your device configurations, including 
+		operating system, screen  resolution, browser type; location information; and
+		session information, including duration of visits, entry/exist points, usage
+		frequency. 
+
+	* When SAP is acting through  an SAP User:
+		o Personal information you provide in your profile as a Guest Participant;
+		o Personal information (that can be used to directly or indirectly identify you),
+		such as within comments or feedback to you provide as a Guest Participant via the
+		Services;
+		o Through emails sent to us (depending on how your e-mail application is set up,
+		information about you may also be transmitted automatically when you send e-mail);
+
+We may combine the data you provide us from these various sources to use in accordance
+with the section titled "Use and Purposes of Collected Personal Data" or to create
+anonymous or aggregate information as detailed in the section titled "Anonymous and
+Aggregate Information."
+
+Use and Purpose of Collected Personal Data
+------------------------------------------
+ 
+The information SAP collects to understand your needs and interests helps SAP deliver a
+consistent and personalized experience. We will use such information only as described in
+this Privacy Statement and/or in the way we specify at the time of collection. 
+
+By agreeing to this Privacy Statement, you consent to our using your personal data:
+ 
+When SAP is acting as a Service Provider:
+---------------------------------------- 
+
+	* To provide the Services that you have requested;
+	* To keep you up to date on changes and updates to the Service;
+	* To tailor information about our Services to your individual interests;
+	* To provide the ability to create personal profiles and view protected content; 
+	e.g. to manage the projects you belongs to
+	* To provide the ability to contact you and to provide support or request customer
+	feedback;
+	* To detect, prevent, or investigate security breaches or fraud;
+	* To conduct voluntary questionnaires and surveys in order to provide better Services
+	or improve the Services; 
+	* To create Anonymous and Aggregate Information
+	* To meet contractual obligations; and
+	* To maintain appropriate records for internal administrative purposes. 
+	  When SAP is acting through a User:
+	* To collect the feedback you provide through the Service and contact you for related 
+	follow-up questions; and 
+	* To create Anonymous and Aggregate Information
+
+Choice and Opt-Out
+------------------
+
+We may communicate with users who use our Services for administrative purposes, such as to
+confirm your opening of an account and to send notices and other disclosures as required
+by law.
+ 
+From time to time, we may also send other non-administrative types of communications such
+as surveys, updates or information about events related to the Services. For these
+communications, we provide you the opportunity to exercise an opt-out choice if you do not
+want to receive these other types of communication from us.
+
+Sharing Your Personal Data
+--------------------------
+
+We share your email address within the SAP Group to the extent necessary to accomplish the
+purposes of the Service. The SAP Group includes our parent company, SAP SE and its
+subsidiaries. We do not sell or rent your personal data to third parties unless you have
+granted us separate explicit permission to do so. We may however share information with
+third parties in the following circumstances: 
+
+	* When We Work with Service Providers. We may share your information with our service
+	providers in order to provide you the Service.
+	* When You Give Consent. We may also share information about you with other companies
+	if you give us specific permission or direct us to share the information.
+	* When the Information Does Not Identify You. We may share aggregate or anonymous
+	information in a way that does  not directly identify you as an individual. For more
+	information, please see "Anonymous and Aggregate Information".
+	* To Respond to Legal Requests, Defend Legal Claims or Conduct Investigations. We may
+	respond to subpoenas, court orders, or legal process by disclosing your personal data
+	and other related information, if required. We also may  choose to establish or
+	exercise our legal rights or defend against legal claims. We may collect and possibly
+	share personal data and any other additional information available to us in order to
+	investigate, prevent, or take action regarding illegal activities, suspected fraud,
+	situations involving potential threats to the physical safety of any person,
+	violations of SAP's terms of use, or as otherwise required by law.
+
+Not Intended For Use by Children Under 13
+-----------------------------------------
+
+We do not intend for our websites or online services to be used by anyone under the age of
+13. If you are a parent or guardian and believe we may have collected information about a
+child, please contact us as described in the section titled "Updating Your Personal Data
+and Contacting Us" below.
+
+Anonymous and Aggregate Information
+-----------------------------------
+
+We combine your information in a way that does not directly identify you. For example, we
+may combine information about you with information about other people and share the
+combined information in a way that does not link your information to you. We may also
+share your specific comments and feedback in a way that does not personally identify you.
+ 
+California Do Not Track Disclosure
+----------------------------------
+
+A Do Not Track (DNT) signal sends information from a browser to a website about a user's
+tracking preference. This website does not currently respond to DNT signals, but you can
+set your browser to refuse cookies. Please note that if you do so, some functionality of
+this website may not be available. This website does not allow third parties to gather
+information about you over time and across websites.
+ 
+Links to Other Sites
+--------------------
+
+While using the Services, you may be directed to content or functionality that is hosted
+by a third-party supplier. When information is collected on behalf of SAP exclusively, the
+appropriate SAP entity's privacy statement will be referenced on the site and will govern 
+how information is used. Other sites may have their own privacy statements and personal 
+data collection, use, and disclosure practices.
+ 
+We strongly advise you to familiarize yourself with the privacy statements provided by
+these other sites prior to providing them with any information. SAP is not responsible
+for the privacy practices or the content of other websites outside the SAP Group of
+companies, which may differ from this Privacy Statement. 
+
+Updating Your Personal Data and Contacting Us
+---------------------------------------------
+
+You may update or delete the personal information in your profile and any comment sections
+by accessing the 'Profile' section of the Service.  If such procedure does not work,
+you may at any time request information from SAP about your personal data stored by SAP in
+connection with the Services, or request the correction or deletion of such data by
+contacting the Webmaster below.
+
+We will retain your information for as long as your account is active or as needed to
+provide you services. In case a deletion of your personal data should not be possible for
+legal reasons, SAP will block your personal data against further use until SAP may delete
+such personal data. You may at any time revoke the consent granted hereunder with effect
+for the future. If you do so, (i) you will not be able to use the Services any longer and
+(ii) SAP will delete your personal data stored in connection with the Services.
+
+If you have any other questions about this privacy statement, if you wish to stop
+receiving non-administrative emails, or if you wish to inspect or delete the information
+we hold about you, please contact:
+
+Webmaster:    mailto:contact.build@sap.com
+
+Please note that if you request that your data be deleted (or request SAP to discontinue
+processing such data), further use of certain features of the Website may not be possible.
+
+
+Revised and posted as of July 17 2015

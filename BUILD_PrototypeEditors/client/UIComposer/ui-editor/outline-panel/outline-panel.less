@@ -1,0 +1,77 @@
+/* -------------------------------------------------- */
+/* Norman project ui editor styling - library panel   */
+/* np: norman project                                 */
+/* e: ui editor                                       */
+/* -------------------------------------------------- */
+@import (reference) '../node_modules/norman-client-tp/node_modules/angular-sap-ui-elements/styles/variables';
+
+/*
+ * namespace for ui-editor styles
+ */
+.np-e {
+  /*
+   * sidebar styles
+   */
+  &-sidebar {
+    height: 100%;
+    box-sizing: border-box;
+
+    &-tabs-demi {
+      height: 50%;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+
+  &-outline-panel {
+    width: 271px;
+    display: inline-block;
+    vertical-align: top;
+    border-left: 1px solid #132232;
+    height: 100%;
+    box-sizing: border-box;
+
+    .np-e-tree-handle {
+      box-sizing: border-box;
+      .np-e-tree-handle-text {
+        flex-grow: 1;
+        width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      .np-e-tree-delete-img-container {
+        display: inline-block;
+        width: 24px;
+        height: 12px;
+        visibility: hidden;
+        display: flex;
+        align-content: center;
+        align-self: center;
+      }
+    }
+    .np-e-tree-handle:hover {
+      .np-e-tree-delete-img-container {
+        visibility: visible;
+      }
+    }
+    .np-e-outline {
+      box-sizing: border-box;
+    }
+    .drop-highlight {
+      position: absolute;
+      border: 2px solid #27ae60;
+      width: 100%;
+      height: 50%;
+      box-sizing: border-box;
+      top: 0;
+      z-index: 100;
+      pointer-events: none;
+    }
+
+    .trashcan svg {
+
+    }
+
+  }
+}

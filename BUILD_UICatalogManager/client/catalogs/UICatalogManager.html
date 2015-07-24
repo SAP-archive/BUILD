@@ -1,0 +1,329 @@
+<style>
+    .sdSampleDataTable {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14px;
+        font-family: 'Roboto';
+    }
+
+    .sdSampleDataTable th {
+        text-align: center;
+        background: #132232;
+        border: 1px solid #666;
+        color: white;
+        padding: .5rem;
+        font-weight: bold;
+    }
+
+    .sdSampleDataTable td {
+        text-align: center;
+        border: 1px solid #666;
+        padding: .5rem;
+        background-color: #ECF0F1;
+        color: #2c3e50;
+    }
+
+    .controlLabel {
+        margin: 0px;
+        color: #ffffff;
+        padding-left: 3%;
+    }
+</style>
+<div>
+<form id="uicatalogform">
+<div>
+    <label class="heading">UI Catalogs</label>
+    <ui-select style="margin-left:10rem;" ng-change="selectChange()" ng-model="selectedItem"
+               ng-options="catalog as catalog.name for catalog in catalogInfo">
+    </ui-select>
+    <ui-button ui-dialog-open="copy-control" size="small" ng-hide="displayEditButton"
+               ng-model="displayEditButton">Copy Control
+    </ui-button>
+    <ui-dialog id="copy-control" title="Copy control" cancel-text="Cancel" close-text="Copy"
+               close-action="copy()">
+        <div>
+            <label class="copyText">Target Catalog is : Custom catalog</label>
+        </div>
+    </ui-dialog>
+    <ui-button is-icon class="action-icon" ui-dialog-open="uiLibDialog">
+        <img src="resources/norman-ui-catalog-manager-client/assets/ico-cloud-upload.svg">
+    </ui-button>
+    <ui-dialog id="uiLibDialog" modal="true" title="Upload UI Library" cancel-text="Close"
+               cancel-action="resetUploadDialog()">
+        <div style="padding: 20px; height: 250px;">
+            <p>
+                <ui-file-upload id="uilibUpload" upload-button-id="uiLibUploadFromLink"
+                                success="handleUILibSuccess(response)"
+                                failure="handleUILibError(response)" upload-url="{{libraryToUpload.url}}"
+                                upload-start="showLoading()" is-dialog=false></ui-file-upload>
+
+                <iframe iframe-onload="iframeLoaded()" id="getmetadata-uilib" style="display:none"></iframe>
+
+                <label for="lib-type-select" class="ucm-label">Type</label>
+                <ui-select dark id="lib-type-select"
+                           ng-model="libraryToUpload.type"
+                           ng-change="populateUrl()"
+                           ng-options="value as label for (value, label) in TYPES">
+                </ui-select>
+
+                <ui-input-container>
+                    <label class="ucm-label">Version (already available:
+                        {{availableVersions[libraryToUpload.type]}})</label>
+                    <input id="ui5version" class="ui-input dark" ng-change="populateUrl()"
+                           ng-model="libraryToUpload.version"
+                           placeholder="UI5 version">
+
+                    <div class="ui-catalog-err-message" ng-show="version.error">Already available version</div>
+                </ui-input-container>
+
+            <div style="padding-bottom: 20px;">
+                Please upload only zip files. The zip file must contain a resource directory that includes all libraries.
+            </div>
+                        <span ng-show="libraryToUpload.version && !version.error"
+                              id="uiLibUploadFromLink" size="small" class="ui-button ui-button-large"
+                              style="overflow:visible">Select & Upload</span>
+
+            <div ng-show="uploader.loading">Uploading...</div>
+
+            <ui-button ng-show="uploader.mdatadownload"
+                       size="small" ng-click="downloadMData()">
+                Download MetaData
+            </ui-button>
+        </div>
+    </ui-dialog>
+    <ui-button ng-show="displayEditButton" ng-model="displayEditButton" ng-click="editCustomCatalog()"
+               size="small">Edit Custom Catalog
+    </ui-button>
+
+    <!-- start of delete controls -->
+    <ui-button ui-dialog-open="delete-control" size="small" ng-show="displayEditButton"
+               ng-model="displayEditButton">Delete Control
+    </ui-button>
+
+    <ui-dialog id="delete-control" title="Delete control" cancel-text="Cancel" close-text="Delete"
+               close-action="deleteControls()" content="Are you sure you want to delete these controls?">
+    </ui-dialog>
+    <!-- end of delete controls -->
+
+
+    <ui-button ng-show="displayEditButton" ng-model="displayEditButton" ng-click="downloadCustomCatalog()"
+               size="small">Download Custom Catalog
+    </ui-button>
+
+    <ui-button ng-show="displayEditButton" ng-model="displayEditButton" ng-file-select="onFileSelect($files)"
+               id="fileUpload" resetOnClick="true" size="small">Upload Custom Catalog
+    </ui-button>
+</div>
+<!-- Start of main content -->
+<div layout="row" layout-fill="" style="overflow: hidden; max-width: 100%; max-height: 100%;">
+<div class="sidebar">
+    <div>
+        <input class="searchBar" type="text" placeholder="Search" ng-focus="focus=true"
+               ng-blur="focus=false" ng-model="query.name">
+    </div>
+
+    <ui-sidenav layout="column" style="overflow: hidden; display: flex;  width:21.88rem;height: 40rem;"
+                class="ui-locked-open">
+        <ui-content flex="" class="left-nav-content ng-scope">
+            <ui-accordion allow-multiple control="accordionControl">
+                <ui-accordion-pane ng-repeat="pane in panes" expanded="$first">
+                    <ui-accordion-pane-header>
+                        <h5>
+                            <!-- <input type="checkbox" ng-model="controlsCheckModel.value" ng-click="checkAll()" /> -->
+                            Controls
+                        </h5>
+                    </ui-accordion-pane-header>
+                    <ui-accordion-pane-content>
+                        <!--<div >-->
+                        <div ng-repeat="control in pane.controls|toArray: true |filter:query"
+                             class="ui-accordion-content-entry">
+                            <div ng-class="{'firstRow':selectedRow===control.$key}"
+                                 ng-init="setFirst(control.$key,control,$first)">
+                                <input type="checkbox" model="controlsSelected"
+                                       ng-model="item.Selected"
+                                       name="selectedControls[]" value="{{control.$key}}"
+                                       ng-checked="selection.indexOf(control.$key) > -1"
+                                       ng-click="toggleSelection(control.$key)">
+                                <label class="controlLabel" value="{{control.$key}}"
+                                       ng-click="selectedControl(control.$key,control)">{{control.$key}}</label>
+                            </div>
+                        </div>
+                    </ui-accordion-pane-content>
+                </ui-accordion-pane>
+            </ui-accordion>
+        </ui-content>
+    </ui-sidenav>
+</div>
+
+<!-- Start of right content-->
+<div layout="column" layout-fill="" tabindex="-1" role="main" ui-view="" class="ng-scope">
+    <ui-content flex class="rightPane">
+        <ui-tabs selected-tab="tab1" style="width: 70rem; height: 40rem;">
+            <ui-tab-option id="tab1" title="Properties">
+                <div ng-repeat="(key,value) in properties">
+                    <ui-checkbox style="padding: 10px;" dark
+                                 ng-change="selectedProperties(key,value,isPropertySelected)"
+                                 ng-model="isPropertySelected" id="property{{$index}}"></ui-checkbox>
+                    <label ng-class="value.deprecated===true?'displayDeprecated':'displayLabel'"
+                           for="property{{$index}}">{{key}}</label>
+                    <ui-button size="small" ng-model="displayButton" style="margin: 20px 20px;"
+                               ui-dialog-open="edit-property"
+                               ng-show="displayButton">Edit property
+                    </ui-button>
+                    <ui-button ng-click="deleteProperty(key)" size="small" ng-model="displayButton"
+                               style="margin: 20px 20px;" ng-show="displayButton">Delete property
+                    </ui-button>
+                    <ui-dialog id="edit-property" title="edit-property" cancel-text="Cancel" close-text="Save"
+                               close-action="editProperty(key,value)" cancel-action="cancelEdit('properties')">
+                        <div>
+                            <ui-input-container>
+                                <label class="dark">Type
+                                    </label>
+                                <input disabled class="ui-input light" ng-model="value.type" type="text"
+                                       name="Type"></input>
+                            </ui-input-container>
+                            <ui-input-container>
+                                    <label class="dark">Display name
+                                    </label>
+                                <input class="ui-input light" ng-model="value.displayName" type="text"
+                                       name="Display Name"></input>
+                            </ui-input-container>
+                                <ui-input-container>
+                                    <label class="dark">Group Name</label>
+                                    <input class="ui-input light"
+                                           ng-init="value.groupName ? value.groupName: value.groupName='No Data'"
+                                           ng-model="value.groupName" type="text"
+                                           name="Group Name"></input>
+                                </ui-input-container>
+                            <ui-input-container>
+                                <label class="dark">Possible Values
+                                </label>
+                                <input ng-disabled="value.type=='boolean'" class="ui-input light"
+                                       ng-model="value.possibleValues"
+                                       type="text" name="Possible Values"></input>
+                            </ui-input-container>
+                            <ui-input-container>
+                                <label class="dark">Default Value
+                                </label>
+                                <input class="ui-input light" ng-model="value.defaultValue " type="text"
+                                       name="Default value"></input>
+                            </ui-input-container>
+                            <ui-input-container>
+                                <label class="dark">Display to user</label>
+                                <input class="ui-input light" ng-model="value.displayToUser" type="text"
+                                       name="Display to user"></input>
+                            </ui-input-container>
+                        </div>
+                    </ui-dialog>
+                </div>
+            </ui-tab-option>
+            <ui-tab-option id="tab2" title="Aggregations">
+                <div ng-repeat="(key,value) in aggregations">
+                    <ui-checkbox style="padding: 10px;" dark
+                                 ng-change="selectedAggregations(key,value,isAggregationSelected)"
+                                 ng-model="isAggregationSelected" id="aggregation{{$index}}">
+                    </ui-checkbox>
+                    <label ng-class="value.deprecated===true?'displayDeprecated':'displayLabel'"
+                           for="aggregation{{$index}}">{{key}}</label>
+                    <ui-button size="small" ng-model="displayButton" style="margin: 20px 20px;"
+                               ui-dialog-open="edit-aggregation"
+                               ng-show="displayButton">Edit Aggregation
+                    </ui-button>
+                    <ui-button ng-click="deleteAggregation(key)" size="small" ng-model="displayButton"
+                               style="margin: 20px 20px;" ng-show="displayButton">Delete Aggregation
+                    </ui-button>
+                    <ui-dialog id="edit-aggregation" title="edit-aggregation" cancel-text="Cancel"
+                               close-text="Save" close-action="editAggregation(key,value)"
+                               cancel-action="cancelEdit('aggregations')">
+                        <div>
+                            <ui-input-container>
+                                <label class="dark">Display name
+                                </label>
+                                <input class="ui-input light" ng-model="value.displayName" type="text"
+                                       name="Display Name"></input>
+                            </ui-input-container>
+                            <ui-input-container>
+                                <label class="dark">Display to user</label>
+                                <input class="ui-input light" ng-model="value.displayToUser" type="text"
+                                       name="Display to user"></input>
+                            </ui-input-container>
+                            <ui-input-container>
+                                <label class="dark">Types
+                                </label>
+                                <input class="ui-input light" ng-model="value.types" type="text"
+                                       name="Types"></input>
+                            </ui-input-container>
+                            <!--    <ui-input-container> <label class="dark">Default
+                Value</label> <input class="ui-input light"
+                ng-model="value.defaultValue " type="text" name="Default value"></input>
+            </ui-input-container>-->
+                            </div>
+                    </ui-dialog>
+                </div>
+            </ui-tab-option>
+            <ui-tab-option id="tab3" title="Events">
+                <div ng-repeat="(key,value) in events">
+                    <ui-checkbox style="padding: 10px;" dark ng-change="selectedEvents(key,value,isEventSelected)"
+                                 ng-model="isEventSelected" id="event{{$index}}"></ui-checkbox>
+                    <label ng-class="value.deprecated===true?'displayDeprecated':'displayLabel'"
+                           for="event{{$index}}">{{key}}</label>
+                    <ui-button size="small" ng-model="displayButton" style="margin: 20px 20px;"
+                               ui-dialog-open="edit-event"
+                               ng-show="displayButton">Edit Event
+                    </ui-button>
+                    <ui-button ng-click="deleteEvent(key)" size="small" ng-model="displayButton"
+                               style="margin: 20px 20px;" ng-show="displayButton">Delete Event
+                    </ui-button>
+                    <ui-dialog id="edit-event" title="edit-event" cancel-text="Cancel" close-text="Save"
+                               close-action="editEvent(key,value)" cancel-action="cancelEdit('events')">
+                        <div>
+                            <ui-input-container>
+                                <label class="dark">Display name
+                                </label>
+                                <input class="ui-input light" ng-model="value.displayName" type="text"
+                                       name="Display Name"></input>
+                            </ui-input-container>
+                            <ui-input-container>
+                                <label class="dark">Display to user</label>
+                                <input class="ui-input light" ng-model="value.displayToUser" type="text"
+                                       name="Display to user"></input>
+                            </ui-input-container>
+                        </div>
+                    </ui-dialog>
+                </div>
+            </ui-tab-option>
+            <ui-tab-option ng-show="displayEditButton" id="tab4" title="Control Info">
+                <div ng-model="controlValue">
+                    <ui-input-container>
+                        <label class="dark">name
+                        </label>
+                        <input disabled class="ui-input light" ng-model="controlValue.name" type="text"
+                               name="Display Name"></input>
+                    </ui-input-container>
+                    <ui-input-container>
+                        <label class="dark">Display name
+                        </label>
+                        <input class="ui-input light" ng-model="controlValue.displayName" type="text"
+                               name="Display Name"></input>
+                    </ui-input-container>
+                    <ui-input-container>
+                        <label class="dark">Display to user</label>
+                        <input class="ui-input light" ng-model="controlValue.displayToUser" type="text"
+                               name="Display to user"></input>
+                    </ui-input-container>
+                    <ui-input-container>
+                        <label class="dark">Group Name</label>
+                        <input class="ui-input light" ng-model="controlValue.groupName" type="text"
+                               name="Display to user"></input>
+                    </ui-input-container>
+                    <ui-button size="small" ng-click="updateControlCatalog(key,controlValue)">Save</ui-button>
+                    <ui-button size="small" ng-click="cancelEdit('controls')">Cancel</ui-button>
+                </div>
+            </ui-tab-option>
+        </ui-tabs>
+    </ui-content>
+</div>
+
+</div>
+</form>
+</div>

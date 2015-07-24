@@ -1,0 +1,16 @@
+<div class="header">
+    <div class="title">Users List</div>
+
+    <div class="usersMenu">
+        <input class="inputSearch" ng-model="search.value" ng-change="_onSearch()" type="search" placeholder="Search by name or email">
+        <span class="viewBy">View by:</span>
+        <img ng-class="{active : displaySimple}" ng-click="setSimpleDisplay(true)" src="resources/norman-admin-users-client/assets/icon_view_simple.svg">
+        <img ng-class="{active : !displaySimple}" ng-click="setSimpleDisplay(false)" src="resources/norman-admin-users-client/assets/icon_view_details.svg">
+    </div>
+</div>
+
+<br/>
+
+<div class="count">{{nbUsers}} Users</div>
+
+<br/>

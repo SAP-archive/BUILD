@@ -1,0 +1,92 @@
+@import (reference) 'variables';
+body {
+  h1 {
+	font-size: 36px;
+	font-weight: 300;
+	margin: 30px 0 30px 0;
+	color: @PickledBluewood-900;
+	padding: 0;
+	small {
+	  font-size: 16px;
+	  font-weight: 400;
+	  margin: 10px 0;
+	  color: @Cascade-900;
+	  display: block;
+	  padding: 0 0 0 2px;
+	}
+  }
+  label {
+	font-size: 14px;
+	font-weight: 700;
+	margin: 10px 0 6px 0;
+	color: @PickledBluewood-900;
+  }
+  label+input {
+	display: block;
+  }
+  .subtext {
+	font-size: 13px;
+	color: @Cascade-900;
+	line-height: 18px;
+  }
+
+  .description {
+	font-size: 13px;
+	font-weight: 400;
+	margin: 4px 0 10px 0;
+	color: @Cascade-900;
+  }
+  .info {
+	font-size: 16px;
+	font-weight: 400;
+	margin: 20px 20px 20px 0;
+	padding: 15px;
+	width: 350px;
+	max-width: 350px;
+	background-color: #FFFCB6;
+	color: @PickledBluewood-900;
+  }
+
+  ul {
+	font-size: 15px;
+	font-weight: 500;
+	li {
+	  background-color: @Porcelain-500;
+	  color: @PickledBluewood-900;
+	  padding: 6px;
+	  cursor: pointer;
+	  &:hover {
+		color: @CuriousBlue-900;
+		.badge {
+		  color: @CuriousBlue-900;
+		}
+	  }
+	  &.active {
+		background-color: @Shamrock-900;
+		color: white;
+		cursor: default;
+		.badge {
+		  background-color: white;
+		  color: @Shamrock-900;
+		}
+	  }
+	  .badge {
+		background-color: @Porcelain-500;
+		color: @PickledBluewood-900;
+		display: inline-block;
+		box-sizing: border-box;
+		min-width: 10px;
+		padding: 4px 7px 0;
+		font-size: 12px;
+		font-weight: bold;
+		line-height: 1;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: baseline;
+		border-radius: 22px;
+		float: right;
+		min-height: 21px;
+	  }
+	}
+  }
+}

@@ -1,0 +1,72 @@
+@import (reference) '../node_modules/norman-client-tp/node_modules/angular-sap-ui-elements/styles/variables';
+
+#participant-invitation {
+    .item{ margin: 0 0 10px; }
+     p.description {width: 540px; font-weight: 400;font-size: 14px;}
+     label.title {display:block;}
+    .btn-invite {width:180px;margin-top:15px}
+    .btn-add {width:80px; margin-bottom: 5px; margin-left: 15px;}
+     ui-input-container {display: block;}
+     ui-input-container .ui-input {  flex: none;  order: inherit;  display: inline-block;width: 480px;}
+
+    .invite-user-container { width:540px;  margin-top: 20px;}
+    .invitee{min-height:30px; margin-bottom: 5px;}
+    .invite-send-label {float:right;color: @Green;text-transform: uppercase;line-height: 24px;}
+    .invite-send-label.error {color: @Red;cursor: pointer;}
+    .invite-email {position:absolute;line-height: 24px;font-weight:bold;margin-left: 5px;text-overflow: ellipsis; max-width: 420px;overflow: hidden;}
+    .action.icon-delete.small {height: 22px;width: 22px;}
+    .action.icon-delete.small:before {
+          background: url('../resources/norman-user-research-client/assets/norman-user-research-client.svg') no-repeat;
+          background-position: 88.04523424878836% 41.51291512915129%;
+          width: 15px;
+          height: 15px;
+          left: 4px;
+          top: 3px;
+     }
+
+   .action.icon-none {   height: 24px;
+      width: 24px;
+      display: inline-block;
+      position: relative;
+      float: left;}
+
+    .action.icon-delete {
+      background-color: #e74c3c;
+      position: relative;
+      float: left;
+      border-radius: 50%;
+    }
+    .action.icon-delete:before {
+      content: '';
+      line-height: 20px;
+      cursor: pointer;
+      position: absolute;
+      top: calc(50% - 10px);
+      left: 7px;
+      background: url('../resources/norman-user-research-client/assets/norman-user-research-client.svg') no-repeat;
+      background-position: 99.83766233766234% 94.22718808193669%;
+      width: 18px;
+      height: 20px;
+    }
+  .action.icon-check {
+      display: inline-block;
+      width: 24px
+    }
+
+    .invitee.ng-move,
+    .invitee.ng-enter,
+    .invitee.ng-leave {  -webkit-transition:all linear 1s;  transition:all linear 1s;}
+    .invitee.ng-leave.ng-leave-active,
+    .invitee.ng-move,
+    .invitee.ng-enter {  opacity:0;}
+    .invitee.ng-leave,
+    .invitee.ng-move.ng-move-active,
+    .invitee.ng-enter.ng-enter-active {  opacity:1;}
+
+
+   .animate-if.ng-enter, .animate-if.ng-leave {-webkit-transition:all linear 1s;  transition:all linear 1s;   }
+   .animate-if.ng-enter,
+   .animate-if.ng-leave.ng-leave-active {opacity:0;}
+   .animate-if.ng-leave, .animate-if.ng-enter.ng-enter-active {opacity:1;}
+
+}

@@ -1,0 +1,110 @@
+<div id="study-review-overview" class="animated fadeIn">
+    <div layout="row" layout-align="start start" class="first-row">
+        <h1>Totals</h1>
+    </div>
+
+    <div layout="row" class="no-margin">
+        <div layout="column">
+            <ui-toolbar layout="row" layout-align="start start" class="actions">
+                <div ui-tooltip ui-tooltip-title="Participants" ui-tooltip-side="bottom">
+                    <div class="action icon-big-participant" ></div>
+                </div>
+                <span class="big" id="overview-participants">{{overview.participants}}</span>
+                <div class="action icon-big-clock" ui-tooltip ui-tooltip-title="Time" ui-tooltip-side="bottom"></div>
+                <div layout="column">
+                    <span id="overview-average-time" class="big" ng-bind-html="overview.medianDuration | AverageDurationFilter"></span>
+                    <span class="tiny">AVERAGE</span>
+                </div>
+            </ui-toolbar>
+            <ui-toolbar layout="row" layout-align="start start" class="actions">
+                <div class="action icon-big-annotation" ui-tooltip ui-tooltip-title="Annotations" ui-tooltip-side="bottom"></div>
+                <span class="big" id="overview-annotations">{{overview.annotations}}</span>
+                <div class="action icon-big-comments" ui-tooltip ui-tooltip-title="Comments" ui-tooltip-side="bottom"></div>
+                <span class="big" id="overview-comments">{{overview.comments}}</span>
+            </ui-toolbar>
+        </div>
+        <div layout="column">
+            <div layout="row" ng-if="overview.sentiments.positive.total > 0 || overview.sentiments.neutral.total > 0 || overview.sentiments.negative.total > 0">
+                <div class="chart" layout="row">
+                    <ui-pie-chart values-set="overview.sentiments.chart" color-list="sentimentChartColor"></ui-pie-chart>
+                </div>
+                <div layout="row" layout-align="center start" class="chart-data">
+                    <ui-toolbar layout="column" class="actions">
+                        <div class="tasks">
+                            <div class="action icon-face-smile"></div>
+                            <div class="text-left-sentiment" id="overview-sentiments-positive-total">{{overview.sentiments.positive.total}} <small id="overview-sentiments-positive-percentage">{{overview.sentiments.positive.percentage}}%</small></div>
+                        </div>
+                        <div class="tasks">
+                            <div class="action icon-face-normal"></div>
+                            <div class="text-left-sentiment" id="overview-sentiments-nuetral-total">{{overview.sentiments.neutral.total}} <small id="overview-sentiments-nuetral-percentage">{{overview.sentiments.neutral.percentage}}%</small></div>
+                        </div>
+                        <div class="tasks">
+                            <div class="action icon-face-sad"></div>
+                            <div class="text-left-sentiment" id="overview-sentiments-negative-total">{{overview.sentiments.negative.total}} <small id="overview-sentiments-negative-percentage">{{overview.sentiments.negative.percentage}}%</small></div>
+                        </div>
+                    </ui-toolbar>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div layout="row" layout-align="start start" class="second-row">
+        <h1>100% completed studies</h1>
+    </div>
+    <ui-toolbar layout="row" layout-align="start start" class="actions">
+        <div class="action icon-big-study" ui-tooltip ui-tooltip-content="Task" ui-tooltip-side="bottom"></div>
+        <span class="big" id="overview-completed">{{overview.completed}}</span>
+        <div class="action icon-big-clock" ui-tooltip ui-tooltip-title="Time" ui-tooltip-side="bottom"></div>
+        <div layout="column">
+            <span id="overview-averageDuration" class="big"
+                ng-bind-html="overview.averageDuration | AverageDurationFilter">
+            </span>
+            <span class="tiny">AVERAGE</span>
+        </div>
+
+        <div class="action icon-big icon-bunny" ui-tooltip ui-tooltip-side="bottom"
+            ui-tooltip-content="Quickest completion time">
+        </div>
+        <div layout="column" class="smallCol">
+            <span id="overview-shortestDuration" class="top medium"
+                ng-bind-html="overview.shortestDuration | AverageDurationFilter">
+            </span>
+        </div>
+
+        <div class="action icon-big icon-turtle" ui-tooltip ui-tooltip-side="bottom"
+            ui-tooltip-content="Slowest completion time">
+        </div>
+        <div layout="column" class="smallCol">
+            <span id="overview-longestDuration" class="top medium"
+                ng-bind-html="overview.longestDuration | AverageDurationFilter">
+            </span>
+        </div>
+    </ui-toolbar>
+
+    <div layout="row" layout-align="start start" class="second-row" ng-if="overview.tasks.successful.total > 0 || overview.tasks.failed.total > 0 || overview.tasks.abandoned.total > 0">
+        <h1>All tasks success, fail &amp; abandon rates</h1>
+    </div>
+
+    <div layout="row" ng-if="overview.tasks.successful.total > 0 || overview.tasks.failed.total > 0 || overview.tasks.abandoned.total > 0">
+        <div class="chart" layout="row">
+            <ui-pie-chart values-set="overview.tasks.chart" color-list="tasksChartColor"></ui-pie-chart>
+        </div>
+        <div layout="row" layout-align="center start" >
+            <ui-toolbar layout="column" class="actions">
+                <div class="tasks">
+                    <div class="action icon-small-green-tick"></div>
+                    <div class="text-left" id="overview-tasks-successful-total">{{overview.tasks.successful.total}} <small id="overview-tasks-successful-percentage">{{overview.tasks.successful.percentage}}%</small></div>
+                </div>
+                <div class="tasks">
+                    <div class="action icon-small-red-cross"></div>
+                    <div class="text-left" id="overview-tasks-failed-total">{{overview.tasks.failed.total}} <small id="overview-tasks-failed-percentage">{{overview.tasks.failed.percentage}}%</small></div>
+                </div>
+                <div class="tasks">
+                    <div class="action icon-small-trash"></div>
+                    <div class="text-left" id="overview-tasks-abandoned-total">{{overview.tasks.abandoned.total}} <small id="overview-tasks-abandoned-percentage">{{overview.tasks.abandoned.percentage}}%</small></div>
+                </div>
+            </ui-toolbar>
+        </div>
+    </div>
+</div>

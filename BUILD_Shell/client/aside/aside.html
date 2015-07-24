@@ -1,0 +1,12 @@
+<div ng-controller="AsideCtrl" layout="column" layout-align="space-between center" layout-fill>
+    <ui-main-menu id="shellAsideMenu" selected-option="{{menuItemSelected}}">
+        <ui-main-menu-option
+            ng-repeat="menuItem in asideService.menuItems | orderBy:'priority'"
+            show="{{!!menuItem.isPersistant || !!showMenu}}"
+            type="{{(menuItem.type)? menuItem.type : menuItem.name | lowercase}}"
+            text="{{menuItem.name}}"
+            badge="{{menuItem.badge}}"
+            ng-click="stateGo(menuItem.defaultState || menuItem.state);">
+        </ui-main-menu-option>
+    </ui-main-menu>
+</div>

@@ -1,0 +1,6 @@
+coverage/
+logs/
+doc/
+test/
+.npmignore
+.eslintrc

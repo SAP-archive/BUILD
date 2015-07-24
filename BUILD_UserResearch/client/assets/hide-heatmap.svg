@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12005) - http://www.bohemiancoding.com/sketch -->
+    <title>hide-heatmap</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="hide-heatmap" sketch:type="MSLayerGroup">
+            <ellipse id="Oval-27" fill="#3398DB" sketch:type="MSShapeGroup" cx="12" cy="12" rx="12" ry="12"></ellipse>
+            <path d="M13.2967961,13.6061553 L16.3903883,13.6061553 L11.75,4.3253788 L7.10961175,13.6061553 L10.2032039,13.6061553 L10.2032039,19.1746212 L13.2967961,19.1746212 L13.2967961,13.6061553 L13.2967961,13.6061553 Z" id="Triangle-1" fill="#FFFFFF" sketch:type="MSShapeGroup" transform="translate(11.750000, 11.750000) rotate(-45.000000) translate(-11.750000, -11.750000) "></path>
+            <rect id="Rectangle-407-Copy" stroke="#3398DB" fill="#FFFFFF" sketch:type="MSShapeGroup" transform="translate(12.058013, 11.966506) rotate(-30.000000) translate(-12.058013, -11.966506) " x="3.91089838" y="10.7699993" width="16.2942286" height="2.39301409"></rect>
+        </g>
+    </g>
+</svg>

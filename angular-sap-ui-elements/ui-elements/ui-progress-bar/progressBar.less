@@ -1,0 +1,32 @@
+@import (reference) "../../styles/base.less";
+
+.progress-bar {
+    width: 300px;
+    display: inline-block;
+    position: relative;
+    background-color: @Porcelain-500;
+    border-radius: 10px;
+    height: 18px;
+
+    &.dark {
+        background-color: @PickledBluewood-1100;
+        height: 16px;
+        border: 1px solid @PickledBluewood-600;
+
+        .progress-bar-bar {
+            height: 10px;
+            margin: 3px;
+            transition: width 0.5s ease-in-out;
+        }
+    }
+}
+.progress-bar-bar {
+    width: 0px;
+    height: 8px;
+    margin: 5px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: @Shamrock-500;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+}

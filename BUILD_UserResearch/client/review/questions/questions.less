@@ -1,0 +1,235 @@
+@import (reference) "../../styles/base.less";
+@import (reference) "../detail/statistics.less";
+
+@chart-container-width: 200px;
+
+#study-review-questions {
+    min-width: 900px;
+    margin-bottom: 40px;
+    color: @PickledBluewood-1100;
+
+    [layout="row"] {
+        margin-top: 10px;
+    }
+    .first-row {
+        margin-top: -10px;
+
+        h1 {
+            margin: 0 0 10px 0;
+        }
+    }
+    .filterOptions {
+        line-height: 16px;
+        font-weight: 500;
+        font-size: 15px;
+        margin: 0 10px 0 0;
+    }
+    .filterOption {
+        line-height: 16px;
+        font-weight: 500;
+        font-size: 15px;
+        margin: 0 10px;
+        cursor: pointer;
+        text-decoration: underline;
+        color: @CuriousBlue-500;
+
+        &:hover {
+            text-decoration: underline;
+            color: @CuriousBlue-500;
+        }
+        &.last {
+            margin: 0 0 0 10px;
+        }
+        &.on {
+            text-decoration: none;
+            color: @PickledBluewood-1100;
+        }
+    }
+    .entries {
+        &[layout="row"] {
+            margin-top: 30px;
+        }
+        .item {
+            .thumbnail {
+                &[layout="row"] {
+                    margin-top: 0;
+                }
+                position: relative;
+                float: left;
+                &.showOver {
+                    cursor: pointer;
+                    .ui-thumbnail {
+                        box-shadow: 0 0 10px rgba(2, 157, 224, .7);
+                        border: 1px solid rgba(2, 157, 224, .73);
+                        transition: all 0.1s linear;
+                    }
+                }
+            }
+            .task-name {
+                text-align: center;
+                background-color: @CuriousBlue-500;
+                margin: 10px 0;
+                max-width: 240px;
+                > h2 {
+                    color: @White;
+                    font-size: 16px;
+                    font-weight: 700;
+                    height: 30px;
+                    line-height: 30px;
+                    padding: 0 10px;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    word-wrap: break-word;
+                }
+            }
+            .question-name {
+                text-align: center;
+                margin: 10px 0;
+                max-width: 240px;
+                > h2 {
+                    color: @PickledBluewood-1100;
+                    font-size: 16px;
+                    font-weight: 700;
+                    height: 30px;
+                    line-height: 30px;
+                    padding: 0 10px;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    word-wrap: break-word;
+                }
+            }
+            &.multichoice {
+                min-width: 1100px;
+            }
+            &.annotation {
+                min-width: 970px;
+            }
+            .actions {
+                margin: 10px 0 0 30px;
+
+                .icon-review-small-annotation::before {
+                    top: 0px;
+                }
+                .icon-review-small-multichoice::before, .icon-review-small-freeform::before {
+                    top: 3px;
+                }
+
+                .action-txt {
+                    display: block;
+                    cursor: pointer;
+                    padding-left: 25px;
+                    line-height: 16px;
+                    font-weight: 500;
+                    font-size: 20px;
+                    text-decoration: underline;
+                    color: @CuriousBlue-500;
+                    word-wrap: break-word;
+                    max-width: 800px;
+
+                    &.no-icon {
+                        padding-left: 0;
+                        float: left;
+                    }
+                }
+                .action-small-txt {
+                    line-height: 16px;
+                    font-weight: 400;
+                    font-size: 20px;
+                    color: @PickledBluewood-1100;
+                }
+                .result {
+                    margin-top: 20px;
+                    min-height: 50px;
+
+                    &.secondRow {
+                        min-width: 400px;
+                        margin-top: 10px;
+                    }
+                    .text {
+                        &.avg-time{
+                            width: 250px;
+                            margin-right: 10px;
+                        }
+                        line-height: 66px;
+                        font-weight: 300;
+                        font-size: 36px;
+                        margin-right: 40px;
+
+                        small {
+                            font-size: 20px;
+                        }
+                    }
+                    .progress {
+                        margin-top: 10px;
+
+                        .tiny {
+                            font-weight: 500;
+                            font-size: 15px;
+                            line-height: 16px;
+                            word-break: break-all;
+                            max-width: 430px;
+                        }
+                        .bar {
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .question-chart{
+        position: relative;
+        left: 98px;
+        &.annotations-chart{
+            margin-top: 22px;
+        }
+    }
+
+
+    .chart {
+        width: 90px;
+        margin-right: 30px;
+        margin-top: 5px;
+
+        &[layout="row"] {
+            margin-top: 0;
+        }
+        &.tasks {
+            margin-top: 20px;
+            width: auto;
+            margin-right: 0px;
+        }
+
+        .statistics-chart-footer:extend(#review-detail-statistics .ui-tab-content .statistics-chart-footer){}
+    }
+    .chart-data {
+        margin-top: 0px;
+        .tasks {
+            margin: 5px 0;
+
+            .text-left-sentiment {
+                line-height: 21px;
+                font-weight: 300;
+                font-size: 20px;
+                margin-left: 40px;
+                min-width: 90px;
+
+                small {
+                    font-weight: 300;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .information-column {
+        width: 400px;
+        height: 165px;
+    }
+}

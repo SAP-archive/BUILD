@@ -1,0 +1,21 @@
+<div ng-class="{ 'sortable': sortable }" class="sd-element-flex" ng-click="showFilter($event)" ng-controller="columnHeaderController">
+  <div class="ui-grid-vertical-bar">&nbsp;</div>
+  <!-- title -->
+  <div class="columnLabel" col-index="renderIndex" style="width:100%" ng-class="{'sd-element-hidden': !hideFilter}">
+    {{ col.displayName CUSTOM_FILTERS}}
+  </div>
+
+    <!-- filter -->
+    <div ng-if="filterable" class="ui-grid-filter-container" ng-repeat="colFilter in col.filters" ng-class="{'sd-element-hidden': hideFilter}">
+        <input type="text" class="filterInput ui-grid-filter-input" ng-model="colFilter.term" ng-click="$event.stopPropagation()" ng-attr-placeholder="{{colFilter.placeholder || ''}}" ng-blur="hideFilterFn($event)" focus-on="showFilterInput" blur-on="hideFilterInput" />
+        <div class="ui-grid-filter-button" ng-click="colFilter.term = null">
+            <i class="ui-grid-icon-cancel right" ng-show="!!colFilter.term">&nbsp;</i>
+            <!-- use !! because angular interprets 'f' as false -->
+        </div>
+    </div>
+
+    <!-- menu button -->
+    <div class="ui-grid-column-menu-button" ng-if="grid.options.enableColumnMenus && !col.isRowHeader && col.colDef.enableColumnMenu !== false" class="ui-grid-column-menu-button" ng-click="toggleMenu($event)">
+        <i class="ui-grid-icon-angle-down">&nbsp;</i>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="19px" height="17px" viewBox="0 0 19 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>panel-left-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="SAPmeUP-1.2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="SUGGESTIONS-3" sketch:type="MSArtboardGroup" transform="translate(-304.000000, -968.000000)" fill="#FFFFFF">
+            <g id="panel-left-icon" sketch:type="MSLayerGroup" transform="translate(303.000000, 968.000000)">
+                <g id="Page-1" sketch:type="MSShapeGroup">
+                    <g id="APP-COMPOSER">
+                        <g id="UI-Bar">
+                            <path d="M0.9997,14.9998001 C0.99986,16.1044214 1.89105,16.9998988 2.99769,16.999905 L18.00489,16.9999888 C19.10818,16.999995 20.00244,16.1099416 20.00227,14.9998938 L20.0003,2.0001062 C20.00014,0.895478 19.10895,0 18.00231,0 L2.99511,0 C1.89182,0 0.99756,0.8900529 0.99773,2.0000937 L0.9997,14.9998001 L0.9997,14.9998001 Z M17.99773,2.8667587 L17.99773,14.1332413 C17.99773,14.6149108 17.71012,15 17.35247,15 L7.64526,15 C7.28784,15 7,14.6134292 7,14.1332413 L7,2.8667587 C7,2.3850892 7.2876,2 7.64526,2 L17.35247,2 C17.70989,2 17.99773,2.3865708 17.99773,2.8667587 L17.99773,2.8667587 Z" id="leftpanel"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
