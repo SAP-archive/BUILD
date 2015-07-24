@@ -66,7 +66,7 @@ Check out the [Build Support](http://sap.github.io/BUILD_User_Assistance) for de
 
 2. Install required node modules (dependencies):
     ```sh
-    npm install
+    npm install ( **NOTE: Not Currently working #2**)
     ```
 
 _If you're having a problem installing, you can create a bug or ask a question using the [BUILD Issue Tracker](https://github.com/SAP/BUILD/issues) or contact contact.build@sap.com and we will reach out to you._ 
