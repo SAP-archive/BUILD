@@ -58,7 +58,7 @@ Check out the [Build Support](http://sap.github.io/BUILD_User_Assistance) for de
 - install [GIT](https://git-scm.com/downloads)
 - install [npm.js](https://docs.npmjs.com/cli/install) - _*only version 1.4.28 is supported*_
 - install [node.js](https://docs.npmjs.com/cli/install) -_*only version 10.28 is supported*_
-- install [mongodb]()
+- install [mongodb](https://www.mongodb.org/downloads#previous) -_*only version 2.6.x is supported*_
 
 ## Download / Clone
 
