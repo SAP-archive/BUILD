@@ -59,16 +59,6 @@ AclService.prototype.initializeSchema = function (done) {
         this.acl = new NodeAclFacade();
         this.acl.initialize();
     }
-    console.log('XXXXXXX');
-    console.log('XXXXXXX');
-    console.log('XXXXXXX');
-    console.log('XXXXXXX');
-    console.log('XXXXXXX');
-    console.log('XXXXXXX');
-    console.log('XXXXXXX');
-    console.log('XXXXXXX');
-    console.log('XXXXXXX');
-    console.log('XXXXXXX');
     this.acl.allowEx(roles, systemContext, done);
 }
 
