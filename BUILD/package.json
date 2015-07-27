@@ -1,7 +1,7 @@
 {
-  "name": "norman-norman",
+  "name": "sap-build",
   "version": "0.1.0",
-  "description": "Norman",
+  "description": "SAP BUILD",
   "repository": {
     "type:": "git",
     "url": "https://github.com/SAP/BUILD"
@@ -27,7 +27,7 @@
     "norman-promise": "0.1.0",
     "norman-client-tp": "0.1.0",
     "norman-common-client": "0.1.0",
-    "norman-common-server": "0.1.1",
+    "norman-common-server": "0.1.2",
     "norman-audit-server": "0.1.0",
     "norman-shell-client": "0.1.0",
     "norman-server-tp": "0.1.0",

@@ -3,8 +3,8 @@ var fs = require('fs');
 var path = require('path');
 var nodeInspector = require('./grunt-conf/nodeinspector.js');
 
-var repo = 'Norman';
-var settings = require('./config.json');
+//var repo = 'Norman';
+//var settings = require('./config.json');
 
 module.exports = function (grunt) {
 
