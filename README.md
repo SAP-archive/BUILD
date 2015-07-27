@@ -68,6 +68,7 @@ Check out the [Build Support](http://sap.github.io/BUILD_User_Assistance) for de
 
 2. Install required node modules (dependencies):
     ```sh 
+    npm install -g grunt-cli
     cd BUILD
     npm install
     ```
