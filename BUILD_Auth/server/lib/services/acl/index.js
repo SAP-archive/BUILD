@@ -60,7 +60,7 @@ AclService.prototype.initializeSchema = function (done) {
         this.acl.initialize();
     }
     this.acl.allowEx(roles, systemContext, done);
-};
+}
 
 AclService.prototype.getAcl = function () {
     return this.acl;

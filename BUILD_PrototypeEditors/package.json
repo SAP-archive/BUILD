@@ -114,7 +114,7 @@
     "sinon": "~1.14.1",
     "sinon-as-promised": "^3.0.0",
     "streamifier": "0.1.0",
-    "supertest": "~0.11",
+    "supertest": "~0.15",
     "time-grunt": "^1.0.0"
   },
   "private": true

@@ -1,0 +1,14 @@
+<div ng-class="{'ui-video-slider-container': true}">
+    <div class="ui-video-slider-previous" ng-class="{leftDisabled: buttonLeftClassDisabled}"
+         ng-click="onLeftClick()"></div>
+
+    <div ng-swipe-right="onRightClick()" ng-swipe-left='onLeftClick()' class="animate ui-video-slider"
+         style="-webkit-transform: translate3d({{currentScroll}}px, 0, 0);">
+        <ui-video ng-repeat="item in items" title="{{item.title}}" class="ui-video-slider-each"
+                  src="{{trustSrc(item.src)}}"
+                  ng-click="videoTileClicked(item)">
+        </ui-video>
+    </div>
+    <div class="ui-video-slider-next" ng-class="{rightDisabled: buttonRightClassDisabled}"
+         ng-click="onRightClick()"></div>
+</div>

@@ -1,7 +1,7 @@
 {
-  "name": "norman-norman",
+  "name": "sap-build",
   "version": "0.1.0",
-  "description": "Norman",
+  "description": "SAP BUILD",
   "repository": {
     "type:": "git",
     "url": "https://github.com/SAP/BUILD"
@@ -25,9 +25,9 @@
   "dependencies": {
     "node-sap-app-server": "0.1.0",
     "norman-promise": "0.1.0",
-    "norman-client-tp": "0.1.0",
+    "norman-client-tp": "0.1.7",
     "norman-common-client": "0.1.0",
-    "norman-common-server": "0.1.0",
+    "norman-common-server": "0.1.2",
     "norman-audit-server": "0.1.0",
     "norman-shell-client": "0.1.0",
     "norman-server-tp": "0.1.0",
@@ -37,8 +37,8 @@
     "norman-projects-server": "0.1.0",
     "norman-business-catalog-manager-client": "0.1.0",
     "norman-business-catalog-manager-server": "0.1.0",
-    "norman-prototype-editors-client": "0.1.0",
-    "norman-prototype-editors-server": "0.1.0",
+    "norman-prototype-editors-client": "0.1.2",
+    "norman-prototype-editors-server": "0.1.1",
     "norman-ui-catalog-manager-client": "0.1.0",
     "norman-ui-catalog-manager-server": "0.1.0",
     "norman-user-research-client": "0.1.0",
@@ -98,7 +98,7 @@
     "karma-sinon-chai": "^0.2.0",
     "mocha-jenkins-reporter": "^0.1.6",
     "node-inspector": "^0.9.2",
-    "norman-auth-e2e": "0.1.0",
+    "norman-auth-e2e": "0.1.1",
     "norman-user-research-e2e": "0.1.0",
     "norman-projects-e2e": "0.1.0",
     "norman-prototype-editors-e2e": "0.1.0",
@@ -117,5 +117,6 @@
   "scripts": {
     "test": "grunt test",
     "start": "node server/app.js"
-  }
+  },
+    "readmeFilename": "../README.md"
 }

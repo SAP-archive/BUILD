@@ -1,0 +1,10 @@
+<div class="ui-video" ng-style="titleWithin && tileHeightStyle">
+    <div class="ui-video-thumbnail-wrapper" ng-style="{'height':videoHeight, 'width':videoWidth}">
+        <div class="ui-video-thumbnail-icon" ng-style="playerStyle">
+            <div class="ui-video-play-overlay" height="100%" width="100%" ng-show="showPlayIcon"></div>
+        </div>
+        <div ui-video-you-tube source="{{src}}" width="{{videoWidth}}" height="{{videoHeight}}"></div>
+    </div>
+    <label ng-if="title" class="ui-video-title" ng-bind="title"
+           ng-class="{'ui-video-thumbnail-title-inside':titleWithin}"></label>
+</div>

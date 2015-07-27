@@ -2,7 +2,7 @@
   "title": "norman-angular-ui-tree",
   "name": "norman-angular-ui-tree",
   "main": "angular-ui-tree.min.js",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "engines": {
     "node": ">=0.8.0"
   },

@@ -1,6 +1,6 @@
 {
   "name": "norman-prototype-editors-client",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Prototype Editors Client",
   "repository": {
     "type": "git",
@@ -20,8 +20,8 @@
   ],
   "dependencies": {
     "angular-xeditable": "https://github.com/vitalets/angular-xeditable/archive/0.1.8.tar.gz",
-    "norman-angular-ui-tree": "0.1.0",
-    "norman-keyboard-event-polyfill": "0.1.0",
+    "norman-angular-ui-tree": "0.1.2",
+    "norman-keyboard-event-polyfill": "0.1.2",
     "norman-ng-grid": "0.1.0"
   },
   "peerDependencies": {

@@ -1,0 +1,72 @@
+@import (reference) "../../styles/base.less";
+
+.ui-video-slider-container {
+  height: inherit;
+  background-color: @Porcelain-500;
+  display: flex;
+  bottom: 0px;
+  position: relative;
+  overflow: hidden;
+  .ui-video-slider {
+    width: 100%;
+    background-color: @Porcelain-500;
+    white-space: nowrap;
+    position: relative;
+    &.animate {
+      transition: all .3s ease-out;
+    }
+  }
+  .ui-video-slider > div {
+    display: inline-block;
+    margin: 2% 6%;
+    vertical-align: top;
+    width: 20%;
+  }
+
+  .rightDisabled {
+    opacity: .3;
+    cursor: default;
+  }
+
+  .leftDisabled {
+    opacity: .3;
+    cursor: default;
+  }
+}
+
+.ui-video-slider-next {
+  float: right;
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  z-index: 10;
+  margin-right: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:before {
+    .common-next-arrow;
+    .common-next-arrow-dims;
+    content: '';
+  }
+}
+
+.ui-video-slider-previous {
+  width: 40px;
+  height: 100%;
+  transform: scaleX(-1);
+  position: absolute;
+  z-index: 10;
+  margin-left: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:before {
+    .common-next-arrow;
+    .common-next-arrow-dims;
+    content: '';
+  }
+}

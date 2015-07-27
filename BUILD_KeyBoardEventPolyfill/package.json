@@ -1,6 +1,6 @@
 {
   "name": "norman-keyboard-event-polyfill",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "main": "keyboard.min.js",
   "devDependencies": {
     "browserify": "9.0.3",

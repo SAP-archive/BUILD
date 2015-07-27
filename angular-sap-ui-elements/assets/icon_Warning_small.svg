@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="21px" height="18px" viewBox="0 0 21 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>error</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Version-1.6" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="6" sketch:type="MSArtboardGroup" transform="translate(-238.000000, -1108.000000)">
+            <g id="Rectangle-175-+-error-+-There-was-something--3" sketch:type="MSLayerGroup" transform="translate(192.000000, 517.000000)">
+                <g id="error-copy-5" transform="translate(46.000000, 591.000000)" sketch:type="MSShapeGroup">
+                    <path d="M11.6062433,0.802048066 L20.3685442,15.8590156 C20.9769719,16.9045259 20.5951281,17.5714286 19.3898634,17.5714286 L1.81703316,17.5714286 C0.611004108,17.5714286 0.229223281,16.9057311 0.838352332,15.8590156 L9.60065323,0.802048066 C10.210629,-0.246122358 10.996011,-0.246563322 11.6062433,0.802048066 Z" id="Path" fill="#E74C3C"></path>
+                    <ellipse id="Oval-17" fill="#FFFFFF" cx="10.6034483" cy="14.2389163" rx="1.51477833" ry="1.51477833"></ellipse>
+                    <path d="M10.6034483,11.6347502 C11.4400372,11.6347502 12.1182266,7.19865793 12.1182266,6.36206897 C12.1182266,5.52548 11.4400372,4.84729064 10.6034483,4.84729064 C9.76685931,4.84729064 9.08866995,5.52548 9.08866995,6.36206897 C9.08866995,7.19865793 9.76685931,11.6347502 10.6034483,11.6347502 Z" id="Oval-18" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
