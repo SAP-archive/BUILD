@@ -1,0 +1,20 @@
+<div class="http-error http-error-{{hPos}} http-error-{{vPos}}" ng-show="httpMessages.length > 0">
+    <ul class="http-error-list">
+        <http-error-message ng-repeat="httpMessage in httpMessages" http-message="httpMessage">
+            <span class="http-error-message-title" ng-repeat="msg in httpMessage.title" ng-bind-html="msg"></span>
+
+            <div ng-if="!httpMessage.isObject">
+                <div class="http-error-content-list" ng-bind-html="httpMessage.content"></div>
+            </div>
+
+            <div ng-if="httpMessage.isObject">
+
+                <div class="http-error-content-list">
+                    <ul class="http-error-content-list-entries">
+                        <li class="http-error-content-list-entry" ng-repeat="msg in httpMessage.content" ng-bind-html="msg.message"></li>
+                    </ul>
+                </div>
+            </div>
+        </http-error-message>
+    </ul>
+</div>

@@ -1,0 +1,66 @@
+@import (reference)"../../styles/base.less";
+ .ui-onboarding-main-container {
+    margin-top: 49px;
+    display: flex;
+    flex-direction: row;
+    z-index: 100;
+    -webkit-transform: scale(1, 1);
+    margin-left:12%;
+    margin-right:11%;
+    width:85%;
+}
+.ui-onboarding-container {
+    width: 100%;
+    background-color: #f6f6f6;
+}
+.ui-onboarding-container div {
+    display: inline-block;
+}
+.ui-onboarding-header {
+    font-size: 32px;
+}
+.ui-onboarding-mascot {
+    &:before {
+        content: '';
+        position: absolute;
+        .common-build-mascot-black;
+        .common-build-mascot-black-dims;
+        transform: scale(4.3);
+        top: 42%;
+        left: 8%;
+    }
+    text-align:left;
+    padding-left:28px;
+    width:19%;
+}
+.ui-onboarding-mascot-img {
+    max-width: 100%;
+    width: 100%;
+}
+.ui-onboarding-description {
+    vertical-align: top;
+    width: 78%;
+    padding: 34px;
+}
+.ui-onboarding-content {
+    font-size: 28px;
+    white-space: pre-wrap;
+}
+.ui-onboarding-arrow-img {
+    max-width: 80%;
+    max-height: 100%;
+    width: 70%;
+}
+.ui-onboarding-arrow {
+    &:before {
+        content: '';
+        position: absolute;
+        .common-arrow;
+        .common-arrow-dims;
+        transform:scale(1.6,1.1);
+    }
+    width:20%;
+    -webkit-order:1;
+    padding-left:10%;
+}
+

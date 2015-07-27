@@ -1,0 +1,7 @@
+<li class="http-error-message animated fadeInDown {{httpMessage.className}}">
+    <div class="alert alert-{{httpMessage.className}}" ng-class="{'alert-dismissable': httpMessage.dismissButton}">
+        <span class="http-error-delete http-error-close" ng-if="httpMessage.dismissButton" ng-bind-html="httpMessage.dismissButtonHtml"
+              ng-click="!httpMessage.dismissOnClick && dismiss()"></span>
+        <span ng-if="!httpMessage.compileContent" ng-transclude></span>
+    </div>
+</li>
