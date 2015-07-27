@@ -45,9 +45,9 @@ For a more detailed description of BUILD, see the [BUILD Overview](https://githu
 + [BUILD_jQuery](https://github.com/SAP/BUILD/tree/master/BUILD_jQuery)
 
 **Admin Modules**
-+ [BUILD_AdminUsers](https://github.com/SAP/BUILD/tree/master/BUILD_admin-users)
-+ [BUILD_Admin](https://github.com/SAP/BUILD/tree/master/BUILD_admin)
-+ [BUILD_AdminAudit](https://github.com/SAP/BUILD/tree/master/BUILD_admin-audit)
++ [BUILD_AdminUsers](https://github.com/SAP/BUILD/tree/master/BUILD_AdminUsers)
++ [BUILD_Admin](https://github.com/SAP/BUILD/tree/master/BUILD_Admin)
++ [BUILD_AdminAudit](https://github.com/SAP/BUILD/tree/master/BUILD_AdminAudit)
 
 # User Documentation
 Check out the [Build Support](http://sap.github.io/BUILD_User_Assistance) for detailed help topics and video tutorial about using Build!
