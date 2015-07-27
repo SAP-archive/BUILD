@@ -41,7 +41,7 @@ For a more detailed description of BUILD, see the [BUILD Overview](https://githu
 + [BUILD_AngularUIGrid](https://github.com/SAP/BUILD/tree/master/BUILD_AngularUIGrid)
 + [BUILD_AngularUIGridTree](https://github.com/SAP/BUILD/tree/master/BUILD_AngularUITree)
 + [BUILD_AngularUIGridZip](https://github.com/SAP/BUILD/tree/master/BUILD_AngularZip)
-+ [BUILD_KeyBoardEventPolyfill](https://github.com/SAP/BUILD/tree/master/BUILD_norman-keyboard-event-polyfill)
++ [BUILD_KeyBoardEventPolyfill](https://github.com/SAP/BUILD/tree/master/BUILD_KeyBoardEventPolyfill)
 + [BUILD_jQuery](https://github.com/SAP/BUILD/tree/master/BUILD_jquery-norman)
 
 **Admin Modules**
