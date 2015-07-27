@@ -73,20 +73,5 @@ module.exports = angular.module('common.ui.elements', [])
         .directive('uiOnboarding', require('./ui-onboarding/onboarding.directive.js'))
         .directive('uiVideo', require('./ui-video/video.directive.js'))
         .directive('uiVideoSlider', require('./ui-video-slider/video.slider.directive.js'))
-        .directive('uiVideoYouTube', require('./ui-video/video.youtube.directive.js'))
-
-    .config(function ($stateProvider) {
-            $stateProvider
-                .state('uielements', {
-                        url: '/norman/ui-elements',
-                        templateUrl: 'resources/angular-sap-ui-elements/docs/docs.html',
-                        controller: 'DocsCtrl',
-                        authenticate: false
-                }).state('commondirectives', {
-                        url: '/norman/directives',
-                        templateUrl: 'resources/angular-sap-common-directives/common-directives/index.html',
-                        authenticate: false
-                });
-    })
-    .controller('DocsCtrl', ['$scope', 'uiError', 'httpError', require('../docs/docs.controller.js')]);
+        .directive('uiVideoYouTube', require('./ui-video/video.youtube.directive.js'));
 
