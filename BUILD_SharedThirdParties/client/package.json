@@ -1,6 +1,6 @@
 {
   "name": "norman-client-tp",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "description": "Norman client-side shared third party libraries",
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
   "dependencies": {
     "jsPlumb": "https://github.com/sporritt/jsPlumb/archive/1.7.2.tar.gz",
     "heatmap.js": "https://github.com/pa7/heatmap.js/archive/v2.0.tar.gz",
-    "angular-sap-ui-elements": "0.1.0",
+    "angular-sap-ui-elements": "0.1.3",
     "angular-sap-common-services": "0.1.0",
     "angular-sap-common-directives": "0.1.0",
     "angular-sap-common-filters": "0.1.0"
@@ -36,7 +36,7 @@
     "angular-messages": "1.3.11",
     "moment": "2.8.4",
     "angular-moment": "0.9.0",
-    "norman-jquery": "0.1.0",
+    "norman-jquery": "0.1.1",
     "norman-angular-zip": "0.1.0",
     "sortablejs": "1.0.0",
     "angular-awesome-slider": "2.3.5",

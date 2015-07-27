@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="7px" height="11px" viewBox="0 0 7 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>INPUTS-2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="accordian-arrow" sketch:type="MSLayerGroup" fill="#8A878B">
+            <g id="Page-1" sketch:type="MSShapeGroup">
+                <g id="UI-TOOLKIT">
+                    <g id="INPUTS-2">
+                        <path d="M3.807072,8.871498 C3.720636,8.957166 3.61828,9 3.5,9 C3.38172,9 3.279364,8.957166 3.192928,8.871498 L-1.870347,3.859903 C-1.956783,3.774235 -2,3.671659 -2,3.552174 C-2,3.432689 -1.956783,3.330113 -1.870347,3.244444 L-0.737593,2.128502 C-0.651158,2.042834 -0.548801,2 -0.430521,2 C-0.312241,2 -0.209885,2.042834 -0.123449,2.128502 L3.5,5.719807 L7.123449,2.128502 C7.209885,2.042834 7.312241,2 7.430521,2 C7.548801,2 7.651158,2.042834 7.737593,2.128502 L8.870347,3.244444 C8.956783,3.330113 9,3.432689 9,3.552174 C9,3.671659 8.956783,3.774235 8.870347,3.859903 L3.807072,8.871498 L3.807072,8.871498 Z" id="arrow-down-3" transform="translate(3.500000, 5.500000) rotate(-90.000000) translate(-3.500000, -5.500000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
