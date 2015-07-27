@@ -29,7 +29,7 @@ For a more detailed description of BUILD, see the [BUILD Overview](https://githu
 
 **Build Modules**
 + [BUILD_PrototypeEditors](https://github.com/SAP/BUILD/tree/master/BUILD_PrototypeEditors)
-+ [BUILD](https://github.com/SAP/BUILD/tree/master/BUILD_angular-sap-common-directives)
++ [BUILD](https://github.com/SAP/BUILD)
 + [BUILD_Projects](https://github.com/SAP/BUILD/tree/master/BUILD_Projects)
 + [BUILD_UICatalogManager](https://github.com/SAP/BUILD/tree/master/BUILD_UICatalogManager)
 + [BUILD_UserResearch](https://github.com/SAP/BUILD/tree/master/BUILD_UserResearch)
