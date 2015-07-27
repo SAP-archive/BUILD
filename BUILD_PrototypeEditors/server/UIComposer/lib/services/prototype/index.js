@@ -28,7 +28,7 @@ prototypeService.prototype.initialize = function (done) {
 prototypeService.prototype.onInitialized = function (done) {
     serviceLogger.info('Composer PrototypeService >> onInitialized() called ');
     this.sharedWorkspaceService = registry.getModule('PrototypeService');
-    this.pageFlowService = registry.getModule('PageFlow');
+   // this.pageFlowService = registry.getModule('PageFlow');
     this.swProcessing = registry.getModule('SwProcessing');
     this.composerCommonService = registry.getModule('composerCommonService');
     this.messages = this.composerCommonService.messages;
@@ -56,7 +56,7 @@ prototypeService.prototype.shutdown = function (done) {
  */
 prototypeService.prototype.createDataDrivenPrototype = function (projectId, numPages, createdBy, applicationType, req) {
     var deferred = Promise.defer();
-    this.pageFlowService.createPrototype(projectId, applicationType)
+    /*this.pageFlowService.createPrototype(projectId, applicationType)
         .then(function () {
             // TODO shared workspace - build operation: reinitializePrototype, body: applicationType
             // TODO sw retrieves object array, build response similar to createPage
@@ -80,6 +80,7 @@ prototypeService.prototype.createDataDrivenPrototype = function (projectId, numP
             }, '>> Composer.PrototypeService.createDataDrivenPrototype()');
             deferred.reject(error);
         });
+*/
 
     return deferred.promise;
 };

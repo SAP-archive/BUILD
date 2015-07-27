@@ -40,7 +40,6 @@
         },
         "norman-business-catalog-manager-server": "/api/catalogs",
         "norman-ui-catalog-manager-server":"/api/uicatalogs",
-        "norman-ux-rule-engine-server": "/api/appFlow",
         "norman-user-research-server": {
             "studies": "/api/projects/:projectId",
             "review": "/api/projects/:projectId",
