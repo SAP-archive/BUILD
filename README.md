@@ -38,7 +38,7 @@ For a more detailed description of BUILD, see the [BUILD Overview](https://githu
 + [BUILD_Shell](https://github.com/SAP/BUILD/tree/master/BUILD_Shell)
 + [BUILD_SharedThirdParties](https://github.com/SAP/BUILD/tree/master/BUILD_SharedThirdParties)
 + [BUILD_Common](https://github.com/SAP/BUILD/tree/master/BUILD_Common)
-+ [BUILD_AngularUIGrid](https://github.com/SAP/BUILD/tree/master/BUILD_NgUIGrid)
++ [BUILD_AngularUIGrid](https://github.com/SAP/BUILD/tree/master/BUILD_AngularUIGrid)
 + [BUILD_AngularUIGridTree](https://github.com/SAP/BUILD/tree/master/BUILD_AngularUITree)
 + [BUILD_AngularUIGridZip](https://github.com/SAP/BUILD/tree/master/BUILD_AngularZip)
 + [BUILD_KeyBoardEventPolyfill](https://github.com/SAP/BUILD/tree/master/BUILD_norman-keyboard-event-polyfill)
