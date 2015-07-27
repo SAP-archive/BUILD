@@ -25,7 +25,7 @@
   "dependencies": {
     "node-sap-app-server": "0.1.0",
     "norman-promise": "0.1.0",
-    "norman-client-tp": "0.1.5",
+    "norman-client-tp": "0.1.7",
     "norman-common-client": "0.1.0",
     "norman-common-server": "0.1.2",
     "norman-audit-server": "0.1.0",
