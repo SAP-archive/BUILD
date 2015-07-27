@@ -17,16 +17,6 @@ module.exports = AclService;
 AclService.prototype.initialize = function (done) {
     serviceLogger.info('initialize');
     this._roles = config.get('security').roles || { globalRoles: [], projectRoles: []};
-        console.log('XXXXXXX');
-    console.log('XXXXXXX');
-    console.log('XXXXXXX');
-    console.log('XXXXXXX');
-    console.log('XXXXXXX');
-    console.log('XXXXXXX');
-    console.log('XXXXXXX');
-    console.log('XXXXXXX');
-    console.log('XXXXXXX');
-    console.log('XXXXXXX');
     if (!this.acl) {
         this.acl = new NodeAclFacade();
         this.acl.initialize();
