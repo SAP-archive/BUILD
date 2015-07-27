@@ -71,18 +71,20 @@ Check out the [Build Support](http://sap.github.io/BUILD_User_Assistance) for de
     cd BUILD
     npm install
     ```
+    
 3. Initialize the database(Required just the first time):
-    ```sh
+   ```sh
     cd server
     node initSchema.js
     node setDefaultAccess.js
     cd ..
-    ```
-4a. Start the BUILD application (for Dev)
+   ```
+   
+4. Start the BUILD application (for Dev):
     ```sh
-    grunt serve
+     grunt serve
     ```
-    
+
 _If you're having a problem installing, you can create a bug or ask a question using the [BUILD Issue Tracker](https://github.com/SAP/BUILD/issues) or contact contact.build@sap.com and we will reach out to you._ 
 
 ## TO DO 
