@@ -29,7 +29,6 @@ For a more detailed description of BUILD, see the [BUILD Overview](https://githu
 
 **Build Modules**
 + [BUILD_PrototypeEditors](https://github.com/SAP/BUILD/tree/master/BUILD_PrototypeEditors)
-+ [BUILD](https://github.com/SAP/BUILD)
 + [BUILD_Projects](https://github.com/SAP/BUILD/tree/master/BUILD_Projects)
 + [BUILD_UICatalogManager](https://github.com/SAP/BUILD/tree/master/BUILD_UICatalogManager)
 + [BUILD_UserResearch](https://github.com/SAP/BUILD/tree/master/BUILD_UserResearch)
@@ -68,10 +67,22 @@ Check out the [Build Support](http://sap.github.io/BUILD_User_Assistance) for de
     ```
 
 2. Install required node modules (dependencies):
-    ```sh
-    npm install (Not currently working)
+    ```sh 
+    cd BUILD
+    npm install
     ```
-
+3. Initialize the database(Required just the first time):
+    ```sh
+    cd server
+    node initSchema.js
+    node setDefaultAccess.js
+    cd ..
+    ```
+4a. Start the BUILD application (for Dev)
+    ```sh
+    grunt serve
+    ```
+    
 _If you're having a problem installing, you can create a bug or ask a question using the [BUILD Issue Tracker](https://github.com/SAP/BUILD/issues) or contact contact.build@sap.com and we will reach out to you._ 
 
 ## TO DO 
