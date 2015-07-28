@@ -95,15 +95,13 @@ _If you're having a problem installing, you can create a bug or ask a question u
 
 ## Copyright and Licenses
 
+### Apache License
+
 Copyright 2015 SAP
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
-   
-   + [Apache License](https://github.com/SAP/BUILD/wiki/License)
-
-The generic license is available at 
 
        http://www.apache.org/licenses/LICENSE-2.0
 
@@ -112,6 +110,9 @@ The generic license is available at
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
+
+### BUILD SUB-COMPONENTS LICENSES
+Click to view a list of [BUILD Sub-Components and respective licenses](https://github.com/SAP/BUILD/blob/master/BUILD%20SUB%20COMPONENTS%20LICENSES). 
 
 ###Further Copyright and Licensing Links
 
