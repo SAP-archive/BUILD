@@ -100,6 +100,10 @@ Copyright 2015 SAP
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
+   
+   + [Apache License](https://github.com/SAP/BUILD/wiki/License)
+
+The generic license is available at 
 
        http://www.apache.org/licenses/LICENSE-2.0
 
@@ -111,7 +115,6 @@ Copyright 2015 SAP
 
 ###Further Copyright and Licensing Links
 
-+ [Apache License](https://github.com/SAP/BUILD/wiki/License)
 + [Individual Contribution License Agreement](https://github.com/SAP/BUILD/blob/master/docs/SAP%20License%20Agreements/SAP%2BIndividual%2BContributor%2BLicense%2BAgreement.pdf) 
 + [Corporate Contributor License Agreement](https://github.com/SAP/BUILD/blob/master/docs/SAP%20License%20Agreements/SAP%2BCorporate%2BContributor%2BLicense%2BAgreement.pdf) 
 
