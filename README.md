@@ -111,7 +111,7 @@ Copyright 2015 SAP
    See the License for the specific language governing permissions and
    limitations under the License.
 
-### BUILD SUB-COMPONENTS LICENSES
+### BUILD Sub-Components Licenses
 Click to view a list of [BUILD Sub-Components and respective licenses](https://github.com/SAP/BUILD/blob/master/BUILD%20SUB%20COMPONENTS%20LICENSES). 
 
 ###Further Copyright and Licensing Links
