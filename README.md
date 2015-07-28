@@ -97,7 +97,7 @@ _If you're having a problem installing, you can create a bug or ask a question u
 
 ### Apache License
 
-Copyright 2015 SAP
+Copyright 2015 SAP SE
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
