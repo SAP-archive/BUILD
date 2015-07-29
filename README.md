@@ -94,26 +94,11 @@ _If you're having a problem installing, you can create a bug or ask a question u
 - [ ] Update package names
 - [ ] Enable Prototype creation
 
-## Copyright and Licenses
+## Licenses
 
-### Apache License
+LICENSE
 
-Copyright 2015 SAP SE
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
-
-### BUILD Sub-Components Licenses
-Click to view a list of [BUILD Sub-Components and respective licenses](https://github.com/SAP/BUILD/blob/master/BUILD%20SUB%20COMPONENTS%20LICENSES). 
+This project is licensed under the Apache Software License, v. 2 except as noted otherwise in the [LICENSE](https://github.com/SAP/BUILD/blob/master/LICENSE.txt) file.
 
 ###Further Copyright and Licensing Links
 
