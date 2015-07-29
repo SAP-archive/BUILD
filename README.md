@@ -96,9 +96,7 @@ _If you're having a problem installing, you can create a bug or ask a question u
 
 ## Licenses
 
-LICENSE
-
-This project is licensed under the Apache Software License, v. 2 except as noted otherwise in the [LICENSE](https://github.com/SAP/BUILD/blob/master/LICENSE.txt) file.
+This project is licensed under the Apache Software License, v. 2 except as noted otherwise in the [License file](https://github.com/SAP/BUILD/blob/master/LICENSE.txt).
 
 ###Further Copyright and Licensing Links
 
