@@ -88,7 +88,7 @@ Check out the [Build Support](http://sap.github.io/BUILD_User_Assistance) for de
 
 Go to [http://localhost:9000](http://localhost:9000) in Chrome browser and click Join
 
-_If you're having a problem installing, you can create a bug or ask a question using the [BUILD Issue Tracker](https://github.com/SAP/BUILD/issues) or contact contact.build@sap.com and we will reach out to you._ 
+_If you're having a problem installing, you can create a bug or ask a question using the [BUILD Issue Tracker](https://github.com/SAP/BUILD/issues), contact contact.build@sap.com or tweet our twitter account [buildwithbuild](https://twitter.com/buildwithbuild) and we will reach out to you._ 
 
 ## TO DO 
 - [ ] Update package names
