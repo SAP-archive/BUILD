@@ -31,7 +31,7 @@ module.exports = angular
     .constant('OAUTH', {
         GOOGLE: {enable: false},
         FACEBOOK: {enable: false},
-        LINKEDIN: {enable: true}
+        LINKEDIN: {enable: false}
      })
     .run(function () {
     });

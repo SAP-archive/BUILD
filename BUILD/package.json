@@ -31,7 +31,7 @@
     "norman-audit-server": "0.1.0",
     "norman-shell-client": "0.1.0",
     "norman-server-tp": "0.1.0",
-    "norman-auth-client": "0.1.0",
+    "norman-auth-client": "0.1.1",
     "norman-auth-server": "0.1.0",
     "norman-projects-client": "0.1.0",
     "norman-projects-server": "0.1.0",
