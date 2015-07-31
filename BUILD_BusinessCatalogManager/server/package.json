@@ -1,6 +1,6 @@
 {
   "name": "norman-business-catalog-manager-server",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Business Catalog Manager Server",
   "repository": {
     "type": "git",
