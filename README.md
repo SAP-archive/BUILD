@@ -92,7 +92,7 @@ _If you're having a problem installing, you can create a bug or ask a question u
 
 ## TO DO 
 - [ ] Update package names
-- [ ] Enable Prototype creation
+- [X] Enable Prototype creation
 
 ## Licenses
 
