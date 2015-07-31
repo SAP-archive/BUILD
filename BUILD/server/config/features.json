@@ -1,7 +1,7 @@
 {
     "disable-prototype": {
         "name": "Prototype service, transform the prototype definition from metadata to actual code.",
-        "enabled": false
+        "enabled": true
     },
     "disable-group": {
         "name": "Group in Data Modeler",
