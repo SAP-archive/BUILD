@@ -98,6 +98,8 @@ _If you're having a problem installing, you can create a bug or ask a question u
 
 This project is licensed under the Apache Software License, v. 2 except as noted otherwise in the [License file](https://github.com/SAP/BUILD/blob/master/LICENSE.txt).
 
+_Please do not remove this license from cloned or forked versions of BUILD._
+
 ###Licenses for Contributors
 
 + [Individual Contribution License Agreement](https://github.com/SAP/BUILD/blob/master/docs/SAP%20License%20Agreements/SAP%2BIndividual%2BContributor%2BLicense%2BAgreement.pdf) 
