@@ -66,10 +66,10 @@ Check out the [Build Support](http://sap.github.io/BUILD_User_Assistance) for de
     git clone https://github.com/SAP/BUILD.git
     ```
 
-2. Install required node modules (dependencies):
+2. Install required node modules (dependencies) (note, you need to be in the BUILD/ folder within the repo):
     ```sh 
     npm install -g grunt-cli
-    cd BUILD
+    cd BUILD/BUILD/
     npm install
     ```
     
