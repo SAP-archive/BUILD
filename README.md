@@ -7,6 +7,9 @@ BUILD  is an open-source, cloud-based and social platform that enables users, ev
 
 For a more detailed description of BUILD, see the [BUILD Overview](https://github.com/SAP/BUILD/wiki/BUILD-Overview).
 
+# User Documentation
+Check out the [Build Support](http://sap.github.io/BUILD_User_Assistance) for detailed help topics and video tutorial about using Build!
+
 # Make a Contribution
 We encourage contributions of any sort, including bug reports, feature requests, and new features.  For more information, see our [Contribution Guidelines](https://github.com/SAP/BUILD/wiki/Contribution-Guidelines).
 
@@ -50,9 +53,6 @@ We encourage contributions of any sort, including bug reports, feature requests,
 + [BUILD_AdminUsers](https://github.com/SAP/BUILD/tree/master/BUILD_AdminUsers)
 + [BUILD_Admin](https://github.com/SAP/BUILD/tree/master/BUILD_Admin)
 + [BUILD_AdminAudit](https://github.com/SAP/BUILD/tree/master/BUILD_AdminAudit)
-
-# User Documentation
-Check out the [Build Support](http://sap.github.io/BUILD_User_Assistance) for detailed help topics and video tutorial about using Build!
 
 ##Getting Started
 
