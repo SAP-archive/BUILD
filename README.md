@@ -7,6 +7,9 @@ BUILD  is an open-source, cloud-based and social platform that enables users, ev
 
 For a more detailed description of BUILD, see the [BUILD Overview](https://github.com/SAP/BUILD/wiki/BUILD-Overview).
 
+# Make a Contribution
+We encourage contributions of any sort, including bug reports, feature requests, and new features.  For more information, see our [Contribution Guidelines](https://github.wdf.sap.corp/Norman/Norman/wiki/Contribution-Guidelines).
+
 # Modules in Build
 **Foundation Modules**
 + [angular-sap-common-directives](https://github.com/SAP/BUILD/tree/master/angular-sap-common-directives)
@@ -91,9 +94,6 @@ Check out the [Build Support](http://sap.github.io/BUILD_User_Assistance) for de
 Go to [http://localhost:9000](http://localhost:9000) in Chrome browser and click Join
 
 _If you're having a problem installing, you can create a bug or ask a question using the [BUILD Issue Tracker](https://github.com/SAP/BUILD/issues), contact contribute.build@sap.com or tweet our twitter account [buildwithbuild](https://twitter.com/buildwithbuild) and we will reach out to you._ 
-
-# Make a Contribution
-We encourage contributions of any sort, including bug reports, feature requests, and new features.  For more information, see our [Contribution Guidelines](https://github.wdf.sap.corp/Norman/Norman/wiki/Contribution-Guidelines).
 
 # Licenses
 
