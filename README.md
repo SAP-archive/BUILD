@@ -17,7 +17,7 @@ BUILD is composed of <a href="#Modules in Build">multiple modules</a>, each of w
 
  This document describes how to make contributions to any of these modules.
 
-# <a name="Modules in Build"></a>
+# <a name="Modules in Build"></a> Modules in BUILD
 **Foundation Modules**
 + [angular-sap-common-directives](https://github.com/SAP/BUILD/tree/master/angular-sap-common-directives)
 + [angular-sap-common-services](https://github.com/SAP/BUILD/tree/master/angular-sap-common-services)
