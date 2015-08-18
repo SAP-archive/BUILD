@@ -8,7 +8,7 @@ BUILD  is an open-source, cloud-based and social platform that enables users, ev
 For a more detailed description of BUILD, see the [BUILD Overview](https://github.com/SAP/BUILD/wiki/BUILD-Overview).
 
 # Make a Contribution
-We encourage contributions of any sort, including bug reports, feature requests, and new features.  For more information, see our [Contribution Guidelines](https://github.wdf.sap.corp/Norman/Norman/wiki/Contribution-Guidelines).
+We encourage contributions of any sort, including bug reports, feature requests, and new features.  For more information, see our [Contribution Guidelines](https://github.com/SAP/BUILD/wiki/Contribution-Guidelines).
 
 # Modules in Build
 **Foundation Modules**
