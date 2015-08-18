@@ -51,9 +51,9 @@ For a more detailed description of BUILD, see the [BUILD Overview](https://githu
 # User Documentation
 Check out the [Build Support](http://sap.github.io/BUILD_User_Assistance) for detailed help topics and video tutorial about using Build!
 
-#Getting Started
+##Getting Started
 
-##Prerequisites
+###Prerequisites
 - install [GIT](https://git-scm.com/downloads)
 - install [npm.js](https://docs.npmjs.com/cli/install) - _*only version 1.4.28 is supported*_
 - install [node.js](https://docs.npmjs.com/cli/install) -_*only version 10.28 is supported*_
@@ -61,7 +61,7 @@ Check out the [Build Support](http://sap.github.io/BUILD_User_Assistance) for de
 - Follow install for your OS @ https://github.com/TooTallNate/node-gyp/blob/master/README.md#installation
 
 
-## Download / Clone
+###Download / Clone
 
 1. Clone [BUILD](https://github.com/SAP/BUILD) repo
     ```sh
@@ -92,10 +92,10 @@ Go to [http://localhost:9000](http://localhost:9000) in Chrome browser and click
 
 _If you're having a problem installing, you can create a bug or ask a question using the [BUILD Issue Tracker](https://github.com/SAP/BUILD/issues), contact contribute.build@sap.com or tweet our twitter account [buildwithbuild](https://twitter.com/buildwithbuild) and we will reach out to you._ 
 
-## Make a Contribution
+# Make a Contribution
 We encourage contributions of any sort, including bug reports, feature requests, and new features.  For more information, see our [Contribution Guidelines](https://github.wdf.sap.corp/Norman/Norman/wiki/Contribution-Guidelines).
 
-## Licenses
+# Licenses
 
 This project is licensed under the Apache Software License, v. 2 except as noted otherwise in the [License file](https://github.com/SAP/BUILD/blob/master/LICENSE.txt).
 
@@ -106,6 +106,6 @@ _Please do not remove this license from cloned or forked versions of BUILD._
 + [Individual Contribution License Agreement](https://github.com/SAP/BUILD/blob/master/docs/SAP%20License%20Agreements/SAP%2BIndividual%2BContributor%2BLicense%2BAgreement.pdf) 
 + [Corporate Contributor License Agreement](https://github.com/SAP/BUILD/blob/master/docs/SAP%20License%20Agreements/SAP%2BCorporate%2BContributor%2BLicense%2BAgreement.pdf) 
 
-## Legal Notices
+# Legal Notices
 
 [View the legal notice about fonts used in Build](https://github.com/SAP/BUILD/wiki/Legal-Notice-About-Fonts).
