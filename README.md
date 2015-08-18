@@ -11,9 +11,13 @@ For a more detailed description of BUILD, see the [BUILD Overview](https://githu
 Check out the [Build Support](http://sap.github.io/BUILD_User_Assistance) for detailed help topics and video tutorial about using Build!
 
 # Make a Contribution
-We encourage contributions of any sort, including bug reports, feature requests, and new features.  For more information, see our [Contribution Guidelines](https://github.com/SAP/BUILD/wiki/Contribution-Guidelines).
 
-# Modules in Build
+BUILD is composed of <a href="#Modules in Build">multiple modules</a>, each of which have their own repository. We encourage contributions of any sort, including bug reports, feature requests, and new features.  For more information, see our [Contribution Guidelines](https://github.com/SAP/BUILD/wiki/Contribution-Guidelines).
+
+
+ This document describes how to make contributions to any of these modules.
+
+# <a name="Modules in Build"></a>
 **Foundation Modules**
 + [angular-sap-common-directives](https://github.com/SAP/BUILD/tree/master/angular-sap-common-directives)
 + [angular-sap-common-services](https://github.com/SAP/BUILD/tree/master/angular-sap-common-services)
