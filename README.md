@@ -12,7 +12,8 @@ Check out the [Build Support](http://sap.github.io/BUILD_User_Assistance) for de
 
 # Make a Contribution
 
-BUILD is composed of <a href="#Modules in Build">multiple modules</a>, each of which have their own repository. We encourage contributions of any sort, to any of these repositories. Popular contributions include bug reports, feature requests, and new features. [This document](https://github.com/SAP/BUILD/wiki/Contribution-Guidelines) describes how to make contributions to any of these modules.
+So you want to contribute to BUILD? Good choice! There is lots of scope for contribution, and there's plenty to do! 
+Popular contributions include bug reports, feature requests, and new features. [This document](https://github.com/SAP/BUILD/wiki/Contribution-Guidelines) describes how to make contributions to any of these modules.
 
 # <a name="Modules in Build"></a> Modules in BUILD
 **Foundation Modules**
