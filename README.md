@@ -92,6 +92,9 @@ Go to [http://localhost:9000](http://localhost:9000) in Chrome browser and click
 
 _If you're having a problem installing, you can create a bug or ask a question using the [BUILD Issue Tracker](https://github.com/SAP/BUILD/issues), contact contribute.build@sap.com or tweet our twitter account [buildwithbuild](https://twitter.com/buildwithbuild) and we will reach out to you._ 
 
+## Make a Contribution
+We encourage contributions of any sort, including bug reports, feature requests, and new features.  For more information, see our [Contribution Guidelines](https://github.wdf.sap.corp/Norman/Norman/wiki/Contribution-Guidelines).
+
 ## Licenses
 
 This project is licensed under the Apache Software License, v. 2 except as noted otherwise in the [License file](https://github.com/SAP/BUILD/blob/master/LICENSE.txt).
