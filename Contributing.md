@@ -1,3 +1,5 @@
+#Contributing to BUILD
+
 We want to make it simple and rewarding to contribute to BUILD based on the following principles:  
 
 + As easy and transparent as possible to contribute.
