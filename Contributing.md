@@ -55,12 +55,12 @@ Use the following procedure to change code, whether it is a bug fix or a new fea
 + Please do not submit more than one feature or bug fix per pull request.
 + Implement your new feature or bug fix on your branch.
 + For consistency, and to enhance the chances that your contribution will be passed for review without corrections required, ensure that your code conforms to our current approach. For more information, see the [BUILD Style Guide](https://github.com/SAP/BUILD/wiki/Coding-Guidelines-for-Angular-JS).
-+Be sure your author field in Git is filled out correctly, including full name and email address. This enables us to credit you for your contribution.
++ Be sure your author field in Git is filled out correctly, including full name and email address. This enables us to credit you for your contribution.
 
 **Next**, perform the requisite pre-pull request testing procedures. Please include tests to prove your code works.
 [link to go in here]
 
-**Next**, push the changes on your fork, and submit pull request for original repository. For more information, see [Using Pull Requests](https://help.github.com/articles/using-pull-requests/).
+**Next**, push the changes on your fork, and submit pull request for original repository. Please include the issue number for the issue associated with the bug fix, new feature, or feature enhancement. For more information, see [Using Pull Requests](https://help.github.com/articles/using-pull-requests/).
 
 **Note**: For guidelines on commit messages, see the [BUILD Style Guide](https://github.com/SAP/BUILD/wiki/Coding-Guidelines-for-Angular-JS).
 
