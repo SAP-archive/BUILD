@@ -2,6 +2,12 @@
 
 ** Beta - work in Progress **
 
+# What's New in BUILD 0.3
+Our customers have been waiting for a long time, and here it is: the first version of the BUILD UI Composer! Along with the composers come:
++ Drag-and-drop of UI5 controls into the prototype canvas.
++ Data modeling, sample data management, and data binding.
++ A ton of bug fixes and technical improvements.
+
 # Overview 
 BUILD  is an open-source, cloud-based and social platform that enables users, even those with no UI development knowledge, to easily create fully interactive prototypes with realistic data, share them with colleagues and consolidate this feedback without writing a line of code. 
 
