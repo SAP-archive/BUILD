@@ -3,7 +3,7 @@
 ** Beta - work in Progress **
 
 # Overview of BUILD
-BUILD  is an open-source, cloud-based and social platform that enables users, even those with no UI development knowledge, to easily create fully interactive prototypes with realistic data, share them with colleagues and consolidate this feedback without writing a line of code. 
+BUILD  is an open-source, cloud-based, and social platform that enables users with no UI development knowledge to create fully interactive prototypes. You can include realistic data, share the prototypes with colleagues, and consolidate their feedback without writing a line of code. 
 
 <a href="https://www.youtube.com/watch?v=PQaZqxVtln4
 " target="_blank"><img src="https://github.com/SAP/BUILD/blob/data-model-samples/docs/images/image_youtube_email.png?raw=true" 
