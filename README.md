@@ -2,7 +2,7 @@
 
 ** Beta - work in Progress **
 
-# What is BUILD?
+# Overview of BUILD
 BUILD  is an open-source, cloud-based and social platform that enables users, even those with no UI development knowledge, to easily create fully interactive prototypes with realistic data, share them with colleagues and consolidate this feedback without writing a line of code. 
 
 <a href="https://www.youtube.com/watch?v=PQaZqxVtln4
@@ -11,7 +11,7 @@ alt="IMAGE ALT TEXT HERE" width="480" height="360" border="50" /></a>
 
 For a more detailed description of BUILD, see the [BUILD Overview](https://github.com/SAP/BUILD/wiki/BUILD-Overview).
 
-# What's New in BUILD 0.3
+# What's New in BUILD 0.3?
 The BUILD OS community have been busy of the last couple of months, and are excited to share our latest updates to BUILD.
 Our customers have been waiting for a long time, and here it is: the first version of the BUILD UI Composer! 
 
