@@ -2,6 +2,15 @@
 
 ** Beta - work in Progress **
 
+# What is BUILD?
+BUILD  is an open-source, cloud-based and social platform that enables users, even those with no UI development knowledge, to easily create fully interactive prototypes with realistic data, share them with colleagues and consolidate this feedback without writing a line of code. 
+
+<a href="https://www.youtube.com/watch?v=PQaZqxVtln4
+" target="_blank"><img src="https://github.com/SAP/BUILD/blob/data-model-samples/docs/images/image_youtube_email.png?raw=true" 
+alt="IMAGE ALT TEXT HERE" width="480" height="360" border="50" /></a>
+
+For a more detailed description of BUILD, see the [BUILD Overview](https://github.com/SAP/BUILD/wiki/BUILD-Overview).
+
 # What's New in BUILD 0.3
 The BUILD OS community have been busy of the last couple of months, and are excited to share our latest updates to BUILD.
 Our customers have been waiting for a long time, and here it is: the first version of the BUILD UI Composer! 
@@ -11,15 +20,6 @@ Along with the UI composer comes:
 + Data modeling, sample data management, and data binding.
 + Smart templates that make UI design quick and easy.
 + A ton of bug fixes and technical improvements.
-
-# Overview 
-BUILD  is an open-source, cloud-based and social platform that enables users, even those with no UI development knowledge, to easily create fully interactive prototypes with realistic data, share them with colleagues and consolidate this feedback without writing a line of code. 
-
-<a href="https://www.youtube.com/watch?v=PQaZqxVtln4
-" target="_blank"><img src="https://github.com/SAP/BUILD/blob/data-model-samples/docs/images/image_youtube_email.png?raw=true" 
-alt="IMAGE ALT TEXT HERE" width="480" height="360" border="50" /></a>
-
-For a more detailed description of BUILD, see the [BUILD Overview](https://github.com/SAP/BUILD/wiki/BUILD-Overview).
 
 # User Documentation
 Check out the [Build Support](http://sap.github.io/BUILD_User_Assistance) for detailed help topics and video tutorial about using Build!
