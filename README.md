@@ -22,7 +22,7 @@ Along with the UI composer comes:
 + A ton of bug fixes and technical improvements.
 
 # User Documentation
-Check out the [Build Support](http://sap.github.io/BUILD_User_Assistance) for detailed help topics and video tutorial about using Build!
+Check out the [BUILD Support Site](http://sap.github.io/BUILD_User_Assistance) for detailed help topics and video tutorials about using BUILD!
 
 # Make a Contribution
 
