@@ -5,9 +5,11 @@
 # Overview of BUILD
 BUILD  is an open-source, cloud-based, and social platform that enables users with no UI development knowledge to create fully interactive prototypes. Without writing a line of code, you can perform user research, design the UI, include realistic data, and share the prototypes with colleagues. Developers can use the code of the prototype as a jumpstart to quickly create the app.
 
+<p align="center">
 <a href="https://www.youtube.com/watch?v=PQaZqxVtln4
 " target="_blank"><img src="https://github.com/SAP/BUILD/blob/data-model-samples/docs/images/image_youtube_email.png?raw=true" 
-alt="IMAGE ALT TEXT HERE" width="480" height="360" border="50" /></a>
+alt="To view the BUILD getting started click on the image..." width="640" height="360"/></a>
+</p>
 
 For a more detailed description of BUILD, see the [BUILD Overview](https://github.com/SAP/BUILD/wiki/BUILD-Overview).
 
