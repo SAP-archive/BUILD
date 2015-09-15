@@ -32,47 +32,6 @@ Check out the [BUILD Support Site](http://sap.github.io/BUILD_User_Assistance) f
 So you want to contribute to BUILD? Good choice! There is lots of scope for contribution, and there's plenty to do! 
 Popular contributions include bug reports, feature requests, and new features. [This document](https://github.com/SAP/BUILD/blob/master/Contributing.md) describes how to make contributions to any of these modules.
 
-# <a name="Modules in Build"></a> Modules in BUILD
-**Foundation Modules**
-+ [angular-sap-common-directives](https://github.com/SAP/BUILD/tree/master/angular-sap-common-directives)
-+ [angular-sap-common-services](https://github.com/SAP/BUILD/tree/master/angular-sap-common-services)
-+ [angular-sap-ui-elements](https://github.com/SAP/BUILD/tree/master/angular-sap-ui-elements)
-+ [angular-sap-common-filters](https://github.com/SAP/BUILD/tree/master/angular-sap-common-filters)
-+ [node-sap-mongo-config](https://github.com/SAP/BUILD/tree/master/node-sap-mongo-config)
-+ [node-sap-common](https://github.com/SAP/BUILD/tree/master/node-sap-common)
-+ [node-sap-app-server](https://github.com/SAP/BUILD/tree/master/node-sap-app-server)
-+ [node-sap-mailer](https://github.com/SAP/BUILD/tree/master/node-sap-mailer)
-+ [node-sap-secure-store](https://github.com/SAP/BUILD/tree/master/node-sap-secure-store)
-+ [node-sap-upload](https://github.com/SAP/BUILD/tree/master/node-sap-upload)
-+ [node-sap-mongo](https://github.com/SAP/BUILD/tree/master/node-sap-mongo)
-+ [node-sap-promise](https://github.com/SAP/BUILD/tree/master/node-sap-promise)
-+ [node-sap-logging](https://github.com/SAP/BUILD/tree/master/node-sap-logging)
-+ [node-sap-mongo-config](https://github.com/SAP/BUILD/tree/master/node-sap-mongo-config)
-+ [node-sap-build](https://github.com/SAP/BUILD/tree/master/node-sap-build)
-+ [angular-sap-html2canvas](https://github.com/SAP/BUILD/tree/master/angular-sap-html2canvas)
-+ [angular-sap-d3-plugins](https://github.com/SAP/BUILD/tree/master/angular-sap-d3-plugins)
-
-**Build Modules**
-+ [BUILD_PrototypeEditors](https://github.com/SAP/BUILD/tree/master/BUILD_PrototypeEditors)
-+ [BUILD_Projects](https://github.com/SAP/BUILD/tree/master/BUILD_Projects)
-+ [BUILD_UICatalogManager](https://github.com/SAP/BUILD/tree/master/BUILD_UICatalogManager)
-+ [BUILD_UserResearch](https://github.com/SAP/BUILD/tree/master/BUILD_UserResearch)
-+ [BUILD_BusinessCatalogManager](https://github.com/SAP/BUILD/tree/master/BUILD_BusinessCatalogManager)
-+ [BUILD_Auth](https://github.com/SAP/BUILD/tree/master/BUILD_Auth) 
-+ [BUILD_Shell](https://github.com/SAP/BUILD/tree/master/BUILD_Shell)
-+ [BUILD_SharedThirdParties](https://github.com/SAP/BUILD/tree/master/BUILD_SharedThirdParties)
-+ [BUILD_Common](https://github.com/SAP/BUILD/tree/master/BUILD_Common)
-+ [BUILD_AngularUIGrid](https://github.com/SAP/BUILD/tree/master/BUILD_AngularUIGrid)
-+ [BUILD_AngularUIGridTree](https://github.com/SAP/BUILD/tree/master/BUILD_AngularUITree)
-+ [BUILD_AngularUIGridZip](https://github.com/SAP/BUILD/tree/master/BUILD_AngularZip)
-+ [BUILD_KeyBoardEventPolyfill](https://github.com/SAP/BUILD/tree/master/BUILD_KeyBoardEventPolyfill)
-+ [BUILD_jQuery](https://github.com/SAP/BUILD/tree/master/BUILD_jQuery)
-
-**Admin Modules**
-+ [BUILD_AdminUsers](https://github.com/SAP/BUILD/tree/master/BUILD_AdminUsers)
-+ [BUILD_Admin](https://github.com/SAP/BUILD/tree/master/BUILD_Admin)
-+ [BUILD_AdminAudit](https://github.com/SAP/BUILD/tree/master/BUILD_AdminAudit)
-
 ##Getting Started
 
 ###Prerequisites
