@@ -1,5 +1,7 @@
 <p align="center">
-<img src = "https://github.com/SAP/BUILD/blob/master/docs/images/BUILD_Logo_Light.png?raw=true" /><br />
+<a href="https://www.youtube.com/watch?v=PQaZqxVtln4
+" target="_blank"><img src = "https://github.com/SAP/BUILD/blob/master/docs/images/BUILD_Logo_Light.png?raw=true" /></a>
+<br />
 Beta - work in Progress
 </p>
 
