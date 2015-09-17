@@ -96,7 +96,7 @@ _If you're having a problem installing, you can create a bug or ask a question u
 
 **Build Modules**
 + [BUILD_PrototypeEditors](https://github.com/sapbuild/PrototypeEditors)
-+ [BUILD](https://github.com/sapbuild/angular-sap-common-directives)
++ [BUILD](https://github.com/SAP/BUILD)
 + [BUILD_Projects](https://github.com/sapbuild/Projects)
 + [BUILD_UICatalogManager](https://github.com/sapbuild/UICatalogManager)
 + [BUILD_UserResearch](https://github.com/sapbuild/UserResearch)
