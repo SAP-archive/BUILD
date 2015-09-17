@@ -1,4 +1,6 @@
 @import (reference) 'node_modules/norman-client-tp/node_modules/angular-sap-ui-elements/styles/base';
+@import (reference) 'node_modules/norman-client-tp/node_modules/angular-sap-ui-elements/styles/sprite';
+
 
 .app {
   height: 100%;
@@ -43,11 +45,29 @@
       }
       .norman-logo {
         float: left;
-
-        img {
-          height: 40px;
-        }
+          .build-mascot {
+              position: relative;
+              float: left;
+          }
+          &:before {
+            position: absolute;
+              content:'';
+              .common-build-mascot();
+              .common-build-mascot-dims();
+          }
       }
+
+        .build-type-ffffff {
+            position: relative;
+            float: left;
+            padding-left: 50px;
+            &:before {
+                position: absolute;
+                content: '';
+                .common-build-type-ffffff();
+                .common-build-type-ffffff-dims();
+            }
+        }
 
       .btn-homecover {
         display: block;
@@ -196,9 +216,31 @@
           float: right;
           padding-top: 3px;
         }
-        .sap-logo img {
-          vertical-align: middle;
-        }
+
+          .white {
+              line-height: 30px;
+          }
+
+          .sap-logo {
+              padding-left: 85px;
+              height: 30px;
+              line-height: 30px;
+              float: left;
+              vertical-align: middle;
+              position: relative;
+              &:before {
+                  position: absolute;
+                  content: '';
+                  top: 0;
+                  left: 20px;
+                  .common-icon-sap-white();
+                  .common-icon-sap-white-dims()
+              }
+              img {
+                  vertical-align: middle;
+              }
+          }
+
         a {
           padding-left: 20px;
           color: #fff;

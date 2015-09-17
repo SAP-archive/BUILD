@@ -1,9 +1,0 @@
-{
-  "handlers":{
-    "norman-auth-server": {
-        "users": "/api/users",
-        "auth": "/auth"
-    },
-    "norman-ui-catalog-manager-server":"/api/uicatalogs"
-  }
-}

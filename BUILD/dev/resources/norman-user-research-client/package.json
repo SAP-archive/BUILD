@@ -1,0 +1,37 @@
+{
+  "name": "norman-user-research-client",
+  "version": "0.1.0",
+  "description": "Norman User Research module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SAP/BUILD.git"
+  },
+  "licenses": [
+    {
+      "type": "Apache License, Version 2.0",
+      "url": "https://github.com/SAP/BUILD/blob/master/LICENSE.txt"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "BUILD Team",
+      "email": "contact.build@sap.com"
+    }
+  ],
+  "peerDependencies": {
+    "norman-client-tp": "*"
+  },
+  "dependencies": {
+    "angular-filter": "0.5.1"
+  },
+  "readme": "norman-user-research-client\n============\nThis module allows users to obtain feedbacks on their app.\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/SAP/BUILD/issues"
+  },
+  "homepage": "https://github.com/SAP/BUILD",
+  "_id": "norman-user-research-client@0.1.0",
+  "_shasum": "a83a3d355bcff33d3dad59433d2232aff13a30fc",
+  "_from": "https://registry.npmjs.org/norman-user-research-client/-/norman-user-research-client-0.1.0.tgz",
+  "_resolved": "https://registry.npmjs.org/norman-user-research-client/-/norman-user-research-client-0.1.0.tgz"
+}

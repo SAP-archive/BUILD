@@ -1,5 +1,5 @@
 @composers
-Feature: Composer
+Feature: Composer - test drag drop control
 
 
     @flow @composerNB
@@ -10,7 +10,7 @@ Feature: Composer
 
     @flow @composerNB
     Scenario: Once Logged in you are on the Norman Page
-        Given I am on the Landing Page
+        Given I am on the Landing Page for Composer
         When  I click New Project Link
         And  I enter Project Name
         Then The project is created
@@ -36,8 +36,8 @@ Feature: Composer
         Given I am on the prototype page
         When I click on thumbnail of page "Page 1"
         Then I am in ui composer canvas view
-        And There are "3" pages
-        And I am on page "1"
+        Then There are "3" pages
+        Then I am on page "1"
 
     @flow @composerNB
    Scenario: User drags and drops Button control

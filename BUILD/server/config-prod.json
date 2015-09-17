@@ -40,15 +40,15 @@
     "http": {
         "port": 9000,
         "proxy": {
-            "host": "mail.example.com",
+            "host": "proxy.wdf.sap.corp",
             "port": 8080
         },
         "secureFlag" : false
     },
     "mail": {
-        "sender":"do.not.reply@example.com",
+        "sender":"do.not.reply@sap.com",
         "smtp": {
-            "host": "mail.example.com",
+            "host": "mail.sap.corp",
             "port": 25,
             "debug": true,
             "tls": {

@@ -10,7 +10,7 @@ Feature: Composer - test publish project
 
     @composerNB
     Scenario: Once Logged in you are on the Norman Page
-        Given I am on the Landing Page
+        Given I am on the Landing Page for Composer
         When  I click New Project Link
         And  I enter Project Name
         Then The project is created

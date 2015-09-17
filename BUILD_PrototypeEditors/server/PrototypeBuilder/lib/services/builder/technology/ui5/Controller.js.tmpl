@@ -1,9 +1,0 @@
-"use strict";
-sap.ui.controller("<%=controllerName%>",
-{
-    onInit: function() {
-        this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-        this.oRouter.attachRouteMatched(jQuery.proxy(this.handleRouteMatched, this));
-    },
-<%=eventHandlers%>
-});

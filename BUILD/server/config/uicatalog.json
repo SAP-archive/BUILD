@@ -1,0 +1,7 @@
+{
+  "default-ui5-library":{
+              "url":"https://openui5.hana.ondemand.com/downloads/openui5-runtime-1.26.10.zip",
+              "libraryType":"openui5",
+              "libraryVersion":"1.26.10"
+  }
+}

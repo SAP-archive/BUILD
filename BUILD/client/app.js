@@ -5,18 +5,6 @@ var modules = require('norman-client-tp').modules;
 // Require optional modules
 require('./requires.js');
 
-
-// display angular errors using source-maps
-angular.module('source-map-exception-handler', [])
-.config(function ($provide) {
-    $provide.decorator('$exceptionHandler', function ($delegate) {
-        return function (exception, cause) {
-            $delegate(exception, cause);
-            throw exception;
-        };
-    });
-});
-
 angular.module('norman', modules)
     .config(function ($urlRouterProvider, $locationProvider, $httpProvider) {
         $urlRouterProvider.otherwise('/');
@@ -29,7 +17,7 @@ angular.module('norman', modules)
         $rootScope.asideService = AsideFactory;
 
         $rootScope.$on('$stateChangeStart', function (ev, toState) {
-            //If the current user is not already initialize, will try to do it
+            // If the current user is not already initialize, will try to do it
             Auth.initCurrentUser();
 
             $rootScope.pageClass = 'page-' + toState.name.replace(/\./g, '-');
@@ -42,7 +30,8 @@ angular.module('norman', modules)
                             $rootScope.redirect = $location.url();
                             if (d && d.settings && d.settings.provider && d.settings.provider.local === false) {
                                 $location.path('/norman');
-                            } else {
+                            }
+                            else {
                                 $location.path('/login');
                             }
                         }
@@ -71,7 +60,7 @@ angular.module('norman', modules)
                         }
                     }).then(function () {
                         // add state name to body class
-                        //$rootScope.pageClass = 'page-' + toState.name.replace(/\./g, '-');
+                        // $rootScope.pageClass = 'page-' + toState.name.replace(/\./g, '-');
                         var redirect = $rootScope.redirect;
                         if (redirect && path !== 'login' && path !== 'signup') {
                             delete $rootScope.redirect;

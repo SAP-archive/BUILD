@@ -1,4 +1,4 @@
-@userRes
+@userRes @review
 Feature: Access and Test new Participant Feature
 
     @flow
@@ -36,8 +36,7 @@ Feature: Access and Test new Participant Feature
     @flow
     Scenario: 	Check feedback is present
         Given 	I am on the Participant Page
-        When 	I see "9" Annotations in Participants
-        And     I see the "1" Tasks Completed Average in Participants
-        And     I see the "5" Answers in Participants
-        Then 	I see the "9" Questions in Participants
-        And     Reset Page to Projects Page
+        When 	I see "12" Annotations in Participants
+        And     I see the "1.7" Tasks Completed Average in Participants
+        And     I see the "6" Answers in Participants
+        Then 	I see the "12" Questions in Participants

@@ -6,7 +6,6 @@ var AppServer = require('node-sap-app-server');
 var commonServer = require('norman-common-server');
 var registry = commonServer.registry;
 var serverLogger = commonServer.logging.createLogger('set-default-access');
-var Promise = require('norman-promise');
 
 var configFile = path.join(__dirname, 'config.json');
 var systemContext = {

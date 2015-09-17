@@ -1,4 +1,4 @@
-@userRes
+@userRes @part
 Feature: Participate in Study
     As a user, I want to participate publish study
 
@@ -16,17 +16,28 @@ Feature: Participate in Study
         Then  I should see the Start Task PopUp
 
     @flow
-    Scenario: Participate in the Tasks
+    Scenario: Participate in the Task 1
         Given I am a Task Page to Participate
         When  I click on the Start Task Button
-        And   Click on "All" the Links in the Prototype
         And   Leave Feedack for the Page
-        And   I finish the Task
+        ###   Leave Feedback First
+        And   Click on "One" the Links in the Prototype
+        And   I "Finish" the Task
         Then  I see the congratulations icon
         And   I enter next screen
 
     @flow
-    Scenario: Dropping annotations first screen.
+    Scenario: Participate in the Task 2
+        Given I am a Task Page to Participate
+        When  I click on the Start Task Button
+        And   Click on "All" the Links in the Prototype
+        And   Leave Feedack for the Page
+        And   I "Finish" the Task
+        Then  I see the congratulations icon
+        And   I enter next screen
+
+    @flow
+    Scenario: Dropping annotations first Image screen.
         Given I am on screen enlarge page
         When  I drop annotations and comment
         And   I see No more floating toast after 3 comments
@@ -34,7 +45,7 @@ Feature: Participate in Study
         And   I enter next screen
 
     @flow
-    Scenario: Dropping annotations second screen.
+    Scenario: Dropping annotations first Image screen.
         Given  I am on a study Participant screen enlarge page
         When   I drop annotation no comment or sentiment
         And    I answer on the Free Text Question with "Hello There"

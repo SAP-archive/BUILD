@@ -1,0 +1,34 @@
+{
+  "name": "norman-business-catalog-manager-client",
+  "version": "0.1.0",
+  "description": "Business Catalog Manager Client",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SAP/BUILD.git"
+  },
+  "maintainers": [
+    {
+      "name": "BUILD Team",
+      "email": "contact.build@sap.com"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "Apache License, Version 2.0",
+      "url": "https://github.com/SAP/BUILD/blob/master/LICENSE.txt"
+    }
+  ],
+  "peerDependencies": {
+    "norman-client-tp": "*"
+  },
+  "readme": "Business Catalog Manager Client Module\n=====\n###BUILD Business Catalog Manager module.\n\nTo install run:\n```\n\tnpm install norman-business-catalog-manager-client norman-business-catalog-manager-server\n```\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/SAP/BUILD/issues"
+  },
+  "homepage": "https://github.com/SAP/BUILD",
+  "_id": "norman-business-catalog-manager-client@0.1.0",
+  "_shasum": "ca18a64fc22c937c6679a593cd86948eb3f6765c",
+  "_from": "https://registry.npmjs.org/norman-business-catalog-manager-client/-/norman-business-catalog-manager-client-0.1.0.tgz",
+  "_resolved": "https://registry.npmjs.org/norman-business-catalog-manager-client/-/norman-business-catalog-manager-client-0.1.0.tgz"
+}

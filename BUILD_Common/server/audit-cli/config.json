@@ -1,7 +1,0 @@
-{
-	"category": "authentication",
-	"sort": "~date",
-	"username": "^a.*",
-	"u": "user",
-	"p": "myPass"
-}

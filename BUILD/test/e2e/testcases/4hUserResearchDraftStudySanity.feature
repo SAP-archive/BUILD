@@ -25,18 +25,21 @@ Feature: Draft Study Sanity Checks
     @flow
     Scenario: Associating questions to first image
         Given I am on the study edit page
-        When  I click on an image
+        When  I click on tile "1"
         And   the image enlarges
 
     @flow
     Scenario: Add Question to Images
         Given   The Question Popover is Open
         When    I enter a question "Draft Question 1?" Free Text Only
-        And     Click Save and Next
+        And     Click Save and Close
+        And     I click on tile "2"
         And     I enter a question "Draft Question 2?" Free Text Only
-        And     Click Save and Next
+        And     Click Save and Close
+        And     I click on tile "3"
         And     I enter a question "Draft Question 3?" Free Text Only
-        And     Click Save and Next
+        And     Click Save and Close
+        And     I click on tile "4"
         And     I enter a question "Draft Question 4?" Free Text Only
         And     Click Save and Close
         Then    Questions are saved

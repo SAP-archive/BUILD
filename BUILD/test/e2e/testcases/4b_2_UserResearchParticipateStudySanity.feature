@@ -35,12 +35,23 @@ Feature: User 2 Participate in Study
         Then  I should see the Start Task PopUp
 
     @flow
-    Scenario: Participate in the Tasks
+    Scenario: Participate in the Task 1
+        Given I am a Task Page to Participate
+        When  I click on the Start Task Button
+        And   Leave Feedack for the Page
+        ###   Leave Feedback First
+        And   Click on "One" the Links in the Prototype
+        And   I "Finish" the Task
+        Then  I see the congratulations icon
+        And   I enter next screen
+
+    @flow
+    Scenario: Participate in the Task 2
         Given I am a Task Page to Participate
         When  I click on the Start Task Button
         And   Click on "All" the Links in the Prototype
         And   Leave Feedack for the Page
-        And   I finish the Task
+        And   I "Finish" the Task
         Then  I see the congratulations icon
         And   I enter next screen
 
