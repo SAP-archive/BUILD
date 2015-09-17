@@ -13,8 +13,8 @@ coverage/
 .sublime-
 .eslintrc
 BUILD/.eslintrc
-BUILD/uploads
-BUILD/logs
+BUILD/uploads/
+BUILD/logs/
 .idea/
 *.iml
 *.ipr
