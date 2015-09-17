@@ -19,6 +19,16 @@ For a more detailed description of BUILD, see the [BUILD Overview](https://githu
 # User Documentation
 Check out the [BUILD Support Site](http://sap.github.io/BUILD_User_Assistance) for detailed help topics and video tutorials about using BUILD!
 
+# What's New in BUILD 0.3?
+The BUILD OS community have been busy of the last couple of months and are excited to share our latest updates to BUILD.
+Our customers have been waiting for a long time, and here it is: the first version of the BUILD UI Composer! 
+
+Along with the UI composer comes:
++ Drag-and-drop of UI controls into the prototype canvas.
++ Data modeling, sample data management, and data binding.
++ Smart templates that make UI design quick and easy.
++ A ton of bug fixes and technical improvements.
+
 # Make a Contribution
 
 So you want to contribute to BUILD? Good choice! There is lots of scope for contribution, and there's plenty to do! 
