@@ -116,9 +116,9 @@ _If you're having a problem installing, you can create a bug or ask a question u
 + [jQuery](https://github.com/sapbuild/jquery-norman)
 
 **Admin Modules**
-+ [BUILD_AdminUsers](https://github.com/sapbuild/admin-users)
-+ [BUILD_Admin](https://github.com/sapbuild/admin)
-+ [BUILD_AdminAudit](https://github.com/sapbuild/admin-audit)
++ [AdminUsers](https://github.com/sapbuild/admin-users)
++ [Admin](https://github.com/sapbuild/admin)
++ [AdminAudit](https://github.com/sapbuild/admin-audit)
 
 # Licenses
 
