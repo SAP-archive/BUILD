@@ -100,7 +100,6 @@ _If you're having a problem installing, you can create a bug or ask a question u
 + [Projects](https://github.com/sapbuild/Projects)
 + [UICatalogManager](https://github.com/sapbuild/UICatalogManager)
 + [UserResearch](https://github.com/sapbuild/UserResearch)
-+ [UXRuleEngine](https://github.com/sapbuild/UXRuleEngine)
 + [BusinessCatalogManager](https://github.com/sapbuild/BusinessCatalogManager)
 + [Auth](https://github.com/sapbuild/Auth) 
 + [Shell](https://github.com/sapbuild/Shell)
