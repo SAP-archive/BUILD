@@ -1,6 +1,0 @@
-{"appServer":"AppServer","v":0,"pid":4412,"hostname":"DUBN32388190A","name":"server","msg":"Starting server","level":30,"severity":"INFO","time":"2015-09-17T09:58:46.007Z"}
-{"appServer":"AppServer","v":0,"pid":4412,"hostname":"DUBN32388190A","name":"server","msg":"Stopping server","level":30,"severity":"INFO","time":"2015-09-17T09:58:58.172Z"}
-{"appServer":"AppServer","v":0,"pid":4412,"hostname":"DUBN32388190A","name":"server","msg":"Server stopped","level":30,"severity":"INFO","time":"2015-09-17T09:59:08.183Z"}
-{"appServer":"AppServer","v":0,"pid":20460,"hostname":"DUBN32388190A","name":"server","msg":"Starting server","level":30,"severity":"INFO","time":"2015-09-17T09:59:15.981Z"}
-{"appServer":"AppServer","v":0,"pid":20460,"hostname":"DUBN32388190A","name":"server","msg":"Stopping server","level":30,"severity":"INFO","time":"2015-09-17T09:59:17.616Z"}
-{"appServer":"AppServer","v":0,"pid":20460,"hostname":"DUBN32388190A","name":"server","msg":"Server stopped","level":30,"severity":"INFO","time":"2015-09-17T09:59:27.625Z"}

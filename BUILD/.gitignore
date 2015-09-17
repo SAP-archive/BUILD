@@ -5,6 +5,7 @@ logs/
 npm-debug.log
 client/requires.js
 server/requires.js
+server/logs/
 test/results/**
 coverage/
 .sublime-

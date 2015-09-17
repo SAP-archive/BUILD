@@ -3,6 +3,7 @@ node_modules/
 .tmp
 BUILD/dev/
 BUILD/dist/
+BUILD/server/logs/
 logs/
 .DS_Store
 npm-debug.log
