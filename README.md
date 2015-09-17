@@ -123,3 +123,7 @@ _Please do not remove this license from cloned or forked versions of BUILD._
 # Legal Notices
 
 [View the legal notice about fonts used in Build](https://github.com/SAP/BUILD/wiki/Legal-Notice-About-Fonts).
+
+# In Memorium Notice
+
+The BUILD community wishes to dedicate BUILD to the memory of our recently deceased colleague and friend Luan O’Carroll. Luan was a technology innovator and a great promoter of the open source philosophy. He was highly respected for his expertise, passion, curiosity, and his ability to push the boundaries. He is sadly missed.
