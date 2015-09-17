@@ -1,8 +1,5 @@
-BUILD/node_modules/
 node_modules/
 .tmp
-BUILD/dev/
-BUILD/dist/
 logs/
 .DS_Store
 npm-debug.log
@@ -12,9 +9,8 @@ test/results/**
 coverage/
 .sublime-
 .eslintrc
-BUILD/.eslintrc
-BUILD/uploads
-BUILD/logs
+uploads
+logs
 .idea/
 *.iml
 *.ipr
