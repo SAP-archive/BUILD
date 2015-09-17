@@ -80,7 +80,7 @@ _If you're having a problem installing, you can create a bug or ask a question u
 + [angular-sap-common-directives](https://github.com/sapbuild/angular-sap-common-directives)
 + [angular-sap-common-services](https://github.com/sapbuild/angular-sap-common-services)
 + [angular-sap-ui-elements](https://github.com/sapbuild/angular-sap-ui-elements)
-+ [angular-sap-common-filters](https://github.com/sapbuild/Norman)
++ [angular-sap-common-filters](https://github.com/sapbuild/angular-sap-common-filters)
 + [node-sap-mongo-config](https://github.com/sapbuild/node-sap-mongo-config)
 + [node-sap-common](https://github.com/sapbuild/Norman)
 + [node-sap-app-server](https://github.com/sapbuild/node-sap-app-server)
