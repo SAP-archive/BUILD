@@ -1,5 +1,11 @@
 #Contributing to BUILD
 
+# BUILD on GitHub
+
+[Click here](https://github.com/SAP/BUILD) to visit the central BUILD project on GitHub.
+
+[Click here](https://github.com/SAP/BUILD/blob/master/Contributing.md) to view the BUILD Contribution Guidelines. 
+
 We want to make it simple and rewarding to contribute to BUILD based on the following principles:  
 
 + As easy and transparent as possible to contribute.
