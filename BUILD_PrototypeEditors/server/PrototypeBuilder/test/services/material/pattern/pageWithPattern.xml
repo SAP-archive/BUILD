@@ -1,7 +1,0 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.view.SimplePage" xmlns:m="sap.m">
-    <m:Page id="RootControl" title="Simple Page">
-        <m:content>
-            <m:Toolbar id="MyHeader" design="Info" width="500px" height="500px"/>
-        </m:content>
-    </m:Page>
-</mvc:View>

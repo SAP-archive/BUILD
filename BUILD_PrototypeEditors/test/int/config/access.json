@@ -1,7 +1,0 @@
-{
-        "defaultPermissions": [
-            {"access": "standard"},
-            {"study": "participant"},
-            {"project": "collaborator"}
-       ]
-}

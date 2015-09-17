@@ -2,28 +2,33 @@
 // @ngInject
 module.exports = function ($scope, $rootScope, $location, Auth) {
 
-
-
-	Auth.getSecurityConfig()
-        .then(function(d){
+    Auth.getSecurityConfig()
+        .then(function (d) {
             var settings = d.settings;
-            $scope.hideSignup = settings && settings.registration && settings.registration.self === false ? function(){return true;} : Auth.isLoggedIn;
-            if (settings && settings.provider && settings.provider.local === false){
+            if (settings && settings.registration && settings.registration.self === false) {
+                $scope.hideSignup = function () {
+                    return true;
+                };
+            }
+            else {
+                $scope.hideSignup = Auth.isLoggedIn;
+            }
+            if (settings && settings.provider && settings.provider.local === false) {
+                // Force redirect
+                Auth.initCurrentUser();
+                $location.path('/norman');
 
-				//Force redirect
-				Auth.initCurrentUser();
-				$location.path('/norman');
-
-				$scope.showLogout = function() {
+                $scope.showLogout = function () {
                     return false;
                 };
                 $scope.login = function () {
-					Auth.initCurrentUser();
+                    Auth.initCurrentUser();
                     $location.path('/norman');
                 };
                 $scope.logout = function () {
                 };
-            } else {
+            }
+            else {
                 $scope.showLogout = Auth.isLoggedIn;
                 $scope.login = function () {
                     $location.path('/login');

@@ -1,7 +1,0 @@
-node_modules
-results
-.tmp
-.idea
-.DS_Store
-npm-debug.log
-*.sublime-*

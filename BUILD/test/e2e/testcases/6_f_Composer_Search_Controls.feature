@@ -1,5 +1,5 @@
-@composer
-Feature: Composer - test publish project
+@composers
+Feature: Composer - search control test
 
 
     @composerNB
@@ -36,18 +36,12 @@ Feature: Composer - test publish project
         Given I am on the prototype page
         When I click on thumbnail of page "Page 1"
         Then I am in ui composer canvas view
-        And There are "3" pages
-        And I am on page "1"
+        Then There are "3" pages
+        Then I am on page "1"
 
     @composerNB
-    Scenario: User drags and drops Button control
+    Scenario: User uses search box at canvas
         Given I am in ui composer canvas view
-        When I drag and drop a control of type "Button" onto the canvas
-        Then The value of property input field "Text" is "Button"
-
-    @composerNB
-    Scenario: User click the publish button
-        Given I am in the ui composer canvas view
-        When  I click the Publish button
-        Then  I click on the publish project
-        And   I verify that I see the button
+        When I enter a search value "List"
+        Then There are "3" search results
+        And check each search result contains "List"

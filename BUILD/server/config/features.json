@@ -1,18 +1,22 @@
 {
-    "disable-prototype": {
+    "enable-prototype": {
         "name": "Prototype service, transform the prototype definition from metadata to actual code.",
+        "enabled": true
+    },
+    "enable-group": {
+        "name": "Group in Data Modeler",
         "enabled": false
     },
-    "disable-group": {
-        "name": "Group in Data Modeler",
-        "enabled": true
-    },
-    "disable-prototype-generation": {
+    "enable-prototype-generation": {
         "name": "Automatic prototype generation from data model",
+        "enabled": false
+    },
+    "enable-dataModeler": {
+        "name": "Data Modeler",
         "enabled": true
     },
-    "disable-dataModeler": {
-        "name": "Data Modeler",
+    "internal-customer": {
+        "name": "Shell Help URL",
         "enabled": true
     }
 }

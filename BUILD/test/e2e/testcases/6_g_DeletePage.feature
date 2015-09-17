@@ -1,19 +1,19 @@
 @composer
-Feature: Composer - test publish project
+Feature: Composer - Delete page in tree view
 
 
     @composerNB
     Scenario: Sign Up with Valid Credentials
         Given I am on the sign up page
-        When I signup with random credentials
-        Then I am logged in
+        When  I signup with random credentials
+        Then  I am logged in
 
     @composerNB
     Scenario: Once Logged in you are on the Norman Page
         Given I am on the Landing Page for Composer
         When  I click New Project Link
-        And  I enter Project Name
-        Then The project is created
+        And   I enter Project Name
+        Then  The project is created
 
     @composerNB
     Scenario: Once a project is created
@@ -34,20 +34,18 @@ Feature: Composer - test publish project
     @composerNB
     Scenario: User clicks on thumbnail of page 1
         Given I am on the prototype page
-        When I click on thumbnail of page "Page 1"
-        Then I am in ui composer canvas view
-        And There are "3" pages
-        And I am on page "1"
+        When  I click on thumbnail of page "Page 1"
+        Then  I am in ui composer canvas view
 
     @composerNB
-    Scenario: User drags and drops Button control
-        Given I am in ui composer canvas view
-        When I drag and drop a control of type "Button" onto the canvas
-        Then The value of property input field "Text" is "Button"
-
-    @composerNB
-    Scenario: User click the publish button
+    Scenario: User hit delete key from keyboard to delete selected page from tree view
         Given I am in the ui composer canvas view
-        When  I click the Publish button
-        Then  I click on the publish project
-        And   I verify that I see the button
+        When I click on the link for page "1"
+        Then I enter delete key from keyboard to delete page
+        And  There are "2" pages in tree view
+        And  I see the View All Map Icon
+        And  There are "2" pages in page map view
+        And  I click Project in the Menu
+        And  I am in the prototype page
+        And  There are "3" pages in prototype page
+

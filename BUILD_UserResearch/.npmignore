@@ -1,9 +1,0 @@
-dev/
-dist/
-reports/
-node_modules/
-.tmp/
-.idea/
-.DS_Store
-*debug.log
-*.sublime-*

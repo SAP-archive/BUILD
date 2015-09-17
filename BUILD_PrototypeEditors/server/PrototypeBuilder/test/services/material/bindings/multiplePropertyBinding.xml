@@ -1,8 +1,0 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.view.SimplePage" xmlns:m="sap.m">
-    <m:Page id="RootControl" title="Simple Page">
-        <m:content>
-            <m:Label id="MyLabel" text="{ID}"/>
-            <m:Label id="MyOtherLabel" text="{Description}"/>
-        </m:content>
-    </m:Page>
-</mvc:View>

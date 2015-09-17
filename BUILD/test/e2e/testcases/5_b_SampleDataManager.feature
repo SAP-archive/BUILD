@@ -21,6 +21,13 @@ Feature: SampleDataManager
     Given Project "TESTPROJECTXLS" exists
     When I click to enter the project
     Then I am in the prototype page
+    Then I see the View All Map
+    When  I click the View All Map Icon
+    And   I click Add button to add first blank page
+    Then  There are "1" Pages Created
+    And   I click Project in the Menu
+    And   I am in the prototype page
+    When I click on thumbnail of page "Page 1"
     Then I open data modeler
 
   @flow
@@ -28,7 +35,7 @@ Feature: SampleDataManager
   Scenario: I choose to create a data Model from an Excel file
     Given Data modeler page is displayed
     #file located in test/testcase folder of this project
-    Then I upload XL file: "../files/Sales Order Data model.xlsx"
+    Then I upload XL file: "../files/SalesOrderDataModel.xlsx"
 
   @flow
   @CheckSalesOrderEntityExistsAndClickOnIt
@@ -110,5 +117,4 @@ Feature: SampleDataManager
     Then I click on Tab named "SalesOrder"
     Then I click on Tab named "SalesOrderItem"
     Then I click on Cancel
-
 

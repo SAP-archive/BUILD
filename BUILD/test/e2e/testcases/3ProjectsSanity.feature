@@ -32,7 +32,7 @@ Feature: Projects
     @flow
     Scenario: Accept Team Invite
         Given   I am logged out
-        When    I login using Invitee Credentails
+        When    I login using Invitee Credentials
         Given   I am on the Landing Page
         When    I Click on New Project Invite
         And     I Accept the New Invite

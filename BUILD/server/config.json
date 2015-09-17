@@ -54,9 +54,9 @@
         "secureFlag": false
     },
     "mail": {
-        "sender":"do.not.reply@example.com",
+        "sender":"do.not.reply@sap.com",
         "smtp": {
-            "host": "mail.example.com",
+            "host": "mail.sap.corp",
             "port": 25,
             "debug": true,
             "tls": {
@@ -66,6 +66,7 @@
     },
     "services": "./config/services.json",
     "features": "./config/features.json",
+    "uicatalog": "./config/uicatalog.json",
     "security": "./config/security.json",
     "web": {
         "root": "../dev",

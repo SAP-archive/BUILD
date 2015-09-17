@@ -1,5 +1,5 @@
 @composer
-Feature: Composer - test publish project
+Feature: Composer - add page in tree view
 
 
     @composerNB
@@ -34,20 +34,16 @@ Feature: Composer - test publish project
     @composerNB
     Scenario: User clicks on thumbnail of page 1
         Given I am on the prototype page
-        When I click on thumbnail of page "Page 1"
-        Then I am in ui composer canvas view
-        And There are "3" pages
-        And I am on page "1"
+        When  I click on thumbnail of page "Page 1"
+        Then  I am in ui composer canvas view
 
     @composerNB
-    Scenario: User drags and drops Button control
-        Given I am in ui composer canvas view
-        When I drag and drop a control of type "Button" onto the canvas
-        Then The value of property input field "Text" is "Button"
-
-    @composerNB
-    Scenario: User click the publish button
-        Given I am in the ui composer canvas view
-        When  I click the Publish button
-        Then  I click on the publish project
-        And   I verify that I see the button
+    Scenario: User adds a page from tree view
+        Given  I am in the ui composer canvas view
+        When   I add page 4 from the tree view
+        Then   There are "4" pages in tree view
+        And    I see the View All Map Icon
+        And    There are "4" pages in page map view
+        And    I click Project in the Menu
+        And    I am in the prototype page
+        And    There are "5" pages in prototype page

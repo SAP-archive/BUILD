@@ -29,7 +29,7 @@ Popular contributions include bug reports, feature requests, and new features. [
 ###Prerequisites
 - install [GIT](https://git-scm.com/downloads)
 - install [npm.js](https://docs.npmjs.com/cli/install) - _*only version 1.4.28 is supported*_
-- install [node.js](https://docs.npmjs.com/cli/install) -_*only version 10.28 is supported*_
+- install [node.js](https://docs.npmjs.com/cli/install) -_*versions 10.33 and 10.38 are supported*_
 - install [mongodb](https://www.mongodb.org/downloads#previous) -_*only version 2.6.x is supported*_
 - Follow install for your OS @ https://github.com/TooTallNate/node-gyp/blob/master/README.md#installation
 

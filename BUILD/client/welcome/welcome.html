@@ -2,7 +2,7 @@
     <div class="welcome-wrapper" flex>
         <div class="header">
             <div class="header-wrapper">
-                <a href="/" class="norman-logo"><img src="resources/norman-common-client/assets/build-mascot.svg" alt="Build Logo" /><img hspace="5px" src="resources/norman-common-client/assets/build-type-ffffff.svg" alt="Build" /></a>
+                <a href="/" class="norman-logo"><div class="build-mascot"></div><div class="build-type-ffffff" ng-if="!isAdminConsole"></div></a>
                 <a ng-click="login()" class="btn-homecover btn-right" ng-hide="isLoggedIn()" ng-class="{active: isActive('/login')}">SIGN IN</a>
                 <a href="/signup" class="btn-homecover btn-right" ng-hide="hideSignup()" ng-class="{active: isActive('/signup')}">JOIN</a>
                 <a href="#" class="btn-homecover btn-right" ng-show="showLogout()" ng-class="{active: isActive('/logout')}" ng-click="logout()">SIGN OUT</a>
@@ -35,8 +35,8 @@
                 <div class="welcome-foot-right">
                     <a href="mailto:contact.build@sap.com">Contact</a>
                 </div>
-                <a class="sap-logo" href="#"><img src="resources/norman-common-client/assets/icon-sap-white.svg" alt="SAP" /></a>
-                <span class="white">&copy; Copyright SAP Ltd. 2015</span>
+                <a class="sap-logo" href="#"></a>
+                <span class="white">&copy; Copyright SAP SE 2015</span>
             </div>
         </div>
     </div>
