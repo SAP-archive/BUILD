@@ -65,6 +65,50 @@ Go to [http://localhost:9000](http://localhost:9000) in Chrome browser and click
 
 _If you're having a problem installing, you can create a bug or ask a question using the [BUILD Issue Tracker](https://github.com/SAP/BUILD/issues), contact contribute.build@sap.com or tweet our twitter account [buildwithbuild](https://twitter.com/buildwithbuild) and we will reach out to you._ 
 
+# Modules in Build
+**Foundation Modules**
++ [angular-sap-common-directives](https://github.com/sapbuild/angular-sap-common-directives)
++ [angular-sap-common-services](https://github.com/sapbuild/angular-sap-common-services)
++ [angular-sap-ui-elements](https://github.com/sapbuild/angular-sap-ui-elements)
++ [angular-sap-common-filters](https://github.com/sapbuild/Norman)
++ [node-sap-mongo-config](https://github.com/sapbuild/node-sap-mongo-config)
++ [node-sap-common](https://github.com/sapbuild/Norman)
++ [node-sap-app-server](https://github.com/sapbuild/node-sap-app-server)
++ [node-sap-mailer](https://github.com/sapbuild/node-sap-mailer)
++ [node-sap-secure-store](https://github.com/sapbuild/node-sap-secure-store)
++ [node-sap-upload](https://github.com/sapbuild/node-sap-upload)
++ [node-sap-mongo](https://github.com/sapbuild/node-sap-mongo)
++ [node-sap-promise](https://github.com/sapbuild/node-sap-promise)
++ [node-sap-logging](https://github.com/sapbuild/node-sap-logging)
++ [node-sap-upload](https://github.com/sapbuild/node-sap-upload)
++ [node-sap-mongo-config](https://github.com/sapbuild/node-sap-mongo-config)
++ [node-sap-build](https://github.com/sapbuild/node-sap-build)
+
+**Build Modules**
++ [BUILD_PrototypeEditors](https://github.com/sapbuild/PrototypeEditors)
++ [BUILD](https://github.com/sapbuild/angular-sap-common-directives)
++ [BUILD_Projects](https://github.com/sapbuild/Projects)
++ [BUILD_UICatalogManager](https://github.com/sapbuild/UICatalogManager)
++ [BUILD_UserResearch](https://github.com/sapbuild/UserResearch)
++ [BUILD_UXRuleEngine](https://github.com/sapbuild/UXRuleEngine)
++ [BUILD_BusinessCatalogManager](https://github.com/sapbuild/BusinessCatalogManager)
++ [BUILD_Auth](https://github.com/sapbuild/Auth) 
++ [BUILD_Shell](https://github.com/sapbuild/Shell)
++ [BUILD_SharedThirdParties](https://github.com/sapbuild/SharedThirdParties)
++ [BUILD_Common](https://github.com/sapbuild/Common)
++ [BUILD_AngularUIGrid](https://github.com/sapbuild/NgUIGrid)
++ [BUILD_AngularUIGridTree](https://github.com/sapbuild/norman-angular-ui-tree)
++ [BUILD_AngularUIGridZip](https://github.com/sapbuild/AngularZip)
++ [BUILD_Html2Canvas](https://github.com/sapbuild/Html2Canvas)
++ [BUILD_KeyBoardEventPolyfill](https://github.com/sapbuild/norman-keyboard-event-polyfill)
++ [BUILD_D3Plugins](https://github.com/sapbuild/norman-d3-plugins)
++ [BUILD_jQuery](https://github.com/sapbuild/jquery-norman)
+
+**Admin Modules**
++ [BUILD_AdminUsers](https://github.com/sapbuild/admin-users)
++ [BUILD_Admin](https://github.com/sapbuild/admin)
++ [BUILD_AdminAudit](https://github.wdf.sap.corp/UXD-BUILD-OPENSOURCE/BUILD_admin-audit)
+
 # Licenses
 
 This project is licensed under the Apache Software License, v. 2 except as noted otherwise in the [License file](https://github.com/SAP/BUILD/blob/master/LICENSE.txt).
