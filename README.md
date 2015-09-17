@@ -82,7 +82,7 @@ _If you're having a problem installing, you can create a bug or ask a question u
 + [angular-sap-ui-elements](https://github.com/sapbuild/angular-sap-ui-elements)
 + [angular-sap-common-filters](https://github.com/sapbuild/angular-sap-common-filters)
 + [node-sap-mongo-config](https://github.com/sapbuild/node-sap-mongo-config)
-+ [node-sap-common](https://github.com/sapbuild/Norman)
++ [node-sap-common](https://github.com/sapbuild/Common)
 + [node-sap-app-server](https://github.com/sapbuild/node-sap-app-server)
 + [node-sap-mailer](https://github.com/sapbuild/node-sap-mailer)
 + [node-sap-secure-store](https://github.com/sapbuild/node-sap-secure-store)
