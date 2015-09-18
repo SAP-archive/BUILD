@@ -185,7 +185,7 @@ module.exports = function (grunt) {
     });
 
 
-    grunt.registerTask('build', function (target, forSAP) {
+    grunt.registerTask('build', function (target) {
         target = target || 'dev';
         console.log('TARGET = ' + target);
         var tasks = [];
