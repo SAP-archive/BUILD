@@ -3,9 +3,6 @@ var fs = require('fs');
 var path = require('path');
 var nodeInspector = require('./grunt-conf/nodeinspector.js');
 
-//var repo = 'Norman';
-//var settings = require('./config.json');
-
 module.exports = function (grunt) {
 
     // Time how long tasks take. Can help when optimizing build times
@@ -104,6 +101,7 @@ module.exports = function (grunt) {
 
         nodemon: require('./grunt-conf/nodemon.js'),
 
+
         concurrent: {
             debug: {
                 options: {logConcurrentOutput: true},
@@ -112,7 +110,11 @@ module.exports = function (grunt) {
                     'node-inspector:custom'
                 ]
             }
-        }
+        },
+
+        // convert svg images to sprite
+        svg_sprite: require('./grunt-conf/svg-sprite.js'),
+        'string-replace': require('./grunt-conf/string-replace.js')
     });
 
     grunt.registerTask('serve', function (target) {
@@ -126,6 +128,12 @@ module.exports = function (grunt) {
                 'env:dev',
                 'express:dev',
                 // Do NOT add node-inspector:liveEdit as it breaks the watch task
+                'watch'
+            ],
+            sap: [
+                'build:dev:sap',
+                'env:dev',
+                'express:dev',
                 'watch'
             ],
             init: [
@@ -177,7 +185,7 @@ module.exports = function (grunt) {
     });
 
 
-    grunt.registerTask('build', function (target) {
+    grunt.registerTask('build', function (target, forSAP) {
         target = target || 'dev';
         console.log('TARGET = ' + target);
         var tasks = [];
@@ -185,13 +193,13 @@ module.exports = function (grunt) {
         tasks = [
             // 'eslint',
             'clean:' + target,
+            'svg-sprite',
             'less',
-            'autoprefixer',
-            'copy:html',
-            'copy:dev',
-            'browserify:vendor'
+            'autoprefixer'
         ];
-
+        tasks.push('copy:html');
+        tasks.push('copy:dev');
+        tasks.push('browserify:vendor');
         if (target === 'dev' || target === 'liveEdit') {
             tasks.push('browserify:dev');
         }
@@ -223,10 +231,12 @@ module.exports = function (grunt) {
     // just run (app must be already built)
     grunt.registerTask('start', ['browserify:dev', 'env:dev', 'express:dev', 'watch']);
 
+    grunt.registerTask('sap', ['build:dist:sap']);
     grunt.registerTask('dist', ['build:dist']);
     grunt.registerTask('dev', ['build:dev']);
     grunt.registerTask('default', ['build:dev']);
     grunt.registerTask('liveEdit', ['serve:liveEdit']);
 
+    grunt.registerTask('svg-sprite', ['svg_sprite:PrototypeEditors', 'string-replace:sprite']);
     grunt.task.run('notify_hooks');
 };

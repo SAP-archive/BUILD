@@ -153,6 +153,7 @@ module.exports = {
                     'server/config/services.json',
                     'server/config/features.json',
                     'server/config/security.json',
+                    'server/config/uicatalog.json',
                     'server/dbinitconfig.json'
                 ]
             },
