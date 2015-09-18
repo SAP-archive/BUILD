@@ -80,6 +80,7 @@
     "grunt-open": "^0.2.3",
     "grunt-protractor-runner": "^1.2.1",
     "grunt-string-replace": "^1.0.0",
+    "grunt-svg-sprite": "1.0.8",
     "grunt-wait": "0.1.0",
     "injectr": "^0.5.1",
     "istanbul": "^0.3.13",

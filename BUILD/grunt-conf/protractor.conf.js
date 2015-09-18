@@ -8,7 +8,7 @@ var port = require('../server/config.json').http.port;
 exports.config = {
     // The timeout for each script run on the browser. This should be longer
     // than the maximum time your application needs to stabilize between tasks.
-    allScriptsTimeout: 20000,
+    allScriptsTimeout: 65000,
 
     // A base URL for your application under test. Calls to protractor.get()
     // with relative paths will be prepended with this.
@@ -48,7 +48,7 @@ exports.config = {
 
     specs: ['../test/e2e/testcases/*.feature'],
     cucumberOpts: {
-        require: ['../node_modules/norman-*e2e/**/testcases/steps/*.steps.js'],
+        require: ['./protractor_logger.js', '../node_modules/norman-*e2e/**/testcases/steps/*.steps.js'],
         format: 'json'
     }
 };
