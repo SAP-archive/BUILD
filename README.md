@@ -73,7 +73,8 @@ Popular contributions include bug reports, feature requests, and new features. [
 
 Go to [http://localhost:9000](http://localhost:9000) in Chrome browser and click Join
 
-Install the Admin module here [http://github.com/sapbuild/Admin](http://github.com/sapbuild/Admin). YOu can log in to the Admin module using your BUILD account details. 
+####Admin Settings
+You can manage your user settings with the Admin module. Install the Admin module here: [http://github.com/sapbuild/Admin](http://github.com/sapbuild/Admin). You can log in to the Admin module using your BUILD account details. 
 
 _If you're having a problem installing, you can create a bug or ask a question using the [BUILD Issue Tracker](https://github.com/SAP/BUILD/issues), contact contribute.build@sap.com or tweet our twitter account [buildwithbuild](https://twitter.com/buildwithbuild) and we will reach out to you._ 
 
