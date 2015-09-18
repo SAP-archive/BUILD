@@ -1,0 +1,6 @@
+language: node_js
+node_js:
+  - "0.10"
+script: cd BUILD && npm install grunt-cli && npm install 
+
+after_script: cd BUILD && grunt dist
