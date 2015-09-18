@@ -76,7 +76,7 @@ Go to [http://localhost:9000](http://localhost:9000) in Chrome browser and click
 ####Admin Settings
 You can manage your user settings with the Admin module. Install the Admin module here: [http://github.com/sapbuild/Admin](http://github.com/sapbuild/Admin). You can log in to the Admin module using your BUILD account details. 
 
-_If you're having a problem installing, you can create a bug or ask a question using the [BUILD Issue Tracker](https://github.com/SAP/BUILD/issues), contact contribute.build@sap.com or tweet our twitter account [buildwithbuild](https://twitter.com/buildwithbuild) and we will reach out to you._ 
+_Having a problem? Create a bug or ask a question using the [BUILD Issue Tracker](https://github.com/SAP/BUILD/issues), contact contribute.build@sap.com; r tweet our twitter account [buildwithbuild](https://twitter.com/buildwithbuild) and we'll get back to you as soon as possible._ 
 
 # Modules in Build
 
