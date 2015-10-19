@@ -76,6 +76,19 @@ Go to [http://localhost:9000](http://localhost:9000) in Chrome browser and click
 ####Admin Settings
 You can manage your user settings with the Admin module. Install the Admin module here: [http://github.com/sapbuild/Admin](http://github.com/sapbuild/Admin). You can log in to the Admin module using your BUILD account details. 
 
+####Debugging the Node.js backend
+Starting BUILD with "grunt serve" will start the debug server on the default port 5858. You can connect to this debugger session with tools like Webstorm or node-inspector. The easiest and fastest way to debug the Node.js backend is to use node-inspector. 
+You can install node-inspector globally via:
+```sh
+npm install -g node-inspector
+```
+and connect then to the running server via
+```sh
+node-inspector --no-preload
+```
+The option --no-preload will speed up the initiliziation dramatically as it doesn't preload all source files, but loads them when neccessary.
+
+
 _Having a problem? Create a bug or ask a question using the [BUILD Issue Tracker](https://github.com/SAP/BUILD/issues), contact contribute.build@sap.com; r tweet our twitter account [buildwithbuild](https://twitter.com/buildwithbuild) and we'll get back to you as soon as possible._ 
 
 # Modules in Build
