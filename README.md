@@ -88,8 +88,9 @@ node-inspector --no-preload
 ```
 The option --no-preload will speed up the initiliziation dramatically as it doesn't preload all source files, but loads them when neccessary.
 
+#Contact
 
-_Having a problem? Create a bug or ask a question using the [BUILD Issue Tracker](https://github.com/SAP/BUILD/issues), contact contribute.build@sap.com; r tweet our twitter account [buildwithbuild](https://twitter.com/buildwithbuild) and we'll get back to you as soon as possible._ 
+_Having a problem? Create a bug or ask a question using the [BUILD Issue Tracker](https://github.com/SAP/BUILD/issues), send a mail to contribute.build@sap.com or send a tweet to our twitter account [buildwithbuild](https://twitter.com/buildwithbuild) and we'll get back to you as soon as possible._ 
 
 # Modules in Build
 
