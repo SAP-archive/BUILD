@@ -19,6 +19,9 @@ For a more detailed description of BUILD, see the [BUILD Overview](https://githu
 # User Documentation
 Check out the [BUILD Support Site](http://sap.github.io/BUILD_User_Assistance) for detailed help topics and video tutorials about using BUILD!
 
+# BUILD Web Site
+Check the the [BUILD Web Site](http://www.build.me/)! 
+
 # What's New in BUILD 0.3?
 The BUILD OS community have been busy of the last couple of months and are excited to share our latest updates to BUILD.
 Our customers have been waiting for a long time, and here it is: the first version of the BUILD UI Composer! 
