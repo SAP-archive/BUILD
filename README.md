@@ -23,11 +23,10 @@ Check the the [BUILD Web Site](http://www.build.me/)!
 ##Getting Started 
 (Quick guide - see .docs/DEVELOPER_README.md for detail information )
 ###Prerequisites
- ```sh 
 - install [npm.js](https://docs.npmjs.com/cli/install) - _*only version 1.4.28 is supported*_
-- install [node.js](https://docs.npmjs.com/cli/install) -_*versions 10.33 and 10.38 are supported*_
-- install [mongodb](https://www.mongodb.org/downloads#previous) -_*only version 2.6.x is supported*_
-    ```
+- install [node.js](https://docs.npmjs.com/cli/install) - _*versions 10.33 and 10.38 are supported*_
+- install [mongodb](https://www.mongodb.org/downloads#previous) - _*only version 2.6.x is supported*_
+
 1. Install :
     ```sh 
     sudo npm install -g sap-build-cli@0.3.3
