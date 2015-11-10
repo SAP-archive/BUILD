@@ -1,0 +1,3653 @@
+{
+  "name": "sap-build",
+  "version": "0.3.0",
+  "dependencies": {
+    "angular": {
+      "version": "1.3.14",
+      "from": "angular@1.3.14",
+      "resolved": "http://build-npm.mo.sap.corp:8080/angular/-/angular-1.3.14.tgz"
+    },
+    "angular-animate": {
+      "version": "1.3.14",
+      "from": "angular-animate@1.3.14",
+      "resolved": "http://build-npm.mo.sap.corp:8080/angular-animate/-/angular-animate-1.3.14.tgz"
+    },
+    "angular-awesome-slider": {
+      "version": "2.3.5",
+      "from": "angular-awesome-slider@2.3.5",
+      "resolved": "https://registry.npmjs.org/angular-awesome-slider/-/angular-awesome-slider-2.3.5.tgz"
+    },
+    "angular-cookies": {
+      "version": "1.3.14",
+      "from": "angular-cookies@1.3.14",
+      "resolved": "https://registry.npmjs.org/angular-cookies/-/angular-cookies-1.3.14.tgz"
+    },
+    "angular-messages": {
+      "version": "1.3.14",
+      "from": "angular-messages@1.3.14",
+      "resolved": "https://registry.npmjs.org/angular-messages/-/angular-messages-1.3.14.tgz"
+    },
+    "angular-moment": {
+      "version": "0.9.0",
+      "from": "angular-moment@0.9.0",
+      "resolved": "https://registry.npmjs.org/angular-moment/-/angular-moment-0.9.0.tgz"
+    },
+    "angular-resource": {
+      "version": "1.3.14",
+      "from": "angular-resource@1.3.14",
+      "resolved": "https://registry.npmjs.org/angular-resource/-/angular-resource-1.3.14.tgz"
+    },
+    "angular-sanitize": {
+      "version": "1.3.14",
+      "from": "angular-sanitize@1.3.14",
+      "resolved": "https://registry.npmjs.org/angular-sanitize/-/angular-sanitize-1.3.14.tgz"
+    },
+    "angular-sap-d3-plugins": {
+      "version": "0.1.1",
+      "from": "angular-sap-d3-plugins@0.1.1",
+      "resolved": "https://registry.npmjs.org/angular-sap-d3-plugins/-/angular-sap-d3-plugins-0.1.1.tgz"
+    },
+    "angular-ui-router": {
+      "version": "0.2.11",
+      "from": "angular-ui-router@0.2.11",
+      "resolved": "https://registry.npmjs.org/angular-ui-router/-/angular-ui-router-0.2.11.tgz"
+    },
+    "chai": {
+      "version": "3.4.1",
+      "from": "chai@*",
+      "resolved": "http://build-npm.mo.sap.corp:8080/chai/-/chai-3.4.1.tgz",
+      "dependencies": {
+        "assertion-error": {
+          "version": "1.0.1",
+          "from": "assertion-error@>=1.0.1 <2.0.0",
+          "resolved": "http://build-npm.mo.sap.corp:8080/assertion-error/-/assertion-error-1.0.1.tgz"
+        },
+        "deep-eql": {
+          "version": "0.1.3",
+          "from": "deep-eql@>=0.1.3 <0.2.0",
+          "resolved": "http://build-npm.mo.sap.corp:8080/deep-eql/-/deep-eql-0.1.3.tgz",
+          "dependencies": {
+            "type-detect": {
+              "version": "0.1.1",
+              "from": "type-detect@0.1.1",
+              "resolved": "http://build-npm.mo.sap.corp:8080/type-detect/-/type-detect-0.1.1.tgz"
+            }
+          }
+        },
+        "type-detect": {
+          "version": "1.0.0",
+          "from": "type-detect@>=1.0.0 <2.0.0",
+          "resolved": "http://build-npm.mo.sap.corp:8080/type-detect/-/type-detect-1.0.0.tgz"
+        }
+      }
+    },
+    "mocha": {
+      "version": "2.3.3",
+      "from": "mocha@>=2.0.0",
+      "resolved": "http://build-npm.mo.sap.corp:8080/mocha/-/mocha-2.3.3.tgz",
+      "dependencies": {
+        "commander": {
+          "version": "2.3.0",
+          "from": "commander@2.3.0",
+          "resolved": "http://build-npm.mo.sap.corp:8080/commander/-/commander-2.3.0.tgz"
+        },
+        "debug": {
+          "version": "2.0.0",
+          "from": "debug@2.0.0",
+          "resolved": "http://build-npm.mo.sap.corp:8080/debug/-/debug-2.0.0.tgz",
+          "dependencies": {
+            "ms": {
+              "version": "0.6.2",
+              "from": "ms@0.6.2",
+              "resolved": "http://build-npm.mo.sap.corp:8080/ms/-/ms-0.6.2.tgz"
+            }
+          }
+        },
+        "diff": {
+          "version": "1.4.0",
+          "from": "diff@1.4.0",
+          "resolved": "http://build-npm.mo.sap.corp:8080/diff/-/diff-1.4.0.tgz"
+        },
+        "escape-string-regexp": {
+          "version": "1.0.2",
+          "from": "escape-string-regexp@1.0.2",
+          "resolved": "http://build-npm.mo.sap.corp:8080/escape-string-regexp/-/escape-string-regexp-1.0.2.tgz"
+        },
+        "glob": {
+          "version": "3.2.3",
+          "from": "glob@3.2.3",
+          "resolved": "http://build-npm.mo.sap.corp:8080/glob/-/glob-3.2.3.tgz",
+          "dependencies": {
+            "minimatch": {
+              "version": "0.2.14",
+              "from": "minimatch@>=0.2.11 <0.3.0",
+              "resolved": "http://build-npm.mo.sap.corp:8080/minimatch/-/minimatch-0.2.14.tgz",
+              "dependencies": {
+                "lru-cache": {
+                  "version": "2.7.0",
+                  "from": "lru-cache@>=2.0.0 <3.0.0",
+                  "resolved": "https://registry.npmjs.org/lru-cache/-/lru-cache-2.7.0.tgz"
+                },
+                "sigmund": {
+                  "version": "1.0.1",
+                  "from": "sigmund@>=1.0.0 <1.1.0",
+                  "resolved": "https://registry.npmjs.org/sigmund/-/sigmund-1.0.1.tgz"
+                }
+              }
+            },
+            "graceful-fs": {
+              "version": "2.0.3",
+              "from": "graceful-fs@>=2.0.0 <2.1.0",
+              "resolved": "http://build-npm.mo.sap.corp:8080/graceful-fs/-/graceful-fs-2.0.3.tgz"
+            },
+            "inherits": {
+              "version": "2.0.1",
+              "from": "inherits@>=2.0.0 <3.0.0",
+              "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
+            }
+          }
+        },
+        "growl": {
+          "version": "1.8.1",
+          "from": "growl@1.8.1",
+          "resolved": "https://registry.npmjs.org/growl/-/growl-1.8.1.tgz"
+        },
+        "jade": {
+          "version": "0.26.3",
+          "from": "jade@0.26.3",
+          "resolved": "http://build-npm.mo.sap.corp:8080/jade/-/jade-0.26.3.tgz",
+          "dependencies": {
+            "commander": {
+              "version": "0.6.1",
+              "from": "commander@0.6.1",
+              "resolved": "http://build-npm.mo.sap.corp:8080/commander/-/commander-0.6.1.tgz"
+            },
+            "mkdirp": {
+              "version": "0.3.0",
+              "from": "mkdirp@0.3.0",
+              "resolved": "http://build-npm.mo.sap.corp:8080/mkdirp/-/mkdirp-0.3.0.tgz"
+            }
+          }
+        },
+        "mkdirp": {
+          "version": "0.5.0",
+          "from": "mkdirp@0.5.0",
+          "resolved": "https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.0.tgz",
+          "dependencies": {
+            "minimist": {
+              "version": "0.0.8",
+              "from": "minimist@0.0.8",
+              "resolved": "https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz"
+            }
+          }
+        },
+        "supports-color": {
+          "version": "1.2.0",
+          "from": "supports-color@1.2.0",
+          "resolved": "http://build-npm.mo.sap.corp:8080/supports-color/-/supports-color-1.2.0.tgz"
+        }
+      }
+    },
+    "moment": {
+      "version": "2.8.4",
+      "from": "moment@2.8.4",
+      "resolved": "https://registry.npmjs.org/moment/-/moment-2.8.4.tgz"
+    },
+    "node-sap-app-server": {
+      "version": "0.3.2",
+      "from": "node-sap-app-server@0.3.2",
+      "resolved": "https://registry.npmjs.org/node-sap-app-server/-/node-sap-app-server-0.3.2.tgz",
+      "dependencies": {
+        "body-parser": {
+          "version": "1.11.0",
+          "from": "body-parser@1.11.0",
+          "resolved": "https://registry.npmjs.org/body-parser/-/body-parser-1.11.0.tgz",
+          "dependencies": {
+            "bytes": {
+              "version": "1.0.0",
+              "from": "bytes@1.0.0",
+              "resolved": "https://registry.npmjs.org/bytes/-/bytes-1.0.0.tgz"
+            },
+            "depd": {
+              "version": "1.0.1",
+              "from": "depd@>=1.0.0 <1.1.0",
+              "resolved": "https://registry.npmjs.org/depd/-/depd-1.0.1.tgz"
+            },
+            "iconv-lite": {
+              "version": "0.4.6",
+              "from": "iconv-lite@0.4.6",
+              "resolved": "http://build-npm.mo.sap.corp:8080/iconv-lite/-/iconv-lite-0.4.6.tgz"
+            },
+            "media-typer": {
+              "version": "0.3.0",
+              "from": "media-typer@0.3.0",
+              "resolved": "http://build-npm.mo.sap.corp:8080/media-typer/-/media-typer-0.3.0.tgz"
+            },
+            "on-finished": {
+              "version": "2.2.1",
+              "from": "on-finished@>=2.2.0 <2.3.0",
+              "resolved": "https://registry.npmjs.org/on-finished/-/on-finished-2.2.1.tgz",
+              "dependencies": {
+                "ee-first": {
+                  "version": "1.1.0",
+                  "from": "ee-first@1.1.0",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/ee-first/-/ee-first-1.1.0.tgz"
+                }
+              }
+            },
+            "qs": {
+              "version": "2.3.3",
+              "from": "qs@2.3.3",
+              "resolved": "http://build-npm.mo.sap.corp:8080/qs/-/qs-2.3.3.tgz"
+            },
+            "raw-body": {
+              "version": "1.3.2",
+              "from": "raw-body@1.3.2",
+              "resolved": "http://build-npm.mo.sap.corp:8080/raw-body/-/raw-body-1.3.2.tgz"
+            },
+            "type-is": {
+              "version": "1.5.7",
+              "from": "type-is@>=1.5.6 <1.6.0",
+              "resolved": "https://registry.npmjs.org/type-is/-/type-is-1.5.7.tgz",
+              "dependencies": {
+                "mime-types": {
+                  "version": "2.0.14",
+                  "from": "mime-types@>=2.0.9 <2.1.0",
+                  "resolved": "https://registry.npmjs.org/mime-types/-/mime-types-2.0.14.tgz",
+                  "dependencies": {
+                    "mime-db": {
+                      "version": "1.12.0",
+                      "from": "mime-db@>=1.12.0 <1.13.0",
+                      "resolved": "https://registry.npmjs.org/mime-db/-/mime-db-1.12.0.tgz"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "compression": {
+          "version": "1.4.0",
+          "from": "compression@1.4.0",
+          "resolved": "https://registry.npmjs.org/compression/-/compression-1.4.0.tgz",
+          "dependencies": {
+            "accepts": {
+              "version": "1.2.13",
+              "from": "accepts@>=1.2.3 <1.3.0",
+              "resolved": "https://registry.npmjs.org/accepts/-/accepts-1.2.13.tgz",
+              "dependencies": {
+                "mime-types": {
+                  "version": "2.1.7",
+                  "from": "mime-types@>=2.1.6 <2.2.0",
+                  "resolved": "https://registry.npmjs.org/mime-types/-/mime-types-2.1.7.tgz",
+                  "dependencies": {
+                    "mime-db": {
+                      "version": "1.19.0",
+                      "from": "mime-db@>=1.19.0 <1.20.0",
+                      "resolved": "https://registry.npmjs.org/mime-db/-/mime-db-1.19.0.tgz"
+                    }
+                  }
+                },
+                "negotiator": {
+                  "version": "0.5.3",
+                  "from": "negotiator@0.5.3",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/negotiator/-/negotiator-0.5.3.tgz"
+                }
+              }
+            },
+            "bytes": {
+              "version": "1.0.0",
+              "from": "bytes@1.0.0",
+              "resolved": "https://registry.npmjs.org/bytes/-/bytes-1.0.0.tgz"
+            },
+            "compressible": {
+              "version": "2.0.6",
+              "from": "compressible@>=2.0.2 <2.1.0",
+              "resolved": "https://registry.npmjs.org/compressible/-/compressible-2.0.6.tgz",
+              "dependencies": {
+                "mime-db": {
+                  "version": "1.19.0",
+                  "from": "mime-db@>=1.19.0 <1.20.0",
+                  "resolved": "https://registry.npmjs.org/mime-db/-/mime-db-1.19.0.tgz"
+                }
+              }
+            },
+            "debug": {
+              "version": "2.1.3",
+              "from": "debug@>=2.1.1 <2.2.0",
+              "resolved": "https://registry.npmjs.org/debug/-/debug-2.1.3.tgz",
+              "dependencies": {
+                "ms": {
+                  "version": "0.7.0",
+                  "from": "ms@0.7.0",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/ms/-/ms-0.7.0.tgz"
+                }
+              }
+            },
+            "on-headers": {
+              "version": "1.0.1",
+              "from": "on-headers@>=1.0.0 <1.1.0",
+              "resolved": "https://registry.npmjs.org/on-headers/-/on-headers-1.0.1.tgz"
+            },
+            "vary": {
+              "version": "1.0.1",
+              "from": "vary@>=1.0.0 <1.1.0",
+              "resolved": "https://registry.npmjs.org/vary/-/vary-1.0.1.tgz"
+            }
+          }
+        },
+        "connect-livereload": {
+          "version": "0.5.2",
+          "from": "connect-livereload@0.5.2",
+          "resolved": "https://registry.npmjs.org/connect-livereload/-/connect-livereload-0.5.2.tgz"
+        },
+        "cookie-parser": {
+          "version": "1.3.3",
+          "from": "cookie-parser@1.3.3",
+          "resolved": "https://registry.npmjs.org/cookie-parser/-/cookie-parser-1.3.3.tgz",
+          "dependencies": {
+            "cookie": {
+              "version": "0.1.2",
+              "from": "cookie@0.1.2",
+              "resolved": "https://registry.npmjs.org/cookie/-/cookie-0.1.2.tgz"
+            },
+            "cookie-signature": {
+              "version": "1.0.5",
+              "from": "cookie-signature@1.0.5",
+              "resolved": "http://build-npm.mo.sap.corp:8080/cookie-signature/-/cookie-signature-1.0.5.tgz"
+            }
+          }
+        },
+        "express": {
+          "version": "4.11.2",
+          "from": "express@4.11.2",
+          "resolved": "https://registry.npmjs.org/express/-/express-4.11.2.tgz",
+          "dependencies": {
+            "accepts": {
+              "version": "1.2.13",
+              "from": "accepts@>=1.2.3 <1.3.0",
+              "resolved": "https://registry.npmjs.org/accepts/-/accepts-1.2.13.tgz",
+              "dependencies": {
+                "mime-types": {
+                  "version": "2.1.7",
+                  "from": "mime-types@>=2.1.6 <2.2.0",
+                  "resolved": "https://registry.npmjs.org/mime-types/-/mime-types-2.1.7.tgz",
+                  "dependencies": {
+                    "mime-db": {
+                      "version": "1.19.0",
+                      "from": "mime-db@>=1.19.0 <1.20.0",
+                      "resolved": "https://registry.npmjs.org/mime-db/-/mime-db-1.19.0.tgz"
+                    }
+                  }
+                },
+                "negotiator": {
+                  "version": "0.5.3",
+                  "from": "negotiator@0.5.3",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/negotiator/-/negotiator-0.5.3.tgz"
+                }
+              }
+            },
+            "content-disposition": {
+              "version": "0.5.0",
+              "from": "content-disposition@0.5.0",
+              "resolved": "http://build-npm.mo.sap.corp:8080/content-disposition/-/content-disposition-0.5.0.tgz"
+            },
+            "cookie-signature": {
+              "version": "1.0.5",
+              "from": "cookie-signature@1.0.5",
+              "resolved": "http://build-npm.mo.sap.corp:8080/cookie-signature/-/cookie-signature-1.0.5.tgz"
+            },
+            "debug": {
+              "version": "2.1.3",
+              "from": "debug@>=2.1.1 <2.2.0",
+              "resolved": "https://registry.npmjs.org/debug/-/debug-2.1.3.tgz",
+              "dependencies": {
+                "ms": {
+                  "version": "0.7.0",
+                  "from": "ms@0.7.0",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/ms/-/ms-0.7.0.tgz"
+                }
+              }
+            },
+            "depd": {
+              "version": "1.0.1",
+              "from": "depd@>=1.0.0 <1.1.0",
+              "resolved": "https://registry.npmjs.org/depd/-/depd-1.0.1.tgz"
+            },
+            "escape-html": {
+              "version": "1.0.1",
+              "from": "escape-html@1.0.1",
+              "resolved": "http://build-npm.mo.sap.corp:8080/escape-html/-/escape-html-1.0.1.tgz"
+            },
+            "etag": {
+              "version": "1.5.1",
+              "from": "etag@>=1.5.1 <1.6.0",
+              "resolved": "https://registry.npmjs.org/etag/-/etag-1.5.1.tgz",
+              "dependencies": {
+                "crc": {
+                  "version": "3.2.1",
+                  "from": "crc@3.2.1",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/crc/-/crc-3.2.1.tgz"
+                }
+              }
+            },
+            "finalhandler": {
+              "version": "0.3.3",
+              "from": "finalhandler@0.3.3",
+              "resolved": "http://build-npm.mo.sap.corp:8080/finalhandler/-/finalhandler-0.3.3.tgz"
+            },
+            "fresh": {
+              "version": "0.2.4",
+              "from": "fresh@0.2.4",
+              "resolved": "http://build-npm.mo.sap.corp:8080/fresh/-/fresh-0.2.4.tgz"
+            },
+            "media-typer": {
+              "version": "0.3.0",
+              "from": "media-typer@0.3.0",
+              "resolved": "http://build-npm.mo.sap.corp:8080/media-typer/-/media-typer-0.3.0.tgz"
+            },
+            "methods": {
+              "version": "1.1.1",
+              "from": "methods@>=1.1.1 <1.2.0",
+              "resolved": "https://registry.npmjs.org/methods/-/methods-1.1.1.tgz"
+            },
+            "on-finished": {
+              "version": "2.2.1",
+              "from": "on-finished@>=2.2.0 <2.3.0",
+              "resolved": "https://registry.npmjs.org/on-finished/-/on-finished-2.2.1.tgz",
+              "dependencies": {
+                "ee-first": {
+                  "version": "1.1.0",
+                  "from": "ee-first@1.1.0",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/ee-first/-/ee-first-1.1.0.tgz"
+                }
+              }
+            },
+            "parseurl": {
+              "version": "1.3.0",
+              "from": "parseurl@>=1.3.0 <1.4.0",
+              "resolved": "https://registry.npmjs.org/parseurl/-/parseurl-1.3.0.tgz"
+            },
+            "path-to-regexp": {
+              "version": "0.1.3",
+              "from": "path-to-regexp@0.1.3",
+              "resolved": "https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-0.1.3.tgz"
+            },
+            "proxy-addr": {
+              "version": "1.0.8",
+              "from": "proxy-addr@>=1.0.6 <1.1.0",
+              "resolved": "https://registry.npmjs.org/proxy-addr/-/proxy-addr-1.0.8.tgz",
+              "dependencies": {
+                "forwarded": {
+                  "version": "0.1.0",
+                  "from": "forwarded@>=0.1.0 <0.2.0",
+                  "resolved": "https://registry.npmjs.org/forwarded/-/forwarded-0.1.0.tgz"
+                },
+                "ipaddr.js": {
+                  "version": "1.0.1",
+                  "from": "ipaddr.js@1.0.1",
+                  "resolved": "https://registry.npmjs.org/ipaddr.js/-/ipaddr.js-1.0.1.tgz"
+                }
+              }
+            },
+            "qs": {
+              "version": "2.3.3",
+              "from": "qs@>=2.3.1 <2.4.0",
+              "resolved": "http://build-npm.mo.sap.corp:8080/qs/-/qs-2.3.3.tgz"
+            },
+            "range-parser": {
+              "version": "1.0.3",
+              "from": "range-parser@>=1.0.2 <1.1.0",
+              "resolved": "https://registry.npmjs.org/range-parser/-/range-parser-1.0.3.tgz"
+            },
+            "send": {
+              "version": "0.11.1",
+              "from": "send@0.11.1",
+              "resolved": "http://build-npm.mo.sap.corp:8080/send/-/send-0.11.1.tgz",
+              "dependencies": {
+                "destroy": {
+                  "version": "1.0.3",
+                  "from": "destroy@1.0.3",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/destroy/-/destroy-1.0.3.tgz"
+                },
+                "mime": {
+                  "version": "1.2.11",
+                  "from": "mime@1.2.11",
+                  "resolved": "https://registry.npmjs.org/mime/-/mime-1.2.11.tgz"
+                },
+                "ms": {
+                  "version": "0.7.0",
+                  "from": "ms@0.7.0",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/ms/-/ms-0.7.0.tgz"
+                }
+              }
+            },
+            "serve-static": {
+              "version": "1.8.1",
+              "from": "serve-static@>=1.8.1 <1.9.0",
+              "resolved": "https://registry.npmjs.org/serve-static/-/serve-static-1.8.1.tgz"
+            },
+            "type-is": {
+              "version": "1.5.7",
+              "from": "type-is@>=1.5.2 <1.6.0",
+              "resolved": "https://registry.npmjs.org/type-is/-/type-is-1.5.7.tgz",
+              "dependencies": {
+                "mime-types": {
+                  "version": "2.0.14",
+                  "from": "mime-types@>=2.0.9 <2.1.0",
+                  "resolved": "https://registry.npmjs.org/mime-types/-/mime-types-2.0.14.tgz",
+                  "dependencies": {
+                    "mime-db": {
+                      "version": "1.12.0",
+                      "from": "mime-db@>=1.12.0 <1.13.0",
+                      "resolved": "https://registry.npmjs.org/mime-db/-/mime-db-1.12.0.tgz"
+                    }
+                  }
+                }
+              }
+            },
+            "vary": {
+              "version": "1.0.1",
+              "from": "vary@>=1.0.0 <1.1.0",
+              "resolved": "https://registry.npmjs.org/vary/-/vary-1.0.1.tgz"
+            },
+            "cookie": {
+              "version": "0.1.2",
+              "from": "cookie@0.1.2",
+              "resolved": "https://registry.npmjs.org/cookie/-/cookie-0.1.2.tgz"
+            },
+            "merge-descriptors": {
+              "version": "0.0.2",
+              "from": "merge-descriptors@0.0.2",
+              "resolved": "https://registry.npmjs.org/merge-descriptors/-/merge-descriptors-0.0.2.tgz"
+            },
+            "utils-merge": {
+              "version": "1.0.0",
+              "from": "utils-merge@1.0.0",
+              "resolved": "https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.0.tgz"
+            }
+          }
+        },
+        "global-tunnel": {
+          "version": "1.2.0",
+          "from": "global-tunnel@1.2.0",
+          "resolved": "https://registry.npmjs.org/global-tunnel/-/global-tunnel-1.2.0.tgz",
+          "dependencies": {
+            "lodash": {
+              "version": "1.3.1",
+              "from": "lodash@1.3.1",
+              "resolved": "https://registry.npmjs.org/lodash/-/lodash-1.3.1.tgz"
+            },
+            "tunnel": {
+              "version": "0.0.2",
+              "from": "tunnel@0.0.2",
+              "resolved": "https://registry.npmjs.org/tunnel/-/tunnel-0.0.2.tgz"
+            }
+          }
+        },
+        "node-sap-common": {
+          "version": "0.3.1",
+          "from": "node-sap-common@0.3.1",
+          "resolved": "https://registry.npmjs.org/node-sap-common/-/node-sap-common-0.3.1.tgz"
+        },
+        "node-sap-logging": {
+          "version": "0.3.0",
+          "from": "node-sap-logging@0.3.0",
+          "resolved": "https://registry.npmjs.org/node-sap-logging/-/node-sap-logging-0.3.0.tgz",
+          "dependencies": {
+            "on-finished": {
+              "version": "2.2.0",
+              "from": "on-finished@2.2.0",
+              "resolved": "https://registry.npmjs.org/on-finished/-/on-finished-2.2.0.tgz",
+              "dependencies": {
+                "ee-first": {
+                  "version": "1.1.0",
+                  "from": "ee-first@1.1.0",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/ee-first/-/ee-first-1.1.0.tgz"
+                }
+              }
+            }
+          }
+        },
+        "node-sap-mongo": {
+          "version": "0.3.1",
+          "from": "node-sap-mongo@0.3.1",
+          "resolved": "https://registry.npmjs.org/node-sap-mongo/-/node-sap-mongo-0.3.1.tgz",
+          "dependencies": {
+            "mongoose": {
+              "version": "3.8.21",
+              "from": "mongoose@3.8.21",
+              "resolved": "https://registry.npmjs.org/mongoose/-/mongoose-3.8.21.tgz",
+              "dependencies": {
+                "mongodb": {
+                  "version": "1.4.12",
+                  "from": "mongodb@1.4.12",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/mongodb/-/mongodb-1.4.12.tgz",
+                  "dependencies": {
+                    "bson": {
+                      "version": "0.2.22",
+                      "from": "bson@>=0.2.0 <0.3.0",
+                      "resolved": "https://registry.npmjs.org/bson/-/bson-0.2.22.tgz",
+                      "dependencies": {
+                        "nan": {
+                          "version": "1.8.4",
+                          "from": "nan@>=1.8.0 <1.9.0",
+                          "resolved": "https://registry.npmjs.org/nan/-/nan-1.8.4.tgz"
+                        }
+                      }
+                    },
+                    "kerberos": {
+                      "version": "0.0.4",
+                      "from": "kerberos@0.0.4",
+                      "resolved": "https://registry.npmjs.org/kerberos/-/kerberos-0.0.4.tgz"
+                    },
+                    "readable-stream": {
+                      "version": "2.0.4",
+                      "from": "readable-stream@latest",
+                      "resolved": "http://build-npm.mo.sap.corp:8080/readable-stream/-/readable-stream-2.0.4.tgz",
+                      "dependencies": {
+                        "core-util-is": {
+                          "version": "1.0.1",
+                          "from": "core-util-is@>=1.0.0 <1.1.0",
+                          "resolved": "https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.1.tgz"
+                        },
+                        "inherits": {
+                          "version": "2.0.1",
+                          "from": "inherits@>=2.0.1 <2.1.0",
+                          "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
+                        },
+                        "isarray": {
+                          "version": "0.0.1",
+                          "from": "isarray@0.0.1",
+                          "resolved": "http://build-npm.mo.sap.corp:8080/isarray/-/isarray-0.0.1.tgz"
+                        },
+                        "process-nextick-args": {
+                          "version": "1.0.3",
+                          "from": "process-nextick-args@>=1.0.0 <1.1.0",
+                          "resolved": "https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-1.0.3.tgz"
+                        },
+                        "string_decoder": {
+                          "version": "0.10.31",
+                          "from": "string_decoder@>=0.10.0 <0.11.0",
+                          "resolved": "https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz"
+                        },
+                        "util-deprecate": {
+                          "version": "1.0.2",
+                          "from": "util-deprecate@>=1.0.1 <1.1.0",
+                          "resolved": "http://build-npm.mo.sap.corp:8080/util-deprecate/-/util-deprecate-1.0.2.tgz"
+                        }
+                      }
+                    }
+                  }
+                },
+                "hooks": {
+                  "version": "0.2.1",
+                  "from": "hooks@0.2.1",
+                  "resolved": "https://registry.npmjs.org/hooks/-/hooks-0.2.1.tgz"
+                },
+                "ms": {
+                  "version": "0.1.0",
+                  "from": "ms@0.1.0",
+                  "resolved": "https://registry.npmjs.org/ms/-/ms-0.1.0.tgz"
+                },
+                "sliced": {
+                  "version": "0.0.5",
+                  "from": "sliced@0.0.5",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/sliced/-/sliced-0.0.5.tgz"
+                },
+                "muri": {
+                  "version": "0.3.1",
+                  "from": "muri@0.3.1",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/muri/-/muri-0.3.1.tgz"
+                },
+                "mpromise": {
+                  "version": "0.4.3",
+                  "from": "mpromise@0.4.3",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/mpromise/-/mpromise-0.4.3.tgz"
+                },
+                "mpath": {
+                  "version": "0.1.1",
+                  "from": "mpath@0.1.1",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/mpath/-/mpath-0.1.1.tgz"
+                },
+                "regexp-clone": {
+                  "version": "0.0.1",
+                  "from": "regexp-clone@0.0.1",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/regexp-clone/-/regexp-clone-0.0.1.tgz"
+                },
+                "mquery": {
+                  "version": "0.8.0",
+                  "from": "mquery@0.8.0",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/mquery/-/mquery-0.8.0.tgz",
+                  "dependencies": {
+                    "debug": {
+                      "version": "0.7.4",
+                      "from": "debug@0.7.4",
+                      "resolved": "http://build-npm.mo.sap.corp:8080/debug/-/debug-0.7.4.tgz"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "node-sap-promise": {
+          "version": "0.3.1",
+          "from": "node-sap-promise@0.3.1",
+          "resolved": "https://registry.npmjs.org/node-sap-promise/-/node-sap-promise-0.3.1.tgz"
+        },
+        "method-override": {
+          "version": "2.3.1",
+          "from": "method-override@2.3.1",
+          "resolved": "https://registry.npmjs.org/method-override/-/method-override-2.3.1.tgz",
+          "dependencies": {
+            "debug": {
+              "version": "2.1.3",
+              "from": "debug@>=2.1.1 <2.2.0",
+              "resolved": "https://registry.npmjs.org/debug/-/debug-2.1.3.tgz",
+              "dependencies": {
+                "ms": {
+                  "version": "0.7.0",
+                  "from": "ms@0.7.0",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/ms/-/ms-0.7.0.tgz"
+                }
+              }
+            },
+            "methods": {
+              "version": "1.1.1",
+              "from": "methods@>=1.1.1 <1.2.0",
+              "resolved": "https://registry.npmjs.org/methods/-/methods-1.1.1.tgz"
+            },
+            "parseurl": {
+              "version": "1.3.0",
+              "from": "parseurl@>=1.3.0 <1.4.0",
+              "resolved": "https://registry.npmjs.org/parseurl/-/parseurl-1.3.0.tgz"
+            },
+            "vary": {
+              "version": "1.0.1",
+              "from": "vary@>=1.0.0 <1.1.0",
+              "resolved": "https://registry.npmjs.org/vary/-/vary-1.0.1.tgz"
+            }
+          }
+        },
+        "node-sap-mongo-config": {
+          "version": "0.3.1",
+          "from": "node-sap-mongo-config@0.3.1",
+          "resolved": "https://registry.npmjs.org/node-sap-mongo-config/-/node-sap-mongo-config-0.3.1.tgz"
+        }
+      }
+    },
+    "norman-angular-zip": {
+      "version": "0.1.1",
+      "from": "norman-angular-zip@0.1.1",
+      "resolved": "https://registry.npmjs.org/norman-angular-zip/-/norman-angular-zip-0.1.1.tgz"
+    },
+    "norman-audit-server": {
+      "version": "0.3.0",
+      "from": "norman-audit-server@0.3.0",
+      "resolved": "https://registry.npmjs.org/norman-audit-server/-/norman-audit-server-0.3.0.tgz"
+    },
+    "norman-auth-client": {
+      "version": "0.3.0",
+      "from": "norman-auth-client@0.3.0",
+      "resolved": "https://registry.npmjs.org/norman-auth-client/-/norman-auth-client-0.3.0.tgz"
+    },
+    "norman-auth-server": {
+      "version": "0.3.0",
+      "from": "norman-auth-server@0.3.0",
+      "resolved": "https://registry.npmjs.org/norman-auth-server/-/norman-auth-server-0.3.0.tgz",
+      "dependencies": {
+        "acl": {
+          "version": "0.4.7",
+          "from": "acl@0.4.7",
+          "resolved": "https://registry.npmjs.org/acl/-/acl-0.4.7.tgz",
+          "dependencies": {
+            "async": {
+              "version": "0.9.2",
+              "from": "async@>=0.9.0 <0.10.0",
+              "resolved": "https://registry.npmjs.org/async/-/async-0.9.2.tgz"
+            },
+            "bluebird": {
+              "version": "2.10.2",
+              "from": "bluebird@>=2.3.11 <3.0.0",
+              "resolved": "https://registry.npmjs.org/bluebird/-/bluebird-2.10.2.tgz"
+            },
+            "lodash": {
+              "version": "2.4.2",
+              "from": "lodash@>=2.4.1 <2.5.0",
+              "resolved": "https://registry.npmjs.org/lodash/-/lodash-2.4.2.tgz"
+            },
+            "mongodb": {
+              "version": "1.4.39",
+              "from": "mongodb@>=1.4.23 <2.0.0",
+              "resolved": "https://registry.npmjs.org/mongodb/-/mongodb-1.4.39.tgz",
+              "dependencies": {
+                "bson": {
+                  "version": "0.2.22",
+                  "from": "bson@>=0.2.0 <0.3.0",
+                  "resolved": "https://registry.npmjs.org/bson/-/bson-0.2.22.tgz",
+                  "dependencies": {
+                    "nan": {
+                      "version": "1.8.4",
+                      "from": "nan@>=1.8.0 <1.9.0",
+                      "resolved": "https://registry.npmjs.org/nan/-/nan-1.8.4.tgz"
+                    }
+                  }
+                },
+                "kerberos": {
+                  "version": "0.0.11",
+                  "from": "kerberos@0.0.11",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/kerberos/-/kerberos-0.0.11.tgz",
+                  "dependencies": {
+                    "nan": {
+                      "version": "1.8.4",
+                      "from": "nan@>=1.8.0 <1.9.0",
+                      "resolved": "https://registry.npmjs.org/nan/-/nan-1.8.4.tgz"
+                    }
+                  }
+                },
+                "readable-stream": {
+                  "version": "2.0.4",
+                  "from": "readable-stream@>=2.0.2 <3.0.0",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/readable-stream/-/readable-stream-2.0.4.tgz",
+                  "dependencies": {
+                    "core-util-is": {
+                      "version": "1.0.1",
+                      "from": "core-util-is@>=1.0.0 <1.1.0",
+                      "resolved": "https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.1.tgz"
+                    },
+                    "inherits": {
+                      "version": "2.0.1",
+                      "from": "inherits@>=2.0.1 <2.1.0",
+                      "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
+                    },
+                    "isarray": {
+                      "version": "0.0.1",
+                      "from": "isarray@0.0.1",
+                      "resolved": "http://build-npm.mo.sap.corp:8080/isarray/-/isarray-0.0.1.tgz"
+                    },
+                    "process-nextick-args": {
+                      "version": "1.0.3",
+                      "from": "process-nextick-args@>=1.0.0 <1.1.0",
+                      "resolved": "https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-1.0.3.tgz"
+                    },
+                    "string_decoder": {
+                      "version": "0.10.31",
+                      "from": "string_decoder@>=0.10.0 <0.11.0",
+                      "resolved": "https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz"
+                    },
+                    "util-deprecate": {
+                      "version": "1.0.2",
+                      "from": "util-deprecate@>=1.0.1 <1.1.0",
+                      "resolved": "http://build-npm.mo.sap.corp:8080/util-deprecate/-/util-deprecate-1.0.2.tgz"
+                    }
+                  }
+                }
+              }
+            },
+            "redis": {
+              "version": "2.3.0",
+              "from": "redis@>=0.12.1",
+              "resolved": "http://build-npm.mo.sap.corp:8080/redis/-/redis-2.3.0.tgz",
+              "dependencies": {
+                "double-ended-queue": {
+                  "version": "2.1.0-0",
+                  "from": "double-ended-queue@>=2.1.0-0 <3.0.0",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/double-ended-queue/-/double-ended-queue-2.1.0-0.tgz"
+                }
+              }
+            }
+          }
+        },
+        "express-jwt": {
+          "version": "3.0.0",
+          "from": "express-jwt@3.0.0",
+          "resolved": "https://registry.npmjs.org/express-jwt/-/express-jwt-3.0.0.tgz",
+          "dependencies": {
+            "async": {
+              "version": "0.9.2",
+              "from": "async@>=0.9.0 <0.10.0",
+              "resolved": "https://registry.npmjs.org/async/-/async-0.9.2.tgz"
+            },
+            "express-unless": {
+              "version": "0.0.0",
+              "from": "express-unless@0.0.0",
+              "resolved": "http://build-npm.mo.sap.corp:8080/express-unless/-/express-unless-0.0.0.tgz"
+            }
+          }
+        },
+        "jsonwebtoken": {
+          "version": "5.0.0",
+          "from": "jsonwebtoken@5.0.0",
+          "resolved": "https://registry.npmjs.org/jsonwebtoken/-/jsonwebtoken-5.0.0.tgz",
+          "dependencies": {
+            "jws": {
+              "version": "3.1.0",
+              "from": "jws@>=3.0.0 <4.0.0",
+              "resolved": "https://registry.npmjs.org/jws/-/jws-3.1.0.tgz",
+              "dependencies": {
+                "base64url": {
+                  "version": "1.0.5",
+                  "from": "base64url@>=1.0.4 <1.1.0",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/base64url/-/base64url-1.0.5.tgz",
+                  "dependencies": {
+                    "concat-stream": {
+                      "version": "1.4.10",
+                      "from": "concat-stream@>=1.4.7 <1.5.0",
+                      "resolved": "https://registry.npmjs.org/concat-stream/-/concat-stream-1.4.10.tgz",
+                      "dependencies": {
+                        "inherits": {
+                          "version": "2.0.1",
+                          "from": "inherits@>=2.0.1 <2.1.0",
+                          "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
+                        },
+                        "typedarray": {
+                          "version": "0.0.6",
+                          "from": "typedarray@>=0.0.5 <0.1.0",
+                          "resolved": "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz"
+                        },
+                        "readable-stream": {
+                          "version": "1.1.13",
+                          "from": "readable-stream@>=1.1.9 <1.2.0",
+                          "resolved": "https://registry.npmjs.org/readable-stream/-/readable-stream-1.1.13.tgz",
+                          "dependencies": {
+                            "core-util-is": {
+                              "version": "1.0.1",
+                              "from": "core-util-is@>=1.0.0 <1.1.0",
+                              "resolved": "https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.1.tgz"
+                            },
+                            "isarray": {
+                              "version": "0.0.1",
+                              "from": "isarray@0.0.1",
+                              "resolved": "http://build-npm.mo.sap.corp:8080/isarray/-/isarray-0.0.1.tgz"
+                            },
+                            "string_decoder": {
+                              "version": "0.10.31",
+                              "from": "string_decoder@>=0.10.0 <0.11.0",
+                              "resolved": "https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "meow": {
+                      "version": "2.0.0",
+                      "from": "meow@>=2.0.0 <2.1.0",
+                      "resolved": "https://registry.npmjs.org/meow/-/meow-2.0.0.tgz",
+                      "dependencies": {
+                        "camelcase-keys": {
+                          "version": "1.0.0",
+                          "from": "camelcase-keys@>=1.0.0 <2.0.0",
+                          "resolved": "https://registry.npmjs.org/camelcase-keys/-/camelcase-keys-1.0.0.tgz",
+                          "dependencies": {
+                            "camelcase": {
+                              "version": "1.2.1",
+                              "from": "camelcase@>=1.0.1 <2.0.0",
+                              "resolved": "https://registry.npmjs.org/camelcase/-/camelcase-1.2.1.tgz"
+                            },
+                            "map-obj": {
+                              "version": "1.0.1",
+                              "from": "map-obj@>=1.0.0 <2.0.0",
+                              "resolved": "https://registry.npmjs.org/map-obj/-/map-obj-1.0.1.tgz"
+                            }
+                          }
+                        },
+                        "indent-string": {
+                          "version": "1.2.2",
+                          "from": "indent-string@>=1.1.0 <2.0.0",
+                          "resolved": "https://registry.npmjs.org/indent-string/-/indent-string-1.2.2.tgz",
+                          "dependencies": {
+                            "get-stdin": {
+                              "version": "4.0.1",
+                              "from": "get-stdin@>=4.0.1 <5.0.0",
+                              "resolved": "https://registry.npmjs.org/get-stdin/-/get-stdin-4.0.1.tgz"
+                            },
+                            "repeating": {
+                              "version": "1.1.3",
+                              "from": "repeating@>=1.1.0 <2.0.0",
+                              "resolved": "https://registry.npmjs.org/repeating/-/repeating-1.1.3.tgz",
+                              "dependencies": {
+                                "is-finite": {
+                                  "version": "1.0.1",
+                                  "from": "is-finite@>=1.0.0 <2.0.0",
+                                  "resolved": "https://registry.npmjs.org/is-finite/-/is-finite-1.0.1.tgz",
+                                  "dependencies": {
+                                    "number-is-nan": {
+                                      "version": "1.0.0",
+                                      "from": "number-is-nan@>=1.0.0 <2.0.0",
+                                      "resolved": "https://registry.npmjs.org/number-is-nan/-/number-is-nan-1.0.0.tgz"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "minimist": {
+                          "version": "1.2.0",
+                          "from": "minimist@>=1.1.0 <2.0.0",
+                          "resolved": "https://registry.npmjs.org/minimist/-/minimist-1.2.0.tgz"
+                        },
+                        "object-assign": {
+                          "version": "1.0.0",
+                          "from": "object-assign@>=1.0.0 <2.0.0",
+                          "resolved": "https://registry.npmjs.org/object-assign/-/object-assign-1.0.0.tgz"
+                        }
+                      }
+                    }
+                  }
+                },
+                "jwa": {
+                  "version": "1.1.1",
+                  "from": "jwa@>=1.1.0 <2.0.0",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/jwa/-/jwa-1.1.1.tgz",
+                  "dependencies": {
+                    "base64url": {
+                      "version": "0.0.6",
+                      "from": "base64url@>=0.0.4 <0.1.0",
+                      "resolved": "https://registry.npmjs.org/base64url/-/base64url-0.0.6.tgz"
+                    },
+                    "buffer-equal-constant-time": {
+                      "version": "1.0.1",
+                      "from": "buffer-equal-constant-time@>=1.0.1 <2.0.0",
+                      "resolved": "https://registry.npmjs.org/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz"
+                    },
+                    "ecdsa-sig-formatter": {
+                      "version": "1.0.2",
+                      "from": "ecdsa-sig-formatter@>=1.0.0 <2.0.0",
+                      "resolved": "https://registry.npmjs.org/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.2.tgz",
+                      "dependencies": {
+                        "asn1.js": {
+                          "version": "2.2.1",
+                          "from": "asn1.js@>=2.0.3 <3.0.0",
+                          "resolved": "https://registry.npmjs.org/asn1.js/-/asn1.js-2.2.1.tgz",
+                          "dependencies": {
+                            "bn.js": {
+                              "version": "2.2.0",
+                              "from": "bn.js@>=2.0.0 <3.0.0",
+                              "resolved": "https://registry.npmjs.org/bn.js/-/bn.js-2.2.0.tgz"
+                            },
+                            "inherits": {
+                              "version": "2.0.1",
+                              "from": "inherits@>=2.0.1 <3.0.0",
+                              "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
+                            },
+                            "minimalistic-assert": {
+                              "version": "1.0.0",
+                              "from": "minimalistic-assert@>=1.0.0 <2.0.0",
+                              "resolved": "https://registry.npmjs.org/minimalistic-assert/-/minimalistic-assert-1.0.0.tgz"
+                            }
+                          }
+                        },
+                        "base64-url": {
+                          "version": "1.2.1",
+                          "from": "base64-url@>=1.2.1 <2.0.0",
+                          "resolved": "https://registry.npmjs.org/base64-url/-/base64-url-1.2.1.tgz"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "passport": {
+          "version": "0.2.1",
+          "from": "passport@0.2.1",
+          "resolved": "https://registry.npmjs.org/passport/-/passport-0.2.1.tgz",
+          "dependencies": {
+            "passport-strategy": {
+              "version": "1.0.0",
+              "from": "passport-strategy@>=1.0.0 <2.0.0",
+              "resolved": "https://registry.npmjs.org/passport-strategy/-/passport-strategy-1.0.0.tgz"
+            },
+            "pause": {
+              "version": "0.0.1",
+              "from": "pause@0.0.1",
+              "resolved": "http://build-npm.mo.sap.corp:8080/pause/-/pause-0.0.1.tgz"
+            }
+          }
+        },
+        "passport-facebook": {
+          "version": "1.0.3",
+          "from": "passport-facebook@1.0.3",
+          "resolved": "https://registry.npmjs.org/passport-facebook/-/passport-facebook-1.0.3.tgz",
+          "dependencies": {
+            "passport-oauth2": {
+              "version": "1.1.2",
+              "from": "passport-oauth2@>=1.1.2 <2.0.0",
+              "resolved": "https://registry.npmjs.org/passport-oauth2/-/passport-oauth2-1.1.2.tgz",
+              "dependencies": {
+                "passport-strategy": {
+                  "version": "1.0.0",
+                  "from": "passport-strategy@>=1.0.0 <2.0.0",
+                  "resolved": "https://registry.npmjs.org/passport-strategy/-/passport-strategy-1.0.0.tgz"
+                },
+                "oauth": {
+                  "version": "0.9.14",
+                  "from": "oauth@>=0.9.0 <0.10.0",
+                  "resolved": "https://registry.npmjs.org/oauth/-/oauth-0.9.14.tgz"
+                },
+                "uid2": {
+                  "version": "0.0.3",
+                  "from": "uid2@>=0.0.0 <0.1.0",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/uid2/-/uid2-0.0.3.tgz"
+                }
+              }
+            }
+          }
+        },
+        "passport-google-oauth": {
+          "version": "0.1.5",
+          "from": "passport-google-oauth@0.1.5",
+          "resolved": "http://build-npm.mo.sap.corp:8080/passport-google-oauth/-/passport-google-oauth-0.1.5.tgz",
+          "dependencies": {
+            "pkginfo": {
+              "version": "0.2.3",
+              "from": "pkginfo@>=0.2.0 <0.3.0",
+              "resolved": "https://registry.npmjs.org/pkginfo/-/pkginfo-0.2.3.tgz"
+            },
+            "passport-oauth": {
+              "version": "0.1.15",
+              "from": "passport-oauth@>=0.1.4 <0.2.0",
+              "resolved": "https://registry.npmjs.org/passport-oauth/-/passport-oauth-0.1.15.tgz",
+              "dependencies": {
+                "passport": {
+                  "version": "0.1.18",
+                  "from": "passport@>=0.1.1 <0.2.0",
+                  "resolved": "https://registry.npmjs.org/passport/-/passport-0.1.18.tgz",
+                  "dependencies": {
+                    "pause": {
+                      "version": "0.0.1",
+                      "from": "pause@0.0.1",
+                      "resolved": "http://build-npm.mo.sap.corp:8080/pause/-/pause-0.0.1.tgz"
+                    }
+                  }
+                },
+                "oauth": {
+                  "version": "0.9.14",
+                  "from": "oauth@>=0.9.0 <0.10.0",
+                  "resolved": "https://registry.npmjs.org/oauth/-/oauth-0.9.14.tgz"
+                }
+              }
+            }
+          }
+        },
+        "passport-linkedin-oauth2": {
+          "version": "1.2.1",
+          "from": "passport-linkedin-oauth2@1.2.1",
+          "resolved": "https://registry.npmjs.org/passport-linkedin-oauth2/-/passport-linkedin-oauth2-1.2.1.tgz",
+          "dependencies": {
+            "passport-oauth2": {
+              "version": "1.1.2",
+              "from": "passport-oauth2@>=1.1.2 <2.0.0",
+              "resolved": "https://registry.npmjs.org/passport-oauth2/-/passport-oauth2-1.1.2.tgz",
+              "dependencies": {
+                "passport-strategy": {
+                  "version": "1.0.0",
+                  "from": "passport-strategy@>=1.0.0 <2.0.0",
+                  "resolved": "https://registry.npmjs.org/passport-strategy/-/passport-strategy-1.0.0.tgz"
+                },
+                "oauth": {
+                  "version": "0.9.14",
+                  "from": "oauth@>=0.9.0 <0.10.0",
+                  "resolved": "https://registry.npmjs.org/oauth/-/oauth-0.9.14.tgz"
+                },
+                "uid2": {
+                  "version": "0.0.3",
+                  "from": "uid2@>=0.0.0 <0.1.0",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/uid2/-/uid2-0.0.3.tgz"
+                }
+              }
+            },
+            "underscore": {
+              "version": "1.8.3",
+              "from": "underscore@>=1.7.0 <2.0.0",
+              "resolved": "https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz"
+            }
+          }
+        },
+        "passport-local": {
+          "version": "0.1.6",
+          "from": "passport-local@0.1.6",
+          "resolved": "https://registry.npmjs.org/passport-local/-/passport-local-0.1.6.tgz",
+          "dependencies": {
+            "pkginfo": {
+              "version": "0.2.3",
+              "from": "pkginfo@>=0.2.0 <0.3.0",
+              "resolved": "https://registry.npmjs.org/pkginfo/-/pkginfo-0.2.3.tgz"
+            },
+            "passport": {
+              "version": "0.1.18",
+              "from": "passport@>=0.1.1 <0.2.0",
+              "resolved": "https://registry.npmjs.org/passport/-/passport-0.1.18.tgz",
+              "dependencies": {
+                "pause": {
+                  "version": "0.0.1",
+                  "from": "pause@0.0.1",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/pause/-/pause-0.0.1.tgz"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "norman-business-catalog-manager-client": {
+      "version": "0.3.0",
+      "from": "norman-business-catalog-manager-client@0.3.0",
+      "resolved": "https://registry.npmjs.org/norman-business-catalog-manager-client/-/norman-business-catalog-manager-client-0.3.0.tgz"
+    },
+    "norman-business-catalog-manager-server": {
+      "version": "0.3.0",
+      "from": "norman-business-catalog-manager-server@0.3.0",
+      "resolved": "https://registry.npmjs.org/norman-business-catalog-manager-server/-/norman-business-catalog-manager-server-0.3.0.tgz",
+      "dependencies": {
+        "htmlparser": {
+          "version": "1.7.7",
+          "from": "htmlparser@1.7.7",
+          "resolved": "https://registry.npmjs.org/htmlparser/-/htmlparser-1.7.7.tgz"
+        },
+        "request": {
+          "version": "2.51.0",
+          "from": "request@2.51.0",
+          "resolved": "https://registry.npmjs.org/request/-/request-2.51.0.tgz",
+          "dependencies": {
+            "bl": {
+              "version": "0.9.4",
+              "from": "bl@>=0.9.0 <0.10.0",
+              "resolved": "https://registry.npmjs.org/bl/-/bl-0.9.4.tgz",
+              "dependencies": {
+                "readable-stream": {
+                  "version": "1.0.33",
+                  "from": "readable-stream@>=1.0.26 <1.1.0",
+                  "resolved": "https://registry.npmjs.org/readable-stream/-/readable-stream-1.0.33.tgz",
+                  "dependencies": {
+                    "core-util-is": {
+                      "version": "1.0.1",
+                      "from": "core-util-is@>=1.0.0 <1.1.0",
+                      "resolved": "https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.1.tgz"
+                    },
+                    "isarray": {
+                      "version": "0.0.1",
+                      "from": "isarray@0.0.1",
+                      "resolved": "http://build-npm.mo.sap.corp:8080/isarray/-/isarray-0.0.1.tgz"
+                    },
+                    "string_decoder": {
+                      "version": "0.10.31",
+                      "from": "string_decoder@>=0.10.0 <0.11.0",
+                      "resolved": "https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz"
+                    },
+                    "inherits": {
+                      "version": "2.0.1",
+                      "from": "inherits@>=2.0.1 <2.1.0",
+                      "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
+                    }
+                  }
+                }
+              }
+            },
+            "caseless": {
+              "version": "0.8.0",
+              "from": "caseless@>=0.8.0 <0.9.0",
+              "resolved": "https://registry.npmjs.org/caseless/-/caseless-0.8.0.tgz"
+            },
+            "forever-agent": {
+              "version": "0.5.2",
+              "from": "forever-agent@>=0.5.0 <0.6.0",
+              "resolved": "https://registry.npmjs.org/forever-agent/-/forever-agent-0.5.2.tgz"
+            },
+            "form-data": {
+              "version": "0.2.0",
+              "from": "form-data@>=0.2.0 <0.3.0",
+              "resolved": "https://registry.npmjs.org/form-data/-/form-data-0.2.0.tgz",
+              "dependencies": {
+                "async": {
+                  "version": "0.9.2",
+                  "from": "async@>=0.9.0 <0.10.0",
+                  "resolved": "https://registry.npmjs.org/async/-/async-0.9.2.tgz"
+                },
+                "mime-types": {
+                  "version": "2.0.14",
+                  "from": "mime-types@>=2.0.3 <2.1.0",
+                  "resolved": "https://registry.npmjs.org/mime-types/-/mime-types-2.0.14.tgz",
+                  "dependencies": {
+                    "mime-db": {
+                      "version": "1.12.0",
+                      "from": "mime-db@>=1.12.0 <1.13.0",
+                      "resolved": "https://registry.npmjs.org/mime-db/-/mime-db-1.12.0.tgz"
+                    }
+                  }
+                }
+              }
+            },
+            "json-stringify-safe": {
+              "version": "5.0.1",
+              "from": "json-stringify-safe@>=5.0.0 <5.1.0",
+              "resolved": "https://registry.npmjs.org/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz"
+            },
+            "mime-types": {
+              "version": "1.0.2",
+              "from": "mime-types@>=1.0.1 <1.1.0",
+              "resolved": "https://registry.npmjs.org/mime-types/-/mime-types-1.0.2.tgz"
+            },
+            "node-uuid": {
+              "version": "1.4.3",
+              "from": "node-uuid@>=1.4.0 <1.5.0",
+              "resolved": "https://registry.npmjs.org/node-uuid/-/node-uuid-1.4.3.tgz"
+            },
+            "qs": {
+              "version": "2.3.3",
+              "from": "qs@>=2.3.1 <2.4.0",
+              "resolved": "http://build-npm.mo.sap.corp:8080/qs/-/qs-2.3.3.tgz"
+            },
+            "tunnel-agent": {
+              "version": "0.4.1",
+              "from": "tunnel-agent@>=0.4.0 <0.5.0",
+              "resolved": "https://registry.npmjs.org/tunnel-agent/-/tunnel-agent-0.4.1.tgz"
+            },
+            "tough-cookie": {
+              "version": "2.2.0",
+              "from": "tough-cookie@>=0.12.0",
+              "resolved": "http://build-npm.mo.sap.corp:8080/tough-cookie/-/tough-cookie-2.2.0.tgz"
+            },
+            "http-signature": {
+              "version": "0.10.1",
+              "from": "http-signature@>=0.10.0 <0.11.0",
+              "resolved": "https://registry.npmjs.org/http-signature/-/http-signature-0.10.1.tgz",
+              "dependencies": {
+                "assert-plus": {
+                  "version": "0.1.5",
+                  "from": "assert-plus@>=0.1.5 <0.2.0",
+                  "resolved": "https://registry.npmjs.org/assert-plus/-/assert-plus-0.1.5.tgz"
+                },
+                "asn1": {
+                  "version": "0.1.11",
+                  "from": "asn1@0.1.11",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/asn1/-/asn1-0.1.11.tgz"
+                },
+                "ctype": {
+                  "version": "0.5.3",
+                  "from": "ctype@0.5.3",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/ctype/-/ctype-0.5.3.tgz"
+                }
+              }
+            },
+            "oauth-sign": {
+              "version": "0.5.0",
+              "from": "oauth-sign@>=0.5.0 <0.6.0",
+              "resolved": "https://registry.npmjs.org/oauth-sign/-/oauth-sign-0.5.0.tgz"
+            },
+            "hawk": {
+              "version": "1.1.1",
+              "from": "hawk@1.1.1",
+              "resolved": "https://registry.npmjs.org/hawk/-/hawk-1.1.1.tgz",
+              "dependencies": {
+                "hoek": {
+                  "version": "0.9.1",
+                  "from": "hoek@>=0.9.0 <0.10.0",
+                  "resolved": "https://registry.npmjs.org/hoek/-/hoek-0.9.1.tgz"
+                },
+                "boom": {
+                  "version": "0.4.2",
+                  "from": "boom@>=0.4.0 <0.5.0",
+                  "resolved": "https://registry.npmjs.org/boom/-/boom-0.4.2.tgz"
+                },
+                "cryptiles": {
+                  "version": "0.2.2",
+                  "from": "cryptiles@>=0.2.0 <0.3.0",
+                  "resolved": "https://registry.npmjs.org/cryptiles/-/cryptiles-0.2.2.tgz"
+                },
+                "sntp": {
+                  "version": "0.2.4",
+                  "from": "sntp@>=0.2.0 <0.3.0",
+                  "resolved": "https://registry.npmjs.org/sntp/-/sntp-0.2.4.tgz"
+                }
+              }
+            },
+            "aws-sign2": {
+              "version": "0.5.0",
+              "from": "aws-sign2@>=0.5.0 <0.6.0",
+              "resolved": "https://registry.npmjs.org/aws-sign2/-/aws-sign2-0.5.0.tgz"
+            },
+            "stringstream": {
+              "version": "0.0.5",
+              "from": "stringstream@>=0.0.4 <0.1.0",
+              "resolved": "http://build-npm.mo.sap.corp:8080/stringstream/-/stringstream-0.0.5.tgz"
+            },
+            "combined-stream": {
+              "version": "0.0.7",
+              "from": "combined-stream@>=0.0.5 <0.1.0",
+              "resolved": "https://registry.npmjs.org/combined-stream/-/combined-stream-0.0.7.tgz",
+              "dependencies": {
+                "delayed-stream": {
+                  "version": "0.0.5",
+                  "from": "delayed-stream@0.0.5",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/delayed-stream/-/delayed-stream-0.0.5.tgz"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "norman-client-tp": {
+      "version": "0.3.1",
+      "from": "norman-client-tp@0.3.1",
+      "resolved": "https://registry.npmjs.org/norman-client-tp/-/norman-client-tp-0.3.1.tgz",
+      "dependencies": {
+        "jsPlumb": {
+          "version": "1.7.2",
+          "from": "https://github.com/sporritt/jsPlumb/archive/1.7.2.tar.gz",
+          "resolved": "https://github.com/sporritt/jsPlumb/archive/1.7.2.tar.gz"
+        },
+        "heatmap.js": {
+          "version": "2.0.0",
+          "from": "https://github.com/pa7/heatmap.js/archive/v2.0.tar.gz",
+          "resolved": "https://github.com/pa7/heatmap.js/archive/v2.0.tar.gz"
+        },
+        "angular-sap-ui-elements": {
+          "version": "0.3.0",
+          "from": "angular-sap-ui-elements@0.3.0",
+          "resolved": "https://registry.npmjs.org/angular-sap-ui-elements/-/angular-sap-ui-elements-0.3.0.tgz",
+          "dependencies": {
+            "sortablejs": {
+              "version": "1.0.0",
+              "from": "sortablejs@1.0.0",
+              "resolved": "https://registry.npmjs.org/sortablejs/-/sortablejs-1.0.0.tgz"
+            },
+            "angular-awesome-slider": {
+              "version": "2.3.5",
+              "from": "angular-awesome-slider@2.3.5",
+              "resolved": "https://registry.npmjs.org/angular-awesome-slider/-/angular-awesome-slider-2.3.5.tgz"
+            },
+            "ng-file-upload": {
+              "version": "3.0.2",
+              "from": "ng-file-upload@3.0.2",
+              "resolved": "https://registry.npmjs.org/ng-file-upload/-/ng-file-upload-3.0.2.tgz"
+            },
+            "pica": {
+              "version": "1.0.7",
+              "from": "pica@1.0.7",
+              "resolved": "https://registry.npmjs.org/pica/-/pica-1.0.7.tgz",
+              "dependencies": {
+                "webworkify": {
+                  "version": "1.0.0",
+                  "from": "webworkify@1.0.0",
+                  "resolved": "https://registry.npmjs.org/webworkify/-/webworkify-1.0.0.tgz"
+                }
+              }
+            },
+            "textangular": {
+              "version": "1.3.11",
+              "from": "textangular@1.3.11",
+              "resolved": "https://registry.npmjs.org/textangular/-/textangular-1.3.11.tgz"
+            },
+            "angular-sap-d3-plugins": {
+              "version": "0.3.0",
+              "from": "angular-sap-d3-plugins@0.3.0",
+              "resolved": "https://registry.npmjs.org/angular-sap-d3-plugins/-/angular-sap-d3-plugins-0.3.0.tgz"
+            },
+            "angular-sap-html2canvas": {
+              "version": "0.3.0",
+              "from": "angular-sap-html2canvas@0.3.0",
+              "resolved": "https://registry.npmjs.org/angular-sap-html2canvas/-/angular-sap-html2canvas-0.3.0.tgz"
+            },
+            "d3-browserify": {
+              "version": "3.4.12",
+              "from": "d3-browserify@3.4.12",
+              "resolved": "https://registry.npmjs.org/d3-browserify/-/d3-browserify-3.4.12.tgz"
+            },
+            "lodash": {
+              "version": "3.8.0",
+              "from": "lodash@3.8.0",
+              "resolved": "https://registry.npmjs.org/lodash/-/lodash-3.8.0.tgz"
+            },
+            "moment": {
+              "version": "2.8.4",
+              "from": "moment@2.8.4",
+              "resolved": "https://registry.npmjs.org/moment/-/moment-2.8.4.tgz"
+            }
+          }
+        },
+        "angular-sap-common-services": {
+          "version": "0.3.0",
+          "from": "angular-sap-common-services@0.3.0",
+          "resolved": "https://registry.npmjs.org/angular-sap-common-services/-/angular-sap-common-services-0.3.0.tgz",
+          "dependencies": {
+            "lodash": {
+              "version": "3.8.0",
+              "from": "lodash@3.8.0",
+              "resolved": "https://registry.npmjs.org/lodash/-/lodash-3.8.0.tgz"
+            }
+          }
+        },
+        "angular-sap-common-directives": {
+          "version": "0.3.0",
+          "from": "angular-sap-common-directives@0.3.0",
+          "resolved": "https://registry.npmjs.org/angular-sap-common-directives/-/angular-sap-common-directives-0.3.0.tgz"
+        },
+        "angular-sap-common-filters": {
+          "version": "0.3.0",
+          "from": "angular-sap-common-filters@0.3.0",
+          "resolved": "https://registry.npmjs.org/angular-sap-common-filters/-/angular-sap-common-filters-0.3.0.tgz"
+        }
+      }
+    },
+    "norman-common-client": {
+      "version": "0.3.0",
+      "from": "norman-common-client@0.3.0",
+      "resolved": "https://registry.npmjs.org/norman-common-client/-/norman-common-client-0.3.0.tgz"
+    },
+    "norman-common-server": {
+      "version": "0.3.0",
+      "from": "norman-common-server@0.3.0",
+      "resolved": "https://registry.npmjs.org/norman-common-server/-/norman-common-server-0.3.0.tgz"
+    },
+    "norman-jquery": {
+      "version": "0.1.2",
+      "from": "norman-jquery@0.1.2",
+      "resolved": "https://registry.npmjs.org/norman-jquery/-/norman-jquery-0.1.2.tgz"
+    },
+    "norman-projects-client": {
+      "version": "0.3.0",
+      "from": "norman-projects-client@0.3.0",
+      "resolved": "https://registry.npmjs.org/norman-projects-client/-/norman-projects-client-0.3.0.tgz"
+    },
+    "norman-projects-server": {
+      "version": "0.3.0",
+      "from": "norman-projects-server@0.3.0",
+      "resolved": "https://registry.npmjs.org/norman-projects-server/-/norman-projects-server-0.3.0.tgz",
+      "dependencies": {
+        "async": {
+          "version": "0.9.0",
+          "from": "async@0.9.0",
+          "resolved": "https://registry.npmjs.org/async/-/async-0.9.0.tgz"
+        },
+        "gridfs-stream": {
+          "version": "0.5.3",
+          "from": "gridfs-stream@0.5.3",
+          "resolved": "http://build-npm.mo.sap.corp:8080/gridfs-stream/-/gridfs-stream-0.5.3.tgz"
+        },
+        "rss": {
+          "version": "1.1.1",
+          "from": "rss@1.1.1",
+          "resolved": "https://registry.npmjs.org/rss/-/rss-1.1.1.tgz",
+          "dependencies": {
+            "mime-types": {
+              "version": "2.1.7",
+              "from": "mime-types@>=2.0.3 <3.0.0",
+              "resolved": "https://registry.npmjs.org/mime-types/-/mime-types-2.1.7.tgz",
+              "dependencies": {
+                "mime-db": {
+                  "version": "1.19.0",
+                  "from": "mime-db@>=1.19.0 <1.20.0",
+                  "resolved": "https://registry.npmjs.org/mime-db/-/mime-db-1.19.0.tgz"
+                }
+              }
+            },
+            "xml": {
+              "version": "1.0.0",
+              "from": "xml@>=1.0.0 <2.0.0",
+              "resolved": "https://registry.npmjs.org/xml/-/xml-1.0.0.tgz"
+            }
+          }
+        }
+      }
+    },
+    "norman-prototype-editors-client": {
+      "version": "0.3.0",
+      "from": "norman-prototype-editors-client@0.3.0",
+      "resolved": "https://registry.npmjs.org/norman-prototype-editors-client/-/norman-prototype-editors-client-0.3.0.tgz",
+      "dependencies": {
+        "norman-angular-ui-tree": {
+          "version": "0.3.0",
+          "from": "norman-angular-ui-tree@0.3.0",
+          "resolved": "https://registry.npmjs.org/norman-angular-ui-tree/-/norman-angular-ui-tree-0.3.0.tgz"
+        },
+        "norman-keyboard-event-polyfill": {
+          "version": "0.3.0",
+          "from": "norman-keyboard-event-polyfill@0.3.0",
+          "resolved": "https://registry.npmjs.org/norman-keyboard-event-polyfill/-/norman-keyboard-event-polyfill-0.3.0.tgz"
+        },
+        "norman-ng-grid": {
+          "version": "0.3.0",
+          "from": "norman-ng-grid@0.3.0",
+          "resolved": "https://registry.npmjs.org/norman-ng-grid/-/norman-ng-grid-0.3.0.tgz"
+        }
+      }
+    },
+    "norman-prototype-editors-server": {
+      "version": "0.3.0",
+      "from": "norman-prototype-editors-server@0.3.0",
+      "resolved": "https://registry.npmjs.org/norman-prototype-editors-server/-/norman-prototype-editors-server-0.3.0.tgz",
+      "dependencies": {
+        "htmlparser2": {
+          "version": "3.8.3",
+          "from": "htmlparser2@3.8.3",
+          "resolved": "https://registry.npmjs.org/htmlparser2/-/htmlparser2-3.8.3.tgz",
+          "dependencies": {
+            "domhandler": {
+              "version": "2.3.0",
+              "from": "domhandler@>=2.3.0 <2.4.0",
+              "resolved": "https://registry.npmjs.org/domhandler/-/domhandler-2.3.0.tgz"
+            },
+            "domutils": {
+              "version": "1.5.1",
+              "from": "domutils@>=1.5.0 <1.6.0",
+              "resolved": "https://registry.npmjs.org/domutils/-/domutils-1.5.1.tgz",
+              "dependencies": {
+                "dom-serializer": {
+                  "version": "0.1.0",
+                  "from": "dom-serializer@>=0.0.0 <1.0.0",
+                  "resolved": "https://registry.npmjs.org/dom-serializer/-/dom-serializer-0.1.0.tgz",
+                  "dependencies": {
+                    "domelementtype": {
+                      "version": "1.1.3",
+                      "from": "domelementtype@>=1.1.1 <1.2.0",
+                      "resolved": "https://registry.npmjs.org/domelementtype/-/domelementtype-1.1.3.tgz"
+                    },
+                    "entities": {
+                      "version": "1.1.1",
+                      "from": "entities@>=1.1.1 <1.2.0",
+                      "resolved": "https://registry.npmjs.org/entities/-/entities-1.1.1.tgz"
+                    }
+                  }
+                }
+              }
+            },
+            "domelementtype": {
+              "version": "1.3.0",
+              "from": "domelementtype@>=1.0.0 <2.0.0",
+              "resolved": "https://registry.npmjs.org/domelementtype/-/domelementtype-1.3.0.tgz"
+            },
+            "readable-stream": {
+              "version": "1.1.13",
+              "from": "readable-stream@>=1.1.0 <1.2.0",
+              "resolved": "https://registry.npmjs.org/readable-stream/-/readable-stream-1.1.13.tgz",
+              "dependencies": {
+                "core-util-is": {
+                  "version": "1.0.1",
+                  "from": "core-util-is@>=1.0.0 <1.1.0",
+                  "resolved": "https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.1.tgz"
+                },
+                "isarray": {
+                  "version": "0.0.1",
+                  "from": "isarray@0.0.1",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/isarray/-/isarray-0.0.1.tgz"
+                },
+                "string_decoder": {
+                  "version": "0.10.31",
+                  "from": "string_decoder@>=0.10.0 <0.11.0",
+                  "resolved": "https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz"
+                },
+                "inherits": {
+                  "version": "2.0.1",
+                  "from": "inherits@>=2.0.1 <2.1.0",
+                  "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
+                }
+              }
+            },
+            "entities": {
+              "version": "1.0.0",
+              "from": "entities@>=1.0.0 <1.1.0",
+              "resolved": "https://registry.npmjs.org/entities/-/entities-1.0.0.tgz"
+            }
+          }
+        },
+        "dagre": {
+          "version": "0.7.0",
+          "from": "dagre@0.7.0",
+          "resolved": "http://build-npm.mo.sap.corp:8080/dagre/-/dagre-0.7.0.tgz",
+          "dependencies": {
+            "graphlib": {
+              "version": "1.0.7",
+              "from": "graphlib@>=1.0.1 <2.0.0",
+              "resolved": "https://registry.npmjs.org/graphlib/-/graphlib-1.0.7.tgz",
+              "dependencies": {
+                "lodash": {
+                  "version": "3.10.1",
+                  "from": "lodash@>=3.10.0 <4.0.0",
+                  "resolved": "https://registry.npmjs.org/lodash/-/lodash-3.10.1.tgz"
+                }
+              }
+            },
+            "lodash": {
+              "version": "2.4.2",
+              "from": "lodash@>=2.4.1 <3.0.0",
+              "resolved": "https://registry.npmjs.org/lodash/-/lodash-2.4.2.tgz"
+            }
+          }
+        },
+        "xmlbuilder": {
+          "version": "2.4.5",
+          "from": "xmlbuilder@2.4.5",
+          "resolved": "https://registry.npmjs.org/xmlbuilder/-/xmlbuilder-2.4.5.tgz",
+          "dependencies": {
+            "lodash-node": {
+              "version": "2.4.1",
+              "from": "lodash-node@>=2.4.1 <2.5.0",
+              "resolved": "https://registry.npmjs.org/lodash-node/-/lodash-node-2.4.1.tgz"
+            }
+          }
+        },
+        "xlsx": {
+          "version": "0.7.12",
+          "from": "xlsx@0.7.12",
+          "resolved": "https://registry.npmjs.org/xlsx/-/xlsx-0.7.12.tgz",
+          "dependencies": {
+            "ssf": {
+              "version": "0.8.2",
+              "from": "ssf@>=0.8.1 <0.9.0",
+              "resolved": "https://registry.npmjs.org/ssf/-/ssf-0.8.2.tgz",
+              "dependencies": {
+                "voc": {
+                  "version": "0.5.0",
+                  "from": "voc@*",
+                  "resolved": "https://registry.npmjs.org/voc/-/voc-0.5.0.tgz"
+                },
+                "colors": {
+                  "version": "0.6.2",
+                  "from": "colors@0.6.2",
+                  "resolved": "https://registry.npmjs.org/colors/-/colors-0.6.2.tgz"
+                },
+                "frac": {
+                  "version": "0.3.1",
+                  "from": "frac@0.3.1",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/frac/-/frac-0.3.1.tgz"
+                }
+              }
+            },
+            "codepage": {
+              "version": "1.3.8",
+              "from": "codepage@>=1.3.6 <1.4.0",
+              "resolved": "https://registry.npmjs.org/codepage/-/codepage-1.3.8.tgz",
+              "dependencies": {
+                "voc": {
+                  "version": "0.5.0",
+                  "from": "voc@*",
+                  "resolved": "https://registry.npmjs.org/voc/-/voc-0.5.0.tgz"
+                },
+                "concat-stream": {
+                  "version": "1.5.1",
+                  "from": "concat-stream@*",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/concat-stream/-/concat-stream-1.5.1.tgz",
+                  "dependencies": {
+                    "inherits": {
+                      "version": "2.0.1",
+                      "from": "inherits@>=2.0.1 <2.1.0",
+                      "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
+                    },
+                    "typedarray": {
+                      "version": "0.0.6",
+                      "from": "typedarray@>=0.0.5 <0.1.0",
+                      "resolved": "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz"
+                    },
+                    "readable-stream": {
+                      "version": "2.0.4",
+                      "from": "readable-stream@>=2.0.0 <2.1.0",
+                      "resolved": "http://build-npm.mo.sap.corp:8080/readable-stream/-/readable-stream-2.0.4.tgz",
+                      "dependencies": {
+                        "core-util-is": {
+                          "version": "1.0.1",
+                          "from": "core-util-is@>=1.0.0 <1.1.0",
+                          "resolved": "https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.1.tgz"
+                        },
+                        "isarray": {
+                          "version": "0.0.1",
+                          "from": "isarray@0.0.1",
+                          "resolved": "http://build-npm.mo.sap.corp:8080/isarray/-/isarray-0.0.1.tgz"
+                        },
+                        "process-nextick-args": {
+                          "version": "1.0.3",
+                          "from": "process-nextick-args@>=1.0.0 <1.1.0",
+                          "resolved": "https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-1.0.3.tgz"
+                        },
+                        "string_decoder": {
+                          "version": "0.10.31",
+                          "from": "string_decoder@>=0.10.0 <0.11.0",
+                          "resolved": "https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz"
+                        },
+                        "util-deprecate": {
+                          "version": "1.0.2",
+                          "from": "util-deprecate@>=1.0.1 <1.1.0",
+                          "resolved": "http://build-npm.mo.sap.corp:8080/util-deprecate/-/util-deprecate-1.0.2.tgz"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "cfb": {
+              "version": "0.10.3",
+              "from": "cfb@>=0.10.0",
+              "resolved": "https://registry.npmjs.org/cfb/-/cfb-0.10.3.tgz"
+            },
+            "crc-32": {
+              "version": "0.3.0",
+              "from": "crc-32@*",
+              "resolved": "https://registry.npmjs.org/crc-32/-/crc-32-0.3.0.tgz"
+            },
+            "adler-32": {
+              "version": "0.2.1",
+              "from": "adler-32@*",
+              "resolved": "https://registry.npmjs.org/adler-32/-/adler-32-0.2.1.tgz"
+            },
+            "commander": {
+              "version": "2.9.0",
+              "from": "commander@*",
+              "resolved": "http://build-npm.mo.sap.corp:8080/commander/-/commander-2.9.0.tgz",
+              "dependencies": {
+                "graceful-readlink": {
+                  "version": "1.0.1",
+                  "from": "graceful-readlink@>=1.0.0",
+                  "resolved": "https://registry.npmjs.org/graceful-readlink/-/graceful-readlink-1.0.1.tgz"
+                }
+              }
+            }
+          }
+        },
+        "jszip": {
+          "version": "2.4.0",
+          "from": "jszip@2.4.0",
+          "resolved": "http://build-npm.mo.sap.corp:8080/jszip/-/jszip-2.4.0.tgz",
+          "dependencies": {
+            "pako": {
+              "version": "0.2.8",
+              "from": "pako@>=0.2.5 <0.3.0",
+              "resolved": "https://registry.npmjs.org/pako/-/pako-0.2.8.tgz"
+            }
+          }
+        },
+        "mkdirp": {
+          "version": "0.5.0",
+          "from": "mkdirp@0.5.0",
+          "resolved": "https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.0.tgz",
+          "dependencies": {
+            "minimist": {
+              "version": "0.0.8",
+              "from": "minimist@0.0.8",
+              "resolved": "https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz"
+            }
+          }
+        },
+        "rimraf": {
+          "version": "2.3.3",
+          "from": "rimraf@2.3.3",
+          "resolved": "https://registry.npmjs.org/rimraf/-/rimraf-2.3.3.tgz",
+          "dependencies": {
+            "glob": {
+              "version": "4.5.3",
+              "from": "glob@>=4.4.2 <5.0.0",
+              "resolved": "https://registry.npmjs.org/glob/-/glob-4.5.3.tgz",
+              "dependencies": {
+                "inflight": {
+                  "version": "1.0.4",
+                  "from": "inflight@>=1.0.4 <2.0.0",
+                  "resolved": "https://registry.npmjs.org/inflight/-/inflight-1.0.4.tgz",
+                  "dependencies": {
+                    "wrappy": {
+                      "version": "1.0.1",
+                      "from": "wrappy@>=1.0.0 <2.0.0",
+                      "resolved": "https://registry.npmjs.org/wrappy/-/wrappy-1.0.1.tgz"
+                    }
+                  }
+                },
+                "inherits": {
+                  "version": "2.0.1",
+                  "from": "inherits@>=2.0.0 <3.0.0",
+                  "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
+                },
+                "minimatch": {
+                  "version": "2.0.10",
+                  "from": "minimatch@>=2.0.1 <3.0.0",
+                  "resolved": "https://registry.npmjs.org/minimatch/-/minimatch-2.0.10.tgz",
+                  "dependencies": {
+                    "brace-expansion": {
+                      "version": "1.1.1",
+                      "from": "brace-expansion@>=1.0.0 <2.0.0",
+                      "resolved": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.1.tgz",
+                      "dependencies": {
+                        "balanced-match": {
+                          "version": "0.2.1",
+                          "from": "balanced-match@>=0.2.0 <0.3.0",
+                          "resolved": "http://build-npm.mo.sap.corp:8080/balanced-match/-/balanced-match-0.2.1.tgz"
+                        },
+                        "concat-map": {
+                          "version": "0.0.1",
+                          "from": "concat-map@0.0.1",
+                          "resolved": "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz"
+                        }
+                      }
+                    }
+                  }
+                },
+                "once": {
+                  "version": "1.3.2",
+                  "from": "once@>=1.3.0 <2.0.0",
+                  "resolved": "https://registry.npmjs.org/once/-/once-1.3.2.tgz",
+                  "dependencies": {
+                    "wrappy": {
+                      "version": "1.0.1",
+                      "from": "wrappy@>=1.0.0 <2.0.0",
+                      "resolved": "https://registry.npmjs.org/wrappy/-/wrappy-1.0.1.tgz"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "gridfs-stream": {
+          "version": "0.5.3",
+          "from": "gridfs-stream@0.5.3",
+          "resolved": "http://build-npm.mo.sap.corp:8080/gridfs-stream/-/gridfs-stream-0.5.3.tgz"
+        }
+      }
+    },
+    "norman-server-tp": {
+      "version": "0.3.1",
+      "from": "norman-server-tp@0.3.1",
+      "resolved": "https://registry.npmjs.org/norman-server-tp/-/norman-server-tp-0.3.1.tgz",
+      "dependencies": {
+        "node-sap-common": {
+          "version": "0.3.1",
+          "from": "node-sap-common@0.3.1",
+          "resolved": "https://registry.npmjs.org/node-sap-common/-/node-sap-common-0.3.1.tgz"
+        },
+        "node-sap-logging": {
+          "version": "0.3.0",
+          "from": "node-sap-logging@0.3.0",
+          "resolved": "https://registry.npmjs.org/node-sap-logging/-/node-sap-logging-0.3.0.tgz",
+          "dependencies": {
+            "on-finished": {
+              "version": "2.2.0",
+              "from": "on-finished@2.2.0",
+              "resolved": "https://registry.npmjs.org/on-finished/-/on-finished-2.2.0.tgz",
+              "dependencies": {
+                "ee-first": {
+                  "version": "1.1.0",
+                  "from": "ee-first@1.1.0",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/ee-first/-/ee-first-1.1.0.tgz"
+                }
+              }
+            }
+          }
+        },
+        "node-sap-promise": {
+          "version": "0.3.1",
+          "from": "node-sap-promise@0.3.1",
+          "resolved": "https://registry.npmjs.org/node-sap-promise/-/node-sap-promise-0.3.1.tgz"
+        },
+        "node-sap-secure-store": {
+          "version": "0.3.1",
+          "from": "node-sap-secure-store@0.3.1",
+          "resolved": "https://registry.npmjs.org/node-sap-secure-store/-/node-sap-secure-store-0.3.1.tgz"
+        },
+        "node-sap-mailer": {
+          "version": "0.3.1",
+          "from": "node-sap-mailer@0.3.1",
+          "resolved": "https://registry.npmjs.org/node-sap-mailer/-/node-sap-mailer-0.3.1.tgz",
+          "dependencies": {
+            "nodemailer": {
+              "version": "1.3.0",
+              "from": "nodemailer@1.3.0",
+              "resolved": "https://registry.npmjs.org/nodemailer/-/nodemailer-1.3.0.tgz",
+              "dependencies": {
+                "buildmail": {
+                  "version": "1.3.0",
+                  "from": "buildmail@>=1.2.0 <2.0.0",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/buildmail/-/buildmail-1.3.0.tgz",
+                  "dependencies": {
+                    "addressparser": {
+                      "version": "0.3.2",
+                      "from": "addressparser@>=0.3.2 <0.4.0",
+                      "resolved": "https://registry.npmjs.org/addressparser/-/addressparser-0.3.2.tgz"
+                    },
+                    "hyperquest": {
+                      "version": "1.2.0",
+                      "from": "hyperquest@>=1.2.0 <2.0.0",
+                      "resolved": "https://registry.npmjs.org/hyperquest/-/hyperquest-1.2.0.tgz",
+                      "dependencies": {
+                        "duplexer2": {
+                          "version": "0.0.2",
+                          "from": "duplexer2@>=0.0.2 <0.1.0",
+                          "resolved": "http://build-npm.mo.sap.corp:8080/duplexer2/-/duplexer2-0.0.2.tgz",
+                          "dependencies": {
+                            "readable-stream": {
+                              "version": "1.1.13",
+                              "from": "readable-stream@>=1.1.9 <1.2.0",
+                              "resolved": "https://registry.npmjs.org/readable-stream/-/readable-stream-1.1.13.tgz",
+                              "dependencies": {
+                                "core-util-is": {
+                                  "version": "1.0.1",
+                                  "from": "core-util-is@>=1.0.0 <1.1.0",
+                                  "resolved": "https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.1.tgz"
+                                },
+                                "isarray": {
+                                  "version": "0.0.1",
+                                  "from": "isarray@0.0.1",
+                                  "resolved": "http://build-npm.mo.sap.corp:8080/isarray/-/isarray-0.0.1.tgz"
+                                },
+                                "string_decoder": {
+                                  "version": "0.10.31",
+                                  "from": "string_decoder@>=0.10.0 <0.11.0",
+                                  "resolved": "https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz"
+                                },
+                                "inherits": {
+                                  "version": "2.0.1",
+                                  "from": "inherits@>=2.0.1 <2.1.0",
+                                  "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "through2": {
+                          "version": "0.6.5",
+                          "from": "through2@>=0.6.3 <0.7.0",
+                          "resolved": "https://registry.npmjs.org/through2/-/through2-0.6.5.tgz",
+                          "dependencies": {
+                            "readable-stream": {
+                              "version": "1.0.33",
+                              "from": "readable-stream@>=1.0.33-1 <1.1.0-0",
+                              "resolved": "https://registry.npmjs.org/readable-stream/-/readable-stream-1.0.33.tgz",
+                              "dependencies": {
+                                "core-util-is": {
+                                  "version": "1.0.1",
+                                  "from": "core-util-is@>=1.0.0 <1.1.0",
+                                  "resolved": "https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.1.tgz"
+                                },
+                                "isarray": {
+                                  "version": "0.0.1",
+                                  "from": "isarray@0.0.1",
+                                  "resolved": "http://build-npm.mo.sap.corp:8080/isarray/-/isarray-0.0.1.tgz"
+                                },
+                                "string_decoder": {
+                                  "version": "0.10.31",
+                                  "from": "string_decoder@>=0.10.0 <0.11.0",
+                                  "resolved": "https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz"
+                                },
+                                "inherits": {
+                                  "version": "2.0.1",
+                                  "from": "inherits@>=2.0.0 <3.0.0",
+                                  "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
+                                }
+                              }
+                            },
+                            "xtend": {
+                              "version": "4.0.1",
+                              "from": "xtend@>=4.0.0 <4.1.0-0",
+                              "resolved": "http://build-npm.mo.sap.corp:8080/xtend/-/xtend-4.0.1.tgz"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "libbase64": {
+                      "version": "0.1.0",
+                      "from": "libbase64@>=0.1.0 <0.2.0",
+                      "resolved": "https://registry.npmjs.org/libbase64/-/libbase64-0.1.0.tgz"
+                    },
+                    "libmime": {
+                      "version": "1.2.0",
+                      "from": "libmime@>=1.2.0 <2.0.0",
+                      "resolved": "http://build-npm.mo.sap.corp:8080/libmime/-/libmime-1.2.0.tgz",
+                      "dependencies": {
+                        "iconv-lite": {
+                          "version": "0.4.13",
+                          "from": "iconv-lite@>=0.4.13 <0.5.0",
+                          "resolved": "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.13.tgz"
+                        }
+                      }
+                    },
+                    "libqp": {
+                      "version": "1.1.0",
+                      "from": "libqp@>=1.1.0 <2.0.0",
+                      "resolved": "https://registry.npmjs.org/libqp/-/libqp-1.1.0.tgz"
+                    }
+                  }
+                },
+                "hyperquest": {
+                  "version": "0.3.0",
+                  "from": "hyperquest@>=0.3.0 <0.4.0",
+                  "resolved": "https://registry.npmjs.org/hyperquest/-/hyperquest-0.3.0.tgz",
+                  "dependencies": {
+                    "through": {
+                      "version": "2.2.7",
+                      "from": "through@>=2.2.0 <2.3.0",
+                      "resolved": "https://registry.npmjs.org/through/-/through-2.2.7.tgz"
+                    },
+                    "duplexer": {
+                      "version": "0.1.1",
+                      "from": "duplexer@>=0.1.0 <0.2.0",
+                      "resolved": "https://registry.npmjs.org/duplexer/-/duplexer-0.1.1.tgz"
+                    }
+                  }
+                },
+                "libmime": {
+                  "version": "0.1.7",
+                  "from": "libmime@>=0.1.5 <0.2.0",
+                  "resolved": "https://registry.npmjs.org/libmime/-/libmime-0.1.7.tgz",
+                  "dependencies": {
+                    "iconv-lite": {
+                      "version": "0.4.13",
+                      "from": "iconv-lite@>=0.4.4 <0.5.0",
+                      "resolved": "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.13.tgz"
+                    },
+                    "libbase64": {
+                      "version": "0.1.0",
+                      "from": "libbase64@>=0.1.0 <0.2.0",
+                      "resolved": "https://registry.npmjs.org/libbase64/-/libbase64-0.1.0.tgz"
+                    },
+                    "libqp": {
+                      "version": "0.1.1",
+                      "from": "libqp@>=0.1.1 <0.2.0",
+                      "resolved": "https://registry.npmjs.org/libqp/-/libqp-0.1.1.tgz"
+                    }
+                  }
+                },
+                "nodemailer-direct-transport": {
+                  "version": "1.1.0",
+                  "from": "nodemailer-direct-transport@>=1.0.0 <2.0.0",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/nodemailer-direct-transport/-/nodemailer-direct-transport-1.1.0.tgz",
+                  "dependencies": {
+                    "smtp-connection": {
+                      "version": "1.3.1",
+                      "from": "smtp-connection@>=1.3.1 <2.0.0",
+                      "resolved": "https://registry.npmjs.org/smtp-connection/-/smtp-connection-1.3.1.tgz"
+                    }
+                  }
+                },
+                "nodemailer-smtp-transport": {
+                  "version": "0.1.13",
+                  "from": "nodemailer-smtp-transport@>=0.1.12 <0.2.0",
+                  "resolved": "https://registry.npmjs.org/nodemailer-smtp-transport/-/nodemailer-smtp-transport-0.1.13.tgz",
+                  "dependencies": {
+                    "nodemailer-wellknown": {
+                      "version": "0.1.7",
+                      "from": "nodemailer-wellknown@>=0.1.1 <0.2.0",
+                      "resolved": "https://registry.npmjs.org/nodemailer-wellknown/-/nodemailer-wellknown-0.1.7.tgz"
+                    },
+                    "smtp-connection": {
+                      "version": "1.3.1",
+                      "from": "smtp-connection@>=1.0.0 <2.0.0",
+                      "resolved": "https://registry.npmjs.org/smtp-connection/-/smtp-connection-1.3.1.tgz"
+                    }
+                  }
+                }
+              }
+            },
+            "node-handlebars": {
+              "version": "0.9.5",
+              "from": "node-handlebars@0.9.5",
+              "resolved": "http://build-npm.mo.sap.corp:8080/node-handlebars/-/node-handlebars-0.9.5.tgz",
+              "dependencies": {
+                "promise": {
+                  "version": "6.0.1",
+                  "from": "promise@>=6.0.1 <6.1.0",
+                  "resolved": "https://registry.npmjs.org/promise/-/promise-6.0.1.tgz",
+                  "dependencies": {
+                    "asap": {
+                      "version": "1.0.0",
+                      "from": "asap@>=1.0.0 <1.1.0",
+                      "resolved": "https://registry.npmjs.org/asap/-/asap-1.0.0.tgz"
+                    }
+                  }
+                },
+                "semver": {
+                  "version": "3.0.1",
+                  "from": "semver@>=3.0.1 <3.1.0",
+                  "resolved": "https://registry.npmjs.org/semver/-/semver-3.0.1.tgz"
+                },
+                "graceful-fs": {
+                  "version": "3.0.8",
+                  "from": "graceful-fs@>=3.0.4 <3.1.0",
+                  "resolved": "https://registry.npmjs.org/graceful-fs/-/graceful-fs-3.0.8.tgz"
+                },
+                "glob": {
+                  "version": "4.0.6",
+                  "from": "glob@>=4.0.6 <4.1.0",
+                  "resolved": "https://registry.npmjs.org/glob/-/glob-4.0.6.tgz",
+                  "dependencies": {
+                    "inherits": {
+                      "version": "2.0.1",
+                      "from": "inherits@>=2.0.0 <3.0.0",
+                      "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
+                    },
+                    "minimatch": {
+                      "version": "1.0.0",
+                      "from": "minimatch@>=1.0.0 <2.0.0",
+                      "resolved": "https://registry.npmjs.org/minimatch/-/minimatch-1.0.0.tgz",
+                      "dependencies": {
+                        "lru-cache": {
+                          "version": "2.7.0",
+                          "from": "lru-cache@>=2.0.0 <3.0.0",
+                          "resolved": "https://registry.npmjs.org/lru-cache/-/lru-cache-2.7.0.tgz"
+                        },
+                        "sigmund": {
+                          "version": "1.0.1",
+                          "from": "sigmund@>=1.0.0 <1.1.0",
+                          "resolved": "https://registry.npmjs.org/sigmund/-/sigmund-1.0.1.tgz"
+                        }
+                      }
+                    },
+                    "once": {
+                      "version": "1.3.2",
+                      "from": "once@>=1.3.0 <2.0.0",
+                      "resolved": "https://registry.npmjs.org/once/-/once-1.3.2.tgz",
+                      "dependencies": {
+                        "wrappy": {
+                          "version": "1.0.1",
+                          "from": "wrappy@>=1.0.0 <2.0.0",
+                          "resolved": "https://registry.npmjs.org/wrappy/-/wrappy-1.0.1.tgz"
+                        }
+                      }
+                    }
+                  }
+                },
+                "path": {
+                  "version": "0.4.10",
+                  "from": "path@>=0.4.9 <0.5.0",
+                  "resolved": "https://registry.npmjs.org/path/-/path-0.4.10.tgz"
+                },
+                "minimize": {
+                  "version": "0.10.1",
+                  "from": "minimize@>=0.10.0 <0.11.0",
+                  "resolved": "https://registry.npmjs.org/minimize/-/minimize-0.10.1.tgz",
+                  "dependencies": {
+                    "htmlparser2": {
+                      "version": "3.8.3",
+                      "from": "htmlparser2@>=3.8.0 <3.9.0",
+                      "resolved": "https://registry.npmjs.org/htmlparser2/-/htmlparser2-3.8.3.tgz",
+                      "dependencies": {
+                        "domhandler": {
+                          "version": "2.3.0",
+                          "from": "domhandler@>=2.3.0 <2.4.0",
+                          "resolved": "https://registry.npmjs.org/domhandler/-/domhandler-2.3.0.tgz"
+                        },
+                        "domutils": {
+                          "version": "1.5.1",
+                          "from": "domutils@>=1.5.0 <1.6.0",
+                          "resolved": "https://registry.npmjs.org/domutils/-/domutils-1.5.1.tgz",
+                          "dependencies": {
+                            "dom-serializer": {
+                              "version": "0.1.0",
+                              "from": "dom-serializer@>=0.0.0 <1.0.0",
+                              "resolved": "https://registry.npmjs.org/dom-serializer/-/dom-serializer-0.1.0.tgz",
+                              "dependencies": {
+                                "domelementtype": {
+                                  "version": "1.1.3",
+                                  "from": "domelementtype@>=1.1.1 <1.2.0",
+                                  "resolved": "https://registry.npmjs.org/domelementtype/-/domelementtype-1.1.3.tgz"
+                                },
+                                "entities": {
+                                  "version": "1.1.1",
+                                  "from": "entities@>=1.1.1 <1.2.0",
+                                  "resolved": "https://registry.npmjs.org/entities/-/entities-1.1.1.tgz"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "domelementtype": {
+                          "version": "1.3.0",
+                          "from": "domelementtype@>=1.0.0 <2.0.0",
+                          "resolved": "https://registry.npmjs.org/domelementtype/-/domelementtype-1.3.0.tgz"
+                        },
+                        "readable-stream": {
+                          "version": "1.1.13",
+                          "from": "readable-stream@>=1.1.0 <1.2.0",
+                          "resolved": "https://registry.npmjs.org/readable-stream/-/readable-stream-1.1.13.tgz",
+                          "dependencies": {
+                            "core-util-is": {
+                              "version": "1.0.1",
+                              "from": "core-util-is@>=1.0.0 <1.1.0",
+                              "resolved": "https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.1.tgz"
+                            },
+                            "isarray": {
+                              "version": "0.0.1",
+                              "from": "isarray@0.0.1",
+                              "resolved": "http://build-npm.mo.sap.corp:8080/isarray/-/isarray-0.0.1.tgz"
+                            },
+                            "string_decoder": {
+                              "version": "0.10.31",
+                              "from": "string_decoder@>=0.10.0 <0.11.0",
+                              "resolved": "https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz"
+                            },
+                            "inherits": {
+                              "version": "2.0.1",
+                              "from": "inherits@>=2.0.0 <3.0.0",
+                              "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
+                            }
+                          }
+                        },
+                        "entities": {
+                          "version": "1.0.0",
+                          "from": "entities@>=1.0.0 <1.1.0",
+                          "resolved": "https://registry.npmjs.org/entities/-/entities-1.0.0.tgz"
+                        }
+                      }
+                    },
+                    "utile": {
+                      "version": "0.2.1",
+                      "from": "utile@>=0.2.1 <0.3.0",
+                      "resolved": "https://registry.npmjs.org/utile/-/utile-0.2.1.tgz",
+                      "dependencies": {
+                        "async": {
+                          "version": "0.2.10",
+                          "from": "async@>=0.2.9 <0.3.0",
+                          "resolved": "https://registry.npmjs.org/async/-/async-0.2.10.tgz"
+                        },
+                        "deep-equal": {
+                          "version": "1.0.1",
+                          "from": "deep-equal@*",
+                          "resolved": "https://registry.npmjs.org/deep-equal/-/deep-equal-1.0.1.tgz"
+                        },
+                        "i": {
+                          "version": "0.3.3",
+                          "from": "i@>=0.3.0 <0.4.0",
+                          "resolved": "https://registry.npmjs.org/i/-/i-0.3.3.tgz"
+                        },
+                        "mkdirp": {
+                          "version": "0.5.1",
+                          "from": "mkdirp@>=0.0.0 <1.0.0",
+                          "resolved": "https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.1.tgz",
+                          "dependencies": {
+                            "minimist": {
+                              "version": "0.0.8",
+                              "from": "minimist@0.0.8",
+                              "resolved": "https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz"
+                            }
+                          }
+                        },
+                        "ncp": {
+                          "version": "0.4.2",
+                          "from": "ncp@>=0.4.0 <0.5.0",
+                          "resolved": "http://build-npm.mo.sap.corp:8080/ncp/-/ncp-0.4.2.tgz"
+                        },
+                        "rimraf": {
+                          "version": "2.4.3",
+                          "from": "rimraf@>=2.0.0 <3.0.0",
+                          "resolved": "https://registry.npmjs.org/rimraf/-/rimraf-2.4.3.tgz",
+                          "dependencies": {
+                            "glob": {
+                              "version": "5.0.15",
+                              "from": "glob@>=5.0.14 <6.0.0",
+                              "resolved": "https://registry.npmjs.org/glob/-/glob-5.0.15.tgz",
+                              "dependencies": {
+                                "inflight": {
+                                  "version": "1.0.4",
+                                  "from": "inflight@>=1.0.4 <2.0.0",
+                                  "resolved": "https://registry.npmjs.org/inflight/-/inflight-1.0.4.tgz",
+                                  "dependencies": {
+                                    "wrappy": {
+                                      "version": "1.0.1",
+                                      "from": "wrappy@>=1.0.0 <2.0.0",
+                                      "resolved": "https://registry.npmjs.org/wrappy/-/wrappy-1.0.1.tgz"
+                                    }
+                                  }
+                                },
+                                "inherits": {
+                                  "version": "2.0.1",
+                                  "from": "inherits@>=2.0.0 <3.0.0",
+                                  "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
+                                },
+                                "minimatch": {
+                                  "version": "3.0.0",
+                                  "from": "minimatch@>=2.0.0 <3.0.0||>=3.0.0 <4.0.0",
+                                  "resolved": "https://registry.npmjs.org/minimatch/-/minimatch-3.0.0.tgz",
+                                  "dependencies": {
+                                    "brace-expansion": {
+                                      "version": "1.1.1",
+                                      "from": "brace-expansion@>=1.0.0 <2.0.0",
+                                      "resolved": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.1.tgz",
+                                      "dependencies": {
+                                        "balanced-match": {
+                                          "version": "0.2.1",
+                                          "from": "balanced-match@>=0.2.0 <0.3.0",
+                                          "resolved": "http://build-npm.mo.sap.corp:8080/balanced-match/-/balanced-match-0.2.1.tgz"
+                                        },
+                                        "concat-map": {
+                                          "version": "0.0.1",
+                                          "from": "concat-map@0.0.1",
+                                          "resolved": "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz"
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "once": {
+                                  "version": "1.3.2",
+                                  "from": "once@>=1.3.0 <2.0.0",
+                                  "resolved": "https://registry.npmjs.org/once/-/once-1.3.2.tgz",
+                                  "dependencies": {
+                                    "wrappy": {
+                                      "version": "1.0.1",
+                                      "from": "wrappy@>=1.0.0 <2.0.0",
+                                      "resolved": "https://registry.npmjs.org/wrappy/-/wrappy-1.0.1.tgz"
+                                    }
+                                  }
+                                },
+                                "path-is-absolute": {
+                                  "version": "1.0.0",
+                                  "from": "path-is-absolute@>=1.0.0 <2.0.0",
+                                  "resolved": "https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.0.tgz"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "node-sap-mongo": {
+          "version": "0.3.1",
+          "from": "node-sap-mongo@0.3.1",
+          "resolved": "https://registry.npmjs.org/node-sap-mongo/-/node-sap-mongo-0.3.1.tgz",
+          "dependencies": {
+            "mongoose": {
+              "version": "3.8.21",
+              "from": "mongoose@3.8.21",
+              "resolved": "http://build-npm.mo.sap.corp:8080/mongoose/-/mongoose-3.8.21.tgz",
+              "dependencies": {
+                "mongodb": {
+                  "version": "1.4.12",
+                  "from": "mongodb@1.4.12",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/mongodb/-/mongodb-1.4.12.tgz",
+                  "dependencies": {
+                    "bson": {
+                      "version": "0.2.22",
+                      "from": "bson@>=0.2.0 <0.3.0",
+                      "resolved": "https://registry.npmjs.org/bson/-/bson-0.2.22.tgz",
+                      "dependencies": {
+                        "nan": {
+                          "version": "1.8.4",
+                          "from": "nan@>=1.8.0 <1.9.0",
+                          "resolved": "https://registry.npmjs.org/nan/-/nan-1.8.4.tgz"
+                        }
+                      }
+                    },
+                    "kerberos": {
+                      "version": "0.0.4",
+                      "from": "kerberos@0.0.4",
+                      "resolved": "https://registry.npmjs.org/kerberos/-/kerberos-0.0.4.tgz"
+                    },
+                    "readable-stream": {
+                      "version": "2.0.4",
+                      "from": "readable-stream@latest",
+                      "resolved": "http://build-npm.mo.sap.corp:8080/readable-stream/-/readable-stream-2.0.4.tgz",
+                      "dependencies": {
+                        "core-util-is": {
+                          "version": "1.0.1",
+                          "from": "core-util-is@>=1.0.0 <1.1.0",
+                          "resolved": "https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.1.tgz"
+                        },
+                        "inherits": {
+                          "version": "2.0.1",
+                          "from": "inherits@>=2.0.1 <2.1.0",
+                          "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
+                        },
+                        "isarray": {
+                          "version": "0.0.1",
+                          "from": "isarray@0.0.1",
+                          "resolved": "http://build-npm.mo.sap.corp:8080/isarray/-/isarray-0.0.1.tgz"
+                        },
+                        "process-nextick-args": {
+                          "version": "1.0.3",
+                          "from": "process-nextick-args@>=1.0.0 <1.1.0",
+                          "resolved": "https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-1.0.3.tgz"
+                        },
+                        "string_decoder": {
+                          "version": "0.10.31",
+                          "from": "string_decoder@>=0.10.0 <0.11.0",
+                          "resolved": "https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz"
+                        },
+                        "util-deprecate": {
+                          "version": "1.0.2",
+                          "from": "util-deprecate@>=1.0.1 <1.1.0",
+                          "resolved": "http://build-npm.mo.sap.corp:8080/util-deprecate/-/util-deprecate-1.0.2.tgz"
+                        }
+                      }
+                    }
+                  }
+                },
+                "hooks": {
+                  "version": "0.2.1",
+                  "from": "hooks@0.2.1",
+                  "resolved": "https://registry.npmjs.org/hooks/-/hooks-0.2.1.tgz"
+                },
+                "ms": {
+                  "version": "0.1.0",
+                  "from": "ms@0.1.0",
+                  "resolved": "https://registry.npmjs.org/ms/-/ms-0.1.0.tgz"
+                },
+                "sliced": {
+                  "version": "0.0.5",
+                  "from": "sliced@0.0.5",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/sliced/-/sliced-0.0.5.tgz"
+                },
+                "muri": {
+                  "version": "0.3.1",
+                  "from": "muri@0.3.1",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/muri/-/muri-0.3.1.tgz"
+                },
+                "mpromise": {
+                  "version": "0.4.3",
+                  "from": "mpromise@0.4.3",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/mpromise/-/mpromise-0.4.3.tgz"
+                },
+                "mpath": {
+                  "version": "0.1.1",
+                  "from": "mpath@0.1.1",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/mpath/-/mpath-0.1.1.tgz"
+                },
+                "regexp-clone": {
+                  "version": "0.0.1",
+                  "from": "regexp-clone@0.0.1",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/regexp-clone/-/regexp-clone-0.0.1.tgz"
+                },
+                "mquery": {
+                  "version": "0.8.0",
+                  "from": "mquery@0.8.0",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/mquery/-/mquery-0.8.0.tgz",
+                  "dependencies": {
+                    "debug": {
+                      "version": "0.7.4",
+                      "from": "debug@0.7.4",
+                      "resolved": "http://build-npm.mo.sap.corp:8080/debug/-/debug-0.7.4.tgz"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "node-sap-upload": {
+          "version": "0.3.1",
+          "from": "node-sap-upload@0.3.1",
+          "resolved": "https://registry.npmjs.org/node-sap-upload/-/node-sap-upload-0.3.1.tgz",
+          "dependencies": {
+            "multer": {
+              "version": "0.1.7",
+              "from": "multer@0.1.7",
+              "resolved": "https://registry.npmjs.org/multer/-/multer-0.1.7.tgz",
+              "dependencies": {
+                "busboy": {
+                  "version": "0.2.11",
+                  "from": "busboy@>=0.2.9 <0.3.0",
+                  "resolved": "https://registry.npmjs.org/busboy/-/busboy-0.2.11.tgz",
+                  "dependencies": {
+                    "dicer": {
+                      "version": "0.2.3",
+                      "from": "dicer@0.2.3",
+                      "resolved": "http://build-npm.mo.sap.corp:8080/dicer/-/dicer-0.2.3.tgz",
+                      "dependencies": {
+                        "streamsearch": {
+                          "version": "0.1.2",
+                          "from": "streamsearch@0.1.2",
+                          "resolved": "http://build-npm.mo.sap.corp:8080/streamsearch/-/streamsearch-0.1.2.tgz"
+                        }
+                      }
+                    },
+                    "readable-stream": {
+                      "version": "1.1.13",
+                      "from": "readable-stream@>=1.1.0 <1.2.0",
+                      "resolved": "https://registry.npmjs.org/readable-stream/-/readable-stream-1.1.13.tgz",
+                      "dependencies": {
+                        "core-util-is": {
+                          "version": "1.0.1",
+                          "from": "core-util-is@>=1.0.0 <1.1.0",
+                          "resolved": "https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.1.tgz"
+                        },
+                        "isarray": {
+                          "version": "0.0.1",
+                          "from": "isarray@0.0.1",
+                          "resolved": "http://build-npm.mo.sap.corp:8080/isarray/-/isarray-0.0.1.tgz"
+                        },
+                        "string_decoder": {
+                          "version": "0.10.31",
+                          "from": "string_decoder@>=0.10.0 <0.11.0",
+                          "resolved": "https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz"
+                        },
+                        "inherits": {
+                          "version": "2.0.1",
+                          "from": "inherits@>=2.0.1 <2.1.0",
+                          "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
+                        }
+                      }
+                    }
+                  }
+                },
+                "mkdirp": {
+                  "version": "0.3.5",
+                  "from": "mkdirp@>=0.3.5 <0.4.0",
+                  "resolved": "https://registry.npmjs.org/mkdirp/-/mkdirp-0.3.5.tgz"
+                },
+                "qs": {
+                  "version": "1.2.2",
+                  "from": "qs@>=1.2.2 <1.3.0",
+                  "resolved": "https://registry.npmjs.org/qs/-/qs-1.2.2.tgz"
+                },
+                "type-is": {
+                  "version": "1.5.7",
+                  "from": "type-is@>=1.5.2 <1.6.0",
+                  "resolved": "https://registry.npmjs.org/type-is/-/type-is-1.5.7.tgz",
+                  "dependencies": {
+                    "media-typer": {
+                      "version": "0.3.0",
+                      "from": "media-typer@0.3.0",
+                      "resolved": "http://build-npm.mo.sap.corp:8080/media-typer/-/media-typer-0.3.0.tgz"
+                    },
+                    "mime-types": {
+                      "version": "2.0.14",
+                      "from": "mime-types@>=2.0.9 <2.1.0",
+                      "resolved": "https://registry.npmjs.org/mime-types/-/mime-types-2.0.14.tgz",
+                      "dependencies": {
+                        "mime-db": {
+                          "version": "1.12.0",
+                          "from": "mime-db@>=1.12.0 <1.13.0",
+                          "resolved": "https://registry.npmjs.org/mime-db/-/mime-db-1.12.0.tgz"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "body-parser": {
+          "version": "1.11.0",
+          "from": "body-parser@1.11.0",
+          "resolved": "https://registry.npmjs.org/body-parser/-/body-parser-1.11.0.tgz",
+          "dependencies": {
+            "bytes": {
+              "version": "1.0.0",
+              "from": "bytes@1.0.0",
+              "resolved": "https://registry.npmjs.org/bytes/-/bytes-1.0.0.tgz"
+            },
+            "depd": {
+              "version": "1.0.1",
+              "from": "depd@>=1.0.0 <1.1.0",
+              "resolved": "https://registry.npmjs.org/depd/-/depd-1.0.1.tgz"
+            },
+            "iconv-lite": {
+              "version": "0.4.6",
+              "from": "iconv-lite@0.4.6",
+              "resolved": "http://build-npm.mo.sap.corp:8080/iconv-lite/-/iconv-lite-0.4.6.tgz"
+            },
+            "media-typer": {
+              "version": "0.3.0",
+              "from": "media-typer@0.3.0",
+              "resolved": "http://build-npm.mo.sap.corp:8080/media-typer/-/media-typer-0.3.0.tgz"
+            },
+            "on-finished": {
+              "version": "2.2.1",
+              "from": "on-finished@>=2.2.0 <2.3.0",
+              "resolved": "https://registry.npmjs.org/on-finished/-/on-finished-2.2.1.tgz",
+              "dependencies": {
+                "ee-first": {
+                  "version": "1.1.0",
+                  "from": "ee-first@1.1.0",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/ee-first/-/ee-first-1.1.0.tgz"
+                }
+              }
+            },
+            "qs": {
+              "version": "2.3.3",
+              "from": "qs@2.3.3",
+              "resolved": "http://build-npm.mo.sap.corp:8080/qs/-/qs-2.3.3.tgz"
+            },
+            "raw-body": {
+              "version": "1.3.2",
+              "from": "raw-body@1.3.2",
+              "resolved": "http://build-npm.mo.sap.corp:8080/raw-body/-/raw-body-1.3.2.tgz"
+            },
+            "type-is": {
+              "version": "1.5.7",
+              "from": "type-is@>=1.5.6 <1.6.0",
+              "resolved": "https://registry.npmjs.org/type-is/-/type-is-1.5.7.tgz",
+              "dependencies": {
+                "mime-types": {
+                  "version": "2.0.14",
+                  "from": "mime-types@>=2.0.9 <2.1.0",
+                  "resolved": "https://registry.npmjs.org/mime-types/-/mime-types-2.0.14.tgz",
+                  "dependencies": {
+                    "mime-db": {
+                      "version": "1.12.0",
+                      "from": "mime-db@>=1.12.0 <1.13.0",
+                      "resolved": "https://registry.npmjs.org/mime-db/-/mime-db-1.12.0.tgz"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "composable-middleware": {
+          "version": "0.3.0",
+          "from": "composable-middleware@0.3.0",
+          "resolved": "http://build-npm.mo.sap.corp:8080/composable-middleware/-/composable-middleware-0.3.0.tgz"
+        },
+        "express": {
+          "version": "4.11.2",
+          "from": "express@4.11.2",
+          "resolved": "https://registry.npmjs.org/express/-/express-4.11.2.tgz",
+          "dependencies": {
+            "accepts": {
+              "version": "1.2.13",
+              "from": "accepts@>=1.2.3 <1.3.0",
+              "resolved": "https://registry.npmjs.org/accepts/-/accepts-1.2.13.tgz",
+              "dependencies": {
+                "mime-types": {
+                  "version": "2.1.7",
+                  "from": "mime-types@>=2.1.6 <2.2.0",
+                  "resolved": "https://registry.npmjs.org/mime-types/-/mime-types-2.1.7.tgz",
+                  "dependencies": {
+                    "mime-db": {
+                      "version": "1.19.0",
+                      "from": "mime-db@>=1.19.0 <1.20.0",
+                      "resolved": "https://registry.npmjs.org/mime-db/-/mime-db-1.19.0.tgz"
+                    }
+                  }
+                },
+                "negotiator": {
+                  "version": "0.5.3",
+                  "from": "negotiator@0.5.3",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/negotiator/-/negotiator-0.5.3.tgz"
+                }
+              }
+            },
+            "content-disposition": {
+              "version": "0.5.0",
+              "from": "content-disposition@0.5.0",
+              "resolved": "http://build-npm.mo.sap.corp:8080/content-disposition/-/content-disposition-0.5.0.tgz"
+            },
+            "cookie-signature": {
+              "version": "1.0.5",
+              "from": "cookie-signature@1.0.5",
+              "resolved": "http://build-npm.mo.sap.corp:8080/cookie-signature/-/cookie-signature-1.0.5.tgz"
+            },
+            "debug": {
+              "version": "2.1.3",
+              "from": "debug@>=2.1.1 <2.2.0",
+              "resolved": "https://registry.npmjs.org/debug/-/debug-2.1.3.tgz",
+              "dependencies": {
+                "ms": {
+                  "version": "0.7.0",
+                  "from": "ms@0.7.0",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/ms/-/ms-0.7.0.tgz"
+                }
+              }
+            },
+            "depd": {
+              "version": "1.0.1",
+              "from": "depd@>=1.0.0 <1.1.0",
+              "resolved": "https://registry.npmjs.org/depd/-/depd-1.0.1.tgz"
+            },
+            "escape-html": {
+              "version": "1.0.1",
+              "from": "escape-html@1.0.1",
+              "resolved": "http://build-npm.mo.sap.corp:8080/escape-html/-/escape-html-1.0.1.tgz"
+            },
+            "etag": {
+              "version": "1.5.1",
+              "from": "etag@>=1.5.1 <1.6.0",
+              "resolved": "https://registry.npmjs.org/etag/-/etag-1.5.1.tgz",
+              "dependencies": {
+                "crc": {
+                  "version": "3.2.1",
+                  "from": "crc@3.2.1",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/crc/-/crc-3.2.1.tgz"
+                }
+              }
+            },
+            "finalhandler": {
+              "version": "0.3.3",
+              "from": "finalhandler@0.3.3",
+              "resolved": "http://build-npm.mo.sap.corp:8080/finalhandler/-/finalhandler-0.3.3.tgz"
+            },
+            "fresh": {
+              "version": "0.2.4",
+              "from": "fresh@0.2.4",
+              "resolved": "http://build-npm.mo.sap.corp:8080/fresh/-/fresh-0.2.4.tgz"
+            },
+            "media-typer": {
+              "version": "0.3.0",
+              "from": "media-typer@0.3.0",
+              "resolved": "http://build-npm.mo.sap.corp:8080/media-typer/-/media-typer-0.3.0.tgz"
+            },
+            "methods": {
+              "version": "1.1.1",
+              "from": "methods@>=1.1.1 <1.2.0",
+              "resolved": "https://registry.npmjs.org/methods/-/methods-1.1.1.tgz"
+            },
+            "on-finished": {
+              "version": "2.2.1",
+              "from": "on-finished@>=2.2.0 <2.3.0",
+              "resolved": "https://registry.npmjs.org/on-finished/-/on-finished-2.2.1.tgz",
+              "dependencies": {
+                "ee-first": {
+                  "version": "1.1.0",
+                  "from": "ee-first@1.1.0",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/ee-first/-/ee-first-1.1.0.tgz"
+                }
+              }
+            },
+            "parseurl": {
+              "version": "1.3.0",
+              "from": "parseurl@>=1.3.0 <1.4.0",
+              "resolved": "https://registry.npmjs.org/parseurl/-/parseurl-1.3.0.tgz"
+            },
+            "path-to-regexp": {
+              "version": "0.1.3",
+              "from": "path-to-regexp@0.1.3",
+              "resolved": "https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-0.1.3.tgz"
+            },
+            "proxy-addr": {
+              "version": "1.0.8",
+              "from": "proxy-addr@>=1.0.6 <1.1.0",
+              "resolved": "https://registry.npmjs.org/proxy-addr/-/proxy-addr-1.0.8.tgz",
+              "dependencies": {
+                "forwarded": {
+                  "version": "0.1.0",
+                  "from": "forwarded@>=0.1.0 <0.2.0",
+                  "resolved": "https://registry.npmjs.org/forwarded/-/forwarded-0.1.0.tgz"
+                },
+                "ipaddr.js": {
+                  "version": "1.0.1",
+                  "from": "ipaddr.js@1.0.1",
+                  "resolved": "https://registry.npmjs.org/ipaddr.js/-/ipaddr.js-1.0.1.tgz"
+                }
+              }
+            },
+            "qs": {
+              "version": "2.3.3",
+              "from": "qs@2.3.3",
+              "resolved": "http://build-npm.mo.sap.corp:8080/qs/-/qs-2.3.3.tgz"
+            },
+            "range-parser": {
+              "version": "1.0.3",
+              "from": "range-parser@>=1.0.2 <1.1.0",
+              "resolved": "https://registry.npmjs.org/range-parser/-/range-parser-1.0.3.tgz"
+            },
+            "send": {
+              "version": "0.11.1",
+              "from": "send@0.11.1",
+              "resolved": "http://build-npm.mo.sap.corp:8080/send/-/send-0.11.1.tgz",
+              "dependencies": {
+                "destroy": {
+                  "version": "1.0.3",
+                  "from": "destroy@1.0.3",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/destroy/-/destroy-1.0.3.tgz"
+                },
+                "ms": {
+                  "version": "0.7.0",
+                  "from": "ms@0.7.0",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/ms/-/ms-0.7.0.tgz"
+                }
+              }
+            },
+            "serve-static": {
+              "version": "1.8.1",
+              "from": "serve-static@>=1.8.1 <1.9.0",
+              "resolved": "https://registry.npmjs.org/serve-static/-/serve-static-1.8.1.tgz"
+            },
+            "type-is": {
+              "version": "1.5.7",
+              "from": "type-is@>=1.5.6 <1.6.0",
+              "resolved": "https://registry.npmjs.org/type-is/-/type-is-1.5.7.tgz",
+              "dependencies": {
+                "mime-types": {
+                  "version": "2.0.14",
+                  "from": "mime-types@>=2.0.9 <2.1.0",
+                  "resolved": "https://registry.npmjs.org/mime-types/-/mime-types-2.0.14.tgz",
+                  "dependencies": {
+                    "mime-db": {
+                      "version": "1.12.0",
+                      "from": "mime-db@>=1.12.0 <1.13.0",
+                      "resolved": "https://registry.npmjs.org/mime-db/-/mime-db-1.12.0.tgz"
+                    }
+                  }
+                }
+              }
+            },
+            "vary": {
+              "version": "1.0.1",
+              "from": "vary@>=1.0.0 <1.1.0",
+              "resolved": "https://registry.npmjs.org/vary/-/vary-1.0.1.tgz"
+            },
+            "cookie": {
+              "version": "0.1.2",
+              "from": "cookie@0.1.2",
+              "resolved": "https://registry.npmjs.org/cookie/-/cookie-0.1.2.tgz"
+            },
+            "merge-descriptors": {
+              "version": "0.0.2",
+              "from": "merge-descriptors@0.0.2",
+              "resolved": "https://registry.npmjs.org/merge-descriptors/-/merge-descriptors-0.0.2.tgz"
+            },
+            "utils-merge": {
+              "version": "1.0.0",
+              "from": "utils-merge@1.0.0",
+              "resolved": "https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.0.tgz"
+            }
+          }
+        },
+        "handlebars": {
+          "version": "2.0.0",
+          "from": "handlebars@2.0.0",
+          "resolved": "https://registry.npmjs.org/handlebars/-/handlebars-2.0.0.tgz",
+          "dependencies": {
+            "optimist": {
+              "version": "0.3.7",
+              "from": "optimist@>=0.3.0 <0.4.0",
+              "resolved": "https://registry.npmjs.org/optimist/-/optimist-0.3.7.tgz",
+              "dependencies": {
+                "wordwrap": {
+                  "version": "0.0.3",
+                  "from": "wordwrap@>=0.0.2 <0.1.0",
+                  "resolved": "https://registry.npmjs.org/wordwrap/-/wordwrap-0.0.3.tgz"
+                }
+              }
+            },
+            "uglify-js": {
+              "version": "2.3.6",
+              "from": "uglify-js@>=2.3.0 <2.4.0",
+              "resolved": "https://registry.npmjs.org/uglify-js/-/uglify-js-2.3.6.tgz",
+              "dependencies": {
+                "async": {
+                  "version": "0.2.10",
+                  "from": "async@>=0.2.6 <0.3.0",
+                  "resolved": "https://registry.npmjs.org/async/-/async-0.2.10.tgz"
+                },
+                "source-map": {
+                  "version": "0.1.43",
+                  "from": "source-map@>=0.1.7 <0.2.0",
+                  "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.1.43.tgz",
+                  "dependencies": {
+                    "amdefine": {
+                      "version": "1.0.0",
+                      "from": "amdefine@>=0.0.4",
+                      "resolved": "https://registry.npmjs.org/amdefine/-/amdefine-1.0.0.tgz"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "lodash-node": {
+          "version": "2.4.1",
+          "from": "lodash-node@2.4.1",
+          "resolved": "https://registry.npmjs.org/lodash-node/-/lodash-node-2.4.1.tgz"
+        },
+        "lodash": {
+          "version": "3.8.0",
+          "from": "lodash@3.8.0",
+          "resolved": "https://registry.npmjs.org/lodash/-/lodash-3.8.0.tgz"
+        },
+        "mime": {
+          "version": "1.2.11",
+          "from": "mime@1.2.11",
+          "resolved": "https://registry.npmjs.org/mime/-/mime-1.2.11.tgz"
+        },
+        "streamifier": {
+          "version": "0.1.0",
+          "from": "streamifier@0.1.0",
+          "resolved": "http://build-npm.mo.sap.corp:8080/streamifier/-/streamifier-0.1.0.tgz"
+        },
+        "sax": {
+          "version": "0.6.1",
+          "from": "sax@0.6.1",
+          "resolved": "https://registry.npmjs.org/sax/-/sax-0.6.1.tgz"
+        }
+      }
+    },
+    "norman-shell-client": {
+      "version": "0.3.0",
+      "from": "norman-shell-client@0.3.0",
+      "resolved": "https://registry.npmjs.org/norman-shell-client/-/norman-shell-client-0.3.0.tgz"
+    },
+    "norman-ui-catalog-manager-client": {
+      "version": "0.3.0",
+      "from": "norman-ui-catalog-manager-client@0.3.0",
+      "resolved": "https://registry.npmjs.org/norman-ui-catalog-manager-client/-/norman-ui-catalog-manager-client-0.3.0.tgz",
+      "dependencies": {
+        "angular-filter": {
+          "version": "0.5.1",
+          "from": "angular-filter@0.5.1",
+          "resolved": "https://registry.npmjs.org/angular-filter/-/angular-filter-0.5.1.tgz",
+          "dependencies": {
+            "angular": {
+              "version": "1.4.7",
+              "from": "angular@*",
+              "resolved": "http://build-npm.mo.sap.corp:8080/angular/-/angular-1.4.7.tgz"
+            }
+          }
+        }
+      }
+    },
+    "norman-ui-catalog-manager-server": {
+      "version": "0.3.0",
+      "from": "norman-ui-catalog-manager-server@0.3.0",
+      "resolved": "https://registry.npmjs.org/norman-ui-catalog-manager-server/-/norman-ui-catalog-manager-server-0.3.0.tgz",
+      "dependencies": {
+        "gridfs-stream": {
+          "version": "0.5.3",
+          "from": "gridfs-stream@0.5.3",
+          "resolved": "http://build-npm.mo.sap.corp:8080/gridfs-stream/-/gridfs-stream-0.5.3.tgz"
+        },
+        "jszip": {
+          "version": "2.4.0",
+          "from": "jszip@2.4.0",
+          "resolved": "http://build-npm.mo.sap.corp:8080/jszip/-/jszip-2.4.0.tgz",
+          "dependencies": {
+            "pako": {
+              "version": "0.2.8",
+              "from": "pako@>=0.2.5 <0.3.0",
+              "resolved": "https://registry.npmjs.org/pako/-/pako-0.2.8.tgz"
+            }
+          }
+        },
+        "replacestream": {
+          "version": "2.1.0",
+          "from": "replacestream@2.1.0",
+          "resolved": "http://build-npm.mo.sap.corp:8080/replacestream/-/replacestream-2.1.0.tgz",
+          "dependencies": {
+            "through": {
+              "version": "2.3.8",
+              "from": "through@>=2.3.4 <2.4.0",
+              "resolved": "https://registry.npmjs.org/through/-/through-2.3.8.tgz"
+            }
+          }
+        }
+      }
+    },
+    "norman-user-research-client": {
+      "version": "0.3.0",
+      "from": "norman-user-research-client@0.3.0",
+      "resolved": "https://registry.npmjs.org/norman-user-research-client/-/norman-user-research-client-0.3.0.tgz",
+      "dependencies": {
+        "angular-filter": {
+          "version": "0.5.1",
+          "from": "angular-filter@0.5.1",
+          "resolved": "https://registry.npmjs.org/angular-filter/-/angular-filter-0.5.1.tgz",
+          "dependencies": {
+            "angular": {
+              "version": "1.4.7",
+              "from": "angular@*",
+              "resolved": "http://build-npm.mo.sap.corp:8080/angular/-/angular-1.4.7.tgz"
+            }
+          }
+        },
+        "signals": {
+          "version": "1.0.0",
+          "from": "signals@1.0.0",
+          "resolved": "https://registry.npmjs.org/signals/-/signals-1.0.0.tgz"
+        },
+        "crossroads": {
+          "version": "0.12.1",
+          "from": "crossroads@0.12.1",
+          "resolved": "http://build-npm.mo.sap.corp:8080/crossroads/-/crossroads-0.12.1.tgz"
+        },
+        "hasher": {
+          "version": "1.2.0",
+          "from": "hasher@1.2.0",
+          "resolved": "https://registry.npmjs.org/hasher/-/hasher-1.2.0.tgz"
+        }
+      }
+    },
+    "norman-user-research-server": {
+      "version": "0.3.0",
+      "from": "norman-user-research-server@0.3.0",
+      "resolved": "https://registry.npmjs.org/norman-user-research-server/-/norman-user-research-server-0.3.0.tgz",
+      "dependencies": {
+        "unzip2": {
+          "version": "0.2.5",
+          "from": "unzip2@0.2.5",
+          "resolved": "http://build-npm.mo.sap.corp:8080/unzip2/-/unzip2-0.2.5.tgz",
+          "dependencies": {
+            "fstream": {
+              "version": "0.1.31",
+              "from": "fstream@>=0.1.21 <0.2.0",
+              "resolved": "https://registry.npmjs.org/fstream/-/fstream-0.1.31.tgz",
+              "dependencies": {
+                "graceful-fs": {
+                  "version": "3.0.8",
+                  "from": "graceful-fs@>=3.0.2 <3.1.0",
+                  "resolved": "https://registry.npmjs.org/graceful-fs/-/graceful-fs-3.0.8.tgz"
+                },
+                "inherits": {
+                  "version": "2.0.1",
+                  "from": "inherits@>=2.0.0 <2.1.0",
+                  "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
+                },
+                "mkdirp": {
+                  "version": "0.5.1",
+                  "from": "mkdirp@>=0.5.0 <0.6.0",
+                  "resolved": "https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.1.tgz",
+                  "dependencies": {
+                    "minimist": {
+                      "version": "0.0.8",
+                      "from": "minimist@0.0.8",
+                      "resolved": "https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz"
+                    }
+                  }
+                },
+                "rimraf": {
+                  "version": "2.4.3",
+                  "from": "rimraf@>=2.0.0 <3.0.0",
+                  "resolved": "https://registry.npmjs.org/rimraf/-/rimraf-2.4.3.tgz",
+                  "dependencies": {
+                    "glob": {
+                      "version": "5.0.15",
+                      "from": "glob@>=5.0.14 <6.0.0",
+                      "resolved": "https://registry.npmjs.org/glob/-/glob-5.0.15.tgz",
+                      "dependencies": {
+                        "inflight": {
+                          "version": "1.0.4",
+                          "from": "inflight@>=1.0.4 <2.0.0",
+                          "resolved": "https://registry.npmjs.org/inflight/-/inflight-1.0.4.tgz",
+                          "dependencies": {
+                            "wrappy": {
+                              "version": "1.0.1",
+                              "from": "wrappy@>=1.0.0 <2.0.0",
+                              "resolved": "https://registry.npmjs.org/wrappy/-/wrappy-1.0.1.tgz"
+                            }
+                          }
+                        },
+                        "minimatch": {
+                          "version": "3.0.0",
+                          "from": "minimatch@>=2.0.0 <3.0.0||>=3.0.0 <4.0.0",
+                          "resolved": "https://registry.npmjs.org/minimatch/-/minimatch-3.0.0.tgz",
+                          "dependencies": {
+                            "brace-expansion": {
+                              "version": "1.1.1",
+                              "from": "brace-expansion@>=1.0.0 <2.0.0",
+                              "resolved": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.1.tgz",
+                              "dependencies": {
+                                "balanced-match": {
+                                  "version": "0.2.1",
+                                  "from": "balanced-match@>=0.2.0 <0.3.0",
+                                  "resolved": "http://build-npm.mo.sap.corp:8080/balanced-match/-/balanced-match-0.2.1.tgz"
+                                },
+                                "concat-map": {
+                                  "version": "0.0.1",
+                                  "from": "concat-map@0.0.1",
+                                  "resolved": "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "once": {
+                          "version": "1.3.2",
+                          "from": "once@>=1.3.0 <2.0.0",
+                          "resolved": "https://registry.npmjs.org/once/-/once-1.3.2.tgz",
+                          "dependencies": {
+                            "wrappy": {
+                              "version": "1.0.1",
+                              "from": "wrappy@>=1.0.0 <2.0.0",
+                              "resolved": "https://registry.npmjs.org/wrappy/-/wrappy-1.0.1.tgz"
+                            }
+                          }
+                        },
+                        "path-is-absolute": {
+                          "version": "1.0.0",
+                          "from": "path-is-absolute@>=1.0.0 <2.0.0",
+                          "resolved": "https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.0.tgz"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "pullstream": {
+              "version": "0.4.1",
+              "from": "pullstream@>=0.4.0 <0.5.0",
+              "resolved": "https://registry.npmjs.org/pullstream/-/pullstream-0.4.1.tgz",
+              "dependencies": {
+                "over": {
+                  "version": "0.0.5",
+                  "from": "over@>=0.0.5 <1.0.0",
+                  "resolved": "https://registry.npmjs.org/over/-/over-0.0.5.tgz"
+                },
+                "slice-stream": {
+                  "version": "1.0.0",
+                  "from": "slice-stream@>=1.0.0 <2.0.0",
+                  "resolved": "https://registry.npmjs.org/slice-stream/-/slice-stream-1.0.0.tgz"
+                }
+              }
+            },
+            "binary": {
+              "version": "0.3.0",
+              "from": "binary@>=0.3.0 <0.4.0",
+              "resolved": "https://registry.npmjs.org/binary/-/binary-0.3.0.tgz",
+              "dependencies": {
+                "chainsaw": {
+                  "version": "0.1.0",
+                  "from": "chainsaw@>=0.1.0 <0.2.0",
+                  "resolved": "https://registry.npmjs.org/chainsaw/-/chainsaw-0.1.0.tgz",
+                  "dependencies": {
+                    "traverse": {
+                      "version": "0.3.9",
+                      "from": "traverse@>=0.3.0 <0.4.0",
+                      "resolved": "https://registry.npmjs.org/traverse/-/traverse-0.3.9.tgz"
+                    }
+                  }
+                },
+                "buffers": {
+                  "version": "0.1.1",
+                  "from": "buffers@>=0.1.1 <0.2.0",
+                  "resolved": "https://registry.npmjs.org/buffers/-/buffers-0.1.1.tgz"
+                }
+              }
+            },
+            "readable-stream": {
+              "version": "1.0.33",
+              "from": "readable-stream@>=1.0.0 <1.1.0",
+              "resolved": "https://registry.npmjs.org/readable-stream/-/readable-stream-1.0.33.tgz",
+              "dependencies": {
+                "core-util-is": {
+                  "version": "1.0.1",
+                  "from": "core-util-is@>=1.0.0 <1.1.0",
+                  "resolved": "https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.1.tgz"
+                },
+                "isarray": {
+                  "version": "0.0.1",
+                  "from": "isarray@0.0.1",
+                  "resolved": "http://build-npm.mo.sap.corp:8080/isarray/-/isarray-0.0.1.tgz"
+                },
+                "string_decoder": {
+                  "version": "0.10.31",
+                  "from": "string_decoder@>=0.10.0 <0.11.0",
+                  "resolved": "https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz"
+                },
+                "inherits": {
+                  "version": "2.0.1",
+                  "from": "inherits@>=2.0.1 <2.1.0",
+                  "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
+                }
+              }
+            },
+            "setimmediate": {
+              "version": "1.0.4",
+              "from": "setimmediate@>=1.0.1 <1.1.0",
+              "resolved": "http://build-npm.mo.sap.corp:8080/setimmediate/-/setimmediate-1.0.4.tgz"
+            },
+            "match-stream": {
+              "version": "0.0.2",
+              "from": "match-stream@>=0.0.2 <0.1.0",
+              "resolved": "https://registry.npmjs.org/match-stream/-/match-stream-0.0.2.tgz",
+              "dependencies": {
+                "buffers": {
+                  "version": "0.1.1",
+                  "from": "buffers@>=0.1.1 <0.2.0",
+                  "resolved": "https://registry.npmjs.org/buffers/-/buffers-0.1.1.tgz"
+                }
+              }
+            }
+          }
+        },
+        "crossroads": {
+          "version": "0.12.1",
+          "from": "crossroads@0.12.1",
+          "resolved": "http://build-npm.mo.sap.corp:8080/crossroads/-/crossroads-0.12.1.tgz",
+          "dependencies": {
+            "signals": {
+              "version": "1.0.0",
+              "from": "signals@<2.0.0",
+              "resolved": "https://registry.npmjs.org/signals/-/signals-1.0.0.tgz"
+            }
+          }
+        },
+        "node-handlebars": {
+          "version": "0.9.5",
+          "from": "node-handlebars@0.9.5",
+          "resolved": "http://build-npm.mo.sap.corp:8080/node-handlebars/-/node-handlebars-0.9.5.tgz",
+          "dependencies": {
+            "promise": {
+              "version": "6.0.1",
+              "from": "promise@>=6.0.1 <6.1.0",
+              "resolved": "https://registry.npmjs.org/promise/-/promise-6.0.1.tgz",
+              "dependencies": {
+                "asap": {
+                  "version": "1.0.0",
+                  "from": "asap@>=1.0.0 <1.1.0",
+                  "resolved": "https://registry.npmjs.org/asap/-/asap-1.0.0.tgz"
+                }
+              }
+            },
+            "semver": {
+              "version": "3.0.1",
+              "from": "semver@>=3.0.1 <3.1.0",
+              "resolved": "https://registry.npmjs.org/semver/-/semver-3.0.1.tgz"
+            },
+            "graceful-fs": {
+              "version": "3.0.8",
+              "from": "graceful-fs@>=3.0.4 <3.1.0",
+              "resolved": "https://registry.npmjs.org/graceful-fs/-/graceful-fs-3.0.8.tgz"
+            },
+            "handlebars": {
+              "version": "2.0.0",
+              "from": "handlebars@>=2.0.0 <2.1.0",
+              "resolved": "https://registry.npmjs.org/handlebars/-/handlebars-2.0.0.tgz",
+              "dependencies": {
+                "optimist": {
+                  "version": "0.3.7",
+                  "from": "optimist@>=0.3.0 <0.4.0",
+                  "resolved": "https://registry.npmjs.org/optimist/-/optimist-0.3.7.tgz",
+                  "dependencies": {
+                    "wordwrap": {
+                      "version": "0.0.3",
+                      "from": "wordwrap@>=0.0.2 <0.1.0",
+                      "resolved": "https://registry.npmjs.org/wordwrap/-/wordwrap-0.0.3.tgz"
+                    }
+                  }
+                },
+                "uglify-js": {
+                  "version": "2.3.6",
+                  "from": "uglify-js@>=2.3.0 <2.4.0",
+                  "resolved": "https://registry.npmjs.org/uglify-js/-/uglify-js-2.3.6.tgz",
+                  "dependencies": {
+                    "async": {
+                      "version": "0.2.10",
+                      "from": "async@>=0.2.6 <0.3.0",
+                      "resolved": "https://registry.npmjs.org/async/-/async-0.2.10.tgz"
+                    },
+                    "source-map": {
+                      "version": "0.1.43",
+                      "from": "source-map@>=0.1.7 <0.2.0",
+                      "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.1.43.tgz",
+                      "dependencies": {
+                        "amdefine": {
+                          "version": "1.0.0",
+                          "from": "amdefine@>=0.0.4",
+                          "resolved": "https://registry.npmjs.org/amdefine/-/amdefine-1.0.0.tgz"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "glob": {
+              "version": "4.0.6",
+              "from": "glob@>=4.0.6 <4.1.0",
+              "resolved": "https://registry.npmjs.org/glob/-/glob-4.0.6.tgz",
+              "dependencies": {
+                "inherits": {
+                  "version": "2.0.1",
+                  "from": "inherits@>=2.0.0 <3.0.0",
+                  "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
+                },
+                "minimatch": {
+                  "version": "1.0.0",
+                  "from": "minimatch@>=1.0.0 <2.0.0",
+                  "resolved": "https://registry.npmjs.org/minimatch/-/minimatch-1.0.0.tgz",
+                  "dependencies": {
+                    "lru-cache": {
+                      "version": "2.7.0",
+                      "from": "lru-cache@>=2.0.0 <3.0.0",
+                      "resolved": "https://registry.npmjs.org/lru-cache/-/lru-cache-2.7.0.tgz"
+                    },
+                    "sigmund": {
+                      "version": "1.0.1",
+                      "from": "sigmund@>=1.0.0 <1.1.0",
+                      "resolved": "https://registry.npmjs.org/sigmund/-/sigmund-1.0.1.tgz"
+                    }
+                  }
+                },
+                "once": {
+                  "version": "1.3.2",
+                  "from": "once@>=1.3.0 <2.0.0",
+                  "resolved": "https://registry.npmjs.org/once/-/once-1.3.2.tgz",
+                  "dependencies": {
+                    "wrappy": {
+                      "version": "1.0.1",
+                      "from": "wrappy@>=1.0.0 <2.0.0",
+                      "resolved": "https://registry.npmjs.org/wrappy/-/wrappy-1.0.1.tgz"
+                    }
+                  }
+                }
+              }
+            },
+            "path": {
+              "version": "0.4.10",
+              "from": "path@>=0.4.9 <0.5.0",
+              "resolved": "https://registry.npmjs.org/path/-/path-0.4.10.tgz"
+            },
+            "minimize": {
+              "version": "0.10.1",
+              "from": "minimize@>=0.10.0 <0.11.0",
+              "resolved": "https://registry.npmjs.org/minimize/-/minimize-0.10.1.tgz",
+              "dependencies": {
+                "htmlparser2": {
+                  "version": "3.8.3",
+                  "from": "htmlparser2@>=3.8.0 <3.9.0",
+                  "resolved": "https://registry.npmjs.org/htmlparser2/-/htmlparser2-3.8.3.tgz",
+                  "dependencies": {
+                    "domhandler": {
+                      "version": "2.3.0",
+                      "from": "domhandler@>=2.3.0 <2.4.0",
+                      "resolved": "https://registry.npmjs.org/domhandler/-/domhandler-2.3.0.tgz"
+                    },
+                    "domutils": {
+                      "version": "1.5.1",
+                      "from": "domutils@>=1.5.0 <1.6.0",
+                      "resolved": "https://registry.npmjs.org/domutils/-/domutils-1.5.1.tgz",
+                      "dependencies": {
+                        "dom-serializer": {
+                          "version": "0.1.0",
+                          "from": "dom-serializer@>=0.0.0 <1.0.0",
+                          "resolved": "https://registry.npmjs.org/dom-serializer/-/dom-serializer-0.1.0.tgz",
+                          "dependencies": {
+                            "domelementtype": {
+                              "version": "1.1.3",
+                              "from": "domelementtype@>=1.1.1 <1.2.0",
+                              "resolved": "https://registry.npmjs.org/domelementtype/-/domelementtype-1.1.3.tgz"
+                            },
+                            "entities": {
+                              "version": "1.1.1",
+                              "from": "entities@>=1.1.1 <1.2.0",
+                              "resolved": "https://registry.npmjs.org/entities/-/entities-1.1.1.tgz"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "domelementtype": {
+                      "version": "1.3.0",
+                      "from": "domelementtype@>=1.0.0 <2.0.0",
+                      "resolved": "https://registry.npmjs.org/domelementtype/-/domelementtype-1.3.0.tgz"
+                    },
+                    "readable-stream": {
+                      "version": "1.1.13",
+                      "from": "readable-stream@>=1.1.0 <1.2.0",
+                      "resolved": "https://registry.npmjs.org/readable-stream/-/readable-stream-1.1.13.tgz",
+                      "dependencies": {
+                        "core-util-is": {
+                          "version": "1.0.1",
+                          "from": "core-util-is@>=1.0.0 <1.1.0",
+                          "resolved": "https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.1.tgz"
+                        },
+                        "isarray": {
+                          "version": "0.0.1",
+                          "from": "isarray@0.0.1",
+                          "resolved": "http://build-npm.mo.sap.corp:8080/isarray/-/isarray-0.0.1.tgz"
+                        },
+                        "string_decoder": {
+                          "version": "0.10.31",
+                          "from": "string_decoder@>=0.10.0 <0.11.0",
+                          "resolved": "https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz"
+                        },
+                        "inherits": {
+                          "version": "2.0.1",
+                          "from": "inherits@>=2.0.1 <2.1.0",
+                          "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
+                        }
+                      }
+                    },
+                    "entities": {
+                      "version": "1.0.0",
+                      "from": "entities@>=1.0.0 <1.1.0",
+                      "resolved": "https://registry.npmjs.org/entities/-/entities-1.0.0.tgz"
+                    }
+                  }
+                },
+                "utile": {
+                  "version": "0.2.1",
+                  "from": "utile@>=0.2.1 <0.3.0",
+                  "resolved": "https://registry.npmjs.org/utile/-/utile-0.2.1.tgz",
+                  "dependencies": {
+                    "async": {
+                      "version": "0.2.10",
+                      "from": "async@>=0.2.9 <0.3.0",
+                      "resolved": "https://registry.npmjs.org/async/-/async-0.2.10.tgz"
+                    },
+                    "deep-equal": {
+                      "version": "1.0.1",
+                      "from": "deep-equal@*",
+                      "resolved": "https://registry.npmjs.org/deep-equal/-/deep-equal-1.0.1.tgz"
+                    },
+                    "i": {
+                      "version": "0.3.3",
+                      "from": "i@>=0.3.0 <0.4.0",
+                      "resolved": "https://registry.npmjs.org/i/-/i-0.3.3.tgz"
+                    },
+                    "mkdirp": {
+                      "version": "0.5.1",
+                      "from": "mkdirp@>=0.0.0 <1.0.0",
+                      "resolved": "https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.1.tgz",
+                      "dependencies": {
+                        "minimist": {
+                          "version": "0.0.8",
+                          "from": "minimist@0.0.8",
+                          "resolved": "https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz"
+                        }
+                      }
+                    },
+                    "ncp": {
+                      "version": "0.4.2",
+                      "from": "ncp@>=0.4.0 <0.5.0",
+                      "resolved": "http://build-npm.mo.sap.corp:8080/ncp/-/ncp-0.4.2.tgz"
+                    },
+                    "rimraf": {
+                      "version": "2.4.3",
+                      "from": "rimraf@>=2.0.0 <3.0.0",
+                      "resolved": "https://registry.npmjs.org/rimraf/-/rimraf-2.4.3.tgz",
+                      "dependencies": {
+                        "glob": {
+                          "version": "5.0.15",
+                          "from": "glob@>=5.0.14 <6.0.0",
+                          "resolved": "https://registry.npmjs.org/glob/-/glob-5.0.15.tgz",
+                          "dependencies": {
+                            "inflight": {
+                              "version": "1.0.4",
+                              "from": "inflight@>=1.0.4 <2.0.0",
+                              "resolved": "https://registry.npmjs.org/inflight/-/inflight-1.0.4.tgz",
+                              "dependencies": {
+                                "wrappy": {
+                                  "version": "1.0.1",
+                                  "from": "wrappy@>=1.0.0 <2.0.0",
+                                  "resolved": "https://registry.npmjs.org/wrappy/-/wrappy-1.0.1.tgz"
+                                }
+                              }
+                            },
+                            "inherits": {
+                              "version": "2.0.1",
+                              "from": "inherits@>=2.0.0 <3.0.0",
+                              "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
+                            },
+                            "minimatch": {
+                              "version": "3.0.0",
+                              "from": "minimatch@>=2.0.0 <3.0.0||>=3.0.0 <4.0.0",
+                              "resolved": "https://registry.npmjs.org/minimatch/-/minimatch-3.0.0.tgz",
+                              "dependencies": {
+                                "brace-expansion": {
+                                  "version": "1.1.1",
+                                  "from": "brace-expansion@>=1.0.0 <2.0.0",
+                                  "resolved": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.1.tgz",
+                                  "dependencies": {
+                                    "balanced-match": {
+                                      "version": "0.2.1",
+                                      "from": "balanced-match@>=0.2.0 <0.3.0",
+                                      "resolved": "http://build-npm.mo.sap.corp:8080/balanced-match/-/balanced-match-0.2.1.tgz"
+                                    },
+                                    "concat-map": {
+                                      "version": "0.0.1",
+                                      "from": "concat-map@0.0.1",
+                                      "resolved": "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "once": {
+                              "version": "1.3.2",
+                              "from": "once@>=1.3.0 <2.0.0",
+                              "resolved": "https://registry.npmjs.org/once/-/once-1.3.2.tgz",
+                              "dependencies": {
+                                "wrappy": {
+                                  "version": "1.0.1",
+                                  "from": "wrappy@>=1.0.0 <2.0.0",
+                                  "resolved": "https://registry.npmjs.org/wrappy/-/wrappy-1.0.1.tgz"
+                                }
+                              }
+                            },
+                            "path-is-absolute": {
+                              "version": "1.0.0",
+                              "from": "path-is-absolute@>=1.0.0 <2.0.0",
+                              "resolved": "https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.0.tgz"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "pica": {
+      "version": "1.0.7",
+      "from": "pica@1.0.7",
+      "resolved": "https://registry.npmjs.org/pica/-/pica-1.0.7.tgz",
+      "dependencies": {
+        "webworkify": {
+          "version": "1.0.0",
+          "from": "webworkify@1.0.0",
+          "resolved": "https://registry.npmjs.org/webworkify/-/webworkify-1.0.0.tgz"
+        }
+      }
+    },
+    "sortablejs": {
+      "version": "1.0.0",
+      "from": "sortablejs@1.0.0",
+      "resolved": "https://registry.npmjs.org/sortablejs/-/sortablejs-1.0.0.tgz"
+    },
+    "textangular": {
+      "version": "1.3.11",
+      "from": "textangular@1.3.11",
+      "resolved": "https://registry.npmjs.org/textangular/-/textangular-1.3.11.tgz"
+    },
+    "ui-router-extras": {
+      "version": "0.0.14",
+      "from": "ui-router-extras@0.0.14",
+      "resolved": "https://registry.npmjs.org/ui-router-extras/-/ui-router-extras-0.0.14.tgz"
+    }
+  }
+}
