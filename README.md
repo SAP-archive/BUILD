@@ -27,8 +27,7 @@ Check the the [BUILD Web Site](http://www.build.me/)!
 
 Install  | Version
 ------------- | -------------
-[npm.js](https://docs.npmjs.com/cli/install)  | _*Only version 1.4.28 is supported*_
-[node.js](https://docs.npmjs.com/cli/install) | _*Versions 10.33 and 10.38 are supported*_
+[node.js](https://docs.npmjs.com/cli/install) | _*Versions 10.33 and 10.38 are supported with npm 1.4.28*_
 [mongodb](https://www.mongodb.org/downloads#previous)  | _*Only version 2.6.x is supported*_
 
 ###Procedure
