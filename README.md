@@ -20,12 +20,18 @@ For a more detailed description of BUILD, see the [BUILD Overview](https://githu
 Check the the [BUILD Web Site](http://www.build.me/)! 
 
 
-##Getting Started 
-(Quick guide - see .docs/DEVELOPER_README.md for detail information )
+#Getting Started 
+(Quick guide - see [https://github.com/devinea/BUILD/blob/master/docs/DEVELOPER_README.md](.docs/DEVELOPER_README.md for detail information ))
+
 ###Prerequisites
-- install [npm.js](https://docs.npmjs.com/cli/install) - _*only version 1.4.28 is supported*_
-- install [node.js](https://docs.npmjs.com/cli/install) - _*versions 10.33 and 10.38 are supported*_
-- install [mongodb](https://www.mongodb.org/downloads#previous) - _*only version 2.6.x is supported*_
+
+Install  | Version
+------------- | -------------
+[npm.js](https://docs.npmjs.com/cli/install)  | _*Only version 1.4.28 is supported*_
+[node.js](https://docs.npmjs.com/cli/install) | _*Versions 10.33 and 10.38 are supported*_
+[mongodb](https://www.mongodb.org/downloads#previous)  | _*Only version 2.6.x is supported*_
+
+###Procedure
 
 1. Install :
     ```sh 
@@ -36,8 +42,9 @@ Check the the [BUILD Web Site](http://www.build.me/)!
     ```sh
      sudo sapbuild
     ```
+###Result
 
-Go to [http://localhost:9000](http://localhost:9000) in Chrome browser and click Join
+To run, enter [http://localhost:9000](http://localhost:9000) in your Chrome browser, and select **Join**.
 
 
 # User Documentation
@@ -60,7 +67,7 @@ _Having a problem? Create a bug or ask a question using the [BUILD Issue Tracker
 # Make a Contribution
 
 So you want to contribute to BUILD? Good choice! There is lots of scope for contribution, and there's plenty to do! 
-Popular contributions include bug reports, feature requests, and new features. [This document](https://github.com/SAP/BUILD/blob/master/Contributing.md) describes how to make contributions to any of these modules.
+Popular contributions include bug reports, feature requests, and new features. [This document](https://github.com/SAP/BUILD/blob/master/Contributing.md) describes how to make contributions to BUILD.
 
 # Licenses
 
