@@ -1,4 +1,6 @@
+before_install:
+  - npm install -g npm@2.11.3
 language: node_js
 node_js:
-  - "0.10"
+  - "0.12.7"
 script: cd BUILD && npm install grunt-cli && npm install && grunt dist
