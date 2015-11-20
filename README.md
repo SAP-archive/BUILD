@@ -19,6 +19,29 @@ For a more detailed description of BUILD, see the [BUILD Overview](https://githu
 # BUILD Web Site
 Check the the [BUILD Web Site](http://www.build.me/)! 
 
+##Try BUILD in Docker
+1. Install Docker
+2. Create file docker-compose.yml 
+    ```sh 
+ web:
+  image: uxdbuild/build:0.3.3
+  ports:
+    - "9000:9000"
+  links:
+    - mongo
+
+mongo:
+  image: mongo:2.6.11
+  ports:
+    - "27017:27017"
+  volumes:
+    - ./db:/data/db
+    ```
+3. Pull and start containers
+   ```sh
+   docker-compose up
+    ```
+4. Go to docker host [http://localhost:9000](http://localhost:9000) or using docker_host IP address
 
 #Getting Started 
 (Quick guide - see [https://github.com/devinea/BUILD/blob/master/docs/DEVELOPER_README.md](.docs/DEVELOPER_README.md for detail information ))
