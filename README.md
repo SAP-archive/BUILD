@@ -20,7 +20,7 @@ For a more detailed description of BUILD, see the [BUILD Overview](https://githu
 Check the the [BUILD Web Site](http://www.build.me/)! 
 
 ##Try BUILD in Docker
-1. Install Docker
+1. Install Docker [https://www.docker.com/](https://www.docker.com/)
 2. Create file docker-compose.yml 
     ```sh 
  web:
