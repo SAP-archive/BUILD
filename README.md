@@ -20,7 +20,7 @@ For a more detailed description of BUILD, see the [BUILD Overview](https://githu
 Check the the [BUILD Web Site](http://www.build.me/)! 
 
 ##Try BUILD in Docker
-1. Install Docker [https://www.docker.com/](https://www.docker.com/)
+1. Install Docker Engine and Docker Compose [https://docs.docker.com/](https://docs.docker.com/)
 2. Create file docker-compose.yml 
     ```sh 
  web:
@@ -32,17 +32,22 @@ Check the the [BUILD Web Site](http://www.build.me/)!
 
 mongo:
   image: mongo:2.6.11
-  ports:
-    - "27017:27017"
+# On OSX remove volumes section if you get permissions errors
   volumes:
     - ./db:/data/db
     ```
+    
 3. Pull and start containers
+
    ```sh
    docker-compose up
     ```
+    
 4. Go to docker host [http://localhost:9000](http://localhost:9000) or using docker_host IP address
 
+   ```sh
+   docker-machine ip default
+    ```
 #Getting Started 
 (Quick guide - see [https://github.com/devinea/BUILD/blob/master/docs/DEVELOPER_README.md](.docs/DEVELOPER_README.md for detail information ))
 
