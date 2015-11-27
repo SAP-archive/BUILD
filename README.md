@@ -23,7 +23,7 @@ Check the the [BUILD Web Site](http://www.build.me/)!
 1. Install Docker Engine and Docker Compose [https://docs.docker.com/](https://docs.docker.com/)
 2. Create file docker-compose.yml 
     ```sh 
- web:
+web:
   image: uxdbuild/build:0.3.3
   ports:
     - "9000:9000"
