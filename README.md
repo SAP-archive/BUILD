@@ -21,7 +21,7 @@ Check the the [BUILD Web Site](http://www.build.me/)!
 
 
 #Getting Started 
-Quick guide - see [HERE](.docs/DEVELOPER_README.md)
+Quick guide - see [HERE](./docs/DEVELOPER_README.md)
 
 ###Prerequisites
 
