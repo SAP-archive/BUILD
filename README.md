@@ -21,7 +21,7 @@ Check the the [BUILD Web Site](http://www.build.me/)!
 
 
 #Getting Started 
-(Quick guide - see [https://github.com/devinea/BUILD/blob/master/docs/DEVELOPER_README.md](.docs/DEVELOPER_README.md for detail information ))
+Quick guide - see [HERE](.docs/DEVELOPER_README.md for detail information )
 
 ###Prerequisites
 
