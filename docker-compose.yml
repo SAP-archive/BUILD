@@ -1,5 +1,5 @@
 web:
-  image: uxdbuild/build:0.3.3
+  image: sapbuild/build:0.3.3
   ports:
     - "9000:9000"
   links:
