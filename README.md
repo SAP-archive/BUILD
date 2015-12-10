@@ -19,6 +19,7 @@ For a more detailed description of BUILD, see the [BUILD Overview](https://githu
 # BUILD Web Site
 Check the the [BUILD Web Site](http://www.build.me/)! 
 
+
 #Getting Started 
 
 ##Try BUILD in Docker
@@ -52,7 +53,7 @@ mongo:
 
 
 ## Install locally 
-(Quick guide - see [https://github.com/devinea/BUILD/blob/master/docs/DEVELOPER_README.md](.docs/DEVELOPER_README.md for detail information ))
+Quick guide - see [HERE](./docs/DEVELOPER_README.md)
 
 ###Prerequisites
 
