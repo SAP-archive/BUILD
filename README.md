@@ -26,7 +26,7 @@ Check the the [BUILD Web Site](http://www.build.me/)!
 2. Create file docker-compose.yml 
     ```sh 
 web:
- image: sapbuild/build:0.3.3
+  image: sapbuild/build:0.3.3
  ports:
   - "9000:9000"
  links:
