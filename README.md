@@ -19,6 +19,8 @@ For a more detailed description of BUILD, see the [BUILD Overview](https://githu
 # BUILD Web Site
 Check the the [BUILD Web Site](http://www.build.me/)! 
 
+#Getting Started 
+
 ##Try BUILD in Docker
 1. Install Docker Engine and Docker Compose [https://docs.docker.com/](https://docs.docker.com/)
 2. Create file docker-compose.yml 
@@ -47,7 +49,9 @@ mongo:
    ```sh
    docker-machine ip default
     ```
-#Getting Started 
+
+
+## Install locally 
 (Quick guide - see [https://github.com/devinea/BUILD/blob/master/docs/DEVELOPER_README.md](.docs/DEVELOPER_README.md for detail information ))
 
 ###Prerequisites
