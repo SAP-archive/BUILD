@@ -24,17 +24,16 @@ Check the the [BUILD Web Site](http://www.build.me/)!
 2. Create file docker-compose.yml 
     ```sh 
 web:
-  image: sapbuild/build:0.3.3
-  ports:
-    - "9000:9000"
-  links:
-    - mongo
+ image: sapbuild/build:0.3.3
+ ports:
+  - "9000:9000"
+ links:
+  - mongo
 
 mongo:
-  image: mongo:2.6.11
-# On OSX remove volumes section if you get permissions errors
-  volumes:
-    - ./db:/data/db
+ image: mongo:2.6.11
+ volumes:
+  - ./db:/data/db
     ```
     
 3. Pull and start containers
