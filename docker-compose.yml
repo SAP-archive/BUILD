@@ -1,0 +1,11 @@
+web:
+  image: sapbuild/build:0.3.3
+  ports:
+    - "9000:9000"
+  links:
+    - mongo
+
+mongo:
+  image: mongo:2.6.11
+  volumes:
+    - ./db:/data/db
