@@ -26,17 +26,17 @@ Check the the [BUILD Web Site](http://www.build.me/)!
 1. Install Docker Engine and Docker Compose [https://docs.docker.com/](https://docs.docker.com/)
 2. Create file docker-compose.yml 
     ```sh 
-web:
-  image: sapbuild/build:0.3.3
- ports:
-  - "9000:9000"
- links:
-  - mongo
-
-mongo:
- image: mongo:2.6.11
- volumes:
-  - ./db:/data/db
+    web:
+      image: sapbuild/build:0.3.3
+      ports:
+        - "9000:9000"
+      links:
+        - mongo
+    
+    mongo:
+      image: mongo:2.6.11
+      volumes:
+        - ./db:/data/db
     ```
     
 3. Pull and start containers
