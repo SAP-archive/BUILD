@@ -1,6 +1,6 @@
 {
   "name": "sap-build",
-  "version": "0.3.0",
+  "version": "0.3.4",
   "description": "SAP BUILD",
   "repository": {
     "type:": "git",
