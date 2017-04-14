@@ -20,9 +20,9 @@ For a more detailed description of BUILD, see the [BUILD Overview](https://githu
 Check the the [BUILD Web Site](http://www.build.me/)! 
 
 
-#Getting Started 
+# Getting Started 
 
-##Try BUILD in Docker
+## Try BUILD in Docker
 1. Install Docker Engine and Docker Compose [https://docs.docker.com/](https://docs.docker.com/)
 2. Create file docker-compose.yml 
     ```sh 
@@ -55,14 +55,14 @@ Check the the [BUILD Web Site](http://www.build.me/)!
 ## Install locally 
 Quick guide - see [HERE](./docs/DEVELOPER_README.md)
 
-###Prerequisites
+### Prerequisites
 
 Install  | Version
 ------------- | -------------
 [node.js](https://docs.npmjs.com/cli/install) | _*Versions 10.33 and 10.38 are supported with npm 1.4.28*_
 [mongodb](https://www.mongodb.org/downloads#previous)  | _*Only version 2.6.x is supported*_
 
-###Procedure
+### Procedure
 
 1. Install :
     ```sh 
@@ -73,7 +73,7 @@ Install  | Version
     ```sh
      sudo sapbuild
     ```
-###Result
+### Result
 
 To run, enter [http://localhost:9000](http://localhost:9000) in your Chrome browser, and select **Join**.
 
@@ -91,7 +91,7 @@ Along with the UI composer comes:
 + Smart templates that make UI design quick and easy.
 + A ton of bug fixes and technical improvements.
 
-#Contact
+# Contact
 
 _Having a problem? Create a bug or ask a question using the [BUILD Issue Tracker](https://github.com/SAP/BUILD/issues), send a mail to contribute.build@sap.com or send a tweet to our twitter account [buildwithbuild](https://twitter.com/buildwithbuild) and we'll get back to you as soon as possible._ 
 
@@ -106,7 +106,7 @@ This project is licensed under the Apache Software License, v. 2 except as noted
 
 _Please do not remove this license from cloned or forked versions of BUILD._
 
-###Licenses for Contributors
+### Licenses for Contributors
 
 + [Individual Contribution License Agreement](https://github.com/SAP/BUILD/blob/master/docs/SAP%20License%20Agreements/SAP%2BIndividual%2BContributor%2BLicense%2BAgreement.pdf) 
 + [Corporate Contributor License Agreement](https://github.com/SAP/BUILD/blob/master/docs/SAP%20License%20Agreements/SAP%2BCorporate%2BContributor%2BLicense%2BAgreement.pdf) 
