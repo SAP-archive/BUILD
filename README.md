@@ -1,6 +1,10 @@
 
 ![](https://img.shields.io/badge/STATUS-NOT%20CURRENTLY%20MAINTAINED-red.svg?longCache=true&style=flat)
 
+# Important Notice
+We have decided to stop the maintenance of the open source version of Build.
+Build is still available and sold as a cloud product from SAP, with regular updates and new features. It’s available at www.build.me.
+Its open source version and all the files in this public GitHub repository will no longer be maintained.
 
 
 
