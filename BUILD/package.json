@@ -110,7 +110,7 @@
     "sinon": "~1.14.1",
     "sinon-as-promised": "^3.0.0",
     "supertest": "0.15.0",
-    "superagent": "^0.21.0",
+    "superagent": "^5.1.0",
     "time-grunt": "^1.0.0"
   },
   "scripts": {
