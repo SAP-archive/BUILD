@@ -104,7 +104,7 @@
     "norman-testing-server": "0.3.0",
     "norman-testing-tp": "0.3.0",
     "norman-testing-tp-client": "0.3.0",
-    "open": "0.0.5",
+    "open": "7.0.0",
     "q": "^1.1.2",
     "request": "^2.51.0",
     "sinon": "~1.14.1",
